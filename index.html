@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos de Pádel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('img/pad.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: rgba(44, 62, 80, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            color: #ecf0f1;
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+
+        .torneos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .torneo-card {
+            position: relative;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Fondo de icono para cada tarjeta */
+        .torneo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.15;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        /* Color base + icono para cada tarjeta */
+        .torneo-card:nth-child(1) {
+            background: linear-gradient(
+                135deg,
+                rgba(52, 152, 219, 0.6),
+                rgba(41, 128, 185, 0.6)
+            );
+        }
+        .torneo-card:nth-child(1)::before {
+            background-image: url('img/punto.jpeg');
+            background-size: 70%;
+        }
+
+        .torneo-card:nth-child(2) {
+            background: linear-gradient(
+                135deg,
+                rgba(155, 89, 182, 0.6),
+                rgba(142, 68, 173, 0.6)
+            );
+        }
+        .torneo-card:nth-child(2)::before {
+            background-image: url('img/arena.png');
+            background-size: 80%;
+        }
+
+        .torneo-card:nth-child(3) {
+            background: linear-gradient(
+                135deg,
+                rgba(39, 174, 96, 0.6),
+                rgba(46, 204, 113, 0.6)
+            );
+        }
+        .torneo-card:nth-child(3)::before {
+            background-image: url('img/2set.jpeg');
+            background-size: 75%;
+        }
+        
+        .torneo-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 35px 0 rgba(31, 38, 135, 0.5);
+        }
+        
+        .torneo-card:hover::before {
+            opacity: 0.25;
+            transform: scale(1.05);
+        }
+        
+        .torneo-card h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.7em;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .torneo-card p {
+            margin-bottom: 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Efecto de brillo al hover */
+        .torneo-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, 
+                      rgba(255,255,255,0.3) 0%, 
+                      rgba(255,255,255,0) 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .torneo-card:hover::after {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .torneos-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .torneo-card {
+                padding: 25px;
+                min-height: 180px;
+            }
+
+            .torneo-card::before {
+                background-size: 60%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .torneo-card::before {
+                background-size: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resultados de Torneos de Pádel</h1>
+            <p>Consulta los resultados y estadísticas de los principales torneos de la ciudad</p>
+        </div>
+        
+        <div class="torneos-grid">
+            <a href="/puntoDeOro/puntoDeOro.html" class="torneo-card">
+                <h2>TORNEO PUNTO DE ORO</h2>
+                <p>Punto de Oro</p>
+            </a>
+            
+            <a href="/arenas/arenas.html" class="torneo-card">
+                <h2>TORNEO ARENAS</h2>
+                <p>Arenas</p>
+            </a>
+            
+            <a href="/segundoSet/segundoSet.html" class="torneo-card">
+                <h2>TORNEO 2DO SET</h2>
+                <p>2do SET</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

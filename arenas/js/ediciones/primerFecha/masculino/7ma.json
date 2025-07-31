@@ -1,0 +1,207 @@
+{
+  "nombre": "4ta Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Nahuel Velazquez/Blas Sánchez",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Sebastian Torres/Ruben Peix",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 0,
+          "GF": 12,
+          "GC": 1
+        },
+        {
+          "nombre": "Gonzalo Aguirre/Nelson Aguirre",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 1,
+          "GC": 12
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "29/07/25 23:00 hs",
+          "equipo1": "Torres/Peix",
+          "equipo2": "Aguirre/Aguirre",
+          "resultado": "6-1, 6-0"
+        },
+        {
+          "equipo1": "Velazquez/Sánchez",
+          "equipo2": "Torres/peix",
+          "fecha": "30/07/25 21:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Martínez/Sánchez",
+          "equipo2": "Rodríguez/Ruiz",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-0, 6-0"
+        },
+        {
+          "equipo1": "López/García",
+          "equipo2": "Fernández/Díaz",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-4, 4-6, 6-3"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Gómez/Hernández",
+          "PJ": 3,
+          "PG": 2,
+          "SG": 5,
+          "SP": 2,
+          "GF": 34,
+          "GC": 22
+        },
+        {
+          "nombre": "Pérez/Jiménez",
+          "PJ": 3,
+          "PG": 2,
+          "SG": 4,
+          "SP": 3,
+          "GF": 31,
+          "GC": 29
+        },
+        {
+          "nombre": "Moreno/Álvarez",
+          "PJ": 3,
+          "PG": 2,
+          "SG": 4,
+          "SP": 4,
+          "GF": 32,
+          "GC": 33
+        },
+        {
+          "nombre": "Romero/Navarro",
+          "PJ": 3,
+          "PG": 0,
+          "SG": 2,
+          "SP": 6,
+          "GF": 22,
+          "GC": 37
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "Gómez/Hernández",
+          "equipo2": "Pérez/Jiménez",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-3, 6-4"
+        },
+        {
+          "equipo1": "Gómez/Hernández",
+          "equipo2": "Moreno/Álvarez",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-2, 4-6, 6-3"
+        },
+        {
+          "equipo1": "Gómez/Hernández",
+          "equipo2": "Romero/Navarro",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-1, 6-2"
+        },
+        {
+          "equipo1": "Pérez/Jiménez",
+          "equipo2": "Moreno/Álvarez",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "7-5, 4-6, 6-4"
+        },
+        {
+          "equipo1": "Pérez/Jiménez",
+          "equipo2": "Romero/Navarro",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-3, 6-4"
+        },
+        {
+          "equipo1": "Moreno/Álvarez",
+          "equipo2": "Romero/Navarro",
+          "fecha": "30/07/25 19:00 hs",
+          "resultado": "6-4, 4-6, 7-5"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "Martínez/Sánchez",
+        "equipo2": "Romero/Navarro",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-1, 6-2",
+        "ganador": "Martínez/Sánchez"
+      },
+      {
+        "equipo1": "López/García",
+        "equipo2": "Moreno/Álvarez",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-4, 4-6, 7-5",
+        "ganador": "López/García"
+      },
+      {
+        "equipo1": "Gómez/Hernández",
+        "equipo2": "Rodríguez/Ruiz",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-0, 6-1",
+        "ganador": "Gómez/Hernández"
+      },
+      {
+        "equipo1": "Pérez/Jiménez",
+        "equipo2": "Fernández/Díaz",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-3, 6-4",
+        "ganador": "Pérez/Jiménez"
+      }
+    ],
+    "cuartos": [
+      {
+        "equipo1": "Martínez/Sánchez",
+        "equipo2": "Pérez/Jiménez",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-2, 6-3",
+        "ganador": "Martínez/Sánchez"
+      },
+      {
+        "equipo1": "Gómez/Hernández",
+        "equipo2": "López/García",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "7-5, 6-4",
+        "ganador": "Gómez/Hernández"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "Martínez/Sánchez",
+        "equipo2": "Gómez/Hernández",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "6-4, 6-7, 6-3",
+        "ganador": "Martínez/Sánchez"
+      }
+    ],
+    "final": {
+      "equipo1": "Martínez/Sánchez",
+      "equipo2": "Gómez/Hernández",
+      "fecha": "30/07/25 19:00 hs",
+      "resultado": "6-3, 6-2",
+      "ganador": "Martínez/Sánchez"
+    }
+  }
+}
