@@ -163,13 +163,13 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Fernando Mariani/Agustin Porcu",
-          "PJ": 0,
+          "nombre": "Fernando Mariani/Federico Bustos",
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 19,
+          "GC": 19
         },
         {
           "nombre": "Maximiliano Aperio/Bernardo Fiori",
@@ -182,20 +182,20 @@
         },
         {
           "nombre": "Emmanuel Larocca/Fabian Navarro",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 19,
+          "GC": 19
         }
       ],
       "partidos": [
         {
-          "equipo1": "Mariani/Porcu",
+          "equipo1": "Mariani/Bustos",
           "equipo2": "Larocca/Navarro",
           "fecha": "30/07/25 22:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "7-5, 6-7, 6-7"
         },
         {
           "equipo1": "Aperio/Fiori",

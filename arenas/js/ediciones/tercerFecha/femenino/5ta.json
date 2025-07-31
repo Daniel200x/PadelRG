@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Federico Bossio/Santiago David",
+          "nombre": "Antonella Zampini/Romina Castillo",
           "PJ": 1,
           "PG": 0,
           "SG": 1,
@@ -14,42 +14,42 @@
           "GC": 17
         },
         {
-          "nombre": "Federico Martinez/Martin Pacheco",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 17,
-          "GC": 14
-        },
-        {
-          "nombre": "Bruno Sirgo/Matias Rojo",
+          "nombre": "Cintia Lucero/Yasna Murga",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
           "SP": 0,
           "GF": 0,
           "GC": 0
+        },
+        {
+          "nombre": "Nelida Cabezas/Vera",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 17,
+          "GC": 14
         }
         
       ],
       "partidos": [
         {
-          "fecha": "29/07/25 18:00 hs",
-          "equipo1": "Bossio/David",
-          "equipo2": "Martinez/Pacheco",
+          "fecha": "29/07/25 19:00 hs",
+          "equipo1": "Zampini/Castillo",
+          "equipo2": "Cabezas/Vera",
           "resultado": "6-4, 2-6, 6-7"
         },
         {
-          "equipo1": "Martinez/Pacheco",
-          "equipo2": "Sirgo/Rojo",
-          "fecha": "30/07/25 21:30 hs",
+          "equipo1": "Zampini/Castillo",
+          "equipo2": "Lucero/Murga",
+          "fecha": "31/07/25 19:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Bossio/David",
-          "equipo2": "Sirgo/Rojo",
-          "fecha": "31/07/25 21:30 hs",
+          "equipo1": "Lucero/Murga",
+          "equipo2": "Cabezas/Vera",
+          "fecha": "01/08/25 17:30 hs",
           "resultado": "A confirmar"
         }
         
@@ -59,50 +59,50 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Claudio Escobar/Julian Morales",
+          "nombre": "Alejandra Soto/Rosalia Cruz",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
           "SP": 0,
           "GF": 12,
-          "GC": 5
+          "GC": 2
         },
         {
-          "nombre": "Emmanuel Bravex/Christian Almaraz",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 5,
-          "GC": 12
-        },
-        {
-          "nombre": "Emilio Sanchez/Emiliano Moreno",
+          "nombre": "Luisa Miranda/Lucia Marcial",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
           "SP": 0,
           "GF": 0,
           "GC": 0
+        },
+        {
+          "nombre": "Flamenco Graciela/Martinez",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 2,
+          "GC": 12
         }
       ],
       "partidos": [
         {
-          "equipo1": "Escobar/Morales",
-          "equipo2": "Sanchez/Moreno",
-          "fecha": "30/07/25 19:30 hs",
+          "equipo1": "Flamenco/Martinez",
+          "equipo2": "Soto/Cruz",
+          "fecha": "29/07/25 21:00 hs",
+          "resultado": "1-6, 1-6"
+        },
+        {
+          "equipo1": "Flamenco/Martinez",
+          "equipo2": "Miranda/Marcial",
+          "fecha": "31/07/25 20:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Bravex/Almaraz",
-          "equipo2": "Sanchez/Moreno",
-          "fecha": "31/07/25 23:30 hs",
-          "resultado": "A confirmar"
-        },
-        {
-          "equipo1": "Bravex/Almaraz",
-          "equipo2": "Escobar/Morales",
-          "fecha": "02/08/25 16:00 hs",
+          "equipo1": "Miranda/Marcial",
+          "equipo2": "Soto/Cruz",
+          "fecha": "02/08/25 12:00 hs",
           "resultado": "A confirmar"
         }
       ]
@@ -111,7 +111,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Braian Lizarraga/Andres Chalier",
+          "nombre": "Daniela Martinez/Fernanda Martinez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -120,7 +120,7 @@
           "GC": 0
         },
         {
-          "nombre": "Dario Chacon/Guillermo Farias",
+          "nombre": "Tania Luna/Fernanda Polizzi",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-          "nombre": "David Moreno/A definir",
+          "nombre": "Emilia Peix/A definir",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -140,21 +140,21 @@
       ],
       "partidos": [
         {
-          "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Moreno/A definir",
-          "fecha": "29/07/25 19:00 hs",
+          "equipo1": "Luna/Polizzi",
+          "equipo2": "Peix/A definir",
+          "fecha": "30/07/25 17:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Chacon/Farias",
-          "equipo2": "Moreno/A definir",
-          "fecha": "30/07/25 19:30 hs",
+          "equipo1": "Luna/Polizzi",
+          "equipo2": "Martinez/Martinez",
+          "fecha": "31/07/25 22:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Chacon/Farias",
-          "fecha": "31/07/25 21:30 hs",
+          "equipo1": "Peix/A definir",
+          "equipo2": "Martinez/Martinez",
+          "fecha": "01/08/25 18:30 hs",
           "resultado": "A confirmar"
         }
       ]
@@ -163,25 +163,25 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Fernando Mariani/Agustin Porcu",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "nombre": "Paula Miranda/Luciana Romano",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 3
         },
         {
-          "nombre": "Maximiliano Aperio/Bernardo Fiori",
-          "PJ": 0,
+          "nombre": "Adelaida Vidart/Natalia Marcolini",
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 3,
+          "GC": 12
         },
         {
-          "nombre": "Emmanuel Larocca/Fabian Navarro",
+          "nombre": "Silvina Vera/Lucila Sanz",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -192,21 +192,21 @@
       ],
       "partidos": [
         {
-          "equipo1": "Mariani/Porcu",
-          "equipo2": "Larocca/Navarro",
-          "fecha": "30/07/25 22:30 hs",
+          "equipo1": "Miranda/Romano",
+          "equipo2": "Vidart/Marcolini",
+          "fecha": "29/07/25 21:00 hs",
+          "resultado": "6-0, 6-3"
+        },
+        {
+          "equipo1": "Vera/Sanz",
+          "equipo2": "Miranda/Romano",
+          "fecha": "1/08/25 18:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Aperio/Fiori",
-          "equipo2": "Larocca/Navarro",
-          "fecha": "1/08/25 23:30 hs",
-          "resultado": "A confirmar"
-        },
-        {
-          "equipo1": "Mariani/Porcu",
-          "equipo2": "Aperio/Fiori",
-          "fecha": "2/08/25 14:00 hs",
+          "equipo1": "Vera/Sanz",
+          "equipo2": "Vidart/Marcolini",
+          "fecha": "2/08/25 10:00 hs",
           "resultado": "A confirmar"
         }
       ]
@@ -215,7 +215,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Lucas Vera/J. M. Gimenez",
+          "nombre": "Fernanda Retuerto/Malvina Polizzi",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -224,7 +224,7 @@
           "GC": 0
         },
         {
-          "nombre": "Martin Spamer/Pablo Fiorotto",
+          "nombre": "Giuliana Gimenez/Rocio Terrado",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -233,7 +233,7 @@
           "GC": 0
         },
         {
-          "nombre": "Luis Ruiz/Jorge Ojeda",
+          "nombre": "Ayelen Carpio/Carolina Herrera",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -244,21 +244,73 @@
       ],
       "partidos": [
         {
-          "equipo1": "Spammer/Fiorotto",
-          "equipo2": "Ruiz/Ojeda",
-          "fecha": "30/07/25 23:30 hs",
+          "equipo1": "Gimenez/Terrado",
+          "equipo2": "Retuerto/Polizzi",
+          "fecha": "29/07/25 20:00 hs",
+          "resultado": "6-7, 4-6"
+        },
+        {
+          "equipo1": "Carpio/Herrera",
+          "equipo2": "Retuerto/Polizzi",
+          "fecha": "30/07/25 20:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Vera/Gimenez",
-          "equipo2": "Spammer/Fiorotto",
-          "fecha": "31/07/25 19:30 hs",
+          "equipo1": "Gimenez/Terrado",
+          "equipo2": "Carpio/Herrera",
+          "fecha": "31/07/25 22:30 hs",
+          "resultado": "A confirmar"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Luciana Rodriguez/Cecilia Gersicich",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Florencia Bianchi/Fernanda Treppo",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Natalia Politi/Estela Moyano",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "Bianchi/Treppo",
+          "equipo2": "Rodriguez/Gersicich",
+          "fecha": "29/07/25 22:00 hs",
+          "resultado": "6-4, 2-6, 6-7"
+        },
+        {
+          "equipo1": "Politi/Moyano",
+          "equipo2": "Rodriguez/Gersicich",
+          "fecha": "01/08/25 22:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Vera/Gimenez",
-          "equipo2": "Ruiz/Ojeda",
-          "fecha": "01/08/25 17:30 hs",
+          "equipo1": "Politi/Moyano",
+          "equipo2": "Bianchi/Treppo",
+          "fecha": "02/08/25 11:00 hs",
           "resultado": "A confirmar"
         }
       ]

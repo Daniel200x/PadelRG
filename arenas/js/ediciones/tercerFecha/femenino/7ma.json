@@ -88,21 +88,21 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "29/07/25 23:00 hs",
-          "resultado": "6-2, 6-3"
-        },
-        {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "31/07/25 18:30 hs",
+          "equipo1": "Gomez/Nieto",
+          "equipo2": "Rausch/Arias",
+          "fecha": "30/07/25 22:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "1/08/25 9:00 hs",
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Rausch/Arias",
+          "fecha": "01/08/25 22:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Gomez/Nieto",
+          "fecha": "02/08/25 15:00 hs",
           "resultado": "A confirmar"
         }
       ]
@@ -140,21 +140,21 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "30/07/25 23:30 hs",
+          "equipo1": "Martinez/Martinez",
+          "equipo2": "Nehue/Oyarzun",
+          "fecha": "31/07/25 17:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "31/07/25 20:30 hs",
+          "equipo1": "Lirola/Britos",
+          "equipo2": "Nehue/Oyarzun",
+          "fecha": "01/08/25 19:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "01/08/25 9:00 hs",
+          "equipo1": "Lirola/Britos",
+          "equipo2": "Martinez/Martinez",
+          "fecha": "02/08/25 14:00 hs",
           "resultado": "A confirmar"
         }
       ]
@@ -192,21 +192,21 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "30/07/25 22:30 hs",
-          "resultado": "6-0, 6-3"
+          "equipo1": "Ramadori/Lopez",
+          "equipo2": "Herrera/Bordon",
+          "fecha": "29/07/25 18:00 hs",
+          "resultado": "6-2, 6-3"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "1/08/25 23:30 hs",
+          "equipo1": "Ramadori/Lopez",
+          "equipo2": "Visñuk/Aravena",
+          "fecha": "01/08/25 21:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "2/08/25 14:00 hs",
+          "equipo1": "Herrera/Bordon",
+          "equipo2": "Visñuk/Aravena",
+          "fecha": "02/08/25 11:00 hs",
           "resultado": "A confirmar"
         }
       ]
