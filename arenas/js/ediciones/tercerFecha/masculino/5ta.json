@@ -280,33 +280,61 @@
     }
     
   ],
-  "eliminatorias": {
+ "eliminatorias": {
     "octavos": [
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       },
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       },
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       },
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       }
@@ -315,14 +343,28 @@
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       },
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       }
@@ -331,17 +373,24 @@
       {
         "equipo1": "/",
         "equipo2": "/",
-        "fecha": "/08/25 : hs",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
         "ganador": "/"
       }
     ],
     "final": {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "/08/25 : hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      }
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "30/07/25 19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
   }
 }

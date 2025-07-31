@@ -1,5 +1,5 @@
 {
-  "nombre": "8va Categoría",
+  "nombre": "4ta Categoría",
   "grupos": [
     {
       "nombre": "Grupo A",
@@ -400,65 +400,114 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       }
     ],
     "cuartos": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       }
     ],
     "semis": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
         "ganador": "/"
       }
     ],
     "final": {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "30/07/25 19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
     }
   }
 }
