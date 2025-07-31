@@ -15,21 +15,21 @@
         },
         {
           "nombre": "Federico Martinez/Martin Pacheco",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 1,
-          "GF": 17,
-          "GC": 14
+          "GF": 29,
+          "GC": 16
         },
         {
-          "nombre": "Bruno Sirgo/Matias Rojo",
-          "PJ": 0,
+          "nombre": "Bruno Sirgo/Rodari",
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 2,
+          "GC": 12
         }
         
       ],
@@ -42,9 +42,9 @@
         },
         {
           "equipo1": "Martinez/Pacheco",
-          "equipo2": "Sirgo/Rojo",
+          "equipo2": "Sirgo/Rodari",
           "fecha": "30/07/25 21:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-0, 6-2"
         },
         {
           "equipo1": "Bossio/David",
@@ -65,25 +65,25 @@
           "SG": 2,
           "SP": 0,
           "GF": 12,
-          "GC": 5
+          "GC": 2
         },
         {
           "nombre": "Emmanuel Bravex/Christian Almaraz",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 5,
-          "GC": 12
-        },
-        {
-          "nombre": "Emilio Sanchez/Emiliano Moreno",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
           "SP": 0,
           "GF": 0,
           "GC": 0
+        },
+        {
+          "nombre": "Emilio Sanchez/Emiliano Moreno",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 2,
+          "GC": 12
         }
       ],
       "partidos": [
@@ -91,7 +91,7 @@
           "equipo1": "Escobar/Morales",
           "equipo2": "Sanchez/Moreno",
           "fecha": "30/07/25 19:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-2, 6-0"
         },
         {
           "equipo1": "Bravex/Almaraz",
@@ -112,24 +112,24 @@
       "equipos": [
         {
           "nombre": "Braian Lizarraga/Andres Chalier",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 6
         },
         {
           "nombre": "Dario Chacon/Guillermo Farias",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 6,
+          "GC": 13
         },
         {
-          "nombre": "David Moreno/A definir",
+          "nombre": "David Moreno/Villarroel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -141,19 +141,19 @@
       "partidos": [
         {
           "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Moreno/A definir",
-          "fecha": "29/07/25 19:00 hs",
+          "equipo2": "Chacon/Farias",
+          "fecha": "30/07/25 21:30 hs",
+          "resultado": "6-1, 7-5"
+        },
+        {
+          "equipo1": "Lizarraga/Chalier",
+          "equipo2": "Moreno/Villarroel",
+          "fecha": "31/07/25 21:30 hs",
           "resultado": "A confirmar"
         },
         {
           "equipo1": "Chacon/Farias",
-          "equipo2": "Moreno/A definir",
-          "fecha": "30/07/25 19:30 hs",
-          "resultado": "A confirmar"
-        },
-        {
-          "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Chacon/Farias",
+          "equipo2": "Moreno/Villarroel",
           "fecha": "31/07/25 21:30 hs",
           "resultado": "A confirmar"
         }
@@ -173,21 +173,21 @@
         },
         {
           "nombre": "Andres Agnes/Cristian Perez",
+          "PJ": 2,
+          "PG": 1,
+          "SG": 2,
+          "SP": 2,
+          "GF": 15,
+          "GC": 16
+        },
+        {
+          "nombre": "Fabian Suarez/A definir",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
           "SP": 2,
-          "GF": 3,
+          "GF": 4,
           "GC": 12
-        },
-        {
-          "nombre": "Fabian Suarez/A definir",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
         }
       ],
       "partidos": [
@@ -199,9 +199,9 @@
         },
         {
           "equipo1": "Agnes/Perez",
-          "equipo2": "Suarez/A definir",
+          "equipo2": "Suarez/Martinez",
           "fecha": "30/07/25 18:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-1, 6-3"
         },
         {
           "equipo1": "Andrade/Gonzalez",
@@ -234,21 +234,21 @@
         },
         {
           "nombre": "Sebastian Villarroel/Guillermo Salgues",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 17,
+          "GC": 20
         },
 {
           "nombre": "Guillermo Boucho/Federico Santi",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 20,
+          "GC": 17
         }
       ],
       "partidos": [
@@ -262,17 +262,17 @@
           "equipo1": "Villarroel/Salgues",
           "equipo2": "Boucho/Santi",
           "fecha": "30/07/25 17:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "7-6, 5-7, 5-7"
         },
         {
-          "equipo1": "Ganador 1-2",
-          "equipo2": "Perdedor 3-4",
+          "equipo1": "Rumi/Fraile",
+          "equipo2": "Villarroel/Salgues",
           "fecha": "31/07/25 17:30 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Ganador 3-4",
-          "equipo2": "Perdedor 1-2",
+          "equipo1": "Boucho-Santi",
+          "equipo2": "Barrios/Bugonovich",
           "fecha": "31/07/25 23:30 hs",
           "resultado": "A confirmar"
         }

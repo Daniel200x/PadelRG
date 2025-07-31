@@ -69,21 +69,21 @@
         },
         {
           "nombre": "Laura Gomez/Carolina Nieto",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 7,
+          "GC": 13
         },
         {
           "nombre": "Maricel Rausch/Micaela Arias",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 7
         }
       ],
       "partidos": [
@@ -91,7 +91,7 @@
           "equipo1": "Gomez/Nieto",
           "equipo2": "Rausch/Arias",
           "fecha": "30/07/25 22:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "1-6, 6-7"
         },
         {
           "equipo1": "Rojas/Lanaro",

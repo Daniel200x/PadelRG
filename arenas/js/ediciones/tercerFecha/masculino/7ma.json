@@ -121,21 +121,21 @@
         },
         {
           "nombre": "Leonardo Cardozo/Mauro Olivera",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 3
         },
         {
           "nombre": "Exequiel Cuellar/Javier Arrieta",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 3,
+          "GC": 12
         }
       ],
       "partidos": [
@@ -143,7 +143,7 @@
           "equipo1": "Cardozo/Olivera",
           "equipo2": "Cuellar/Arrieta",
           "fecha": "30/07/25 23:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-0, 6-3"
         },
         {
           "equipo1": "Cardozo/Olivera",
@@ -225,29 +225,29 @@
         },
         {
           "nombre": "Martin Spamer/Pablo Fiorotto",
-          "PJ": 0,
-          "PG": 0,
+          "PJ": 1,
+          "PG": 1,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 5,
+          "GC": 12
         },
         {
-          "nombre": "Luis Ruiz/Jorge Ojeda",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "nombre": "Luis Ruiz/Zurita",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 5
         }
       ],
       "partidos": [
         {
           "equipo1": "Spammer/Fiorotto",
-          "equipo2": "Ruiz/Ojeda",
+          "equipo2": "Ruiz/Zurita",
           "fecha": "30/07/25 23:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "2-6, 3-6"
         },
         {
           "equipo1": "Vera/Gimenez",
