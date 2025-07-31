@@ -268,12 +268,12 @@
       "equipos": [
         {
           "nombre": "Hector Rojo/Cristian Chalier",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 7
         },
         {
           "nombre": "Agustin Ojeda/Aaron Pintos",
@@ -286,12 +286,12 @@
         },
         {
           "nombre": "Rodrigo Fritz/Ignacio Del Cantare",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 7,
+          "GC": 12
         }
       ],
       "partidos": [
@@ -299,7 +299,7 @@
           "equipo1": "Rojo/Chalier",
           "equipo2": "Fritz/Del Cantare",
           "fecha": "30/07/25 20:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-4, 6-3"
         },
         {
           "equipo1": "Ojeda/Pintos",
