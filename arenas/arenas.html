@@ -96,7 +96,19 @@
             margin-bottom: 30px;
             justify-content: center;
         }
-
+        /* Específico para la columna POS */
+    td:first-child, th:first-child {
+        padding-right: 5px;
+        padding-left: 15px; /* Mantener más margen a la izquierda */
+        width: 40px;
+        text-align: center;
+    }
+    
+    /* Específico para la columna EQUIPO */
+    td:nth-child(2), th:nth-child(2) {
+        padding-left: 5px;
+        padding-right: 15px;
+    }
         .selector-group {
             display: flex;
             flex-direction: column;
@@ -162,11 +174,11 @@
             border-collapse: collapse;
         }
 
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid rgba(221, 221, 221, 0.7);
-        }
+       th, td {
+        padding: 12px 8px; /* Reducir el padding horizontal */
+        text-align: left;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+    }
 
         th {
             background-color: #3498db;
