@@ -6,21 +6,21 @@
       "equipos": [
         {
           "nombre": "Nahuel Velazquez/Blas Sánchez",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 18,
+          "GC": 20
         },
         {
           "nombre": "Sebastian Torres/Ruben Peix",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 1
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 32,
+          "GC": 19
         },
         {
           "nombre": "Gonzalo Aguirre/Lucena",
