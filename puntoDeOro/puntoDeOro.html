@@ -88,39 +88,61 @@
             font-size: 1em;
         }
 
+        /* NUEVOS ESTILOS PARA LA BARRA DE BOTONES */
         .selectores {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-bottom: 30px;
+            justify-content: center;
         }
 
-        .selector {
+        .selector-group {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 15px;
+            min-width: 200px;
         }
 
-        .selector label {
-            display: block;
+        .selector-group label {
             margin-bottom: 8px;
             font-weight: bold;
             color: #2c3e50;
             font-size: 1.1em;
+            text-align: center;
         }
 
-        .selector select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
+        .button-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .selector-button {
+            padding: 10px 15px;
+            border: none;
             border-radius: 6px;
-            font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            background-color: #f0f0f0;
+            color: #2c3e50;
             cursor: pointer;
             transition: all 0.3s;
+            white-space: nowrap;
         }
 
-        .selector select:hover {
-            border-color: #3498db;
-            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        .selector-button:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .selector-button.active {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         /* Estilos para tablas responsive */
@@ -373,19 +395,19 @@
                 font-size: 1em;
             }
             
-            .selectores {
-                grid-template-columns: 1fr;
-                gap: 10px;
+            .selector-group {
+                min-width: 100%;
             }
             
-            .selector label {
-                font-size: 1em;
-                margin-bottom: 5px;
+            .button-bar {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 10px;
             }
             
-            .selector select {
-                padding: 10px;
-                font-size: 14px;
+            .selector-button {
+                padding: 8px 12px;
+                font-size: 13px;
             }
             
             .table-container {
@@ -516,35 +538,35 @@
         </div>
 
         <div class="selectores">
-            <div class="selector">
-                <label for="selector-edicion">Fecha del Torneo:</label>
-                <select id="selector-edicion" onchange="cambiarEdicion()">
-                    <option value="">-- Seleccione fecha --</option>
-                    <option value="primerFecha">1ra Fecha</option>
-                    <option value="segundaFecha">2da Fecha</option>
-                    
-                </select>
+            <!-- Selector de Fecha -->
+            <div class="selector-group">
+                <label>Fecha del Torneo:</label>
+                <div class="button-bar" id="fecha-buttons">
+                    <button class="selector-button" onclick="seleccionarFecha('primerFecha')">1ra Fecha</button>
+                    <button class="selector-button" onclick="seleccionarFecha('segundaFecha')">2da Fecha</button>
+                    <button class="selector-button" onclick="seleccionarFecha('tercerFecha')">3ra Fecha</button>
+                </div>
             </div>
 
-            <div class="selector">
-                <label for="selector-genero">Género:</label>
-                <select id="selector-genero" onchange="cambiarGenero()">
-                    <option value="">-- Seleccione género --</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                </select>
+            <!-- Selector de Género -->
+            <div class="selector-group">
+                <label>Género:</label>
+                <div class="button-bar" id="genero-buttons">
+                    <button class="selector-button" onclick="seleccionarGenero('masculino')">Masculino</button>
+                    <button class="selector-button" onclick="seleccionarGenero('femenino')">Femenino</button>
+                </div>
             </div>
 
-            <div class="selector">
-                <label for="selector-categoria">Categoría:</label>
-                <select id="selector-categoria" onchange="cambiarCategoria()">
-                    <option value="">-- Seleccione categoría --</option>
-                    <option value="4ta">4ta Categoría</option>
-                    <option value="5ta">5ta Categoría</option>
-                    <option value="6ta">6ta Categoría</option>
-                    <option value="7ma">7ma Categoría</option>
-                    <option value="8va">8va Categoría</option>
-                </select>
+            <!-- Selector de Categoría -->
+            <div class="selector-group">
+                <label>Categoría:</label>
+                <div class="button-bar" id="categoria-buttons">
+                    <button class="selector-button" onclick="seleccionarCategoria('4ta')">4ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('5ta')">5ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('6ta')">6ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('7ma')">7ma</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('8va')">8va</button>
+                </div>
             </div>
         </div>
 
@@ -584,7 +606,7 @@
     </div>
 
     <script>
-        // Información básica de cada fecha del torneo
+         // Información básica de cada fecha del torneo
         const edicionesInfo = {
             "primerFecha": {
                 nombre: "1ra Fecha - Torneo Punto de Oro 2025",
@@ -616,6 +638,91 @@
         let edicionActual = null;
         let generoActual = null;
         let categoriaActual = null;
+
+        // Función para actualizar el estado activo de los botones
+        function actualizarBotonesActivos() {
+            // Limpiar todos los botones activos
+            document.querySelectorAll('.selector-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Activar botones seleccionados
+            if (edicionActual) {
+                document.querySelector(`.selector-button[onclick*="${edicionActual.id}"]`)?.classList.add('active');
+            }
+            if (generoActual) {
+                document.querySelector(`.selector-button[onclick*="${generoActual}"]`)?.classList.add('active');
+            }
+            if (categoriaActual) {
+                document.querySelector(`.selector-button[onclick*="${categoriaActual}"]`)?.classList.add('active');
+            }
+        }
+
+        // Función para seleccionar fecha
+        async function seleccionarFecha(fechaKey) {
+            generoActual = null;
+            categoriaActual = null;
+            
+            if (edicionActual?.id === fechaKey) {
+                edicionActual = null;
+                renderizarHeaderEdicion(null);
+                document.getElementById("contenido-ediciones").innerHTML = 
+                    '<p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>';
+                actualizarBotonesActivos();
+                return;
+            }
+
+            // Mostrar loader mientras se cargan los datos
+            document.getElementById("contenido-ediciones").innerHTML = 
+                '<div class="loader">Cargando datos del torneo...</div>';
+            
+            edicionActual = await cargarEdicion(fechaKey);
+            
+            if (edicionActual) {
+                edicionActual.id = fechaKey; // Agregar identificador para estilos CSS
+                renderizarHeaderEdicion(edicionActual);
+                renderizarEdicion(edicionActual, null, null);
+            } else {
+                document.getElementById("contenido-ediciones").innerHTML = 
+                    '<p class="error">Error al cargar los datos del torneo.</p>';
+            }
+            
+            actualizarBotonesActivos();
+        }
+
+        // Función para seleccionar género
+        function seleccionarGenero(genero) {
+            if (generoActual === genero) {
+                generoActual = null;
+                categoriaActual = null;
+                if (edicionActual) {
+                    renderizarEdicion(edicionActual, null, null);
+                }
+            } else {
+                generoActual = genero;
+                categoriaActual = null;
+                if (edicionActual) {
+                    renderizarEdicion(edicionActual, generoActual, null);
+                }
+            }
+            actualizarBotonesActivos();
+        }
+
+        // Función para seleccionar categoría
+        function seleccionarCategoria(categoria) {
+            if (categoriaActual === categoria) {
+                categoriaActual = null;
+                if (edicionActual && generoActual) {
+                    renderizarEdicion(edicionActual, generoActual, null);
+                }
+            } else {
+                categoriaActual = categoria;
+                if (edicionActual && generoActual) {
+                    renderizarEdicion(edicionActual, generoActual, categoriaActual);
+                }
+            }
+            actualizarBotonesActivos();
+        }
 
         // Función para cargar los datos de una edición específica
         async function cargarEdicion(edicionKey) {
@@ -673,60 +780,6 @@
                 ${edicion.descripcion ? `<p class="descripcion-edicion">${edicion.descripcion}</p>` : ''}
             `;
             header.style.display = 'block';
-        }
-
-        // Función para cambiar de edición
-        async function cambiarEdicion() {
-            const selector = document.getElementById("selector-edicion");
-            const edicionKey = selector.value;
-            
-            generoActual = null;
-            categoriaActual = null;
-            document.getElementById("selector-genero").value = "";
-            document.getElementById("selector-categoria").value = "";
-
-            if (edicionKey) {
-                // Mostrar loader mientras se cargan los datos
-                document.getElementById("contenido-ediciones").innerHTML = 
-                    '<div class="loader">Cargando datos del torneo...</div>';
-                
-                edicionActual = await cargarEdicion(edicionKey);
-                
-                if (edicionActual) {
-                    edicionActual.id = edicionKey; // Agregar identificador para estilos CSS
-                    renderizarHeaderEdicion(edicionActual);
-                    renderizarEdicion(edicionActual, null, null);
-                } else {
-                    document.getElementById("contenido-ediciones").innerHTML = 
-                        '<p class="error">Error al cargar los datos del torneo.</p>';
-                }
-            } else {
-                renderizarHeaderEdicion(null);
-                document.getElementById("contenido-ediciones").innerHTML = 
-                    '<p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>';
-            }
-        }
-
-        // Función para cambiar de género
-        function cambiarGenero() {
-            const selector = document.getElementById("selector-genero");
-            generoActual = selector.value;
-            categoriaActual = null;
-            document.getElementById("selector-categoria").value = "";
-
-            if (edicionActual && generoActual) {
-                renderizarEdicion(edicionActual, generoActual, null);
-            }
-        }
-
-        // Función para cambiar de categoría
-        function cambiarCategoria() {
-            const selector = document.getElementById("selector-categoria");
-            categoriaActual = selector.value;
-
-            if (edicionActual && generoActual) {
-                renderizarEdicion(edicionActual, generoActual, categoriaActual);
-            }
         }
 
         // Función para renderizar la edición con género y categoría
@@ -993,22 +1046,18 @@
                     eliminatoriasDiv.appendChild(faseDiv);
                 }
 
-                categoriaDiv.appendChild(eliminatoriasDiv);
+                 categoriaDiv.appendChild(eliminatoriasDiv);
             }
 
-            contenedor.innerHTML = "";
+            contenedor.innerHTML = '';
             contenedor.appendChild(categoriaDiv);
         }
 
-        // Inicialización
-        document.addEventListener("DOMContentLoaded", function() {
-            // Actualizar año del copyright
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-            
-            // Puedes cargar una fecha por defecto si lo deseas
-            // document.getElementById('selector-edicion').value = 'primerFecha';
-            // cambiarEdicion();
-        });
+        // Actualizar año del copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Activar el primer botón de fecha por defecto (opcional)
+        // document.querySelector('#fecha-buttons .selector-button').click();
     </script>
 </body>
 </html>
