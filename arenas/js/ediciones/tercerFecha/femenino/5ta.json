@@ -216,21 +216,21 @@
       "equipos": [
         {
           "nombre": "Fernanda Retuerto/Malvina Polizzi",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 10
         },
         {
           "nombre": "Giuliana Gimenez/Rocio Terrado",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 10,
+          "GC": 13
         },
         {
           "nombre": "Ayelen Carpio/Carolina Herrera",
@@ -268,21 +268,21 @@
       "equipos": [
         {
           "nombre": "Luciana Rodriguez/Cecilia Gersicich",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 17,
+          "GC": 14
         },
         {
           "nombre": "Florencia Bianchi/Fernanda Treppo",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 14,
+          "GC": 17
         },
         {
           "nombre": "Natalia Politi/Estela Moyano",
