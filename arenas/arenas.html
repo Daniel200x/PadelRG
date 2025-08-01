@@ -96,7 +96,7 @@
             margin-bottom: 30px;
             justify-content: center;
         }
-        
+
         .selector-group {
             display: flex;
             flex-direction: column;
@@ -162,13 +162,11 @@
             border-collapse: collapse;
         }
 
-       th, td {
-        padding: 5px 15px; /* Reducir el padding horizontal */
-        text-align: left;
-        border-bottom: 1px solid rgba(221, 221, 221, 0.7);
-    }
-
-  
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+        }
 
         th {
             background-color: #3498db;
@@ -380,7 +378,6 @@
             font-size: 0.8em;
             margin-top: 10px;
         }
-
         /* Nuevos estilos para la separación de fases */
 .fase-title {
     font-size: 1.5em;
@@ -584,6 +581,49 @@
                 max-height: 60px;
             }
         }
+        /* Selector para móviles */
+.mobile-view-selector {
+    display: none;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Mostrar solo en móviles */
+@media (max-width: 768px) {
+    .mobile-view-selector {
+        display: block;
+    }
+    
+    /* Ocultar secciones no activas */
+    .grupos-container:not(.active),
+    .eliminatorias-container:not(.active) {
+        display: none !important;
+    }
+}
+
+/* Estilos para las secciones */
+.grupos-container, 
+.eliminatorias-container {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    /* ... (otros estilos existentes) ... */
+    
+    /* Ajustar el main container en móviles */
+    .main-eliminatorias-container {
+        flex-direction: column;
+    }
+    
+    .grupos-container, 
+    .eliminatorias-container {
+        width: 100%;
+        min-width: 100%;
+    }
+}
     </style>
 </head>
 <body>
@@ -604,7 +644,7 @@
                 <div class="button-bar" id="fecha-buttons">
                     <button class="selector-button" onclick="seleccionarFecha('primerFecha')">1ra Fecha</button>
                     <button class="selector-button" onclick="seleccionarFecha('segundaFecha')">2da Fecha</button>
-                    <button class="selector-button" onclick="seleccionarFecha('tercerFecha')">3ra Fecha</button>
+                   <button class="selector-button" onclick="seleccionarFecha('tercerFecha')">3ra Fecha</button>
                 </div>
             </div>
 
@@ -629,10 +669,17 @@
                 </div>
             </div>
         </div>
-
-        <div id="contenido-ediciones">
-            <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+  <!-- Selector móvil (oculto en desktop) -->
+    <div id="mobile-view-selector" class="mobile-view-selector">
+        <div class="button-bar">
+            <button class="selector-button active" onclick="mostrarSeccion('grupos')">Zona de Grupos</button>
+            <button class="selector-button" onclick="mostrarSeccion('eliminatorias')">Eliminatorias</button>
         </div>
+    </div>
+
+    <div id="contenido-ediciones">
+        <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+    </div>
 
         <!-- Espacio para publicidad -->
         <div class="ad-space">
@@ -666,24 +713,25 @@
     </div>
 
     <script>
-        // Información básica de cada fecha del torneo
+       
+   // Información básica de cada fecha del torneo
         const edicionesInfo = {
             "primerFecha": {
                 nombre: "1ra Fecha - Torneo Arenas 2025",
                 fecha: "15-30 Marzo 2025",
                 lugar: "Arenas",
-                descripcion: "Primera fecha clasificatoria al provincial 2025",
+                descripcion: "Primera fecha 2025",
                 path: "js/ediciones/primerFecha"
             },
             "segundaFecha": {
                 nombre: "2da Fecha - Torneo Arenas 2025",
                 fecha: "15-30 Junio 2025",
                 lugar: "Arenas",
-                descripcion: "Segunda fecha clasificatoria al provincial 2025",
+                descripcion: "Segunda fecha 2025",
                 path: "js/ediciones/segundaFecha"
             },
             "tercerFecha": {
-                nombre: "3ra Fecha - Torneo Arenas 2025",
+                nombre: "3ra Fecha - Torneo Arenas  2025",
                 fecha: "29/07 a 10/08 2025",
                 lugar: "Arenas",
                 descripcion: "Tercera fecha clasificatoria al provincial 2025",
@@ -842,7 +890,8 @@
             header.style.display = 'block';
         }
 
-        function renderizarEdicion(edicion, genero, categoria) {
+        // Función para renderizar la edición con género y categoría
+     function renderizarEdicion(edicion, genero, categoria) {
     const contenedor = document.getElementById('contenido-ediciones');
     
     if (!genero || !categoria) {
@@ -866,15 +915,14 @@
     mainContainer.style.gap = "30px";
     mainContainer.style.marginBottom = "30px";
 
-    // Contenedor para los grupos (izquierda)
+  // Cambia los nombres de los contenedores para el control móvil
     const gruposContainer = document.createElement("div");
-    gruposContainer.style.flex = "1";
-    gruposContainer.style.minWidth = "300px";
+    gruposContainer.className = "grupos-container active"; // Agrega 'active'
+    gruposContainer.id = "grupos-container";
 
-    // Contenedor para las eliminatorias (derecha)
     const eliminatoriasContainer = document.createElement("div");
-    eliminatoriasContainer.style.flex = "1";
-    eliminatoriasContainer.style.minWidth = "300px";
+    eliminatoriasContainer.className = "eliminatorias-container"; 
+    eliminatoriasContainer.id = "eliminatorias-container";
 
     // Mostrar grupos
     if (categoriaData.grupos) {
@@ -991,7 +1039,6 @@
         });
     }
 
-   // Mostrar eliminatorias si existen
     if (categoriaData.eliminatorias) {
         const eliminatoriasTitle = document.createElement("h3");
         eliminatoriasTitle.textContent = "Fase Eliminatoria";
@@ -1037,7 +1084,6 @@
 
             eliminatoriasContainer.appendChild(faseDiv);
         }
-
         // Octavos de final
         if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
             const faseDiv = document.createElement("div");
@@ -1217,7 +1263,7 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
 
- // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
+// Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
     window.addEventListener('DOMContentLoaded', (event) => {
         // Seleccionar automáticamente la tercera fecha
         seleccionarFecha('tercerFecha');
@@ -1231,6 +1277,35 @@
 
         // Activar el primer botón de fecha por defecto (opcional)
         // document.querySelector('#fecha-buttons .selector-button').click();
+
+        // Función para mostrar sección en móviles
+function mostrarSeccion(seccion) {
+    // Actualizar botones activos
+    document.querySelectorAll('#mobile-view-selector .selector-button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Mostrar sección seleccionada
+    if (seccion === 'grupos') {
+        document.getElementById('grupos-container').classList.add('active');
+        document.getElementById('eliminatorias-container').classList.remove('active');
+    } else {
+        document.getElementById('grupos-container').classList.remove('active');
+        document.getElementById('eliminatorias-container').classList.add('active');
+    }
+}
+
+// Detectar cambio de tamaño de pantalla
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        // En desktop, mostrar ambas secciones
+        const grupos = document.getElementById('grupos-container');
+        const eliminatorias = document.getElementById('eliminatorias-container');
+        if (grupos) grupos.classList.add('active');
+        if (eliminatorias) eliminatorias.classList.add('active');
+    }
+});
     </script>
 </body>
 </html>
