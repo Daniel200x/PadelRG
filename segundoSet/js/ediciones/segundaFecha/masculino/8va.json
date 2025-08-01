@@ -206,7 +206,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Maluf Agustin/Samaniego Daniel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -215,7 +215,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Jony/Alfonzo Elias",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -224,7 +224,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Cardenas Claudio/Torres Lucas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -233,7 +233,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Amarilla Rodrigo/Peix Franco",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -244,27 +244,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Maluf/Samaniego",
+          "equipo2": "Jony/Alfonzo",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Cardenas/Torres",
+          "equipo2": "Amarilla/Peix",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 18:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 18:00 hs",
           "resultado": "A definir"
         }
       ]
@@ -273,7 +273,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Arcella Yago/Nieva Javier",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -282,7 +282,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Reyes Matias/Riveros Favio",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -291,7 +291,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Gonzalez Juanjo/Alejandro",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -300,7 +300,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Martinez German/Flores Nahuel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -311,27 +311,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Arcella/Nievas",
+          "equipo2": "Reyes/Riveros",
+          "fecha": "Viernes 23:45 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Gonzalez/Alejandro",
+          "equipo2": "Martinez/Flores",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "A definir"
         }
       ]
@@ -340,7 +340,7 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Montenegro Carlos/Perez Alejandro",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -349,7 +349,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Molina Fabian/Calderon Adrian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -358,7 +358,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Sanabria Hugo/Yunes Marcelo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -367,7 +367,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Gomez Javier/Manquecoy Esteban",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -378,27 +378,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Montenegro/Perez",
+          "equipo2": "Molina/Caldero",
+          "fecha": "Viernes 20:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Sanabria/Yunes",
+          "equipo2": "Gomez/Manquecoy",
+          "fecha": "Viernes 18:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 14:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 14:00 hs",
           "resultado": "A definir"
         }
       ]
