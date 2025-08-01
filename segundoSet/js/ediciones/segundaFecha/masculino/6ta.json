@@ -228,7 +228,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Juarez Hernan/Orellana Julio",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -237,7 +237,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Ruiz Luiz/A confirmar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -246,7 +246,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Muriño Rafael/Tiraboschi Gustavo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -255,7 +255,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "De Guevara Nicolas/Torres Jonathan",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -266,16 +266,16 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Juarez/Orellana",
+          "equipo2": "Ruiz Luis/A confirmar",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Muriño/Tiraboschi",
+          "equipo2": "De Guevara/Torres",
+          "fecha": "Viernes 17:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1-2",
