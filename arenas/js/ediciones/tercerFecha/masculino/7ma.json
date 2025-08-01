@@ -579,29 +579,29 @@
     ],
     "cuartos": [
       {
-         "equipo1": "Partido 11 - ",
-          "equipo2": "/",
+         "equipo1": "Partido 11 - Ganador Partido 3",
+          "equipo2": "Ganador Partido 4",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "Partido 12 - ",
-          "equipo2": "/",
+         "equipo1": "Partido 12 - Ganador Partido 5",
+          "equipo2": "Ganador Partido 6",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "Partido  - ",
-          "equipo2": "/",
+         "equipo1": "Partido 13 - Ganador Partido 7",
+          "equipo2": "Ganador Partido 8",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "Partido  - ",
-          "equipo2": "/",
+         "equipo1": "Partido 14 - Ganador Partido 9",
+          "equipo2": "Ganador Partido 10",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
@@ -609,23 +609,23 @@
     ],
     "semis": [
       {
-         "equipo1": "Partido  - ",
-          "equipo2": "/",
+         "equipo1": "Partido 15 - Ganador Partido 11",
+          "equipo2": "Ganador Partido 12",
           "fecha": "// : hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "Partido  - ",
-          "equipo2": "/",
+         "equipo1": "Partido 16 - Ganador Partido 13",
+          "equipo2": "Ganador Partido 14",
           "fecha": "// : hs",
           "resultado": "A definir",
         "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "Partido  - ",
-          "equipo2": "/",
+        "equipo1": "Ganador Partido 15",
+          "equipo2": "Ganador Partido 16",
           "fecha": "// : hs",
           "resultado": "A definir",
         "ganador": "A definir"
