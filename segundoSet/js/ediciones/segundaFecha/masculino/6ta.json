@@ -161,7 +161,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Quiroz Chino/Galucci Franco",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -170,7 +170,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Echeverria Martin/Larrechea Eduardo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -179,7 +179,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Barria Alexis/Gamarra Brian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -188,7 +188,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Ulloa Pablo/Ugarte Jorge",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -199,40 +199,28 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Quiroz/Galucci",
+          "equipo2": "Echeverria/Larrechea",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Barria/Gamarra",
+          "equipo2": "Ulloa/Ugarte",
+          "fecha": "Sabado 11:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Ganador 1-2",
+          "equipo2": "Perdedor 3-4",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3-4",
+          "equipo2": "Perdedor 1-2",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -289,14 +277,63 @@
           "fecha": "// : hs",
           "resultado": ","
         },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         {
+         "equipo1": "Ganador 1-2",
+          "equipo2": "Perdedor 3-4",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
+        "equipo1": "Ganador 3-4",
+          "equipo2": "Perdedor 1-2",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ","
@@ -307,11 +344,17 @@
           "fecha": "// : hs",
           "resultado": ","
         },
+         {
+         "equipo1": "Ganador 1-2",
+          "equipo2": "Perdedor 3-4",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
+        },
         {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3-4",
+          "equipo2": "Perdedor 1-2",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
         }
       ]
     }
