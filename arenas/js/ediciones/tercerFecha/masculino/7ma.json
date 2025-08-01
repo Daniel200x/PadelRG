@@ -521,86 +521,86 @@
     ],  
   "octavos": [
       {
-        "equipo1": "1ro Zona A",
+        "equipo1": "Partido 3 - Torres/Peix",
           "equipo2": "Ganador Partido 1",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "Partido 4 - 1ro Zona I",
+          "equipo2": "1ro Zona H",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 5 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 6 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-        "equipo1": "",
+        "equipo1": "Partido 7 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 8 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 9 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 10 - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "cuartos": [
       {
-         "equipo1": "",
+         "equipo1": "Partido 11 - ",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido 12 - ",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido  - ",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido  - ",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ",",
@@ -609,26 +609,26 @@
     ],
     "semis": [
       {
-         "equipo1": "",
+         "equipo1": "Partido  - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
+         "equipo1": "Partido  - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "",
+        "equipo1": "Partido  - ",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "resultado": "A definir",
+        "ganador": "A definir"
     }
   }
 }
