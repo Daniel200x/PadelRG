@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Fernandez Daniel/Gaston Martinez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Mansilla Pablo/Palarossi Daniel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Sanchez Agustin/Guillen Nicolas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -32,7 +32,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Radler Gabriel/Ruiz Tomas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -43,40 +43,28 @@
       ],
       "partidos": [
         {
-          "fecha": "// : hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": ","
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Fernandez/Martinez",
+          "equipo2": "Mansilla/Palarossi",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Sanchez/Guillen",
+          "equipo2": "Radler/Ruiz",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "A definir"
         },
         {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+            "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": "Viernes 23:45 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": "Viernes 23:45 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -84,7 +72,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Viera Ruben/Herrera Hector",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -93,7 +81,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Vargas Alejandro/Leiva Sebastian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -102,7 +90,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Cano Martin/Echachurre Gaston",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -111,7 +99,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Romero Alejandro/Minicucci David",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -122,40 +110,28 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Viera/Herrera",
+          "equipo2": "Vargas/Leiva",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Cano/Echachurre",
+          "equipo2": "Romero/Minicucci",
+          "fecha": "Sabado 10:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -212,29 +188,17 @@
           "fecha": "// : hs",
           "resultado": ","
         },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -291,29 +255,17 @@
           "fecha": "// : hs",
           "resultado": ","
         },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -370,14 +322,63 @@
           "fecha": "// : hs",
           "resultado": ","
         },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         },
         {
-        "equipo1": "",
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ","
@@ -388,17 +389,185 @@
           "fecha": "// : hs",
           "resultado": ","
         },
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        },
         {
-      "equipo1": "",
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
           "resultado": ","
+        },
+        {
+          "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ","
+        },
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        },
+        {
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        }
+      ]
+    },{
+      "nombre": "Grupo H",
+      "equipos": [
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ","
+        },
+        {
+          "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ","
+        },
+         {
+         "equipo1": "Ganador 1 y 2",
+          "equipo2": "Perdedor 3 y 4",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
+        },
+        {
+        "equipo1": "Ganador 3 y 4",
+          "equipo2": "Perdedor 1 y 2",
+          "fecha": " 23:45 hs",
+          "resultado": "A definir"
         }
       ]
     }
+
   ],
   "eliminatorias": {
     "octavos": [
+      {
+        "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
       {
         "equipo1": "",
           "equipo2": "/",
@@ -442,9 +611,30 @@
           "fecha": "// : hs",
           "resultado": ",",
         "ganador": "/"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
       }
     ],
     "semis": [
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
       {
          "equipo1": "",
           "equipo2": "/",
