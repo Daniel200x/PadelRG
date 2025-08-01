@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Floriani Agustin/Lara Pablo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Gallardo Franco/Ojeda Lucas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,16 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
+          "nombre": "Andrade Thiago/Echeverria Tomas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -43,40 +34,22 @@
       ],
       "partidos": [
         {
-          "fecha": "// : hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": ","
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Floriani/Lara",
+          "equipo2": "Gallardo/Ojeda",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Floriani/Lara",
+          "equipo2": "Andrade/Echeverria",
+          "fecha": "Sabado 13:00 hs",
+          "resultado": "A definir"
         },
         {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+            "equipo1": "Gallardo/Ojeda",
+          "equipo2": "Andrade/Echeverria",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -84,7 +57,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Andrade Popone/Gallardo Ivan",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -93,7 +66,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Escufachi Nicolas/Villarreal Jose",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -102,16 +75,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
+          "nombre": "Gonzalez Franco/Escudero Gustavo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -122,40 +86,22 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Andrade/Gallardo",
+          "equipo2": "Escufachi/Villarreal",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Escufachi/Villarreal",
+          "equipo2": "Gonzalez/Escudero",
+          "fecha": "Sabado 13:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Andrade/Gallardo",
+          "equipo2": "Gonzalez/Escudero",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -163,7 +109,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Candia Angel/Dure Pablo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -172,7 +118,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Urquiza Daniel/Andrade Pedro",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -181,16 +127,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
+          "nombre": "Ormaza Martin/Servian Joaquin",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -201,233 +138,28 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Candia/Dure",
+          "equipo2": "Urquiza/Andrade",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Urquiza/Andrade",
+          "equipo2": "Ormaza/Servian",
+          "fecha": "Sabado 14:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo D",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo E",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Candia/Dure",
+          "equipo2": "Ormaza/Servian",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir"
         }
       ]
     }
   ],
   "eliminatorias": {
-    "octavos": [
-      {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      }
-    ],
+    
     "cuartos": [
       {
          "equipo1": "",
@@ -445,6 +177,13 @@
       }
     ],
     "semis": [
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "// : hs",
+          "resultado": ",",
+        "ganador": "/"
+      },
       {
          "equipo1": "",
           "equipo2": "/",

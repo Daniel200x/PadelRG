@@ -280,13 +280,13 @@
          {
          "equipo1": "Ganador 1-2",
           "equipo2": "Perdedor 3-4",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado 15:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3-4",
           "equipo2": "Perdedor 1-2",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado 15:00 hs",
           "resultado": "A definir"
         }
       ]
@@ -295,7 +295,7 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Floriani Diego/Carrasco Cristian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -304,7 +304,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Cejas Claudio/Castro Gustavo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -313,7 +313,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Bernal Roque/Olmedo Dario",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -322,7 +322,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Figueroa Pablo/Oyarzun Roberto",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -333,27 +333,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Floriani/Carrasco",
+          "equipo2": "Cejas/Castro",
+          "fecha": "Sabado 13:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
+          "equipo1": "Bernal/Olmedo",
+          "equipo2": "Figueroa/Oyarzun",
+          "fecha": "Sabado 10:00 hs",
           "resultado": ","
         },
          {
          "equipo1": "Ganador 1-2",
           "equipo2": "Perdedor 3-4",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado 19:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3-4",
           "equipo2": "Perdedor 1-2",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado 19:00 hs",
           "resultado": "A definir"
         }
       ]
