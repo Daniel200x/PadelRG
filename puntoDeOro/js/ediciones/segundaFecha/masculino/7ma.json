@@ -503,6 +503,22 @@
     }
   ],
   "eliminatorias": {
+    "dieciseisavos": [
+      {
+         "equipo1": "Partido 1 - 2do Zona B",
+          "equipo2": "2do Zona C",
+          "fecha": "Sabado 17:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
+      },
+      {
+         "equipo1": "Partido 2 - 2do Zona D",
+          "equipo2": "2do Zona A",
+          "fecha": "Sabado 17:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
+      }
+    ], 
     "octavos": [
       {
         "equipo1": "/",

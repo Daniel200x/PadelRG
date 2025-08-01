@@ -381,6 +381,64 @@
             margin-top: 10px;
         }
 
+        /* Nuevos estilos para la separación de fases */
+.fase-title {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.fase-grupos {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(240, 248, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.fase-eliminatorias {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 240, 240, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.fase-eliminatoria {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 4px solid #e74c3c;
+}
+
+.fase-eliminatoria h5 {
+    color: #e74c3c;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.ganador-final {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .fase-grupos, 
+    .fase-eliminatorias {
+        flex: 100%;
+    }
+}
+
         /* Media Queries para Responsive */
         @media (max-width: 768px) {
             .container {
@@ -784,308 +842,377 @@
             header.style.display = 'block';
         }
 
-        // Función para renderizar la edición con género y categoría
         function renderizarEdicion(edicion, genero, categoria) {
-            const contenedor = document.getElementById('contenido-ediciones');
+    const contenedor = document.getElementById('contenido-ediciones');
+    
+    if (!genero || !categoria) {
+        contenedor.innerHTML = '<p style="text-align: center; color: #7f8c8d;">Seleccione género y categoría para ver los resultados.</p>';
+        return;
+    }
+
+    if (!edicion.categorias[genero] || !edicion.categorias[genero][categoria]) {
+        contenedor.innerHTML = '<p class="error">No hay datos disponibles para la selección actual.</p>';
+        return;
+    }
+
+    const categoriaData = edicion.categorias[genero][categoria];
+    const categoriaDiv = document.createElement("div");
+    categoriaDiv.className = "categoria";
+
+    // Contenedor principal con flexbox para separar grupos y eliminatorias
+    const mainContainer = document.createElement("div");
+    mainContainer.style.display = "flex";
+    mainContainer.style.flexWrap = "wrap";
+    mainContainer.style.gap = "30px";
+    mainContainer.style.marginBottom = "30px";
+
+    // Contenedor para los grupos (izquierda)
+    const gruposContainer = document.createElement("div");
+    gruposContainer.style.flex = "1";
+    gruposContainer.style.minWidth = "300px";
+
+    // Contenedor para las eliminatorias (derecha)
+    const eliminatoriasContainer = document.createElement("div");
+    eliminatoriasContainer.style.flex = "1";
+    eliminatoriasContainer.style.minWidth = "300px";
+
+    // Mostrar grupos
+    if (categoriaData.grupos) {
+        const gruposTitle = document.createElement("h3");
+        gruposTitle.textContent = "Fase de Grupos";
+        gruposTitle.style.color = "#2c3e50";
+        gruposTitle.style.marginBottom = "20px";
+        gruposTitle.style.borderBottom = "2px solid #3498db";
+        gruposTitle.style.paddingBottom = "10px";
+        gruposContainer.appendChild(gruposTitle);
+
+        categoriaData.grupos.forEach(grupo => {
+            const grupoDiv = document.createElement("div");
+            grupoDiv.className = "grupo";
+            grupoDiv.style.marginBottom = "30px";
+            grupoDiv.style.background = "rgba(255, 255, 255, 0.9)";
+            grupoDiv.style.padding = "15px";
+            grupoDiv.style.borderRadius = "8px";
+            grupoDiv.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+
+            const nombreGrupo = document.createElement("h5");
+            nombreGrupo.textContent = grupo.nombre;
+            nombreGrupo.style.color = "#3498db";
+            nombreGrupo.style.marginTop = "0";
+            grupoDiv.appendChild(nombreGrupo);
+
+            // Tabla de posiciones
+            const tableContainer = document.createElement("div");
+            tableContainer.className = "table-container";
             
-            if (!genero || !categoria) {
-                contenedor.innerHTML = '<p style="text-align: center; color: #7f8c8d;">Seleccione género y categoría para ver los resultados.</p>';
-                return;
-            }
+            const tabla = document.createElement("table");
+            const thead = document.createElement("thead");
+            thead.innerHTML = `
+                <tr>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>SG</th>
+                    <th>SP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>DG</th>
+                </tr>
+            `;
+            tabla.appendChild(thead);
 
-            if (!edicion.categorias[genero] || !edicion.categorias[genero][categoria]) {
-                contenedor.innerHTML = '<p class="error">No hay datos disponibles para la selección actual.</p>';
-                return;
-            }
+            const tbody = document.createElement("tbody");
+            const equiposOrdenados = grupo.equipos.sort((a, b) => {
+                if (b.PG !== a.PG) return b.PG - a.PG;
+                const dsA = a.SG - a.SP;
+                const dsB = b.SG - b.SP;
+                if (dsB !== dsA) return dsB - dsA;
+                return (b.GF - b.GC) - (a.GF - a.GC);
+            });
 
-            const categoriaData = edicion.categorias[genero][categoria];
-            const categoriaDiv = document.createElement("div");
-            categoriaDiv.className = "categoria";
+            equiposOrdenados.forEach((equipo, index) => {
+                const fila = document.createElement("tr");
+                if (index === 0) fila.style.backgroundColor = '#e8f4fc';
+                
+                fila.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td><strong>${equipo.nombre}</strong></td>
+                    <td>${equipo.PJ}</td>
+                    <td>${equipo.PG}</td>
+                    <td>${equipo.SG}</td>
+                    <td>${equipo.SP}</td>
+                    <td>${equipo.GF}</td>
+                    <td>${equipo.GC}</td>
+                    <td>${equipo.GF - equipo.GC}</td>
+                `;
+                tbody.appendChild(fila);
+            });
+            tabla.appendChild(tbody);
+            tableContainer.appendChild(tabla);
+            grupoDiv.appendChild(tableContainer);
 
-            // Mostrar grupos
-            if (categoriaData.grupos) {
-                categoriaData.grupos.forEach(grupo => {
-                    const grupoDiv = document.createElement("div");
-                    grupoDiv.className = "grupo";
+            // Partidos del grupo
+            if (grupo.partidos && grupo.partidos.length > 0) {
+                const partidosDiv = document.createElement("div");
+                partidosDiv.className = "partidos-grupo";
+                partidosDiv.style.marginTop = "15px";
 
-                    const nombreGrupo = document.createElement("h5");
-                    nombreGrupo.textContent = grupo.nombre;
-                    grupoDiv.appendChild(nombreGrupo);
+                const tituloPartidos = document.createElement("h6");
+                tituloPartidos.textContent = "Partidos del Grupo";
+                tituloPartidos.style.color = "#3498db";
+                tituloPartidos.style.marginBottom = "10px";
+                partidosDiv.appendChild(tituloPartidos);
 
-                    // Crear tabla de posiciones con el nuevo contenedor
-                    const tableContainer = document.createElement("div");
-                    tableContainer.className = "table-container";
-                    
-                    const tabla = document.createElement("table");
-                    const thead = document.createElement("thead");
-                    thead.innerHTML = `
-                        <tr>
-                            <th>Pos</th>
-                            <th>Equipo</th>
-                            <th>PJ</th>
-                            <th>PG</th>
-                            <th>SG</th>
-                            <th>SP</th>
-                            <th>GF</th>
-                            <th>GC</th>
-                            <th>DG</th>
-                        </tr>
-                    `;
-                    tabla.appendChild(thead);
-
-                    const tbody = document.createElement("tbody");
-                    const equiposOrdenados = grupo.equipos.sort((a, b) => {
-                        if (b.PG !== a.PG) return b.PG - a.PG;
-                        const dsA = a.SG - a.SP;
-                        const dsB = b.SG - b.SP;
-                        if (dsB !== dsA) return dsB - dsA;
-                        return (b.GF - b.GC) - (a.GF - a.GC);
-                    });
-
-                    equiposOrdenados.forEach((equipo, index) => {
-                        const fila = document.createElement("tr");
-                        if (index === 0) fila.style.backgroundColor = '#e8f4fc';
-                        
-                        fila.innerHTML = `
-                            <td>${index + 1}</td>
-                            <td><strong>${equipo.nombre}</strong></td>
-                            <td>${equipo.PJ}</td>
-                            <td>${equipo.PG}</td>
-                            <td>${equipo.SG}</td>
-                            <td>${equipo.SP}</td>
-                            <td>${equipo.GF}</td>
-                            <td>${equipo.GC}</td>
-                            <td>${equipo.GF - equipo.GC}</td>
-                        `;
-                        tbody.appendChild(fila);
-                    });
-                    tabla.appendChild(tbody);
-                    tableContainer.appendChild(tabla);
-                    grupoDiv.appendChild(tableContainer);
-
-                    // Mostrar partidos del grupo
-                    if (grupo.partidos && grupo.partidos.length > 0) {
-                        const partidosDiv = document.createElement("div");
-                        partidosDiv.className = "partidos-grupo";
-
-                        const tituloPartidos = document.createElement("h6");
-                        tituloPartidos.textContent = "Partidos del Grupo";
-                        partidosDiv.appendChild(tituloPartidos);
-
-                        grupo.partidos.forEach(p => {
-                            const partidoDiv = document.createElement("div");
-                            partidoDiv.className = "partido-grupo";
-
-                            const equipos = document.createElement("div");
-                            equipos.className = "equipos-partido";
-                            equipos.innerHTML = `
-                                <div>${p.equipo1} vs ${p.equipo2}</div>
-                                ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-                            `;
-
-                            const resultado = document.createElement("div");
-                            resultado.className = "resultado-partido";
-                            resultado.textContent = p.resultado;
-
-                            partidoDiv.appendChild(equipos);
-                            partidoDiv.appendChild(resultado);
-                            partidosDiv.appendChild(partidoDiv);
-                        });
-
-                        grupoDiv.appendChild(partidosDiv);
-                    }
-
-                    categoriaDiv.appendChild(grupoDiv);
-                });
-            }
-
-            // Mostrar eliminatorias si existen
-            if (categoriaData.eliminatorias) {
-                const eliminatoriasDiv = document.createElement("div");
-                eliminatoriasDiv.className = "eliminatorias";
-
-                const tituloEliminatorias = document.createElement("h4");
-                tituloEliminatorias.textContent = "Fase Eliminatoria";
-                eliminatoriasDiv.appendChild(tituloEliminatorias);
-
-                // Octavos de final
-                if (categoriaData.eliminatorias.dieciseisavos && categoriaData.eliminatorias.dieciseisavos.length > 0) {
-                    const faseDiv = document.createElement("div");
-                    faseDiv.className = "fase-eliminatoria";
-
-                    const tituloFase = document.createElement("h5");
-                    tituloFase.textContent = "Dieciseisavos de Final";
-                    faseDiv.appendChild(tituloFase);
-
-                    categoriaData.eliminatorias.dieciseisavos.forEach(p => {
-                        const partidoDiv = document.createElement("div");
-                        partidoDiv.className = "partido-grupo";
-
-                        const equipos = document.createElement("div");
-                        equipos.className = "equipos-partido";
-                        equipos.innerHTML = `
-                            <div>${p.equipo1} vs ${p.equipo2}</div>
-                            ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-                        `;
-
-                        const resultado = document.createElement("div");
-                        resultado.className = "resultado-partido";
-                        resultado.textContent = p.resultado;
-
-                        partidoDiv.appendChild(equipos);
-                        partidoDiv.appendChild(resultado);
-                        faseDiv.appendChild(partidoDiv);
-                    });
-
-                    eliminatoriasDiv.appendChild(faseDiv);
-                }
-                // Octavos de final
-                if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
-                    const faseDiv = document.createElement("div");
-                    faseDiv.className = "fase-eliminatoria";
-
-                    const tituloFase = document.createElement("h5");
-                    tituloFase.textContent = "Octavos de Final";
-                    faseDiv.appendChild(tituloFase);
-
-                    categoriaData.eliminatorias.octavos.forEach(p => {
-                        const partidoDiv = document.createElement("div");
-                        partidoDiv.className = "partido-grupo";
-
-                        const equipos = document.createElement("div");
-                        equipos.className = "equipos-partido";
-                        equipos.innerHTML = `
-                            <div>${p.equipo1} vs ${p.equipo2}</div>
-                            ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-                        `;
-
-                        const resultado = document.createElement("div");
-                        resultado.className = "resultado-partido";
-                        resultado.textContent = p.resultado;
-
-                        partidoDiv.appendChild(equipos);
-                        partidoDiv.appendChild(resultado);
-                        faseDiv.appendChild(partidoDiv);
-                    });
-
-                    eliminatoriasDiv.appendChild(faseDiv);
-                }
-
-                // Cuartos de final
-                if (categoriaData.eliminatorias.cuartos && categoriaData.eliminatorias.cuartos.length > 0) {
-                    const faseDiv = document.createElement("div");
-                    faseDiv.className = "fase-eliminatoria";
-
-                    const tituloFase = document.createElement("h5");
-                    tituloFase.textContent = "Cuartos de Final";
-                    faseDiv.appendChild(tituloFase);
-
-                    categoriaData.eliminatorias.cuartos.forEach(p => {
-                        const partidoDiv = document.createElement("div");
-                        partidoDiv.className = "partido-grupo";
-
-                        const equipos = document.createElement("div");
-                        equipos.className = "equipos-partido";
-                        equipos.innerHTML = `
-                            <div>${p.equipo1} vs ${p.equipo2}</div>
-                            ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-                        `;
-
-                        const resultado = document.createElement("div");
-                        resultado.className = "resultado-partido";
-                        resultado.textContent = p.resultado;
-
-                        partidoDiv.appendChild(equipos);
-                        partidoDiv.appendChild(resultado);
-                        faseDiv.appendChild(partidoDiv);
-                    });
-
-                    eliminatoriasDiv.appendChild(faseDiv);
-                }
-
-                // Semifinales
-                if (categoriaData.eliminatorias.semis && categoriaData.eliminatorias.semis.length > 0) {
-                    const faseDiv = document.createElement("div");
-                    faseDiv.className = "fase-eliminatoria";
-
-                    const tituloFase = document.createElement("h5");
-                    tituloFase.textContent = "Semifinales";
-                    faseDiv.appendChild(tituloFase);
-
-                    categoriaData.eliminatorias.semis.forEach(p => {
-                        const partidoDiv = document.createElement("div");
-                        partidoDiv.className = "partido-grupo";
-
-                        const equipos = document.createElement("div");
-                        equipos.className = "equipos-partido";
-                        equipos.innerHTML = `
-                            <div>${p.equipo1} vs ${p.equipo2}</div>
-                            ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-                        `;
-
-                        const resultado = document.createElement("div");
-                        resultado.className = "resultado-partido";
-                        resultado.textContent = p.resultado;
-
-                        partidoDiv.appendChild(equipos);
-                        partidoDiv.appendChild(resultado);
-                        faseDiv.appendChild(partidoDiv);
-                    });
-
-                    eliminatoriasDiv.appendChild(faseDiv);
-                }
-
-                // Final
-                if (categoriaData.eliminatorias.final) {
-                    const faseDiv = document.createElement("div");
-                    faseDiv.className = "fase-eliminatoria final";
-
-                    const tituloFase = document.createElement("h5");
-                    tituloFase.textContent = "Final";
-                    faseDiv.appendChild(tituloFase);
-
-                    const final = categoriaData.eliminatorias.final;
+                grupo.partidos.forEach(p => {
                     const partidoDiv = document.createElement("div");
                     partidoDiv.className = "partido-grupo";
 
                     const equipos = document.createElement("div");
                     equipos.className = "equipos-partido";
                     equipos.innerHTML = `
-                        <div><strong>${final.equipo1}</strong> vs <strong>${final.equipo2}</strong></div>
-                        ${final.fecha ? `<div class="fecha-partido">${final.fecha}</div>` : ''}
+                        <div>${p.equipo1} vs ${p.equipo2}</div>
+                        ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
                     `;
 
                     const resultado = document.createElement("div");
                     resultado.className = "resultado-partido";
-                    resultado.textContent = final.resultado;
-                    resultado.style.fontSize = "1.1em";
-                    resultado.style.backgroundColor = "#3498db";
-                    resultado.style.color = "white";
+                    resultado.textContent = p.resultado;
 
                     partidoDiv.appendChild(equipos);
                     partidoDiv.appendChild(resultado);
-                    faseDiv.appendChild(partidoDiv);
+                    partidosDiv.appendChild(partidoDiv);
+                });
 
-                    // Mostrar ganador
-                    if (final.ganador) {
-                        const ganadorDiv = document.createElement("div");
-                        ganadorDiv.className = "ganador-final";
-                        ganadorDiv.innerHTML = `
-                            <p><strong>Campeones:</strong> ${final.ganador}</p>
-                        `;
-                        faseDiv.appendChild(ganadorDiv);
-                    }
-
-                    eliminatoriasDiv.appendChild(faseDiv);
-                }
-
-                 categoriaDiv.appendChild(eliminatoriasDiv);
+                grupoDiv.appendChild(partidosDiv);
             }
 
-            contenedor.innerHTML = '';
-            contenedor.appendChild(categoriaDiv);
+            gruposContainer.appendChild(grupoDiv);
+        });
+    }
+
+   // Mostrar eliminatorias si existen
+    if (categoriaData.eliminatorias) {
+        const eliminatoriasTitle = document.createElement("h3");
+        eliminatoriasTitle.textContent = "Fase Eliminatoria";
+        eliminatoriasTitle.style.color = "#2c3e50";
+        eliminatoriasTitle.style.marginBottom = "20px";
+        eliminatoriasTitle.style.borderBottom = "2px solid #e74c3c";
+        eliminatoriasTitle.style.paddingBottom = "10px";
+        eliminatoriasContainer.appendChild(eliminatoriasTitle);
+
+        // Dieciseisavos de final (NUEVA SECCIÓN)
+        if (categoriaData.eliminatorias.dieciseisavos && categoriaData.eliminatorias.dieciseisavos.length > 0) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Dieciseisavos de Final";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            categoriaData.eliminatorias.dieciseisavos.forEach(p => {
+                const partidoDiv = document.createElement("div");
+                partidoDiv.className = "partido-grupo";
+
+                const equipos = document.createElement("div");
+                equipos.className = "equipos-partido";
+                equipos.innerHTML = `
+                    <div>${p.equipo1} vs ${p.equipo2}</div>
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                `;
+
+                const resultado = document.createElement("div");
+                resultado.className = "resultado-partido";
+                resultado.textContent = p.resultado;
+                resultado.style.background = "#e74c3c";
+                resultado.style.color = "white";
+
+                partidoDiv.appendChild(equipos);
+                partidoDiv.appendChild(resultado);
+                faseDiv.appendChild(partidoDiv);
+            });
+
+            eliminatoriasContainer.appendChild(faseDiv);
         }
 
+        // Octavos de final
+        if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Octavos de Final";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            categoriaData.eliminatorias.octavos.forEach(p => {
+                const partidoDiv = document.createElement("div");
+                partidoDiv.className = "partido-grupo";
+
+                const equipos = document.createElement("div");
+                equipos.className = "equipos-partido";
+                equipos.innerHTML = `
+                    <div>${p.equipo1} vs ${p.equipo2}</div>
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                `;
+
+                const resultado = document.createElement("div");
+                resultado.className = "resultado-partido";
+                resultado.textContent = p.resultado;
+                resultado.style.background = "#e74c3c";
+                resultado.style.color = "white";
+
+                partidoDiv.appendChild(equipos);
+                partidoDiv.appendChild(resultado);
+                faseDiv.appendChild(partidoDiv);
+            });
+
+            eliminatoriasContainer.appendChild(faseDiv);
+        }
+
+        // Cuartos de final
+        if (categoriaData.eliminatorias.cuartos && categoriaData.eliminatorias.cuartos.length > 0) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Cuartos de Final";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            categoriaData.eliminatorias.cuartos.forEach(p => {
+                const partidoDiv = document.createElement("div");
+                partidoDiv.className = "partido-grupo";
+
+                const equipos = document.createElement("div");
+                equipos.className = "equipos-partido";
+                equipos.innerHTML = `
+                    <div>${p.equipo1} vs ${p.equipo2}</div>
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                `;
+
+                const resultado = document.createElement("div");
+                resultado.className = "resultado-partido";
+                resultado.textContent = p.resultado;
+                resultado.style.background = "#e74c3c";
+                resultado.style.color = "white";
+
+                partidoDiv.appendChild(equipos);
+                partidoDiv.appendChild(resultado);
+                faseDiv.appendChild(partidoDiv);
+            });
+
+            eliminatoriasContainer.appendChild(faseDiv);
+        }
+
+        // Semifinales
+        if (categoriaData.eliminatorias.semis && categoriaData.eliminatorias.semis.length > 0) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Semifinales";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            categoriaData.eliminatorias.semis.forEach(p => {
+                const partidoDiv = document.createElement("div");
+                partidoDiv.className = "partido-grupo";
+
+                const equipos = document.createElement("div");
+                equipos.className = "equipos-partido";
+                equipos.innerHTML = `
+                    <div>${p.equipo1} vs ${p.equipo2}</div>
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                `;
+
+                const resultado = document.createElement("div");
+                resultado.className = "resultado-partido";
+                resultado.textContent = p.resultado;
+                resultado.style.background = "#e74c3c";
+                resultado.style.color = "white";
+
+                partidoDiv.appendChild(equipos);
+                partidoDiv.appendChild(resultado);
+                faseDiv.appendChild(partidoDiv);
+            });
+
+            eliminatoriasContainer.appendChild(faseDiv);
+        }
+
+        // Final
+        if (categoriaData.eliminatorias.final) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria final";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Final";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            const final = categoriaData.eliminatorias.final;
+            const partidoDiv = document.createElement("div");
+            partidoDiv.className = "partido-grupo";
+
+            const equipos = document.createElement("div");
+            equipos.className = "equipos-partido";
+            equipos.innerHTML = `
+                <div><strong>${final.equipo1}</strong> vs <strong>${final.equipo2}</strong></div>
+                ${final.fecha ? `<div class="fecha-partido">${final.fecha}</div>` : ''}
+            `;
+
+            const resultado = document.createElement("div");
+            resultado.className = "resultado-partido";
+            resultado.textContent = final.resultado;
+            resultado.style.fontSize = "1.1em";
+            resultado.style.background = "#e74c3c";
+            resultado.style.color = "white";
+
+            partidoDiv.appendChild(equipos);
+            partidoDiv.appendChild(resultado);
+            faseDiv.appendChild(partidoDiv);
+
+            // Mostrar ganador
+            if (final.ganador) {
+                const ganadorDiv = document.createElement("div");
+                ganadorDiv.className = "ganador-final";
+                ganadorDiv.style.marginTop = "15px";
+                ganadorDiv.style.padding = "10px";
+                ganadorDiv.style.background = "#e74c3c";
+                ganadorDiv.style.color = "white";
+                ganadorDiv.style.borderRadius = "5px";
+                ganadorDiv.style.textAlign = "center";
+                ganadorDiv.style.fontWeight = "bold";
+                ganadorDiv.innerHTML = `
+                    <p>🏆 <strong>Campeones:</strong> ${final.ganador} 🏆</p>
+                `;
+                faseDiv.appendChild(ganadorDiv);
+            }
+
+            eliminatoriasContainer.appendChild(faseDiv);
+        }
+    }
+
+    // Agregar los contenedores al main container
+    mainContainer.appendChild(gruposContainer);
+    mainContainer.appendChild(eliminatoriasContainer);
+    
+    // Limpiar y agregar el contenido
+    contenedor.innerHTML = '';
+    categoriaDiv.appendChild(mainContainer);
+    contenedor.appendChild(categoriaDiv);
+}
         // Actualizar año del copyright
         document.getElementById('current-year').textContent = new Date().getFullYear();
 

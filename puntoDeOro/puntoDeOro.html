@@ -897,14 +897,51 @@
                 });
             }
 
-            // Mostrar eliminatorias si existen
             if (categoriaData.eliminatorias) {
-                const eliminatoriasDiv = document.createElement("div");
-                eliminatoriasDiv.className = "eliminatorias";
+        const eliminatoriasTitle = document.createElement("h3");
+        eliminatoriasTitle.textContent = "Fase Eliminatoria";
+        eliminatoriasTitle.style.color = "#2c3e50";
+        eliminatoriasTitle.style.marginBottom = "20px";
+        eliminatoriasTitle.style.borderBottom = "2px solid #e74c3c";
+        eliminatoriasTitle.style.paddingBottom = "10px";
+        eliminatoriasContainer.appendChild(eliminatoriasTitle);
 
-                const tituloEliminatorias = document.createElement("h4");
-                tituloEliminatorias.textContent = "Fase Eliminatoria";
-                eliminatoriasDiv.appendChild(tituloEliminatorias);
+        // Dieciseisavos de final (NUEVA SECCIÓN)
+        if (categoriaData.eliminatorias.dieciseisavos && categoriaData.eliminatorias.dieciseisavos.length > 0) {
+            const faseDiv = document.createElement("div");
+            faseDiv.className = "fase-eliminatoria";
+            faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
+            faseDiv.style.borderLeft = "4px solid #e74c3c";
+
+            const tituloFase = document.createElement("h5");
+            tituloFase.textContent = "Dieciseisavos de Final";
+            tituloFase.style.color = "#e74c3c";
+            faseDiv.appendChild(tituloFase);
+
+            categoriaData.eliminatorias.dieciseisavos.forEach(p => {
+                const partidoDiv = document.createElement("div");
+                partidoDiv.className = "partido-grupo";
+
+                const equipos = document.createElement("div");
+                equipos.className = "equipos-partido";
+                equipos.innerHTML = `
+                    <div>${p.equipo1} vs ${p.equipo2}</div>
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                `;
+
+                const resultado = document.createElement("div");
+                resultado.className = "resultado-partido";
+                resultado.textContent = p.resultado;
+                resultado.style.background = "#e74c3c";
+                resultado.style.color = "white";
+
+                partidoDiv.appendChild(equipos);
+                partidoDiv.appendChild(resultado);
+                faseDiv.appendChild(partidoDiv);
+            });
+
+            eliminatoriasContainer.appendChild(faseDiv);
+        }
 
                 // Octavos de final
                 if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
