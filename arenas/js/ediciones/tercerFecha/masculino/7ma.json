@@ -521,11 +521,11 @@
     ],  
   "octavos": [
       {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+        "equipo1": "1ro Zona A",
+          "equipo2": "Ganador Partido 1",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
          "equipo1": "",
