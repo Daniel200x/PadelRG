@@ -909,6 +909,37 @@
                 eliminatoriasDiv.appendChild(tituloEliminatorias);
 
                 // Octavos de final
+                if (categoriaData.eliminatorias.dieciseisavos && categoriaData.eliminatorias.dieciseisavos.length > 0) {
+                    const faseDiv = document.createElement("div");
+                    faseDiv.className = "fase-eliminatoria";
+
+                    const tituloFase = document.createElement("h5");
+                    tituloFase.textContent = "Dieciseisavos de Final";
+                    faseDiv.appendChild(tituloFase);
+
+                    categoriaData.eliminatorias.dieciseisavos.forEach(p => {
+                        const partidoDiv = document.createElement("div");
+                        partidoDiv.className = "partido-grupo";
+
+                        const equipos = document.createElement("div");
+                        equipos.className = "equipos-partido";
+                        equipos.innerHTML = `
+                            <div>${p.equipo1} vs ${p.equipo2}</div>
+                            ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                        `;
+
+                        const resultado = document.createElement("div");
+                        resultado.className = "resultado-partido";
+                        resultado.textContent = p.resultado;
+
+                        partidoDiv.appendChild(equipos);
+                        partidoDiv.appendChild(resultado);
+                        faseDiv.appendChild(partidoDiv);
+                    });
+
+                    eliminatoriasDiv.appendChild(faseDiv);
+                }
+                // Octavos de final
                 if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
                     const faseDiv = document.createElement("div");
                     faseDiv.className = "fase-eliminatoria";
