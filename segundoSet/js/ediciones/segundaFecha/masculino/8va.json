@@ -407,7 +407,7 @@
       "nombre": "Grupo G",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Crespo Juan/Pedraza Ruben",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -416,7 +416,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Wasinger Fernando/Graneros Adriel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -425,7 +425,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Gomez Matias/Gomez Carlos",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -434,7 +434,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Faletti Ariel/Faletti Felipe",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -445,27 +445,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Crespo/Pedraza",
+          "equipo2": "Wasinger/Graneros",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Gomez/Gomez",
+          "equipo2": "Faletti/Faletti",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 10:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 10:00 hs",
           "resultado": "A definir"
         }
       ]
@@ -473,7 +473,7 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Marquez Franco/Garcia Ricardo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -482,7 +482,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Trani Claudio/Guzman Antonio",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -491,7 +491,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Alcantara Julian/Barrios Leo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -500,7 +500,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Lobercha Matias/A confirmar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -511,27 +511,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Marquez/Garcia",
+          "equipo2": "Trani/Guzman",
+          "fecha": "Viernes 18:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Alcantara/Barrios",
+          "equipo2": "Lobercha/A confirmar",
+          "fecha": "Viernes 20:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "A definir"
         }
       ]
@@ -541,60 +541,60 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+        "equipo1": "P1- 1 A",
+          "equipo2": "2 B",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P2- 1 E ",
+          "equipo2": " 2 F ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P3- 1 C",
+          "equipo2": "2 D",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P4- 1 G ",
+          "equipo2": " 2 H ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+        "equipo1": "P5- 1 B ",
+          "equipo2": " 2 A ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P6- 1 F ",
+          "equipo2": " 2 E ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P7- 1 D ",
+          "equipo2": " 2 C ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P8- 1 H ",
+          "equipo2": " 2 G ",
+          "fecha": "Sabado ",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "cuartos": [
