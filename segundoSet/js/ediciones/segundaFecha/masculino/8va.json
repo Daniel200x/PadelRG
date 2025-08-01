@@ -139,7 +139,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Ortiz Cristian/Muñiz Walter",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -148,7 +148,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Del Prade Martin/Llancafiel Oscar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -157,7 +157,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Gonzalez Raul/Llanes Marcelo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -166,7 +166,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Seidel Nicolas/Seidel Leo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -177,27 +177,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Ortiz/Muñiz",
+          "equipo2": "Del Prade/Llancafiel",
+          "fecha": "Viernes 20:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Gonzalez/Llanes",
+          "equipo2": "Seidel/Seidel",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "A definir"
         },
          {
          "equipo1": "Ganador 1 y 2",
           "equipo2": "Perdedor 3 y 4",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 16:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
           "equipo2": "Perdedor 1 y 2",
-          "fecha": " 23:45 hs",
+          "fecha": "Sabado 16:00 hs",
           "resultado": "A definir"
         }
       ]
