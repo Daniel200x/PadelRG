@@ -112,21 +112,21 @@
       "equipos": [
         {
           "nombre": "Oriana Martinez/Dana Martinez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 4
         },
         {
           "nombre": "Viviana Nehue/Macarena Oyarzun",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 4,
+          "GC": 12
         },
         {
           "nombre": "Pamela Lirola/Vanina Britos",
@@ -143,7 +143,7 @@
           "equipo1": "Martinez/Martinez",
           "equipo2": "Nehue/Oyarzun",
           "fecha": "31/07/25 17:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-2, 6-2"
         },
         {
           "equipo1": "Lirola/Britos",
