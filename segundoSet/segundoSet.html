@@ -1057,6 +1057,19 @@
         // Actualizar año del copyright
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
+
+// Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // Seleccionar automáticamente la tercera fecha
+        seleccionarFecha('segundaFecha');
+        
+        // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
+        setTimeout(() => {
+            seleccionarGenero('masculino');
+            seleccionarCategoria('8va');
+        }, 100);
+    });
+
         // Activar el primer botón de fecha por defecto (opcional)
         // document.querySelector('#fecha-buttons .selector-button').click();
     </script>
