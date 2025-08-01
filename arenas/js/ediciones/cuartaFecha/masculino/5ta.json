@@ -181,7 +181,7 @@
           "GC": 16
         },
         {
-          "nombre": "Fabian Suarez/Martinez",
+          "nombre": "Fabian Suarez/A definir",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
@@ -205,7 +205,7 @@
         },
         {
           "equipo1": "Andrade/Gonzalez",
-          "equipo2": "Suarez/Martinez",
+          "equipo2": "Suarez/A definir",
           "fecha": "1/08/25 21:00 hs",
           "resultado": "A confirmar"
         }
@@ -299,7 +299,7 @@
     ],
     "cuartos": [
       {
-         "equipo1": "Partido 3 - Martinez-Pacheco",
+         "equipo1": "Partido 3 - 1ro Zona A",
           "equipo2": "Ganador Partido 1",
           "fecha": "Domingo 14:00 hs",
           "resultado": "A definir",

@@ -1,0 +1,274 @@
+{
+  "nombre": "7ma Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Lorena Saldivia/Salas",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 0,
+          "GF": 12,
+          "GC": 6
+        },
+        {
+          "nombre": "Karina Girollet/Camila Vargas",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Emilia Velazco/Vanesa Vera",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 6,
+          "GC": 12
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "29/07/25 23:00 hs",
+          "equipo1": "Saldivia/Salas",
+          "equipo2": "Velazco/Vera",
+          "resultado": "6-4, 6-2"
+        },
+        {
+          "equipo1": "Saldivia/Salas",
+          "equipo2": "Girollet/Vargas",
+          "fecha": "01/08/25 20:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Velazco/Vera",
+          "equipo2": "Girollet/Vargas",
+          "fecha": "02/08/25 13:00 hs",
+          "resultado": "A confirmar"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Belen Rojas/Romina Lanaro",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Laura Gomez/Carolina Nieto",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 7,
+          "GC": 13
+        },
+        {
+          "nombre": "Maricel Rausch/Micaela Arias",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 0,
+          "GF": 13,
+          "GC": 7
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "Gomez/Nieto",
+          "equipo2": "Rausch/Arias",
+          "fecha": "30/07/25 22:30 hs",
+          "resultado": "1-6, 6-7"
+        },
+        {
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Rausch/Arias",
+          "fecha": "01/08/25 22:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Gomez/Nieto",
+          "fecha": "02/08/25 15:00 hs",
+          "resultado": "A confirmar"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Oriana Martinez/Dana Martinez",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Viviana Nehue/Macarena Oyarzun",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Pamela Lirola/Vanina Britos",
+         "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "Martinez/Martinez",
+          "equipo2": "Nehue/Oyarzun",
+          "fecha": "31/07/25 17:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Lirola/Britos",
+          "equipo2": "Nehue/Oyarzun",
+          "fecha": "01/08/25 19:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Lirola/Britos",
+          "equipo2": "Martinez/Martinez",
+          "fecha": "02/08/25 14:00 hs",
+          "resultado": "A confirmar"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Jimena Ramadori/Violeta Lopez ",
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 0,
+          "GF": 12,
+          "GC": 3
+        },
+        {
+          "nombre": "Ines Herrera/Belen Bordon ",
+          "PJ": 1,
+          "PG": 0,
+          "SG": 0,
+          "SP": 2,
+          "GF": 3,
+          "GC": 12
+        },
+        {
+          "nombre": "Victoria Visñuk/Giuliana Aravena",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "Ramadori/Lopez",
+          "equipo2": "Herrera/Bordon",
+          "fecha": "29/07/25 18:00 hs",
+          "resultado": "6-2, 6-3"
+        },
+        {
+          "equipo1": "Ramadori/Lopez",
+          "equipo2": "Visñuk/Aravena",
+          "fecha": "01/08/25 21:30 hs",
+          "resultado": "A confirmar"
+        },
+        {
+          "equipo1": "Herrera/Bordon",
+          "equipo2": "Visñuk/Aravena",
+          "fecha": "02/08/25 11:00 hs",
+          "resultado": "A confirmar"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "final": {
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "30/07/25 19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
+  }
+}
+
+
+
