@@ -127,17 +127,24 @@
       {
          "equipo1": "",
           "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "fecha": "Domingo : hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
+      },
+      {
+         "equipo1": "",
+          "equipo2": "/",
+          "fecha": "Domingo : hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "final": {
         "equipo1": "",
           "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "fecha": "Domingo : hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
     }
   }
 }

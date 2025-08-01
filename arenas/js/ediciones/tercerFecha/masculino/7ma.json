@@ -6,12 +6,12 @@
       "equipos": [
         {
           "nombre": "Nahuel Velazquez/Blas Sánchez",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 1,
-          "SP": 2,
-          "GF": 18,
-          "GC": 20
+          "PJ": 2,
+          "PG": 1,
+          "SG": 3,
+          "SP": 3,
+          "GF": 37,
+          "GC": 37
         },
         {
           "nombre": "Sebastian Torres/Ruben Peix",
@@ -24,12 +24,12 @@
         },
         {
           "nombre": "Gonzalo Aguirre/Lucena",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 1,
-          "GC": 12
+          "SG": 1,
+          "SP": 4,
+          "GF": 18,
+          "GC": 31
         }
         
       ],
@@ -50,7 +50,7 @@
           "equipo1": "Aguirre/Lucena",
           "equipo2": "Velazquez/Sanchez",
           "fecha": "31/07/25 18:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "4-6, 7-6, 6-7"
         }
         
       ]
@@ -60,12 +60,12 @@
       "equipos": [
         {
           "nombre": "Ramiro Bordon/Francisco Bordon",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
           "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 5
+          "SP": 2,
+          "GF": 19,
+          "GC": 17
         },
         {
           "nombre": "Martin Guaragna/Federico Aliaga",
@@ -78,12 +78,12 @@
         },
         {
           "nombre": "Cristian Ventura/Carlos Barrionuevo",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 7
         }
       ],
       "partidos": [
@@ -97,7 +97,7 @@
           "equipo1": "Bordon/Bordon",
           "equipo2": "Ventura/Barrionuevo",
           "fecha": "31/07/25 18:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "3-6, 4-6"
         },
         {
           "equipo1": "Ventura/Barrionuevo",
@@ -112,21 +112,21 @@
       "equipos": [
         {
           "nombre": "Benjamin Martinez/Lara",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "Leonardo Cardozo/Mauro Olivera",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 3
+          "SP": 1,
+          "GF": 18,
+          "GC": 16
+        },
+        {
+          "nombre": "Leonardo Cardozo/Mauro Olivera",
+          "PJ": 2,
+          "PG": 1,
+          "SG": 3,
+          "SP": 2,
+          "GF": 28,
+          "GC": 21
         },
         {
           "nombre": "Exequiel Cuellar/Javier Arrieta",
@@ -149,7 +149,7 @@
           "equipo1": "Cardozo/Olivera",
           "equipo2": "Martinez/Lara",
           "fecha": "31/07/25 20:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "7-5, 3-6, 6-7"
         },
         {
           "equipo1": "Cuellar/Arrieta",
@@ -216,21 +216,21 @@
       "equipos": [
         {
           "nombre": "Lucas Vera/J. M. Gimenez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 3
         },
         {
           "nombre": "Martin Spamer/Pablo Fiorotto",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
           "SG": 0,
-          "SP": 2,
-          "GF": 5,
-          "GC": 12
+          "SP": 4,
+          "GF": 8,
+          "GC": 24
         },
         {
           "nombre": "Luis Ruiz/Zurita",
@@ -253,7 +253,7 @@
           "equipo1": "Vera/Gimenez",
           "equipo2": "Spammer/Fiorotto",
           "fecha": "31/07/25 19:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-2, 6-1"
         },
         {
           "equipo1": "Vera/Gimenez",
@@ -320,12 +320,12 @@
       "equipos": [
         {
           "nombre": "Sebastian Rubio/Gustavo Santana",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 9
         },
         {
           "nombre": "Gustavo Vera/Walter Carrizo",
@@ -338,12 +338,12 @@
         },
         {
           "nombre": "Marcos Allende/Nahuel Castro",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 3,
-          "GC": 12
+          "SP": 4,
+          "GF": 12,
+          "GC": 25
         }
       ],
       "partidos": [
@@ -357,7 +357,7 @@
           "equipo1": "Rubio/Santana",
           "equipo2": "Allende/Castro",
           "fecha": "31/07/25 20:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-3, 7-6"
         },
         {
           "equipo1": "Vera/Carrizo",
@@ -513,7 +513,7 @@
       },
       {
          "equipo1": "Partido 2 - 2do Zona D",
-          "equipo2": "2do Zona A",
+          "equipo2": "Velazquez/Sanchez",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
