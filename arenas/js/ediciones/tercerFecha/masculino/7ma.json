@@ -581,44 +581,44 @@
       {
          "equipo1": "Partido 11 - Ganador Partido 3",
           "equipo2": "Ganador Partido 4",
-          "fecha": "// : hs",
-          "resultado": ",",
+          "fecha": "Domingo 10:00 hs",
+          "resultado": "A definir",
         "ganador": "/"
       },
       {
          "equipo1": "Partido 12 - Ganador Partido 5",
           "equipo2": "Ganador Partido 6",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "fecha": "Domingo 10:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
          "equipo1": "Partido 13 - Ganador Partido 7",
           "equipo2": "Ganador Partido 8",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "fecha": "Domingo 11:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
          "equipo1": "Partido 14 - Ganador Partido 9",
           "equipo2": "Ganador Partido 10",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+          "fecha": "Domingo 11:00 hs",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "semis": [
       {
          "equipo1": "Partido 15 - Ganador Partido 11",
           "equipo2": "Ganador Partido 12",
-          "fecha": "// : hs",
+          "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
          "equipo1": "Partido 16 - Ganador Partido 13",
           "equipo2": "Ganador Partido 14",
-          "fecha": "// : hs",
+          "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       }
@@ -626,7 +626,7 @@
     "final": {
         "equipo1": "Ganador Partido 15",
           "equipo2": "Ganador Partido 16",
-          "fecha": "// : hs",
+          "fecha": "Domingo 20:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
     }
