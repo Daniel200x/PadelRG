@@ -581,6 +581,49 @@
                 max-height: 60px;
             }
         }
+        /* Selector para móviles */
+.mobile-view-selector {
+    display: none;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Mostrar solo en móviles */
+@media (max-width: 768px) {
+    .mobile-view-selector {
+        display: block;
+    }
+    
+    /* Ocultar secciones no activas */
+    .grupos-container:not(.active),
+    .eliminatorias-container:not(.active) {
+        display: none !important;
+    }
+}
+
+/* Estilos para las secciones */
+.grupos-container, 
+.eliminatorias-container {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    /* ... (otros estilos existentes) ... */
+    
+    /* Ajustar el main container en móviles */
+    .main-eliminatorias-container {
+        flex-direction: column;
+    }
+    
+    .grupos-container, 
+    .eliminatorias-container {
+        width: 100%;
+        min-width: 100%;
+    }
+}
     </style>
 </head>
 <body>
@@ -626,10 +669,17 @@
                 </div>
             </div>
         </div>
-
-        <div id="contenido-ediciones">
-            <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+  <!-- Selector móvil (oculto en desktop) -->
+    <div id="mobile-view-selector" class="mobile-view-selector">
+        <div class="button-bar">
+            <button class="selector-button active" onclick="mostrarSeccion('grupos')">Zona de Grupos</button>
+            <button class="selector-button" onclick="mostrarSeccion('eliminatorias')">Eliminatorias</button>
         </div>
+    </div>
+
+    <div id="contenido-ediciones">
+        <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+    </div>
 
         <!-- Espacio para publicidad -->
         <div class="ad-space">
@@ -684,7 +734,7 @@
                 nombre: "3ra Fecha - Torneo 2do Set  2025",
                 fecha: "29/07 a 10/08 2025",
                 lugar: "2do Set",
-                descripcion: "Tercera fecha clasificatoria al master 2025",
+                descripcion: "Tercera fecha clasificatoria al provincial 2025",
                 path: "js/ediciones/tercerFecha"
             }
         };
@@ -865,15 +915,14 @@
     mainContainer.style.gap = "30px";
     mainContainer.style.marginBottom = "30px";
 
-    // Contenedor para los grupos (izquierda)
+  // Cambia los nombres de los contenedores para el control móvil
     const gruposContainer = document.createElement("div");
-    gruposContainer.style.flex = "1";
-    gruposContainer.style.minWidth = "300px";
+    gruposContainer.className = "grupos-container active"; // Agrega 'active'
+    gruposContainer.id = "grupos-container";
 
-    // Contenedor para las eliminatorias (derecha)
     const eliminatoriasContainer = document.createElement("div");
-    eliminatoriasContainer.style.flex = "1";
-    eliminatoriasContainer.style.minWidth = "300px";
+    eliminatoriasContainer.className = "eliminatorias-container"; 
+    eliminatoriasContainer.id = "eliminatorias-container";
 
     // Mostrar grupos
     if (categoriaData.grupos) {
@@ -1222,12 +1271,41 @@
         // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
         setTimeout(() => {
             seleccionarGenero('masculino');
-            seleccionarCategoria('6ta');
+            seleccionarCategoria('7ma');
         }, 100);
     });
 
         // Activar el primer botón de fecha por defecto (opcional)
         // document.querySelector('#fecha-buttons .selector-button').click();
+
+        // Función para mostrar sección en móviles
+function mostrarSeccion(seccion) {
+    // Actualizar botones activos
+    document.querySelectorAll('#mobile-view-selector .selector-button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Mostrar sección seleccionada
+    if (seccion === 'grupos') {
+        document.getElementById('grupos-container').classList.add('active');
+        document.getElementById('eliminatorias-container').classList.remove('active');
+    } else {
+        document.getElementById('grupos-container').classList.remove('active');
+        document.getElementById('eliminatorias-container').classList.add('active');
+    }
+}
+
+// Detectar cambio de tamaño de pantalla
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        // En desktop, mostrar ambas secciones
+        const grupos = document.getElementById('grupos-container');
+        const eliminatorias = document.getElementById('eliminatorias-container');
+        if (grupos) grupos.classList.add('active');
+        if (eliminatorias) eliminatorias.classList.add('active');
+    }
+});
     </script>
 </body>
 </html>
