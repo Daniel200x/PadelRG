@@ -57,7 +57,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Infran Facundo/Mendez Jose",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -66,7 +66,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Sosa Waldemart/Dos Santos Matias",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -75,16 +75,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
+          "nombre": "Rodriguez Sandro/Gimenez Walter",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -95,40 +86,22 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Infran/Mendez",
+          "equipo2": "Sosa/Dos Santos",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Infran/Mendez",
+          "equipo2": "Rodriguez/Gimenez",
+          "fecha": "Sabado 12:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Sosa/Dos Santos",
+          "equipo2": "Rodriguez/Gimenez",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -136,7 +109,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Gomez Miguel/Maisares Cristian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -145,7 +118,7 @@
           "GC": 0
         },
         {
-         "nombre": "/",
+         "nombre": "Forno Franco/Fomez Ricardo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -154,16 +127,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
+          "nombre": "Villafañe Jonathan/Villalba Diego",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -174,40 +138,22 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Gomez/Maisares",
+          "equipo2": "Forno/Fomez",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Gomez/Maisares",
+          "equipo2": "Villafañe/Villalba",
+          "fecha": "Sabado 13:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Forno/Fomez",
+          "equipo2": "Villafañe/Villalba",
+          "fecha": "Sabado 16:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
