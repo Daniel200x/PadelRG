@@ -216,12 +216,12 @@
       "equipos": [
         {
           "nombre": "Lucas Vera/J. M. Gimenez",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 0,
-          "GF": 12,
-          "GC": 3
+          "GF": 24,
+          "GC": 7
         },
         {
           "nombre": "Martin Spamer/Pablo Fiorotto",
@@ -234,12 +234,12 @@
         },
         {
           "nombre": "Luis Ruiz/Zurita",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
           "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 5
+          "SP": 2,
+          "GF": 16,
+          "GC": 17
         }
       ],
       "partidos": [
@@ -259,7 +259,7 @@
           "equipo1": "Vera/Gimenez",
           "equipo2": "Ruiz/Ojeda",
           "fecha": "01/08/25 17:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-2, 6-2"
         }
       ]
     },
@@ -372,39 +372,39 @@
       "equipos": [
         {
           "nombre": "Horacio Bucci/Jose Retamar",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 17,
+          "GC": 16
         },
         {
          "nombre": "Joaquin Rojas/Leandro Carracedo",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 16,
+          "GC": 17
         },
         {
         "nombre": "Jose Muñoz/Bruno Trellini",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 4,
+          "GC": 12
         },
         {
          "nombre": "Justin Henninger/Miguel Lamas",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 4
         }
       ],
       "partidos": [
@@ -412,23 +412,23 @@
           "equipo1": "Bucci/Retamar",
           "equipo2": "Rojas/Carracedo",
           "fecha": "01/08/25 21:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "4-6, 6-4, 7-6"
         },
         {
           "equipo1": "Muñoz/Trellini",
           "equipo2": "Henninger/Lamas",
           "fecha": "01/08/25 19:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-3, 6-1"
         },
         {
-          "equipo1": "Ganador 1-2",
-          "equipo2": "Perdedor 3-4",
+          "equipo1": "Bucci/Retamar",
+          "equipo2": "Muñoz/Trellini",
           "fecha": "02/08/25 13:00 hs",
           "resultado": "A confirmar"
         },
         {
-          "equipo1": "Ganador 3-4",
-          "equipo2": "Perdedor 1-2",
+          "equipo1": "Henninger/Lamas",
+          "equipo2": "Rojas/Carracedo",
           "fecha": "02/08/25 16:00 hs",
           "resultado": "A confirmar"
         }
