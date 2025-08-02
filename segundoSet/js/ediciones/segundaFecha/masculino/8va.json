@@ -6,12 +6,12 @@
       "equipos": [
         {
           "nombre": "Fernandez Daniel/Gaston Martinez",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 1,
-          "GF": 17,
-          "GC": 16
+          "GF": 30,
+          "GC": 26
         },
         {
           "nombre": "Mansilla Pablo/Palarossi Daniel",
@@ -24,21 +24,21 @@
         },
         {
           "nombre": "Sanchez Agustin/Guillen Nicolas",
-          "PJ": 0,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 4,
+          "GF": 14,
+          "GC": 25
         },
         {
           "nombre": "Radler Gabriel/Ruiz Tomas",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 25,
+          "GC": 18
         }
       ],
       "partidos": [
@@ -52,19 +52,19 @@
           "equipo1": "Sanchez/Guillen",
           "equipo2": "Radler/Ruiz",
           "fecha": "Viernes 21:00 hs",
-          "resultado": "A definir"
+          "resultado": "2-6, 2-6"
         },
         {
             "equipo1": "Fernandez/Martinez",
-          "equipo2": "Perdedor 3 y 4",
+          "equipo2": "Sanchez/Guillen",
           "fecha": "Viernes 23:45 hs",
-          "resultado": "A definir"
+          "resultado": "6-4, 7-6"
         },
         {
-        "equipo1": "Ganador 3 y 4",
+        "equipo1": "Radler/Ruiz",
           "equipo2": "Mansilla/Palarossi",
           "fecha": "Viernes 23:45 hs",
-          "resultado": "A definir"
+          "resultado": "2-6, 6-2, 7-6"
         }
       ]
     },
@@ -541,58 +541,58 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "P1- 1 A",
-          "equipo2": "2 B",
-          "fecha": "Sabado ",
+        "equipo1": "P1- Radler/Ruiz",
+          "equipo2": "Vargas/Leiva",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P2- 1 E ",
-          "equipo2": " 2 F ",
-          "fecha": "Sabado ",
+         "equipo1": "P2- Reyes/Riveros ",
+          "equipo2": "Sanabria/Yunes",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P3- 1 C",
-          "equipo2": "2 D",
-          "fecha": "Sabado ",
+         "equipo1": "P3- Gonzalez/Llanes",
+          "equipo2": "Cardenas/Loncopan",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P4- 1 G ",
-          "equipo2": " 2 H ",
-          "fecha": "Sabado ",
+         "equipo1": "P4- Gomez/Gomez ",
+          "equipo2": " Marquez/Garcia",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-        "equipo1": "P5- 1 B ",
-          "equipo2": " 2 A ",
-          "fecha": "Sabado ",
+        "equipo1": "P5- Romero/Meicucci",
+          "equipo2": " Fernandez/Martinez",
+          "fecha": "Sabado 23:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P6- 1 F ",
-          "equipo2": " 2 E ",
-          "fecha": "Sabado ",
+         "equipo1": "P6- Gomez/Manquecoy ",
+          "equipo2": " Gonzalez/Rocha",
+          "fecha": "Sabado 23:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P7- 1 D ",
-          "equipo2": " 2 C ",
-          "fecha": "Sabado ",
+         "equipo1": "P7- Maluf/Samaniego ",
+          "equipo2": " Ortiz/Muñiz ",
+          "fecha": "Sabado 23:00",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P8- 1 H ",
-          "equipo2": " 2 G ",
-          "fecha": "Sabado ",
+         "equipo1": "P8- Alcantara/Barrios ",
+          "equipo2": " Crespo/Pedraza",
+          "fecha": "Sabado 23:00",
           "resultado": "A definir",
         "ganador": "A definir"
       }
