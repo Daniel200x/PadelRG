@@ -69,21 +69,21 @@
         },
         {
           "nombre": "Martin Guaragna/Federico Aliaga",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 5,
-          "GC": 12
+          "SP": 4,
+          "GF": 8,
+          "GC": 24
         },
         {
           "nombre": "Cristian Ventura/Carlos Barrionuevo",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 0,
-          "GF": 12,
-          "GC": 7
+          "GF": 24,
+          "GC": 10
         }
       ],
       "partidos": [
@@ -103,7 +103,7 @@
           "equipo1": "Ventura/Barrionuevo",
           "equipo2": "Guaragna/Aliaga",
           "fecha": "1/08/25 9:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-1, 6-2"
         }
       ]
     },
@@ -505,7 +505,7 @@
  "eliminatorias": {
   "dieciseisavos": [
       {
-         "equipo1": "Partido 1 - 2do Zona B",
+         "equipo1": "Partido 1 - Bordon/Bordon",
           "equipo2": "2do Zona C",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
@@ -536,7 +536,7 @@
       },
       {
          "equipo1": "Partido 5 - Vera/Gimenez",
-          "equipo2": "2do Zona G",
+          "equipo2": "Rubio/Santana",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
@@ -563,7 +563,7 @@
         "ganador": "A definir"
       },
       {
-         "equipo1": "Partido 9 - 1ro Zona G",
+         "equipo1": "Partido 9 - Vera/Carrizo",
           "equipo2": "2do Zona I",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
@@ -571,7 +571,7 @@
       },
       {
          "equipo1": "Partido 10 - Ganador Partido 2",
-          "equipo2": "1ro Zona B",
+          "equipo2": "Ventura/Barrionuevo",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
         "ganador": "A definir"
