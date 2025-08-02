@@ -164,30 +164,30 @@
       "equipos": [
         {
           "nombre": "Fernando Mariani/Federico Bustos",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 1,
-          "SP": 2,
-          "GF": 19,
-          "GC": 19
+          "SP": 4,
+          "GF": 24,
+          "GC": 31
         },
         {
           "nombre": "Maximiliano Aperio/Bernardo Fiori",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 30,
+          "GC": 22
         },
         {
           "nombre": "Emmanuel Larocca/Fabian Navarro",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 19,
-          "GC": 19
+          "SG": 3,
+          "SP": 3,
+          "GF": 36,
+          "GC": 37
         }
       ],
       "partidos": [
@@ -201,13 +201,13 @@
           "equipo1": "Aperio/Fiori",
           "equipo2": "Larocca/Navarro",
           "fecha": "1/08/25 23:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "5-7, 6-4, 7-6"
         },
         {
           "equipo1": "Mariani/Bustos",
           "equipo2": "Aperio/Fiori",
           "fecha": "2/08/25 14:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "3-6, 2-6"
         }
       ]
     },
@@ -277,21 +277,21 @@
         },
         {
           "nombre": "Agustin Ojeda/Aaron Pintos",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 4
         },
         {
           "nombre": "Rodrigo Fritz/Daniel Camargo",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 7,
-          "GC": 12
+          "SP": 4,
+          "GF": 11,
+          "GC": 24
         }
       ],
       "partidos": [
@@ -305,7 +305,7 @@
           "equipo1": "Ojeda/Pintos",
           "equipo2": "Fritz/Camargo",
           "fecha": "01/08/25 23:50 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-4, 6-0"
         },
         {
           "equipo1": "Rojo/Chalier",
@@ -320,21 +320,21 @@
       "equipos": [
         {
           "nombre": "Sebastian Rubio/Gustavo Santana",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 13,
-          "GC": 9
+          "SG": 3,
+          "SP": 2,
+          "GF": 30,
+          "GC": 24
         },
         {
           "nombre": "Gustavo Vera/Walter Carrizo",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 3
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 32,
+          "GC": 21
         },
         {
           "nombre": "Marcos Allende/Nahuel Castro",
@@ -357,13 +357,13 @@
           "equipo1": "Rubio/Santana",
           "equipo2": "Allende/Castro",
           "fecha": "31/07/25 20:00 hs",
-          "resultado": "6-3, 7-6"
+          "resultado": "6-3, 6-1"
         },
         {
           "equipo1": "Vera/Carrizo",
           "equipo2": "Rubio/Santana",
           "fecha": "01/08/25 23:50 hs",
-          "resultado": "A confirmar"
+          "resultado": "7-5, 6-7, 7-6"
         }
       ]
     },
@@ -512,7 +512,7 @@
         "ganador": "A definir"
       },
       {
-         "equipo1": "Partido 2 - 2do Zona D",
+         "equipo1": "Partido 2 - Larocca/Navarro",
           "equipo2": "Velazquez/Sanchez",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
@@ -535,7 +535,7 @@
         "ganador": "A definir"
       },
       {
-         "equipo1": "Partido 5 - 1ro Zona E",
+         "equipo1": "Partido 5 - Vera/Gimenez",
           "equipo2": "2do Zona G",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
@@ -543,14 +543,14 @@
       },
       {
          "equipo1": "Partido 6 - 2do Zona F",
-          "equipo2": "1ro Zona D",
+          "equipo2": "Aperio/Fiori",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
         "equipo1": "Partido 7 - 1ro Zona C",
-          "equipo2": "2do Zona E",
+          "equipo2": "2do Ruiz/Zurita",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
