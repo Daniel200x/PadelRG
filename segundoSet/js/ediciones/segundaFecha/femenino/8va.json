@@ -34,22 +34,22 @@
       ],
       "partidos": [
         {
-          "fecha": "// : hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": ","
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Beamonte/Graneros",
+          "equipo2": "Heredia/A confirmar",
+          "resultado": "A definir"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Heredia/A confirmar",
+          "equipo2": "Lamberti/Fleuri",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "A definir"
         },
         {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+            "equipo1": "Beamonte/Graneros",
+          "equipo2": "Lamberti/Fleuri",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "A definir"
         }
       ]
     },
@@ -86,22 +86,22 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Barria/Ilarregui",
+          "equipo2": "Galucci/Araoz",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "6-3, 7-5"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+          "equipo1": "Barria/Ilarregui",
+          "equipo2": "Dunca/Cargnaletti",
+          "fecha": "Sabado 11:00 hs",
+          "resultado": "A definir"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
+         "equipo1": "Galucci/Araoz",
+          "equipo2": "Dunca/Cargnaletti",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir"
         }
       ]
     },

@@ -359,21 +359,21 @@
         },
         {
           "nombre": "Sanabria Hugo/Yunes Marcelo",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 12,
+          "GC": 14
         },
         {
          "nombre": "Gomez Javier/Manquecoy Esteban",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 14,
+          "GC": 12
         }
       ],
       "partidos": [
@@ -387,16 +387,16 @@
           "equipo1": "Sanabria/Yunes",
           "equipo2": "Gomez/Manquecoy",
           "fecha": "Viernes 18:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-7, 6-7"
         },
          {
          "equipo1": "Ganador 1 y 2",
-          "equipo2": "Perdedor 3 y 4",
+          "equipo2": "Sanabria/Yunes",
           "fecha": "Sabado 14:00 hs",
           "resultado": "A definir"
         },
         {
-        "equipo1": "Ganador 3 y 4",
+        "equipo1": "Gomez/Manquecoy",
           "equipo2": "Perdedor 1 y 2",
           "fecha": "Sabado 14:00 hs",
           "resultado": "A definir"
@@ -408,21 +408,21 @@
       "equipos": [
         {
           "nombre": "Crespo Juan/Pedraza Ruben",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 9
         },
         {
          "nombre": "Wasinger Fernando/Graneros Adriel",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 9,
+          "GC": 13
         },
         {
           "nombre": "Gomez Matias/Gomez Carlos",
@@ -448,7 +448,7 @@
           "equipo1": "Crespo/Pedraza",
           "equipo2": "Wasinger/Graneros",
           "fecha": "Viernes 19:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-3, 7-6"
         },
         {
           "equipo1": "Gomez/Gomez",
@@ -457,14 +457,14 @@
           "resultado": "A definir"
         },
          {
-         "equipo1": "Ganador 1 y 2",
+         "equipo1": "Crespo/Pedraza",
           "equipo2": "Perdedor 3 y 4",
           "fecha": "Sabado 10:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3 y 4",
-          "equipo2": "Perdedor 1 y 2",
+          "equipo2": "Wasinger/Graneros",
           "fecha": "Sabado 10:00 hs",
           "resultado": "A definir"
         }

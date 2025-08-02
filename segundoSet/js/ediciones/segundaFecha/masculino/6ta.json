@@ -110,21 +110,21 @@
       "equipos": [
         {
           "nombre": "Gomez Miguel/Maisares Cristian",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 16,
+          "GC": 16
         },
         {
          "nombre": "Forno Franco/Fomez Ricardo",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 1,
+          "SP": 2,
+          "GF": 16,
+          "GC": 16
         },
         {
           "nombre": "Villafañe Jonathan/Villalba Diego",
@@ -141,7 +141,7 @@
           "equipo1": "Gomez/Maisares",
           "equipo2": "Forno/Fomez",
           "fecha": "Viernes 19:00 hs",
-          "resultado": "A definir"
+          "resultado": "3-6, 6-4, 7-6"
         },
         {
           "equipo1": "Gomez/Maisares",
