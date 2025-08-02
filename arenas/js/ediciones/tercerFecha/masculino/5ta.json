@@ -164,12 +164,12 @@
       "equipos": [
         {
           "nombre": "Ciro Andrade/Nicolas Gonzalez",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
           "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 3
+          "SP": 2,
+          "GF": 16,
+          "GC": 15
         },
         {
           "nombre": "Andres Agnes/Cristian Perez",
@@ -182,12 +182,12 @@
         },
         {
           "nombre": "Fabian Suarez/Martinez",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 2,
+          "PG": 1,
+          "SG": 2,
           "SP": 2,
-          "GF": 4,
-          "GC": 12
+          "GF": 16,
+          "GC": 16
         }
       ],
       "partidos": [
@@ -207,7 +207,7 @@
           "equipo1": "Andrade/Gonzalez",
           "equipo2": "Suarez/Martinez",
           "fecha": "1/08/25 21:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "4-6, 0-6"
         }
       ]
     },
