@@ -362,29 +362,29 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "",
-          "equipo2": "/",
+        "equipo1": "P1 - 1 E",
+          "equipo2": "2 F",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
+         "equipo1": "P2 - 2 C",
+          "equipo2": "2 B",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
+         "equipo1": "P3 - 2 A",
+          "equipo2": "2 D",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
+         "equipo1": "P4 - 1 F",
+          "equipo2": "2 E ",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
@@ -393,56 +393,56 @@
     
     "cuartos": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Sabado ",
+         "equipo1": "P5 - 1 A ",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Sabado ",
+         "equipo1": "P6 - 1 D",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Sabado ",
+         "equipo1": "P7 - 1 B",
+          "equipo2": "Ganador P3",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Sabado ",
+         "equipo1": "P8 - 1 c",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       }
     ],
     "semis": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P9 - Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P10 - Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+       "equipo1": "Ganador P9",
+          "equipo2": "Ganador P10",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
     }
   }
 }

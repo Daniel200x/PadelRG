@@ -6,21 +6,21 @@
       "equipos": [
         {
           "nombre": "Fernandez Daniel/Gaston Martinez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 17,
+          "GC": 16
         },
         {
           "nombre": "Mansilla Pablo/Palarossi Daniel",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 16,
+          "GC": 17
         },
         {
           "nombre": "Sanchez Agustin/Guillen Nicolas",
@@ -46,7 +46,7 @@
           "fecha": "Viernes 19:00 hs",
           "equipo1": "Fernandez/Martinez",
           "equipo2": "Mansilla/Palarossi",
-          "resultado": "A definir"
+          "resultado": "6-4, 4-6, 7-6"
         },
         {
           "equipo1": "Sanchez/Guillen",
@@ -599,56 +599,56 @@
     ],
     "cuartos": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P9 -Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P10 -Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P11 -Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P12 -Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "semis": [
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P13 -Ganador P9",
+          "equipo2": "Ganador P10",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+         "equipo1": "P14 -Ganador P11",
+          "equipo2": "Ganador P12",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
+       "equipo1": "Ganador P3",
+          "equipo2": "Ganador P14",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+        "ganador": "A definir"
     }
   }
 }

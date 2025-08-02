@@ -124,24 +124,24 @@
   "eliminatorias": {
     
     "semis": [
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Domingo : hs",
+     {
+         "equipo1": "P1 - 1 A ",
+          "equipo2": "2 B ",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "Domingo : hs",
+         "equipo1": "P2 - 1 B ",
+          "equipo2": "2 A ",
+          "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "",
-          "equipo2": "/",
+        "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo : hs",
           "resultado": "A definir",
         "ganador": "A definir"
