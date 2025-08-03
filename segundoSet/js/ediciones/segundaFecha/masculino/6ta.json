@@ -6,30 +6,30 @@
       "equipos": [
         {
           "nombre": "Chalier Andres/Lizzaraga Braian",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 24,
+          "GC": 14
         },
         {
           "nombre": "Ponce Emanuel/Aranda Sergio",
-          "PJ": 0,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 4,
+          "GF": 12,
+          "GC": 24
         },
         {
           "nombre": "Graneros Cristian/Graneros Sergio",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 2,
+          "PG": 1,
+          "SG": 2,
+          "SP": 2,
+          "GF": 19,
+          "GC": 17
         }
       ],
       "partidos": [
@@ -37,19 +37,19 @@
           "fecha": "Viernes 23:45 hs",
           "equipo1": "Chalier/Lizzaraga",
           "equipo2": "Ponce/Aranda",
-          "resultado": "A definir"
+          "resultado": "6-4, 6-3"
         },
         {
           "equipo1": "Chalier/Lizzaraga",
           "equipo2": "Graneros/Graneros",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-4, 6-3"
         },
         {
             "equipo1": "Graneros/Graneros",
           "equipo2": "Ponce/Aranda",
           "fecha": "Sabado 16:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-4, 6-1"
         }
       ]
     },
@@ -58,21 +58,21 @@
       "equipos": [
         {
           "nombre": "Infran Facundo/Mendez Jose",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 18,
+          "GC": 20
         },
         {
          "nombre": "Sosa Waldemart/Dos Santos Matias",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 20,
+          "GC": 18
         },
         {
           "nombre": "Rodriguez Sandro/Gimenez Walter",
@@ -89,7 +89,7 @@
           "equipo1": "Infran/Mendez",
           "equipo2": "Sosa/Dos Santos",
           "fecha": "Viernes 23:00 hs",
-          "resultado": "A definir"
+          "resultado": "5-7, 7-6, 6-7"
         },
         {
           "equipo1": "Infran/Mendez",
@@ -162,21 +162,21 @@
       "equipos": [
         {
           "nombre": "Quiroz Chino/Galucci Franco",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 12,
+          "GC": 6
         },
         {
          "nombre": "Echeverria Martin/Larrechea Eduardo",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 2,
+          "GF": 6,
+          "GC": 12
         },
         {
           "nombre": "Barria Alexis/Gamarra Brian",
@@ -202,7 +202,7 @@
           "equipo1": "Quiroz/Galucci",
           "equipo2": "Echeverria/Larrechea",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-4, 6-2"
         },
         {
           "equipo1": "Barria/Gamarra",
@@ -211,14 +211,14 @@
           "resultado": "A definir"
         },
         {
-         "equipo1": "Ganador 1-2",
+         "equipo1": "Quiroz/Galucci",
           "equipo2": "Perdedor 3-4",
           "fecha": "Sabado 18:00 hs",
           "resultado": "A definir"
         },
         {
         "equipo1": "Ganador 3-4",
-          "equipo2": "Perdedor 1-2",
+          "equipo2": "Echeverria/Larrechea",
           "fecha": "Sabado 18:00 hs",
           "resultado": "A definir"
         }
