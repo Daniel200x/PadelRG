@@ -162,39 +162,39 @@
       "equipos": [
         {
           "nombre": "Quiroz Chino/Galucci Franco",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 0,
-          "GF": 12,
-          "GC": 6
+          "GF": 25,
+          "GC": 15
         },
         {
          "nombre": "Echeverria Martin/Larrechea Eduardo",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 6,
-          "GC": 12
+          "SP": 4,
+          "GF": 15,
+          "GC": 25
         },
         {
           "nombre": "Barria Alexis/Gamarra Brian",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
           "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 30,
+          "GC": 18
         },
         {
          "nombre": "Ulloa Pablo/Ugarte Jorge",
-          "PJ": 0,
+          "PJ": 2,
           "PG": 0,
           "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SP": 4,
+          "GF": 18,
+          "GC": 26
         }
       ],
       "partidos": [
@@ -208,19 +208,19 @@
           "equipo1": "Barria/Gamarra",
           "equipo2": "Ulloa/Ugarte",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "A definir"
+          "resultado": "7-5, 6-4"
         },
         {
          "equipo1": "Quiroz/Galucci",
-          "equipo2": "Perdedor 3-4",
+          "equipo2": "Ulloa/Ugarte",
           "fecha": "Sabado 18:00 hs",
-          "resultado": "A definir"
+          "resultado": "7-6, 6-3"
         },
         {
-        "equipo1": "Ganador 3-4",
+        "equipo1": "Barria/Gamarra",
           "equipo2": "Echeverria/Larrechea",
           "fecha": "Sabado 18:00 hs",
-          "resultado": "A definir"
+          "resultado": "4-6, 5-7"
         }
       ]
     },
@@ -362,7 +362,7 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "P1 - 1 E",
+        "equipo1": "P1 - De Guevara/Torres",
           "equipo2": "2 F",
           "fecha": "Sabado ",
           "resultado": "A definir",
@@ -376,15 +376,15 @@
         "ganador": "A definir"
       },
       {
-         "equipo1": "P3 - 2 A",
-          "equipo2": "2 D",
+         "equipo1": "P3 - Graneros/Graneros",
+          "equipo2": "Quiroz/Galucci",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
          "equipo1": "P4 - 1 F",
-          "equipo2": "2 E ",
+          "equipo2": "Juarez/Orellana ",
           "fecha": "Sabado ",
           "resultado": "A definir",
         "ganador": "A definir"
@@ -393,14 +393,14 @@
     
     "cuartos": [
       {
-         "equipo1": "P5 - 1 A ",
+         "equipo1": "P5 - Chalier/Lizzarraga ",
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P6 - 1 D",
+         "equipo1": "P6 - Barria/Gamarra",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
           "resultado": "A definir",
@@ -414,7 +414,7 @@
         "ganador": "A definir"
       },
       {
-         "equipo1": "P8 - 1 c",
+         "equipo1": "P8 - 1 C",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
           "resultado": "A definir",
