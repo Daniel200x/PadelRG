@@ -229,65 +229,65 @@
       "equipos": [
         {
           "nombre": "Juarez Hernan/Orellana Julio",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 29,
+          "GC": 23
         },
         {
-         "nombre": "Ruiz Luiz/A confirmar",
-          "PJ": 0,
+         "nombre": "Ruiz Luiz/Zurita",
+          "PJ": 2,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 4,
+          "GF": 20,
+          "GC": 28
         },
         {
           "nombre": "Muriño Rafael/Tiraboschi Gustavo",
-          "PJ": 0,
+          "PJ": 2,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 4,
+          "GF": 24,
+          "GC": 30
         },
         {
          "nombre": "De Guevara Nicolas/Torres Jonathan",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 29,
+          "GC": 21
         }
       ],
       "partidos": [
         {
           "equipo1": "Juarez/Orellana",
-          "equipo2": "Ruiz Luis/A confirmar",
+          "equipo2": "Ruiz Luis/Zurita",
           "fecha": "Viernes 21:00 hs",
-          "resultado": "A definir"
+          "resultado": "3-6, 6-2, 7-6"
         },
         {
           "equipo1": "Muriño/Tiraboschi",
           "equipo2": "De Guevara/Torres",
           "fecha": "Viernes 17:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-4, 3-6, 6-7"
         },
          {
-         "equipo1": "Ganador 1-2",
-          "equipo2": "Perdedor 3-4",
+         "equipo1": "Juarez/Orellana",
+          "equipo2": "Muriño/Tiraboschi",
           "fecha": "Sabado 15:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-3, 7-6"
         },
         {
-        "equipo1": "Ganador 3-4",
-          "equipo2": "Perdedor 1-2",
+        "equipo1": "De Guevara/Torres",
+          "equipo2": "Ruiz Luis/Zurita",
           "fecha": "Sabado 15:00 hs",
-          "resultado": "A definir"
+          "resultado": "6-2, 6-4"
         }
       ]
     },
