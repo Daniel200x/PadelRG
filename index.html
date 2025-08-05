@@ -8,44 +8,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Slider principal (nuevo) -->
+    <!-- Carrusel con enlaces -->
     <div class="hero-slider">
         <div class="slider-wrapper">
             <div class="slider">
+                <!-- Slide 1 con enlace -->
                 <div class="slide active">
-                    <img src="img/banner1.jpg" alt="Torneo de pádel">
-                    <div class="slide-overlay">
-                        <h2>Competiciones profesionales</h2>
-                        <p>Vive la emoción del pádel de alto nivel</p>
-                    </div>
+                    <a href="puntoDeOro/puntoDeOro.html" class="slide-link">
+                        <img src="img/banner1.jpg" alt="Torneo Punto de Oro">
+                        <div class="slide-overlay">
+                            <h2>Torneo Punto de Oro</h2>
+                            <p>La competencia más exclusiva de la ciudad</p>
+                            <span class="link-text">Ver torneo <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
+                
+                <!-- Slide 2 con enlace -->
                 <div class="slide">
-                    <img src="img/banner2.jpg" alt="Clases de pádel">
-                    <div class="slide-overlay">
-                        <h2>Mejora tu técnica</h2>
-                        <p>Entrenamientos personalizados</p>
-                    </div>
+                    <a href="arenas/arenas.html" class="slide-link">
+                        <img src="img/banner2.jpg" alt="Torneo Arenas">
+                        <div class="slide-overlay">
+                            <h2>Torneo Arenas</h2>
+                            <p>En las mejores canchas profesionales</p>
+                            <span class="link-text">Ver detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
+                
+                <!-- Slide 3 con enlace -->
                 <div class="slide">
-                    <img src="img/banner3.jpg" alt="Torneo social">
-                    <div class="slide-overlay">
-                        <h2>Torneos amistosos</h2>
-                        <p>Diversión y amistad en la cancha</p>
-                    </div>
+                    <a href="segundoSet/segundoSet.html" class="slide-link">
+                        <img src="img/banner3.jpg" alt="Torneo 2do Set">
+                        <div class="slide-overlay">
+                            <h2>Torneo 2do Set</h2>
+                            <p>Para jugadores de todos los niveles</p>
+                            <span class="link-text">Más información <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
             </div>
             
+            <!-- Controles del slider -->
             <div class="slider-controls">
-                <button class="slider-arrow prev-arrow">
+                <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <div class="slider-dots"></div>
-                <button class="slider-arrow next-arrow">
+                <button class="slider-arrow next-arrow" aria-label="Slide siguiente">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="header">
             <h1>Resultados de Torneos de Pádel</h1>
@@ -73,7 +89,7 @@
         <div class="ad-space">
             <div class="ad-container">
                 <div class="ad-title">Patrocinadores</div>
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                     <img src="img/muebles.jpeg" alt="Publicidad" class="ad-image">
                 </a>
             </div>

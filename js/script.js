@@ -1,5 +1,5 @@
-// Slider principal
 document.addEventListener('DOMContentLoaded', function() {
+    // Slider principal
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const prevBtn = document.querySelector('.prev-arrow');
@@ -10,23 +10,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideIntervalTime = 5000; // 5 segundos
 
     // Crear puntos de navegación
-    slides.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        if (index === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            goToSlide(index);
+    function createDots() {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+            });
+            dotsContainer.appendChild(dot);
         });
-        dotsContainer.appendChild(dot);
-    });
+    }
 
-    const dots = document.querySelectorAll('.slider-dots .dot');
-
-    // Función para actualizar el slider
+    // Actualizar slider
     function updateSlider() {
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
         
-        // Actualizar estado de los puntos
+        // Actualizar puntos
+        const dots = document.querySelectorAll('.slider-dots .dot');
         dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
@@ -64,21 +65,29 @@ document.addEventListener('DOMContentLoaded', function() {
         startAutoSlide();
     }
 
-    // Event listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    // Iniciar
+    // Inicializar
+    createDots();
     startAutoSlide();
 
-    // Pausar al pasar el ratón
-    slider.addEventListener('mouseenter', () => {
-        clearInterval(autoSlideInterval);
+    // Event listeners mejorados
+    nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        nextSlide();
     });
 
-    // Reanudar al quitar el ratón
-    slider.addEventListener('mouseleave', startAutoSlide);
-});
+    prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        prevSlide();
+    });
 
-// Tu código existente para el año del footer
-document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Pausar al interactuar
+    [nextBtn, prevBtn, dotsContainer].forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+        element.addEventListener('mouseleave', startAutoSlide);
+    });
+
+    // Actualizar año del footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+});

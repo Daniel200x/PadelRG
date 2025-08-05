@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +32,146 @@ body::before {
     min-height: calc(100vh - 160px);
 }
 
+/* Estilos del slider */
+.hero-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    max-height: 700px;
+    margin-bottom: 40px;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.slide-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    padding: 2rem;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.slide-overlay h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.slide-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.link-text {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    color: #3498db;
+}
+
+.slide-link:hover .slide-overlay {
+    background: rgba(44, 62, 80, 0.95);
+    transform: translateY(-5px);
+}
+
+.slide-link:hover .link-text {
+    transform: translateX(5px);
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+.slider-arrow {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Estilos del header */
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -56,6 +197,7 @@ body::before {
     margin-bottom: 0;
 }
 
+/* Estilos de las tarjetas de torneos */
 .torneos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -257,7 +399,28 @@ body::before {
     margin-top: 10px;
 }
 
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-slider {
+        height: 50vh;
+    }
+    
+    .slide-overlay {
+        padding: 1.5rem;
+        bottom: 15%;
+    }
+    
+    .slide-overlay h2 {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero-slider {
+        height: 40vh;
+        margin-bottom: 30px;
+    }
+    
     .header {
         padding: 20px;
     }
@@ -280,10 +443,21 @@ body::before {
         background-size: 60%;
     }
 
-    .ad-container {
-        padding: 8px;
+    .slide-overlay {
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
+        padding: 1rem;
     }
-
+    
+    .slide-overlay h2 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-overlay p {
+        font-size: 1rem;
+    }
+    
     .footer-links {
         flex-direction: column;
         gap: 10px;
@@ -291,6 +465,23 @@ body::before {
 }
 
 @media (max-width: 480px) {
+    .hero-slider {
+        height: 35vh;
+    }
+    
+    .slide-overlay {
+        bottom: 10%;
+    }
+    
+    .slider-controls {
+        bottom: 15px;
+    }
+    
+    .slider-arrow {
+        width: 35px;
+        height: 35px;
+    }
+    
     .torneo-card::before {
         background-size: 50%;
     }
@@ -301,147 +492,5 @@ body::before {
 
     .ad-image {
         max-height: 70px;
-    }
-}
-/* Estilos del nuevo slider */
-.hero-slider {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    height: 70vh;
-    max-height: 700px;
-    margin-bottom: 40px;
-}
-
-.slider-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.slider {
-    display: flex;
-    height: 100%;
-    transition: transform 0.5s ease;
-    will-change: transform;
-}
-
-.slide {
-    min-width: 100%;
-    position: relative;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.slide-overlay {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    background: rgba(44, 62, 80, 0.9);
-    color: white;
-    padding: 2rem;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.slide-overlay h2 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.slide-overlay p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-.slider-controls {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.slider-arrow {
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slider-arrow:hover {
-    background: rgba(255, 255, 255, 0.5);
-    transform: scale(1.1);
-}
-
-.slider-dots {
-    display: flex;
-    gap: 10px;
-}
-
-.slider-dots .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.slider-dots .dot.active {
-    background: white;
-    transform: scale(1.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-slider {
-        height: 50vh;
-    }
-    
-    .slide-overlay {
-        bottom: 15%;
-        left: 5%;
-        right: 5%;
-        max-width: 90%;
-        padding: 1.5rem;
-    }
-    
-    .slide-overlay h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-slider {
-        height: 40vh;
-    }
-    
-    .slide-overlay {
-        padding: 1rem;
-    }
-    
-    .slide-overlay h2 {
-        font-size: 1.5rem;
-    }
-    
-    .slide-overlay p {
-        font-size: 1rem;
     }
 }
