@@ -607,10 +607,7 @@ tr:hover {
         display: none;
     }
     
-    .navbar-logo::before {
-        content: "TA";
-        font-weight: bold;
-    }
+    
     
     .navbar-links a span {
         display: none;
