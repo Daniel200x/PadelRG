@@ -670,31 +670,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Event listeners
-    hamburger.addEventListener('click', function(e) {
-        e.stopPropagation();
-        toggleMenu();
-    });
-    
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', toggleDropdown);
-    });
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 992) {
-                toggleMenu();
-            }
-        });
-    });
-    
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener('click', function(e) {
-        if (window.innerWidth <= 992 && 
-            navMenu.classList.contains('active') &&
-            !e.target.closest('.nav-container')) {
+  hamburger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', toggleDropdown);
+});
+
+// Solo los enlaces principales (no dropdown) cierran el menú en móviles
+document.querySelectorAll('.nav-links > li > a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 992) {
             toggleMenu();
         }
     });
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 992 && 
+        navMenu.classList.contains('active') &&
+        !e.target.closest('.nav-container')) {
+        toggleMenu();
+    }
+});
     
     // Cerrar menú al cambiar tamaño de pantalla
     window.addEventListener('resize', function() {
