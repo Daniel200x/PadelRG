@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>TORNEO SEGUNDO SET</title>
-    <link rel="stylesheet" href="../segundoSet/css/styles.css">
+    <link rel="stylesheet" href="../arenas/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
 </head>
 <body>
-
-   <body>
-    <!-- Barra de navegación fija -->
-    <nav class="navbar-fixed">
-        <div class="navbar-container">
-            <a href="../index.html" class="navbar-logo"></a>
-            <div class="navbar-links">
-                <a href="../index.html">Inicio</a>
-                <a href="#">Torneos</a>
-                <a href="#">Ranking</a>
-                
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Pádel RG Logo">
+                </a>
             </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
+                            <li><a href="../arenas/arenas.html">Arenas</a></li>
+                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ranking <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Punto de Oro</a></li>
+                            <li><a href="">Arenas</a></li>
+                            <li><a href="">2do Set</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Galería</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-social">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -37,7 +71,7 @@
             <div class="selector-group">
                 <label>Fecha del Torneo:</label>
                 <div class="button-bar" id="fecha-buttons">
-                    
+                   
                    <button class="selector-button" onclick="seleccionarFecha('segundaFecha')">2da Fecha</button>
                 </div>
             </div>

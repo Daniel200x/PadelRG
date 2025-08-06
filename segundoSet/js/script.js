@@ -639,6 +639,79 @@ function mostrarSeccion(seccion) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-links > li > a:not(.dropdown-menu a)');
+    const dropdownToggles = document.querySelectorAll('.dropdown > a');
+    
+    // Función para alternar el menú
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    }
+    
+    // Función para alternar submenús
+    function toggleDropdown(e) {
+        if (window.innerWidth <= 992) {
+            e.preventDefault();
+            const dropdownMenu = this.nextElementSibling;
+            
+            // Cerrar otros dropdowns
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                if (menu !== dropdownMenu && menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                }
+            });
+            
+            dropdownMenu.classList.toggle('active');
+        }
+    }
+    
+    // Event listeners
+  hamburger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', toggleDropdown);
+});
+
+// Solo los enlaces principales (no dropdown) cierran el menú en móviles
+document.querySelectorAll('.nav-links > li > a:not(.dropdown > a)').forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 992) {
+            toggleMenu();
+        }
+    });
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 992 && 
+        navMenu.classList.contains('active') &&
+        !e.target.closest('.nav-container')) {
+        toggleMenu();
+    }
+});
+    
+    // Cerrar menú al cambiar tamaño de pantalla
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992 && navMenu.classList.contains('active')) {
+            toggleMenu();
+        }
+        
+        // Resetear dropdowns al cambiar tamaño
+        if (window.innerWidth > 992) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('active');
+            });
+        }
+    });
+});
+
 // Actualizar año del copyright
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
@@ -664,12 +737,4 @@ window.addEventListener('resize', function() {
     }
 });
 
-// Efecto al hacer scroll
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar-fixed');
-    if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
-    }
-});
+
