@@ -1,5 +1,3 @@
-
-
 // Información básica de cada fecha del torneo
 const edicionesInfo = {
     "primerFecha": {
@@ -17,15 +15,13 @@ const edicionesInfo = {
         path: "js/ediciones/segundaFecha"
     },
     "tercerFecha": {
-        nombre: "3ra Fecha - Torneo Arenas  2025",
+        nombre: "3ra Fecha - Torneo Arenas 2025",
         fecha: "29/07 a 10/08 2025",
         lugar: "Arenas",
-        descripcion: "Tercera fecha clasificatoria al provincial 2025",
+        descripcion: "Tercera fecha 2025",
         path: "js/ediciones/tercerFecha"
     }
 };
-
-
 
 // Almacenamiento de datos cargados
 const edicionesCargadas = {};
@@ -676,17 +672,4 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.classList.remove('navbar-scrolled');
     }
-});
-// Manejar el menú móvil
-document.querySelector('.navbar-mobile-menu').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.querySelector('.navbar-links').classList.toggle('active');
-});
-
-// Cerrar menú móvil al hacer clic en un enlace
-document.querySelectorAll('.navbar-links a').forEach(link => {
-    link.addEventListener('click', function() {
-        document.querySelector('.navbar-mobile-menu').classList.remove('active');
-        document.querySelector('.navbar-links').classList.remove('active');
-    });
 });
