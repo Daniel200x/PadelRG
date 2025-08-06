@@ -677,4 +677,16 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('navbar-scrolled');
     }
 });
+// Manejar el menú móvil
+document.querySelector('.navbar-mobile-menu').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.navbar-links').classList.toggle('active');
+});
 
+// Cerrar menú móvil al hacer clic en un enlace
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelector('.navbar-mobile-menu').classList.remove('active');
+        document.querySelector('.navbar-links').classList.remove('active');
+    });
+});
