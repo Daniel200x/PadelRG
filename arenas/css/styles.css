@@ -24,11 +24,7 @@
     height: 100%;
 }
 
-.nav-menu {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
+
 
 
 .navbar-logo {
@@ -81,44 +77,6 @@
 
 .navbar-links a:hover::after {
     transform: scaleX(1);
-}
-
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    min-width: 200px;
-    padding: 10px 0;
-    list-style: none;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    border-radius: 0 0 5px 5px;
-    border-top: 2px solid #3498db;
-}
-
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.dropdown-menu li {
-    padding: 0;
-}
-
-.dropdown-menu a {
-    padding: 10px 20px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #3498db;
 }
 
 /* Efecto al hacer scroll */
