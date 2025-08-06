@@ -1,3 +1,5 @@
+
+
 // Información básica de cada fecha del torneo
 const edicionesInfo = {
     "primerFecha": {
@@ -22,6 +24,8 @@ const edicionesInfo = {
         path: "js/ediciones/tercerFecha"
     }
 };
+
+
 
 // Almacenamiento de datos cargados
 const edicionesCargadas = {};
@@ -673,3 +677,4 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('navbar-scrolled');
     }
 });
+
