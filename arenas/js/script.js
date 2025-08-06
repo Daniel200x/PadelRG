@@ -665,7 +665,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDropdown(e) {
         if (window.innerWidth <= 992) {
             e.preventDefault();
-            const dropdown = this.parentElement;
             const dropdownMenu = this.nextElementSibling;
             
             // Cerrar otros dropdowns abiertos
@@ -678,7 +677,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Event Listeners
-    hamburger.addEventListener('click', toggleMenu);
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
     
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener('click', toggleDropdown);
@@ -734,12 +736,4 @@ window.addEventListener('resize', function() {
     }
 });
 
-// Efecto al hacer scroll
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar-fixed');
-    if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
-    }
-});
+
