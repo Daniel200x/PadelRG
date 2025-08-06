@@ -639,44 +639,37 @@ function mostrarSeccion(seccion) {
     }
 }
 
-// menu.js - Versión optimizada
 document.addEventListener('DOMContentLoaded', function() {
-    // Elementos del DOM
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-links > li > a:not(.dropdown-menu a)');
     const dropdownToggles = document.querySelectorAll('.dropdown > a');
     
-    // Función para alternar el menú móvil
+    // Función para alternar el menú
     function toggleMenu() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-        
-        // Cerrar todos los submenús al abrir/cerrar el menú principal
-        if (!navMenu.classList.contains('active')) {
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.classList.remove('active');
-            });
-        }
+        document.body.classList.toggle('no-scroll');
     }
     
-    // Función para alternar submenús en móvil
+    // Función para alternar submenús
     function toggleDropdown(e) {
         if (window.innerWidth <= 992) {
             e.preventDefault();
             const dropdownMenu = this.nextElementSibling;
             
-            // Cerrar otros dropdowns abiertos
+            // Cerrar otros dropdowns
             document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                if (menu !== dropdownMenu) menu.classList.remove('active');
+                if (menu !== dropdownMenu && menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                }
             });
             
             dropdownMenu.classList.toggle('active');
         }
     }
     
-    // Event Listeners
+    // Event listeners
     hamburger.addEventListener('click', function(e) {
         e.stopPropagation();
         toggleMenu();
@@ -689,7 +682,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 992) {
-                toggleMenu(); // Cierra el menú al hacer clic en un enlace
+                toggleMenu();
             }
         });
     });
@@ -697,16 +690,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cerrar menú al hacer clic fuera
     document.addEventListener('click', function(e) {
         if (window.innerWidth <= 992 && 
-            !e.target.closest('.nav-container') && 
-            navMenu.classList.contains('active')) {
+            navMenu.classList.contains('active') &&
+            !e.target.closest('.nav-container')) {
             toggleMenu();
         }
     });
     
-    // Cerrar menú al cambiar el tamaño de la pantalla
+    // Cerrar menú al cambiar tamaño de pantalla
     window.addEventListener('resize', function() {
         if (window.innerWidth > 992 && navMenu.classList.contains('active')) {
             toggleMenu();
+        }
+        
+        // Resetear dropdowns al cambiar tamaño
+        if (window.innerWidth > 992) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('active');
+            });
         }
     });
 });
