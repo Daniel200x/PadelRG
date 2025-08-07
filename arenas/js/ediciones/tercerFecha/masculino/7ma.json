@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Velazquez/Sánchez",
+          "nombre": "Velazquez/Sanchez",
            "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -38,21 +38,22 @@
           "fecha": "29/07/25 23:00 hs",
           "equipo1": "Torres/Peix",
           "equipo2": "Aguirre/Lucena",
-          "resultado": "6-1, 6-0",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-0"
         },
         {
-          "equipo1": "Velazquez/Sánchez",
+          "equipo1": "Velazquez/Sanchez",
           "equipo2": "Torres/Peix",
           "fecha": "30/07/25 21:30 hs",
-          "resultado": "7-6, 5-7, 6-7"
+          "resultado": "1-2",
+          "games":"7-6, 5-7, 6-7"
         },
         {
           "equipo1": "Aguirre/Lucena",
           "equipo2": "Velazquez/Sanchez",
           "fecha": "31/07/25 18:30 hs",
-          "resultado": "4-6, 7-6, 6-7",
-          "games":""
+          "resultado": "1-2",
+          "games":"4-6, 7-6, 6-7"
         }
         
       ]
@@ -93,22 +94,22 @@
           "equipo1": "Bordon/Bordon",
           "equipo2": "Guaragna/Aliaga",
           "fecha": "29/07/25 23:00 hs",
-          "resultado": "6-2, 6-3",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-2, 6-3"
         },
         {
           "equipo1": "Bordon/Bordon",
           "equipo2": "Ventura/Barrionuevo",
           "fecha": "31/07/25 18:30 hs",
-          "resultado": "3-6, 4-6",
-          "games":""
+          "resultado": "0-2",
+          "games":"3-6, 4-6"
         },
         {
           "equipo1": "Ventura/Barrionuevo",
           "equipo2": "Guaragna/Aliaga",
           "fecha": "1/08/25 9:00 hs",
-          "resultado": "6-1, 6-2",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
         }
       ]
     },
@@ -203,22 +204,22 @@
           "equipo1": "Mariani/Bustos",
           "equipo2": "Larocca/Navarro",
           "fecha": "30/07/25 22:30 hs",
-          "resultado": "7-5, 6-7, 6-7",
-          "games":""
+          "resultado": "1-2",
+          "games":"7-5, 6-7, 6-7"
         },
         {
           "equipo1": "Aperio/Fiori",
           "equipo2": "Larocca/Navarro",
           "fecha": "1/08/25 23:30 hs",
-          "resultado": "5-7, 6-4, 7-6",
-          "games":""
+          "resultado": "2-1",
+          "games":"5-7, 6-4, 7-6"
         },
         {
           "equipo1": "Mariani/Bustos",
           "equipo2": "Aperio/Fiori",
           "fecha": "2/08/25 14:00 hs",
-          "resultado": "3-6, 2-6",
-          "games":""
+          "resultado": "0-2",
+          "games":"3-6, 2-6"
         }
       ]
     },
@@ -255,25 +256,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Spammer/Fiorotto",
+          "equipo1": "Spamer/Fiorotto",
           "equipo2": "Ruiz/Zurita",
           "fecha": "30/07/25 23:30 hs",
-          "resultado": "2-6, 3-6",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 3-6"
         },
         {
           "equipo1": "Vera/Gimenez",
-          "equipo2": "Spammer/Fiorotto",
+          "equipo2": "Spamer/Fiorotto",
           "fecha": "31/07/25 19:30 hs",
-          "resultado": "6-2, 6-1",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
         },
         {
           "equipo1": "Vera/Gimenez",
-          "equipo2": "Ruiz/Ojeda",
+          "equipo2": "Ruiz/Zurita",
           "fecha": "01/08/25 17:30 hs",
-          "resultado": "6-2, 6-2",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
         }
       ]
     },
@@ -313,21 +314,21 @@
           "equipo1": "Rojo/Chalier",
           "equipo2": "Fritz/Camargo",
           "fecha": "30/07/25 20:30 hs",
-          "resultado": "6-4, 6-3",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
         },
         {
           "equipo1": "Ojeda/Pintos",
           "equipo2": "Fritz/Camargo",
           "fecha": "01/08/25 23:50 hs",
-          "resultado": "6-4, 6-0",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-0"
         },
         {
           "equipo1": "Rojo/Chalier",
           "equipo2": "Ojeda/Pintos",
           "fecha": "02/08/25 15:00 hs",
-          "resultado": "A confirmar",
+          "resultado": "",
           "games":""
         }
       ]
@@ -368,22 +369,22 @@
           "equipo1": "Vera/Carrizo",
           "equipo2": "Allende/Castro",
           "fecha": "30/07/25 16:30 hs",
-          "resultado": "6-1, 6-2",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
         },
         {
           "equipo1": "Rubio/Santana",
           "equipo2": "Allende/Castro",
           "fecha": "31/07/25 20:00 hs",
-          "resultado": "6-3, 6-1",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
         },
         {
           "equipo1": "Vera/Carrizo",
           "equipo2": "Rubio/Santana",
           "fecha": "01/08/25 23:50 hs",
-          "resultado": "7-5, 6-7, 7-6",
-          "games":""
+          "resultado": "2-1",
+          "games":"7-5, 6-7, 7-6"
         }
       ]
     },
@@ -432,28 +433,28 @@
           "equipo1": "Bucci/Retamar",
           "equipo2": "Rojas/Carracedo",
           "fecha": "01/08/25 21:30 hs",
-          "resultado": "4-6, 6-4, 7-6",
-          "games":""
+          "resultado": "2-1",
+          "games":"4-6, 6-4, 7-6"
         },
         {
           "equipo1": "Muñoz/Trellini",
           "equipo2": "Henninger/Lamas",
           "fecha": "01/08/25 19:30 hs",
-          "resultado": "6-3, 6-1",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
         },
         {
           "equipo1": "Bucci/Retamar",
           "equipo2": "Muñoz/Trellini",
           "fecha": "02/08/25 13:00 hs",
-          "resultado": "A confirmar",
+          "resultado": "",
           "games":""
         },
         {
           "equipo1": "Henninger/Lamas",
           "equipo2": "Rojas/Carracedo",
           "fecha": "02/08/25 16:00 hs",
-          "resultado": "A confirmar",
+          "resultado": "",
           "games":""
         }
       ]
@@ -503,28 +504,28 @@
           "equipo1": "Roldan/Tapia",
           "equipo2": "Perez/Salvaña",
           "fecha": "01/08/25 23:30 hs",
-          "resultado": "4-6, 3-6",
-          "games":""
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
         },
         {
           "equipo1": "Romero/Barila",
           "equipo2": "Almada/Garcia",
           "fecha": "01/08/25 20:30 hs",
-          "resultado": "3-6, 3-6",
-          "games":""
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
         },
         {
         "equipo1": "Perez/Salvaña",
           "equipo2": "Almada/Garcia",
           "fecha": "02/08/25 10:00 hs",
-          "resultado": "A confirmar",
+          "resultado": "",
           "games":""
         },
         {
           "equipo1": "Romero/Barila",
           "equipo2": "Roldan/Tapia",
           "fecha": "02/08/25 12:00 hs",
-          "resultado": "A confirmar",
+          "resultado": "",
           "games":""
         }
       ]
