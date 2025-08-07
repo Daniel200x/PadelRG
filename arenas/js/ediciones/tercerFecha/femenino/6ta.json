@@ -6,9 +6,9 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Retuerto/Marcial",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Bordon/Herrera",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Rojo/Cuenca",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -40,15 +40,15 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Cordoba/Carpio",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Luna/Pesce",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Sanabria/Flamenco",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -80,15 +80,15 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Gimenez/Quezada",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Gasparovic/Bergondi",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Denis/Salas",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -120,15 +120,15 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Polizzi/Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Saldivia/Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Cortez/Rusconi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -159,59 +159,59 @@
   ],
 
 
-  "eliminatorias": {
+ "eliminatorias": {
 
     "cuartos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P1 - 1ro A",
+        "equipo2": "2do C ",
+        "fecha": "Sabado 21:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P2 - 2do B",
+        "equipo2": "1ro D ",
+        "fecha": "Sabado 21:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P3 - 1ro C",
+        "equipo2": "2do A",
+        "fecha": "Sabado 22:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P4 - 2do D",
+        "equipo2": "1ro B",
+        "fecha": "Sabado 22:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P5 - Ganador P1",
+        "equipo2": "Ganador P2",
+        "fecha": "Domingo 19:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P6 - Ganador P3",
+        "equipo2": "Ganador P4",
+        "fecha": "Domingo 19:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
+      "equipo1": "Ganador P5/",
+      "equipo2": "Ganador P6",
+      "fecha": "A definir",
+      "resultado": "A definir",
       "ganador": "/"
     }
   }
