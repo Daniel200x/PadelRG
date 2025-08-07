@@ -54,20 +54,23 @@
       ],
       "partidos": [
         {
+         "fecha": "Martes 18:30 hs",
+          "equipo1": "Marquez/Garcia",
+          "equipo2": "Ruiz/Loberche",
+          "resultado": "2-1",
+          "games": "6-7, 6-4, 7-6"
+        },
+        
+        
+        
+        {
          "fecha": "Jueves 23:50 hs",
           "equipo1": "Crespo/Pedraza",
           "equipo2": "Ruiz/Loberche",
           "resultado": "",
           "games": "A definir"
         },
-        {
-         "fecha": "Viernes 17:00 hs",
-          "equipo1": "Marquez/Garcia",
-          "equipo2": "Ruiz/Loberche",
-          "resultado": "",
-          "games": "A definir"
-        },
-        {
+            {
          "fecha": "Sabado 8:00 hs",
           "equipo1": "Marquez/Garcia",
           "equipo2": "Crespo/Pedraza",
@@ -137,8 +140,8 @@
          "fecha": "Miercoles 17:00 hs",
           "equipo1": "Ortiz/Paniagua",
           "equipo2": "Loberche/Denis",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-1, 6-4"
         },
         {
           "fecha": "Jueves 23:00 hs",
@@ -217,8 +220,8 @@
          "fecha": "Martes 17:00 hs",
           "equipo1": "Alvarado/Carrizo",
           "equipo2": "Carrasco/Menendez",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "7-5, 6-2"
         },
         {
           "fecha": "Miercoles 18:00 hs",
@@ -319,7 +322,7 @@
     "final": {
       "equipo1": "Ganador P9 ",
       "equipo2": "Ganador P10",
-      "fecha": "Domingo :00 hs",
+      "fecha": "A definir",
       "resultado": "A definir",
       "ganador": "/"
     }
