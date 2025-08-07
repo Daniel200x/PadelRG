@@ -6,32 +6,32 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Andrade/Gallardo",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Morales/A confirmar",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Santi/Bleuer",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Andrade/Gallardo",
+          "equipo2": "Morales/A confirmar",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Andrade/Gallardo",
+          "equipo2": "Santi/Bleuer",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Santi/Bleuer",
+          "equipo2": "Morales/A confirmar",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         }
         
       ]
@@ -40,39 +40,39 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Ojeda/Floriani",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Maestro/Sanchez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Barria/Suarez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Ojeda/Floriani",
+          "equipo2": "Barria/Suarez",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 21:00 hs",
+          "equipo1": "Ojeda/Floriani",
+          "equipo2": "Maestro/Sanchez",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 14:00 hs",
+          "equipo1": "Maestro/Sanchez",
+          "equipo2": "Barria/Suarez" ,
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         }
       ]
     },
@@ -80,39 +80,39 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Escufachi/Moreno",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Servian/Ormaza",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Lapadula/Andrade",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Servian/Ormaza",
+          "equipo2": "Lapadula/Andrade",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Escufachi/Moreno",
+          "equipo2": "Servian/Ormaza",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 12:00 hs",
+          "equipo1": "Escufachi/Moreno",
+          "equipo2": "Lapadula/Andrade",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         }
       ]
     },
@@ -120,39 +120,39 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Andrade/Echeverria",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Muller/Villarreal",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Andrade/Chalier",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 21:00 hs",
+          "equipo1": "Andrade/Echeverria",
+          "equipo2": "Andrade/Chalier",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Muller/Villarreal",
+          "equipo2": "Andrade/Chalier",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Muller/Villarreal",
+          "equipo2": "Andrade/Echeverria",
+          "resultado": "2-0",
+          "games": "6-3, 6-3"
         }
       ]
     }
@@ -163,55 +163,55 @@
 
     "cuartos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P1 - 1ro A",
+        "equipo2": "2do C ",
+        "fecha": "Sabado 21:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P2 - 2do B",
+        "equipo2": "1ro D ",
+        "fecha": "Sabado 21:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P3 - 1ro C",
+        "equipo2": "2do A",
+        "fecha": "Sabado 22:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P4 - 2do D",
+        "equipo2": "1ro B",
+        "fecha": "Sabado 22:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P5 - Ganador P1",
+        "equipo2": "Ganador P2",
+        "fecha": "Domingo 19:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "equipo1": "P6 - Ganador P3",
+        "equipo2": "Ganador P4",
+        "fecha": "Domingo 19:00 hs",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
+      "equipo1": "Ganador P5/",
+      "equipo2": "Ganador P6",
+      "fecha": "A definir",
+      "resultado": "A definir",
       "ganador": "/"
     }
   }

@@ -15,21 +15,21 @@
         },
         {
           "nombre": "Cintia Lucero/Yasna Murga",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 9,
-          "GC": 13
+          "SG": 1,
+          "SP": 4,
+          "GF": 24,
+          "GC": 32
         },
         {
           "nombre": "Nelida Cabezas/Vera",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 17,
-          "GC": 14
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 2,
+          "GF": 36,
+          "GC": 29
         }
         
       ],
@@ -50,7 +50,7 @@
           "equipo1": "Lucero/Murga",
           "equipo2": "Cabezas/Vera",
           "fecha": "01/08/25 17:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "7-6, 2-6, 6-7"
         }
         
       ]
@@ -60,21 +60,21 @@
       "equipos": [
         {
           "nombre": "Alejandra Soto/Rosalia Cruz",
+          "PJ": 2,
+          "PG": 1,
+          "SG": 2,
+          "SP": 2,
+          "GF": 21,
+          "GC": 15
+        },
+        {
+          "nombre": "Luisa Miranda/Lucia Marcial",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
           "SP": 0,
-          "GF": 12,
-          "GC": 2
-        },
-        {
-          "nombre": "Luisa Miranda/Lucia Marcial",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "GF": 13,
+          "GC": 9
         },
         {
           "nombre": "Flamenco Graciela/Martinez",
@@ -102,8 +102,8 @@
         {
           "equipo1": "Miranda/Marcial",
           "equipo2": "Soto/Cruz",
-          "fecha": "02/08/25 12:00 hs",
-          "resultado": "A confirmar"
+          "fecha": "31/07/25 20:30 hs",
+          "resultado": "6-7, 3-6"
         }
       ]
     },
@@ -112,30 +112,30 @@
       "equipos": [
         {
           "nombre": "Daniela Martinez/Fernanda Martinez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 2,
+          "PG": 2,
+          "SG": 4,
+          "SP": 1,
+          "GF": 27,
+          "GC": 23
         },
         {
           "nombre": "Tania Luna/Fernanda Polizzi",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 1,
           "SG": 2,
-          "SP": 1,
-          "GF": 17,
-          "GC": 16
+          "SP": 3,
+          "GF": 22,
+          "GC": 28
         },
         {
           "nombre": "Emilia Peix/Cutri",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
           "SG": 1,
-          "SP": 2,
-          "GF": 16,
-          "GC": 17
+          "SP": 4,
+          "GF": 34,
+          "GC": 32
         }
       ],
       "partidos": [
@@ -149,13 +149,13 @@
           "equipo1": "Luna/Polizzi",
           "equipo2": "Martinez/Martinez",
           "fecha": "31/07/25 22:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "4-6, 1-6"
         },
         {
-          "equipo1": "Peix/A definir",
+          "equipo1": "Peix/Cutri",
           "equipo2": "Martinez/Martinez",
           "fecha": "01/08/25 18:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-7, 6-1, 6-7"
         }
       ]
     },
@@ -168,8 +168,8 @@
           "PG": 1,
           "SG": 2,
           "SP": 0,
-          "GF": 12,
-          "GC": 3
+          "GF": 26,
+          "GC": 21
         },
         {
           "nombre": "Adelaida Vidart/Natalia Marcolini",
@@ -182,12 +182,12 @@
         },
         {
           "nombre": "Silvina Vera/Lucila Sanz",
-          "PJ": 0,
+          "PJ": 1,
           "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "SG": 1,
+          "SP": 2,
+          "GF": 18,
+          "GC": 14
         }
       ],
       "partidos": [
@@ -201,7 +201,7 @@
           "equipo1": "Vera/Sanz",
           "equipo2": "Miranda/Romano",
           "fecha": "1/08/25 18:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "6-0, 6-7, 6-7"
         },
         {
           "equipo1": "Vera/Sanz",
@@ -225,21 +225,21 @@
         },
         {
           "nombre": "Giuliana Gimenez/Rocio Terrado",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 10,
-          "GC": 13
+          "PJ": 2,
+          "PG": 1,
+          "SG": 2,
+          "SP": 3,
+          "GF": 26,
+          "GC": 26
         },
         {
           "nombre": "Ayelen Carpio/Carolina Herrera",
-          "PJ": 1,
+          "PJ": 2,
           "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 9,
-          "GC": 13
+          "SG": 1,
+          "SP": 4,
+          "GF": 22,
+          "GC": 29
         }
       ],
       "partidos": [
@@ -259,7 +259,7 @@
           "equipo1": "Gimenez/Terrado",
           "equipo2": "Carpio/Herrera",
           "fecha": "31/07/25 22:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "3-6, 6-1, 7-6"
         }
       ]
     },
@@ -270,10 +270,10 @@
           "nombre": "Luciana Rodriguez/Cecilia Gersicich",
           "PJ": 1,
           "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 17,
-          "GC": 14
+          "SG": 3,
+          "SP": 3,
+          "GF": 34,
+          "GC": 30
         },
         {
           "nombre": "Florencia Bianchi/Fernanda Treppo",
@@ -286,12 +286,12 @@
         },
         {
           "nombre": "Natalia Politi/Estela Moyano",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "PJ": 1,
+          "PG": 1,
+          "SG": 2,
+          "SP": 1,
+          "GF": 16,
+          "GC": 17
         }
       ],
       "partidos": [
@@ -305,7 +305,7 @@
           "equipo1": "Politi/Moyano",
           "equipo2": "Rodriguez/Gersicich",
           "fecha": "01/08/25 22:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "2-6, 7-5, 7-6"
         },
         {
           "equipo1": "Politi/Moyano",
