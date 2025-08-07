@@ -48,7 +48,7 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "Gersiscich/Castillo",
+          "nombre": "Miranda/Cutri",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -88,17 +88,17 @@
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "5ta/5ta",
+          "nombre": "Castillo/Gersicich",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Miercoles 17:30 hs",
+          "equipo1": "Mainero/Figueroa",
+          "equipo2": "Castillo/Gersicich",
+          "resultado": "2-0",
+          "games": "6-0, 6-0"
         },
         {
           "fecha": " 23:00 hs",
