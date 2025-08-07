@@ -6,32 +6,32 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Sosa/Lopez",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Larrechea/Lemus",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Ponce/Beltran",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Larrechea/Lemus",
+          "equipo2": "Ponce/Beltran",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Sosa/Lopez",
+          "equipo2": "Ponce/Beltran",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Sosa/Lopez",
+          "equipo2": "Larrechea/Lemus",
           "resultado": "",
-          "games": ""
+          "games": "A definir"
         }
         
       ]
@@ -40,25 +40,25 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Gomez/Maisares",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Figueroa/Rodriguez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Dominguez/Saldaño",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Gomez/Maisares",
+          "equipo2": "Figueroa/Rodriguez",
+          "resultado": "2-0",
+          "games": "6-3, 6-2"
         },
         {
          "fecha": " 23:00 hs",
@@ -80,25 +80,25 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Carrasco/Granero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Quiroz/Galucci",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Amarilla/Nahuel",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Quiroz/Galucci",
+          "equipo2": "Carrasco/Gamarra",
+          "resultado": "2-0",
+          "games": "6-2, 6-2"
         },
         {
           "fecha": " 23:00 hs",
@@ -120,25 +120,25 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Dos Santos/Villalba",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Barbosa/Torres",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Orellano/Arteaga",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 17:00 hs",
+          "equipo1": "Dos Santos/Villalba",
+          "equipo2": "Barbosa/Torres",
+          "resultado": "2-1",
+          "games": "5-7, 6-1, 7-6 "
         },
         {
           "fecha": " 23:00 hs",
@@ -160,25 +160,25 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Pereyra/Velasquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Villalobos/Gabriel",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Muriño/Baldovino",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 18:00 hs",
+          "equipo1": "Pereyra/Velasquez",
+          "equipo2": "Villalobos/Gabriel",
+          "resultado": "2-0",
+          "games": "6-3, 6-3"
         },
         {
           "fecha": " 23:00 hs",
@@ -200,25 +200,25 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Garcia/Villafañe",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Garay/Floriani",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Forno/Gomez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Forno/Gomez",
+          "equipo2": "Garay/Floriani",
+          "resultado": "2-0",
+          "games": "7-5, 6-4"
         },
         {
           "fecha": " 23:00 hs",
@@ -240,25 +240,25 @@
       "nombre": "Grupo G",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Gimenez/De Guevara",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Cuenca/Lonne",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Infran/Mendez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 23:00 hs",
+          "equipo1": "Cuenca/Lonne",
+          "equipo2": "Infran/Mendez",
+          "resultado": "0-2",
+          "games": "2-6, 4-6"
         },
         {
           "fecha": " 23:00 hs",
@@ -280,25 +280,25 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Puebla/Velazquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Sanchez/Moreta",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Saldaño/Escobar",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 23:00 hs",
+          "equipo1": "Saldaño/Escobar",
+          "equipo2": "Sanchez/Moreta",
+          "resultado": "1-2",
+          "games": "7-6, 6-7, 6-7"
         },
         {
           "fecha": " 23:00 hs",
@@ -320,50 +320,107 @@
 
 
   "eliminatorias": {
-
+"octavos": [
+      {
+        "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      },
+      {
+         "equipo1": "P -/",
+        "equipo2": "/",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/"
+      }
+    ],
     "cuartos": [
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       },
       {
-        "equipo1": "/",
+        "equipo1": "P -/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
+        "resultado": "A definir",
         "ganador": "/"
       }
     ],
