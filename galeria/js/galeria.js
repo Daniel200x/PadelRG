@@ -21,10 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Cerrar menú al hacer click en un link (para móviles)
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
-                toggleMobileMenu();
-            }
+    link.addEventListener('click', (e) => {
+        // Verificar si el clic fue en un dropdown o en su ícono
+        const isDropdown = link.classList.contains('dropdown') || 
+                          e.target.closest('.dropdown') || 
+                          e.target.classList.contains('fa-chevron-down') || 
+                          e.target.classList.contains('fa-chevron-up');
+        
+        if (navMenu.classList.contains('active') && !isDropdown) {
+            toggleMobileMenu();
+        }
         });
     });
     
