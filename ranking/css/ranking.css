@@ -383,3 +383,66 @@
     font-size: 15px;
     text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+
+
+@media (max-width: 480px) {
+    .ranking-container {
+        padding: 8px;
+        margin: 5px;
+        margin-top: 50px;
+    }
+    
+    .ranking-table {
+        font-size: 12px;
+    }
+    
+    .ranking-table th,
+    .ranking-table td {
+        padding: 6px 8px;
+    }
+    
+    /* Columnas específicas */
+    .ranking-table td:nth-child(1) { /* Posición */
+        width: 30px;
+        padding-right: 5px;
+        color: #7f8c8d;
+    }
+    
+    .ranking-table td:nth-child(2) { /* Jugador */
+        width: calc(100% - 135px);
+        padding-left: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .ranking-table td:nth-child(3) { /* Puntos */
+        width: 50px;
+    }
+    
+    .ranking-table td:nth-child(4) { /* Categoría */
+        width: 50px;
+    }
+    
+    /* Ocultar columnas menos importantes */
+    .ranking-table th:nth-child(5),
+    .ranking-table td:nth-child(5),
+    .ranking-table th:nth-child(6),
+    .ranking-table td:nth-child(6),
+    .ranking-table th:nth-child(7),
+    .ranking-table td:nth-child(7) {
+        display: none;
+    }
+    
+    /* Ajustar paginación */
+    .ranking-pagination {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .pagination-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+}

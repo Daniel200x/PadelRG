@@ -1,0 +1,68 @@
+/* Estilos generales para la página de ranking */
+.ranking-container {
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Selector de ranking (General/Masculino/Femenino) */
+.ranking-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ranking-tab {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.ranking-tab:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ranking-tab.active {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido principal del ranking */
+.ranking-content {
+    margin-top: 30px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .ranking-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ranking-container {
+        padding: 15px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ranking-container {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 60px;
+    }
+}
