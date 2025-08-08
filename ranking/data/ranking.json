@@ -1,0 +1,465 @@
+{
+  "jugadores": [
+    
+    {
+      "id": 1,
+      "name": "Juan Pérez",
+      "gender": "masculino",
+      "category": "4ta",
+      "puntoDeOro": 400,
+      "arenas": 400,
+      "segundoSet": 400
+    },
+    {
+      "id": 2,
+      "name": "María Gómez",
+ "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 480,
+      "arenas": 400,
+      "segundoSet": 400
+    },
+    {
+      "id": 3,
+      "name": "Carlos López",
+     "gender": "masculino",
+      "category": "5ta",
+      "puntoDeOro": 370,
+      "arenas": 400,
+      "segundoSet": 350
+    },
+    {
+      "id": 4,
+      "name": "Chicaguala/Fruncieri",
+     "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 5,
+      "name": "Andrade/Velasquez",
+      "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 6,
+      "name": "Luis Rodríguez",
+    "gender": "masculino",
+      "category": "5ta",
+      "puntoDeOro": 360,
+      "arenas": 400,
+      "segundoSet": 340
+    },
+    {
+      "id": 7,
+      "name": "Ana Martínez",
+ "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 350,
+      "arenas": 400,
+      "segundoSet": 330
+    },
+    {
+      "id": 8,
+      "name": "Pedro Sánchez",
+ "gender": "masculino",
+      "category": "5ta",
+      "puntoDeOro": 340,
+      "arenas": 400,
+      "segundoSet": 310
+    },
+    {
+      "id": 9,
+      "name": "Lucía Fernández",
+   "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 330,
+      "arenas": 400,
+      "segundoSet": 290
+    },
+    {
+      "id": 10,
+      "name": "Jorge García",
+      "gender": "masculino",
+      "category": "5ta",
+      "puntoDeOro": 320,
+      "arenas": 400,
+      "segundoSet": 280
+    },
+    {
+      "id": 11,
+      "name": "Sofía Ramírez",
+"gender": "femenino",      "category": "4ta",
+      "puntoDeOro": 310,
+      "arenas": 400,
+      "segundoSet": 270
+    },
+    {
+      "id": 12,
+      "name": "Miguel Torres","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 300,
+      "arenas": 400,
+      "segundoSet": 250
+    },
+    {
+      "id": 13,
+      "name": "Elena Castro",
+      "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 290,
+      "arenas": 400,
+      "segundoSet": 230
+    },
+    {
+      "id": 14,
+      "name": "Fernando Ruiz",
+      "gender": "",
+      "category": "5ta",
+      "puntoDeOro": 280,
+      "arenas": 400,
+      "segundoSet": 220
+    },
+    {
+      "id": 15,
+      "name": "Isabel Díaz",
+     "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 270,
+      "arenas": 400,
+      "segundoSet": 210
+    },
+    {
+      "id": 16,
+      "name": "Ricardo Mendoza",
+      "gender": "",
+      "category": "5ta",
+      "puntoDeOro": 260,
+      "arenas": 400,
+      "segundoSet": 190
+    },
+    {
+      "id": 17,
+      "name": "Carmen Vargas",
+      "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 250,
+      "arenas": 400,
+      "segundoSet": 170
+    },
+    {
+      "id": 18,
+      "name": "Alejandro Herrera",
+      "gender": "",
+      "category": "5ta",
+      "puntoDeOro": 240,
+      "arenas": 400,
+      "segundoSet": 160
+    },
+    {
+      "id": 19,
+      "name": "Patricia Soto","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 230,
+      "arenas": 400,
+      "segundoSet": 150
+    },
+    {
+      "id": 20,
+      "name": "Roberto Núñez","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 220,
+      "arenas": 400,
+      "segundoSet": 130
+    },
+    {
+      "id": 21,
+      "name": "Silvia Jiménez","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 210,
+      "arenas": 400,
+      "segundoSet": 110
+    },
+    {
+      "id": 22,
+      "name": "Daniel Ortega","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 200,
+      "arenas": 400,
+      "segundoSet": 100
+    },
+    {
+      "id": 23,
+      "name": "Laura Mora","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 190,
+      "arenas": 400,
+      "segundoSet": 90
+    },
+    {
+      "id": 24,
+      "name": "José Rojas","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 180,
+      "arenas": 400,
+      "segundoSet": 70
+    },
+    {
+      "id": 25,
+      "name": "Marta Peña","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 170,
+      "arenas": 400,
+      "segundoSet": 50
+    },
+    {
+      "id": 26,
+      "name": "González/Paredes","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 27,
+      "name": "Silva/Castillo","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 28,
+      "name": "Vega/Miranda","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 29,
+      "name": "Paz/Ríos","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 30,
+      "name": "Navarro/Salazar","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 0,
+      "segundoSet": 0
+    },
+    {
+      "id": 31,
+      "name": "Hugo Flores","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 160,
+      "arenas": 400,
+      "segundoSet": 40
+    },
+    {
+      "id": 32,
+      "name": "Eva Reyes","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 150,
+      "arenas": 400,
+      "segundoSet": 30
+    },
+    {
+      "id": 33,
+      "name": "Raúl Medina","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 140,
+      "arenas": 400,
+      "segundoSet": 10
+    },
+    {
+      "id": 34,
+      "name": "Clara Guzmán","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 130,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 35,
+      "name": "Sergio Paredes","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 120,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 36,
+      "name": "Olga Cordero","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 110,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 37,
+      "name": "Alberto Ríos","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 100,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 38,
+      "name": "Nuria Blanco","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 90,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 39,
+      "name": "Felipe Montes","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 80,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 40,
+      "name": "Rosa Delgado","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 70,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 41,
+      "name": "Arturo León","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 60,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 42,
+      "name": "Teresa Campos","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 50,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 43,
+      "name": "Manuel Acosta","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 40,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 44,
+      "name": "Beatriz Fuentes","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 30,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 45,
+      "name": "Javier Méndez","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 20,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 46,
+      "name": "Lorena Soler","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 10,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 47,
+      "name": "Rubén Vidal","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 48,
+      "name": "Alicia Puig","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 49,
+      "name": "Víctor Serra","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 50,
+      "name": "Diana Cortés","gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 51,
+      "name": "Pablo Marín","gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 52,
+      "name": "Mónica Roca",
+      "gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 53,
+      "name": "Santiago Lozano",
+      "gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 54,
+      "name": "Julia Ferrer",
+      "gender": "",
+      "category": "4ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    },
+    {
+      "id": 55,
+      "name": "Oscar Coll",
+      "gender": "",
+      "category": "5ta",
+      "puntoDeOro": 0,
+      "arenas": 400,
+      "segundoSet": 0
+    }
+  ]
+}
