@@ -1,6 +1,8 @@
 {
   "jugadores": [
     
+
+    
     {
       "id": 1,
       "name": "Ivan Gallardo",
@@ -8,10 +10,44 @@
       "category": "4ta",
       "puntoDeOro": 400,
       "arenas": 400,
-      "segundoSet": 400
+      "segundoSet": 400,
+
+      "rango cuarta masculino": "1-50",
+      "rango cuarta femenino": "51-100",
+      
+      "rango quinta masculino": "101-200",
+      "rango quinta femenino": "201-300",
+
+      "rango sexta masculino": "301-500",
+      "rango sexta femenino": "501-700",
+      
+      "rango septima masculino": "701-900",
+      "rango septima femenino": "901-1100",
+
+      "rango octava masculino": "1101-1300",
+      "rango octava femenino": "1301-1500"
     },
+   
     {
       "id": 2,
+      "name": "Julio Andrade",
+     "gender": "masculino",
+      "category": "4ta",
+      "puntoDeOro": 370,
+      "arenas": 400,
+      "segundoSet": 350
+    },
+     {
+      "id": 3,
+      "name": "Pablo Lara",
+    "gender": "masculino",
+      "category": "4ta",
+      "puntoDeOro": 360,
+      "arenas": 400,
+      "segundoSet": 340
+    },
+     {
+      "id": 51,
       "name": "María Gómez",
  "gender": "femenino",
       "category": "4ta",
@@ -20,16 +56,7 @@
       "segundoSet": 400
     },
     {
-      "id": 3,
-      "name": "Julio Andrade",
-     "gender": "masculino",
-      "category": "4ta",
-      "puntoDeOro": 370,
-      "arenas": 400,
-      "segundoSet": 350
-    },
-    {
-      "id": 4,
+      "id": 52,
       "name": "Chicaguala/Fruncieri",
      "gender": "femenino",
       "category": "4ta",
@@ -38,7 +65,7 @@
       "segundoSet": 0
     },
     {
-      "id": 5,
+      "id": 53,
       "name": "Andrade/Velasquez",
       "gender": "femenino",
       "category": "4ta",
@@ -46,17 +73,9 @@
       "arenas": 0,
       "segundoSet": 0
     },
+   
     {
-      "id": 6,
-      "name": "Pablo Lara",
-    "gender": "masculino",
-      "category": "4ta",
-      "puntoDeOro": 360,
-      "arenas": 400,
-      "segundoSet": 340
-    },
-    {
-      "id": 7,
+      "id": 54,
       "name": "Ana Martínez",
  "gender": "femenino",
       "category": "4ta",
@@ -65,16 +84,7 @@
       "segundoSet": 330
     },
     {
-      "id": 8,
-      "name": "Braian Lizzarraga",
- "gender": "masculino",
-      "category": "5ta",
-      "puntoDeOro": 340,
-      "arenas": 400,
-      "segundoSet": 310
-    },
-    {
-      "id": 9,
+      "id": 55,
       "name": "Lucía Fernández",
    "gender": "femenino",
       "category": "4ta",
@@ -83,7 +93,26 @@
       "segundoSet": 290
     },
     {
-      "id": 10,
+      "id": 56,
+      "name": "Sofía Ramírez",
+      "gender": "femenino",
+      "category": "4ta",
+      "puntoDeOro": 310,
+      "arenas": 400,
+      "segundoSet": 270
+    },
+    {
+      "id": 101,
+      "name": "Braian Lizzarraga",
+ "gender": "masculino",
+      "category": "5ta",
+      "puntoDeOro": 340,
+      "arenas": 400,
+      "segundoSet": 310
+    },
+    
+    {
+      "id": 102,
       "name": "Andres Chalier",
       "gender": "masculino",
       "category": "5ta",
@@ -91,27 +120,20 @@
       "arenas": 400,
       "segundoSet": 280
     },
+    
     {
-      "id": 11,
-      "name": "Sofía Ramírez",
-"gender": "femenino",      "category": "4ta",
-      "puntoDeOro": 310,
-      "arenas": 400,
-      "segundoSet": 270
-    },
-    {
-      "id": 12,
-      "name": "Miguel Torres","gender": "",
+      "id": 103,
+      "name": "Miguel Torres","gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 300,
       "arenas": 400,
       "segundoSet": 250
     },
     {
-      "id": 13,
+      "id": 201,
       "name": "Elena Castro",
       "gender": "femenino",
-      "category": "4ta",
+      "category": "5ta",
       "puntoDeOro": 290,
       "arenas": 400,
       "segundoSet": 230
@@ -119,7 +141,7 @@
     {
       "id": 14,
       "name": "Fernando Ruiz",
-      "gender": "",
+      "gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 280,
       "arenas": 400,
@@ -137,7 +159,7 @@
     {
       "id": 16,
       "name": "Ricardo Mendoza",
-      "gender": "",
+      "gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 260,
       "arenas": 400,
@@ -155,7 +177,7 @@
     {
       "id": 18,
       "name": "Alejandro Herrera",
-      "gender": "",
+      "gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 240,
       "arenas": 400,
@@ -163,7 +185,7 @@
     },
     {
       "id": 19,
-      "name": "Patricia Soto","gender": "",
+      "name": "Patricia Soto","gender": "femenino",
       "category": "4ta",
       "puntoDeOro": 230,
       "arenas": 400,
@@ -171,7 +193,7 @@
     },
     {
       "id": 20,
-      "name": "Roberto Núñez","gender": "",
+      "name": "Roberto Núñez","gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 220,
       "arenas": 400,
@@ -423,7 +445,7 @@
       "segundoSet": 0
     },
     {
-      "id": 51,
+      "id": 531,
       "name": "Pablo Marín","gender": "",
       "category": "5ta",
       "puntoDeOro": 0,
@@ -431,7 +453,7 @@
       "segundoSet": 0
     },
     {
-      "id": 52,
+      "id": 532,
       "name": "Mónica Roca",
       "gender": "",
       "category": "4ta",
@@ -440,7 +462,7 @@
       "segundoSet": 0
     },
     {
-      "id": 53,
+      "id": 533,
       "name": "Santiago Lozano",
       "gender": "",
       "category": "5ta",
@@ -449,7 +471,7 @@
       "segundoSet": 0
     },
     {
-      "id": 54,
+      "id": 543,
       "name": "Julia Ferrer",
       "gender": "",
       "category": "4ta",
@@ -458,7 +480,7 @@
       "segundoSet": 0
     },
     {
-      "id": 55,
+      "id": 535,
       "name": "Oscar Coll",
       "gender": "",
       "category": "5ta",
