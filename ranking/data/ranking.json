@@ -275,7 +275,8 @@
     },
     {
       "id": 33,
-      "name": "Gustavo Vera","gender": "",
+      "name": "Gustavo Vera",
+      "gender": "masculino",
       "category": "7ma",
       "puntoDeOro": 140,
       "arenas": 400,
@@ -291,7 +292,8 @@
     },
     {
       "id": 35,
-      "name": "Daniel Fernandez","gender": "",
+      "name": "Daniel Fernandez",
+      "gender": "masculino",
       "category": "8va",
       "puntoDeOro": 120,
       "arenas": 400,
@@ -307,7 +309,8 @@
     },
     {
       "id": 37,
-      "name": "Ruben Peix","gender": "",
+      "name": "Ruben Peix",
+      "gender": "masculino",
       "category": "8va",
       "puntoDeOro": 100,
       "arenas": 400,
@@ -323,7 +326,8 @@
     },
     {
       "id": 39,
-      "name": "Ruben Peix","gender": "",
+      "name": "Ruben Peix",
+      "gender": "masculino",
       "category": "7ma",
       "puntoDeOro": 80,
       "arenas": 400,
@@ -339,7 +343,8 @@
     },
     {
       "id": 41,
-      "name": "Sebastian Torres","gender": "",
+      "name": "Sebastian Torres",
+      "gender": "masculino",
       "category": "7ma",
       "puntoDeOro": 60,
       "arenas": 400,
