@@ -3,7 +3,7 @@
     
     {
       "id": 1,
-      "name": "Juan Pérez",
+      "name": "Ivan Gallardo",
       "gender": "masculino",
       "category": "4ta",
       "puntoDeOro": 400,
@@ -21,9 +21,9 @@
     },
     {
       "id": 3,
-      "name": "Carlos López",
+      "name": "Julio Andrade",
      "gender": "masculino",
-      "category": "5ta",
+      "category": "4ta",
       "puntoDeOro": 370,
       "arenas": 400,
       "segundoSet": 350
@@ -48,9 +48,9 @@
     },
     {
       "id": 6,
-      "name": "Luis Rodríguez",
+      "name": "Pablo Lara",
     "gender": "masculino",
-      "category": "5ta",
+      "category": "4ta",
       "puntoDeOro": 360,
       "arenas": 400,
       "segundoSet": 340
@@ -66,7 +66,7 @@
     },
     {
       "id": 8,
-      "name": "Pedro Sánchez",
+      "name": "Braian Lizzarraga",
  "gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 340,
@@ -84,7 +84,7 @@
     },
     {
       "id": 10,
-      "name": "Jorge García",
+      "name": "Andres Chalier",
       "gender": "masculino",
       "category": "5ta",
       "puntoDeOro": 320,
