@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ranking de Pádel</title>
+    <title>Galería de Torneos de Pádel</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/galeria.css">
-    <link rel="stylesheet" href="../ranking/css/ranking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 <body>
     <!-- Menú de navegación -->
@@ -31,7 +31,6 @@
                         </ul>
                     </li>
                     <li><a href="/ranking/ranking.html">Ranking</a></li>
-                    </li>
                     <li><a href="/galeria/galeria.html">Galería</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
@@ -50,7 +49,89 @@
         </div>
     </nav>
 
- 
+    <!-- Contenido principal de la galería -->
+    <main class="gallery-container">
+        <h1>Galería de Torneos</h1>
+        <p class="gallery-subtitle">Revive los mejores momentos de nuestros torneos</p>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="punto-de-oro">Punto de Oro</button>
+            <button class="filter-btn" data-filter="arenas">Arenas</button>
+            <button class="filter-btn" data-filter="segundo-set">2do Set</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Ejemplo de elementos de la galería - reemplaza con tus imágenes -->
+            <a href="../img/gallery/1.jpg" class="gallery-item arenas" data-sub-html="<h4>Torneo Arenas 2023</h4><p>Final masculina - Octubre 2023</p>">
+                <img src="../img/gallery/1-thumb.jpg" alt="Partido de pádel en Torneo Arenas">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>Torneo Arenas</h3>
+                        <p>Octubre 2023</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="../img/gallery/2.jpg" class="gallery-item punto-de-oro" data-sub-html="<h4>Torneo Punto de Oro 2023</h4><p>Semifinal femenina - Agosto 2023</p>">
+                <img src="../img/gallery/2-thumb.jpg" alt="Partido de pádel en Torneo Punto de Oro">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>Punto de Oro</h3>
+                        <p>Agosto 2023</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="../img/gallery/3.jpg" class="gallery-item segundo-set" data-sub-html="<h4>Torneo 2do Set 2023</h4><p>Cuartos de final - Junio 2023</p>">
+                <img src="../img/gallery/3-thumb.jpg" alt="Partido de pádel en Torneo 2do Set">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>2do Set</h3>
+                        <p>Junio 2023</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Añade más imágenes siguiendo el mismo patrón -->
+            <!-- Ejemplo de cómo continuarías agregando más imágenes -->
+            <a href="../img/gallery/4.jpg" class="gallery-item arenas" data-sub-html="<h4>Torneo Arenas 2023</h4><p>Entrega de premios - Octubre 2023</p>">
+                <img src="../img/gallery/4-thumb.jpg" alt="Entrega de premios Torneo Arenas">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>Torneo Arenas</h3>
+                        <p>Entrega de premios</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="../img/gallery/5.jpg" class="gallery-item punto-de-oro" data-sub-html="<h4>Torneo Punto de Oro 2023</h4><p>Partido emocionante - Agosto 2023</p>">
+                <img src="../img/gallery/5-thumb.jpg" alt="Partido emocionante Punto de Oro">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>Punto de Oro</h3>
+                        <p>Partido destacado</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="../img/gallery/6.jpg" class="gallery-item segundo-set" data-sub-html="<h4>Torneo 2do Set 2023</h4><p>Momento divertido - Junio 2023</p>">
+                <img src="../img/gallery/6-thumb.jpg" alt="Momento divertido 2do Set">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="gallery-caption">
+                        <h3>2do Set</h3>
+                        <p>Momento divertido</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
 
     <!-- Footer -->
     <div class="footer">
@@ -67,6 +148,8 @@
         </div>
     </div>
 
-   <script src="js/galeria.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="js/galeria.js"></script>
 </body>
 </html>
