@@ -59,11 +59,14 @@
     }
 }
 
+
+
+
+
 @media (max-width: 480px) {
-    .ranking-container {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 60px;
+    .ranking-table td:first-child,
+    .ranking-table th:first-child {
+        width: 1% !important;  /* Fuerza el tamaño mínimo */
+        white-space: nowrap;   /* Evita saltos de línea */
     }
 }
-
