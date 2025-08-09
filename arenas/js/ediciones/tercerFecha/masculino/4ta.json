@@ -7,7 +7,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {    "nombre": "Andrade/Gallardo",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "Morales/A confirmar",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {      "nombre": "Morales/Gonzalez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
         {   "nombre": "Santi/Bleuer",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
@@ -15,9 +15,9 @@
         {
           "fecha": "Viernes 19:00 hs",
           "equipo1": "Andrade/Gallardo",
-          "equipo2": "Morales/A confirmar",
-          "resultado": "",
-          "games": "A definir"
+          "equipo2": "Morales/Gonzalez",
+          "resultado": "2-0",
+          "games": "7-5, 6-3"
         },
         {
           "fecha": "Sabado 11:00 hs",
@@ -29,7 +29,7 @@
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Santi/Bleuer",
-          "equipo2": "Morales/A confirmar",
+          "equipo2": "Morales/Gonzalez",
           "resultado": "",
           "games": "A definir"
         }
@@ -57,15 +57,15 @@
          "fecha": "Miercoles 20:00 hs",
           "equipo1": "Ojeda/Floriani",
           "equipo2": "Barria/Suarez",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-4, 6-2"
         },
         {
          "fecha": "Viernes 21:00 hs",
           "equipo1": "Ojeda/Floriani",
           "equipo2": "Maestro/Sanchez",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "0-2",
+          "games": "4-6, 6-7"
         },
         {
          "fecha": "Sabado 14:00 hs",
@@ -97,15 +97,15 @@
           "fecha": "Miercoles 19:00 hs",
           "equipo1": "Servian/Ormaza",
           "equipo2": "Lapadula/Andrade",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "0-2",
+          "games": "4-6, 2-6"
         },
         {
           "fecha": "Viernes 20:00 hs",
           "equipo1": "Escufachi/Moreno",
           "equipo2": "Servian/Ormaza",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "1-2",
+          "games": "4-6, 6-4, 6-7"
         },
         {
          "fecha": "Sabado 12:00 hs",
@@ -137,8 +137,8 @@
          "fecha": "Martes 21:00 hs",
           "equipo1": "Andrade/Echeverria",
           "equipo2": "Andrade/Chalier",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-3, 6-3"
         },
         {
           "fecha": "Viernes 21:00 hs",
