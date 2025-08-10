@@ -534,72 +534,72 @@
  "eliminatorias": {
   "dieciseisavos": [
       {
-         "equipo1": "P1 - Bordon/Bordon",
-          "equipo2": "2do Zona C",
+         "equipo1": "Bordon/Bordon",
+          "equipo2": "2do C",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+        "games": "6-0, 6-0"
       },
       {
-         "equipo1": "P2 - Larocca/Navarro",
+         "equipo1": "Larocca/Navarro",
           "equipo2": "Velazquez/Sanchez",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+        "games": "A definir"
       }
     ],  
   "octavos": [
       {
-        "equipo1": "P3 - Torres/Peix",
+        "equipo1": "1ro A",
           "equipo2": "Ganador P1",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+        "games": "0-6, 1-6"
       },
       {
-         "equipo1": "P4 - 1ro Zona I",
-          "equipo2": "1ro Zona H",
+         "equipo1": "1ro I",
+          "equipo2": "1ro H",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P5 - Vera/Gimenez",
+         "equipo1": "Vera/Gimenez",
           "equipo2": "Rubio/Santana",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P6 - 2do Zona F",
+         "equipo1": "2do F",
           "equipo2": "Aperio/Fiori",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-        "equipo1": "P7 - 1ro Zona C",
+        "equipo1": "1ro C",
           "equipo2": "2do Ruiz/Zurita",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P8 - 2do Zona H",
-          "equipo2": "1ro Zona F",
+         "equipo1": "2do H",
+          "equipo2": "1ro F",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
          "equipo1": "P9 - Vera/Carrizo",
-          "equipo2": "2do Zona I",
+          "equipo2": "2do I",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P10 - Ganador P2",
+         "equipo1": "Ganador P2",
           "equipo2": "Ventura/Barrionuevo",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
@@ -608,29 +608,29 @@
     ],
     "cuartos": [
       {
-         "equipo1": "P11 - Ganador P3",
-          "equipo2": "Ganador P4",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo 10:00 hs",
           "resultado": "A definir",
-        "ganador": "/"
+        "games": "6-0, 6-0"
       },
       {
-         "equipo1": "P12 - Ganador P5",
-          "equipo2": "Ganador P6",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo 10:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P13 - Ganador P7",
-          "equipo2": "Ganador P8",
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo 11:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P14 - Ganador P9",
-          "equipo2": "Ganador P10",
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
           "fecha": "Domingo 11:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
@@ -638,23 +638,23 @@
     ],
     "semis": [
       {
-         "equipo1": "P15 - Ganador P11",
-          "equipo2": "Ganador P12",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
-         "equipo1": "P16 - Ganador P13",
-          "equipo2": "Ganador P14",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       }
     ],
     "final": {
-        "equipo1": "Ganador P15",
-          "equipo2": "Ganador P16",
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo 20:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"

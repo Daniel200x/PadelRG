@@ -385,6 +385,9 @@ body::before {
     transition: all 0.3s ease;
 }
 
+
+/* Estilos de las tarjetas de torneos punto de oro */
+
 .torneo-card:nth-child(1) {
     background: linear-gradient(
         135deg,
@@ -396,6 +399,9 @@ body::before {
     background-image: url('../img/punto.jpeg');
     background-size: 70%;
 }
+
+
+/* Estilos de las tarjetas de torneos de arenas */
 
 .torneo-card:nth-child(2) {
     background: linear-gradient(
@@ -409,6 +415,7 @@ body::before {
     background-size: 80%;
 }
 
+/* Estilos de las tarjetas de torneos de segundo set */
 .torneo-card:nth-child(3) {
     background: linear-gradient(
         135deg,
@@ -420,6 +427,23 @@ body::before {
     background-image: url('../img/2set.jpeg');
     background-size: 75%;
 }
+
+
+/* Estilos de las tarjetas de torneos de torneo vuela alto */
+.torneo-card:nth-child(4) {
+    background: linear-gradient(
+        135deg,
+        rgba(174, 172, 39, 0.6),
+        rgba(209, 212, 10, 0.6)
+    );
+}
+.torneo-card:nth-child(4)::before {
+    background-image: url('../img/2set.jpeg');
+    background-size: 75%;
+}
+
+
+
 
 .torneo-card:hover {
     transform: translateY(-8px) scale(1.02);
