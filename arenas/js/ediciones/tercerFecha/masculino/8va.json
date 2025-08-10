@@ -99,23 +99,23 @@
         {
           "fecha": "Miercoles 23:00 hs",
           "equipo1": "Suarez/Aceri",
-          "equipo2": "Ojala/Pugnale",
-          "resultado": "",
-          "games": "A definir"
+          "equipo2": "Sanchez/Greco",
+          "resultado": "0-2",
+          "games": "2-6, 5-7"
         },
         {
           "fecha": "Jueves 23:50 hs",
           "equipo1": "Ojala/Pugnale",
           "equipo2": "Sanchez/Greco",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-2, 7-5"
         },
         {
          "fecha": "Sabado 9:00 hs",
           "equipo1": "Suarez/Aceri",
           "equipo2": "Ojala/Pugnale",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "0-2",
+          "games": "3-6, 1-6"
         }
       ]
     },
