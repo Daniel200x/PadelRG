@@ -36,6 +36,14 @@
         
       ]
     },
+
+
+
+
+
+
+
+    
     {
       "nombre": "Grupo B",
       "equipos": [
@@ -76,6 +84,29 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     {
       "nombre": "Grupo C",
       "equipos": [
@@ -163,56 +194,57 @@
 
     "cuartos": [
       {
-        "equipo1": "P1 - 1ro A",
-        "equipo2": "2do C ",
+        "equipo1": "1ro A",
+        "equipo2": "2do C",
         "fecha": "Sabado 21:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
-      },
+        "resultado": "",
+    "games": ""
+      },  
+
       {
-        "equipo1": "P2 - 2do B",
+        "equipo1": "2do B",
         "equipo2": "1ro D ",
         "fecha": "Sabado 21:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+        "resultado": "",
+    "games": ""
       },
       {
-        "equipo1": "P3 - 1ro C",
+        "equipo1": "1ro C",
         "equipo2": "2do A",
         "fecha": "Sabado 22:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+        "resultado": "",
+    "games": ""
       },
       {
-        "equipo1": "P4 - 2do D",
+        "equipo1": "2do D",
         "equipo2": "1ro B",
         "fecha": "Sabado 22:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+        "resultado": "",
+    "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "P5 - Ganador P1",
+        "equipo1": "Ganador P1",
         "equipo2": "Ganador P2",
         "fecha": "Domingo 19:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+       "resultado": "",
+    "games": ""
       },
       {
-        "equipo1": "P6 - Ganador P3",
+        "equipo1": "Ganador P3",
         "equipo2": "Ganador P4",
         "fecha": "Domingo 19:00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+        "resultado": "",
+    "games": ""
       }
     ],
     "final": {
-      "equipo1": "Ganador P5/",
+      "equipo1": "Ganador P5",
       "equipo2": "Ganador P6",
       "fecha": "A definir",
-      "resultado": "A definir",
-      "ganador": "/"
+      "resultado": "",
+    "games": ""
     }
   }
 }
