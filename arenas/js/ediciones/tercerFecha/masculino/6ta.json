@@ -30,8 +30,8 @@
           "fecha": "Sabado 10:00 hs",
           "equipo1": "Sosa/Lopez",
           "equipo2": "Larrechea/Lemus",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "1-2",
+          "games": "6-3, 3-6, 6-7"
         }
         
       ]
@@ -63,16 +63,16 @@
         {
          "fecha": "Viernes 23:50 hs",
           "equipo1": "Gomez/Maisares",
-          "equipo2": "Dominguez-Saldaño",
+          "equipo2": "Dominguez/Saldaño",
           "resultado": "1-2",
           "games": "6-1, 3-6, 6-7"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Sabado 15:00 hs",
+          "equipo1": "Dominguez/Saldaño",
+          "equipo2": "Figueroa/Rodriguez",
+          "resultado": "2-0",
+          "games": "6-1, 6-0"
         }
       ]
     },
@@ -80,7 +80,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Carrasco/Granero",
+          "nombre": "Carrasco/Gamarra",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
@@ -108,11 +108,11 @@
           "games": "6-4, 6-3"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Sabado 15:00 hs",
+          "equipo1": "Carrasco/Gamarra",
+          "equipo2": "Amarilla/Nahuel",
+          "resultado": "2-0",
+          "games": "6-4, 6-4"
         }
       ]
     },
@@ -148,11 +148,11 @@
           "games": "6-3, 4-6, 7-6"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Dos Santos/Villalba",
+          "equipo2": "Orellano/Arteaga",
+          "resultado": "2-0",
+          "games": "7-6, 6-3"
         }
       ]
     },
@@ -228,11 +228,11 @@
           "games": "3-6, 6-4, 7-6"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 09:00 hs",
+          "equipo1": "Garcia/Villafañe",
+          "equipo2": "Forno/Gomez",
+          "resultado": "2-0",
+          "games": "6-4, 6-3"
         }
       ]
     },
@@ -322,114 +322,129 @@
   "eliminatorias": {
 "octavos": [
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "1ro A",
+        "equipo2": "2do B",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "2do G",
+        "equipo2": "1ro H",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "1ro E",
+        "equipo2": "2do F",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "2do C",
+        "equipo2": "1ro D",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "1ro C",
+        "equipo2": "2do D",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "2do E",
+        "equipo2": "1ro F",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "1ro G",
+        "equipo2": "2do H",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-         "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "2do A",
+        "equipo2": "1ro B",
+        "fecha": "Sabado",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       }
     ],
     "cuartos": [
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+       "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
+        "fecha": "Domingo",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
+     "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
+       "equipo1": "Ganador P5",
+        "equipo2": "Ganador P6",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
+       "equipo1": "Ganador P7",
+        "equipo2": "Ganador P8",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
+       "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       },
       {
-        "equipo1": "P -/",
-        "equipo2": "/",
+      "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+        "ganador": "/",
+    "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
-      "ganador": "/"
+     "equipo1": "Ganador P5",
+        "equipo2": "Ganador P6",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "A definir",
+        "ganador": "/",
+    "games": ""
     }
   }
 }
