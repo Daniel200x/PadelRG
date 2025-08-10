@@ -23,6 +23,7 @@ const edicionesInfo = {
     }
 };
 
+
 // Almacenamiento de datos cargados
 const edicionesCargadas = {};
 
@@ -87,6 +88,160 @@ function calcularEstadisticas(grupo) {
             equipo2.GC += games1;
         }
     });
+}
+
+// Función para determinar los equipos clasificados de cada grupo
+function determinarClasificados(grupos) {
+    const clasificados = {};
+    
+    grupos.forEach(grupo => {
+        // Ordenar equipos del grupo según su posición
+        const equiposOrdenados = grupo.equipos.sort((a, b) => {
+            if (b.PG !== a.PG) return b.PG - a.PG;
+            const dsA = a.SG - a.SP;
+            const dsB = b.SG - b.SP;
+            if (dsB !== dsA) return dsB - dsA;
+            return (b.GF - b.GC) - (a.GF - a.GC);
+        });
+        
+        // Guardar clasificados
+        const grupoKey = grupo.nombre.split(' ')[1]; // Extrae "A", "B", etc.
+        clasificados[`1ro ${grupoKey}`] = equiposOrdenados[0]?.nombre || '';
+        clasificados[`2do ${grupoKey}`] = equiposOrdenados[1]?.nombre || '';
+    });
+    
+    return clasificados;
+}
+
+// Función para determinar el ganador basado en los games
+function determinarGanadorPorGames(games) {
+    if (!games || games === "A definir") return null;
+    
+    const sets = games.split(',').map(set => {
+        const [games1, games2] = set.trim().split('-').map(Number);
+        return { games1, games2 };
+    });
+    
+    let setsGanados1 = 0;
+    let setsGanados2 = 0;
+    
+    sets.forEach(set => {
+        if (set.games1 > set.games2) {
+            setsGanados1++;
+        } else {
+            setsGanados2++;
+        }
+    });
+    
+    return setsGanados1 > setsGanados2 ? 1 : 2;
+}
+
+// Función modificada para actualizar eliminatorias
+function actualizarEliminatorias(eliminatorias, clasificados) {
+    const reemplazarClasificacion = (texto) => {
+        return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupo) => {
+            return clasificados[`${posicion} ${grupo}`] || match;
+        });
+    };
+ // Procesar 16vos
+    if (eliminatorias.dieciseisavos) {
+        eliminatorias.dieciseisavos.forEach((partido, index) => {
+            partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+            partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+            
+            // Determinar ganador basado en games
+            const ganadorIndex = determinarGanadorPorGames(partido.games);
+            if (ganadorIndex) {
+                partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                partido.resultado = partido.games; // Actualizar resultado con los games
+                
+                // Actualizar cuartos
+                if (eliminatorias.octavos) {
+                    eliminatorias.octavos.forEach(cuarto => {
+                        cuarto.equipo1 = cuarto.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                        cuarto.equipo2 = cuarto.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                    });
+                }
+            }
+        });
+    }
+    // Procesar octavos
+    if (eliminatorias.octavos) {
+        eliminatorias.octavos.forEach((partido, index) => {
+            partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+            partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+            
+            // Determinar ganador basado en games
+            const ganadorIndex = determinarGanadorPorGames(partido.games);
+            if (ganadorIndex) {
+                partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                partido.resultado = partido.games; // Actualizar resultado con los games
+                
+                // Actualizar cuartos
+                if (eliminatorias.cuartos) {
+                    eliminatorias.cuartos.forEach(cuarto => {
+                        cuarto.equipo1 = cuarto.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                        cuarto.equipo2 = cuarto.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                    });
+                }
+            }
+        });
+    }
+    
+// Procesar cuartos
+    if (eliminatorias.cuartos) {
+        eliminatorias.cuartos.forEach((partido, index) => {
+            partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+            partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+            
+            // Determinar ganador basado en games
+            const ganadorIndex = determinarGanadorPorGames(partido.games);
+            if (ganadorIndex) {
+                partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                partido.resultado = partido.games; // Actualizar resultado con los games
+                
+                // Actualizar semifinales
+                if (eliminatorias.semis) {
+                    eliminatorias.semis.forEach(semi => {
+                        semi.equipo1 = semi.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                        semi.equipo2 = semi.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                    });
+                }
+            }
+        });
+    }
+
+    // Procesar semifinales
+    if (eliminatorias.semis) {
+        eliminatorias.semis.forEach((partido, index) => {
+            partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+            partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+            
+            const ganadorIndex = determinarGanadorPorGames(partido.games);
+            if (ganadorIndex) {
+                partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                partido.resultado = partido.games;
+                
+                // Actualizar final
+                if (eliminatorias.final) {
+                    eliminatorias.final.equipo1 = eliminatorias.final.equipo1.replace(`Ganador P${index + 5}`, partido.ganador);
+                    eliminatorias.final.equipo2 = eliminatorias.final.equipo2.replace(`Ganador P${index + 5}`, partido.ganador);
+                }
+            }
+        });
+    }
+    
+    // Procesar final
+    if (eliminatorias.final) {
+        eliminatorias.final.equipo1 = reemplazarClasificacion(eliminatorias.final.equipo1);
+        eliminatorias.final.equipo2 = reemplazarClasificacion(eliminatorias.final.equipo2);
+        
+        const ganadorIndex = determinarGanadorPorGames(eliminatorias.final.games);
+        if (ganadorIndex) {
+            eliminatorias.final.ganador = ganadorIndex === 1 ? eliminatorias.final.equipo1 : eliminatorias.final.equipo2;
+            eliminatorias.final.resultado = eliminatorias.final.games;
+        }
+    }
 }
 
 // Función para actualizar el estado activo de los botones
@@ -246,7 +401,22 @@ function renderizarEdicion(edicion, genero, categoria) {
         return;
     }
 
-    const categoriaData = edicion.categorias[genero][categoria];
+    // Hacer copia profunda para no modificar los datos originales
+    const categoriaData = JSON.parse(JSON.stringify(edicion.categorias[genero][categoria]));
+    
+    // Calcular estadísticas de grupos
+    if (categoriaData.grupos) {
+        categoriaData.grupos.forEach(grupo => {
+            calcularEstadisticas(grupo);
+        });
+        
+        // Determinar clasificados y actualizar eliminatorias
+        if (categoriaData.eliminatorias) {
+            const clasificados = determinarClasificados(categoriaData.grupos);
+            actualizarEliminatorias(categoriaData.eliminatorias, clasificados);
+        }
+    }
+
     const categoriaDiv = document.createElement("div");
     categoriaDiv.className = "categoria";
 
@@ -276,9 +446,6 @@ function renderizarEdicion(edicion, genero, categoria) {
         gruposContainer.appendChild(gruposTitle);
 
         categoriaData.grupos.forEach(grupo => {
-            // Calcular estadísticas antes de renderizar
-            calcularEstadisticas(grupo);
-            
             const grupoDiv = document.createElement("div");
             grupoDiv.className = "grupo";
             grupoDiv.style.marginBottom = "30px";
@@ -324,30 +491,30 @@ function renderizarEdicion(edicion, genero, categoria) {
             });
 
             equiposOrdenados.forEach((equipo, index) => {
-    const fila = document.createElement("tr");
-    
-    // Estilo para primer puesto
-    if (index === 0) {
-        fila.classList.add('primer-puesto');
-    } 
-    // Estilo para segundo puesto
-    else if (index === 1) {
-        fila.classList.add('segundo-puesto');
-    }
-    
-    fila.innerHTML = `
-        <td>${index + 1}</td>
-        <td><strong>${equipo.nombre}</strong></td>
-        <td>${equipo.PJ}</td>
-        <td>${equipo.PG}</td>
-        <td>${equipo.SG}</td>
-        <td>${equipo.SP}</td>
-        <td>${equipo.GF}</td>
-        <td>${equipo.GC}</td>
-        <td>${equipo.GF - equipo.GC}</td>
-    `;
-    tbody.appendChild(fila);
-});
+                const fila = document.createElement("tr");
+                
+                // Estilo para primer puesto
+                if (index === 0) {
+                    fila.classList.add('primer-puesto');
+                } 
+                // Estilo para segundo puesto
+                else if (index === 1) {
+                    fila.classList.add('segundo-puesto');
+                }
+                
+                fila.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td><strong>${equipo.nombre}</strong></td>
+                    <td>${equipo.PJ}</td>
+                    <td>${equipo.PG}</td>
+                    <td>${equipo.SG}</td>
+                    <td>${equipo.SP}</td>
+                    <td>${equipo.GF}</td>
+                    <td>${equipo.GC}</td>
+                    <td>${equipo.GF - equipo.GC}</td>
+                `;
+                tbody.appendChild(fila);
+            });
             tabla.appendChild(tbody);
             tableContainer.appendChild(tabla);
             grupoDiv.appendChild(tableContainer);
@@ -365,33 +532,32 @@ function renderizarEdicion(edicion, genero, categoria) {
                 partidosDiv.appendChild(tituloPartidos);
 
                 grupo.partidos.forEach(p => {
-    const partidoDiv = document.createElement("div");
-    partidoDiv.className = "partido-grupo";
+                    const partidoDiv = document.createElement("div");
+                    partidoDiv.className = "partido-grupo";
 
-    const equipos = document.createElement("div");
-    equipos.className = "equipos-partido";
-    equipos.innerHTML = `
-        <div>${p.equipo1} vs ${p.equipo2}</div>
-        ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
-    `;
+                    const equipos = document.createElement("div");
+                    equipos.className = "equipos-partido";
+                    equipos.innerHTML = `
+                        <div>${p.equipo1} vs ${p.equipo2}</div>
+                        ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                    `;
 
-    const resultado = document.createElement("div");
-    resultado.className = "resultado-partido";
-    
-    // Mostrar resultado con games si están disponibles
-    if (p.games) {
-        resultado.innerHTML = `
-            
-            <div class="detalle-games">${p.games}</div>
-        `;
-    } else {
-        resultado.textContent = p.resultado;
-    }
+                    const resultado = document.createElement("div");
+                    resultado.className = "resultado-partido";
+                    
+                    // Mostrar resultado con games si están disponibles
+                    if (p.games) {
+                        resultado.innerHTML = `
+                            <div class="detalle-games">${p.games}</div>
+                        `;
+                    } else {
+                        resultado.textContent = p.resultado;
+                    }
 
-    partidoDiv.appendChild(equipos);
-    partidoDiv.appendChild(resultado);
-    partidosDiv.appendChild(partidoDiv);
-});
+                    partidoDiv.appendChild(equipos);
+                    partidoDiv.appendChild(resultado);
+                    partidosDiv.appendChild(partidoDiv);
+                });
 
                 grupoDiv.appendChild(partidosDiv);
             }
@@ -400,6 +566,7 @@ function renderizarEdicion(edicion, genero, categoria) {
         });
     }
 
+    // Mostrar eliminatorias
     if (categoriaData.eliminatorias) {
         const eliminatoriasTitle = document.createElement("h3");
         eliminatoriasTitle.textContent = "Fase Eliminatoria";
@@ -409,7 +576,7 @@ function renderizarEdicion(edicion, genero, categoria) {
         eliminatoriasTitle.style.paddingBottom = "10px";
         eliminatoriasContainer.appendChild(eliminatoriasTitle);
 
-        // Dieciseisavos de final
+ // 16vos de final
         if (categoriaData.eliminatorias.dieciseisavos && categoriaData.eliminatorias.dieciseisavos.length > 0) {
             const faseDiv = document.createElement("div");
             faseDiv.className = "fase-eliminatoria";
@@ -445,6 +612,10 @@ function renderizarEdicion(edicion, genero, categoria) {
 
             eliminatoriasContainer.appendChild(faseDiv);
         }
+
+
+
+
         // Octavos de final
         if (categoriaData.eliminatorias.octavos && categoriaData.eliminatorias.octavos.length > 0) {
             const faseDiv = document.createElement("div");
@@ -482,7 +653,8 @@ function renderizarEdicion(edicion, genero, categoria) {
             eliminatoriasContainer.appendChild(faseDiv);
         }
 
-        // Cuartos de final
+
+         // Cuartos de final
         if (categoriaData.eliminatorias.cuartos && categoriaData.eliminatorias.cuartos.length > 0) {
             const faseDiv = document.createElement("div");
             faseDiv.className = "fase-eliminatoria";
@@ -639,6 +811,7 @@ function mostrarSeccion(seccion) {
     }
 }
 
+// Inicialización y eventos
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -670,32 +843,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Event listeners
-  hamburger.addEventListener('click', function(e) {
-    e.stopPropagation();
-    toggleMenu();
-});
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
 
-dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', toggleDropdown);
-});
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', toggleDropdown);
+    });
 
-// Solo los enlaces principales (no dropdown) cierran el menú en móviles
-document.querySelectorAll('.nav-links > li > a:not(.dropdown > a)').forEach(link => {
-    link.addEventListener('click', function() {
-        if (window.innerWidth <= 992) {
+    // Solo los enlaces principales (no dropdown) cierran el menú en móviles
+    document.querySelectorAll('.nav-links > li > a:not(.dropdown > a)').forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 992) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 992 && 
+            navMenu.classList.contains('active') &&
+            !e.target.closest('.nav-container')) {
             toggleMenu();
         }
     });
-});
-
-// Cerrar menú al hacer clic fuera
-document.addEventListener('click', function(e) {
-    if (window.innerWidth <= 992 && 
-        navMenu.classList.contains('active') &&
-        !e.target.closest('.nav-container')) {
-        toggleMenu();
-    }
-});
     
     // Cerrar menú al cambiar tamaño de pantalla
     window.addEventListener('resize', function() {
@@ -710,14 +883,11 @@ document.addEventListener('click', function(e) {
             });
         }
     });
-});
 
-// Actualizar año del copyright
-document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Actualizar año del copyright
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 
-// Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
-window.addEventListener('DOMContentLoaded', (event) => {
-    // Seleccionar automáticamente la tercera fecha
+    // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
     seleccionarFecha('segundaFecha');
     
     // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
@@ -736,5 +906,3 @@ window.addEventListener('resize', function() {
         if (eliminatorias) eliminatorias.classList.add('active');
     }
 });
-
-
