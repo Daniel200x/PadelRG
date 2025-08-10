@@ -8,30 +8,30 @@
       "equipos": [
         {    "nombre": "Chicaguala/Fruncieri",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
         {      "nombre": "Vidart/Martinez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "Vera/A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {   "nombre": "Vera/Salinas",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
           "fecha": "Martes 22:00 hs",
           "equipo1": "Chicaguala/Fruncieri",
-          "equipo2": "Vera/A definir",
+          "equipo2": "Vera/Salinas",
           "resultado": "2-0",
           "games": "6-4, 6-2"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "A definir"
+          "fecha": "Jueves 17:00 hs W/O",
+          "equipo1": "Vidart/Martinez",
+          "equipo2": "Vera/Salinas",
+          "resultado": "2-0",
+          "games": "6-0, 6-0"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "A definir"
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Chicaguala/Fruncieri",
+          "equipo2": "Vidart/Martinez",
+          "resultado": "2-0",
+          "games": "6-0, 6-1"
         }
         
       ]
@@ -61,18 +61,18 @@
           "games": "6-3, 6-1"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Jueves 17:00 hs",
+          "equipo1": "Miranda/Cutri",
+          "equipo2": "Velazquez/Romero",
+          "resultado": "2-0",
+          "games": "6-4, 6-2"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Viernes 19:30 hs W/O",
+          "equipo1": "Andrade/Velasquez",
+          "equipo2": "Miranda/Cutri",
+          "resultado": "0-2",
+          "games": "0-6, 0-6"
         }
       ]
     },
@@ -101,18 +101,18 @@
           "games": "6-0, 6-0"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Medina/Villarreal",
+          "equipo2": "Mainero/Figueroa",
+          "resultado": "2-0",
+          "games": "6-3, 6-1"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Sabado W/O",
+          "equipo1": "Medina/Villarreal",
+          "equipo2": "Castillo/Gersicich",
+          "resultado": "2-0",
+          "games": "6-0, 6-0"
         }
       ]
     }
@@ -125,34 +125,34 @@
     "cuartos": [
       
       {
-        "equipo1": "P1 - 2do B",
+        "equipo1": "2do B",
         "equipo2": "2do C",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P2 - 1ro C",
+        "equipo1": "1ro C",
         "equipo2": "2do A",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "P3 - 1ro A",
+        "equipo1": "1ro A",
         "equipo2": "Ganador P1",
         "fecha": "Domingo 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P4 - Ganador P2",
+        "equipo1": "Ganador P2",
         "equipo2": "1ro B",
         "fecha": "Domingo 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       }
     ],
     "final": {
@@ -160,7 +160,7 @@
       "equipo2": "Ganador P4",
       "fecha": "A definir",
       "resultado": "A definir",
-      "ganador": "/"
+          "games": ""
     }
   }
 }

@@ -13,25 +13,25 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Retuerto/Marcial",
+          "equipo2": "Bordon/Herrera",
+          "resultado": "2-1",
+          "games": "6-3, 2-6, 7-6"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "Rojo/Cuenca",
+          "equipo2": "Bordon/Herrera",
+          "resultado": "1-2",
+          "games": "5-7, 6-4, 6-7"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Retuerto/Marcial",
+          "equipo2": "Rojo/Cuenca",
+          "resultado": "2-1",
+          "games": "3-6, 6-1, 7-6"
         }
         
       ]
@@ -54,25 +54,25 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Martes 22:00 hs",
+          "equipo1": "Cordoba/Carpio",
+          "equipo2": "Sanabria/Flamenco",
+          "resultado": "2-1",
+          "games": "2-6, 6-1, 7-6"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Cordoba/Carpio",
+          "equipo2": "Luna/Pesce",
+          "resultado": "0-2",
+          "games": "6-7, 4-6"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Jueves 21:00 hs",
+          "equipo1": "Luna/Pesce",
+          "equipo2": "Sanabria/Flamenco",
+          "resultado": "2-0",
+          "games": "6-0, 6-2"
         }
       ]
     },
@@ -94,25 +94,25 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Gimenez/Quezada",
+          "equipo2": "Gasparovic/Bergondi",
+          "resultado": "1-2",
+          "games": "7-6, 0-6, 6-7"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "Gasparovic/Bergondi",
+          "equipo2": "Denis/Salas",
+          "resultado": "2-0",
+          "games": "6-3, 6-1"
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Viernes 22:00 hs",
+          "equipo1": "Gimenez/Quezada",
+          "equipo2": "Denis/Salas",
+          "resultado": "2-0",
+          "games": "6-3, 6-4"
         }
       ]
     },
@@ -134,25 +134,25 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+         "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Polizzi/Gimenez",
+          "equipo2": "Saldivia/Martinez",
+          "resultado": "2-0",
+          "games": "6-4, 6-1"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Polizzi/Gimenez",
+          "equipo2": "Cortez/Rusconi",
+          "resultado": "2-1",
+          "games": "6-1, 5-7, 7-6"
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Saldivia/Martinez",
+          "equipo2": "Cortez/Rusconi",
+          "resultado": "0-2",
+          "games": "5-7, 0-6"
         }
       ]
     }
@@ -163,56 +163,56 @@
 
     "cuartos": [
       {
-        "equipo1": "P1 - 1ro A",
+        "equipo1": "1ro A",
         "equipo2": "2do C ",
         "fecha": "Sabado 21:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P2 - 2do B",
+        "equipo1": "2do B",
         "equipo2": "1ro D ",
         "fecha": "Sabado 21:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P3 - 1ro C",
+        "equipo1": "1ro C",
         "equipo2": "2do A",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P4 - 2do D",
+        "equipo1": "2do D",
         "equipo2": "1ro B",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "P5 - Ganador P1",
+        "equipo1": "Ganador P1",
         "equipo2": "Ganador P2",
         "fecha": "Domingo 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       },
       {
-        "equipo1": "P6 - Ganador P3",
+        "equipo1": "Ganador P3",
         "equipo2": "Ganador P4",
         "fecha": "Domingo 19:00 hs",
         "resultado": "A definir",
-        "ganador": "/"
+          "games": ""
       }
     ],
     "final": {
-      "equipo1": "Ganador P5/",
+      "equipo1": "Ganador P5",
       "equipo2": "Ganador P6",
       "fecha": "A definir",
       "resultado": "A definir",
-      "ganador": "/"
+          "games": ""
     }
   }
 }

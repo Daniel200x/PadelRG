@@ -23,15 +23,15 @@
           "fecha": "Sabado 11:00 hs",
           "equipo1": "Andrade/Gallardo",
           "equipo2": "Santi/Bleuer",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-3, 6-3"
         },
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Santi/Bleuer",
           "equipo2": "Morales/Gonzalez",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "0-2",
+          "games": "3-6, 3-6"
         }
         
       ]
@@ -79,29 +79,11 @@
          "fecha": "Sabado 14:00 hs",
           "equipo1": "Maestro/Sanchez",
           "equipo2": "Barria/Suarez" ,
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-0, 6-0"
         }
       ]
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -142,8 +124,8 @@
          "fecha": "Sabado 12:00 hs",
           "equipo1": "Escufachi/Moreno",
           "equipo2": "Lapadula/Andrade",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-1",
+          "games": "6-0, 4-6, 7-6"
         }
       ]
     },
@@ -172,11 +154,11 @@
           "games": "6-3, 6-3"
         },
         {
-          "fecha": "Viernes 21:00 hs",
+          "fecha": "Sabado 13:00 hs",
           "equipo1": "Muller/Villarreal",
           "equipo2": "Andrade/Chalier",
-          "resultado": "",
-          "games": "A definir"
+          "resultado": "2-0",
+          "games": "6-0, 6-1"
         },
         {
           "fecha": "Sabado 13:00 hs",
