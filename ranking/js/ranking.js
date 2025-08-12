@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Cerrar menú al hacer click en un link (para móviles)
     navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Verificar si el clic fue en un dropdown o en su ícono
-        const isDropdown = link.classList.contains('dropdown') || 
-                          e.target.closest('.dropdown') || 
-                          e.target.classList.contains('fa-chevron-down') || 
-                          e.target.classList.contains('fa-chevron-up');
-        
-        if (navMenu.classList.contains('active') && !isDropdown) {
-            toggleMobileMenu();
-        }
+        link.addEventListener('click', (e) => {
+            // Verificar si el clic fue en un dropdown o en su ícono
+            const isDropdown = link.classList.contains('dropdown') || 
+                              e.target.closest('.dropdown') || 
+                              e.target.classList.contains('fa-chevron-down') || 
+                              e.target.classList.contains('fa-chevron-up');
+            
+            if (navMenu.classList.contains('active') && !isDropdown) {
+                toggleMobileMenu();
+            }
         });
     });
     
@@ -98,14 +98,33 @@ const nextPageBtn = document.getElementById('next-page');
 const pageInfo = document.getElementById('page-info');
 const loadingIndicator = document.getElementById('loading-indicator');
 
-// Función para calcular puntos totales CORREGIDA
+// Función para calcular puntos totales
 function calculateTotalPoints(player) {
-    // Asegurarnos que los valores son números (por si hay null/undefined)
-    const puntoDeOro = Number(player.puntoDeOro) || 0;
-    const arenas = Number(player.arenas) || 0;
-    const segundoSet = Number(player.segundoSet) || 0;
+    if (!player.torneos) return 0;
     
-    return puntoDeOro + arenas + segundoSet;
+    let total = 0;
+    for (const torneo in player.torneos) {
+        if (player.torneos[torneo]) {
+            total += player.torneos[torneo].reduce((sum, edicion) => sum + (edicion.puntos || 0), 0);
+        }
+    }
+    return total;
+}
+
+// Función para obtener puntos por edición con tooltip
+function getTournamentPointsByEdition(player, tournamentKey) {
+    if (!player.torneos || !player.torneos[tournamentKey] || player.torneos[tournamentKey].length === 0) {
+        return "0";
+    }
+    
+    const total = player.torneos[tournamentKey].reduce((sum, ed) => sum + ed.puntos, 0);
+    const editions = player.torneos[tournamentKey]
+        .map(ed => `${ed.edicion}: ${ed.puntos}`)
+        .join('<br>');
+    
+    return `<div class="tooltip">${total}
+            <span class="tooltiptext">${editions}</span>
+          </div>`;
 }
 
 // Función para filtrar por género
@@ -126,7 +145,7 @@ async function loadJSONData() {
         const data = await response.json();
         playersData = data.jugadores.map(player => ({
             ...player,
-            points: calculateTotalPoints(player) // Calculamos puntos al cargar
+            points: calculateTotalPoints(player)
         }));
         
         loadRankingData();
@@ -159,7 +178,8 @@ function applyFilters() {
         let matchesTournament = true;
         
         if (currentTournamentFilter !== 'all') {
-            matchesTournament = player[currentTournamentFilter] > 0;
+            matchesTournament = player.torneos && player.torneos[currentTournamentFilter] && 
+                              player.torneos[currentTournamentFilter].length > 0;
         }
         
         return matchesSearch && matchesCategory && matchesTournament;
@@ -167,7 +187,13 @@ function applyFilters() {
     
     // Ordenar
     if (currentTournamentFilter !== 'all') {
-        filteredData.sort((a, b) => (b[currentTournamentFilter] || 0) - (a[currentTournamentFilter] || 0));
+        filteredData.sort((a, b) => {
+            const aPoints = a.torneos && a.torneos[currentTournamentFilter] ? 
+                a.torneos[currentTournamentFilter].reduce((sum, ed) => sum + ed.puntos, 0) : 0;
+            const bPoints = b.torneos && b.torneos[currentTournamentFilter] ? 
+                b.torneos[currentTournamentFilter].reduce((sum, ed) => sum + ed.puntos, 0) : 0;
+            return bPoints - aPoints;
+        });
     } else {
         filteredData.sort((a, b) => b.points - a.points);
     }
@@ -218,7 +244,8 @@ function renderRankingTable() {
             ${showAllTournaments ? `<td>${player.points}</td>` : ''}
             <td>${player.category}</td>
             ${tournamentKeys.map(key => 
-                (showAllTournaments || currentTournamentFilter === key) ? `<td>${player[key] || 0}</td>` : ''
+                (showAllTournaments || currentTournamentFilter === key) ? 
+                `<td class="edition-points">${getTournamentPointsByEdition(player, key)}</td>` : ''
             ).join('')}
         `;
         tbody.appendChild(row);
@@ -243,6 +270,16 @@ function updatePagination() {
     pageInfo.textContent = `Página ${currentPage} de ${totalPages || 1}`;
     prevPageBtn.disabled = currentPage === 1;
     nextPageBtn.disabled = currentPage === totalPages || totalPages === 0;
+}
+
+// Debounce para mejorar rendimiento en búsquedas
+function debounce(func, wait) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
 }
 
 // Configurar event listeners
@@ -284,16 +321,6 @@ function setupEventListeners() {
             updatePagination();
         }
     });
-}
-
-// Debounce para mejorar rendimiento en búsquedas
-function debounce(func, wait) {
-    let timeout;
-    return function() {
-        const context = this, args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(context, args), wait);
-    };
 }
 
 // Inicialización

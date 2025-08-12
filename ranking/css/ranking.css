@@ -145,6 +145,7 @@
     border-bottom: 1px solid #eee;
     color: #34495e;
     vertical-align: middle;
+    overflow: visible !important;
 }
 
 /* Colores específicos para columnas */
@@ -288,6 +289,52 @@
     font-size: 16px;
 }
 
+/* Estilos para puntos por edición */
+.edition-points {
+    font-size: 13px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+/* Tooltip mejorado para mostrar ediciones */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    max-width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: nowrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.tooltip .tooltiptext.bottom {
+    bottom: auto;
+    top: 100%;
+    margin-top: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Estilos responsivos */
 @media (max-width: 992px) {
     .ranking-container {
@@ -336,6 +383,13 @@
     .ranking-table td:nth-child(5) { width: 90px; }
     .ranking-table td:nth-child(6) { width: 70px; }
     .ranking-table td:nth-child(7) { width: 70px; }
+    
+    /* Tooltip en móviles */
+    .tooltip .tooltiptext {
+        max-width: 180px;
+        font-size: 12px;
+        white-space: normal;
+    }
 }
 
 @media (max-width: 480px) {
@@ -378,8 +432,9 @@
         width: 100%;
         padding: 12px;
     }
-}/* Agrega esto al final de ranking.css */
-.ranking-table td[style*="color: #3498db"] {
-    font-size: 15px;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    
+    .tooltip .tooltiptext {
+        max-width: 150px;
+        padding: 6px 8px;
+    }
 }
