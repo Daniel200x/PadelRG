@@ -987,10 +987,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1128,
+      "name": "Lorenzo Rivero",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -999,7 +999,31 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 40}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1129,
+      "name": "Ruben Pedraza",
+      "gender": "masculino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 30},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1011,10 +1035,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1130,
+      "name": "Javier Vazquez",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -1023,7 +1047,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1035,10 +1059,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1131,
+      "name": "Rodrigo Alfonso",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -1047,7 +1071,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1059,10 +1083,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1132,
+      "name": "Cristian Ruiz",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -1071,7 +1095,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1083,10 +1107,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1133,
+      "name": "Gonzalo Muñoz",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -1095,7 +1119,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1107,10 +1131,10 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
+      "id": 1134,
+      "name": "Gaston Bermedo",
+      "gender": "masculino",
+      "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
@@ -1119,7 +1143,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1131,31 +1155,7 @@
       }
     },
     {
-      "id": 111,
-      "name": "",
-      "gender": "",
-      "category": "",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 111,
+      "id": 1135,
       "name": "",
       "gender": "",
       "category": "",
