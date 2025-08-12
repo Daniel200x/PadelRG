@@ -351,7 +351,7 @@
         "fecha": "Sabado",
         "resultado": "A definir",
         
-    "games": "6-4, 4-6, 6-7"
+    "games": "4-6, 6-4, 7-6"
       },
       {
         "equipo1": "1ro C",
@@ -359,7 +359,7 @@
         "fecha": "Sabado",
         "resultado": "A definir",
        
-    "games": ""
+    "games": "6-4, 6-3"
       },
       {
         "equipo1": "2do E",
@@ -367,7 +367,7 @@
         "fecha": "Sabado",
         "resultado": "A definir",
       
-    "games": ""
+    "games": "6-0, 6-0"
       },
       {
         "equipo1": "1ro G",
@@ -375,7 +375,7 @@
         "fecha": "Sabado",
         "resultado": "A definir",
        
-    "games": ""
+    "games": "6-3, 6-7, 6-7"
       },
       {
         "equipo1": "2do A",
@@ -383,7 +383,7 @@
         "fecha": "Sabado",
         "resultado": "A definir",
        
-    "games": ""
+    "games": "6-3, 6-4"
       }
     ],
     "cuartos": [
@@ -393,7 +393,7 @@
         "fecha": "Domingo",
         "resultado": "A definir",
        
-    "games": ""
+    "games": "1-6, 6-2, 6-7"
       },
       {
      "equipo1": "Ganador P3",
@@ -401,7 +401,7 @@
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
         
-    "games": ""
+    "games": "7-5, 6-3"
       },
       {
        "equipo1": "Ganador P5",
@@ -409,7 +409,7 @@
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
         
-    "games": ""
+    "games": "7-5, 6-1"
       },
       {
        "equipo1": "Ganador P7",
@@ -417,7 +417,7 @@
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
        
-    "games": ""
+    "games": "1-6, 4-6"
       }
     ],
     "semis": [
@@ -425,9 +425,9 @@
        "equipo1": "Ganador P1",
         "equipo2": "Ganador P2",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A definir",
+        "resultado": "",
        
-    "games": ""
+    "games": "3-6, 3-6"
       },
       {
       "equipo1": "Ganador P3",
@@ -435,7 +435,7 @@
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
      
-    "games": ""
+    "games": "3-6, 1-6"
       }
     ],
     "final": {
@@ -444,7 +444,7 @@
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A definir",
      
-    "games": ""
+    "games": "3-6, 2-6"
     }
   }
 }

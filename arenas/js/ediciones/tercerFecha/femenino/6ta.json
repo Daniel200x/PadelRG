@@ -167,52 +167,52 @@
         "equipo2": "2do C ",
         "fecha": "Sabado 21:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "6-2, 6-0"
       },
       {
         "equipo1": "2do B",
         "equipo2": "1ro D ",
         "fecha": "Sabado 21:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "3-6, 3-6"
       },
       {
         "equipo1": "1ro C",
         "equipo2": "2do A",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "5-7, 3-6, 6-7"
       },
       {
         "equipo1": "2do D",
         "equipo2": "1ro B",
         "fecha": "Sabado 22:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "6-4, 6-3"
       }
     ],
     "semis": [
       {
         "equipo1": "Ganador P1",
         "equipo2": "Ganador P2",
-        "fecha": "Domingo 19:00 hs",
+        "fecha": "Domingo 16:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "5-7, 4-6"
       },
       {
         "equipo1": "Ganador P3",
         "equipo2": "Ganador P4",
-        "fecha": "Domingo 19:00 hs",
+        "fecha": "Domingo 16:00 hs",
         "resultado": "A definir",
-          "games": ""
+          "games": "7-5, 4-6, 6-7"
       }
     ],
     "final": {
       "equipo1": "Ganador P5",
       "equipo2": "Ganador P6",
-      "fecha": "A definir",
+      "fecha": "Domingo 21:00 hs",
       "resultado": "A definir",
-          "games": ""
+          "games": "6-7, 7-5, 6-7"
     }
   }
 }
