@@ -438,3 +438,55 @@
         padding: 6px 8px;
     }
 }
+
+/* Agregar al final del archivo ranking.css */
+
+/* Estilos para las celdas de ediciones */
+.ranking-table td.edition-cell {
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+/* Estilo para el total de ediciones */
+.ranking-table td.total-cell {
+    font-weight: bold;
+    background-color: rgba(52, 152, 219, 0.1);
+    text-align: center;
+}
+
+/* Ajustar el ancho de las columnas de ediciones */
+.ranking-table th:nth-child(n+5),
+.ranking-table td:nth-child(n+5) {
+    width: auto;
+    min-width: 80px;
+}
+
+/* Estilos responsivos para las ediciones */
+@media (max-width: 768px) {
+    .ranking-table th:nth-child(n+5),
+    .ranking-table td:nth-child(n+5) {
+        min-width: 60px;
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ocultar algunas ediciones en móviles si hay muchas */
+    .ranking-table th:nth-child(n+6):not(:last-child),
+    .ranking-table td:nth-child(n+6):not(:last-child) {
+        display: none;
+    }
+    
+    .ranking-table th:nth-child(5),
+    .ranking-table td:nth-child(5) {
+        display: table-cell;
+    }
+    
+    .ranking-table th:last-child,
+    .ranking-table td:last-child {
+        display: table-cell;
+        font-weight: bold;
+    }
+}

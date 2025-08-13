@@ -117,6 +117,14 @@ function getTournamentPointsByEdition(player, tournamentKey) {
         return "0";
     }
     
+    // Cuando estamos viendo un torneo específico, mostramos todas las ediciones
+    if (currentTournamentFilter === tournamentKey) {
+        return player.torneos[tournamentKey]
+            .map(ed => `${ed.edicion}: ${ed.puntos}`)
+            .join('<br>');
+    }
+    
+    // Para vista general, mostramos el total con tooltip
     const total = player.torneos[tournamentKey].reduce((sum, ed) => sum + ed.puntos, 0);
     const editions = player.torneos[tournamentKey]
         .map(ed => `${ed.edicion}: ${ed.puntos}`)
@@ -126,7 +134,6 @@ function getTournamentPointsByEdition(player, tournamentKey) {
             <span class="tooltiptext">${editions}</span>
           </div>`;
 }
-
 // Función para filtrar por género
 function filterByGender(gender) {
     if (gender === 'general') return playersData;
@@ -214,15 +221,44 @@ function renderRankingTable() {
     const tournamentKeys = ['puntoDeOro', 'arenas', 'segundoSet'];
     
     const headerRow = document.createElement('tr');
+    
+    // Cabeceras de la tabla
     headerRow.innerHTML = `
         <th>Pos</th>
         <th>Jugador</th>
         ${showAllTournaments ? '<th>Puntos Totales</th>' : ''}
         <th>Categoría</th>
-        ${tournamentKeys.map(key => 
-            (showAllTournaments || currentTournamentFilter === key) ? `<th>${formatTournamentName(key)}</th>` : ''
-        ).join('')}
     `;
+    
+    // Si estamos viendo un torneo específico, agregamos columnas para cada edición
+    if (!showAllTournaments) {
+        // Obtener todas las ediciones únicas para este torneo
+        const allEditions = new Set();
+        filteredData.forEach(player => {
+            if (player.torneos && player.torneos[currentTournamentFilter]) {
+                player.torneos[currentTournamentFilter].forEach(ed => {
+                    allEditions.add(ed.edicion);
+                });
+            }
+        });
+        
+        // Ordenar las ediciones (puedes ajustar esto según tu lógica de orden)
+        const sortedEditions = Array.from(allEditions).sort();
+        
+        // Agregar columnas para cada edición
+        sortedEditions.forEach(edicion => {
+            headerRow.innerHTML += `<th>${edicion}</th>`;
+        });
+        
+        // Agregar columna de total
+        headerRow.innerHTML += `<th>Total ${formatTournamentName(currentTournamentFilter)}</th>`;
+    } else {
+        // Vista general - mostrar columnas de torneos
+        tournamentKeys.forEach(key => {
+            headerRow.innerHTML += `<th>${formatTournamentName(key)}</th>`;
+        });
+    }
+    
     thead.appendChild(headerRow);
     rankingTable.appendChild(thead);
     
@@ -238,16 +274,45 @@ function renderRankingTable() {
         else if (globalPosition === 2) row.classList.add('top-2');
         else if (globalPosition === 3) row.classList.add('top-3');
         
+        // Datos básicos del jugador
         row.innerHTML = `
             <td>${globalPosition}</td>
             <td>${player.name}</td>
             ${showAllTournaments ? `<td>${player.points}</td>` : ''}
             <td>${player.category}</td>
-            ${tournamentKeys.map(key => 
-                (showAllTournaments || currentTournamentFilter === key) ? 
-                `<td class="edition-points">${getTournamentPointsByEdition(player, key)}</td>` : ''
-            ).join('')}
         `;
+        
+        // Si estamos viendo un torneo específico
+        if (!showAllTournaments) {
+            // Obtener todas las ediciones únicas para este torneo (mismo orden que en las cabeceras)
+            const allEditions = new Set();
+            filteredData.forEach(p => {
+                if (p.torneos && p.torneos[currentTournamentFilter]) {
+                    p.torneos[currentTournamentFilter].forEach(ed => {
+                        allEditions.add(ed.edicion);
+                    });
+                }
+            });
+            const sortedEditions = Array.from(allEditions).sort();
+            
+            // Agregar celdas para cada edición
+            sortedEditions.forEach(edicion => {
+                const edicionData = player.torneos && player.torneos[currentTournamentFilter] ? 
+                    player.torneos[currentTournamentFilter].find(e => e.edicion === edicion) : null;
+                row.innerHTML += `<td>${edicionData ? edicionData.puntos : '0'}</td>`;
+            });
+            
+            // Agregar celda de total
+            const total = player.torneos && player.torneos[currentTournamentFilter] ? 
+                player.torneos[currentTournamentFilter].reduce((sum, ed) => sum + ed.puntos, 0) : 0;
+            row.innerHTML += `<td><strong>${total}</strong></td>`;
+        } else {
+            // Vista general - mostrar columnas de torneos
+            tournamentKeys.forEach(key => {
+                row.innerHTML += `<td class="edition-points">${getTournamentPointsByEdition(player, key)}</td>`;
+            });
+        }
+        
         tbody.appendChild(row);
     });
     
