@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cerrar menú al hacer click en un link (para móviles)
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            // Verificar si el clic fue en un dropdown o en su ícono
             const isDropdown = link.classList.contains('dropdown') || 
                               e.target.closest('.dropdown') || 
                               e.target.classList.contains('fa-chevron-down') || 
@@ -80,11 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Variables de estado
 let currentCategory = 'general';
+let currentGender = 'all';
 let currentTournamentFilter = 'all';
 let currentPage = 1;
 const playersPerPage = 10;
 let playersData = [];
 let filteredData = [];
+const categoryCache = {};
 
 // Elementos del DOM
 const rankingTabs = document.querySelectorAll('.ranking-tab');
@@ -117,14 +118,12 @@ function getTournamentPointsByEdition(player, tournamentKey) {
         return "0";
     }
     
-    // Cuando estamos viendo un torneo específico, mostramos todas las ediciones
     if (currentTournamentFilter === tournamentKey) {
         return player.torneos[tournamentKey]
             .map(ed => `${ed.edicion}: ${ed.puntos}`)
             .join('<br>');
     }
     
-    // Para vista general, mostramos el total con tooltip
     const total = player.torneos[tournamentKey].reduce((sum, ed) => sum + ed.puntos, 0);
     const editions = player.torneos[tournamentKey]
         .map(ed => `${ed.edicion}: ${ed.puntos}`)
@@ -134,10 +133,31 @@ function getTournamentPointsByEdition(player, tournamentKey) {
             <span class="tooltiptext">${editions}</span>
           </div>`;
 }
-// Función para filtrar por género
-function filterByGender(gender) {
-    if (gender === 'general') return playersData;
-    return playersData.filter(player => player.gender === gender);
+
+// Cargar datos de una categoría específica
+async function loadCategoryData(category) {
+    if (categoryCache[category]) {
+        return categoryCache[category];
+    }
+    
+    try {
+        const response = await fetch(`/ranking/data/categoria_${category}.json`);
+        if (!response.ok) throw new Error('Error cargando datos');
+        
+        const data = await response.json();
+        categoryCache[category] = data.jugadores;
+        return data.jugadores;
+    } catch (error) {
+        console.error(`Error cargando categoría ${category}:`, error);
+        return [];
+    }
+}
+
+// Cargar todos los datos
+async function loadAllData() {
+    const categories = ['4ta', '5ta', '6ta', '7ma', '8va'];
+    const allPlayers = await Promise.all(categories.map(loadCategoryData));
+    return allPlayers.flat();
 }
 
 // Cargar datos JSON
@@ -146,16 +166,20 @@ async function loadJSONData() {
         loadingIndicator.classList.add('active');
         rankingTable.style.display = 'none';
         
-        const response = await fetch('/ranking/data/ranking.json');
-        if (!response.ok) throw new Error('Error cargando datos');
+        if (currentCategory === 'general') {
+            playersData = await loadAllData();
+        } else {
+            const genderData = await loadAllData();
+            playersData = genderData.filter(player => player.gender === currentCategory);
+        }
         
-        const data = await response.json();
-        playersData = data.jugadores.map(player => ({
+        // Calcular puntos para todos los jugadores
+        playersData = playersData.map(player => ({
             ...player,
             points: calculateTotalPoints(player)
         }));
         
-        loadRankingData();
+        applyFilters();
         
     } catch (error) {
         console.error('Error:', error);
@@ -168,7 +192,7 @@ async function loadJSONData() {
 
 // Cargar datos del ranking
 function loadRankingData() {
-    filteredData = [...filterByGender(currentCategory === 'general' ? 'general' : currentCategory)];
+    filteredData = [...playersData];
     applyFilters();
 }
 
@@ -177,9 +201,7 @@ function applyFilters() {
     const searchTerm = searchInput.value.toLowerCase();
     const selectedCategory = categoryFilter.value;
     
-    let data = filterByGender(currentCategory === 'general' ? 'general' : currentCategory);
-    
-    filteredData = data.filter(player => {
+    filteredData = playersData.filter(player => {
         const matchesSearch = player.name.toLowerCase().includes(searchTerm);
         const matchesCategory = selectedCategory === 'all' || player.category === selectedCategory;
         let matchesTournament = true;
@@ -210,24 +232,17 @@ function applyFilters() {
     updatePagination();
 }
 
-// Modificar la función renderRankingTable
+// Renderizar la tabla de ranking
 function renderRankingTable() {
     rankingTable.innerHTML = '';
     const showAllTournaments = currentTournamentFilter === 'all';
     
-    // Agregar clase para identificar vista de torneo
     if (!showAllTournaments) {
         rankingTable.classList.add('tournament-view');
     } else {
         rankingTable.classList.remove('tournament-view');
     }
 
-     // Agregar clase para identificar dispositivo móvil
-    if (window.innerWidth <= 768) {
-        rankingTable.classList.add('mobile-view');
-    } else {
-        rankingTable.classList.remove('mobile-view');
-    }
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
     tbody.id = 'ranking-data';
@@ -235,22 +250,19 @@ function renderRankingTable() {
     const tournamentKeys = ['puntoDeOro', 'arenas', 'segundoSet'];
     
     const headerRow = document.createElement('tr');
-    
-    // Cabeceras fijas (posición y nombre)
     headerRow.innerHTML = `
         <th>Pos</th>
         <th>Jugador</th>
     `;
     
     if (showAllTournaments) {
-        // Vista general
         headerRow.innerHTML += `
             <th>Puntos</th>
             <th>Categoría</th>
+            <th>Género</th>
             ${tournamentKeys.map(key => `<th>${formatTournamentName(key)}</th>`).join('')}
         `;
     } else {
-        // Vista de torneo específico
         const allEditions = getAllEditionsForTournament(currentTournamentFilter);
         
         allEditions.forEach(edicion => {
@@ -270,28 +282,25 @@ function renderRankingTable() {
         const globalPosition = startIndex + index + 1;
         const row = document.createElement('tr');
         
-        // Destacar primeros puestos
         if (globalPosition === 1) row.classList.add('top-1');
         else if (globalPosition === 2) row.classList.add('top-2');
         else if (globalPosition === 3) row.classList.add('top-3');
         
-        // Datos básicos del jugador (siempre visibles)
         row.innerHTML = `
             <td>${globalPosition}</td>
             <td>${player.name}</td>
         `;
         
         if (showAllTournaments) {
-            // Vista general
             row.innerHTML += `
                 <td>${player.points}</td>
                 <td>${player.category}</td>
+                <td>${player.gender === 'masculino' ? 'Masculino' : 'Femenino'}</td>
                 ${tournamentKeys.map(key => `
                     <td class="edition-points">${getTournamentPointsByEdition(player, key)}</td>
                 `).join('')}
             `;
         } else {
-            // Vista de torneo específico
             const allEditions = getAllEditionsForTournament(currentTournamentFilter);
             const playerEditions = player.torneos && player.torneos[currentTournamentFilter] ? 
                 player.torneos[currentTournamentFilter] : [];
@@ -311,7 +320,7 @@ function renderRankingTable() {
     rankingTable.appendChild(tbody);
 }
 
-// Nueva función auxiliar para obtener todas las ediciones de un torneo
+// Obtener todas las ediciones de un torneo
 function getAllEditionsForTournament(tournamentKey) {
     const allEditions = new Set();
     filteredData.forEach(player => {
@@ -320,12 +329,11 @@ function getAllEditionsForTournament(tournamentKey) {
                 allEditions.add(ed.edicion);
             });
         }
-        
     });
     return Array.from(allEditions).sort();
 }
 
-// Helper para nombres de torneos
+// Formatear nombres de torneos
 function formatTournamentName(key) {
     const names = {
         'puntoDeOro': 'Punto de Oro',
@@ -343,7 +351,7 @@ function updatePagination() {
     nextPageBtn.disabled = currentPage === totalPages || totalPages === 0;
 }
 
-// Debounce para mejorar rendimiento en búsquedas
+// Debounce para búsquedas
 function debounce(func, wait) {
     let timeout;
     return function() {
@@ -360,7 +368,7 @@ function setupEventListeners() {
             rankingTabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
             currentCategory = tab.dataset.category;
-            loadRankingData();
+            loadJSONData();
         });
     });
     
