@@ -408,7 +408,9 @@
         padding: 8px 10px;
     }
     
-    /* Ocultar columnas menos importantes en móviles */
+/* Eliminar o comentar estas reglas que ocultan columnas */
+/*
+@media (max-width: 480px) {
     .ranking-table th:nth-child(5),
     .ranking-table td:nth-child(5),
     .ranking-table th:nth-child(6),
@@ -417,162 +419,77 @@
     .ranking-table td:nth-child(7) {
         display: none;
     }
-    
-    .ranking-table td:nth-child(1) { width: 40px; }
-    .ranking-table td:nth-child(2) { width: 120px; }
-    .ranking-table td:nth-child(3) { width: 80px; }
-    .ranking-table td:nth-child(4) { width: 60px; }
-    
-    .ranking-pagination {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .pagination-btn {
-        width: 100%;
-        padding: 12px;
-    }
-    
-    .tooltip .tooltiptext {
-        max-width: 150px;
-        padding: 6px 8px;
-    }
 }
+*/
 
-/* Agregar al final del archivo ranking.css */
-
-/* Estilos para las celdas de ediciones */
-.ranking-table td.edition-cell {
-    text-align: center;
-    padding: 8px 10px;
-    font-size: 14px;
-}
-
-/* Estilo para el total de ediciones */
-.ranking-table td.total-cell {
-    font-weight: bold;
-    background-color: rgba(52, 152, 219, 0.1);
-    text-align: center;
-}
-
-/* Ajustar el ancho de las columnas de ediciones */
-.ranking-table th:nth-child(n+5),
-.ranking-table td:nth-child(n+5) {
-    width: auto;
-    min-width: 80px;
-}
-
-/* Estilos responsivos para las ediciones */
+/* Reemplazar con estos nuevos estilos para móviles */
 @media (max-width: 768px) {
-    .ranking-table th:nth-child(n+5),
-    .ranking-table td:nth-child(n+5) {
-        min-width: 60px;
-        font-size: 13px;
-        padding: 6px 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ocultar algunas ediciones en móviles si hay muchas */
-    .ranking-table th:nth-child(n+6):not(:last-child),
-    .ranking-table td:nth-child(n+6):not(:last-child) {
-        display: none;
-    }
-    
-    .ranking-table th:nth-child(5),
-    .ranking-table td:nth-child(5) {
-        display: table-cell;
-    }
-    
-    .ranking-table th:last-child,
-    .ranking-table td:last-child {
-        display: table-cell;
-        font-weight: bold;
-    }
-}
-
-/* Reemplazar los media queries existentes por estos */
-@media (max-width: 768px) {
-    .ranking-container {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 60px;
-    }
-    
     .ranking-table-container {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        width: 100%;
-        margin-left: -10px;
-        margin-right: -10px;
-        padding: 0 10px;
     }
     
     .ranking-table {
-        min-width: 100%;
-        font-size: 14px;
+        min-width: 600px; /* Ancho mínimo para asegurar que se muestren todas las columnas */
     }
     
+    /* Ajustar tamaños de fuente y padding para móviles */
     .ranking-table th,
     .ranking-table td {
         padding: 8px 10px;
-        white-space: nowrap;
+        font-size: 13px;
     }
     
-    /* Columnas fijas para posición y nombre */
-    .ranking-table th:first-child,
-    .ranking-table td:first-child {
-        position: sticky;
-        left: 0;
-        background-color: white;
-        z-index: 2;
-        width: 50px;
+    /* Asegurar que las celdas de ediciones sean visibles */
+    .ranking-table th:nth-child(n+3),
+    .ranking-table td:nth-child(n+3) {
+        display: table-cell;
     }
     
-    .ranking-table th:nth-child(2),
-    .ranking-table td:nth-child(2) {
-        position: sticky;
-        left: 50px;
-        background-color: white;
-        z-index: 2;
-        width: 120px;
-    }
-    
-    /* Estilo para celdas de ediciones */
-    .ranking-table td.edition-cell {
-        text-align: center;
+    /* Estilos específicos para vista de torneo */
+    .ranking-table.tournament-view th,
+    .ranking-table.tournament-view td {
         min-width: 70px;
+        text-align: center;
     }
     
-    /* Estilo para total */
-    .ranking-table td.total-cell {
-        font-weight: bold;
-        background-color: rgba(52, 152, 219, 0.1);
+    .ranking-table.tournament-view td:first-child,
+    .ranking-table.tournament-view th:first-child {
+        min-width: 50px;
+    }
+    
+    .ranking-table.tournament-view td:nth-child(2),
+    .ranking-table.tournament-view th:nth-child(2) {
+        min-width: 150px;
+        text-align: left;
     }
 }
 
 @media (max-width: 480px) {
     .ranking-table {
-        font-size: 13px;
+        min-width: 100%; /* Cambiar a 100% para mejor ajuste en móviles pequeños */
     }
     
     .ranking-table th,
     .ranking-table td {
         padding: 6px 8px;
+        font-size: 12px;
     }
     
-    .ranking-table th:first-child,
-    .ranking-table td:first-child {
-        width: 40px;
+    /* Asegurar que todas las columnas sean visibles con scroll horizontal */
+    .ranking-table-container {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
     }
     
-    .ranking-table th:nth-child(2),
-    .ranking-table td:nth-child(2) {
-        left: 40px;
-        width: 100px;
+    /* Estilos para vista de torneo en móviles pequeños */
+    .ranking-table.tournament-view {
+        min-width: 650px; /* Ajustar según necesidad */
     }
     
-    .ranking-table td.edition-cell {
+    .ranking-table.tournament-view td,
+    .ranking-table.tournament-view th {
         min-width: 60px;
     }
-}
+}}
