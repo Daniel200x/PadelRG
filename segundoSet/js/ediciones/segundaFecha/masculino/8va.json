@@ -497,7 +497,8 @@
           "games":""
         }
       ]
-    },{
+    },
+    {
       "nombre": "Grupo H",
       "equipos": [
         {
@@ -580,22 +581,22 @@
           "games":""
       },
       {
-         "equipo1": "P2- Reyes/Riveros ",
-          "equipo2": "Sanabria/Yunes",
+         "equipo1": "1ro E",
+          "equipo2": "2do F",
           "fecha": "Sabado 22:00",
           "resultado": "A definir",
           "games":""
       },
       {
-         "equipo1": "P3- Gonzalez/Llanes",
-          "equipo2": "Cardenas/Loncopan",
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
           "fecha": "Sabado 22:00",
           "resultado": "A definir",
           "games":""
       },
       {
-         "equipo1": "P4- Gomez/Gomez ",
-          "equipo2": " Marquez/Garcia",
+         "equipo1": "1ro G",
+          "equipo2": "2do H",
           "fecha": "Sabado 22:00",
           "resultado": "A definir",
           "games":""
@@ -608,22 +609,22 @@
           "games":""
       },
       {
-         "equipo1": "P6- Gomez/Manquecoy ",
-          "equipo2": " Gonzalez/Rocha",
+         "equipo1": "1ro F",
+          "equipo2": "2do E",
           "fecha": "Sabado 23:00",
           "resultado": "A definir",
           "games":""
       },
       {
-         "equipo1": "P7- Maluf/Samaniego ",
-          "equipo2": " Ortiz/Muñiz ",
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
           "fecha": "Sabado 23:00",
           "resultado": "A definir",
           "games":""
       },
       {
-         "equipo1": "P8- Alcantara/Barrios ",
-          "equipo2": " Crespo/Pedraza",
+         "equipo1": "1ro H",
+          "equipo2": "2do G",
           "fecha": "Sabado 23:00",
           "resultado": "A definir",
           "games":""
