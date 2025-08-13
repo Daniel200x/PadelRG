@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TORNEO PUNTO DE ORO</title>
+    <link rel="stylesheet" href="../arenas/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Pádel RG Logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
+                            <li><a href="../arenas/arenas.html">Arenas</a></li>
+                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ranking/ranking.html">Ranking</a></li>
+                    <li><a href="/galeria/galeria.html">Galería</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-social">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 70px;">
+        <div class="header-torneo">
+            <h1>TORNEO PUNTO DE ORO</h1>
+            <p class="ubicacion">PUNTO DE ORO</p>
+        </div>
+
+        <div id="header-edicion" class="header-edicion" style="display: none;">
+            <!-- Se llenará dinámicamente -->
+        </div>
+
+        <div class="selectores">
+            <!-- Selector de Fecha -->
+            <div class="selector-group">
+                <label>Fecha del Torneo:</label>
+                <div class="button-bar" id="fecha-buttons">
+                   
+                   <button class="selector-button" onclick="seleccionarFecha('segundaFecha')">2da Fecha</button>
+                </div>
+            </div>
+
+            <!-- Selector de Género -->
+            <div class="selector-group">
+                <label>Género:</label>
+                <div class="button-bar" id="genero-buttons">
+                    <button class="selector-button" onclick="seleccionarGenero('masculino')">Masculino</button>
+                    <button class="selector-button" onclick="seleccionarGenero('femenino')">Femenino</button>
+                </div>
+            </div>
+
+            <!-- Selector de Categoría -->
+            <div class="selector-group">
+                <label>Categoría:</label>
+                <div class="button-bar" id="categoria-buttons">
+                    <button class="selector-button" onclick="seleccionarCategoria('4ta')">4ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('5ta')">5ta</button>
+                 <button class="selector-button" onclick="seleccionarCategoria('6ta')">6ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('7ma')">7ma</button>
+                
+                    <button class="selector-button" onclick="seleccionarCategoria('8va')">8va</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Selector móvil (oculto en desktop) -->
+        <div id="mobile-view-selector" class="mobile-view-selector">
+            <div class="button-bar">
+                <button class="selector-button active" onclick="mostrarSeccion('grupos')">Zona de Grupos</button>
+                <button class="selector-button" onclick="mostrarSeccion('eliminatorias')">Eliminatorias</button>
+            </div>
+        </div>
+
+        <div id="contenido-ediciones">
+            <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+        </div>
+
+        <!-- Espacio para publicidad -->
+        <div class="ad-space">
+            <div class="ad-container">
+                <div class="ad-title">Patrocinador Oficial</div>
+                <a href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4" target="_blank">
+                    <img src="../img/muebles.jpeg" alt="Publicidad de patrocinador" class="ad-image">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Botón Volver al Inicio -->
+        <div class="contenedor-btn-volver">
+            <a href="../index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Torneos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Política de Privacidad</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year">2023</span> Torneos de Pádel. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+
+    <script src="../probar/js/script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
+     crossorigin="anonymous"></script>
+</body>
+</html>
