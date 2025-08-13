@@ -222,6 +222,12 @@ function renderRankingTable() {
         rankingTable.classList.remove('tournament-view');
     }
 
+     // Agregar clase para identificar dispositivo móvil
+    if (window.innerWidth <= 768) {
+        rankingTable.classList.add('mobile-view');
+    } else {
+        rankingTable.classList.remove('mobile-view');
+    }
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
     tbody.id = 'ranking-data';
@@ -314,6 +320,7 @@ function getAllEditionsForTournament(tournamentKey) {
                 allEditions.add(ed.edicion);
             });
         }
+        
     });
     return Array.from(allEditions).sort();
 }
