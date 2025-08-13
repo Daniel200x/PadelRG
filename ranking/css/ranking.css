@@ -490,3 +490,89 @@
         font-weight: bold;
     }
 }
+
+/* Reemplazar los media queries existentes por estos */
+@media (max-width: 768px) {
+    .ranking-container {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 60px;
+    }
+    
+    .ranking-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0 10px;
+    }
+    
+    .ranking-table {
+        min-width: 100%;
+        font-size: 14px;
+    }
+    
+    .ranking-table th,
+    .ranking-table td {
+        padding: 8px 10px;
+        white-space: nowrap;
+    }
+    
+    /* Columnas fijas para posición y nombre */
+    .ranking-table th:first-child,
+    .ranking-table td:first-child {
+        position: sticky;
+        left: 0;
+        background-color: white;
+        z-index: 2;
+        width: 50px;
+    }
+    
+    .ranking-table th:nth-child(2),
+    .ranking-table td:nth-child(2) {
+        position: sticky;
+        left: 50px;
+        background-color: white;
+        z-index: 2;
+        width: 120px;
+    }
+    
+    /* Estilo para celdas de ediciones */
+    .ranking-table td.edition-cell {
+        text-align: center;
+        min-width: 70px;
+    }
+    
+    /* Estilo para total */
+    .ranking-table td.total-cell {
+        font-weight: bold;
+        background-color: rgba(52, 152, 219, 0.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .ranking-table {
+        font-size: 13px;
+    }
+    
+    .ranking-table th,
+    .ranking-table td {
+        padding: 6px 8px;
+    }
+    
+    .ranking-table th:first-child,
+    .ranking-table td:first-child {
+        width: 40px;
+    }
+    
+    .ranking-table th:nth-child(2),
+    .ranking-table td:nth-child(2) {
+        left: 40px;
+        width: 100px;
+    }
+    
+    .ranking-table td.edition-cell {
+        min-width: 60px;
+    }
+}
