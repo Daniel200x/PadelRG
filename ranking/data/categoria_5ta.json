@@ -1856,7 +1856,7 @@
     ,
     {
       "id": 270,
-      "name": "",
+      "name": "Neda Cvitanich",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1866,7 +1866,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1881,7 +1881,7 @@
     ,
     {
       "id": 271,
-      "name": "",
+      "name": "Agustina Rupretch",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1891,7 +1891,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1906,7 +1906,7 @@
     ,
     {
       "id": 272,
-      "name": "",
+      "name": "Alba Caicheo",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1917,7 +1917,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1931,7 +1931,7 @@
     ,
     {
       "id": 273,
-      "name": "",
+      "name": "Fernanda Treppo",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1941,9 +1941,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1956,7 +1956,7 @@
     ,
     {
       "id": 274,
-      "name": "",
+      "name": "Adelaida Vidart",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1966,9 +1966,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1981,7 +1981,7 @@
     ,
     {
       "id": 275,
-      "name": "",
+      "name": "Nelida Cabezas",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -1991,9 +1991,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2006,7 +2006,7 @@
     ,
     {
       "id": 276,
-      "name": "",
+      "name": "Lucia Marcial",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2017,8 +2017,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2031,7 +2031,7 @@
     ,
     {
       "id": 277,
-      "name": "",
+      "name": "Maria Miranda",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2042,8 +2042,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2056,7 +2056,7 @@
     ,
     {
       "id": 278,
-      "name": "",
+      "name": "Cecilia Gersicich",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2068,7 +2068,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2081,7 +2081,7 @@
     ,
     {
       "id": 279,
-      "name": "",
+      "name": "Silvina Vera",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2093,7 +2093,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2106,7 +2106,7 @@
     ,
     {
       "id": 280,
-      "name": "",
+      "name": "Lucila Saenz",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2118,7 +2118,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2131,7 +2131,7 @@
     ,
     {
       "id": 281,
-      "name": "",
+      "name": "Karina Vera",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2141,8 +2141,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
