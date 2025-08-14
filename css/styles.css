@@ -438,7 +438,7 @@ body::before {
     );
 }
 .torneo-card:nth-child(4)::before {
-    background-image: url('../img/2set.jpeg');
+    background-image: url('../img/martin.jpg');
     background-size: 75%;
 }
 

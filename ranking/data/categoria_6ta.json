@@ -5,7 +5,7 @@
 
     {
       "id": 351,
-      "name": "",
+      "name": "Nicolas Barrios",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -15,10 +15,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 350}
           
         ],
         "segundoSet": [
@@ -29,7 +29,7 @@
     },
     {
       "id": 352,
-      "name": "",
+      "name": "Waldemar Sosa",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -39,10 +39,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 150}
           
         ],
         "segundoSet": [
@@ -53,7 +53,7 @@
     },
     {
       "id": 353,
-      "name": "",
+      "name": "Joaquien Bugonovich",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -63,10 +63,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 200}
           
         ],
         "segundoSet": [
@@ -77,7 +77,7 @@
     },
     {
       "id": 354,
-      "name": "",
+      "name": "Cristian Lopez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -87,9 +87,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -101,7 +101,7 @@
     },
     {
       "id": 355,
-      "name": "",
+      "name": "Mariano Pereyra",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -111,10 +111,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 40}
           
         ],
         "segundoSet": [
@@ -125,7 +125,7 @@
     },
     {
       "id": 356,
-      "name": "",
+      "name": "Cristian Carrasco",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -135,9 +135,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 40},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -149,7 +149,7 @@
     },
     {
       "id": 357,
-      "name": "",
+      "name": "Gustavo Quiroz",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -159,10 +159,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 75}
           
         ],
         "segundoSet": [
@@ -173,7 +173,7 @@
     },
     {
       "id": 358,
-      "name": "",
+      "name": "Javier Gimenez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -183,10 +183,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 50},
+          {"edicion": "First Class", "puntos": 100}
           
         ],
         "segundoSet": [
@@ -197,7 +197,7 @@
     },
     {
       "id": 359,
-      "name": "",
+      "name": "Mariano Puebla",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -207,10 +207,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 30},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 50}
           
         ],
         "segundoSet": [
@@ -221,7 +221,7 @@
     },
     {
       "id": 360,
-      "name": "",
+      "name": "Jonatan Coronel",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -232,7 +232,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -245,7 +245,7 @@
     },
     {
       "id": 361,
-      "name": "",
+      "name": "Enrique Hernando",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -256,7 +256,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -269,7 +269,7 @@
     },
     {
       "id": 362,
-      "name": "",
+      "name": "Matias Dos Santos",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -279,10 +279,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 50},
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -293,7 +293,7 @@
     },
     {
       "id": 363,
-      "name": "",
+      "name": "Martin Velasquez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -304,8 +304,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 150},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -317,7 +317,7 @@
     },
     {
       "id": 364,
-      "name": "",
+      "name": "Jonatan Villafañe",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -327,9 +327,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -341,7 +341,7 @@
     },
     {
       "id": 365,
-      "name": "",
+      "name": "Diego Velazquez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -351,9 +351,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -365,7 +365,7 @@
     },
     {
       "id": 366,
-      "name": "",
+      "name": "Jesus Sanchez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -375,9 +375,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -389,7 +389,7 @@
     },
     {
       "id": 367,
-      "name": "",
+      "name": "Martin Moreta",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -399,9 +399,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -413,7 +413,7 @@
     },
     {
       "id": 368,
-      "name": "",
+      "name": "Cristian Maisares",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -423,9 +423,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 40},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -437,7 +437,7 @@
     },
     {
       "id": 369,
-      "name": "",
+      "name": "Miguel Gomez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -447,9 +447,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 40},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -461,7 +461,7 @@
     },
     {
       "id": 370,
-      "name": "",
+      "name": "Edgardo Mesas",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -471,7 +471,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -485,7 +485,7 @@
     },
     {
       "id": 371,
-      "name": "",
+      "name": "Eduardo Gomez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -495,10 +495,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -509,7 +509,7 @@
     },
     {
       "id": 372,
-      "name": "",
+      "name": "Jonatan Mosman",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -519,8 +519,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -533,7 +533,7 @@
     },
     {
       "id": 373,
-      "name": "",
+      "name": "Inti Bogado",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -543,8 +543,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -557,7 +557,7 @@
     },
     {
       "id": 374,
-      "name": "",
+      "name": "Diego Villalba",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -567,10 +567,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 50},
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -581,7 +581,7 @@
     },
     {
       "id": 375,
-      "name": "",
+      "name": "Nicolas Barbosa",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -592,8 +592,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -605,7 +605,7 @@
     },
     {
       "id": 376,
-      "name": "",
+      "name": "Nicolas Dominguez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -615,10 +615,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 50},
+          {"edicion": "First Class", "puntos": 50}
           
         ],
         "segundoSet": [
@@ -629,7 +629,7 @@
     },
     {
       "id": 377,
-      "name": "",
+      "name": "Martin Abalos",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -639,10 +639,10 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 30},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 50}
           
         ],
         "segundoSet": [
@@ -653,7 +653,7 @@
     },
     {
       "id": 378,
-      "name": "",
+      "name": "Rodrigo Retuerto",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -663,8 +663,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -677,7 +677,7 @@
     },
     {
       "id": 379,
-      "name": "",
+      "name": "Damian Garcia",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -687,9 +687,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -701,7 +701,7 @@
     },
     {
       "id": 380,
-      "name": "",
+      "name": "Valentin Lemus",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -711,9 +711,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -725,7 +725,7 @@
     },
     {
       "id": 381,
-      "name": "",
+      "name": "Jonatan Villalobos",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -735,9 +735,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -749,7 +749,7 @@
     },
     {
       "id": 382,
-      "name": "",
+      "name": "Nicolas De Guevara",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -759,9 +759,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 40},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -773,7 +773,7 @@
     },
     {
       "id": 383,
-      "name": "",
+      "name": "Leandro Terrado",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -783,8 +783,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -797,7 +797,7 @@
     },
     {
       "id": 384,
-      "name": "",
+      "name": "Julio Orellana",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -807,8 +807,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -821,7 +821,7 @@
     },
     {
       "id": 385,
-      "name": "",
+      "name": "Hernan Juarez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -831,8 +831,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -845,7 +845,7 @@
     },
     {
       "id": 386,
-      "name": "",
+      "name": "Joaquin Galvez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -856,7 +856,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -869,7 +869,7 @@
     },
     {
       "id": 387,
-      "name": "",
+      "name": "Cristian Centurion",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -880,7 +880,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -893,7 +893,7 @@
     },
     {
       "id": 388,
-      "name": "",
+      "name": "Diego Floriani",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -903,9 +903,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -917,7 +917,7 @@
     },
     {
       "id": 389,
-      "name": "",
+      "name": "Eduardo Garay",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -927,9 +927,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -941,7 +941,7 @@
     },
     {
       "id": 390,
-      "name": "",
+      "name": "Sebastian Lonne",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -951,9 +951,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -965,7 +965,7 @@
     },
     {
       "id": 391,
-      "name": "",
+      "name": "Juan Carlos Cuenca",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -975,9 +975,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -989,7 +989,7 @@
     },
     {
       "id": 392,
-      "name": "",
+      "name": "Eduardo Larrechea",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -999,9 +999,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 393,
-      "name": "",
+      "name": "Franco Gallucci",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1025,7 +1025,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1037,7 +1037,7 @@
     },
     {
       "id": 394,
-      "name": "",
+      "name": "Fernando Rivero",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1047,8 +1047,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 40},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 395,
-      "name": "",
+      "name": "Victor Gonzalez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1071,8 +1071,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 30},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1085,7 +1085,7 @@
     },
     {
       "id": 396,
-      "name": "",
+      "name": "Mariano Soto",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1095,7 +1095,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1109,7 +1109,7 @@
     },
     {
       "id": 397,
-      "name": "",
+      "name": "Carlos Sespere",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1119,8 +1119,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 398,
-      "name": "",
+      "name": "Walter Sanchez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1144,7 +1144,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1157,7 +1157,7 @@
     },
     {
       "id": 399,
-      "name": "",
+      "name": "Pablo Amarilla",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1167,9 +1167,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 400,
-      "name": "",
+      "name": "Ignacio Beltran",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1191,9 +1191,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1205,7 +1205,7 @@
     },
     {
       "id": 401,
-      "name": "",
+      "name": "Richard Gomez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1215,9 +1215,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 402,
-      "name": "",
+      "name": "Yonatan Torres",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1240,8 +1240,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1253,7 +1253,7 @@
     },
     {
       "id": 403,
-      "name": "",
+      "name": "Brian Gamarra",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1265,7 +1265,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1277,7 +1277,7 @@
     },
     {
       "id": 404,
-      "name": "",
+      "name": "Cristian Gabriel",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1289,7 +1289,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1301,7 +1301,7 @@
     },
     {
       "id": 405,
-      "name": "",
+      "name": "Lucas Lemus",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1311,7 +1311,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1325,7 +1325,7 @@
     },
     {
       "id": 406,
-      "name": "",
+      "name": "Marcelo Trangoni",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1335,7 +1335,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 407,
-      "name": "",
+      "name": "Ariel Stefanizzi",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1359,7 +1359,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1373,7 +1373,7 @@
     },
     {
       "id": 408,
-      "name": "",
+      "name": "Juan Pablo Romero",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1383,8 +1383,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 409,
-      "name": "",
+      "name": "Walter Alvarado",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1407,8 +1407,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1421,7 +1421,7 @@
     },
     {
       "id": 410,
-      "name": "",
+      "name": "Jorge Carabajal",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1432,7 +1432,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1445,7 +1445,7 @@
     },
     {
       "id": 411,
-      "name": "",
+      "name": "Javier Andrade",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1456,7 +1456,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1469,7 +1469,7 @@
     },
     {
       "id": 412,
-      "name": "",
+      "name": "Franco Gonzalez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1480,7 +1480,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1493,7 +1493,7 @@
     },
     {
       "id": 413,
-      "name": "",
+      "name": "Ariel Ponce",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1503,9 +1503,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1517,7 +1517,7 @@
     },
     {
       "id": 414,
-      "name": "",
+      "name": "Joaquin Rodriguez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1527,9 +1527,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1541,7 +1541,7 @@
     },
     {
       "id": 415,
-      "name": "",
+      "name": "Gonzalo Figueroa",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1551,9 +1551,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1565,7 +1565,7 @@
     },
     {
       "id": 416,
-      "name": "",
+      "name": "Facundo Saldaño",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1576,8 +1576,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1589,7 +1589,7 @@
     },
     {
       "id": 417,
-      "name": "",
+      "name": "Dario Orellano",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1600,8 +1600,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1613,7 +1613,7 @@
     },
     {
       "id": 418,
-      "name": "",
+      "name": "Franco Forno",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1625,7 +1625,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1637,7 +1637,7 @@
     },
     {
       "id": 419,
-      "name": "",
+      "name": "Facundo Infran",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1649,7 +1649,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1661,7 +1661,7 @@
     },
     {
       "id": 420,
-      "name": "",
+      "name": "Jose Maria Mendez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1673,7 +1673,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1685,7 +1685,7 @@
     },
     {
       "id": 421,
-      "name": "",
+      "name": "Matias Saldaño",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1697,7 +1697,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1709,7 +1709,7 @@
     },
     {
       "id": 422,
-      "name": "",
+      "name": "Javier Baldovino",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1719,9 +1719,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1733,7 +1733,7 @@
     },
     {
       "id": 423,
-      "name": "",
+      "name": "Martin Echeverria",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1743,7 +1743,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1757,7 +1757,7 @@
     },
     {
       "id": 424,
-      "name": "",
+      "name": "Luis Ruiz",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1767,7 +1767,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1781,7 +1781,7 @@
     },
     {
       "id": 425,
-      "name": "",
+      "name": "Jorge Ojeda",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1791,7 +1791,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1805,7 +1805,7 @@
     },
     {
       "id": 426,
-      "name": "",
+      "name": "Fabian Navarro",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1815,7 +1815,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -1829,7 +1829,7 @@
     },
     {
       "id": 427,
-      "name": "",
+      "name": "Franco Errecalde",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1840,7 +1840,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1853,7 +1853,7 @@
     },
     {
       "id": 428,
-      "name": "",
+      "name": "Gabriel Gabutti",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1864,7 +1864,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1877,7 +1877,7 @@
     },
     {
       "id": 429,
-      "name": "",
+      "name": "Francisco Amestoy",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1888,7 +1888,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1901,7 +1901,7 @@
     },
     {
       "id": 430,
-      "name": "",
+      "name": "Sergio Aranda",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1912,7 +1912,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1925,7 +1925,7 @@
     },
     {
       "id": 431,
-      "name": "",
+      "name": "Gerardo Aballay",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1936,7 +1936,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1949,7 +1949,7 @@
     },
     {
       "id": 432,
-      "name": "",
+      "name": "Ulises Veron",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1960,7 +1960,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -1973,7 +1973,7 @@
     },
     {
       "id": 433,
-      "name": "",
+      "name": "Juan Cruz Nahuel",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -1985,7 +1985,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -1997,7 +1997,7 @@
     },
     {
       "id": 434,
-      "name": "",
+      "name": "Ezequiel Arteaga",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -2009,7 +2009,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2021,7 +2021,7 @@
     },
     {
       "id": 435,
-      "name": "",
+      "name": "Rafael Muriño",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -2033,7 +2033,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2045,7 +2045,7 @@
     },
     {
       "id": 436,
-      "name": "",
+      "name": "Gabriel Escobar",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -2057,559 +2057,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 437,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 438,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 439,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 440,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 441,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 442,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 443,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 444,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 445,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 446,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 447,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 448,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 449,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 450,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 451,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 452,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 453,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 454,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 455,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 456,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 457,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 458,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 459,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],

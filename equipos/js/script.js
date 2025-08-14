@@ -158,7 +158,6 @@ function seleccionarCategoria(categoria) {
     actualizarBotonesActivos();
 }
 
-// Función para cargar los datos de una edición específica
 async function cargarEdicion(edicionKey) {
     const edicionInfo = edicionesInfo[edicionKey];
     if (!edicionInfo) return null;
@@ -170,14 +169,13 @@ async function cargarEdicion(edicionKey) {
     const edicion = {
         ...edicionInfo,
         equiposGenerales: [],
-        partidosGenerales: [], // Acumulará TODOS los partidos de todas las categorías
+        partidosGenerales: [],
         categorias: {
             masculino: {},
             femenino: {}
         }
     };
 
-    // Cargar datos por categoría y acumular partidos
     const generos = ['masculino', 'femenino'];
     const categorias = ['4ta', '5ta', '6ta', '7ma', '8va'];
 
@@ -187,24 +185,47 @@ async function cargarEdicion(edicionKey) {
                 const response = await fetch(`${edicionInfo.path}/${genero}/${categoria}.json`);
                 if (response.ok) {
                     const data = await response.json();
-                    edicion.categorias[genero][categoria] = data;
                     
-                    // Acumular equipos únicos
-                    if (data.equipos) {
-                        data.equipos.forEach(equipo => {
+                    // Procesar equipos
+                    const equiposCategoria = data.equipos || [];
+                    edicion.categorias[genero][categoria] = {
+                        equipos: equiposCategoria,
+                        partidos: []
+                    };
+
+                    // Procesar fixture y convertir a array plano de partidos
+                    if (data.fixture) {
+                        const partidosCategoria = [];
+                        for (const ronda in data.fixture) {
+                            if (data.fixture.hasOwnProperty(ronda)) {
+                                data.fixture[ronda].forEach(partido => {
+                                    if (partido.equipo2 !== null) { // Ignorar descansos
+                                        partidosCategoria.push({
+                                            equipo1: partido.equipo1,
+                                            equipo2: partido.equipo2,
+                                            resultado: partido.resultado,
+                                            games: partido.games,
+                                            fecha: partido.fecha,
+                                            hora: partido.hora,
+                                            genero: genero,
+                                            categoria: categoria,
+                                            ronda: ronda
+                                        });
+                                    }
+                                });
+                            }
+                        }
+                        edicion.categorias[genero][categoria].partidos = partidosCategoria;
+                        
+                        // Acumular para tabla general
+                        equiposCategoria.forEach(equipo => {
                             if (!edicion.equiposGenerales.some(e => e.nombre === equipo.nombre)) {
                                 edicion.equiposGenerales.push({...equipo});
                             }
                         });
-                    }
-                    
-                    // Acumular partidos con resultados
-                    if (data.partidos) {
-                        data.partidos.forEach(partido => {
-                            if (partido.resultado && partido.resultado !== '-' && partido.resultado !== 'A definir') {
-                                // Agregar metadata de categoría/género
-                                partido.genero = genero;
-                                partido.categoria = categoria;
+                        
+                        partidosCategoria.forEach(partido => {
+                            if (partido.resultado && partido.resultado !== '' && partido.resultado !== 'Descansa') {
                                 edicion.partidosGenerales.push(partido);
                             }
                         });
@@ -300,7 +321,7 @@ function renderizarEdicion(edicion, genero, categoria) {
                 <th>GF</th>
                 <th>GC</th>
                 <th>DG</th>
-                <th>Detalle</th>
+                
             </tr>
         `;
         tabla.appendChild(thead);
@@ -346,9 +367,7 @@ function renderizarEdicion(edicion, genero, categoria) {
                 <td>${equipo.GF}</td>
                 <td>${equipo.GC}</td>
                 <td>${equipo.GF - equipo.GC}</td>
-                <td class="detalle-categoria" data-tooltip="${tooltipContent}">
-                    <i class="fas fa-info-circle"></i>
-                </td>
+               
             `;
             tbody.appendChild(fila);
         });
@@ -374,12 +393,35 @@ function renderizarEdicion(edicion, genero, categoria) {
         fixturesTitle.style.paddingBottom = "10px";
         fixturesContainer.appendChild(fixturesTitle);
         
-        if (categoriaData.partidos && categoriaData.partidos.length > 0) {
-            const partidosDiv = document.createElement("div");
-            partidosDiv.className = "partidos-grupo";
-            partidosDiv.style.marginTop = "15px";
+        // Dentro de la función renderizarEdicion, en la parte de fixtures:
+if (categoriaData.partidos && categoriaData.partidos.length > 0) {
+    // Agrupar partidos por ronda
+    const partidosPorRonda = {};
+    categoriaData.partidos.forEach(partido => {
+        if (!partidosPorRonda[partido.ronda]) {
+            partidosPorRonda[partido.ronda] = [];
+        }
+        partidosPorRonda[partido.ronda].push(partido);
+    });
 
-            categoriaData.partidos.forEach(p => {
+    // Mostrar cada ronda
+    for (const ronda in partidosPorRonda) {
+        if (partidosPorRonda.hasOwnProperty(ronda)) {
+            const rondaDiv = document.createElement("div");
+            rondaDiv.className = "ronda-fixture";
+            rondaDiv.style.marginBottom = "20px";
+            rondaDiv.style.background = "rgba(255, 255, 255, 0.9)";
+            rondaDiv.style.padding = "15px";
+            rondaDiv.style.borderRadius = "8px";
+            rondaDiv.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+
+            const rondaTitle = document.createElement("h4");
+            rondaTitle.textContent = ronda.split('_').join(' ').toUpperCase();
+            rondaTitle.style.color = "#e74c3c";
+            rondaTitle.style.marginTop = "0";
+            rondaDiv.appendChild(rondaTitle);
+
+            partidosPorRonda[ronda].forEach(p => {
                 const partidoDiv = document.createElement("div");
                 partidoDiv.className = "partido-grupo";
 
@@ -387,13 +429,16 @@ function renderizarEdicion(edicion, genero, categoria) {
                 equipos.className = "equipos-partido";
                 equipos.innerHTML = `
                     <div>${p.equipo1} vs ${p.equipo2}</div>
-                    ${p.fecha ? `<div class="fecha-partido">${p.fecha}</div>` : ''}
+                    ${p.fecha ? `<div class="fecha-partido">${p.fecha} ${p.hora || ''}</div>` : ''}
                 `;
 
                 const resultado = document.createElement("div");
                 resultado.className = "resultado-partido";
                 
-                if (p.games) {
+                if (p.resultado === 'Descansa') {
+                    resultado.textContent = "Descansa";
+                    resultado.style.background = "#7f8c8d";
+                } else if (p.games) {
                     resultado.innerHTML = `
                         <div class="detalle-games">${p.games}</div>
                     `;
@@ -403,11 +448,13 @@ function renderizarEdicion(edicion, genero, categoria) {
 
                 partidoDiv.appendChild(equipos);
                 partidoDiv.appendChild(resultado);
-                partidosDiv.appendChild(partidoDiv);
+                rondaDiv.appendChild(partidoDiv);
             });
 
-            fixturesContainer.appendChild(partidosDiv);
-        } else {
+            fixturesContainer.appendChild(rondaDiv);
+        }
+    }
+} else {
             fixturesContainer.innerHTML += '<p>No hay partidos programados para esta categoría.</p>';
         }
     } else {

@@ -1,464 +1,97 @@
 {
-  "nombre": "4ta Categoría",
-  "grupos": [
-    {
-      "nombre": "Grupo A",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "fecha": "// : hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": ","
-        },
-        {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-            "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
+    "torneo": "Torneo de Pádel (9 equipos, 9 rondas)",
+    "equipos": [
+        {"nombre": "Drink Team"},
+        {"nombre": "Galactinchos"},
+        {"nombre": "AC Padel"},
+        {"nombre": "Vuela Alto"},
+        {"nombre": "3er Tiempo"},
+        {"nombre": "La ultima y nos vamos"},
+        {"nombre": "La Tinchonetta"},
+        {"nombre": "Los Picatinchos"},
+        {"nombre": "DC Padel"}
+    ],
+    "fixture": {
+        "ronda_1": [
+            {"equipo1": "AC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_2": [
+            {"equipo1": "Vuela Alto", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "AC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_3": [
+            {"equipo1": "Vuela Alto", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "3er Tiempo", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_4": [
+            {"equipo1": "3er Tiempo", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Vuela Alto", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_5": [
+            {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_6": [
+            {"equipo1": "La ultima y nos vamos", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Drink Team", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "3er Tiempo", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_7": [
+            {"equipo1": "La ultima y nos vamos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_8": [
+            {"equipo1": "La Tinchonetta", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_9": [
+            {"equipo1": "La Tinchonetta", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Galactinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ]
     },
-    {
-      "nombre": "Grupo B",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
+    "distribucion_descansos": {
+        "La Tinchonetta": "Ronda 1",
+        "AC Padel": "Ronda 2",
+        "Los Picatinchos": "Ronda 3",
+        "Vuela Alto": "Ronda 4",
+        "Drink Team": "Ronda 5",
+        "3er Tiempo": "Ronda 6",
+        "DC Padel": "Ronda 7",
+        "La ultima y nos vamos": "Ronda 8",
+        "Galactinchos": "Ronda 9"
     },
-    {
-      "nombre": "Grupo C",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo D",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo E",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-         "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        },
-        {
-      "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ","
-        }
-      ]
+    "verificacion": {
+        "total_partidos_por_equipo": 8,
+        "total_rondas": 9,
+        "enfrentamientos": "Cada equipo juega contra los otros 8 una sola vez",
+        "equipos_sin_descanso_repetido": true,
+        "nota": "Todos los equipos descansan exactamente 1 vez en 9 rondas."
     }
-  ],
-  "eliminatorias": {
-    "octavos": [
-      {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      }
-    ],
-    "cuartos": [
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      },
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      }
-    ],
-    "semis": [
-      {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-      }
-    ],
-    "final": {
-        "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": ",",
-        "ganador": "/"
-    }
-  }
 }

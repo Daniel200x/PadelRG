@@ -1,4 +1,5 @@
 {
+    "torneo": "Torneo de Pádel (9 equipos, 9 rondas)",
     "equipos": [
         {"nombre": "Drink Team"},
         {"nombre": "Galactinchos"},
@@ -7,81 +8,90 @@
         {"nombre": "3er Tiempo"},
         {"nombre": "La ultima y nos vamos"},
         {"nombre": "La Tinchonetta"},
-        {"nombre": "Los Picainchos"},
+        {"nombre": "Los Picatinchos"},
         {"nombre": "DC Padel"}
     ],
-    "partidos": [
-        {
-            "equipo1": "La Tinchonetta",
-            "equipo2": "AC Padel",
-            "resultado": "2-1",
-            "games": "6-4,3-6,6-2",
-            "fecha": "10/08/2025",
-            "hora": "16:00"
-        },
-        {
-            "equipo1": "La ultima y nos vamos",
-            "equipo2": "Vuela Alto",
-            "resultado": "2-1",
-            "games": "6-4,3-6,6-2",
-            "fecha": "10/08/2025",
-            "hora": "16:00"
-        }
-        ,
-        {
-            "equipo1": "La Tinchonetta",
-            "equipo2": "AC Padel",
-            "resultado": "2-1",
-            "games": "6-4,3-6,6-2",
-            "fecha": "10/08/2025",
-            "hora": "16:00"
-        },{
-            "equipo1": "La Tinchonetta",
-            "equipo2": "AC Padel",
-            "resultado": "2-1",
-            "games": "6-4,3-6,6-2",
-            "fecha": "10/08/2025",
-            "hora": "16:00"
-        },
-        
-      
-        {
-            "equipo1": "Pádel Masters",
-            "equipo2": "Los Vikingos",
-            "resultado": "1-2",
-            "games": "6-2,3-6,4-6",
-            "fecha": "17/08/2025",
-            "hora": "17:30"
-        },
-       
-        {
-            "equipo1": "Pádel Masters",
-            "equipo2": "Smash Power",
-            "resultado": "A definir",
-            "fecha": "24/08/2025",
-            "hora": "17:30"
-        },
-        {
-            "equipo1": "Raquetas de Fuego",
-            "equipo2": "Golden Paddle",
-            "resultado": "A definir",
-            "fecha": "25/08/2025",
-            "hora": "11:00"
-        },
-        {
-            "equipo1": "Doble Impacto",
-            "equipo2": "Banda Cross",
-            "resultado": "A definir",
-            "fecha": "25/08/2025",
-            "hora": "12:30"
-        },
-        {
-            "equipo1": "DC Padel",
-            "equipo2": "Los Picatinchos",
-            "resultado": "2-1",
-            "games": "6-7,6-4,6-3",
-            "fecha": "25/08/2025",
-            "hora": "12:30"
-        }
-    ]
+    "fixture": {
+        "ronda_1": [
+            {"equipo1": "AC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_2": [
+            {"equipo1": "Vuela Alto", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "AC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_3": [
+            {"equipo1": "Vuela Alto", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "3er Tiempo", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_4": [
+            {"equipo1": "3er Tiempo", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Vuela Alto", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_5": [
+            {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_6": [
+            {"equipo1": "La ultima y nos vamos", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Drink Team", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "3er Tiempo", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_7": [
+            {"equipo1": "La ultima y nos vamos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_8": [
+            {"equipo1": "La Tinchonetta", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La ultima y nos vamos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ],
+        "ronda_9": [
+            {"equipo1": "La Tinchonetta", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Galactinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
+        ]
+    },
+    "distribucion_descansos": {
+        "La Tinchonetta": "Ronda 1",
+        "AC Padel": "Ronda 2",
+        "Los Picatinchos": "Ronda 3",
+        "Vuela Alto": "Ronda 4",
+        "Drink Team": "Ronda 5",
+        "3er Tiempo": "Ronda 6",
+        "DC Padel": "Ronda 7",
+        "La ultima y nos vamos": "Ronda 8",
+        "Galactinchos": "Ronda 9"
+    },
+    "verificacion": {
+        "total_partidos_por_equipo": 8,
+        "total_rondas": 9,
+        "enfrentamientos": "Cada equipo juega contra los otros 8 una sola vez",
+        "equipos_sin_descanso_repetido": true,
+        "nota": "Todos los equipos descansan exactamente 1 vez en 9 rondas."
+    }
 }
