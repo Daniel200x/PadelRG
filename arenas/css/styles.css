@@ -1064,3 +1064,30 @@ tr:hover {
     height: 100%;
 }
 }
+/* Contenedor del logo */
+.logo-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Logo del torneo */
+.logo-torneo {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px; /* Altura máxima */
+    object-fit: contain;
+}
+
+/* Ajusta el header-edicion para que sea la referencia de ancho */
+.header-edicion {
+    max-width: 800px; /* O el ancho que tenga tu recuadro azul */
+    margin: 0 auto 30px;
+}
+
+/* Opcional: si quieres que el logo tenga el mismo ancho exacto */
+.logo-torneo {
+    width: 100%;
+    max-width: 800px; /* Mismo ancho que el header-edicion */
+}
