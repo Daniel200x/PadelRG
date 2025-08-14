@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Floriani Agustin/Lara Pablo",
+          "nombre": "Floriani/Lara",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "Gallardo Franco/Ojeda Lucas",
+          "nombre": "Gallardo/Ojeda",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "Andrade Thiago/Echeverria Tomas",
+          "nombre": "Andrade/Echeverria",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -37,19 +37,22 @@
           "fecha": "Viernes 20:00 hs",
           "equipo1": "Floriani/Lara",
           "equipo2": "Gallardo/Ojeda",
-          "resultado": "A definir"
+         "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Floriani/Lara",
           "equipo2": "Andrade/Echeverria",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
             "equipo1": "Gallardo/Ojeda",
           "equipo2": "Andrade/Echeverria",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "A definir"
+         "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -57,7 +60,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Andrade Popone/Gallardo Ivan",
+          "nombre": "Andrade/Gallardo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -66,7 +69,7 @@
           "GC": 0
         },
         {
-         "nombre": "Escufachi Nicolas/Villarreal Jose",
+         "nombre": "Escufachi/Villarreal",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -75,7 +78,7 @@
           "GC": 0
         },
         {
-          "nombre": "Gonzalez Franco/Escudero Gustavo",
+          "nombre": "Gonzalez/Escudero",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -89,19 +92,22 @@
           "equipo1": "Andrade/Gallardo",
           "equipo2": "Escufachi/Villarreal",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Escufachi/Villarreal",
           "equipo2": "Gonzalez/Escudero",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "Andrade/Gallardo",
           "equipo2": "Gonzalez/Escudero",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -109,7 +115,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Candia Angel/Dure Pablo",
+          "nombre": "Candia/Dure",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -118,7 +124,7 @@
           "GC": 0
         },
         {
-         "nombre": "Urquiza Daniel/Andrade Pedro",
+         "nombre": "Urquiza/Andrade",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -127,7 +133,7 @@
           "GC": 0
         },
         {
-          "nombre": "Ormaza Martin/Servian Joaquin",
+          "nombre": "Ormaza/Servian",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -141,47 +147,66 @@
           "equipo1": "Candia/Dure",
           "equipo2": "Urquiza/Andrade",
           "fecha": "Viernes 21:00 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Urquiza/Andrade",
           "equipo2": "Ormaza/Servian",
           "fecha": "Sabado 14:00 hs",
-          "resultado": "A definir"
+         "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "Candia/Dure",
           "equipo2": "Ormaza/Servian",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         }
       ]
     }
   ],
  "eliminatorias": {
-    
-    "semis": [
-     {
-         "equipo1": "P1 - 1 A ",
-          "equipo2": "2 B ",
+    "cuartos": [
+      {
+         "equipo1": "2do C",
+          "equipo2": "2do B",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P2 - 1 B ",
-          "equipo2": "2 A ",
+         "equipo1": "1ro C",
+          "equipo2": "2do A",
           "fecha": "Domingo",
-          "resultado": "A definir",
-        "ganador": "A definir"
+         "resultado": "A definir",
+          "games":""
+      }
+      
+    ],
+    "semis": [
+     {
+         "equipo1": "1ro A ",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo",
+           "resultado": "A definir",
+          "games":""
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo",
+           "resultado": "A definir",
+          "games":""
       }
     ],
     "final": {
         "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo : hs",
-          "resultado": "A definir",
-        "ganador": "A definir"
+           "resultado": "A definir",
+          "games":""
     }
   }
 }

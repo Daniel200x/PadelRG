@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Beamonte Karen/Graneros Florencia",
+          "nombre": "Beamonte/Graneros",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "Heredia Florencia/A confirmar",
+          "nombre": "Heredia/A confirmar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "Lamberti Micaela/Fleuri Yesica",
+          "nombre": "Lamberti/Fleuri",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -37,19 +37,22 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "Beamonte/Graneros",
           "equipo2": "Heredia/A confirmar",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Heredia/A confirmar",
           "equipo2": "Lamberti/Fleuri",
           "fecha": "Sabado 15:00 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         },
         {
             "equipo1": "Beamonte/Graneros",
           "equipo2": "Lamberti/Fleuri",
           "fecha": "Sabado 21:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -57,7 +60,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Barria Cristina/Ilarregui Sabrina",
+          "nombre": "Barria/Ilarregui",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -66,7 +69,7 @@
           "GC": 0
         },
         {
-         "nombre": "Galucci Gessyca/ Araoz Maria",
+         "nombre": "Galucci/Araoz",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -75,7 +78,7 @@
           "GC": 0
         },
         {
-          "nombre": "Dunca Emilce/Cargnaletti Noelia",
+          "nombre": "Dunca/Cargnaletti",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -89,19 +92,23 @@
           "equipo1": "Barria/Ilarregui",
           "equipo2": "Galucci/Araoz",
           "fecha": "Viernes 19:00 hs",
-          "resultado": "6-3, 7-5"
+       
+           "resultado": "2-0",
+          "games":"6-3, 7-5"
         },
         {
           "equipo1": "Barria/Ilarregui",
           "equipo2": "Dunca/Cargnaletti",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "Galucci/Araoz",
           "equipo2": "Dunca/Cargnaletti",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -109,7 +116,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "De la Rosa Natalia/Rivadeneira Belen",
+          "nombre": "De la Rosa/Rivadeneira",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -118,7 +125,7 @@
           "GC": 0
         },
         {
-         "nombre": "Cichero Julieta/Lapejrausk Patricia",
+         "nombre": "Cichero/Lapejrausk",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -127,7 +134,7 @@
           "GC": 0
         },
         {
-          "nombre": "Bruzzo Cecilia/Villagra Micaela",
+          "nombre": "Bruzzo/Villagra",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -141,19 +148,22 @@
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+         "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -161,7 +171,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Racedo Carolina/Andino Julieta",
+          "nombre": "Racedo/Andino",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -170,7 +180,7 @@
           "GC": 0
         },
         {
-         "nombre": "Zabala Andino/Andrade Ana",
+         "nombre": "Zabala/Andrade",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -179,7 +189,7 @@
           "GC": 0
         },
         {
-          "nombre": "Perlo Elsa/Gutierrez Luciana",
+          "nombre": "Perlo/Gutierrez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -193,19 +203,22 @@
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+         "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+       "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -213,7 +226,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Arce Susana/Vasquez Carolina",
+          "nombre": "Arce/Vasquez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -222,7 +235,7 @@
           "GC": 0
         },
         {
-         "nombre": "Gamarra Rosalina/Barria Monica",
+         "nombre": "Gamarra/Barria",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -231,7 +244,7 @@
           "GC": 0
         },
         {
-          "nombre": "Romero Soledad/Ramirez Romina",
+          "nombre": "Romero/Ramirez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -245,19 +258,22 @@
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+        "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+        "resultado": "",
+          "games":"A definir"
         },
         {
          "equipo1": "",
           "equipo2": "/",
           "fecha": "// : hs",
-          "resultado": ","
+         "resultado": "",
+          "games":"A definir"
         }
       ]
     }
@@ -265,73 +281,73 @@
  "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "P1 - 2 B",
-          "equipo2": "2 C",
+        "equipo1": "2do B",
+          "equipo2": "2do C",
           "fecha": "Sabado ",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P2 - 2 A",
-          "equipo2": "2 D",
+         "equipo1": "2do A",
+          "equipo2": "2do D",
           "fecha": "Sabado ",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       }
     ],
     
     "cuartos": [
       {
-         "equipo1": "P3 - 1 A",
+         "equipo1": "1ro A",
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P4 - 1 E",
-          "equipo2": "1 D",
+         "equipo1": "1ro E",
+          "equipo2": "1ro D",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P5 - 1 C",
-          "equipo2": "2 E",
+         "equipo1": "1ro C",
+          "equipo2": "2do E",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P6 - Ganador P2",
-          "equipo2": "1 B",
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       }
     ],
     "semis": [
       {
-         "equipo1": "P7 - Ganador P3",
-          "equipo2": "Ganador P4",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":""
       },
       {
-         "equipo1": "P8 - Ganador P5",
-          "equipo2": "Ganador P6",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
-        "ganador": "A definir"
+         "resultado": "A definir",
+          "games":""
       }
     ],
     "final": {
-       "equipo1": "Ganador P7",
-          "equipo2": "Ganador P8",
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
-        "ganador": "A definir"
+         "resultado": "A definir",
+          "games":""
     }
   }
 }

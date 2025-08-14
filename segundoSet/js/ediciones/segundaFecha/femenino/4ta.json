@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Fruncieri Lucrecia/Chicaguala Karina",
+          "nombre": "Fruncieri/Chicaguala",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "Mainero Tatiana/Soto Alejandra",
+          "nombre": "Mainero/Soto",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "Pratto Mariana/Figueroa Marcia",
+          "nombre": "Pratto/Figueroa",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -37,19 +37,22 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "Fruncieri/Chicaguala",
           "equipo2": "Mainero/Soto",
-          "resultado": "A definir"
+        "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Fruncieri/Chicaguala",
           "equipo2": "Pratto/Figueroa",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         },
         {
             "equipo1": "Mainero/Soto",
           "equipo2": "Pratto/Figueroa",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "A definir"
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -57,7 +60,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Salinas Marina/Vera Sandra",
+          "nombre": "Salinas/Vera",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -66,7 +69,7 @@
           "GC": 0
         },
         {
-         "nombre": "Cruz Rosalia/Fernandez Victoria",
+         "nombre": "Cruz/Fernandez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -75,7 +78,7 @@
           "GC": 0
         },
         {
-          "nombre": "Velasquez Ana/Romero Alejandra",
+          "nombre": "Velasquez/Romero",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -84,7 +87,7 @@
           "GC": 0
         },
         {
-         "nombre": "Romano Lupe/Velasquez Noelia",
+         "nombre": "Romano/Velasquez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -98,25 +101,29 @@
           "equipo1": "Salinas/Vera",
           "equipo2": "Cruz/Fernandez",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "Velasquez/Romero",
           "equipo2": "Romano/Velasquez",
           "fecha": "Jueves 21:30 hs",
-          "resultado": "A definir"
+           "resultado": "",
+          "games":"A definir"
         },
         {
-         "equipo1": "Ganador 1 y 2",
-          "equipo2": "Perdedor 3 y 4",
-          "fecha": "Sabado 17:00 hs",
-          "resultado": "A definir"
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "17:00 hs",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-        "equipo1": "Ganador 3 y 4",
-          "equipo2": "Perdedor 1 y 2",
-          "fecha": "Sabado 17:00 hs",
-          "resultado": "A definir"
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "17:00 hs",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     }
@@ -125,26 +132,26 @@
     
     "semis": [
      {
-         "equipo1": "P1 - 1 A ",
-          "equipo2": "2 B ",
+         "equipo1": "1ro A ",
+          "equipo2": "2do B ",
           "fecha": "Domingo",
-          "resultado": "A definir",
-        "ganador": "A definir"
+           "resultado": "A definir",
+          "games":""
       },
       {
-         "equipo1": "P2 - 1 B ",
-          "equipo2": "2 A ",
+         "equipo1": "1ro B ",
+          "equipo2": "2do A ",
           "fecha": "Domingo",
-          "resultado": "A definir",
-        "ganador": "A definir"
+           "resultado": "A definir",
+          "games":""
       }
     ],
     "final": {
         "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo : hs",
-          "resultado": "A definir",
-        "ganador": "A definir"
+         "resultado": "A definir",
+          "games":""
     }
   }
 }
