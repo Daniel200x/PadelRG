@@ -1,0 +1,33 @@
+{
+    "equipos": [
+        {"nombre": "Equipo A"},
+        {"nombre": "Equipo B"},
+        {"nombre": "Equipo C"},
+        {"nombre": "Equipo D"},
+        {"nombre": "Equipo E"},
+        {"nombre": "Equipo F"}
+    ],
+    "partidos": [
+        {
+            "equipo1": "Equipo A",
+            "equipo2": "Equipo B",
+            "resultado": "2-1",
+            "games": "6-4,4-6,6-3",
+            "fecha": "15/08/2025"
+        },
+        {
+            "equipo1": "Equipo C",
+            "equipo2": "Equipo D",
+            "resultado": "2-0",
+            "games": "6-2,6-4",
+            "fecha": "15/08/2025"
+        },
+        {
+            "equipo1": "Equipo E",
+            "equipo2": "Equipo F",
+            "resultado": "1-2",
+            "games": "6-3,3-6,4-6",
+            "fecha": "16/08/2025"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "equipos": [
+        {"nombre": "Drink Team"},
+        {"nombre": "Galactinchos"},
+        {"nombre": "AC Padel"},
+        {"nombre": "Vuela Alto"},
+        {"nombre": "3er Tiempo"},
+        {"nombre": "La ultima y nos vamos"},
+        {"nombre": "La Tinchonetta"},
+        {"nombre": "Los Picainchos"},
+        {"nombre": "DC Padel"}
+    ],
+    "partidos": [
+        {
+            "equipo1": "La Tinchonetta",
+            "equipo2": "AC Padel",
+            "resultado": "2-1",
+            "games": "6-4,3-6,6-2",
+            "fecha": "10/08/2025",
+            "hora": "16:00"
+        },
+        {
+            "equipo1": "La ultima y nos vamos",
+            "equipo2": "Vuela Alto",
+            "resultado": "2-1",
+            "games": "6-4,3-6,6-2",
+            "fecha": "10/08/2025",
+            "hora": "16:00"
+        }
+        ,
+        {
+            "equipo1": "La Tinchonetta",
+            "equipo2": "AC Padel",
+            "resultado": "2-1",
+            "games": "6-4,3-6,6-2",
+            "fecha": "10/08/2025",
+            "hora": "16:00"
+        },{
+            "equipo1": "La Tinchonetta",
+            "equipo2": "AC Padel",
+            "resultado": "2-1",
+            "games": "6-4,3-6,6-2",
+            "fecha": "10/08/2025",
+            "hora": "16:00"
+        },
+        
+      
+        {
+            "equipo1": "Pádel Masters",
+            "equipo2": "Los Vikingos",
+            "resultado": "1-2",
+            "games": "6-2,3-6,4-6",
+            "fecha": "17/08/2025",
+            "hora": "17:30"
+        },
+       
+        {
+            "equipo1": "Pádel Masters",
+            "equipo2": "Smash Power",
+            "resultado": "A definir",
+            "fecha": "24/08/2025",
+            "hora": "17:30"
+        },
+        {
+            "equipo1": "Raquetas de Fuego",
+            "equipo2": "Golden Paddle",
+            "resultado": "A definir",
+            "fecha": "25/08/2025",
+            "hora": "11:00"
+        },
+        {
+            "equipo1": "Doble Impacto",
+            "equipo2": "Banda Cross",
+            "resultado": "A definir",
+            "fecha": "25/08/2025",
+            "hora": "12:30"
+        },
+        {
+            "equipo1": "DC Padel",
+            "equipo2": "Los Picatinchos",
+            "resultado": "2-1",
+            "games": "6-7,6-4,6-3",
+            "fecha": "25/08/2025",
+            "hora": "12:30"
+        }
+    ]
+}
