@@ -2156,7 +2156,7 @@
     ,
     {
       "id": 282,
-      "name": "",
+      "name": "Gabriela Ullua",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2166,8 +2166,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2181,7 +2181,7 @@
     ,
     {
       "id": 283,
-      "name": "",
+      "name": "Florencia Cutri",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2191,9 +2191,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2206,7 +2206,7 @@
     ,
     {
       "id": 284,
-      "name": "",
+      "name": "Natalia Marcolini",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2217,8 +2217,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2231,7 +2231,7 @@
     ,
     {
       "id": 285,
-      "name": "",
+      "name": "Fernanda Polizzi",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2242,8 +2242,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2256,7 +2256,7 @@
     ,
     {
       "id": 286,
-      "name": "",
+      "name": "Sandra Vera",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2268,7 +2268,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2281,7 +2281,7 @@
     ,
     {
       "id": 287,
-      "name": "",
+      "name": "Antonella Domeneh",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2291,7 +2291,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2306,7 +2306,7 @@
     ,
     {
       "id": 288,
-      "name": "",
+      "name": "Cintia Lucero",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2317,8 +2317,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2331,7 +2331,7 @@
     ,
     {
       "id": 289,
-      "name": "",
+      "name": "Graciela Flamenco",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2342,8 +2342,8 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2356,7 +2356,7 @@
     ,
     {
       "id": 290,
-      "name": "",
+      "name": "Natalia Politi",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2368,7 +2368,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2381,7 +2381,7 @@
     ,
     {
       "id": 291,
-      "name": "",
+      "name": "Estela Moyano",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2393,7 +2393,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2406,7 +2406,7 @@
     ,
     {
       "id": 292,
-      "name": "",
+      "name": "Giuliana Gimenez",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2418,7 +2418,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2431,7 +2431,7 @@
     ,
     {
       "id": 293,
-      "name": "",
+      "name": "Liliana Diaz",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2441,7 +2441,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2456,7 +2456,7 @@
     ,
     {
       "id": 294,
-      "name": "",
+      "name": "Maria Lonne",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2466,7 +2466,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2481,7 +2481,7 @@
     ,
     {
       "id": 295,
-      "name": "",
+      "name": "Sandra Ackerman",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2491,7 +2491,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2506,7 +2506,7 @@
     ,
     {
       "id": 296,
-      "name": "",
+      "name": "Karina Ciottolo",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2516,7 +2516,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2531,7 +2531,7 @@
     ,
     {
       "id": 297,
-      "name": "",
+      "name": "Alejandra Lapejrusk",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2542,7 +2542,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2556,7 +2556,7 @@
     ,
     {
       "id": 298,
-      "name": "",
+      "name": "Carla Ortega",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2567,7 +2567,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2581,7 +2581,7 @@
     ,
     {
       "id": 299,
-      "name": "",
+      "name": "Marisel Aranda",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2592,7 +2592,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2606,7 +2606,7 @@
     ,
     {
       "id": 300,
-      "name": "",
+      "name": "Yazna Murga",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2618,7 +2618,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2631,7 +2631,7 @@
     ,
     {
       "id": 301,
-      "name": "",
+      "name": "Erika Martinez",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2643,7 +2643,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2656,7 +2656,7 @@
     ,
     {
       "id": 302,
-      "name": "",
+      "name": "Emilia Peix",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2668,7 +2668,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2681,7 +2681,7 @@
     ,
     {
       "id": 303,
-      "name": "",
+      "name": "Aylen Carpio",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2693,7 +2693,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2706,7 +2706,7 @@
     ,
     {
       "id": 304,
-      "name": "",
+      "name": "Carolina Herrera",
       "gender": "femenino",
       "category": "5ta",
        "torneos": {
@@ -2718,7 +2718,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
