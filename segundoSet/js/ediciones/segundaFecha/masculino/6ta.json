@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Chalier Andres/Lizzaraga Braian",
+          "nombre": "Chalier/Lizzaraga",
           "PJ": 2,
           "PG": 2,
           "SG": 4,
@@ -14,7 +14,7 @@
           "GC": 14
         },
         {
-          "nombre": "Ponce Emanuel/Aranda Sergio",
+          "nombre": "Ponce/Aranda",
           "PJ": 2,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 24
         },
         {
-          "nombre": "Graneros Cristian/Graneros Sergio",
+          "nombre": "Graneros/Graneros",
           "PJ": 2,
           "PG": 1,
           "SG": 2,
@@ -32,25 +32,29 @@
           "GC": 17
         }
       ],
-      "partidos": [
+     "partidos": [
         {
-          "fecha": "Viernes 23:45 hs",
-          "equipo1": "Chalier/Lizzaraga",
-          "equipo2": "Ponce/Aranda",
-          "resultado": "6-4, 6-3"
+          "fecha": "23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "A definir",
+          "games":""
         },
         {
-          "equipo1": "Chalier/Lizzaraga",
-          "equipo2": "Graneros/Graneros",
-          "fecha": "Sabado 11:00 hs",
-          "resultado": "6-4, 6-3"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "21:30 hs",
+         "resultado": "A definir",
+          "games":""
         },
         {
-            "equipo1": "Graneros/Graneros",
-          "equipo2": "Ponce/Aranda",
-          "fecha": "Sabado 16:00 hs",
-          "resultado": "6-4, 6-1"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "18:30 hs",
+          "resultado": "A definir",
+          "games":""
         }
+        
       ]
     },
     {
@@ -86,23 +90,27 @@
       ],
       "partidos": [
         {
-          "equipo1": "Infran/Mendez",
-          "equipo2": "Sosa/Dos Santos",
-          "fecha": "Viernes 23:00 hs",
-          "resultado": "5-7, 7-6, 6-7"
+          "fecha": "23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "A definir",
+          "games":""
         },
         {
-          "equipo1": "Infran/Mendez",
-          "equipo2": "Rodriguez/Gimenez",
-          "fecha": "Sabado 12:00 hs",
-          "resultado": "7-6, 7-6"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "21:30 hs",
+         "resultado": "A definir",
+          "games":""
         },
         {
-         "equipo1": "Sosa/Dos Santos",
-          "equipo2": "Rodriguez/Gimenez",
-          "fecha": "Sabado 18:00 hs",
-          "resultado": "6-2, 6-1"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "18:30 hs",
+          "resultado": "A definir",
+          "games":""
         }
+        
       ]
     },
     {
@@ -136,25 +144,29 @@
           "GC": 0
         }
       ],
-      "partidos": [
+  "partidos": [
         {
-          "equipo1": "Gomez/Maisares",
-          "equipo2": "Forno/Fomez",
-          "fecha": "Viernes 19:00 hs",
-          "resultado": "3-6, 6-4, 7-6"
+          "fecha": "23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "A definir",
+          "games":""
         },
         {
-          "equipo1": "Gomez/Maisares",
-          "equipo2": "Villafañe/Villalba",
-          "fecha": "Sabado 13:00 hs",
-          "resultado": "A definir"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "21:30 hs",
+         "resultado": "A definir",
+          "games":""
         },
         {
-         "equipo1": "Forno/Fomez",
-          "equipo2": "Villafañe/Villalba",
-          "fecha": "Sabado 16:00 hs",
-          "resultado": "A definir"
+          "equipo1": "",
+          "equipo2": "",
+          "fecha": "18:30 hs",
+          "resultado": "A definir",
+          "games":""
         }
+        
       ]
     },
     {

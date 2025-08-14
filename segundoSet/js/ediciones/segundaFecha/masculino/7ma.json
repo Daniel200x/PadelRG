@@ -120,7 +120,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Ortiz/Muñiz",
+          "nombre": "Luna/Romero",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-         "nombre": "Del Prade/Llancafiel",
+         "nombre": "Bucci/Retamar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +138,7 @@
           "GC": 0
         },
         {
-          "nombre": "Gonzalez/Llanes",
+          "nombre": "Chalier/Moroni",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -147,7 +147,7 @@
           "GC": 0
         },
         {
-         "nombre": "Seidel/Seidel",
+         "nombre": "peix/Torres",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -191,7 +191,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Maluf/Samaniego",
+          "nombre": "Marquez/Garcia",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -200,7 +200,7 @@
           "GC": 0
         },
         {
-         "nombre": "Jony/Alfonzo",
+         "nombre": "Seidel/Gomez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -209,7 +209,7 @@
           "GC": 0
         },
         {
-          "nombre": "Cardenas/Torres",
+          "nombre": "Palloto/Saldaño",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -218,7 +218,7 @@
           "GC": 0
         },
         {
-         "nombre": "Amarilla/Peix",
+         "nombre": "Radwanitzer/Castro",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -262,7 +262,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Arcella/Nieva",
+          "nombre": "Peschiutta/Vargas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -271,7 +271,7 @@
           "GC": 0
         },
         {
-         "nombre": "Reyes/Riveros",
+         "nombre": "Aguirre/Roldan",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -280,7 +280,7 @@
           "GC": 0
         },
         {
-          "nombre": "Gonzalez/Alejandro",
+          "nombre": "Aliaga/Olivera",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -289,7 +289,7 @@
           "GC": 0
         },
         {
-         "nombre": "Martinez/Flores",
+         "nombre": "Cardenas/Galdamez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -333,7 +333,7 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "Montenegro/Perez",
+          "nombre": "Sopena/Agnes",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -342,7 +342,7 @@
           "GC": 0
         },
         {
-         "nombre": "Molina/Calderon",
+         "nombre": "Aranguiz/A definir",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -351,7 +351,7 @@
           "GC": 0
         },
         {
-          "nombre": "Sanabria/Yunes",
+          "nombre": "Paniagua/Ortiz",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
@@ -360,7 +360,7 @@
           "GC": 14
         },
         {
-         "nombre": "Gomez/Manquecoy",
+         "nombre": "Aguila/Barria",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
@@ -404,7 +404,7 @@
       "nombre": "Grupo G",
       "equipos": [
         {
-          "nombre": "Crespo/Pedraza",
+          "nombre": "Rubio/Cardozo",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
@@ -413,7 +413,7 @@
           "GC": 9
         },
         {
-         "nombre": "Wasinger/Graneros",
+         "nombre": "Mariani/Pintos",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
@@ -422,7 +422,7 @@
           "GC": 13
         },
         {
-          "nombre": "Gomez/Gomez",
+          "nombre": "Vera/Rojo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -431,7 +431,7 @@
           "GC": 0
         },
         {
-         "nombre": "Faletti/Faletti",
+         "nombre": "Muñoz/Trellini",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -475,7 +475,7 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "Marquez/Garcia",
+          "nombre": "Tiraboschi/Marcolini",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -484,7 +484,7 @@
           "GC": 0
         },
         {
-         "nombre": "Trani/Guzman",
+         "nombre": "Guaragna/Olivera",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -493,7 +493,7 @@
           "GC": 0
         },
         {
-          "nombre": "Alcantara/Barrios",
+          "nombre": "Pedraza/Piselli",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -502,7 +502,7 @@
           "GC": 0
         },
         {
-         "nombre": "Loberche/A confirmar",
+         "nombre": "Salvaña/Perez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
