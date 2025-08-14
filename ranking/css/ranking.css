@@ -493,3 +493,145 @@
         min-width: 60px;
     }
 }}
+/* Añadir al final del archivo */
+
+/* Estilos específicos para móviles en vista general */
+@media (max-width: 768px) {
+    .ranking-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        display: block;
+    }
+    
+    .ranking-table {
+        min-width: 650px; /* Ancho mínimo mayor para acomodar todas las columnas */
+    }
+    
+    /* Ajustar el tamaño de las celdas */
+    .ranking-table th, 
+    .ranking-table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    /* Asegurar que todas las columnas sean visibles */
+    .ranking-table th:nth-child(n+1),
+    .ranking-table td:nth-child(n+1) {
+        display: table-cell;
+    }
+    
+    /* Estilos específicos para columnas */
+    .ranking-table td:nth-child(1) { width: 50px; } /* Posición */
+    .ranking-table td:nth-child(2) { width: 150px; } /* Jugador */
+    .ranking-table td:nth-child(3) { width: 80px; } /* Puntos */
+    .ranking-table td:nth-child(4) { width: 80px; } /* Categoría */
+    .ranking-table td:nth-child(5) { width: 80px; } /* Género */
+    .ranking-table td:nth-child(6) { width: 90px; } /* Punto de Oro */
+    .ranking-table td:nth-child(7) { width: 80px; } /* Arenas */
+    .ranking-table td:nth-child(8) { width: 80px; } /* 2do Set */
+}
+
+@media (max-width: 480px) {
+    .ranking-table {
+        min-width: 600px;
+    }
+    
+    .ranking-table th, 
+    .ranking-table td {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    /* Tooltips más pequeños */
+    .tooltip .tooltiptext {
+        max-width: 150px;
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+    
+    /* Ajustar columnas específicas */
+    .ranking-table td:nth-child(2) { width: 130px; } /* Jugador */
+    .ranking-table td:nth-child(3) { width: 70px; } /* Puntos */
+}
+/* Estilos para el contenedor de la tabla en móviles */
+.ranking-table-container {
+    position: relative;
+}
+
+/* Indicador visual de scroll horizontal (opcional) */
+.ranking-table-container::after {
+    content: '↔';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #3498db;
+    font-size: 16px;
+    opacity: 0.7;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .ranking-table-container::after {
+        display: block;
+    }
+    
+    /* Estilo para el scrollbar en móviles */
+    .ranking-table-container::-webkit-scrollbar {
+        height: 6px;
+    }
+    
+    .ranking-table-container::-webkit-scrollbar-thumb {
+        background-color: #3498db;
+        border-radius: 3px;
+    }
+    
+    .ranking-table-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+}
+
+/* Clase específica para vista general en móviles */
+.ranking-table.general-view {
+    table-layout: auto;
+}
+
+.ranking-table.general-view th,
+.ranking-table.general-view td {
+    white-space: nowrap;
+}
+/* Eliminar cualquier estilo relacionado con la columna de género */
+/* Añadir esto al final del archivo: */
+
+/* Ocultar permanentemente la columna de género */
+.ranking-table th:nth-child(5),
+.ranking-table td:nth-child(5) {
+    display: none !important;
+}
+
+/* Reajustar los anchos de las columnas restantes */
+.ranking-table td:nth-child(1) { width: 60px; }  /* Posición */
+.ranking-table td:nth-child(2) { width: 180px; } /* Jugador */
+.ranking-table td:nth-child(3) { width: 100px; } /* Puntos */
+.ranking-table td:nth-child(4) { width: 80px; }  /* Categoría */
+.ranking-table td:nth-child(5) { width: 100px; } /* Punto de Oro */
+.ranking-table td:nth-child(6) { width: 80px; }  /* Arenas */
+.ranking-table td:nth-child(7) { width: 80px; }  /* 2do Set */
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .ranking-table {
+        min-width: 550px; /* Reducir el ancho mínimo al quitar una columna */
+    }
+    
+    .ranking-table td:nth-child(2) { width: 150px; } /* Jugador */
+    .ranking-table td:nth-child(3) { width: 80px; }  /* Puntos */
+}
+
+@media (max-width: 480px) {
+    .ranking-table {
+        min-width: 500px;
+    }
+    
+    .ranking-table td:nth-child(2) { width: 130px; } /* Jugador */
+}

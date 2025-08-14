@@ -234,13 +234,16 @@ function applyFilters() {
 
 // Renderizar la tabla de ranking
 function renderRankingTable() {
-    rankingTable.innerHTML = '';
+   rankingTable.innerHTML = '';
     const showAllTournaments = currentTournamentFilter === 'all';
+    const isMobile = window.innerWidth <= 768;
     
     if (!showAllTournaments) {
         rankingTable.classList.add('tournament-view');
+        rankingTable.classList.remove('general-view');
     } else {
         rankingTable.classList.remove('tournament-view');
+        rankingTable.classList.add('general-view');
     }
 
     const thead = document.createElement('thead');
@@ -318,6 +321,10 @@ function renderRankingTable() {
     });
     
     rankingTable.appendChild(tbody);
+ if (isMobile) {
+        rankingTable.style.minWidth = showAllTournaments ? '650px' : '550px';
+    }
+
 }
 
 // Obtener todas las ediciones de un torneo
