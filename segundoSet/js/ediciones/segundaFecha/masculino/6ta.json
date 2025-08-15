@@ -37,22 +37,22 @@
           "fecha": "23:00 hs",
           "equipo1": "",
           "equipo2": "",
-          "resultado": "A definir",
-          "games":""
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "",
           "equipo2": "",
           "fecha": "21:30 hs",
-         "resultado": "A definir",
-          "games":""
+         "resultado": "",
+          "games":"A definir"
         },
         {
           "equipo1": "",
           "equipo2": "",
           "fecha": "18:30 hs",
-          "resultado": "A definir",
-          "games":""
+          "resultado": "",
+          "games":"A definir"
         }
         
       ]
