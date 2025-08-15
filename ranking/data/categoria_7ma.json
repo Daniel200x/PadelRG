@@ -1512,7 +1512,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 5},
+          {"edicion": "3er Torneo", "puntos": 50},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2710,7 +2710,7 @@
     ,
     {
       "id": 920,
-      "name": "",
+      "name": "Maricel Rausch",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2722,7 +2722,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2735,7 +2735,7 @@
     ,
     {
       "id": 921,
-      "name": "",
+      "name": "Micaela Arias",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2747,7 +2747,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2760,7 +2760,7 @@
     ,
     {
       "id": 922,
-      "name": "",
+      "name": "Pamela Lirola",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2772,7 +2772,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2784,7 +2784,7 @@
     },
     {
       "id": 923,
-      "name": "",
+      "name": "Vanina Britos",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2796,7 +2796,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2809,7 +2809,7 @@
     ,
     {
       "id": 924,
-      "name": "",
+      "name": "Lorena Cordoba",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2819,7 +2819,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2834,7 +2834,7 @@
     ,
     {
       "id": 925,
-      "name": "",
+      "name": "Natalia Vazquez",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2845,7 +2845,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2859,7 +2859,7 @@
     ,
     {
       "id": 926,
-      "name": "",
+      "name": "Camila Vargas",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2869,9 +2869,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2884,7 +2884,7 @@
     ,
     {
       "id": 927,
-      "name": "",
+      "name": "Laura Gomez",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2895,9 +2895,9 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -2909,7 +2909,7 @@
     ,
     {
       "id": 928,
-      "name": "",
+      "name": "Victoria Visñuk",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2921,7 +2921,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2934,7 +2934,7 @@
     ,
     {
       "id": 929,
-      "name": "",
+      "name": "Giuliana Aravena",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2946,7 +2946,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2958,7 +2958,7 @@
     },
     {
       "id": 930,
-      "name": "",
+      "name": "Emilia Velazco",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2970,7 +2970,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2983,7 +2983,7 @@
     ,
     {
       "id": 931,
-      "name": "",
+      "name": "Lorena Fernandez",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -2993,8 +2993,8 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -3008,7 +3008,7 @@
     ,
     {
       "id": 932,
-      "name": "",
+      "name": "Karina Girollet",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3018,9 +3018,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -3033,7 +3033,7 @@
     ,
     {
       "id": 933,
-      "name": "",
+      "name": "Carolina Figini",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3043,7 +3043,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -3058,7 +3058,7 @@
     ,
     {
       "id": 934,
-      "name": "",
+      "name": "Emilce Duca",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3068,7 +3068,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -3083,7 +3083,7 @@
     ,
     {
       "id": 935,
-      "name": "",
+      "name": "Noelia Carneluti",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3093,7 +3093,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -3108,7 +3108,7 @@
     ,
     {
       "id": 936,
-      "name": "",
+      "name": "Maia Corzo",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3118,7 +3118,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -3132,7 +3132,7 @@
     },
     {
       "id": 937,
-      "name": "",
+      "name": "Priscila Vallone",
       "gender": "femenino",
       "category": "7ma",
        "torneos": {
@@ -3145,7 +3145,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
