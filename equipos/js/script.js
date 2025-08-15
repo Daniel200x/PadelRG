@@ -258,6 +258,11 @@ function renderizarHeaderEdicion(edicion) {
     header.style.display = 'block';
 }
 
+
+
+
+
+
 // Función para renderizar la edición con grupo general y fixtures específicos
 function renderizarEdicion(edicion, genero, categoria) {
     const contenedor = document.getElementById('contenido-ediciones');
@@ -496,6 +501,9 @@ function filtrarTablaGeneral(genero) {
         fila.style.display = mostrar ? '' : 'none';
     });
 }
+
+
+
 
 // Función para inicializar tooltips
 function inicializarTooltips() {

@@ -2069,7 +2069,7 @@
     },
     {
       "id": 501,
-      "name": "",
+      "name": "Lucia Marcial",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2079,9 +2079,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 100},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2093,7 +2093,7 @@
     },
     {
       "id": 502,
-      "name": "",
+      "name": "Giuliana Gimenez",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2103,9 +2103,9 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 75},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2117,7 +2117,7 @@
     },
     {
       "id": 503,
-      "name": "",
+      "name": "Fernanda Retuerto",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2128,6 +2128,198 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 504,
+      "name": "Fernanda Polizzi",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 505,
+      "name": "Griselda Gimenez",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 506,
+      "name": "Malvina Polizzi",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 507,
+      "name": "Belen Cordoba",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 508,
+      "name": "Daniela Bergondi",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 75}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 509,
+      "name": "Florencia Bianchi",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 510,
+      "name": "Ayelen Carpio",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 511,
+      "name": "Antonela Domeneh",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2140,8 +2332,32 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 512,
+      "name": "Carolina Herrera",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 513,
+      "name": "Sara Cortes",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2152,6 +2368,126 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 514,
+      "name": "Pamela Rusconi",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 515,
+      "name": "Melisa Pesce",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 516,
+      "name": "Melisa Gasparovic",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 517,
+      "name": "Belen Bordon",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 518,
+      "name": "Jorgelina Ovejero",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2164,8 +2500,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 519,
+      "name": "Gabriela Ullua",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2175,7 +2511,175 @@
           
         ],
         "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 520,
+      "name": "Tania Luna",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 521,
+      "name": "Agustina Quezada",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 522,
+      "name": "Yesica Sayans",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 50}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 523,
+      "name": "Antonella Bulacio",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 524,
+      "name": "Erika Martinez",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 525,
+      "name": "Lorena Saldivia",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 526,
+      "name": "Maria Ines Sosa",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2188,8 +2692,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 527,
+      "name": "Rocio Terrado",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2199,7 +2703,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2212,8 +2716,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 528,
+      "name": "Johana Rementeria",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2223,7 +2727,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2236,8 +2740,80 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 529,
+      "name": "Silvia Garcia",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 530,
+      "name": "Mariela Wolaniuk",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 531,
+      "name": "Karina Ojeda",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 532,
+      "name": "Maria Luisa Miranda",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2248,6 +2824,102 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 533,
+      "name": "Claudia Torres",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 534,
+      "name": "Vanesa Iglesias",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 535,
+      "name": "Lia Niz",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 25}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 536,
+      "name": "Rosalia Cruz",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2260,8 +2932,56 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 537,
+      "name": "Valeria Pereda",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 538,
+      "name": "Emilia Peix",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 539,
+      "name": "Evelyn Ruiz",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2272,6 +2992,150 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 540,
+      "name": "Magali Gonzalez",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 541,
+      "name": "Veronica Cuenca",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 542,
+      "name": "Susana Sanabria",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 543,
+      "name": "Sabrina Denis",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 544,
+      "name": "Yanina Magallanes",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 545,
+      "name": "Florencia Torres",
+      "gender": "femenino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2284,8 +3148,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 546,
+      "name": "Lorena Cordoba",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2295,7 +3159,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2308,8 +3172,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 547,
+      "name": "Jimena Ramadori",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2319,7 +3183,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2332,8 +3196,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 548,
+      "name": "Lucia Ramos",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2343,7 +3207,7 @@
           
         ],
         "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
@@ -2356,8 +3220,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 549,
+      "name": "Antonela Tarchini",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2368,7 +3232,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2380,8 +3244,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 550,
+      "name": "Lorena Bendaña",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2392,7 +3256,7 @@
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
@@ -2404,8 +3268,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 551,
+      "name": "Cecilia Rojo",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2417,7 +3281,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2428,8 +3292,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 552,
+      "name": "Graciela Flamenco",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2441,7 +3305,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],
@@ -2452,8 +3316,8 @@
       }
     },
     {
-      "id": 5,
-      "name": "",
+      "id": 553,
+      "name": "Carolina Salas",
       "gender": "femenino",
       "category": "6ta",
        "torneos": {
@@ -2465,1135 +3329,7 @@
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "name": "",
-      "gender": "femenino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
           {"edicion": "First Class", "puntos": 0}
           
         ],

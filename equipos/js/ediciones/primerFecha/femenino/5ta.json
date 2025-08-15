@@ -1,15 +1,62 @@
 {
     "torneo": "Torneo de Pádel (9 equipos, 9 rondas)",
-    "equipos": [
-        {"nombre": "Drink Team"},
-        {"nombre": "Galactinchos"},
-        {"nombre": "AC Padel"},
-        {"nombre": "Vuela Alto"},
-        {"nombre": "3er Tiempo"},
-        {"nombre": "La ultima y nos vamos"},
-        {"nombre": "La Tinchonetta"},
-        {"nombre": "Los Picatinchos"},
-        {"nombre": "DC Padel"}
+   "equipos": [
+        {"nombre": "Drink Team",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "Galactinchos",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "AC Padel",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "Vuela Alto",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "3er Tiempo",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "La ultima y nos vamos",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "La Tinchonetta",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {
+      "nombre": "Los Picatinchos",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    },
+        {"nombre": "DC Padel",
+      "jugadores": [
+        "Jugador 1",
+        "Jugador 2"
+      ]
+    }
+        
     ],
     "fixture": {
         "ronda_1": [
