@@ -21,14 +21,14 @@
     },
         {"nombre": "Vuela Alto",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Javier Paniagua",
+        "Diego Villalba"
       ]
     },
         {"nombre": "3er Tiempo",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Luis Ruiz",
+        "Jorge Ojeda"
       ]
     },
         {"nombre": "La ultima y nos vamos",
@@ -109,10 +109,10 @@
             {"equipo1": "DC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_8": [
-            {"equipo1": "La Tinchonetta", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "3er Tiempo", "resultado": "2-1", "games": "4-6, 6-2, 6-3", "fecha": ""},
             {"equipo1": "Los Picatinchos", "equipo2": "Vuela Alto", "resultado": "2-0", "games": "6-2, 6-2", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "AC Padel", "resultado": "2-1", "games": "6-4, 4-6, 7-6", "fecha": ""},
-            {"equipo1": "DC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Galactinchos", "resultado": "0-2", "games": "2-6, 4-6", "fecha": ""},
             {"equipo1": "La ultima y nos vamos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_9": [

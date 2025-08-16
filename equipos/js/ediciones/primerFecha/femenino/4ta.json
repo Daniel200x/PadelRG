@@ -3,14 +3,14 @@
    "equipos": [
         {"nombre": "Drink Team",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Romina Torres",
+        "Lola Godoy"
       ]
     },
         {"nombre": "Galactinchos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Mariana Medina",
+        "Paola Villarroel"
       ]
     },
         {"nombre": "AC Padel",
@@ -21,20 +21,20 @@
     },
         {"nombre": "Vuela Alto",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Noelia Velazquez",
+        "Claudia Andrade"
       ]
     },
         {"nombre": "3er Tiempo",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Sandra Vera",
+        "Marina Salinas"
       ]
     },
         {"nombre": "La ultima y nos vamos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Lucrecia Frunceri",
+        "Karina Chicaguala"
       ]
     },
         {"nombre": "La Tinchonetta",

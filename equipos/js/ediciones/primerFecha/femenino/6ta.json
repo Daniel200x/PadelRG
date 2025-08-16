@@ -3,51 +3,51 @@
     "equipos": [
         {"nombre": "Drink Team",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Giuliana Gimenez",
+        "Rocio Terrado"
       ]
     },
         {"nombre": "Galactinchos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Neda Cvitanich",
+        "Macarena Figueroa"
       ]
     },
         {"nombre": "AC Padel",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Graciela Flamenco",
+        "Cecilia Rojo"
       ]
     },
         {"nombre": "Vuela Alto",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Malvina Polizzi",
+        "Luisa Miranda"
       ]
     },
         {"nombre": "3er Tiempo",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Karina Ojeda",
+        "Veronica Cuenca"
       ]
     },
         {"nombre": "La ultima y nos vamos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Valeria Pereda",
+        "Belen Cordoba"
       ]
     },
         {"nombre": "La Tinchonetta",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Erika Martinez",
+        "Johana Rementeria"
       ]
     },
         {
       "nombre": "Los Picatinchos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Ines Sosa",
+        "Florencia Bianchi"
       ]
     },
         {"nombre": "DC Padel",
@@ -75,7 +75,7 @@
         ],
         "ronda_3": [
             {"equipo1": "Vuela Alto", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "3er Tiempo", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "3er Tiempo", "equipo2": "Galactinchos", "resultado": "0-2", "games": "4-6, 2-6", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "La Tinchonetta", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Los Picatinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
