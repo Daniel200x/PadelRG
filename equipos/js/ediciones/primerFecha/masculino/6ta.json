@@ -9,8 +9,8 @@
     },
         {"nombre": "Galactinchos",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Braian Lizarraga",
+        "Andres Chalier"
       ]
     },
         {"nombre": "AC Padel",
@@ -90,7 +90,7 @@
         "ronda_5": [
             {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "1-2", "games": "6-3, 1-6, 2-6", "fecha": ""},
             {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "1-2", "games": "4-6, 6-3, 5-7", "fecha": ""},
-            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "1-2", "games": "6-3, 1-6, 2-6", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
