@@ -91,7 +91,7 @@
             {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "0-2", "games": "2-6, 1-6", "fecha": ""},
             {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "0-2", "games": "2-6, 0-6", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_6": [
