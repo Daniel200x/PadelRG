@@ -771,13 +771,13 @@ tr:hover {
     }
     
     /* Ocultar columnas menos importantes en móviles muy pequeños */
-    td:nth-child(3), /* PJ */
+    
     td:nth-child(6), /* SP */
     td:nth-child(8) { /* GC */
         display: none;
     }
     
-    th:nth-child(3),
+   
     th:nth-child(6),
     th:nth-child(8) {
         display: none;
@@ -1090,39 +1090,5 @@ tr:hover {
 .logo-torneo {
     width: 100%;
     max-width: 800px; /* Mismo ancho que el header-edicion */
-}
-/* Estilos para tooltips */
-.custom-tooltip {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
-    font-size: 0.9em;
-    max-width: 250px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-}
-
-.detalle-categoria {
-    color: #3498db;
-    cursor: help;
-    text-align: center;
-}
-
-.detalle-categoria:hover {
-    color: #2980b9;
-}
-
-/* Estilos para filtros de tabla */
-.grupo .selector-button {
-    padding: 5px 10px;
-    font-size: 0.9em;
-    margin: 0;
-}
-
-.grupo .selector-button.active {
-    background-color: #2c3e50;
 }
 
