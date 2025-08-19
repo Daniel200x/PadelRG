@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - Pádel RG</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-81C2M2PPXT');
+    </script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Pádel RG Logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
+                            <li><a href="../arenas/arenas.html">Arenas</a></li>
+                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                            <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../ranking/ranking.html">Ranking</a></li>
+                    <li><a href="../galeria/galeria.html">Galería</a></li>
+                    <li><a href="../comentarios/comentarios.html" class="active">Comentarios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-social">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container comentarios-container">
+        <div class="header">
+            <h1>Comentarios de Jugadores</h1>
+            <p>Comparte tu experiencia en nuestros torneos y déjanos tu opinión</p>
+        </div>
+        
+        <!-- Formulario de comentarios -->
+        <div class="comment-form-container">
+            <h2>Deja tu comentario</h2>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="userName">Nombre:</label>
+                    <input type="text" id="userName" required placeholder="Tu nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" required placeholder="tu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="userComment">Comentario:</label>
+                    <textarea id="userComment" required placeholder="Escribe tu comentario aquí..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="torneoSelect">Torneo (opcional):</label>
+                    <select id="torneoSelect">
+                        <option value="">Selecciona un torneo</option>
+                        <option value="Punto de Oro">Punto de Oro</option>
+                        <option value="Arenas">Arenas</option>
+                        <option value="2do Set">2do Set</option>
+                        <option value="Copa Challenger">Copa Challenger</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar comentario</button>
+            </form>
+        </div>
+        
+        <!-- Lista de comentarios -->
+        <div class="comments-list-container">
+            <h2>Comentarios</h2>
+            <div class="comments-filter">
+                <label for="filterTorneo">Filtrar por torneo:</label>
+                <select id="filterTorneo">
+                    <option value="all">Todos los torneos</option>
+                    <option value="Punto de Oro">Punto de Oro</option>
+                    <option value="Arenas">Arenas</option>
+                    <option value="2do Set">2do Set</option>
+                    <option value="Copa Challenger">Copa Challenger</option>
+                </select>
+            </div>
+            
+            <div id="commentsList" class="comments-list">
+                <!-- Los comentarios se cargarán aquí dinámicamente -->
+            </div>
+            
+            <div id="noComments" class="no-comments">
+                <p>No hay comentarios aún. ¡Sé el primero en comentar!</p>
+            </div>
+            
+            <div class="comments-pagination" id="commentsPagination">
+                <!-- La paginación se generará aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Torneos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Política de Privacidad</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year">2023</span> Torneos de Pádel. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

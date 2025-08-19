@@ -389,59 +389,66 @@ nextBtnNews.addEventListener('click', async (e) => {
 
 
     // Modal para noticia completa
-    function showFullNews(newsId) {
-        const news = allNews.find(item => item.id === newsId);
-        if (!news) return;
-        
-        const modal = document.createElement('div');
-        modal.className = 'news-modal';
-        modal.innerHTML = `
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="modal-close">&times;</button>
-                    <h3 class="modal-title">${news.title}</h3>
-                    <span class="modal-date">${news.date}</span>
-                </div>
-                <div class="modal-body">
-                    <img src="${news.image}" alt="${news.alt}" class="modal-image">
-                    <p>${news.fullContent}</p>
-                    <div class="modal-footer">
-                        <button class="btn modal-btn">Cerrar</button>
-                    </div>
+   // Modal para noticia completa
+function showFullNews(newsId) {
+    const news = allNews.find(item => item.id === newsId);
+    if (!news) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'news-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close">&times;</button>
+                <h3 class="modal-title">${news.title}</h3>
+                <span class="modal-date">${news.date}</span>
+            </div>
+            <div class="modal-body">
+                <img src="${news.image}" alt="${news.alt}" class="modal-image" loading="eager">
+                <p>${news.fullContent}</p>
+                <div class="modal-footer">
+                    <button class="btn modal-btn">Cerrar</button>
                 </div>
             </div>
-        `;
-        
-        document.body.appendChild(modal);
-        document.body.style.overflow = 'hidden'; // Evitar scroll del body
-        modal.style.display = 'block';
-        
-        // Cerrar modal
-        const closeBtn = modal.querySelector('.modal-close');
-        const closeBtnFooter = modal.querySelector('.modal-btn');
-        
-        const closeModal = () => {
-            document.body.removeChild(modal);
-            document.body.style.overflow = ''; // Restaurar scroll
-        };
-        
-        closeBtn.addEventListener('click', closeModal);
-        closeBtnFooter.addEventListener('click', closeModal);
-        
-        // Cerrar al hacer clic fuera del contenido o presionar ESC
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-        
-        document.addEventListener('keydown', function handleEscape(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-                document.removeEventListener('keydown', handleEscape);
-            }
-        });
-    }
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    modal.style.display = 'block';
+    
+    // Cerrar modal
+    const closeBtn = modal.querySelector('.modal-close');
+    const closeBtnFooter = modal.querySelector('.modal-btn');
+    
+    const closeModal = () => {
+        document.body.removeChild(modal);
+        document.body.style.overflow = '';
+    };
+    
+    closeBtn.addEventListener('click', closeModal);
+    closeBtnFooter.addEventListener('click', closeModal);
+    
+    // Cerrar al hacer clic fuera o presionar ESC
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    document.addEventListener('keydown', function handleEscape(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+            document.removeEventListener('keydown', handleEscape);
+        }
+    });
+    
+    // Opcional: Hacer la imagen clickeable para ver en tamaño completo
+    const modalImage = modal.querySelector('.modal-image');
+    modalImage.addEventListener('click', function() {
+        this.classList.toggle('expanded');
+    });
+}
     
     // Cargar noticias al iniciar
     loadNews();

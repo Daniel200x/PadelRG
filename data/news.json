@@ -1,14 +1,13 @@
 {
   "news": [
-    
     {
       "id": 1,
-      "title": "Se anuncia el Torneo de Verano 2023",
-      "date": "15 Agosto 2023",
-      "summary": "El próximo mes comenzará el esperado Torneo de Verano con premios en efectivo y nuevos formatos de juego...",
-      "image": "img/news/1.jpg",
+      "title": "Se disputó una nueva fecha",
+      "date": "19 Agosto 2025",
+      "summary": "Este fin de semana en el complejo 2do Set se llevo a cabo una nueva fecha del torneo por equipos...",
+      "image": "img/news/2.jpg",
       "alt": "Nuevo torneo anunciado",
-      "fullContent": "Contenido completo de la noticia 1..."
+      "fullContent": "Una nueva fecha se disputó en el complejo 2do Set de partidos del torneo por equipos Copa Challenger Martín Gallardo, paso a detallar los resultados de la 8va fecha:1) categoría 5ta.damas Romano - Díaz (Team Vuela Alto) vencieron a Treppo - Martinez (Team Galactinchos) por 6/4-4/6-6/4.2) categoría 6ta damas Terrado - Giménez (Drink Team) vencieron a Martinez - Carpio (Team La Tinchoneta) por 2/6-6/1-7/6.3) categoría 5ta cab. Almaraz - Sirgo (Team AC padel) vencieron a Rojo - Bravo (Drink Team) por 6/4-4/6-6/3.4) categoría 5ta cab. Escobar - Gallardo (Team Galactinchos) vencieron a Martinez - Fraile (Team 3er tiempo) por 6/3-6/2. 5) categoría 8va damas Graneros - Graneros (Team La última y nos vamos) vencieron a Beamonte - Perolo (Drink Team) por 6/2-6/0. 6) categoría 8va cab. Ventura - Aguirre (Team Galactinchos) vencieron a Ruiz - Pugnale (Team DC padel) por 6/3-4/6-7/5. 7) categoría 7ma cab. Chalier - Giménez (Drink Team) vencieron a Vera - Rojo (Team DC padel) por 6/4-4/6-6/3. 😎 categoría 6ta cab. Lizarraga - Chalier (Team Galactinchos) vencieron a Villarroel - Quiroz (Team La Tinchoneta) por 3/6-6/1-6/2. ) categoría 7ma damas Martinez - Martinez (Team 3er tiempo) vencieron a Bordon - Barria (Team La Tinchoneta) por 6/4-6/3. 10) categoría 8va damas Ducca - Cagnelutti (Team PicaTinchos) vencieron a Lamberti - Fleuri ( Team DC padel) por 6/2-6/0. 11) categoría 4ta damas Fruncieri - Chicaguala (Team La última y nos vamos) vencieron a Mainero - Figueroa (Team La Tinchoneta) por 6/3-6/1. 12) categoría 6ta cab. Juárez - Orellana (Team AC padel) vencieron a Gimenez - Barbosa (Drink Team) por 7/6-6/4. 13) categoría 6ta damas Córdoba - Pereda (Team La última y nos vamos) vencieron a Rojo - Flamenco (Team AC padel) por 6/1-6/3. 14) categoría 4ta cab. Servian - Ormaza (Team La Tinchoneta) vencieron a Andrade - Echeverría (Team PicaTinchos) por 6/3-6/4. Estos fueron los 14 partidos que se disputaron en la 8va fecha del torneo por equipos Copa Challenger Martín Gallardo."
     },
     {
       "id": 2,
@@ -54,8 +53,7 @@
       "image": "img/news/6.jpg",
       "alt": "Formato de torneo",
       "fullContent": "Contenido completo de la noticia 6..."
-    }
-    ,
+    },
     {
       "id": 7,
       "title": "Torneo 2do Set",
@@ -64,8 +62,7 @@
       "image": "img/news/7.jpg",
       "alt": "Formato de torneo",
       "fullContent": "Contenido completo de la noticia 6..."
-    }
-    ,
+    },
     {
       "id": 8,
       "title": "Torneo 2do Set",
