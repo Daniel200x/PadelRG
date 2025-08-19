@@ -1,0 +1,79 @@
+{
+  "news": [
+    
+    {
+      "id": 1,
+      "title": "Se anuncia el Torneo de Verano 2023",
+      "date": "15 Agosto 2023",
+      "summary": "El próximo mes comenzará el esperado Torneo de Verano con premios en efectivo y nuevos formatos de juego...",
+      "image": "img/news1.jpg",
+      "alt": "Nuevo torneo anunciado",
+      "fullContent": "Contenido completo de la noticia 1..."
+    },
+    {
+      "id": 2,
+      "title": "Martínez y Gómez ganan el Punto de Oro",
+      "date": "10 Agosto 2023",
+      "summary": "La dupla se coronó campeona en una emocionante final que se definió en tie-break del tercer set...",
+      "image": "img/news2.jpg",
+      "alt": "Ganadores del último torneo",
+      "fullContent": "Contenido completo de la noticia 2..."
+    },
+    {
+      "id": 3,
+      "title": "Inauguran nuevas canchas en el Club Arenas",
+      "date": "5 Agosto 2023",
+      "summary": "Con tecnología de última generación, las nuevas canchas prometen mayor comodidad para los jugadores...",
+      "image": "img/news3.jpg",
+      "alt": "Nuevas canchas",
+      "fullContent": "Contenido completo de la noticia 3..."
+    },
+    {
+      "id": 4,
+      "title": "Nuevo ranking mensual publicado",
+      "date": "19 Agosto 2023",
+      "summary": "El ranking de agosto muestra cambios importantes en las posiciones de los jugadores...",
+      "image": "img/news4.jpg",
+      "alt": "Ranking de jugadores",
+      "fullContent": "Contenido completo de la noticia 4..."
+    },
+    {
+      "id": 5,
+      "title": "Taller de técnicas avanzadas de pádel",
+      "date": "28 Julio 2023",
+      "summary": "El próximo sábado se realizará un taller gratuito para jugadores intermedios y avanzados...",
+      "image": "img/news5.jpg",
+      "alt": "Taller de pádel",
+      "fullContent": "Contenido completo de la noticia 5..."
+    },
+    {
+      "id": 6,
+      "title": "Cambios en el formato del Torneo 2do Set",
+      "date": "20 Julio 2023",
+      "summary": "A partir de la próxima edición, el torneo implementará un nuevo sistema de puntuación...",
+      "image": "img/news6.jpg",
+      "alt": "Formato de torneo",
+      "fullContent": "Contenido completo de la noticia 6..."
+    }
+    ,
+    {
+      "id": 7,
+      "title": "Torneo 2do Set",
+      "date": "18 Agosto 2023",
+      "summary": "A partir de la próxima edición, el torneo implementará un nuevo sistema de puntuación...",
+      "image": "img/news6.jpg",
+      "alt": "Formato de torneo",
+      "fullContent": "Contenido completo de la noticia 6..."
+    }
+    ,
+    {
+      "id": 8,
+      "title": "Torneo 2do Set",
+      "date": "18 Agosto 2023",
+      "summary": "A partir de la próxima edición, el torneo implementará un nuevo sistema de puntuación...",
+      "image": "img/news6.jpg",
+      "alt": "Formato de torneo",
+      "fullContent": "Contenido completo de la noticia 6..."
+    }
+  ]
+}
