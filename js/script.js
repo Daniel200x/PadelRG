@@ -475,7 +475,7 @@ function showFullNews(newsId) {
                 description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
             },
             {
-                image: 'img/publi/pad.jpg',
+                image: 'img/publi/tienda.jpg',
                 link: '',
                 title: 'Tienda de Pádel',
                 description: 'Encuentra las mejores palas, pelotas y accesorios para tu juego. ¡Ofertas especiales!'
@@ -487,7 +487,7 @@ function showFullNews(newsId) {
                 description: 'Publicita tu producto con nosotros.'
             },
             {
-                image: 'img/publi/logo1.png',
+                image: 'img/publi/clases.jpg',
                 link: '',
                 title: 'Clases de Pádel',
                 description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
