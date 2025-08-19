@@ -232,8 +232,8 @@ async function loadNews() {
     
     // Configurar paginación
     function setupPagination() {
-        const pageCount = Math.ceil(allNews.length / newsPerPage);
-        pageNumbers.innerHTML = '';
+    const pageCount = Math.ceil(allNews.length / newsPerPage);
+    pageNumbers.innerHTML = '';
         
         // Mostrar máximo 5 números de página a la vez
         const maxVisiblePages = 5;
