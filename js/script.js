@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const dropdowns = document.querySelectorAll('.dropdown');
 
+
+
+    
     hamburger.addEventListener('click', function() {
         this.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -452,4 +455,175 @@ function showFullNews(newsId) {
     
     // Cargar noticias al iniciar
     loadNews();
+
+
+// Sistema de publicidad personalizada
+class AdManager {
+    constructor() {
+        this.ads = [
+            {
+                image: 'img/publi/muebles.jpeg',
+                link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
+                title: 'RPA Moblamientos',
+                description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
+            },
+            {
+                image: 'img/publi/pad.jpg',
+                link: '',
+                title: 'Tienda de Pádel',
+                description: 'Encuentra las mejores palas, pelotas y accesorios para tu juego. ¡Ofertas especiales!'
+            },
+            {
+                image: 'img/publi/publi.jpg',
+                link: '',
+                title: 'Tu publicidad acá',
+                description: 'Publicita tu producto con nosotros.'
+            },
+            {
+                image: 'img/publi/logo1.png',
+                link: '',
+                title: 'Clases de Pádel',
+                description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
+            }
+        ];
+        
+        this.currentAdIndex = 0;
+        this.adShown = false;
+        this.adTimer = null;
+        this.scrollThreshold = 70; // Porcentaje de scroll para mostrar publicidad
+        
+        this.init();
+    }
+    
+    init() {
+        // Crear elementos del modal si no existen
+        if (!document.getElementById('ad-modal')) {
+            this.createAdModal();
+        }
+        
+        // Configurar event listeners
+        this.setupEventListeners();
+        
+        // Programar la primera publicidad
+        this.scheduleAd();
+    }
+    
+    createAdModal() {
+        const modalHTML = `
+            <div id="ad-modal" class="ad-modal">
+                <div class="ad-modal-content">
+                    <span class="ad-close">&times;</span>
+                    <div class="ad-header">
+                        <h3>Publicidad</h3>
+                    </div>
+                    <div class="ad-body">
+                        <a href="#" id="ad-link" target="_blank">
+                            <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
+                        </a>
+                        <div class="ad-text">
+                            <h4 id="ad-title"></h4>
+                            <p id="ad-description"></p>
+                        </div>
+                    </div>
+                    <div class="ad-footer">
+                        <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+    }
+    
+    setupEventListeners() {
+        // Cerrar modal con el botón X
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('ad-close') || e.target.id === 'ad-close-btn') {
+                this.hideAd();
+            }
+        });
+        
+        // Cerrar modal al hacer clic fuera del contenido
+        const adModal = document.getElementById('ad-modal');
+        if (adModal) {
+            adModal.addEventListener('click', (e) => {
+                if (e.target.id === 'ad-modal') {
+                    this.hideAd();
+                }
+            });
+        }
+        
+        // Cerrar con la tecla Escape
+        document.addEventListener('keydown', (e) => {
+            const adModal = document.getElementById('ad-modal');
+            if (e.key === 'Escape' && adModal && adModal.style.display === 'block') {
+                this.hideAd();
+            }
+        });
+        
+        // Mostrar publicidad al hacer scroll (70% de la página)
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            if (scrollPercent > this.scrollThreshold && !this.adShown) {
+                this.showAd();
+                this.adShown = true;
+            }
+        });
+    }
+    
+    scheduleAd() {
+        // Mostrar publicidad después de 30 segundos
+        this.adTimer = setTimeout(() => {
+            if (!this.adShown) {
+                this.showAd();
+                this.adShown = true;
+            }
+        }, 30000);
+    }
+    
+    showAd() {
+        // Seleccionar y mostrar un anuncio
+        const ad = this.ads[this.currentAdIndex];
+        
+        document.getElementById('ad-image').src = ad.image;
+        document.getElementById('ad-link').href = ad.link;
+        document.getElementById('ad-title').textContent = ad.title;
+        document.getElementById('ad-description').textContent = ad.description;
+        
+        document.getElementById('ad-modal').style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevenir scroll
+        
+        // Rotar al siguiente anuncio
+        this.currentAdIndex = (this.currentAdIndex + 1) % this.ads.length;
+        
+        // Programar cierre automático después de 15 segundos
+        setTimeout(() => {
+            const adModal = document.getElementById('ad-modal');
+            if (adModal && adModal.style.display === 'block') {
+                this.hideAd();
+            }
+        }, 15000);
+    }
+    
+    hideAd() {
+        const adModal = document.getElementById('ad-modal');
+        if (adModal) {
+            adModal.style.display = 'none';
+        }
+        document.body.style.overflow = ''; // Permitir scroll nuevamente
+        
+        // Programar próximo anuncio después de 2 minutos
+        setTimeout(() => {
+            this.adShown = false;
+            this.scheduleAd();
+        }, 120000);
+    }
+}
+
+// Inicializar el sistema de publicidad
+const adManager = new AdManager();
+
+
+
 });
