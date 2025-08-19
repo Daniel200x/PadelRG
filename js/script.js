@@ -330,35 +330,31 @@ async function loadNews() {
     }
 }
 
-// Reemplaza completamente los event listeners de paginación con este código
+// Reemplaza los event listeners de paginación con este código
 prevBtnNews.addEventListener('click', async (e) => {
     e.preventDefault();
     if (currentPage > 1) {
-        // Guardar posición actual del scroll relativa a la sección de noticias
-        const newsSection = document.querySelector('.news-section');
-        const sectionTop = newsSection.getBoundingClientRect().top + window.scrollY;
-        const currentScroll = window.scrollY;
-        const scrollOffset = currentScroll - sectionTop;
+        // Mostrar loader
+        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
         
         currentPage--;
         
-        // Mostrar loader mientras se cargan las noticias
-        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
-        
-        // Pequeño retraso para permitir el renderizado
+        // Pequeña pausa para permitir el renderizado
         await new Promise(resolve => setTimeout(resolve, 50));
         
         displayNews();
         updatePaginationButtons();
         
-        // Restaurar posición de scroll después del renderizado
-        requestAnimationFrame(() => {
-            const newSectionTop = newsSection.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({
-                top: newSectionTop + scrollOffset,
-                behavior: 'instant' // Cambia a 'smooth' si prefieres efecto suave
-            });
-        });
+        // Scroll a la primera noticia en móviles
+        if (window.innerWidth <= 768) {
+            const firstNewsCard = document.querySelector('.news-card');
+            if (firstNewsCard) {
+                firstNewsCard.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
     }
 });
 
@@ -366,33 +362,32 @@ nextBtnNews.addEventListener('click', async (e) => {
     e.preventDefault();
     const pageCount = Math.ceil(allNews.length / newsPerPage);
     if (currentPage < pageCount) {
-        // Guardar posición actual del scroll relativa a la sección de noticias
-        const newsSection = document.querySelector('.news-section');
-        const sectionTop = newsSection.getBoundingClientRect().top + window.scrollY;
-        const currentScroll = window.scrollY;
-        const scrollOffset = currentScroll - sectionTop;
+        // Mostrar loader
+        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
         
         currentPage++;
         
-        // Mostrar loader mientras se cargan las noticias
-        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
-        
-        // Pequeño retraso para permitir el renderizado
+        // Pequeña pausa para permitir el renderizado
         await new Promise(resolve => setTimeout(resolve, 50));
         
         displayNews();
         updatePaginationButtons();
         
-        // Restaurar posición de scroll después del renderizado
-        requestAnimationFrame(() => {
-            const newSectionTop = newsSection.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({
-                top: newSectionTop + scrollOffset,
-                behavior: 'instant' // Cambia a 'smooth' si prefieres efecto suave
-            });
-        });
+        // Scroll a la primera noticia en móviles
+        if (window.innerWidth <= 768) {
+            const firstNewsCard = document.querySelector('.news-card');
+            if (firstNewsCard) {
+                firstNewsCard.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
     }
 });
+
+
+
     // Modal para noticia completa
     function showFullNews(newsId) {
         const news = allNews.find(item => item.id === newsId);
