@@ -56,7 +56,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 200},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -79,7 +79,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 200},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -114,7 +114,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -125,7 +125,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -137,7 +137,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -194,7 +194,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -217,7 +217,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -229,7 +229,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -252,7 +252,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -275,7 +275,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 200},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -298,7 +298,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -309,7 +309,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -355,7 +355,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -367,7 +367,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -378,7 +378,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -390,7 +390,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -401,7 +401,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -413,7 +413,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -424,7 +424,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -447,7 +447,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -459,7 +459,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -470,7 +470,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -482,7 +482,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -493,7 +493,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -505,7 +505,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 200},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -516,7 +516,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -528,7 +528,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -539,7 +539,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -551,7 +551,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -562,7 +562,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -643,7 +643,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -666,7 +666,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -677,7 +677,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -746,7 +746,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -758,7 +758,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -861,7 +861,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -884,7 +884,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -896,7 +896,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -953,7 +953,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -965,7 +965,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -988,7 +988,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1068,7 +1068,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1114,7 +1114,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1137,7 +1137,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1195,7 +1195,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 30},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1206,7 +1206,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1229,7 +1229,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1275,7 +1275,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1287,7 +1287,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1298,7 +1298,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1356,7 +1356,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1390,7 +1390,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1436,7 +1436,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1448,7 +1448,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1563,7 +1563,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -1735,7 +1735,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -1977,7 +1977,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -2000,7 +2000,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -2011,7 +2011,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2069,7 +2069,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 30},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -2092,7 +2092,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 30},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -2196,7 +2196,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 125},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
