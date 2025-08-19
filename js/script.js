@@ -457,11 +457,18 @@ function showFullNews(newsId) {
     loadNews();
 
 
-// Sistema de publicidad personalizada
-class AdManager {
-    constructor() {
-        this.ads = [
+
+   // Sistema de publicidad personalizada - VERSIÓN CORREGIDA
+    class AdManager {
+        constructor() {
+            this.ads = [
             {
+                image: 'img/publi/publi.jpg',
+                link: '',
+                title: 'Tu publicidad acá',
+                description: 'Publicita tu producto con nosotros.'
+            },
+                {
                 image: 'img/publi/muebles.jpeg',
                 link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
                 title: 'RPA Moblamientos',
@@ -486,144 +493,151 @@ class AdManager {
                 description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
             }
         ];
-        
-        this.currentAdIndex = 0;
-        this.adShown = false;
-        this.adTimer = null;
-        this.scrollThreshold = 70; // Porcentaje de scroll para mostrar publicidad
-        
-        this.init();
-    }
-    
-    init() {
-        // Crear elementos del modal si no existen
-        if (!document.getElementById('ad-modal')) {
-            this.createAdModal();
+            
+           this.previousAdIndex = -1; // Para evitar repetir el mismo anuncio consecutivamente
+            this.adShown = false;
+            this.adTimer = null;
+            this.scrollThreshold = 70;
+            
+            this.init();
         }
         
-        // Configurar event listeners
-        this.setupEventListeners();
+        init() {
+            // Crear elementos del modal si no existen
+            if (!document.getElementById('ad-modal')) {
+                this.createAdModal();
+            }
+            
+            // Configurar event listeners
+            this.setupEventListeners();
+            
+            // Programar la primera publicidad
+            this.scheduleAd();
+        }
         
-        // Programar la primera publicidad
-        this.scheduleAd();
-    }
-    
-    createAdModal() {
-        const modalHTML = `
-            <div id="ad-modal" class="ad-modal">
-                <div class="ad-modal-content">
-                    <span class="ad-close">&times;</span>
-                    <div class="ad-header">
-                        <h3>Publicidad</h3>
-                    </div>
-                    <div class="ad-body">
-                        <a href="#" id="ad-link" target="_blank">
-                            <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
-                        </a>
-                        <div class="ad-text">
-                            <h4 id="ad-title"></h4>
-                            <p id="ad-description"></p>
+        createAdModal() {
+            const modalHTML = `
+                <div id="ad-modal" class="ad-modal">
+                    <div class="ad-modal-content">
+                        <span class="ad-close">&times;</span>
+                        <div class="ad-header">
+                            <h3>Publicidad</h3>
+                        </div>
+                        <div class="ad-body">
+                            <a href="#" id="ad-link" target="_blank">
+                                <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
+                            </a>
+                            <div class="ad-text">
+                                <h4 id="ad-title"></h4>
+                                <p id="ad-description"></p>
+                            </div>
+                        </div>
+                        <div class="ad-footer">
+                            <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
                         </div>
                     </div>
-                    <div class="ad-footer">
-                        <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
-                    </div>
                 </div>
-            </div>
-        `;
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+        }
         
-        document.body.insertAdjacentHTML('beforeend', modalHTML);
-    }
-    
-    setupEventListeners() {
-        // Cerrar modal con el botón X
-        document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('ad-close') || e.target.id === 'ad-close-btn') {
-                this.hideAd();
-            }
-        });
-        
-        // Cerrar modal al hacer clic fuera del contenido
-        const adModal = document.getElementById('ad-modal');
-        if (adModal) {
-            adModal.addEventListener('click', (e) => {
+        setupEventListeners() {
+            // Cerrar modal con el botón X
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('ad-close') || e.target.id === 'ad-close-btn') {
+                    this.hideAd();
+                }
+            });
+            
+            // Cerrar modal al hacer clic fuera del contenido
+            document.addEventListener('click', (e) => {
                 if (e.target.id === 'ad-modal') {
                     this.hideAd();
                 }
             });
-        }
-        
-        // Cerrar con la tecla Escape
-        document.addEventListener('keydown', (e) => {
-            const adModal = document.getElementById('ad-modal');
-            if (e.key === 'Escape' && adModal && adModal.style.display === 'block') {
-                this.hideAd();
-            }
-        });
-        
-        // Mostrar publicidad al hacer scroll (70% de la página)
-        window.addEventListener('scroll', () => {
-            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
             
-            if (scrollPercent > this.scrollThreshold && !this.adShown) {
-                this.showAd();
-                this.adShown = true;
-            }
-        });
-    }
-    
-    scheduleAd() {
-        // Mostrar publicidad después de 30 segundos
-        this.adTimer = setTimeout(() => {
-            if (!this.adShown) {
-                this.showAd();
-                this.adShown = true;
-            }
-        }, 30000);
-    }
-    
-    showAd() {
-        // Seleccionar y mostrar un anuncio
-        const ad = this.ads[this.currentAdIndex];
-        
-        document.getElementById('ad-image').src = ad.image;
-        document.getElementById('ad-link').href = ad.link;
-        document.getElementById('ad-title').textContent = ad.title;
-        document.getElementById('ad-description').textContent = ad.description;
-        
-        document.getElementById('ad-modal').style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Prevenir scroll
-        
-        // Rotar al siguiente anuncio
-        this.currentAdIndex = (this.currentAdIndex + 1) % this.ads.length;
-        
-        // Programar cierre automático después de 15 segundos
-        setTimeout(() => {
-            const adModal = document.getElementById('ad-modal');
-            if (adModal && adModal.style.display === 'block') {
-                this.hideAd();
-            }
-        }, 15000);
-    }
-    
-    hideAd() {
-        const adModal = document.getElementById('ad-modal');
-        if (adModal) {
-            adModal.style.display = 'none';
+            // Cerrar con la tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && document.getElementById('ad-modal').style.display === 'block') {
+                    this.hideAd();
+                }
+            });
+            
+            // Mostrar publicidad al hacer scroll (70% de la página)
+            window.addEventListener('scroll', () => {
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                
+                if (scrollPercent > this.scrollThreshold && !this.adShown) {
+                    this.showAd();
+                    this.adShown = true;
+                }
+            });
         }
-        document.body.style.overflow = ''; // Permitir scroll nuevamente
         
-        // Programar próximo anuncio después de 2 minutos
-        setTimeout(() => {
-            this.adShown = false;
-            this.scheduleAd();
-        }, 120000);
+        scheduleAd() {
+            // Limpiar timer existente si hay uno
+            if (this.adTimer) {
+                clearTimeout(this.adTimer);
+            }
+            
+            // Mostrar publicidad después de 30 segundos
+            this.adTimer = setTimeout(() => {
+                if (!this.adShown) {
+                    this.showAd();
+                    this.adShown = true;
+                }
+            }, 30000);
+        }
+        
+        // Función para obtener un índice aleatorio que no sea el mismo que el anterior
+        getRandomAdIndex() {
+            if (this.ads.length <= 1) return 0;
+            
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * this.ads.length);
+            } while (newIndex === this.previousAdIndex && this.ads.length > 1);
+            
+            this.previousAdIndex = newIndex;
+            return newIndex;
+        }
+        
+        showAd() {
+            // Seleccionar un anuncio aleatorio que no sea el mismo que el anterior
+            const randomIndex = this.getRandomAdIndex();
+            const ad = this.ads[randomIndex];
+            
+            // Actualizar el DOM con el anuncio actual
+            document.getElementById('ad-image').src = ad.image;
+            document.getElementById('ad-link').href = ad.link;
+            document.getElementById('ad-title').textContent = ad.title;
+            document.getElementById('ad-description').textContent = ad.description;
+            
+            // Mostrar el modal
+            document.getElementById('ad-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Programar cierre automático después de 15 segundos
+            setTimeout(() => {
+                if (document.getElementById('ad-modal').style.display === 'block') {
+                    this.hideAd();
+                }
+            }, 15000);
+        }
+        
+        hideAd() {
+            document.getElementById('ad-modal').style.display = 'none';
+            document.body.style.overflow = '';
+            
+            // Programar próximo anuncio después de 2 minutos
+            setTimeout(() => {
+                this.adShown = false;
+                this.scheduleAd();
+            }, 120000);
+        }
     }
-}
 
-// Inicializar el sistema de publicidad
-const adManager = new AdManager();
-
-
-
+    // Inicializar el sistema de publicidad
+    const adManager = new AdManager();
 });
