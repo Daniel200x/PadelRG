@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Federico Bossio/Santiago David",
+          "nombre": "Bossio/David",
           "PJ": 2,
           "PG": 1,
           "SG": 3,
@@ -14,7 +14,7 @@
           "GC": 22
         },
         {
-          "nombre": "Federico Martinez/Martin Pacheco",
+          "nombre": "Martinez/Pacheco",
           "PJ": 2,
           "PG": 2,
           "SG": 4,
@@ -23,7 +23,7 @@
           "GC": 16
         },
         {
-          "nombre": "Bruno Sirgo/Rodari",
+          "nombre": "Sirgo/Rodari",
           "PJ": 2,
           "PG": 0,
           "SG": 0,
@@ -38,19 +38,22 @@
           "fecha": "29/07/25 18:00 hs",
           "equipo1": "Bossio/David",
           "equipo2": "Martinez/Pacheco",
-          "resultado": "6-4, 2-6, 6-7"
+          "resultado": "1-2",
+          "games":"6-4, 2-6, 6-7"
         },
         {
           "equipo1": "Martinez/Pacheco",
           "equipo2": "Sirgo/Rodari",
           "fecha": "30/07/25 21:30 hs",
-          "resultado": "6-0, 6-2"
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
         },
         {
           "equipo1": "Bossio/David",
           "equipo2": "Sirgo/Rodari",
           "fecha": "31/07/25 21:30 hs",
-          "resultado": "6-2, 6-3"
+          "resultado": "2-0",
+          "games":"6-2, 6-3"
         }
         
       ]
@@ -59,7 +62,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Claudio Escobar/Julian Morales",
+          "nombre": "Escobar/Morales",
           "PJ": 2,
           "PG": 1,
           "SG": 2,
@@ -68,7 +71,7 @@
           "GC": 14
         },
         {
-          "nombre": "Emmanuel Bravo/Christian Almaraz",
+          "nombre": "Bravo/Almaraz",
           "PJ": 1,
           "PG": 1,
           "SG": 2,
@@ -77,7 +80,7 @@
           "GC": 7
         },
         {
-          "nombre": "Emilio Sanchez/Emiliano Moreno",
+          "nombre": "Sanchez/Moreno",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
@@ -111,7 +114,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Braian Lizarraga/Andres Chalier",
+          "nombre": "Lizarraga/Chalier",
           "PJ": 2,
           "PG": 2,
           "SG": 4,
@@ -120,7 +123,7 @@
           "GC": 20
         },
         {
-          "nombre": "Dario Chacon/Guillermo Farias",
+          "nombre": "Chacon/Farias",
           "PJ": 1,
           "PG": 0,
           "SG": 0,
@@ -129,7 +132,7 @@
           "GC": 13
         },
         {
-          "nombre": "David Moreno/Villarroel",
+          "nombre": "Moreno/Villarroel",
           "PJ": 1,
           "PG": 0,
           "SG": 1,
@@ -163,7 +166,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Ciro Andrade/Nicolas Gonzalez",
+          "nombre": "Andrade/Gonzalez",
           "PJ": 2,
           "PG": 1,
           "SG": 2,
@@ -172,7 +175,7 @@
           "GC": 15
         },
         {
-          "nombre": "Andres Agnes/Cristian Perez",
+          "nombre": "Agnes/Perez",
           "PJ": 2,
           "PG": 1,
           "SG": 2,
@@ -181,7 +184,7 @@
           "GC": 16
         },
         {
-          "nombre": "Fabian Suarez/Martinez",
+          "nombre": "Suarez/Martinez",
           "PJ": 2,
           "PG": 1,
           "SG": 2,
@@ -215,7 +218,7 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Walter Rumi/Lucas Fraile",
+          "nombre": "Rumi/Fraile",
           "PJ": 2,
           "PG": 2,
           "SG": 4,
@@ -224,7 +227,7 @@
           "GC": 32
         },
         {
-          "nombre": "Nicolas Barrios/Joaquin Bugonovich",
+          "nombre": "Barrios/Bugonovich",
           "PJ": 2,
           "PG": 0,
           "SG": 1,
@@ -233,7 +236,7 @@
           "GC": 30
         },
         {
-          "nombre": "Sebastian Villarroel/Guillermo Salgues",
+          "nombre": "Villarroel/Salgues",
           "PJ": 2,
           "PG": 0,
           "SG": 2,
@@ -242,7 +245,7 @@
           "GC": 37
         },
 {
-          "nombre": "Guillermo Boucho/Federico Santi",
+          "nombre": "Boucho/Santi",
           "PJ": 2,
           "PG": 2,
           "SG": 4,
@@ -283,15 +286,15 @@
  "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "Partido 1 - 2do Zona B",
-          "equipo2": "2do Zona C",
+        "equipo1": "2do B",
+          "equipo2": "2do C",
           "fecha": "Sabado 20:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
       },
       {
          "equipo1": "Partido 2 - Bossio-David",
-          "equipo2": "2do Zona D",
+          "equipo2": "2do D",
           "fecha": "Sabado 20:00 hs",
           "resultado": "A definir",
         "ganador": "A definir"
