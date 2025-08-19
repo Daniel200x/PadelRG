@@ -9,7 +9,7 @@
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -21,7 +21,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -45,7 +45,7 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
@@ -2527,12 +2527,12 @@
     },
     {
       "id": 810,
-      "name": "",
+      "name": "Mauricio Nuñez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2551,12 +2551,12 @@
     },
     {
       "id": 811,
-      "name": "",
+      "name": "Claudio Trani",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2575,12 +2575,12 @@
     },
     {
       "id": 812,
-      "name": "",
+      "name": "Leonardo Barrios",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2599,12 +2599,12 @@
     },
     {
       "id": 813,
-      "name": "",
+      "name": "Raul Rodriguez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2623,12 +2623,12 @@
     },
     {
       "id": 814,
-      "name": "",
+      "name": "Angel Carrasco",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2647,12 +2647,12 @@
     },
     {
       "id": 815,
-      "name": "",
+      "name": "Ruben Pedraza",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2671,12 +2671,12 @@
     },
     {
       "id": 816,
-      "name": "",
+      "name": "Gustavo Paz",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2695,12 +2695,12 @@
     },
     {
       "id": 817,
-      "name": "",
+      "name": "Yonatan Rojas",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2719,12 +2719,12 @@
     },
     {
       "id": 818,
-      "name": "",
+      "name": "Jose Zabala",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2743,12 +2743,12 @@
     },
     {
       "id": 819,
-      "name": "",
+      "name": "Carlos Pisano",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2767,12 +2767,12 @@
     },
     {
       "id": 820,
-      "name": "",
+      "name": "Marcelo Estigarribia",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2791,12 +2791,12 @@
     },
     {
       "id": 821,
-      "name": "",
+      "name": "Sergio Loncopan",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2815,12 +2815,12 @@
     },
     {
       "id": 822,
-      "name": "",
+      "name": "Nicolas Kifer",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2838,13 +2838,13 @@
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 823,
+      "name": "Sandro Rodriguez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2862,13 +2862,13 @@
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 824,
+      "name": "Pablo Rojas",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2886,13 +2886,13 @@
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 825,
+      "name": "Sebastian Quintero",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
         "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
           
         ],
@@ -2910,8 +2910,8 @@
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 826,
+      "name": "Estefano Busi",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -2928,14 +2928,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 827,
+      "name": "Marcelo Diaz",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -2952,14 +2952,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 828,
+      "name": "Franco Marquez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -2976,14 +2976,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 829,
+      "name": "Ricardo Garcia",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3000,14 +3000,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 830,
+      "name": "Cristian Ortiz",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3024,14 +3024,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 831,
+      "name": "Fabian Vargas",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3048,14 +3048,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 832,
+      "name": "Cesar Peschiutta",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3072,14 +3072,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 833,
+      "name": "Pablo Palloto",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3096,14 +3096,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 834,
+      "name": "Lucas Lemus",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3120,14 +3120,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 835,
+      "name": "Marcelo Trangoni",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3144,14 +3144,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 836,
+      "name": "Lucas Lavak",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3168,14 +3168,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 837,
+      "name": "Victor Soto",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3192,14 +3192,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 838,
+      "name": "Nicolas Inocente",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3216,14 +3216,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 839,
+      "name": "Ramiro Sutil",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3240,14 +3240,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 840,
+      "name": "Diego Villalba",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3264,14 +3264,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 841,
+      "name": "Daniel Fernandez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3288,14 +3288,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 842,
+      "name": "Renato Piseli",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3312,14 +3312,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 843,
+      "name": "Dario Orellana",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3336,14 +3336,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 844,
+      "name": "Leandro Seidel",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3360,14 +3360,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 845,
+      "name": "Damian Gomez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3384,14 +3384,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
+      "id": 846,
+      "name": "Alejandro Perez",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -3408,86 +3408,14 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
     {
-      "id": 8,
-      "name": "",
-      "gender": "masculino",
-      "category": "7ma",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "name": "",
-      "gender": "masculino",
-      "category": "7ma",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "name": "",
-      "gender": "masculino",
-      "category": "7ma",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "name": "",
+      "id": 847,
+      "name": "Carlos Montenegro",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
