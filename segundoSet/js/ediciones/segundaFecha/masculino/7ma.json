@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "Aguirre/Lucena",
+          "nombre": "Fritz/Del Cantare",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -36,24 +36,24 @@
       "partidos": [
         {
           "fecha": "23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "A definir",
-          "games":""
+          "equipo1": "Martinez/Vera",
+          "equipo2": "Gonzalez/A definir",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
         },
         {
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Fritz/Del Cantare",
+          "equipo2": "Martinez/Vera",
           "fecha": "21:30 hs",
-         "resultado": "A definir",
-          "games":""
+         "resultado": "0-2",
+          "games":"2-6, 1-6"
         },
         {
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Fritz/Del Cantare",
+          "equipo2": "Gonzalez/A definir",
           "fecha": "18:30 hs",
-          "resultado": "A definir",
-          "games":""
+          "resultado": "2-1",
+          "games":"3-7, 7-5, 7-6"
         }
         
       ]
