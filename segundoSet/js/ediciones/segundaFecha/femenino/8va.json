@@ -37,22 +37,22 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "Beamonte/Graneros",
           "equipo2": "Heredia/A confirmar",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-1, 6-1"
         },
         {
           "equipo1": "Heredia/A confirmar",
           "equipo2": "Lamberti/Fleuri",
           "fecha": "Sabado 15:00 hs",
-           "resultado": "",
-          "games":"A definir"
+           "resultado": "0-2",
+          "games":"0-6, 4-6"
         },
         {
             "equipo1": "Beamonte/Graneros",
           "equipo2": "Lamberti/Fleuri",
           "fecha": "Sabado 21:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         }
       ]
     },
@@ -100,15 +100,15 @@
           "equipo1": "Barria/Ilarregui",
           "equipo2": "Dunca/Cargnaletti",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
         },
         {
          "equipo1": "Galucci/Araoz",
           "equipo2": "Dunca/Cargnaletti",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 4-6"
         }
       ]
     },
@@ -145,25 +145,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "Cichero/Lapejrausk",
+          "equipo2": "De la Rosa/Rivadeneira",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "2-0",
+          "games":"7-5, 6-3"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-         "resultado": "",
-          "games":"A definir"
+          "equipo1": "De la Rosa/Rivadeneira",
+          "equipo2": "Bruzzo/Villagra",
+          "fecha": "Sabado 11:00 hs",
+         "resultado": "2-1",
+          "games":"6-2, 4-6, 7-6"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": "",
-          "games":"A definir"
+         "equipo1": "Cichero/Lapejrausk",
+          "equipo2": "Bruzzo/Villagra",
+          "fecha": "Sabado 19:00 hs",
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         }
       ]
     },
@@ -200,25 +200,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-         "resultado": "",
-          "games":"A definir"
+          "equipo1": "Racedo/Andino",
+          "equipo2": "Zabala/Andrade",
+          "fecha": "Viernes 17:00 hs",
+         "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-       "resultado": "",
-          "games":"A definir"
+          "equipo1": "Zabala/Andrade",
+          "equipo2": "Perlo/Gutierrez",
+          "fecha": "Sabado 12:00 hs",
+       "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-          "resultado": "",
-          "games":"A definir"
+         "equipo1": "Racedo/Andino",
+          "equipo2": "Perlo/Gutierrez",
+          "fecha": "Sabado 19:00 hs",
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
         }
       ]
     },
@@ -255,25 +255,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-        "resultado": "",
-          "games":"A definir"
+          "equipo1": "Gamarra/Barria",
+          "equipo2": "Arce/Vasquez",
+          "fecha": "Viernes 21:00 hs",
+        "resultado": "2-0",
+          "games":"6-4, 6-1"
         },
         {
-          "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-        "resultado": "",
-          "games":"A definir"
+          "equipo1": "Arce/Vasquez",
+          "equipo2": "Romero/Ramirez",
+          "fecha": "Sabado 12:00 hs",
+        "resultado": "2-0",
+          "games":"6-0, 6-2"
         },
         {
-         "equipo1": "",
-          "equipo2": "/",
-          "fecha": "// : hs",
-         "resultado": "",
-          "games":"A definir"
+         "equipo1": "Gamarra/Barria",
+          "equipo2": "Romero/Ramirez",
+          "fecha": "Sabado 21:00 hs",
+         "resultado": "2-0",
+          "games":"6-1, 6-1"
         }
       ]
     }
