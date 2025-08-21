@@ -37,22 +37,22 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "Fruncieri/Chicaguala",
           "equipo2": "Mainero/Soto",
-        "resultado": "",
-          "games":"A definir"
+        "resultado": "2-0",
+          "games":"6-1, 6-3"
         },
         {
           "equipo1": "Fruncieri/Chicaguala",
           "equipo2": "Pratto/Figueroa",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-1, 6-0"
         },
         {
             "equipo1": "Mainero/Soto",
           "equipo2": "Pratto/Figueroa",
           "fecha": "Sabado 20:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"3-6, 6-3, 6-7"
         }
       ]
     },
@@ -101,29 +101,29 @@
           "equipo1": "Salinas/Vera",
           "equipo2": "Cruz/Fernandez",
           "fecha": "Viernes 22:00 hs",
-           "resultado": "",
-          "games":"A definir"
+           "resultado": "2-0",
+          "games":"6-3, 7-6"
         },
         {
           "equipo1": "Velasquez/Romero",
           "equipo2": "Romano/Velasquez",
           "fecha": "Jueves 21:30 hs",
-           "resultado": "",
-          "games":"A definir"
+           "resultado": "-2",
+          "games":"3-6, 1-6"
         },
         {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"6-3, 4-6, 7-6"
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"6-3, 4-6, 7-6"
         }
       ]
     }
@@ -136,22 +136,22 @@
           "equipo2": "2do B ",
           "fecha": "Domingo",
            "resultado": "A definir",
-          "games":""
+          "games":"6-0, 6-0"
       },
       {
          "equipo1": "1ro B ",
           "equipo2": "2do A ",
           "fecha": "Domingo",
            "resultado": "A definir",
-          "games":""
+          "games":"7-5, 6-4"
       }
     ],
     "final": {
-        "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo : hs",
          "resultado": "A definir",
-          "games":""
+          "games":"6-1, 7-6"
     }
   }
 }
