@@ -608,28 +608,28 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"6-1, 6-2"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"7-6, 5-7, 6-7"
       },
       {
          "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"5-7, 7-6, 7-6"
       },
       {
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"7-5, 6-0"
       }
     ],
     "semis": [
@@ -638,14 +638,14 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"6-4, 6-2"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"4-6, 4-6"
       }
     ],
     "final": {
@@ -653,7 +653,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"6-1, 6-1"
     }
   }
 }
