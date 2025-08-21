@@ -37,22 +37,22 @@
           "fecha": "Viernes 20:00 hs",
           "equipo1": "Floriani/Lara",
           "equipo2": "Gallardo/Ojeda",
-         "resultado": "",
-          "games":"A definir"
+         "resultado": "2-0",
+          "games":"7-5, 7-5"
         },
         {
           "equipo1": "Floriani/Lara",
           "equipo2": "Andrade/Echeverria",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
         },
         {
             "equipo1": "Gallardo/Ojeda",
           "equipo2": "Andrade/Echeverria",
           "fecha": "Sabado 20:00 hs",
-         "resultado": "",
-          "games":"A definir"
+         "resultado": "2-0",
+          "games":"6-2, 6-2"
         }
       ]
     },
@@ -92,21 +92,21 @@
           "equipo1": "Andrade/Gallardo",
           "equipo2": "Escufachi/Villarreal",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-1, 6-1"
         },
         {
           "equipo1": "Escufachi/Villarreal",
           "equipo2": "Gonzalez/Escudero",
           "fecha": "Sabado 13:00 hs",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         },
         {
          "equipo1": "Andrade/Gallardo",
           "equipo2": "Gonzalez/Escudero",
           "fecha": "Sabado 20:00 hs",
-           "resultado": "",
+           "resultado": "6-0, 6-3",
           "games":"A definir"
         }
       ]
@@ -147,22 +147,22 @@
           "equipo1": "Candia/Dure",
           "equipo2": "Urquiza/Andrade",
           "fecha": "Viernes 21:00 hs",
-           "resultado": "",
-          "games":"A definir"
+           "resultado": "2-0",
+          "games":"6-2, 7-5"
         },
         {
           "equipo1": "Urquiza/Andrade",
           "equipo2": "Ormaza/Servian",
           "fecha": "Sabado 14:00 hs",
-         "resultado": "",
-          "games":"A definir"
+         "resultado": "0-2",
+          "games":"1-6, 3-6"
         },
         {
          "equipo1": "Candia/Dure",
           "equipo2": "Ormaza/Servian",
           "fecha": "Sabado 20:00 hs",
-           "resultado": "",
-          "games":"A definir"
+           "resultado": "0-2",
+          "games":"5-7, 1-6"
         }
       ]
     }
@@ -174,14 +174,14 @@
           "equipo2": "2do B",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"3-6. 2-6"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do A",
           "fecha": "Domingo",
          "resultado": "A definir",
-          "games":""
+          "games":"6-4, 6-2"
       }
       
     ],
@@ -191,22 +191,22 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
            "resultado": "A definir",
-          "games":""
+          "games":"6-2, 6-3"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo",
            "resultado": "A definir",
-          "games":""
+          "games":"5-7, 6-1, 1-6"
       }
     ],
     "final": {
-        "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo : hs",
            "resultado": "A definir",
-          "games":""
+          "games":"7-5, 3-6, 6-3"
     }
   }
 }
