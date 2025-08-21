@@ -69,7 +69,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     }, {
@@ -276,7 +276,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 200},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
         ]
       }
     }, {
@@ -322,7 +322,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -368,7 +368,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     }, {
@@ -391,7 +391,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -414,7 +414,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 150}
         ]
       }
     }, {
@@ -460,7 +460,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -483,7 +483,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     },{
@@ -506,7 +506,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 200},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
         ]
       }
     }, {
@@ -552,7 +552,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 150}
         ]
       }
     }, {
@@ -575,7 +575,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     }, {
@@ -598,7 +598,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }, {
@@ -621,7 +621,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }, {
@@ -644,7 +644,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     }, {
@@ -667,7 +667,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }, {
@@ -759,7 +759,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -874,7 +874,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -897,7 +897,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -966,7 +966,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
         ]
       }
     }, {
@@ -989,7 +989,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -1081,7 +1081,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 30}
         ]
       }
     }, {
@@ -1219,7 +1219,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -1426,7 +1426,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -1449,7 +1449,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }, {
@@ -1518,7 +1518,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
         ]
       }
     }, {
@@ -1541,7 +1541,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
         ]
       }
     }, {
@@ -1863,7 +1863,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     },{
@@ -2024,7 +2024,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -2070,7 +2070,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 30},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     }, {
@@ -2093,7 +2093,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 30},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -2140,7 +2140,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -2186,7 +2186,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }, {
@@ -2232,7 +2232,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -2304,7 +2304,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     },
@@ -2665,7 +2665,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -2977,7 +2977,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     },
@@ -3001,7 +3001,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     },
@@ -3025,7 +3025,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     },
@@ -3049,7 +3049,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -3073,7 +3073,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -3097,7 +3097,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 50},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     },
@@ -3313,7 +3313,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -3361,7 +3361,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -3385,7 +3385,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
     },
@@ -3432,12 +3432,347 @@
           
         ],
         "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     },
-
+{
+      "id": 848,
+      "name": "Ignacio Del Cantare",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 849,
+      "name": "Facundo Saldaño",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    },
+    {
+      "id": 850,
+      "name": "Cesar Belbey",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    },
+    {
+      "id": 851,
+      "name": "Claudio Cardenas",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    },
+    {
+      "id": 852,
+      "name": "Diego Galdamez",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    },
+    {
+      "id": 853,
+      "name": "Alejandro Romero",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    },
+    {
+      "id": 854,
+      "name": "David Minicucci",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    },
+    {
+      "id": 855,
+      "name": "Marcelo Llanes",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 856,
+      "name": "Raul Gonzalez",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 857,
+      "name": "Diego Radwanitzer",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 858,
+      "name": "Alexis Roldan",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30}
+        ]
+      }
+    },
+    {
+      "id": 859,
+      "name": "Pablo Aguila",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30}
+        ]
+      }
+    },
+    {
+      "id": 860,
+      "name": "Gerardo Barria",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30}
+        ]
+      }
+    },
+    {
+      "id": 861,
+      "name": "Santiago Olivera",
+      "gender": "masculino",
+      "category": "7ma",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
     {
       "id": 901,
       "name": "Lorena Saldivia",
