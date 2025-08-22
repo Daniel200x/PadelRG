@@ -396,97 +396,106 @@ async function loadNews() {
     });
     
     // Modal para noticia completa
-    function showFullNews(newsId) {
-        const news = allNews.find(item => item.id === newsId);
-        if (!news) return;
-        
-        const baseUrl = window.location.href.split('?')[0];
-        const shareUrl = `${baseUrl}#noticia-${news.id}`;
-        const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
-        
-        const modal = document.createElement('div');
-        modal.className = 'news-modal';
-        modal.innerHTML = `
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="modal-close">&times;</button>
-                    <h3 class="modal-title">${news.title}</h3>
-                    <span class="modal-date">${news.date}</span>
+  // Buscar esta función en tu script.js y reemplazarla
+function showFullNews(newsId) {
+    const news = allNews.find(item => item.id === newsId);
+    if (!news) return;
+    
+    const baseUrl = window.location.href.split('?')[0];
+    const shareUrl = `${baseUrl}#noticia-${news.id}`;
+    const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
+    
+    // Procesar el contenido para dividir en párrafos
+    const contentParagraphs = news.fullContent.split('\n\n')
+        .map(paragraph => {
+            // Si el párrafo está vacío, ignorarlo
+            if (!paragraph.trim()) return '';
+            // Crear un párrafo con el contenido
+            return `<p>${paragraph}</p>`;
+        })
+        .join('');
+    
+    const modal = document.createElement('div');
+    modal.className = 'news-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close">&times;</button>
+                <h3 class="modal-title">${news.title}</h3>
+                <span class="modal-date">${news.date}</span>
+                
+                <div class="modal-share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" 
+                       target="_blank" 
+                       class="share-button facebook-share"
+                       title="Compartir en Facebook"
+                       onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+                       <i class="fab fa-facebook-f"></i>
+                    </a>
                     
-                    <div class="modal-share-buttons">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" 
-                           target="_blank" 
-                           class="share-button facebook-share"
-                           title="Compartir en Facebook"
-                           onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
-                           <i class="fab fa-facebook-f"></i>
-                        </a>
-                        
-                        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}" 
-                           target="_blank" 
-                           class="share-button whatsapp-share"
-                           title="Compartir en WhatsApp"
-                           onclick="return !window.open(this.href, 'WhatsApp', 'width=640,height=580')">
-                           <i class="fab fa-whatsapp"></i>
-                        </a>
+                    <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}" 
+                       target="_blank" 
+                       class="share-button whatsapp-share"
+                       title="Compartir en WhatsApp"
+                       onclick="return !window.open(this.href, 'WhatsApp', 'width=640,height=580')">
+                       <i class="fab fa-whatsapp"></i>
+                    </a>
 
-                       
-
-                        <button class="share-button copy-share"
-                                title="Copiar enlace"
-                                data-url="${shareUrl}">
-                            <i class="fas fa-link"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <img src="${news.image}" alt="${news.alt}" class="modal-image">
-                    <p>${news.fullContent}</p>
-                    <div class="modal-footer">
-                        <button class="btn modal-btn">Cerrar</button>
-                    </div>
+                    <button class="share-button copy-share"
+                            title="Copiar enlace"
+                            data-url="${shareUrl}">
+                        <i class="fas fa-link"></i>
+                    </button>
                 </div>
             </div>
-        `;
-        
-        document.body.appendChild(modal);
-        document.body.style.overflow = 'hidden'; // Evitar scroll del body
-        modal.style.display = 'block';
-        
-        // Agregar event listener para copiar en el modal
-        const copyButton = modal.querySelector('.copy-share');
-        copyButton.addEventListener('click', function() {
-            const url = this.getAttribute('data-url');
-            copyToClipboard(url);
-        });
-        
-        // Cerrar modal
-        const closeBtn = modal.querySelector('.modal-close');
-        const closeBtnFooter = modal.querySelector('.modal-btn');
-        
-        const closeModal = () => {
-            document.body.removeChild(modal);
-            document.body.style.overflow = ''; // Restaurar scroll
-        };
-        
-        closeBtn.addEventListener('click', closeModal);
-        closeBtnFooter.addEventListener('click', closeModal);
-        
-        // Cerrar al hacer clic fuera del contenido o presionar ESC
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-        
-        document.addEventListener('keydown', function handleEscape(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-                document.removeEventListener('keydown', handleEscape);
-            }
-        });
-    }
+            <div class="modal-body">
+                <img src="${news.image}" alt="${news.alt}" class="modal-image">
+                ${contentParagraphs}
+                <div class="modal-footer">
+                    <button class="btn modal-btn">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    `;
     
+    // El resto del código permanece igual...
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    modal.style.display = 'block';
+    
+    // Agregar event listener para copiar en el modal
+    const copyButton = modal.querySelector('.copy-share');
+    copyButton.addEventListener('click', function() {
+        const url = this.getAttribute('data-url');
+        copyToClipboard(url);
+    });
+    
+    // Cerrar modal
+    const closeBtn = modal.querySelector('.modal-close');
+    const closeBtnFooter = modal.querySelector('.modal-btn');
+    
+    const closeModal = () => {
+        document.body.removeChild(modal);
+        document.body.style.overflow = '';
+    };
+    
+    closeBtn.addEventListener('click', closeModal);
+    closeBtnFooter.addEventListener('click', closeModal);
+    
+    // Cerrar al hacer clic fuera del contenido o presionar ESC
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    document.addEventListener('keydown', function handleEscape(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+            document.removeEventListener('keydown', handleEscape);
+        }
+    });
+}
     // Función para copiar al portapapeles
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(() => {
@@ -559,4 +568,190 @@ async function loadNews() {
     
     // Cargar noticias al iniciar
     loadNews();
+
+    // Sistema de publicidad personalizada - VERSIÓN CORREGIDA
+    class AdManager {
+        constructor() {
+            this.ads = [
+            {
+                image: 'img/publi/publi.jpg',
+                link: '',
+                title: 'Tu publicidad acá',
+                description: 'Publicita tu producto con nosotros.'
+            },
+                {
+                image: 'img/publi/muebles.jpeg',
+                link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
+                title: 'RPA Moblamientos',
+                description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
+            },
+            {
+                image: 'img/publi/tienda.jpg',
+                link: '',
+                title: 'Tienda de Pádel',
+                description: 'Encuentra las mejores palas, pelotas y accesorios para tu juego. ¡Ofertas especiales!'
+            },
+            {
+                image: 'img/publi/publi.jpg',
+                link: '',
+                title: 'Tu publicidad acá',
+                description: 'Publicita tu producto con nosotros.'
+            },
+            {
+                image: 'img/publi/clases.jpg',
+                link: '',
+                title: 'Clases de Pádel',
+                description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
+            }
+        ];
+            
+           this.previousAdIndex = -1; // Para evitar repetir el mismo anuncio consecutivamente
+            this.adShown = false;
+            this.adTimer = null;
+            this.scrollThreshold = 70;
+            
+            this.init();
+        }
+        
+        init() {
+            // Crear elementos del modal si no existen
+            if (!document.getElementById('ad-modal')) {
+                this.createAdModal();
+            }
+            
+            // Configurar event listeners
+            this.setupEventListeners();
+            
+            // Programar la primera publicidad
+            this.scheduleAd();
+        }
+        
+        createAdModal() {
+            const modalHTML = `
+                <div id="ad-modal" class="ad-modal">
+                    <div class="ad-modal-content">
+                        <span class="ad-close">&times;</span>
+                        <div class="ad-header">
+                            <h3>Publicidad</h3>
+                        </div>
+                        <div class="ad-body">
+                            <a href="#" id="ad-link" target="_blank">
+                                <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
+                            </a>
+                            <div class="ad-text">
+                                <h4 id="ad-title"></h4>
+                                <p id="ad-description"></p>
+                            </div>
+                        </div>
+                        <div class="ad-footer">
+                            <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+        }
+        
+        setupEventListeners() {
+            // Cerrar modal con el botón X
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('ad-close') || e.target.id === 'ad-close-btn') {
+                    this.hideAd();
+                }
+            });
+            
+            // Cerrar modal al hacer clic fuera del contenido
+            document.addEventListener('click', (e) => {
+                if (e.target.id === 'ad-modal') {
+                    this.hideAd();
+                }
+            });
+            
+            // Cerrar con la tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && document.getElementById('ad-modal').style.display === 'block') {
+                    this.hideAd();
+                }
+            });
+            
+            // Mostrar publicidad al hacer scroll (70% de la página)
+            window.addEventListener('scroll', () => {
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                
+                if (scrollPercent > this.scrollThreshold && !this.adShown) {
+                    this.showAd();
+                    this.adShown = true;
+                }
+            });
+        }
+        
+        scheduleAd() {
+            // Limpiar timer existente si hay uno
+            if (this.adTimer) {
+                clearTimeout(this.adTimer);
+            }
+            
+            // Mostrar publicidad después de 30 segundos
+            this.adTimer = setTimeout(() => {
+                if (!this.adShown) {
+                    this.showAd();
+                    this.adShown = true;
+                }
+            }, 30000);
+        }
+        
+        // Función para obtener un índice aleatorio que no sea el mismo que el anterior
+        getRandomAdIndex() {
+            if (this.ads.length <= 1) return 0;
+            
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * this.ads.length);
+            } while (newIndex === this.previousAdIndex && this.ads.length > 1);
+            
+            this.previousAdIndex = newIndex;
+            return newIndex;
+        }
+        
+        showAd() {
+            // Seleccionar un anuncio aleatorio que no sea el mismo que el anterior
+            const randomIndex = this.getRandomAdIndex();
+            const ad = this.ads[randomIndex];
+            
+            // Actualizar el DOM con el anuncio actual
+            document.getElementById('ad-image').src = ad.image;
+            document.getElementById('ad-link').href = ad.link;
+            document.getElementById('ad-title').textContent = ad.title;
+            document.getElementById('ad-description').textContent = ad.description;
+            
+            // Mostrar el modal
+            document.getElementById('ad-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Programar cierre automático después de 15 segundos
+            setTimeout(() => {
+                if (document.getElementById('ad-modal').style.display === 'block') {
+                    this.hideAd();
+                }
+            }, 15000);
+        }
+        
+        hideAd() {
+            document.getElementById('ad-modal').style.display = 'none';
+            document.body.style.overflow = '';
+            
+            // Programar próximo anuncio después de 2 minutos
+            setTimeout(() => {
+                this.adShown = false;
+                this.scheduleAd();
+            }, 120000);
+        }
+    }
+
+    // Inicializar el sistema de publicidad
+    const adManager = new AdManager();
+
+
+
 });

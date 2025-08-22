@@ -1392,3 +1392,12 @@ body {
     font-size: 14px;
 }
 
+.modal-body p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.modal-body p:last-child {
+    margin-bottom: 0;
+}
