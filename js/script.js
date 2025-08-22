@@ -582,7 +582,7 @@ function showFullNews(newsId) {
                 {
                 image: 'img/publi/muebles.jpeg',
                 link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
-                title: 'RPA Moblamientos',
+                title: 'RPA Amoblamientos',
                 description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
             },
             {
