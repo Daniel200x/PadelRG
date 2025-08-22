@@ -1296,3 +1296,52 @@ body {
     font-size: 1.1rem;
   }
 }
+
+/* Estilos para el botón de compartir de Facebook */
+.facebook-share-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #3b5998;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin: 10px 0;
+}
+
+.facebook-share-button:hover {
+    background-color: #2d4373;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.facebook-share-button i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-share-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin: 10px 0;
+}
+
+.whatsapp-share-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.whatsapp-share-button i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}

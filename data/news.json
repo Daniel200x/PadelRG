@@ -30,11 +30,12 @@
     {
       "id": 4,
       "title": "Nuevo ranking mensual publicado",
-      "date": "19 Agosto 2023",
+      "date": "21 Agosto 2025",
       "summary": "El ranking de agosto muestra cambios importantes en las posiciones de los jugadores...",
       "image": "img/news/4.jpg",
       "alt": "Ranking de jugadores",
-      "fullContent": "Contenido completo de la noticia 4..."
+      "fullContent": "Contenido completo del ranking general de todos los complejos en <a href='http://www.padelrg.com.ar/ranking/ranking.html' target='_blank'>www.padelrg.com.ar/ranking/ranking.html</a> En el mismo vas a poder encontrar un ranking general de todas las categorias, y mediante los filtros podes realizar busqueda de jugadores, busquedas por categorias y sexo, ademas podes filtrar el ranking por cada complejo"
+  
     },
     {
       "id": 5,
@@ -65,12 +66,12 @@
     },
     {
       "id": 8,
-      "title": "Torneo 2do Set",
-      "date": "18 Agosto 2023",
-      "summary": "A partir de la próxima edición, el torneo implementará un nuevo sistema de puntuación...",
+      "title": "Una nueva fecha del torneo por equipos ",
+      "date": "22 Agosto 2025",
+      "summary": "La Copa Challenger sigue en juego este sabado y domingo en Segundo Set...",
       "image": "img/news/8.jpg",
       "alt": "Formato de torneo",
-      "fullContent": "Contenido completo de la noticia 6..."
+      "fullContent": "Desde las 21:30 del sabado y desde las 12:00 del domingo en el complejo de Segundo Set se disputa una nueva fecha del torneo por equipos ´Copa Challenger Martin Gallardo´ con un total de 21 partidos entre Sabado y Domingo entre los 9 equipos participantes"
     }
   ]
 }
