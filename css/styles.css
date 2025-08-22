@@ -1345,3 +1345,49 @@ body {
     margin-right: 8px;
     font-size: 1.2em;
 }
+/* Animaciones para notificaciones */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Botón de copiar */
+.copy-share {
+    background-color: #95a5a6;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-share:hover {
+    background-color: #7f8c8d;
+}
+
+/* Estilos para el modal de noticia completa (también agregar botones de compartir) */
+.modal-share-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.modal-share-buttons .share-button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+}

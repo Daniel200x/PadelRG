@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const dropdowns = document.querySelectorAll('.dropdown');
 
-
-
-    
     hamburger.addEventListener('click', function() {
         this.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -134,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Actualizar año del footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-      // Sistema de noticias dinámicas
+    // Sistema de noticias dinámicas
     const newsContainer = document.getElementById('news-container');
     const pagination = document.getElementById('pagination');
     const prevBtnNews = document.getElementById('prev-btn');
@@ -145,22 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const newsPerPage = 3;
     let allNews = [];
     
-  // Función para convertir fecha en formato "15 Agosto 2023" a Date object
-function parseCustomDate(dateStr) {
-    const months = {
-        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
-        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
-    };
-    
-    const parts = dateStr.split(' ');
-    const day = parseInt(parts[0]);
-    const month = months[parts[1]];
-    const year = parseInt(parts[2]);
-    
-    return new Date(year, month, day);
-}
-
-// Modificar la función loadNews
+ // Función para cargar noticias desde JSON externo
 async function loadNews() {
     try {
         const response = await fetch('data/news.json');
@@ -169,13 +151,14 @@ async function loadNews() {
         }
         const data = await response.json();
         
-        // Ordenar noticias por fecha (más recientes primero)
+        // Ordenar noticias por fecha (más recientes primero) - ESTA PARTE FALTABA
         allNews = data.news.sort((a, b) => {
-            return parseCustomDate(b.date) - parseCustomDate(a.date);
+            return new Date(b.timestamp) - new Date(a.timestamp);
         });
         
         displayNews();
         setupPagination();
+        handleHashAnchor(); // Verificar si hay ancla en la URL
     } catch (error) {
         console.error('Error cargando noticias:', error);
         showNewsError('No se pudieron cargar las noticias. Por favor intenta más tarde.');
@@ -209,6 +192,13 @@ async function loadNews() {
         newsToShow.forEach(news => {
             const newsCard = document.createElement('article');
             newsCard.className = 'news-card';
+            newsCard.id = `noticia-${news.id}`;
+            
+            // URL base para compartir (la página principal)
+            const baseUrl = window.location.href.split('?')[0]; // Remover parámetros existentes
+            const shareUrl = `${baseUrl}#noticia-${news.id}`;
+            const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
+            
             newsCard.innerHTML = `
                 <div class="news-image">
                     <img src="${news.image}" alt="${news.alt}" loading="lazy">
@@ -217,10 +207,52 @@ async function loadNews() {
                     <span class="news-date">${news.date}</span>
                     <h3>${news.title}</h3>
                     <p>${news.summary}</p>
-                    <a href="#" class="news-link" data-id="${news.id}">Leer más <i class="fas fa-arrow-right"></i></a>
+                    
+                    <div class="news-actions">
+                        <a href="#" class="news-link" data-id="${news.id}">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                        
+                        <div class="share-buttons">
+                            <!-- Botón de compartir en Facebook -->
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" 
+                               target="_blank" 
+                               class="share-button facebook-share"
+                               title="Compartir en Facebook"
+                               onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+                               <i class="fab fa-facebook-f"></i>
+                            </a>
+                            
+                            <!-- Botón para compartir en WhatsApp -->
+                            <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}" 
+                               target="_blank" 
+                               class="share-button whatsapp-share"
+                               title="Compartir en WhatsApp"
+                               onclick="return !window.open(this.href, 'WhatsApp', 'width=640,height=580')">
+                               <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                           
+
+                            <!-- Botón para copiar enlace -->
+                            <button class="share-button copy-share"
+                                    title="Copiar enlace"
+                                    data-url="${shareUrl}">
+                                <i class="fas fa-link"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             `;
             newsContainer.appendChild(newsCard);
+        });
+
+        // Agregar event listener para el botón de copiar
+        document.querySelectorAll('.copy-share').forEach(button => {
+            button.addEventListener('click', function() {
+                const url = this.getAttribute('data-url');
+                copyToClipboard(url);
+            });
         });
         
         // Agregar event listeners a los botones "Leer más"
@@ -235,8 +267,8 @@ async function loadNews() {
     
     // Configurar paginación
     function setupPagination() {
-    const pageCount = Math.ceil(allNews.length / newsPerPage);
-    pageNumbers.innerHTML = '';
+        const pageCount = Math.ceil(allNews.length / newsPerPage);
+        pageNumbers.innerHTML = '';
         
         // Mostrar máximo 5 números de página a la vez
         const maxVisiblePages = 5;
@@ -254,9 +286,7 @@ async function loadNews() {
             firstPage.className = 'page-number';
             firstPage.textContent = '1';
             firstPage.addEventListener('click', () => {
-                currentPage = 1;
-                displayNews();
-                updatePaginationButtons();
+                handlePageChange(1);
             });
             pageNumbers.appendChild(firstPage);
             
@@ -275,9 +305,7 @@ async function loadNews() {
             if (i === currentPage) pageNumber.classList.add('active');
             pageNumber.textContent = i;
             pageNumber.addEventListener('click', () => {
-                currentPage = i;
-                displayNews();
-                updatePaginationButtons();
+                handlePageChange(i);
             });
             pageNumbers.appendChild(pageNumber);
         }
@@ -295,9 +323,7 @@ async function loadNews() {
             lastPage.className = 'page-number';
             lastPage.textContent = pageCount;
             lastPage.addEventListener('click', () => {
-                currentPage = pageCount;
-                displayNews();
-                updatePaginationButtons();
+                handlePageChange(pageCount);
             });
             pageNumbers.appendChild(lastPage);
         }
@@ -318,326 +344,219 @@ async function loadNews() {
         });
     }
     
-  function maintainScrollPosition() {
-    const newsSection = document.querySelector('.news-section');
-    const scrollPosition = window.scrollY;
-    const newsSectionTop = newsSection.offsetTop;
+    // Función para manejar el cambio de página
+    async function handlePageChange(newPage) {
+        // Mostrar loader
+        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
+        
+        currentPage = newPage;
+        
+        // Pequeña pausa para permitir el renderizado
+        await new Promise(resolve => setTimeout(resolve, 50));
+        
+        displayNews();
+        updatePaginationButtons();
+        
+        // Scroll a la primera noticia en móviles
+        if (window.innerWidth <= 768) {
+            scrollToFirstNews();
+        }
+    }
     
-    if (scrollPosition >= newsSectionTop) {
-        requestAnimationFrame(() => {
+    // Función para hacer scroll a la primera noticia
+    function scrollToFirstNews() {
+        const firstNewsCard = document.querySelector('.news-card');
+        if (firstNewsCard) {
+            // Calculamos posición considerando el menú fijo
+            const headerOffset = 80;
+            const elementPosition = firstNewsCard.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
             window.scrollTo({
-                top: newsSectionTop,
-                behavior: 'auto'
+                top: offsetPosition,
+                behavior: 'smooth'
             });
-        });
-    }
-}
-
-// Reemplaza los event listeners de paginación con este código
-prevBtnNews.addEventListener('click', async (e) => {
-    e.preventDefault();
-    if (currentPage > 1) {
-        // Mostrar loader
-        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
-        
-        currentPage--;
-        
-        // Pequeña pausa para permitir el renderizado
-        await new Promise(resolve => setTimeout(resolve, 50));
-        
-        displayNews();
-        updatePaginationButtons();
-        
-        // Scroll a la primera noticia en móviles
-        if (window.innerWidth <= 768) {
-            const firstNewsCard = document.querySelector('.news-card');
-            if (firstNewsCard) {
-                firstNewsCard.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
         }
     }
-});
-
-nextBtnNews.addEventListener('click', async (e) => {
-    e.preventDefault();
-    const pageCount = Math.ceil(allNews.length / newsPerPage);
-    if (currentPage < pageCount) {
-        // Mostrar loader
-        newsContainer.innerHTML = '<div class="news-loader">Cargando noticias...</div>';
-        
-        currentPage++;
-        
-        // Pequeña pausa para permitir el renderizado
-        await new Promise(resolve => setTimeout(resolve, 50));
-        
-        displayNews();
-        updatePaginationButtons();
-        
-        // Scroll a la primera noticia en móviles
-        if (window.innerWidth <= 768) {
-            const firstNewsCard = document.querySelector('.news-card');
-            if (firstNewsCard) {
-                firstNewsCard.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    }
-});
-
-
-
-    // Modal para noticia completa
-   // Modal para noticia completa
-function showFullNews(newsId) {
-    const news = allNews.find(item => item.id === newsId);
-    if (!news) return;
     
-    const modal = document.createElement('div');
-    modal.className = 'news-modal';
-    modal.innerHTML = `
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="modal-close">&times;</button>
-                <h3 class="modal-title">${news.title}</h3>
-                <span class="modal-date">${news.date}</span>
-            </div>
-            <div class="modal-body">
-                <img src="${news.image}" alt="${news.alt}" class="modal-image" loading="eager">
-                <p>${news.fullContent}</p>
-                <div class="modal-footer">
-                    <button class="btn modal-btn">Cerrar</button>
+    // Event listeners para botones Anterior/Siguiente
+    prevBtnNews.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentPage > 1) {
+            handlePageChange(currentPage - 1);
+        }
+    });
+
+    nextBtnNews.addEventListener('click', (e) => {
+        e.preventDefault();
+        const pageCount = Math.ceil(allNews.length / newsPerPage);
+        if (currentPage < pageCount) {
+            handlePageChange(currentPage + 1);
+        }
+    });
+    
+    // Modal para noticia completa
+    function showFullNews(newsId) {
+        const news = allNews.find(item => item.id === newsId);
+        if (!news) return;
+        
+        const baseUrl = window.location.href.split('?')[0];
+        const shareUrl = `${baseUrl}#noticia-${news.id}`;
+        const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
+        
+        const modal = document.createElement('div');
+        modal.className = 'news-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="modal-close">&times;</button>
+                    <h3 class="modal-title">${news.title}</h3>
+                    <span class="modal-date">${news.date}</span>
+                    
+                    <div class="modal-share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" 
+                           target="_blank" 
+                           class="share-button facebook-share"
+                           title="Compartir en Facebook"
+                           onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}" 
+                           target="_blank" 
+                           class="share-button whatsapp-share"
+                           title="Compartir en WhatsApp"
+                           onclick="return !window.open(this.href, 'WhatsApp', 'width=640,height=580')">
+                           <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                       
+
+                        <button class="share-button copy-share"
+                                title="Copiar enlace"
+                                data-url="${shareUrl}">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="${news.image}" alt="${news.alt}" class="modal-image">
+                    <p>${news.fullContent}</p>
+                    <div class="modal-footer">
+                        <button class="btn modal-btn">Cerrar</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
+        `;
+        
+        document.body.appendChild(modal);
+        document.body.style.overflow = 'hidden'; // Evitar scroll del body
+        modal.style.display = 'block';
+        
+        // Agregar event listener para copiar en el modal
+        const copyButton = modal.querySelector('.copy-share');
+        copyButton.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            copyToClipboard(url);
+        });
+        
+        // Cerrar modal
+        const closeBtn = modal.querySelector('.modal-close');
+        const closeBtnFooter = modal.querySelector('.modal-btn');
+        
+        const closeModal = () => {
+            document.body.removeChild(modal);
+            document.body.style.overflow = ''; // Restaurar scroll
+        };
+        
+        closeBtn.addEventListener('click', closeModal);
+        closeBtnFooter.addEventListener('click', closeModal);
+        
+        // Cerrar al hacer clic fuera del contenido o presionar ESC
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        document.addEventListener('keydown', function handleEscape(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+                document.removeEventListener('keydown', handleEscape);
+            }
+        });
+    }
     
-    document.body.appendChild(modal);
-    document.body.style.overflow = 'hidden';
-    modal.style.display = 'block';
+    // Función para copiar al portapapeles
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            // Mostrar mensaje de confirmación
+            showNotification('Enlace copiado al portapapeles');
+        }).catch(err => {
+            console.error('Error al copiar: ', err);
+            showNotification('Error al copiar el enlace', 'error');
+        });
+    }
     
-    // Cerrar modal
-    const closeBtn = modal.querySelector('.modal-close');
-    const closeBtnFooter = modal.querySelector('.modal-btn');
+    // Función para mostrar notificación
+    function showNotification(message, type = 'success') {
+        // Crear elemento de notificación
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+            <span>${message}</span>
+        `;
+        
+        // Estilos para la notificación
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${type === 'success' ? '#27ae60' : '#e74c3c'};
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideIn 0.3s ease;
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Remover después de 3 segundos
+        setTimeout(() => {
+            notification.style.animation = 'slideOut 0.3s ease';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 3000);
+    }
     
-    const closeModal = () => {
-        document.body.removeChild(modal);
-        document.body.style.overflow = '';
-    };
-    
-    closeBtn.addEventListener('click', closeModal);
-    closeBtnFooter.addEventListener('click', closeModal);
-    
-    // Cerrar al hacer clic fuera o presionar ESC
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
+    // Manejar anclas en la URL (para cuando compartan con #noticia-id)
+    function handleHashAnchor() {
+        const hash = window.location.hash;
+        if (hash.startsWith('#noticia-')) {
+            const newsId = parseInt(hash.replace('#noticia-', ''));
+            const news = allNews.find(item => item.id === newsId);
+            
+            if (news) {
+                // Esperar a que se carguen las noticias
+                setTimeout(() => {
+                    showFullNews(newsId);
+                }, 500);
+            }
         }
-    });
+    }
     
-    document.addEventListener('keydown', function handleEscape(e) {
-        if (e.key === 'Escape') {
-            closeModal();
-            document.removeEventListener('keydown', handleEscape);
-        }
-    });
-    
-    // Opcional: Hacer la imagen clickeable para ver en tamaño completo
-    const modalImage = modal.querySelector('.modal-image');
-    modalImage.addEventListener('click', function() {
-        this.classList.toggle('expanded');
-    });
-}
+    // Ejecutar cuando se carga la página y cuando cambia el hash
+    window.addEventListener('load', handleHashAnchor);
+    window.addEventListener('hashchange', handleHashAnchor);
     
     // Cargar noticias al iniciar
     loadNews();
-
-
-
-   // Sistema de publicidad personalizada - VERSIÓN CORREGIDA
-    class AdManager {
-        constructor() {
-            this.ads = [
-            {
-                image: 'img/publi/publi.jpg',
-                link: '',
-                title: 'Tu publicidad acá',
-                description: 'Publicita tu producto con nosotros.'
-            },
-                {
-                image: 'img/publi/muebles.jpeg',
-                link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
-                title: 'RPA Moblamientos',
-                description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
-            },
-            {
-                image: 'img/publi/tienda.jpg',
-                link: '',
-                title: 'Tienda de Pádel',
-                description: 'Encuentra las mejores palas, pelotas y accesorios para tu juego. ¡Ofertas especiales!'
-            },
-            {
-                image: 'img/publi/publi.jpg',
-                link: '',
-                title: 'Tu publicidad acá',
-                description: 'Publicita tu producto con nosotros.'
-            },
-            {
-                image: 'img/publi/clases.jpg',
-                link: '',
-                title: 'Clases de Pádel',
-                description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
-            }
-        ];
-            
-           this.previousAdIndex = -1; // Para evitar repetir el mismo anuncio consecutivamente
-            this.adShown = false;
-            this.adTimer = null;
-            this.scrollThreshold = 70;
-            
-            this.init();
-        }
-        
-        init() {
-            // Crear elementos del modal si no existen
-            if (!document.getElementById('ad-modal')) {
-                this.createAdModal();
-            }
-            
-            // Configurar event listeners
-            this.setupEventListeners();
-            
-            // Programar la primera publicidad
-            this.scheduleAd();
-        }
-        
-        createAdModal() {
-            const modalHTML = `
-                <div id="ad-modal" class="ad-modal">
-                    <div class="ad-modal-content">
-                        <span class="ad-close">&times;</span>
-                        <div class="ad-header">
-                            <h3>Publicidad</h3>
-                        </div>
-                        <div class="ad-body">
-                            <a href="#" id="ad-link" target="_blank">
-                                <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
-                            </a>
-                            <div class="ad-text">
-                                <h4 id="ad-title"></h4>
-                                <p id="ad-description"></p>
-                            </div>
-                        </div>
-                        <div class="ad-footer">
-                            <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-            
-            document.body.insertAdjacentHTML('beforeend', modalHTML);
-        }
-        
-        setupEventListeners() {
-            // Cerrar modal con el botón X
-            document.addEventListener('click', (e) => {
-                if (e.target.classList.contains('ad-close') || e.target.id === 'ad-close-btn') {
-                    this.hideAd();
-                }
-            });
-            
-            // Cerrar modal al hacer clic fuera del contenido
-            document.addEventListener('click', (e) => {
-                if (e.target.id === 'ad-modal') {
-                    this.hideAd();
-                }
-            });
-            
-            // Cerrar con la tecla Escape
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && document.getElementById('ad-modal').style.display === 'block') {
-                    this.hideAd();
-                }
-            });
-            
-            // Mostrar publicidad al hacer scroll (70% de la página)
-            window.addEventListener('scroll', () => {
-                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                
-                if (scrollPercent > this.scrollThreshold && !this.adShown) {
-                    this.showAd();
-                    this.adShown = true;
-                }
-            });
-        }
-        
-        scheduleAd() {
-            // Limpiar timer existente si hay uno
-            if (this.adTimer) {
-                clearTimeout(this.adTimer);
-            }
-            
-            // Mostrar publicidad después de 30 segundos
-            this.adTimer = setTimeout(() => {
-                if (!this.adShown) {
-                    this.showAd();
-                    this.adShown = true;
-                }
-            }, 30000);
-        }
-        
-        // Función para obtener un índice aleatorio que no sea el mismo que el anterior
-        getRandomAdIndex() {
-            if (this.ads.length <= 1) return 0;
-            
-            let newIndex;
-            do {
-                newIndex = Math.floor(Math.random() * this.ads.length);
-            } while (newIndex === this.previousAdIndex && this.ads.length > 1);
-            
-            this.previousAdIndex = newIndex;
-            return newIndex;
-        }
-        
-        showAd() {
-            // Seleccionar un anuncio aleatorio que no sea el mismo que el anterior
-            const randomIndex = this.getRandomAdIndex();
-            const ad = this.ads[randomIndex];
-            
-            // Actualizar el DOM con el anuncio actual
-            document.getElementById('ad-image').src = ad.image;
-            document.getElementById('ad-link').href = ad.link;
-            document.getElementById('ad-title').textContent = ad.title;
-            document.getElementById('ad-description').textContent = ad.description;
-            
-            // Mostrar el modal
-            document.getElementById('ad-modal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-            
-            // Programar cierre automático después de 15 segundos
-            setTimeout(() => {
-                if (document.getElementById('ad-modal').style.display === 'block') {
-                    this.hideAd();
-                }
-            }, 15000);
-        }
-        
-        hideAd() {
-            document.getElementById('ad-modal').style.display = 'none';
-            document.body.style.overflow = '';
-            
-            // Programar próximo anuncio después de 2 minutos
-            setTimeout(() => {
-                this.adShown = false;
-                this.scheduleAd();
-            }, 120000);
-        }
-    }
-
-    // Inicializar el sistema de publicidad
-    const adManager = new AdManager();
 });
