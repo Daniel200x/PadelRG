@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         constructor() {
             this.ads = [
             {
-                image: 'img/publi/publi.jpg',
+                image: '../img/publi/publi.jpg',
                 link: '',
                 title: 'Tu publicidad acá',
                 description: 'Publicita tu producto con nosotros.'
