@@ -1,0 +1,255 @@
+/* Estilos generales para la página de ranking */
+.ranking-container {
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Selector de ranking (General/Masculino/Femenino) */
+.ranking-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ranking-tab {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.ranking-tab:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ranking-tab.active {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido principal del ranking */
+.ranking-content {
+    margin-top: 30px;
+}
+
+/* Estilos para la página de contacto */
+.contacto-main {
+    max-width: 1200px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+}
+
+.contacto-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contacto-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contacto-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.contacto-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+.mensaje-exito {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mensaje-exito i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-icon {
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.info-content h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.info-content p {
+    margin: 0;
+    color: #7f8c8d;
+}
+
+.info-redes {
+    margin-top: 30px;
+}
+
+.info-redes h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.redes-sociales a:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .ranking-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ranking-container {
+        padding: 15px;
+        margin-top: 60px;
+    }
+    
+    .contacto-content {
+        flex-direction: column;
+    }
+    
+    .contacto-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ranking-table td:first-child,
+    .ranking-table th:first-child {
+        width: 1% !important;  /* Fuerza el tamaño mínimo */
+        white-space: nowrap;   /* Evita saltos de línea */
+    }
+    
+    .contacto-form {
+        padding: 20px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

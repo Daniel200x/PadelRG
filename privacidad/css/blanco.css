@@ -1,0 +1,138 @@
+/* Estilos generales para la página de ranking */
+.ranking-container {
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Selector de ranking (General/Masculino/Femenino) */
+.ranking-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ranking-tab {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.ranking-tab:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ranking-tab.active {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido principal del ranking */
+.ranking-content {
+    margin-top: 30px;
+}
+
+/* Estilos para la página de privacidad */
+.privacy-container {
+    margin: 70px auto 40px;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.privacy-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.privacy-section:last-child {
+    border-bottom: none;
+}
+
+.privacy-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.privacy-section h3 {
+    color: #3498db;
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.privacy-section p, .privacy-section ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.privacy-section ul {
+    padding-left: 20px;
+}
+
+.privacy-section li {
+    margin-bottom: 8px;
+}
+
+.last-updated {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 30px !important;
+    text-align: right;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .ranking-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ranking-container {
+        padding: 15px;
+        margin-top: 60px;
+    }
+    
+    .privacy-container {
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+    
+    .privacy-section h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ranking-table td:first-child,
+    .ranking-table th:first-child {
+        width: 1% !important;  /* Fuerza el tamaño mínimo */
+        white-space: nowrap;   /* Evita saltos de línea */
+    }
+    
+    .privacy-container {
+        padding: 0 10px;
+    }
+    
+    .privacy-section h2 {
+        font-size: 18px;
+    }
+    
+    .privacy-section h3 {
+        font-size: 16px;
+    }
+}
