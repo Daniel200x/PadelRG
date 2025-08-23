@@ -3,28 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pádel RG</title>
+    <title>Pádel RG - Todo sobre pádel en Río Grande, Tierra del Fuego</title>
+    <meta name="description" content="Todo sobre pádel en Río Grande. Noticias, torneos, consejos y comunidad de pádel. Resultados, estadísticas y mucho más.">
 
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<!-- Favicon básico (formato ICO) -->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 
-<!-- Para dispositivos Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <!-- Para Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
 
-<!-- Para Android -->
-<link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <!-- Para la mayoría de navegadores modernos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-<!-- Para大多数 navegadores modernos -->
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Manifest para PWA (opcional) -->
+    <link rel="manifest" href="site.webmanifest">
 
-<!-- Manifest para PWA (opcional) -->
-<link rel="manifest" href="site.webmanifest">
-
-<!-- Color del tema (opcional) -->
-<meta name="theme-color" content="#3498db">
-
+    <!-- Color del tema (opcional) -->
+    <meta name="theme-color" content="#3498db">
 
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -33,14 +32,13 @@
     />
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-81C2M2PPXT');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81C2M2PPXT');
+    </script>
   </head>
   <body>
     <!-- Nuevo menú -->
@@ -65,8 +63,8 @@
               </ul>
             </li>
             <li><a href="/ranking/ranking.html">Ranking</a></li>
-
             <li><a href="/galeria/galeria.html">Galería</a></li>
+       
             <li><a href="/contacto/contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -83,6 +81,7 @@
         </button>
       </div>
     </nav>
+
     <!-- Carrusel con enlaces -->
     <div class="hero-slider">
       <div class="slider-wrapper">
@@ -93,7 +92,7 @@
               <img src="img/1.jpg" alt="Ranking de los torneos" />
               <div class="slide-overlay">
                 <h2>Ranking de jugadores</h2>
-                <p>La competencia por lo mas alto de la ciudad</p>
+                <p>La competencia por lo más alto de la ciudad</p>
                 <span class="link-text"
                   >Ver ranking <i class="fas fa-arrow-right"></i
                 ></span>
@@ -106,14 +105,15 @@
             <a href="galeria/galeria.html" class="slide-link">
               <img src="img/banner3.jpg" alt="Galeria de Imagenes" />
               <div class="slide-overlay">
-                <h2>Galeria de imagenes</h2>
+                <h2>Galería de imágenes</h2>
                 <p>Revive todos los momentos de los torneos</p>
                 <span class="link-text"
-                  >Ver galeria <i class="fas fa-arrow-right"></i
+                  >Ver galería <i class="fas fa-arrow-right"></i
                 ></span>
               </div>
             </a>
           </div>
+          
           <!-- Slide 3 con enlace -->
           <div class="slide active">
             <a href="puntoDeOro/puntoDeOro.html" class="slide-link">
@@ -170,43 +170,34 @@
       </div>
     </div>
 
-    
-
     <div class="container">
       <div class="header">
         <h1>Pádel RG</h1>
-        <p>Resultados, Estadisticas, noticias y mucho mas de los torneos de la ciudad</p>
+        <p>Resultados, estadísticas, noticias y mucho más de los torneos de pádel de Río Grande, Tierra del Fuego.</p>
+      </div>
+
+      <!-- Sección de Noticias -->
+      <div class="news-section">
+        <div class="container">
+          <h2 class="section-title">Últimas Noticias</h2>
+          <div class="news-grid" id="news-container"></div>
+          
+          <!-- Paginación -->
+          <div class="pagination" id="pagination">
+            <button id="prev-btn" class="pagination-btn" disabled>
+              <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <div class="page-numbers" id="page-numbers"></div>
+            <button id="next-btn" class="pagination-btn">
+              Siguiente <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
 
 
-      <!-- Agregar después del contenedor de publicidad y antes del footer -->
-<!-- Sección de Noticias -->
-<div class="news-section">
-  <div class="container">
-    <h2 class="section-title">Últimas Noticias</h2>
-    <div class="news-grid" id="news-container"></div>
-    
-    <!-- Paginación -->
-    <div class="pagination" id="pagination">
-      <button id="prev-btn" class="pagination-btn" disabled>
-        <i class="fas fa-chevron-left"></i> Anterior
-      </button>
-      <div class="page-numbers" id="page-numbers"></div>
-      <button id="next-btn" class="pagination-btn">
-        Siguiente <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
-    
-    <!--   <div class="news-cta">
-      <a href="noticias.html" class="btn">Ver todas las noticias</a>
-    </div>-->
-  </div>
-</div>
-
-
-
-
-      <div class="torneos-grid">
+<!-- Sección de torneos -->
+       <div class="torneos-grid">
         <a href="puntoDeOro/puntoDeOro.html" class="torneo-card">
           <h2>TORNEO PUNTO DE ORO</h2>
           <p>Punto de Oro</p>
@@ -222,18 +213,34 @@
           <p>2do SET</p>
         </a>
 
-       
-            <a href="equipos/equipos.html" class="torneo-card">
-                <h2>TORNEO MARTIN GALLARDO</h2>
-                <p>VUELA ALTO</p> </a>
-
-        
+        <a href="equipos/equipos.html" class="torneo-card">
+          <h2>TORNEO MARTIN GALLARDO</h2>
+          <p>VUELA ALTO</p>
+        </a>
       </div>
 
+      <!-- Sección Acerca de (nueva) -->
+      <div class="about-section">
+        <div class="container">
+          <h2 class="section-title">Acerca de Pádel RG</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Pádel RG es la comunidad de pádel más grande de Río Grande, Tierra del Fuego. Desde 2023, nos dedicamos a promover este deporte en la región, organizando torneos, compartiendo noticias y conectando a jugadores de todos los niveles.</p>
+              <p>Nuestro objetivo es fomentar la práctica del pádel, crear una comunidad unida alrededor de este deporte y ofrecer información actualizada sobre torneos, resultados y rankings.</p>
+              <a href="/acerca/acerca.html" class="btn">Conoce más sobre nosotros</a>
+            </div>
+            <div class="about-image">
+              <img src="img/logo1.png" alt="Comunidad de Pádel RG">
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
       <!-- Espacio de publicidad -->
       <div class="ad-space">
         <div class="ad-container">
-          <div class="ad-title"></div>
+          <div class="ad-title">Publicidad</div>
           <a
             href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4"
             target="_blank"
@@ -244,20 +251,18 @@
       </div>
     </div>
 
-
-
-
     <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
         <div class="footer-links">
           <a href="#">Inicio</a>
           <a href="#">Torneos</a>
+          <a href="/acerca/acerca.html">Acerca de</a>
           <a href="/contacto/contacto.html">Contacto</a>
           <a href="/privacidad/privacidad.html">Política de Privacidad</a>
         </div>
         <div class="copyright">
-          &copy; <span id="current-year">2023</span> Torneos de Pádel. Todos los
+          &copy; <span id="current-year">2023</span> Pádel RG. Todos los
           derechos reservados.
         </div>
       </div>
@@ -267,28 +272,26 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
      crossorigin="anonymous"></script>
   
-  <!-- Modal de Publicidad Personalizada -->
-<div id="ad-modal" class="ad-modal">
-  <div class="ad-modal-content">
-    <span class="ad-close">&times;</span>
-    <div class="ad-header">
-      <h3>Publicidad</h3>
-    </div>
-    <div class="ad-body">
-      <a href="#" id="ad-link" target="_blank">
-        <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
-      </a>
-      <div class="ad-text">
-        <h4 id="ad-title"></h4>
-        <p id="ad-description"></p>
+    <!-- Modal de Publicidad Personalizada -->
+    <div id="ad-modal" class="ad-modal">
+      <div class="ad-modal-content">
+        <span class="ad-close">&times;</span>
+        <div class="ad-header">
+          <h3>Publicidad</h3>
+        </div>
+        <div class="ad-body">
+          <a href="#" id="ad-link" target="_blank">
+            <img id="ad-image" src="" alt="Publicidad" class="ad-modal-image">
+          </a>
+          <div class="ad-text">
+            <h4 id="ad-title"></h4>
+            <p id="ad-description"></p>
+          </div>
+        </div>
+        <div class="ad-footer">
+          <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
+        </div>
       </div>
     </div>
-    <div class="ad-footer">
-      <button id="ad-close-btn" class="ad-close-btn">Cerrar</button>
-    </div>
-  </div>
-</div>
-  
-  
-    </body>
+  </body>
 </html>

@@ -1401,3 +1401,108 @@ body {
 .modal-body p:last-child {
     margin-bottom: 0;
 }
+
+/* Añade esto al final de tu archivo styles.css */
+
+/* Estilos para la sección Acerca de */
+.about-section {
+  padding: 60px 0;
+  background-color: rgba(44, 62, 80, 0.7);
+  margin: 40px 0;
+  position: relative;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Mejoras de SEO y estructura */
+.header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.header p {
+  color: #ecf0f1;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mejoras de accesibilidad */
+.slide-overlay h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Mejoras para los títulos de las tarjetas de torneos */
+.torneo-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.7em;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Mejoras responsivas para la sección Acerca de */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .about-section {
+    padding: 40px 0;
+  }
+  
+  .header p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}

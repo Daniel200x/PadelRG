@@ -752,6 +752,39 @@ function showFullNews(newsId) {
     // Inicializar el sistema de publicidad
     const adManager = new AdManager();
 
+// Añade esto al final de tu archivo script.js, antes del cierre });
 
+// Función para mejorar el SEO con microdatos
+function addMicrodata() {
+  // Agregar microdatos a la organización
+  const body = document.querySelector('body');
+  body.setAttribute('itemscope', '');
+  body.setAttribute('itemtype', 'https://schema.org/SportsOrganization');
+  
+  // Agregar microdatos al logo
+  const logo = document.querySelector('.nav-logo img');
+  if (logo) {
+    logo.setAttribute('itemprop', 'logo');
+  }
+  
+  // Agregar microdatos al nombre
+  const siteName = document.querySelector('.header h1');
+  if (siteName) {
+    siteName.setAttribute('itemprop', 'name');
+  }
+  
+  // Agregar microdatos a la descripción
+  const description = document.querySelector('.header p');
+  if (description) {
+    description.setAttribute('itemprop', 'description');
+  }
+}
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener('DOMContentLoaded', function() {
+  addMicrodata();
+  
+  // ... el resto de tu código existente ...
+});
 
 });
