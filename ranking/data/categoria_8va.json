@@ -2662,7 +2662,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 150},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
         ]
       }
     }
@@ -2712,7 +2712,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
         ]
       }
     }
@@ -2762,7 +2762,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
         ]
       }
     }
@@ -2962,7 +2962,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }
@@ -2987,7 +2987,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
         ]
       }
     }
@@ -3012,7 +3012,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }
@@ -3037,7 +3037,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 50}
         ]
       }
     }
@@ -3062,7 +3062,7 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
         ]
       }
     }
@@ -3082,7 +3082,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 100}
           
         ],
         "segundoSet": [
@@ -3141,7 +3141,505 @@
         ]
       }
     }
-
-
+,
+    {
+      "id": 1323,
+      "name": "Julieta Cichero",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1324,
+      "name": "Patricia Lapejrausk",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1325,
+      "name": "Sabrina Ilarregui",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1326,
+      "name": "Zabala Andino",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1327,
+      "name": "Ana Andrade",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1328,
+      "name": "Rosalina Gamarra",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1329,
+      "name": "Monica Barria",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1330,
+      "name": "Emilce Dunca",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1331,
+      "name": "Noelia Cagnelutti",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1332,
+      "name": "Yesica Fleuri",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1333,
+      "name": "Micaela Lamberti",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1334,
+      "name": "Soledad Romero",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1335,
+      "name": "Romina Ramirez",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1336,
+      "name": "Elsa Perlo",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1337,
+      "name": "Luciana Gutierrez",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1338,
+      "name": "Cecilia Bruzzo",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1339,
+      "name": "Micaela Villagra",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1340,
+      "name": "Gessyca Galucci",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1341,
+      "name": "Marina Elena Araoz",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 1342,
+      "name": "Florencia Heredia",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
   ]
 }
