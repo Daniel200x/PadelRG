@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         formulario.addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Limpiar mensajes de error previos
+            limpiarErrores();
+            
             // Validación básica
             if (validarFormulario()) {
                 // Enviar formulario a FormSubmit
@@ -46,66 +49,60 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email');
         const asunto = document.getElementById('asunto');
         const mensaje = document.getElementById('mensaje');
+        const errorNombre = document.getElementById('error-nombre');
+        const errorEmail = document.getElementById('error-email');
+        const errorAsunto = document.getElementById('error-asunto');
+        const errorMensaje = document.getElementById('error-mensaje');
         
         // Validar nombre
         if (nombre.value.trim() === '') {
-            marcarError(nombre, 'Por favor ingresa tu nombre');
+            errorNombre.textContent = 'Por favor ingresa tu nombre';
+            nombre.style.borderColor = '#e74c3c';
             valido = false;
         } else {
-            quitarError(nombre);
+            nombre.style.borderColor = '#ddd';
         }
         
         // Validar email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email.value)) {
-            marcarError(email, 'Por favor ingresa un email válido');
+            errorEmail.textContent = 'Por favor ingresa un email válido';
+            email.style.borderColor = '#e74c3c';
             valido = false;
         } else {
-            quitarError(email);
+            email.style.borderColor = '#ddd';
         }
         
         // Validar asunto
         if (asunto.value === '') {
-            marcarError(asunto, 'Por favor selecciona un asunto');
+            errorAsunto.textContent = 'Por favor selecciona un asunto';
+            asunto.style.borderColor = '#e74c3c';
             valido = false;
         } else {
-            quitarError(asunto);
+            asunto.style.borderColor = '#ddd';
         }
         
         // Validar mensaje
         if (mensaje.value.trim() === '') {
-            marcarError(mensaje, 'Por favor escribe tu mensaje');
+            errorMensaje.textContent = 'Por favor escribe tu mensaje';
+            mensaje.style.borderColor = '#e74c3c';
             valido = false;
         } else {
-            quitarError(mensaje);
+            mensaje.style.borderColor = '#ddd';
         }
         
         return valido;
     }
     
-    function marcarError(campo, mensaje) {
-        campo.style.borderColor = '#e74c3c';
+    function limpiarErrores() {
+        const errores = document.querySelectorAll('.error-message');
+        errores.forEach(error => {
+            error.textContent = '';
+        });
         
-        // Eliminar mensaje de error anterior si existe
-        quitarError(campo);
-        
-        // Crear elemento de error
-        const error = document.createElement('small');
-        error.style.color = '#e74c3c';
-        error.style.display = 'block';
-        error.style.marginTop = '5px';
-        error.textContent = mensaje;
-        error.className = 'error-message';
-        
-        campo.parentNode.appendChild(error);
-    }
-    
-    function quitarError(campo) {
-        campo.style.borderColor = '#ddd';
-        
-        const error = campo.parentNode.querySelector('.error-message');
-        if (error) {
-            error.remove();
-        }
+        const campos = document.querySelectorAll('.form-group input, .form-group select, .form-group textarea');
+        campos.forEach(campo => {
+            campo.style.borderColor = '#ddd';
+        });
     }
 });
