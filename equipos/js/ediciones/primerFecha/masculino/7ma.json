@@ -61,7 +61,7 @@
     "fixture": {
         "ronda_1": [
             {"equipo1": "AC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "Los Picatinchos", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Los Picatinchos", "equipo2": "La ultima y nos vamos", "resultado": "2-1", "games": "1-6, 7-5, 6-4", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "La Tinchonetta", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
@@ -90,7 +90,7 @@
         "ronda_5": [
             {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "1-2", "games": "6-3, 3-6, 4-6", "fecha": ""},
-            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "2-0", "games": "6-0, 7-5", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
@@ -118,7 +118,7 @@
         "ronda_9": [
             {"equipo1": "La Tinchonetta", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Los Picatinchos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "Drink Team", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Drink Team", "equipo2": "Vuela Alto", "resultado": "2-1", "games": "6-3, 4-6, 6-2", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Galactinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ]

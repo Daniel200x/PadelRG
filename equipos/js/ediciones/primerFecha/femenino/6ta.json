@@ -74,7 +74,7 @@
             {"equipo1": "AC Padel", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_3": [
-            {"equipo1": "Vuela Alto", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "Vuela Alto", "equipo2": "AC Padel", "resultado": "2-0", "games": "6-1, 6-2", "fecha": ""},
             {"equipo1": "3er Tiempo", "equipo2": "Galactinchos", "resultado": "0-2", "games": "4-6, 2-6", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "La Tinchonetta", "resultado": "2-1", "games": "2-6, 6-1, 7-6", "fecha": ""},
             {"equipo1": "DC Padel", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
@@ -91,7 +91,7 @@
             {"equipo1": "3er Tiempo", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "La ultima y nos vamos", "equipo2": "AC Padel", "resultado": "2-0", "games": "6-1, 6-3", "fecha": ""},
             {"equipo1": "La Tinchonetta", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Los Picatinchos", "resultado": "1-2", "games": "6-3, 1-6, 2-6", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_6": [
