@@ -1,3 +1,17 @@
+// Función para crear slugs (URLs amigables) a partir de títulos
+function createSlug(title) {
+    return title
+        .toLowerCase()
+        .normalize('NFD') // Separar acentos
+        .replace(/[\u0300-\u036f]/g, '') // Eliminar acentos
+        .replace(/[^a-z0-9 -]/g, '') // Eliminar caracteres no alfanuméricos
+        .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+        .replace(/-+/g, '-') // Reemplazar múltiples guiones con uno solo
+        .trim('-');
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // Menú móvil
@@ -196,7 +210,8 @@ async function loadNews() {
             
             // URL base para compartir (la página principal)
             const baseUrl = window.location.href.split('?')[0]; // Remover parámetros existentes
-            const shareUrl = `${baseUrl}#noticia-${news.id}`;
+            const slug = createSlug(news.title);
+const shareUrl = `${baseUrl}#noticia-${slug}`;
             const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
             
             newsCard.innerHTML = `
@@ -402,7 +417,8 @@ function showFullNews(newsId) {
     if (!news) return;
     
     const baseUrl = window.location.href.split('?')[0];
-    const shareUrl = `${baseUrl}#noticia-${news.id}`;
+    const slug = createSlug(news.title);
+const shareUrl = `${baseUrl}#noticia-${slug}`;
     const shareText = `Mira esta noticia de Pádel RG: ${news.title}`;
     
     // Procesar el contenido para dividir en párrafos
@@ -546,21 +562,27 @@ function showFullNews(newsId) {
         }, 3000);
     }
     
-    // Manejar anclas en la URL (para cuando compartan con #noticia-id)
-    function handleHashAnchor() {
-        const hash = window.location.hash;
-        if (hash.startsWith('#noticia-')) {
-            const newsId = parseInt(hash.replace('#noticia-', ''));
-            const news = allNews.find(item => item.id === newsId);
-            
-            if (news) {
-                // Esperar a que se carguen las noticias
-                setTimeout(() => {
-                    showFullNews(newsId);
-                }, 500);
-            }
+ 
+    // Manejar anclas en la URL (para cuando compartan con #noticia-slug)
+function handleHashAnchor() {
+    const hash = window.location.hash;
+    if (hash.startsWith('#noticia-')) {
+        const slug = hash.replace('#noticia-', '');
+        
+        // Buscar la noticia por slug
+        const news = allNews.find(item => {
+            const newsSlug = createSlug(item.title);
+            return newsSlug === slug;
+        });
+        
+        if (news) {
+            // Esperar a que se carguen las noticias
+            setTimeout(() => {
+                showFullNews(news.id);
+            }, 500);
         }
     }
+}
     
     // Ejecutar cuando se carga la página y cuando cambia el hash
     window.addEventListener('load', handleHashAnchor);
