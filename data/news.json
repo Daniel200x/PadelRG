@@ -60,12 +60,13 @@
     },
     {
       "id": 7,
-      "title": "Torneo 2do Set",
-      "date": "18 Agosto 2023",
-      "summary": "A partir de la próxima edición, el torneo implementará un nuevo sistema de puntuación...",
-      "image": "img/news/7.jpg",
-      "alt": "Formato de torneo",
-      "fullContent": "Contenido completo de la noticia 6..."
+      "title": "Torneo Punto de Oro",
+      "date": "23 Agosto 2025",
+      "timestamp": "2025-08-23",      
+      "summary": "Se abrio la inscripción para la tercera edición del torneo oficial en Punto...",
+      "image": "img/news/13.jpg",
+      "alt": "Punto de Oro 3er Oficial",
+      "fullContent": "Desde este sabado permanece abierta la inscripción para la tercera edición en categorias 5ta y 7ma en Damas y Caballeros.\n\n La inscripción se puede realizar desde el siguiente link: <a href='https://docs.google.com/forms/d/e/1FAIpQLSfeOdi7rv1UbHt1bsRJCfmvZKgviwI47Ghe7YdgDLrQkeI3Ow/viewform?fbclid=IwQ0xDSwMZfUNleHRuA2FlbQIxMAABHla9CbG5nG3NeMoik01dQXmGLONaBrOd56MDhYkTdcgRrgOOOocSFA_HdpZN_aem_wpnujnJ4LNsiJ_TLneQZnw' target='_blank'>https://docs.google.com/forms/d/e/1FAIpQLSfeOdi7rv1UbHt1bsRJCfmvZKgviwI47Ghe7YdgDLrQkeI3Ow/viewform?fbclid=IwQ0xDSwMZfUNleHRuA2FlbQIxMAABHla9CbG5nG3NeMoik01dQXmGLONaBrOd56MDhYkTdcgRrgOOOocSFA_HdpZN_aem_wpnujnJ4LNsiJ_TLneQZnw</a>\n\n La fecha de cierre de inscripciones permanecera abierta hasta el dia jueves 28/08.\n\n Costo de la inscripción: $40.000 por persona"
     },
     {
       "id": 8,
@@ -76,5 +77,19 @@
       "image": "img/news/8.jpg",
       "alt": "Formato de torneo",
 "fullContent": "Desde las 21:30 del dia sabado y desde las 12:00 del domingo en el complejo de Segundo Set se disputa una nueva fecha del torneo por equipos.\n\n'Copa Challenger Martin Gallardo' con un total de 21 partidos entre Sabado y Domingo entre los 9 equipos participantes\n\n Hora\tEquipo Local (Pareja)\tEquipo Visitante (Pareja)\n\n21:30\tAC PADEL: Velasquez-Romero\tGALACTINCHOS: Medina-Villareal\n\n21:30\tLA ULTIMA Y NOS VAMOS: Cutri-Vaca PICATINCHOS: Gersicich-Castillo\n\n22:00\tPICATINCHOS: Sosa-Bianchi\tDC PADEL: Luna-Herrera\n\n22:00\tGALACTINCHOS: Quezada-Iglesias\tVUELA ALTO: Alfaro-Unquen\n\n22:30\tPICATINCHOS: Andrade-Echeverria\t3° TIEMPO: Escufachi-Lara\n\n22:30\tDC PADEL: Gonzalez-Stagnaro\t3° TIEMPO: Romero-Galvarini\n\n23:00\tVUELA ALTO: Andrade-Hero\tLA TINCHONETA: Moreno-Barria\n\n23:00\tGALACTINCHOS: Gomez-Vera\tDC PADEL: Lamberti-Fleuri\n\n23:30\tLA ULTIMA Y NOS VAMOS: Ugarte-Cuenca\tPICATINCHOS: Rubio-Santana\n\n23:30\tPICATINCHOS: Andrade-Barria\tLA TINCHONETA: Villaroel-Quiroz\n\n23:45\tPICATINCHOS: Peix-Fernandez\tDC PADEL: Ruiz-Pugnale\n\nDOMINGO\nHora\tEquipo Local (Pareja)\tEquipo Visitante (Pareja)\n\n12:00\t3° TIEMPO: Martinez-Martinez\tDRINK TEAM: Saldivia-Mur\n\n12:00\tPICATINCHOS: Duca-Cagnellutti\tLA TINCHONETA: Alvarez-Gamarra\n\n13:00\t3° TIEMPO: Salvaña-Arcella\tPICATINCHOS: Peix-Fernandez\n\n13:00\tVUELA ALTO: Miranda-Polizzi\tAC PADEL: Rojo-Flamenco\n\n14:00\tGALACTINCHOS: Medina-Villareal\tVUELA ALTO: Velasquez-Andrade\n\n14:00\tLA TINCHONETA: Vera-Martinez\tGALACTINCHOS: Gonzalez-Velasquez\n\n15:00\tDRINK TEAM: Martinez-Zampini\t3° TIEMPO: Miranda-Soto\n\n15:00\tVUELA ALTO: Marquez-Garcia\tLA ULTIMA Y NOS VAMOS: Ozorez-Sanchez\n\n16:00\tDRINK TEAM: Chalier-Gimenez\tVUELA ALTO: Villalba-Paniagua\n\n17:00\tLA TINCHONETA: Moreno-Barria\tAC PADEL: Almaraz-Sirgo"}
-  ]
+  
+,
+    {
+      "id": 9,
+      "title": "Extensa jornada de Padel en Segundo Set",
+      "date": "24 Agosto 2025",
+      "timestamp": "2025-08-24",
+      "summary": "Con un total de 19 partidos finalizo la Novena fecha de la Copa en homenaje a Martin Gallardo...",
+      "image": "img/news/9.jpg",
+      "alt": "Partidos del finde",
+"fullContent": "Estos son los resultados de la 9na fecha del torneo por equipos Copa Challenger Martín Gallardo que se disputó este finde en las canchas del complejo 2do Set:\n\n 1) categoría 4ta damas Medina Villarreal (Team Galactinchos) le ganaron a Velazquez Romero (Team AC padel) por 6/2-6/0.\n\n2) categoría 6ta cab. González Stagnaro (Team DC padel) le ganaron a Romero Millacahuin (Team 3er tiempo) por 6/2-6/3.\n\n3) categoría 6ta damas Sosa Bianchi (Team PicaTinchos) le ganaron a Luna Herrera (Team DC padel) por3/6-6/1-6/2.\n\n4) categoría 7ma damas Quezada Iglesias (Team Galactinchos) le ganaron a Unquen Alfaro (Team Vuela Alto) por 6/2-6/3.\n\n5) categoría 4ta cab. Escufachi Lara (Team 3er tiempo) le ganaron a Andrade Echeverría (Team PicaTinchos) por 4/6-6/3-6/2.\n\n6) categoría 8va cab. Peix Fernández (Team PicaTinchos) le ganaron a Ruiz Pugnale (Team DC padel) por 6/2-6/1.\n\n7) categoría 5ta cab. Moreno Barria (Team La Tinchoneta) le ganaron a Andrade Hero (Team Vuela Alto) por 6/3-6/1.\n\n8) categoría 7ma cab. Rubio Santana (Team PicaTinchos) le ganaron a Ugarte Cuenca (Team La última y nos vamos) por 1/6-7/5-6/4.\n\n9) categoría 6ta cab. Andrade Barrios (Team PicaTinchos) le ganaron a Villarroel Quiroz (Team La Tinchoneta) por 6/3-6/4.\n\n10) categoría 7ma damas Saldivia Mur (Drink Team) le ganaron a Martínez Martínez (Team 3er tiempo) por 7/5-4/6-6/3.\n\n11) categoría 8va damas Gamarra Alvarez (Team La Tinchoneta) le ganaron a Duca Cagnelutti (Team PicaTinchos) por 6/7-7/5-7/6.\n\n12) categoría 8va cab. Peix Fernández (Team PicaTinchos) le ganaron a Salvaña Arcella (Team 3er tiempo) por 6/2-6/0.\n\n13) categoría 6ta damas Miranda Polizzi (Team Vuela Alto) le ganaron a Rojo Flamenco (Team AC padel) por 6/1-6/2.\n\n14) categoría 4ta damas Medina Villarreal (Team Galactinchos) le ganaron a Andrade Velazquez (Team Vuela Alto) por 6/2-6/3.\n\n15) categoría 7ma cab. Martinez Vera (Team La Tinchoneta) le ganaron a González Velasquez (Team Galactinchos) por 6/0-7/5.\n\n16) categoría 5ta damas Miranda Soto (Team 3er tiempo) le ganaron a Martínez Zampini (Drink Team) por 6/3-6/3.\n\n17) categoría 8va cab.Ventura Aguirre (Team Galactinchos) le ganaron a Márquez García (Team Vuela Alto) por 1/6-6/3-6/4.\n\n18) categoría 7ma cab. Chalier Giménez (Drink Team) le ganaron a Villalba Paniagua (Team Vuela Alto) por 6/3-4/6-6/2.\n\n19) categoría 5ta cab. Moreno Barria (Team La Tinchoneta) le ganaron a Almaraz Sirgo (Team AC padel) por 4/6-6/4-6/1. "}
+  
+
+
+]
 }
