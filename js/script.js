@@ -608,10 +608,10 @@ function handleHashAnchor() {
                 description: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.'
             },
             {
-                image: 'img/publi/tienda.jpg',
-                link: '',
-                title: 'Tienda de Pádel',
-                description: 'Encuentra las mejores palas, pelotas y accesorios para tu juego. ¡Ofertas especiales!'
+                image: 'img/publi/trexx.jpeg',
+                link: 'https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w',
+                title: 'Trexx TDF',
+                description: 'Encontra las mejores palas, indumentaria, pelotas y accesorios para tu juego. ¡Distribuidor oficial de Trexx en TDF!'
             },
             {
                 image: 'img/publi/publi.jpg',
