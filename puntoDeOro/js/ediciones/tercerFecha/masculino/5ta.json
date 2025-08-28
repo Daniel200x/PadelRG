@@ -1,161 +1,174 @@
 {
-  "nombre": "5ta Categoría",
+  "nombre": "7ma Categoría",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Federico Bossio/Santiago David",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 2,
-          "GF": 26,
-          "GC": 22
-        },
-        {
-          "nombre": "Federico Martinez/Martin Pacheco",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 29,
-          "GC": 16
-        },
-        {
-          "nombre": "Bruno Sirgo/Rodari",
-          "PJ": 2,
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
           "SG": 0,
-          "SP": 4,
-          "GF": 7,
-          "GC": 24
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "29/07/25 18:00 hs",
-          "equipo1": "Bossio/David",
-          "equipo2": "Martinez/Pacheco",
-          "resultado": "6-4, 2-6, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Martinez/Pacheco",
-          "equipo2": "Sirgo/Rodari",
-          "fecha": "30/07/25 21:30 hs",
-          "resultado": "6-0, 6-2"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Bossio/David",
-          "equipo2": "Sirgo/Rodari",
-          "fecha": "31/07/25 21:30 hs",
-          "resultado": "6-2, 6-3"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
         
       ]
     },
-    {
+   {
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Claudio Escobar/Julian Morales",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 19,
-          "GC": 14
-        },
-        {
-          "nombre": "Emmanuel Bravo/Christian Almaraz",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 7
-        },
-        {
-          "nombre": "Emilio Sanchez/Emiliano Moreno",
-          "PJ": 1,
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 2,
-          "GC": 12
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         }
+        
       ],
       "partidos": [
         {
-          "equipo1": "Escobar/Morales",
-          "equipo2": "Sanchez/Moreno",
-          "fecha": "30/07/25 19:30 hs",
-          "resultado": "6-2, 6-0"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Bravo/Almaraz",
-          "equipo2": "Sanchez/Moreno",
-          "fecha": "31/07/25 23:30 hs",
-          "resultado": "6-3, 6-4"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Bravo/Almaraz",
-          "equipo2": "Escobar/Morales",
-          "fecha": "02/08/25 16:00 hs",
-          "resultado": "A confirmar"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
+        
       ]
     },
+    
     {
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Braian Lizarraga/Andres Chalier",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 29,
-          "GC": 20
-        },
-        {
-          "nombre": "Dario Chacon/Guillermo Farias",
-          "PJ": 1,
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
           "SG": 0,
-          "SP": 2,
-          "GF": 6,
-          "GC": 13
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
         {
-          "nombre": "David Moreno/Villarroel",
-          "PJ": 1,
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
-          "SG": 1,
-          "SP": 2,
-          "GF": 14,
-          "GC": 16
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         }
+        
       ],
       "partidos": [
         {
-          "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Chacon/Farias",
-          "fecha": "30/07/25 21:30 hs",
-          "resultado": "6-1, 7-5"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Lizarraga/Chalier",
-          "equipo2": "Moreno/Villarroel",
-          "fecha": "31/07/25 21:30 hs",
-          "resultado": "6-2, 3-6, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Chacon/Farias",
-          "equipo2": "Moreno/Villarroel",
-          "fecha": "31/07/25 21:30 hs",
-          "resultado": "A confirmar"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -163,192 +176,394 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Ciro Andrade/Nicolas Gonzalez",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 16,
-          "GC": 15
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
         {
-          "nombre": "Andres Agnes/Cristian Perez",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 15,
-          "GC": 16
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
         {
-          "nombre": "Fabian Suarez/Martinez",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 16,
-          "GC": 16
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         }
+        
       ],
       "partidos": [
         {
-          "equipo1": "Andrade/Gonzalez",
-          "equipo2": "Agnes/Perez",
-          "fecha": "29/07/25 20:00 hs",
-          "resultado": "6-2, 6-1"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Agnes/Perez",
-          "equipo2": "Suarez/Martinez",
-          "fecha": "30/07/25 18:30 hs",
-          "resultado": "6-1, 6-3"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Andrade/Gonzalez",
-          "equipo2": "Suarez/Martinez",
-          "fecha": "1/08/25 21:00 hs",
-          "resultado": "4-6, 0-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
     {
       "nombre": "Grupo E",
       "equipos": [
-        {
-          "nombre": "Walter Rumi/Lucas Fraile",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 2,
-          "GF": 34,
-          "GC": 32
-        },
-        {
-          "nombre": "Nicolas Barrios/Joaquin Bugonovich",
-          "PJ": 2,
+       {
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 25,
-          "GC": 30
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
         {
-          "nombre": "Sebastian Villarroel/Guillermo Salgues",
-          "PJ": 2,
+          "nombre": "/",
+          "PJ": 0,
           "PG": 0,
-          "SG": 2,
-          "SP": 4,
-          "GF": 32,
-          "GC": 37
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
-{
-          "nombre": "Guillermo Boucho/Federico Santi",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 33,
-          "GC": 25
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         }
+        
       ],
       "partidos": [
         {
-          "equipo1": "Rumi/Fraile",
-          "equipo2": "Barrios/Bugonovich",
-          "fecha": "30/07/25 18:30 hs",
-          "resultado": "3-6, 7-5, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Villarroel/Salgues",
-          "equipo2": "Boucho/Santi",
-          "fecha": "30/07/25 17:30 hs",
-          "resultado": "7-6, 5-7, 5-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Rumi/Fraile",
-          "equipo2": "Villarroel/Salgues",
-          "fecha": "31/07/25 17:30 hs",
-          "resultado": "4-6, 6-3, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+       {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
         },
         {
-          "equipo1": "Boucho-Santi",
-          "equipo2": "Barrios/Bugonovich",
-          "fecha": "31/07/25 23:30 hs",
-          "resultado": "7-5, 6-3"
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+       {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo H",
+      "equipos": [
+       {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "/",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     }
-    
   ],
- "eliminatorias": {
+  "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "Partido 1 - 2do Zona B",
-          "equipo2": "2do Zona C",
-          "fecha": "Sabado 20:00 hs",
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado :00",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 2 - Bossio-David",
-          "equipo2": "2do Zona D",
-          "fecha": "Sabado 20:00 hs",
+         "equipo1": "1ro E",
+          "equipo2": "2do F",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro G",
+          "equipo2": "2do H",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro F",
+          "equipo2": "2do E",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro H",
+          "equipo2": "2do G",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
       }
     ],
     "cuartos": [
       {
-         "equipo1": "Partido 3 - Martinez-Pacheco",
-          "equipo2": "Ganador Partido 1",
-          "fecha": "Domingo 14:00 hs",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 4 - Boucho/Santi",
-          "equipo2": "1ro Zona D",
-          "fecha": "Domingo 14:00 hs",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 5 - Lizarraga/Chalier",
-          "equipo2": "Rumi/Fraile",
-          "fecha": "Domingo 15:00 hs",
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 6 - Ganador Partido 2",
-          "equipo2": "1ro Zona B",
-          "fecha": "Domingo 15:00 hs",
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],
     "semis": [
       {
-         "equipo1": "Partido 7 - Ganador Partido 3",
-          "equipo2": "Ganador Partido 4",
-          "fecha": "Domingo 19:00 hs",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 8 - Ganador Partido 5",
-          "equipo2": "Ganador Partido 6",
-          "fecha": "Domingo 19:00 hs",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],
     "final": {
-        "equipo1": "Ganador Partido 7",
-          "equipo2": "Ganador Partido 8",
-          "fecha": "Domingo 21:00 hs",
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
     }
   }
 }
