@@ -120,7 +120,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "L. Diaz/P. Miranda",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "G. Gimenez/D. Martinez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +138,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "C. Lucero/M. Salinas",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -151,22 +151,22 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "L. Diaz/P. Miranda",
+          "equipo2": "G. Gimenez/D. Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "G. Gimenez/D. Martinez",
+          "equipo2": "C. Lucero/M. Salinas",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "L. Diaz/P. Miranda",
+          "equipo2": "C. Lucero/M. Salinas",
           "resultado": "",
           "games":"A definir"
         }
