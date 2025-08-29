@@ -228,23 +228,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 1",
+          "equipo1": "J. Barria/F. Moreno",
+          "equipo2": "C. Andrade/C. Andrade",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs Cancha 1",
+          "equipo1": "J. Barria/F. Moreno",
+          "equipo2": "A. Chalier/B. Lizarraga",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 1",
+          "equipo1": "C. Andrade/C. Andrade",
+          "equipo2": "A. Chalier/B. Lizarraga",
           "resultado": "",
           "games":"A definir"
         }
@@ -273,23 +273,30 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs Cancha 6",
+          "equipo1": "E. Bravo/C. Almaraz",
+          "equipo2": "F. Rivero/M. Demarchi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs Cancha 2",
+          "equipo1": "N. Gonzalez/F. Maero",
+          "equipo2": "N. Barrios/J. Bogunovich",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 16:00 hs Cancha 1",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 16:00 hs Cancha 2",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
           "resultado": "",
           "games":"A definir"
         }
