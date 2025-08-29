@@ -20,23 +20,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 1",
+          "equipo1": "C. Escobar/B. Sirgo",
+          "equipo2": "E. Sanchez/G. Salgues",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 2",
+          "equipo1": "C. Escobar/B. Sirgo",
+          "equipo2": "A. Santi/S. Villarroel",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 1",
+          "equipo1": "E. Sanchez/G. Salgue",
+          "equipo2": "A. Santi/S. Villarroel",
           "resultado": "",
           "games":"A definir"
         }
@@ -62,23 +62,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 2",
+          "equipo1": "F. Bossio/A. Agnes",
+          "equipo2": "S. Ruiz/M. Gomez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 1",
+          "equipo1": "F. Bossio/A. Agnes",
+          "equipo2": "J. Rivero/A. Fulco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 1",
+          "equipo1": "J. Rivero/A. Fulco",
+          "equipo2": "S. Ruiz/M. Gomez",
           "resultado": "",
           "games":"A definir"
         }
@@ -105,23 +105,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 2",
+          "equipo1": "N. Escufachi/J. Morales",
+          "equipo2": "G. Farias/M. Saldaño",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs Cancha 2",
+          "equipo1": "N. Escufachi/J. Morales",
+          "equipo2": "D. Chacon/M. Trangoni",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:00 hs Cancha 1",
+          "equipo1": "G. Farias/M. Saldaño",
+          "equipo2": "D. Chacon/M. Trangoni",
           "resultado": "",
           "games":"A definir"
         }
@@ -146,23 +146,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 2",
+          "equipo1": "R. Avanzatti/F. Santi",
+          "equipo2": "C. Perez/M. Pacheco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 1",
+          "equipo1": "R. Avanzatti/F. Santi",
+          "equipo2": "D. Moreno/E. Moreno",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 1",
+          "equipo1": "D. Moreno/E. Moreno",
+          "equipo2": "C. Perez/M. Pacheco",
           "resultado": "",
           "games":"A definir"
         }
@@ -187,23 +187,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:00 hs Cancha 2",
+          "equipo1": "M. Pereyra/M. Velazquez",
+          "equipo2": "F. Castro/M. Rojo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 2",
+          "equipo1": "G. Quiroz/L. Fraile",
+          "equipo2": "F. Castro/M. Rojo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:00 hs Cancha 1",
+          "equipo1": "G. Quiroz/L. Fraile",
+          "equipo2": "M. Pereyra/M. Velazquez",
           "resultado": "",
           "games":"A definir"
         }
