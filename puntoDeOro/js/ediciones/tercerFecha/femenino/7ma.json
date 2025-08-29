@@ -215,7 +215,7 @@
       {
         "equipo1": "1ro A",
           "equipo2": "2do B",
-          "fecha": "Sabado :00",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
           "games":"A definir"
       },
@@ -243,7 +243,7 @@
       {
         "equipo1": "1ro B",
           "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
+          "fecha": "Sabado 22:00",
           "resultado": "A definir",
           "games":"A definir"
       },

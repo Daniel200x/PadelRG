@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // '6ta.json',
         ];
 
+
         // Array para almacenar todas las promesas de carga
         const promesasCarga = archivosJSON.map(archivo => {
             return fetch(archivo)
@@ -50,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     return response.json();
                 })
                 .then(data => {
-                    // Extraer el nombre de la categoría desde el nombre del archivo
                     const nombreCategoria = archivo.replace('.json', '');
                     torneosData[nombreCategoria] = data;
                     return { archivo, success: true };
@@ -64,16 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Esperar a que todas las promesas se resuelvan
         Promise.all(promesasCarga)
             .then(resultados => {
-                // Verificar si todos los archivos se cargaron correctamente
                 const archivosFallidos = resultados.filter(r => !r.success);
                 
                 if (archivosFallidos.length > 0) {
                     console.warn('Algunos archivos no se pudieron cargar:', archivosFallidos);
-                    // Mostrar advertencia pero continuar con los archivos que sí se cargaron
                     mostrarAdvertencia(archivosFallidos);
                 }
                 
-                // Mostrar partidos una vez cargados todos los datos disponibles
                 mostrarPartidosDelDia();
             })
             .catch(error => {
@@ -82,29 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    function mostrarAdvertencia(archivosFallidos) {
-        // Crear mensaje de advertencia
-        const mensaje = `No se pudieron cargar los siguientes archivos: ${archivosFallidos.map(a => a.archivo).join(', ')}. 
-                         Mostrando información disponible.`;
-        
-        // Mostrar advertencia en la interfaz (opcional)
-        const contenedor = document.querySelector('.fixture-container');
-        const advertencia = document.createElement('div');
-        advertencia.className = 'advertencia-carga';
-        advertencia.innerHTML = `
-            <div style="background-color: #fff3cd; color: #856404; padding: 10px; 
-                        border: 1px solid #ffeaa7; border-radius: 5px; margin-bottom: 15px;">
-                <strong>Advertencia:</strong> ${mensaje}
-            </div>
-        `;
-        
-        // Insertar la advertencia después del título
-        const titulo = document.querySelector('.fixture-container h1');
-        titulo.parentNode.insertBefore(advertencia, titulo.nextSibling);
-    }
-
     function mostrarPartidosDelDia() {
-        // Si aún no se han cargado los datos, salir
         if (Object.keys(torneosData).length === 0) return;
         
         const tableBody = document.getElementById('matchesTableBody');
@@ -112,49 +87,65 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let todosLosPartidos = [];
         
-        // Recorrer todas las categorías y recopilar todos los partidos del día
+        // Recorrer todas las categorías
         for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
-            // Recorrer todos los grupos de la categoría
-            categoria.grupos.forEach(grupo => {
-                // Recorrer todos los partidos del grupo
-                grupo.partidos.forEach(partido => {
-                    // Extraer información de la fecha
-                    const fechaInfo = extraerInformacionFecha(partido.fecha);
-                    
-                    // Si el partido es del día seleccionado
-                    if (fechaInfo.dia === diaActual) {
-                        // Convertir horario a formato comparable (minutos desde medianoche)
-                        const tiempoEnMinutos = convertirHorarioAMinutos(fechaInfo.horario);
-                        
-                        // Agregar a la lista con información completa
-                        todosLosPartidos.push({
-                            dia: fechaInfo.dia,
-                            horario: fechaInfo.horario,
-                            tiempoEnMinutos: tiempoEnMinutos,
-                            categoria: categoria.nombre,
-                            grupo: grupo.nombre,
-                            equipo1: partido.equipo1,
-                            equipo2: partido.equipo2,
-                            cancha: fechaInfo.cancha,
-                            partidoRaw: partido // Mantener referencia al partido original
+            // 1. Partidos de grupos (fase de grupos)
+            if (categoria.grupos && Array.isArray(categoria.grupos)) {
+                categoria.grupos.forEach(grupo => {
+                    if (grupo.partidos && Array.isArray(grupo.partidos)) {
+                        grupo.partidos.forEach(partido => {
+                            procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
                         });
                     }
                 });
-            });
+            }
+            
+            // 2. Partidos de eliminatorias (fase final)
+            if (categoria.eliminatorias) {
+                // Octavos de final
+                if (categoria.eliminatorias.octavos && Array.isArray(categoria.eliminatorias.octavos)) {
+                    categoria.eliminatorias.octavos.forEach(partido => {
+                        procesarPartido(partido, categoria.nombre, "Octavos", "Eliminatoria", todosLosPartidos);
+                    });
+                }
+                
+                // Cuartos de final
+                if (categoria.eliminatorias.cuartos && Array.isArray(categoria.eliminatorias.cuartos)) {
+                    categoria.eliminatorias.cuartos.forEach(partido => {
+                        procesarPartido(partido, categoria.nombre, "Cuartos", "Eliminatoria", todosLosPartidos);
+                    });
+                }
+                
+                // Semifinales
+                if (categoria.eliminatorias.semis && Array.isArray(categoria.eliminatorias.semis)) {
+                    categoria.eliminatorias.semis.forEach(partido => {
+                        procesarPartido(partido, categoria.nombre, "Semifinal", "Eliminatoria", todosLosPartidos);
+                    });
+                }
+                
+                // Final
+                if (categoria.eliminatorias.final) {
+                    procesarPartido(categoria.eliminatorias.final, categoria.nombre, "Final", "Eliminatoria", todosLosPartidos);
+                }
+            }
         }
         
-        // Ordenar partidos por horario (de más temprano a más tarde)
+        // Ordenar partidos por horario
         todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
         
         // Mostrar partidos en la tabla
         todosLosPartidos.forEach(partido => {
             const row = document.createElement('tr');
             
+            if (partido.fase === "Eliminatoria") {
+                row.classList.add('partido-eliminatoria');
+            }
+            
             row.innerHTML = `
                 <td>${partido.dia}</td>
                 <td>${partido.horario}</td>
                 <td>${partido.categoria}</td>
-                <td>${partido.grupo}</td>
+                <td>${partido.zona}</td>
                 <td>${partido.equipo1}</td>
                 <td>${partido.equipo2}</td>
                 <td>${partido.cancha}</td>
@@ -163,10 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
             tableBody.appendChild(row);
         });
         
-        // Actualizar contador de partidos
         document.getElementById('totalMatches').textContent = todosLosPartidos.length;
         
-        // Si no hay partidos, mostrar mensaje
         if (todosLosPartidos.length === 0) {
             const row = document.createElement('tr');
             row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
@@ -174,21 +163,76 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Función auxiliar para convertir horario a minutos desde medianoche
+    function procesarPartido(partido, categoria, zona, fase, todosLosPartidos) {
+        const fechaInfo = extraerInformacionFecha(partido.fecha);
+        
+        if (fechaInfo.dia === diaActual) {
+            const tiempoEnMinutos = convertirHorarioAMinutos(fechaInfo.horario);
+            
+            todosLosPartidos.push({
+                dia: fechaInfo.dia,
+                horario: fechaInfo.horario,
+                tiempoEnMinutos: tiempoEnMinutos,
+                categoria: categoria,
+                zona: zona,
+                equipo1: partido.equipo1,
+                equipo2: partido.equipo2,
+                cancha: fechaInfo.cancha,
+                fase: fase,
+                partidoRaw: partido
+            });
+        }
+    }
+
     function convertirHorarioAMinutos(horario) {
-        // Formato esperado: "HH:MM"
+        if (!horario || horario === "00:00" || horario === "Por definir") {
+            return 24 * 60;
+        }
+        
         const [horas, minutos] = horario.split(':').map(Number);
         return horas * 60 + minutos;
     }
 
     function extraerInformacionFecha(fechaStr) {
-        // Formato esperado: "Dia HH:MM hs Cancha X"
+        if (!fechaStr || fechaStr === "A definir") {
+            return {
+                dia: "Por definir",
+                horario: "00:00",
+                cancha: "Por definir"
+            };
+        }
+        
+        const diasSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+        const diaEncontrado = diasSemana.find(dia => fechaStr.includes(dia));
+        
+        if (diaEncontrado) {
+            let horario = "00:00";
+            const horarioMatch = fechaStr.match(/\d{1,2}:\d{2}/);
+            if (horarioMatch) {
+                horario = horarioMatch[0];
+            }
+            
+            return {
+                dia: diaEncontrado,
+                horario: horario,
+                cancha: fechaStr.includes("Cancha") ? fechaStr.split('Cancha')[1].trim() : "Por definir"
+            };
+        }
+        
         const partes = fechaStr.split(' ');
         
+        if (partes.length >= 4) {
+            return {
+                dia: partes[0],
+                horario: partes[1],
+                cancha: partes.slice(3).join(' ')
+            };
+        }
+        
         return {
-            dia: partes[0],
-            horario: partes[1],
-            cancha: partes.slice(3).join(' ') // "Cancha X" o "Cancha XX"
+            dia: "Por definir",
+            horario: "00:00",
+            cancha: "Por definir"
         };
     }
 
@@ -203,14 +247,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('totalMatches').textContent = '0';
     }
 });
-
-
-
-
-
-
-
-
-
 
     
