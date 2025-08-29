@@ -20,23 +20,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "A. Zampini/C. Gersisich",
+          "equipo2": "E. Martinez/S. Ackerman",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 2",
+          "equipo1": "A. Zampini/C. Gersisich",
+          "equipo2": "T. Luna/C. Herrera",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 1",
+          "equipo1": "E. Martinez/S. Ackerman",
+          "equipo2": "T. Luna/C. Herrera",
           "resultado": "",
           "games":"A definir"
         }
@@ -62,23 +62,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 6",
+          "equipo1": "L. Rodriguez/C. Lucero",
+          "equipo2": "G. Flamenco/F. Cutri",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 2",
+          "equipo1": "L. Rodriguez/C. Lucero",
+          "equipo2": "Y. Murga/L. Romano",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 2",
+          "equipo1": "G. Flamenco/F. Cutri",
+          "equipo2": "Y. Murga/L. Romano",
           "resultado": "",
           "games":"A definir"
         }
@@ -105,23 +105,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:00 hs Cancha 1",
+          "equipo1": "A. Soto/L. Marcial",
+          "equipo2": "F. Bianchi/R. Castillo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs Cancha 1",
+          "equipo1": "A. Vidart/S. Cortez",
+          "equipo2": "F. Bianchi/R. Castillo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 12:00 hs Cancha 1",
+          "equipo1": "A. Soto/L. Marcial",
+          "equipo2": "A. Vidart/S. Cortez",
           "resultado": "",
           "games":"A definir"
         }
@@ -146,23 +146,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 1",
+          "equipo1": "N. Marcolini/R. Cruz",
+          "equipo2": "G. Gimenez/F. Polizzi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:00 hs Cancha 2",
+          "equipo1": "N. Marcolini/R. Cruz",
+          "equipo2": "R. Terrado/F. Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 13:00 hs Cancha 1",
+          "equipo1": "G. Gimenez/F. Polizzi",
+          "equipo2": "R. Terrado/F. Martinez",
           "resultado": "",
           "games":"A definir"
         }
@@ -187,23 +187,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 2",
+          "equipo1": "I. Sosa/V. Pereda",
+          "equipo2": "G. Gimenez/D. Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs Cancha 1",
+          "equipo1": "N. Cabezas/S. Vera",
+          "equipo2": "G. Gimenez/D. Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs Cancha 1",
+          "equipo1": "I. Sosa/V. Pereda",
+          "equipo2": "N. Cabezas/S. Vera",
           "resultado": "",
           "games":"A definir"
         }
