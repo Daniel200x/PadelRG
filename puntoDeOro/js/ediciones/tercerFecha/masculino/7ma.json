@@ -20,23 +20,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs Cancha 2",
+          "equipo1": "C. Chalier/J. Gimenez",
+          "equipo2": "C. Cardenas/D. Galdames",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 6",
+          "equipo1": "S. Rodriguez/A. Garcia",
+          "equipo2": "C. Cardenas/D. Galdames",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:00 hs Cancha 2",
+          "equipo1": "C. Chalier/J. Gimenez",
+          "equipo2": "C. Cardenas/D. Galdames",
           "resultado": "",
           "games":"A definir"
         }
@@ -62,23 +62,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 3",
+          "equipo1": "S. Barila/N. Romero",
+          "equipo2": "R. Pedraza/E. Barrera",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 6",
+          "equipo1": "S. Barila/N. Romero",
+          "equipo2": "G. Moroni/R. Bello",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 5",
+          "equipo1": "R. Pedraza/E. Barrera",
+          "equipo2": "G. Moroni/R. Bello",
           "resultado": "",
           "games":"A definir"
         }
