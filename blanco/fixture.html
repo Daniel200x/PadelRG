@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fixture del Día - Pádel RG</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/blanco.css">
+    <link rel="stylesheet" href="../ranking/css/ranking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81C2M2PPXT');
+    </script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Pádel RG Logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
+                            <li><a href="../arenas/arenas.html">Arenas</a></li>
+                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                            <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/ranking/ranking.html">Ranking</a></li>
+                    <li><a href="/blanco/fixture.html">Fixture</a></li>
+                    <li><a href="/galeria/galeria.html">Galería</a></li>
+                    <li><a href="/contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-social">
+                <a href="https://www.instagram.com/padel__rg/#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal del fixture del día -->
+    <div class="fixture-container">
+        <h1>Fixture del Día</h1>
+        
+        <!-- Selector de día -->
+        <div class="day-selector">
+            <h2>Selecciona un día:</h2>
+            <div class="day-buttons">
+                <button class="day-btn active" data-day="Miercoles">Miércoles</button>
+                <button class="day-btn" data-day="Jueves">Jueves</button>
+                <button class="day-btn" data-day="Viernes">Viernes</button>
+                <button class="day-btn" data-day="Sabado">Sábado</button>
+                <button class="day-btn" data-day="Domingo">Domingo</button>
+            </div>
+        </div>
+        
+        <!-- Tabla de partidos -->
+        <div class="matches-table-container">
+            <table class="matches-table">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Categoría</th>
+                        <th>Zona</th>
+                        <th>Equipo 1</th>
+                        <th>Equipo 2</th>
+                        <th>Cancha</th>
+                    </tr>
+                </thead>
+                <tbody id="matchesTableBody">
+                    <!-- Los partidos se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Contador de partidos -->
+        <div class="matches-count">
+            <p>Total de partidos: <span id="totalMatches">0</span></p>
+        </div>
+    </div>
+
+    <!-- Espacio de publicidad -->
+    <div class="ad-space">
+        <div class="ad-container">
+            <div class="ad-title">Publicidad</div>
+            <div class="ads-wrapper">
+                <a href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4" target="_blank" class="ad-item">
+                    <img src="../img/muebles.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w" target="_blank" class="ad-item">
+                    <img src="../img/publi/trexx.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Torneos</a>
+                <a href="/acerca/acerca.html">Acerca de</a>
+                <a href="/contacto/contacto.html">Contacto</a>
+                <a href="/privacidad/privacidad.html">Política de Privacidad</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> Pádel RG. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+
+    <script src="../blanco/js/blanco.js"></script>
+    <script src="../blanco/js/fixture-del-dia.js"></script>
+</body>
+</html>

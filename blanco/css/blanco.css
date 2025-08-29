@@ -72,3 +72,583 @@
 }
 
 
+/* Estilos para el fixture del día */
+.fixture-container {
+    max-width: 1400px;
+    margin: 80px auto 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fixture-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+/* Selector de día */
+.day-selector {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.day-selector h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.day-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.day-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.day-btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.day-btn.active {
+    background-color: #2980b9;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabla de partidos */
+.matches-table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.matches-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.matches-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+.matches-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.matches-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.matches-table tr:hover {
+    background-color: #e8f4fc;
+}
+
+/* Contador de partidos */
+.matches-count {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .fixture-container {
+        padding: 15px;
+    }
+    
+    .matches-table th,
+    .matches-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .fixture-container {
+        margin-top: 70px;
+        padding: 10px;
+    }
+    
+    .day-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .day-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .matches-table {
+        font-size: 0.85rem;
+    }
+    
+    .matches-table th,
+    .matches-table td {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .matches-table {
+        font-size: 0.8rem;
+    }
+    
+    .matches-table th:nth-child(4),
+    .matches-table td:nth-child(4) {
+        display: none;
+    }
+}
+/* Mejoras para la tabla de partidos - Mayor contraste */
+.matches-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.matches-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+}
+
+.matches-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333; /* Color más oscuro para mejor contraste */
+    font-size: 15px;
+}
+
+.matches-table tr {
+    background-color: #ffffff;
+}
+
+.matches-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.matches-table tr:hover {
+    background-color: #e8f4fc;
+}
+
+/* Mejora para el contenedor principal */
+.fixture-container {
+    max-width: 1400px;
+    margin: 80px auto 30px;
+    padding: 25px;
+    background-color: white; /* Fondo sólido en lugar de transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejora para los botones de día */
+.day-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.day-btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-btn.active {
+    background-color: #2980b9;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejora para el contador de partidos */
+.matches-count {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Estilo para el mensaje de "No hay partidos" */
+.matches-table td[colspan] {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #7f8c8d;
+    background-color: #f9f9f9;
+}
+
+/* Mejora responsive */
+@media (max-width: 768px) {
+    .matches-table {
+        font-size: 14px;
+    }
+    
+    .matches-table th,
+    .matches-table td {
+        padding: 10px 8px;
+    }
+    
+    .matches-table th {
+        font-size: 14px;
+    }
+    
+    .matches-table td {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fixture-container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+    
+    .matches-table th:nth-child(4),
+    .matches-table td:nth-child(4) {
+        display: none;
+    }
+    
+    .day-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .day-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+/* Estilo para la información de los partidos - Más negrita */
+.matches-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600; /* Aumenté el peso de la fuente para más negrita */
+}
+
+/* Estilo específico para los nombres de equipos */
+.matches-table td:nth-child(5),
+.matches-table td:nth-child(6) {
+    font-weight: 700; /* Aún más negrita para los nombres de equipos */
+}
+
+/* Mantener los títulos como están */
+.matches-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+}
+
+/* Mejora para el contenedor principal */
+.fixture-container {
+    max-width: 1400px;
+    margin: 80px auto 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones de día */
+.day-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.day-btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-btn.active {
+    background-color: #2980b9;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejora para el contador de partidos */
+.matches-count {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Estilo para el mensaje de "No hay partidos" */
+.matches-table td[colspan] {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #7f8c8d;
+    background-color: #f9f9f9;
+    font-weight: 600; /* También con negrita */
+}
+
+/* Mejora responsive */
+@media (max-width: 768px) {
+    .matches-table {
+        font-size: 14px;
+    }
+    
+    .matches-table th,
+    .matches-table td {
+        padding: 10px 8px;
+    }
+    
+    .matches-table th {
+        font-size: 14px;
+    }
+    
+    .matches-table td {
+        font-size: 13px;
+        font-weight: 600; /* Mantener negrita en responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .fixture-container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+    
+    .matches-table th:nth-child(4),
+    .matches-table td:nth-child(4) {
+        display: none;
+    }
+    
+    .day-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .day-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Estilo para la información de los partidos - Más negrita */
+.matches-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Estilo específico para los nombres de equipos */
+.matches-table td:nth-child(5),
+.matches-table td:nth-child(6) {
+    font-weight: 700;
+}
+
+/* Filas alternadas - Blanco y Naranja */
+.matches-table tr {
+    background-color: #ffffff; /* Fila blanca */
+}
+
+.matches-table tr:nth-child(even) {
+    background-color: #FF8C00; /* Naranja similar al logo */
+    color: white; /* Texto blanco para mejor contraste */
+}
+
+/* Asegurar que el texto sea visible sobre fondo naranja */
+.matches-table tr:nth-child(even) td {
+    color: white;
+    font-weight: 600;
+}
+
+/* Efecto hover para ambas filas */
+.matches-table tr:hover {
+    background-color: #e8f4fc;
+}
+
+.matches-table tr:nth-child(even):hover {
+    background-color: #FF7F00; /* Naranja un poco más oscuro al pasar el mouse */
+}
+
+/* Mantener los títulos como están */
+.matches-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+}
+
+/* Mejora para el contenedor principal */
+.fixture-container {
+    max-width: 1400px;
+    margin: 80px auto 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones de día */
+.day-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.day-btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-btn.active {
+    background-color: #2980b9;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejora para el contador de partidos */
+.matches-count {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Estilo para el mensaje de "No hay partidos" */
+.matches-table td[colspan] {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #7f8c8d;
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+/* Mejora responsive */
+@media (max-width: 768px) {
+    .matches-table {
+        font-size: 14px;
+    }
+    
+    .matches-table th,
+    .matches-table td {
+        padding: 10px 8px;
+    }
+    
+    .matches-table th {
+        font-size: 14px;
+    }
+    
+    .matches-table td {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    /* Asegurar contraste en responsive */
+    .matches-table tr:nth-child(even) td {
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 480px) {
+    .fixture-container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+    
+    .matches-table th:nth-child(4),
+    .matches-table td:nth-child(4) {
+        display: none;
+    }
+    
+    .day-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .day-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
