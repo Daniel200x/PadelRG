@@ -5,31 +5,16 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "C. Escobar/B. Sirgo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "E. Sanchez/G. Salgues",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "A. Santi/S. Villarroel",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -62,31 +47,16 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "F. Bossio/A. Agnes",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "J. Rivero/A. Fulco",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "S. Ruiz/M. Gomez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -120,31 +90,16 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "N. Escufachi/J. Morales",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "G. Farias/M. Saldaño",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "D. Chacon/M. Trangoni",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -176,31 +131,16 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "R. Avanzatti/F. Santi",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "D. Moreno/E. Moreno",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "C. Perez/M. Pacheco",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -232,31 +172,16 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "G. Quiroz/L. Fraile",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "M. Pereyra/M. Velazquez",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "F. Castro/M. Rojo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -288,31 +213,16 @@
       "nombre": "Grupo F",
       "equipos": [
        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "J. Barria/F. Moreno",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "C. Andrade/C. Andrade",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "A. Chalier/B. Lizarraga",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -344,87 +254,20 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "E. Bravo/C. Almaraz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "F. Rivero/M. Demarchi",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "nombre": "N. Gonzalez/F. Maero",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo H",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "N. Barrios/J. Bogunovich",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
