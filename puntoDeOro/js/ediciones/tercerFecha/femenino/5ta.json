@@ -5,31 +5,16 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "A. Zampini/C. Gersisich",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "E. Martinez/S. Ackerman",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "T. Luna/C. Herrera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -62,31 +47,16 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "L. Rodriguez/C. Lucero",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "G. Flamenco/F. Cutri",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Y. Murga/L. Romano",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -120,31 +90,16 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "A. Soto/L. Marcial",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "A. Vidart/S. Cortez",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "F. Bianchi/R. Castillo",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -176,31 +131,16 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "N. Marcolini/R. Cruz",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "G. Gimenez/F. Polizzi",
+        "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "R. Terrado/F. Martinez",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -232,199 +172,16 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "N. Cabezas/S. Vera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "I. Sosa/V. Pereda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo F",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo G",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo H",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "G. Gimenez/D. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
