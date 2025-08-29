@@ -269,23 +269,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 23:00 hs Cancha 2",
+          "equipo1": "M. Olivera/L. Cardozo",
+          "equipo2": "B. Villa/J. Cutruzzola",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:30 hs Cancha 1",
+          "equipo1": "N. Lucena/I. Perez",
+          "equipo2": "B. Villa/J. Cutruzzola",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:00 hs Cancha 2",
+          "equipo1": "M. Olivera/L. Cardozo",
+          "equipo2": "N. Lucena/I. Perez",
           "resultado": "",
           "games":"A definir"
         }
@@ -310,23 +310,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 17:00 hs Cancha 2",
+          "equipo1": "J. Paniagua/C. Ortiz",
+          "equipo2": "L. Vera/N. Gonzalez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 17:00 hs Cancha 1",
+          "equipo1": "C. Ozores/W. Arrua",
+          "equipo2": "L. Vera/N. Gonzalez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 13:00 hs Cancha 2",
+          "equipo1": "J. Paniagua/C. Ortiz",
+          "equipo2": "C. Ozores/W. Arrua",
           "resultado": "",
           "games":"A definir"
         }
@@ -355,28 +355,28 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 4",
+          "equipo1": "R. Fritz/I. Del Cantare",
+          "equipo2": "R. Gonzalez/M. Llanes",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:00 hs Cancha 5",
+          "equipo1": "S. Torres/R. Peix",
+          "equipo2": "F. Navarro/P. Alfonso",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 20:00 hs Cancha 5",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 20:00 hs Cancha 6",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "resultado": "",
@@ -407,28 +407,28 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs Cancha 3",
+          "equipo1": "M. Spamer/J. Chaparro",
+          "equipo2": "E. Cuellar/N. Ambrosini",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 6",
+          "equipo1": "A. Romero/A. Martino",
+          "equipo2": "M. Guaragna/M. Aranguez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 20:00 hs Cancha 3",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 20:00 hs Cancha 3",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "resultado": "",
