@@ -105,23 +105,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 3",
+          "equipo1": "D. Ruiz/S. Aranda",
+          "equipo2": "H. Bucci/J. Retamar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs Cancha 4",
+          "equipo1": "H. Bucci/J. Retamar",
+          "equipo2": "F. Mariani/A. Perez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs Cancha 3",
+          "equipo1": "D. Ruiz/S. Aranda",
+          "equipo2": "F. Mariani/A. Perez",
           "resultado": "",
           "games":"A definir"
         }
@@ -146,23 +146,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 5",
+          "equipo1": "A. Pintos/G. Vera",
+          "equipo2": "E. Sanchez/E. Arteaga",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs Cancha 5",
+          "equipo1": "A. Pintos/G. Vera",
+          "equipo2": "A. Porcu/F. Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 5",
+          "equipo1": "A. Porcu/F. Ruiz",
+          "equipo2": "E. Sanchez/E. Arteaga",
           "resultado": "",
           "games":"A definir"
         }
@@ -187,23 +187,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:00 hs Cancha 6",
+          "equipo1": "S. Rubio/H. Rojo",
+          "equipo2": "A. Maluf/A confirmar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs Cancha 4",
+          "equipo1": "S. Rubio/H. Rojo",
+          "equipo2": "F. Marquez/R. Garcia",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs Cancha 4",
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "A. Maluf/A confirmar",
           "resultado": "",
           "games":"A definir"
         }
@@ -228,23 +228,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 23:00 hs Cancha 1",
+          "equipo1": "B. Martinez/J. Aguilar",
+          "equipo2": "G. Sanchez/S. Nuñez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 5",
+          "equipo1": "B. Martinez/J. Aguilar",
+          "equipo2": "R. Bordon/F. Bordon",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:00 hs Cancha 6",
+          "equipo1": "G. Sanchez/S. Nuñez",
+          "equipo2": "R. Bordon/F. Bordon",
           "resultado": "",
           "games":"A definir"
         }
