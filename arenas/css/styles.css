@@ -1092,3 +1092,72 @@ tr:hover {
     max-width: 800px; /* Mismo ancho que el header-edicion */
 }
 
+/* Estilos mejorados para partidos de eliminatorias */
+.partido-eliminatoria {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.equipos-eliminatoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.equipo-eliminatoria {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.vs-separator {
+    margin: 0 15px;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+.resultado-eliminatoria {
+    text-align: center;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.fecha-eliminatoria {
+    text-align: center;
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+/* Para partidos sin resultado */
+.resultado-pendiente {
+    background-color: #7f8c8d;
+}
+
+/* Estilos responsivos para eliminatorias */
+@media (max-width: 768px) {
+    .equipos-eliminatoria {
+        flex-direction: column;
+    }
+    
+    .vs-separator {
+        margin: 8px 0;
+    }
+    
+    .equipo-eliminatoria {
+        min-width: 100%;
+    }
+}
