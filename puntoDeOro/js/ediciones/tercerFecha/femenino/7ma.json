@@ -20,23 +20,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 2",
+          "equipo1": "P. Elstner/G. Perez",
+          "equipo2": "I. Herrera/J. Ramadori",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs Cancha 6",
+          "equipo1": "J. Cichero/P. Lapejrusk",
+          "equipo2": "I. Herrera/J. Ramadori",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 3",
+          "equipo1": "P. Elstner/G. Perez",
+          "equipo2": "J. Cichero/P. Lapejrusk",
           "resultado": "",
           "games":"A definir"
         }
@@ -62,23 +62,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs Cancha 6",
+          "equipo1": "M. Arias/M. Rausch",
+          "equipo2": "M. Unquen/D. Alfaro",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 3",
+          "equipo1": "M. Arias/M. Rausch",
+          "equipo2": "L. Barria/F. Escobar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs Cancha 2",
+          "equipo1": "M. Unquen/D. Alfaro",
+          "equipo2": "L. Barria/F. Escobar",
           "resultado": "",
           "games":"A definir"
         }
@@ -105,23 +105,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 6",
+          "equipo1": "L. Gomez/P. Vallone",
+          "equipo2": "D. Martinez/V. Lopez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs Cancha 6",
+          "equipo1": "L. Gomez/P. Vallone",
+          "equipo2": "R. Gamarra/S. Sanabria",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 3",
+          "equipo1": "R. Gamarra/S. Sanabria",
+          "equipo2": "D. Martinez/V. Lopez",
           "resultado": "",
           "games":"A definir"
         }
@@ -146,23 +146,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 6",
+          "equipo1": "K. Girollet/C. Vargas",
+          "equipo2": "M. Velazco/V. Vera",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 5",
+          "equipo1": "K. Girollet/C. Vargas",
+          "equipo2": "K. Beamonte/J. Perolo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 6",
+          "equipo1": "K. Beamonte/J. Perolo",
+          "equipo2": "M. Velazco/V. Vera",
           "resultado": "",
           "games":"A definir"
         }
@@ -187,23 +187,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs Cancha 5",
+          "equipo1": "A. Zabala/E. Duca",
+          "equipo2": "V. Nehue/S. Guerrero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:00 hs Cancha 2",
+          "equipo1": "A. Alderete/M. Linetti",
+          "equipo2": "V. Nehue/S. Guerrero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs Cancha 1",
+          "equipo1": "A. Alderete/M. Linetti",
+          "equipo2": "A. Zabala/E. Duca",
           "resultado": "",
           "games":"A definir"
         }
