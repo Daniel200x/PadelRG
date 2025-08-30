@@ -79,89 +79,96 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    function mostrarPartidosDelDia() {
-        if (Object.keys(torneosData).length === 0) return;
+   function mostrarPartidosDelDia() {
+    if (Object.keys(torneosData).length === 0) return;
+    
+    const tableBody = document.getElementById('matchesTableBody');
+    tableBody.innerHTML = '';
+    
+    let todosLosPartidos = [];
+    
+    // Recorrer todas las categorías
+    for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
+        // 1. Partidos de grupos (fase de grupos)
+        if (categoria.grupos && Array.isArray(categoria.grupos)) {
+            categoria.grupos.forEach(grupo => {
+                if (grupo.partidos && Array.isArray(grupo.partidos)) {
+                    grupo.partidos.forEach(partido => {
+                        procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
+                    });
+                }
+            });
+        }
         
-        const tableBody = document.getElementById('matchesTableBody');
-        tableBody.innerHTML = '';
-        
-        let todosLosPartidos = [];
-        
-        // Recorrer todas las categorías
-        for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
-            // 1. Partidos de grupos (fase de grupos)
-            if (categoria.grupos && Array.isArray(categoria.grupos)) {
-                categoria.grupos.forEach(grupo => {
-                    if (grupo.partidos && Array.isArray(grupo.partidos)) {
-                        grupo.partidos.forEach(partido => {
-                            procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
-                        });
-                    }
+        // 2. Partidos de eliminatorias (fase final)
+        if (categoria.eliminatorias) {
+            // Octavos de final
+            if (categoria.eliminatorias.octavos && Array.isArray(categoria.eliminatorias.octavos)) {
+                categoria.eliminatorias.octavos.forEach(partido => {
+                    procesarPartido(partido, categoria.nombre, "Octavos", "Eliminatoria", todosLosPartidos);
                 });
             }
             
-            // 2. Partidos de eliminatorias (fase final)
-            if (categoria.eliminatorias) {
-                // Octavos de final
-                if (categoria.eliminatorias.octavos && Array.isArray(categoria.eliminatorias.octavos)) {
-                    categoria.eliminatorias.octavos.forEach(partido => {
-                        procesarPartido(partido, categoria.nombre, "Octavos", "Eliminatoria", todosLosPartidos);
-                    });
-                }
-                
-                // Cuartos de final
-                if (categoria.eliminatorias.cuartos && Array.isArray(categoria.eliminatorias.cuartos)) {
-                    categoria.eliminatorias.cuartos.forEach(partido => {
-                        procesarPartido(partido, categoria.nombre, "Cuartos", "Eliminatoria", todosLosPartidos);
-                    });
-                }
-                
-                // Semifinales
-                if (categoria.eliminatorias.semis && Array.isArray(categoria.eliminatorias.semis)) {
-                    categoria.eliminatorias.semis.forEach(partido => {
-                        procesarPartido(partido, categoria.nombre, "Semifinal", "Eliminatoria", todosLosPartidos);
-                    });
-                }
-                
-                // Final
-                if (categoria.eliminatorias.final) {
-                    procesarPartido(categoria.eliminatorias.final, categoria.nombre, "Final", "Eliminatoria", todosLosPartidos);
-                }
-            }
-        }
-        
-        // Ordenar partidos por horario
-        todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
-        
-        // Mostrar partidos en la tabla
-        todosLosPartidos.forEach(partido => {
-            const row = document.createElement('tr');
-            
-            if (partido.fase === "Eliminatoria") {
-                row.classList.add('partido-eliminatoria');
+            // Cuartos de final
+            if (categoria.eliminatorias.cuartos && Array.isArray(categoria.eliminatorias.cuartos)) {
+                categoria.eliminatorias.cuartos.forEach(partido => {
+                    procesarPartido(partido, categoria.nombre, "Cuartos", "Eliminatoria", todosLosPartidos);
+                });
             }
             
-            row.innerHTML = `
-                <td>${partido.dia}</td>
-                <td>${partido.horario}</td>
-                <td>${partido.categoria}</td>
-                <td>${partido.zona}</td>
-                <td>${partido.equipo1}</td>
-                <td>${partido.equipo2}</td>
-                <td>${partido.cancha}</td>
-            `;
+            // Semifinales
+            if (categoria.eliminatorias.semis && Array.isArray(categoria.eliminatorias.semis)) {
+                categoria.eliminatorias.semis.forEach(partido => {
+                    procesarPartido(partido, categoria.nombre, "Semifinal", "Eliminatoria", todosLosPartidos);
+                });
+            }
             
-            tableBody.appendChild(row);
-        });
-        
-        document.getElementById('totalMatches').textContent = todosLosPartidos.length;
-        
-        if (todosLosPartidos.length === 0) {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
-            tableBody.appendChild(row);
+            // Final
+            if (categoria.eliminatorias.final) {
+                procesarPartido(categoria.eliminatorias.final, categoria.nombre, "Final", "Eliminatoria", todosLosPartidos);
+            }
         }
     }
+    
+    // Ordenar partidos por horario
+    todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
+    
+    // Mostrar partidos en la tabla
+    todosLosPartidos.forEach(partido => {
+        const row = document.createElement('tr');
+        
+        if (partido.fase === "Eliminatoria") {
+            row.classList.add('partido-eliminatoria');
+        }
+        
+        // Obtener el resultado del partido (si existe)
+        const resultado = partido.partidoRaw.resultado || "Por jugarse";
+        const games = partido.partidoRaw.games || "";
+        
+        // Mostrar resultado y games si está disponible
+        const resultadoTexto = resultado !== "Por jugarse" ? `${resultado} ${games}` : resultado;
+        
+        row.innerHTML = `
+            <td>${resultadoTexto}</td>
+            <td>${partido.horario}</td>
+            <td>${partido.categoria}</td>
+            <td>${partido.zona}</td>
+            <td>${partido.equipo1}</td>
+            <td>${partido.equipo2}</td>
+            <td>${partido.cancha}</td>
+        `;
+        
+        tableBody.appendChild(row);
+    });
+    
+    document.getElementById('totalMatches').textContent = todosLosPartidos.length;
+    
+    if (todosLosPartidos.length === 0) {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
+        tableBody.appendChild(row);
+    }
+}
 
     function procesarPartido(partido, categoria, zona, fase, todosLosPartidos) {
         const fechaInfo = extraerInformacionFecha(partido.fecha);
