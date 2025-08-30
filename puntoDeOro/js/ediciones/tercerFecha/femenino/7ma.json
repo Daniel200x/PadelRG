@@ -216,56 +216,56 @@
         "equipo1": "1ro A",
           "equipo2": "2do B",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro E",
           "equipo2": "2do F",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do D",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro G",
           "equipo2": "2do H",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
         "equipo1": "1ro B",
           "equipo2": "2do A",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro F",
           "equipo2": "2do E",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro D",
           "equipo2": "2do C",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "1ro H",
           "equipo2": "2do G",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       }
     ],
@@ -274,28 +274,28 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       }
     ],
@@ -304,14 +304,14 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
       }
     ],
@@ -319,7 +319,7 @@
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
+          "resultado": "",
           "games":"A definir"
     }
   }

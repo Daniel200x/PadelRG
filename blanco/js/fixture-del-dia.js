@@ -29,25 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function cargarDatosExternos() {
-        // Array con los nombres de todos los archivos JSON a cargar
-        const archivosJSON = [
-            '../puntoDeOro/js/ediciones/tercerFecha/femenino/5ta.json',
+        const archivosJSON = ['../puntoDeOro/js/ediciones/tercerFecha/femenino/5ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/7ma.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/5ta.json',
-            '../puntoDeOro/js/ediciones/tercerFecha/masculino/7ma.json',
-            // Agregar aquí más archivos JSON cuando sea necesario
-            // '8va.json',
-            // '6ta.json',
-        ];
-
-
-        // Array para almacenar todas las promesas de carga
+            '../puntoDeOro/js/ediciones/tercerFecha/masculino/7ma.json'];
         const promesasCarga = archivosJSON.map(archivo => {
             return fetch(archivo)
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Error al cargar ${archivo}: ${response.status}`);
-                    }
+                    if (!response.ok) throw new Error(`Error al cargar ${archivo}: ${response.status}`);
                     return response.json();
                 })
                 .then(data => {
@@ -61,16 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         });
 
-        // Esperar a que todas las promesas se resuelvan
         Promise.all(promesasCarga)
             .then(resultados => {
                 const archivosFallidos = resultados.filter(r => !r.success);
-                
                 if (archivosFallidos.length > 0) {
                     console.warn('Algunos archivos no se pudieron cargar:', archivosFallidos);
                     mostrarAdvertencia(archivosFallidos);
                 }
-                
                 mostrarPartidosDelDia();
             })
             .catch(error => {
@@ -79,96 +65,65 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-   function mostrarPartidosDelDia() {
-    if (Object.keys(torneosData).length === 0) return;
-    
-    const tableBody = document.getElementById('matchesTableBody');
-    tableBody.innerHTML = '';
-    
-    let todosLosPartidos = [];
-    
-    // Recorrer todas las categorías
-    for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
-        // 1. Partidos de grupos (fase de grupos)
-        if (categoria.grupos && Array.isArray(categoria.grupos)) {
-            categoria.grupos.forEach(grupo => {
-                if (grupo.partidos && Array.isArray(grupo.partidos)) {
-                    grupo.partidos.forEach(partido => {
-                        procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
-                    });
-                }
+    function mostrarPartidosDelDia() {
+        if (Object.keys(torneosData).length === 0) return;
+        
+        const tableBody = document.getElementById('matchesTableBody');
+        tableBody.innerHTML = '';
+        
+        let todosLosPartidos = [];
+        
+        // Recorrer todas las categorías
+        for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
+            // Partidos de grupos
+            if (categoria.grupos && Array.isArray(categoria.grupos)) {
+                categoria.grupos.forEach(grupo => {
+                    if (grupo.partidos && Array.isArray(grupo.partidos)) {
+                        grupo.partidos.forEach(partido => {
+                            procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
+                        });
+                    }
+                });
+            }
+            
+            // Partidos de eliminatorias
+            if (categoria.eliminatorias) {
+                procesarEliminatorias(categoria.eliminatorias, categoria.nombre, todosLosPartidos);
+            }
+        }
+        
+        // Ordenar y mostrar partidos
+        todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
+        mostrarPartidosEnTabla(todosLosPartidos);
+    }
+
+    function procesarEliminatorias(eliminatorias, categoria, todosLosPartidos) {
+        // Octavos de final
+        if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
+            eliminatorias.octavos.forEach(partido => {
+                procesarPartido(partido, categoria, "Octavos", "Eliminatoria", todosLosPartidos);
             });
         }
         
-        // 2. Partidos de eliminatorias (fase final)
-        if (categoria.eliminatorias) {
-            // Octavos de final
-            if (categoria.eliminatorias.octavos && Array.isArray(categoria.eliminatorias.octavos)) {
-                categoria.eliminatorias.octavos.forEach(partido => {
-                    procesarPartido(partido, categoria.nombre, "Octavos", "Eliminatoria", todosLosPartidos);
-                });
-            }
-            
-            // Cuartos de final
-            if (categoria.eliminatorias.cuartos && Array.isArray(categoria.eliminatorias.cuartos)) {
-                categoria.eliminatorias.cuartos.forEach(partido => {
-                    procesarPartido(partido, categoria.nombre, "Cuartos", "Eliminatoria", todosLosPartidos);
-                });
-            }
-            
-            // Semifinales
-            if (categoria.eliminatorias.semis && Array.isArray(categoria.eliminatorias.semis)) {
-                categoria.eliminatorias.semis.forEach(partido => {
-                    procesarPartido(partido, categoria.nombre, "Semifinal", "Eliminatoria", todosLosPartidos);
-                });
-            }
-            
-            // Final
-            if (categoria.eliminatorias.final) {
-                procesarPartido(categoria.eliminatorias.final, categoria.nombre, "Final", "Eliminatoria", todosLosPartidos);
-            }
-        }
-    }
-    
-    // Ordenar partidos por horario
-    todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
-    
-    // Mostrar partidos en la tabla
-    todosLosPartidos.forEach(partido => {
-        const row = document.createElement('tr');
-        
-        if (partido.fase === "Eliminatoria") {
-            row.classList.add('partido-eliminatoria');
+        // Cuartos de final
+        if (eliminatorias.cuartos && Array.isArray(eliminatorias.cuartos)) {
+            eliminatorias.cuartos.forEach(partido => {
+                procesarPartido(partido, categoria, "Cuartos", "Eliminatoria", todosLosPartidos);
+            });
         }
         
-        // Obtener el resultado del partido (si existe)
-        const resultado = partido.partidoRaw.resultado || "Por jugarse";
-        const games = partido.partidoRaw.games || "";
+        // Semifinales
+        if (eliminatorias.semis && Array.isArray(eliminatorias.semis)) {
+            eliminatorias.semis.forEach(partido => {
+                procesarPartido(partido, categoria, "Semifinal", "Eliminatoria", todosLosPartidos);
+            });
+        }
         
-        // Mostrar resultado y games si está disponible
-        const resultadoTexto = resultado !== "Por jugarse" ? `${resultado} ${games}` : resultado;
-        
-        row.innerHTML = `
-            <td>${resultadoTexto}</td>
-            <td>${partido.horario}</td>
-            <td>${partido.categoria}</td>
-            <td>${partido.zona}</td>
-            <td>${partido.equipo1}</td>
-            <td>${partido.equipo2}</td>
-            <td>${partido.cancha}</td>
-        `;
-        
-        tableBody.appendChild(row);
-    });
-    
-    document.getElementById('totalMatches').textContent = todosLosPartidos.length;
-    
-    if (todosLosPartidos.length === 0) {
-        const row = document.createElement('tr');
-        row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
-        tableBody.appendChild(row);
+        // Final
+        if (eliminatorias.final) {
+            procesarPartido(eliminatorias.final, categoria, "Final", "Eliminatoria", todosLosPartidos);
+        }
     }
-}
 
     function procesarPartido(partido, categoria, zona, fase, todosLosPartidos) {
         const fechaInfo = extraerInformacionFecha(partido.fecha);
@@ -191,22 +146,50 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function convertirHorarioAMinutos(horario) {
-        if (!horario || horario === "00:00" || horario === "Por definir") {
-            return 24 * 60;
+    function mostrarPartidosEnTabla(partidos) {
+    const tableBody = document.getElementById('matchesTableBody');
+    
+    partidos.forEach(partido => {
+        const row = document.createElement('tr');
+        
+        if (partido.fase === "Eliminatoria") {
+            row.classList.add('partido-eliminatoria');
         }
         
+        // Obtener solo el campo "games" del partido
+        const games = partido.partidoRaw.games || "A definir";
+        
+        row.innerHTML = `
+            <td>${partido.horario}</td>
+            <td>${partido.categoria}</td>
+            <td>${partido.zona}</td>
+            <td>${partido.equipo1}</td>
+            <td>${partido.equipo2}</td>
+            <td>${partido.cancha}</td>
+            <td>${games}</td>
+        `;
+        
+        tableBody.appendChild(row);
+    });
+    
+    document.getElementById('totalMatches').textContent = partidos.length;
+    
+    if (partidos.length === 0) {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
+        tableBody.appendChild(row);
+    }
+}
+
+    function convertirHorarioAMinutos(horario) {
+        if (!horario || horario === "00:00" || horario === "Por definir") return 24 * 60;
         const [horas, minutos] = horario.split(':').map(Number);
         return horas * 60 + minutos;
     }
 
     function extraerInformacionFecha(fechaStr) {
         if (!fechaStr || fechaStr === "A definir") {
-            return {
-                dia: "Por definir",
-                horario: "00:00",
-                cancha: "Por definir"
-            };
+            return { dia: "Por definir", horario: "00:00", cancha: "Por definir" };
         }
         
         const diasSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
@@ -215,9 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (diaEncontrado) {
             let horario = "00:00";
             const horarioMatch = fechaStr.match(/\d{1,2}:\d{2}/);
-            if (horarioMatch) {
-                horario = horarioMatch[0];
-            }
+            if (horarioMatch) horario = horarioMatch[0];
             
             return {
                 dia: diaEncontrado,
@@ -227,20 +208,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         const partes = fechaStr.split(' ');
-        
         if (partes.length >= 4) {
-            return {
-                dia: partes[0],
-                horario: partes[1],
-                cancha: partes.slice(3).join(' ')
-            };
+            return { dia: partes[0], horario: partes[1], cancha: partes.slice(3).join(' ') };
         }
         
-        return {
-            dia: "Por definir",
-            horario: "00:00",
-            cancha: "Por definir"
-        };
+        return { dia: "Por definir", horario: "00:00", cancha: "Por definir" };
     }
 
     function mostrarError() {
@@ -253,6 +225,26 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.getElementById('totalMatches').textContent = '0';
     }
+
+    function mostrarAdvertencia(archivosFallidos) {
+        const mensaje = `No se pudieron cargar: ${archivosFallidos.map(a => a.archivo).join(', ')}. Mostrando información disponible.`;
+        
+        const advertencia = document.createElement('div');
+        advertencia.className = 'advertencia-carga';
+        advertencia.innerHTML = `
+            <div style="background-color: #fff3cd; color: #856404; padding: 10px; 
+                        border: 1px solid #ffeaa7; border-radius: 5px; margin-bottom: 15px;">
+                <strong>Advertencia:</strong> ${mensaje}
+            </div>
+        `;
+        
+        const titulo = document.querySelector('.fixture-container h1');
+        titulo.parentNode.insertBefore(advertencia, titulo.nextSibling);
+    }
 });
 
-    
+
+
+
+
+

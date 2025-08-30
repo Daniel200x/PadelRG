@@ -652,3 +652,43 @@
         margin: 0 auto;
     }
 }
+
+
+
+/* Estilo para la columna de resultados (ahora al final) */
+.matches-table td:last-child {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilo para partidos ya jugados */
+.matches-table td:last-child:not(:contains("Por jugarse")) {
+    color: #27ae60; /* Verde para resultados existentes */
+}
+
+/* Estilo para partidos de eliminatoria con resultado */
+.partido-eliminatoria td:last-child:not(:contains("Por jugarse")) {
+    color: #e74c3c; /* Rojo para resultados de eliminatorias */
+    font-weight: 700;
+}
+
+/* Estilo responsive - ajustar columnas en móviles */
+@media (max-width: 768px) {
+    .matches-table th:nth-child(6), /* Cancha */
+    .matches-table td:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .matches-table th:nth-child(3), /* Zona */
+    .matches-table td:nth-child(3) {
+        display: none;
+    }
+    
+    .matches-table th:nth-child(2), /* Categoría */
+    .matches-table td:nth-child(2) {
+        display: none;
+    }
+}
