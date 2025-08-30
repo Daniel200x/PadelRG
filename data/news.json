@@ -102,8 +102,19 @@
       "fullContent": "Hoy es el cierre de inscripción para la tercera edición en categorias 5ta y 7ma en Damas y Caballeros.\n\n La inscripción se puede realizar desde el siguiente link: <a href='https://goo.su/cv0czE8' target='_blank'>https://goo.su/cv0czE8</a>\n\n Contacto para consultas:\n\n 2964-413411 Giuliana\n\n2964-471579 Lucas \n\n Costo de la inscripción: $40.000 por persona"
     }
     ,
+    
     {
-      "id": 11,
+  "id": 11,
+  "title": "Arranca otra fecha de la Copa",
+  "date": "29 Agosto 2025",
+  "timestamp": "2025-08-29",
+  "summary": "La Copa Challenger sigue en juego este sábado y domingo en Segundo Set...",
+  "image": "../img/news/18.jpg",
+  "alt": "Formato de torneo",
+  "fullContent": "Desde las 21:30 del día sábado y desde las 13:00 del domingo en el complejo de Segundo Set se disputa una nueva fecha del torneo por equipos.\n\n'Copa Challenger Martin Gallardo' continúa con una intensa jornada de partidos entre los equipos participantes.\n\nSABADO\nHora\tEquipo Local (Pareja)\tEquipo Visitante (Pareja)\n\n21:30\t(VUELA ALTO) ROMANO-DIAZ\t(DC PADEL) CABEZAS-BARBOSA\n\n21:30\t(3° TIEMPO) MARTINEZ-MARTINEZ\t(VUELA ALTO) ALFARO-UNQUEN\n\n22:00\t(GALACTINCHOS) ANDRADE-GALLARDO\t(PICATINCHOS) ANDRADE-ECHEVERRIA\n\n22:00\t(PICATINCHOS) FERNANDEZ-GOMEZ\t(3° TIEMPO) VERA-SALINAS\n\n22:30\t(DC PADEL) VERA-ROJO\t(PICATINCHOS) RUBIO-SANTANA\n\n22:30\t(LA ULTIMA Y NOS VAMOS) PEREDA-CORDOBA\t(DC PADEL) LUNA-HERRERA\n\n23:00\t(DRINK TEAM) CHALIER-GIMENEZ\t(GALACTINCHOS) GONZALEZ-VELASQUEZ\n\n23:00\t(DC PADEL) LOPEZ-RAMADORI\t(GALACTINCHOS) QUEZADA-IGLESIAS\n\n23:30\t(DC PADEL) RUIZ-PUGNALE\t(LA ULTIMA Y NOS VAMOS) OZORES-SANCHEZ\n\n23:30\t(AC PADEL) BARRIA-ESCOBAR\t(DC PADEL) LAMBERTI-FLEURI\n\n\nDOMINGO\nHora\tEquipo Local (Pareja)\tEquipo Visitante (Pareja)\n\n13:00\t(VUELA ALTO) POLIZZI-MIRANDA\t(3° TIEMPO) CUENCA-CORTES\n\n14:00\t(DRINK TEAM) MARTINEZ ZAMPINI\t(LA TINCHONETA) MARCOLINI CRUZ\n\n15:00\t(VUELA ALTO) PANIAGUA-VILLALBA\t(DC PADEL) VERA-ROJO\n\n16:00\t(LA ULTIMA Y NOS VAMOS) CUTRI-VACA\t(PICATINCHOS) GERSICICH-CASTILLO\n\n17:00\t(PICATINCHOS) GONZALEZ-SOSA\t(LA ULTIMA Y NOS VAMOS) SALGUEZ-RIVERO"
+},
+    {
+      "id": 12,
       "title": "Se publicaron las zonas",
       "date": "29 Agosto 2025",
       "timestamp": "2025-08-29",      
