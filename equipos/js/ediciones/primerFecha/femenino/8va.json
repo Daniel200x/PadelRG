@@ -119,7 +119,7 @@
             {"equipo1": "La Tinchonetta", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Los Picatinchos", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "DC Padel", "equipo2": "AC Padel", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "AC Padel", "resultado": "0-2", "games": "1-6, 1-6", "fecha": "31-08-25"},
             {"equipo1": "Galactinchos", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ]
     },
