@@ -172,11 +172,11 @@
       "nombre": "Grupo E",
       "equipos": [
       {
-          "nombre": "S. Rubio/H. Rojo",
+          "nombre": "S. Rubio/D. Camargo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "A. Maluf/A confirmar",
+          "nombre": "A. Maluf/Segovia",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
@@ -188,14 +188,14 @@
       "partidos": [
         {
           "fecha": "Miercoles 22:00 hs Cancha 6",
-          "equipo1": "S. Rubio/H. Rojo",
-          "equipo2": "A. Maluf/A confirmar",
+          "equipo1": "S. Rubio/D. Camargo",
+          "equipo2": "A. Maluf/Segovia",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Jueves 21:00 hs Cancha 4",
-          "equipo1": "S. Rubio/H. Rojo",
+          "equipo1": "S. Rubio/D. Camargo",
           "equipo2": "F. Marquez/R. Garcia",
           "resultado": "",
           "games":"A definir"
@@ -203,7 +203,7 @@
         {
           "fecha": "Viernes 21:00 hs Cancha 4",
           "equipo1": "F. Marquez/R. Garcia",
-          "equipo2": "A. Maluf/A confirmar",
+          "equipo2": "A. Maluf/Segovia",
           "resultado": "",
           "games":"A definir"
         }
