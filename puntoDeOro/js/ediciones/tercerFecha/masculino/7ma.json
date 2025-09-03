@@ -94,34 +94,34 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "H. Bucci/J. Retamar",
+          "nombre": "F. Zurita/G. Tiraboschi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "F. Mariani/A. Perez",
+          "nombre": "F. Mariani/A. Ponce",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 20:00 hs Cancha 3",
-          "equipo1": "D. Ruiz/S. Aranda",
-          "equipo2": "H. Bucci/J. Retamar",
+          "fecha": "Miercoles 20:00 hs Cancha 5",
+          "equipo1": "F. Mariani/A. Ponce",
+          "equipo2": "F. Zurita/G. Tiraboschi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 22:00 hs Cancha 4",
-          "equipo1": "H. Bucci/J. Retamar",
-          "equipo2": "F. Mariani/A. Perez",
+          "fecha": "Jueves 22:00 hs Cancha 5",
+          "equipo1": "D. Ruiz/S. Aranda",
+          "equipo2": "F. Zurita/G. Tiraboschi",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Viernes 21:00 hs Cancha 3",
           "equipo1": "D. Ruiz/S. Aranda",
-          "equipo2": "F. Mariani/A. Perez",
+          "equipo2": "F. Mariani/A. Ponce",
           "resultado": "",
           "games":"A definir"
         }
