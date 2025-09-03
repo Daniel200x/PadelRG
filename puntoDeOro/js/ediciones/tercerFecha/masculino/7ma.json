@@ -355,7 +355,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 21:00 hs Cancha 4",
+          "fecha": "Jueves 20:00 hs Cancha 5",
           "equipo1": "R. Fritz/I. Del Cantare",
           "equipo2": "R. Gonzalez/M. Llanes",
           "resultado": "",
@@ -369,14 +369,14 @@
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 20:00 hs Cancha 5",
+          "fecha": "Viernes 23:30 hs Cancha 1",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 20:00 hs Cancha 6",
+          "fecha": "Viernes 23:30 hs Cancha 2",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "resultado": "",
