@@ -1,7 +1,7 @@
 // fixture-del-dia.js - Gestión del fixture del día
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
-    let diaActual = 'Miercoles';
+    let diaActual = 'Jueves';
     let torneosData = {};
 
     // Inicializar el fixture del día
