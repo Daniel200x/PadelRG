@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
     let diaActual = 'Jueves';
     let torneosData = {};
+    let diasDisponibles = new Set();
 
     // Inicializar el fixture del día
     initFixtureDelDia();
@@ -57,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.warn('Algunos archivos no se pudieron cargar:', archivosFallidos);
                     mostrarAdvertencia(archivosFallidos);
                 }
+                
+                // Obtener todos los días disponibles
+                obtenerDiasDisponibles();
+                
+                // Seleccionar el día apropiado
+                seleccionarDiaAutomaticamente();
+                
+                // Mostrar partidos
                 mostrarPartidosDelDia();
             })
             .catch(error => {
@@ -65,6 +74,102 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
+    function obtenerDiasDisponibles() {
+        diasDisponibles.clear();
+        
+        // Recorrer todas las categorías para encontrar días con partidos
+        for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
+            // Partidos de grupos
+            if (categoria.grupos && Array.isArray(categoria.grupos)) {
+                categoria.grupos.forEach(grupo => {
+                    if (grupo.partidos && Array.isArray(grupo.partidos)) {
+                        grupo.partidos.forEach(partido => {
+                            const fechaInfo = extraerInformacionFecha(partido.fecha);
+                            if (fechaInfo.dia !== "Por definir") {
+                                diasDisponibles.add(fechaInfo.dia);
+                            }
+                        });
+                    }
+                });
+            }
+            
+            // Partidos de eliminatorias
+            if (categoria.eliminatorias) {
+                procesarEliminatoriasParaDias(categoria.eliminatorias);
+            }
+        }
+    }
+
+    function procesarEliminatoriasParaDias(eliminatorias) {
+        // Octavos de final
+        if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
+            eliminatorias.octavos.forEach(partido => {
+                const fechaInfo = extraerInformacionFecha(partido.fecha);
+                if (fechaInfo.dia !== "Por definir") {
+                    diasDisponibles.add(fechaInfo.dia);
+                }
+            });
+        }
+        
+        // Cuartos de final
+        if (eliminatorias.cuartos && Array.isArray(eliminatorias.cuartos)) {
+            eliminatorias.cuartos.forEach(partido => {
+                const fechaInfo = extraerInformacionFecha(partido.fecha);
+                if (fechaInfo.dia !== "Por definir") {
+                    diasDisponibles.add(fechaInfo.dia);
+                }
+            });
+        }
+        
+        // Semifinales
+        if (eliminatorias.semis && Array.isArray(eliminatorias.semis)) {
+            eliminatorias.semis.forEach(partido => {
+                const fechaInfo = extraerInformacionFecha(partido.fecha);
+                if (fechaInfo.dia !== "Por definir") {
+                    diasDisponibles.add(fechaInfo.dia);
+                }
+            });
+        }
+        
+        // Final
+        if (eliminatorias.final) {
+            const fechaInfo = extraerInformacionFecha(eliminatorias.final.fecha);
+            if (fechaInfo.dia !== "Por definir") {
+                diasDisponibles.add(fechaInfo.dia);
+            }
+        }
+    }
+
+    function seleccionarDiaAutomaticamente() {
+        // Obtener el día actual en español
+        const diasSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        const fecha = new Date();
+        const diaHoy = diasSemana[fecha.getDay()];
+        
+        // Verificar si el día actual está disponible
+        if (diasDisponibles.has(diaHoy)) {
+            diaActual = diaHoy;
+        } else {
+            // Si no está disponible, seleccionar el primer día disponible
+            const diasArray = Array.from(diasDisponibles);
+            if (diasArray.length > 0) {
+                diaActual = diasArray[0];
+            } else {
+                // Si no hay días disponibles, mantener el valor por defecto
+                console.warn("No se encontraron días con partidos disponibles");
+            }
+        }
+        
+        // Actualizar la interfaz para reflejar el día seleccionado
+        document.querySelectorAll('.day-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-day') === diaActual) {
+                btn.classList.add('active');
+            }
+        });
+    }
+
+    // El resto del código se mantiene igual...
     function mostrarPartidosDelDia() {
         if (Object.keys(torneosData).length === 0) return;
         
@@ -147,39 +252,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarPartidosEnTabla(partidos) {
-    const tableBody = document.getElementById('matchesTableBody');
-    
-    partidos.forEach(partido => {
-        const row = document.createElement('tr');
+        const tableBody = document.getElementById('matchesTableBody');
         
-        if (partido.fase === "Eliminatoria") {
-            row.classList.add('partido-eliminatoria');
+        partidos.forEach(partido => {
+            const row = document.createElement('tr');
+            
+            if (partido.fase === "Eliminatoria") {
+                row.classList.add('partido-eliminatoria');
+            }
+            
+            // Obtener solo el campo "games" del partido
+            const games = partido.partidoRaw.games || "A definir";
+            
+            row.innerHTML = `
+                <td>${partido.horario}</td>
+                <td>${partido.categoria}</td>
+                <td>${partido.zona}</td>
+                <td>${partido.equipo1}</td>
+                <td>${partido.equipo2}</td>
+                <td>${partido.cancha}</td>
+                <td>${games}</td>
+            `;
+            
+            tableBody.appendChild(row);
+        });
+        
+        document.getElementById('totalMatches').textContent = partidos.length;
+        
+        if (partidos.length === 0) {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
+            tableBody.appendChild(row);
         }
-        
-        // Obtener solo el campo "games" del partido
-        const games = partido.partidoRaw.games || "A definir";
-        
-        row.innerHTML = `
-            <td>${partido.horario}</td>
-            <td>${partido.categoria}</td>
-            <td>${partido.zona}</td>
-            <td>${partido.equipo1}</td>
-            <td>${partido.equipo2}</td>
-            <td>${partido.cancha}</td>
-            <td>${games}</td>
-        `;
-        
-        tableBody.appendChild(row);
-    });
-    
-    document.getElementById('totalMatches').textContent = partidos.length;
-    
-    if (partidos.length === 0) {
-        const row = document.createElement('tr');
-        row.innerHTML = `<td colspan="7" style="text-align: center;">No hay partidos programados para el ${diaActual}</td>`;
-        tableBody.appendChild(row);
     }
-}
 
     function convertirHorarioAMinutos(horario) {
         if (!horario || horario === "00:00" || horario === "Por definir") return 24 * 60;
@@ -242,9 +347,3 @@ document.addEventListener('DOMContentLoaded', function() {
         titulo.parentNode.insertBefore(advertencia, titulo.nextSibling);
     }
 });
-
-
-
-
-
-

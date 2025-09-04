@@ -336,7 +336,7 @@
       "nombre": "Grupo I",
       "equipos": [
        {
-          "nombre": "R. Fritz/I. Del Cantare",
+          "nombre": "R. Fritz/F. Amestoy",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
@@ -356,7 +356,7 @@
       "partidos": [
         {
           "fecha": "Jueves 20:00 hs Cancha 5",
-          "equipo1": "R. Fritz/I. Del Cantare",
+          "equipo1": "R. Fritz/F. Amestoy",
           "equipo2": "R. Gonzalez/M. Llanes",
           "resultado": "",
           "games":"A definir"
