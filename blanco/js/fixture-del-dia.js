@@ -101,6 +101,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function procesarEliminatoriasParaDias(eliminatorias) {
+        // Dieciseisavos de final
+        if (eliminatorias.dieciseisavos && Array.isArray(eliminatorias.dieciseisavos)) {
+            eliminatorias.dieciseisavos.forEach(partido => {
+                const fechaInfo = extraerInformacionFecha(partido.fecha);
+                if (fechaInfo.dia !== "Por definir") {
+                    diasDisponibles.add(fechaInfo.dia);
+                }
+            });
+        }
+        
         // Octavos de final
         if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
             eliminatorias.octavos.forEach(partido => {
@@ -169,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // El resto del código se mantiene igual...
     function mostrarPartidosDelDia() {
         if (Object.keys(torneosData).length === 0) return;
         
@@ -203,6 +212,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function procesarEliminatorias(eliminatorias, categoria, todosLosPartidos) {
+        // Dieciseisavos de final
+        if (eliminatorias.dieciseisavos && Array.isArray(eliminatorias.dieciseisavos)) {
+            eliminatorias.dieciseisavos.forEach(partido => {
+                procesarPartido(partido, categoria, "Dieciseisavos", "Eliminatoria", todosLosPartidos);
+            });
+        }
+        
         // Octavos de final
         if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
             eliminatorias.octavos.forEach(partido => {
