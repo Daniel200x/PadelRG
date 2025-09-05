@@ -3860,19 +3860,22 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0}
           
         ],
         "arenas": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},
           {"edicion": "First Class", "puntos": 0}
           
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
         ]
       }
     }
