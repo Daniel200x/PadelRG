@@ -189,20 +189,23 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Recorrer todas las categorías
         for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
-            // Partidos de grupos
-            if (categoria.grupos && Array.isArray(categoria.grupos)) {
-                categoria.grupos.forEach(grupo => {
+            // PROCESAR LOS DATOS ANTES DE MOSTRARLOS
+            const categoriaProcesada = procesarDatosParaFixture(categoria);
+            
+            // Partidos de grupos (usar categoriaProcesada en lugar de categoria)
+            if (categoriaProcesada.grupos && Array.isArray(categoriaProcesada.grupos)) {
+                categoriaProcesada.grupos.forEach(grupo => {
                     if (grupo.partidos && Array.isArray(grupo.partidos)) {
                         grupo.partidos.forEach(partido => {
-                            procesarPartido(partido, categoria.nombre, grupo.nombre, "Grupo", todosLosPartidos);
+                            procesarPartido(partido, categoriaProcesada.nombre, grupo.nombre, "Grupo", todosLosPartidos);
                         });
                     }
                 });
             }
             
-            // Partidos de eliminatorias
-            if (categoria.eliminatorias) {
-                procesarEliminatorias(categoria.eliminatorias, categoria.nombre, todosLosPartidos);
+            // Partidos de eliminatorias (usar categoriaProcesada)
+            if (categoriaProcesada.eliminatorias) {
+                procesarEliminatorias(categoriaProcesada.eliminatorias, categoriaProcesada.nombre, todosLosPartidos);
             }
         }
         
@@ -361,5 +364,200 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const titulo = document.querySelector('.fixture-container h1');
         titulo.parentNode.insertBefore(advertencia, titulo.nextSibling);
+    }
+
+    // FUNCIONES COPIADAS DESDE script.js PARA PROCESAR LOS DATOS
+
+    function procesarDatosParaFixture(categoriaData) {
+        // Hacer copia profunda para no modificar los datos originales
+        const data = JSON.parse(JSON.stringify(categoriaData));
+        
+        // 1. Actualizar resultados de grupos
+        if (data.grupos) {
+            actualizarResultadosGrupos(data.grupos);
+            
+            // 2. Calcular estadísticas
+            data.grupos.forEach(grupo => {
+                calcularEstadisticas(grupo);
+            });
+            
+            // 3. Determinar clasificados y actualizar eliminatorias
+            if (data.eliminatorias) {
+                const clasificados = determinarClasificados(data.grupos);
+                actualizarEliminatoriasParaFixture(data.eliminatorias, clasificados);
+            }
+        }
+        
+        return data;
+    }
+
+    function actualizarEliminatoriasParaFixture(eliminatorias, clasificados) {
+        const reemplazarClasificacion = (texto) => {
+            return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupo) => {
+                return clasificados[`${posicion} ${grupo}`] || match;
+            });
+        };
+
+        // Procesar todas las fases de eliminatorias
+        const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
+        
+        fases.forEach(fase => {
+            if (eliminatorias[fase]) {
+                if (Array.isArray(eliminatorias[fase])) {
+                    eliminatorias[fase].forEach(partido => {
+                        partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+                        partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+                    });
+                } else if (typeof eliminatorias[fase] === 'object') {
+                    // Para la final que es un objeto, no un array
+                    eliminatorias[fase].equipo1 = reemplazarClasificacion(eliminatorias[fase].equipo1);
+                    eliminatorias[fase].equipo2 = reemplazarClasificacion(eliminatorias[fase].equipo2);
+                }
+            }
+        });
+    }
+
+    function actualizarResultadosGrupos(grupos) {
+        grupos.forEach(grupo => {
+            // Mapear resultados de los primeros partidos
+            const resultadosPrimerosPartidos = {};
+            
+            // Procesar los primeros 2 partidos de cada grupo
+            for (let i = 0; i < 2 && i < grupo.partidos.length; i++) {
+                const partido = grupo.partidos[i];
+                
+                if (partido.resultado && partido.resultado !== '-' && partido.resultado !== 'A definir') {
+                    const [sets1, sets2] = partido.resultado.split('-').map(Number);
+                    
+                    if (sets1 > sets2) {
+                        resultadosPrimerosPartidos[`Ganador Partido ${i+1}`] = partido.equipo1;
+                        resultadosPrimerosPartidos[`Perdedor Partido ${i+1}`] = partido.equipo2;
+                    } else {
+                        resultadosPrimerosPartidos[`Ganador Partido ${i+1}`] = partido.equipo2;
+                        resultadosPrimerosPartidos[`Perdedor Partido ${i+1}`] = partido.equipo1;
+                    }
+                }
+            }
+            
+            // Actualizar los partidos posteriores con los resultados
+            grupo.partidos.forEach(partido => {
+                if (partido.equipo1 && partido.equipo2) {
+                    // Reemplazar en equipo1
+                    for (const [key, value] of Object.entries(resultadosPrimerosPartidos)) {
+                        if (partido.equipo1.includes(key)) {
+                            partido.equipo1 = value;
+                        }
+                    }
+                    
+                    // Reemplazar en equipo2
+                    for (const [key, value] of Object.entries(resultadosPrimerosPartidos)) {
+                        if (partido.equipo2.includes(key)) {
+                            partido.equipo2 = value;
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    function calcularEstadisticas(grupo) {
+        // Reiniciar estadísticas
+        grupo.equipos.forEach(equipo => {
+            equipo.PJ = 0;
+            equipo.PG = 0;
+            equipo.SG = 0;
+            equipo.SP = 0;
+            equipo.GF = 0;
+            equipo.GC = 0;
+        });
+
+        // Procesar cada partido
+        grupo.partidos.forEach(partido => {
+            if (!partido.resultado || partido.resultado === '-') return;
+
+            const [sets1, sets2] = partido.resultado.split('-').map(Number);
+            const equipo1 = grupo.equipos.find(e => e.nombre === partido.equipo1);
+            const equipo2 = grupo.equipos.find(e => e.nombre === partido.equipo2);
+
+            if (!equipo1 || !equipo2) return;
+
+            // Actualizar partidos jugados
+            equipo1.PJ++;
+            equipo2.PJ++;
+
+            // Actualizar sets ganados/perdidos
+            equipo1.SG += sets1;
+            equipo1.SP += sets2;
+            equipo2.SG += sets2;
+            equipo2.SP += sets1;
+
+            // Determinar ganador del partido
+            if (sets1 > sets2) {
+                equipo1.PG++;
+            } else {
+                equipo2.PG++;
+            }
+
+            // Si hay información de games por set
+            if (partido.games) {
+                const setsGames = partido.games.split(',');
+                let games1 = 0, games2 = 0;
+                
+                setsGames.forEach(set => {
+                    const [g1, g2] = set.split('-').map(Number);
+                    games1 += g1;
+                    games2 += g2;
+                });
+                
+                equipo1.GF += games1;
+                equipo1.GC += games2;
+                equipo2.GF += games2;
+                equipo2.GC += games1;
+            }
+        });
+    }
+
+    function determinarClasificados(grupos) {
+        const clasificados = {};
+        
+        grupos.forEach(grupo => {
+            // Ordenar equipos del grupo según su posición
+            const equiposOrdenados = grupo.equipos.sort((a, b) => {
+                if (b.PG !== a.PG) return b.PG - a.PG;
+                const dsA = a.SG - a.SP;
+                const dsB = b.SG - b.SP;
+                if (dsB !== dsA) return dsB - dsA;
+                return (b.GF - b.GC) - (a.GF - a.GC);
+            });
+            
+            // Guardar clasificados
+            const grupoKey = grupo.nombre.split(' ')[1]; // Extrae "A", "B", etc.
+            clasificados[`1ro ${grupoKey}`] = equiposOrdenados[0]?.nombre || '';
+            clasificados[`2do ${grupoKey}`] = equiposOrdenados[1]?.nombre || '';
+        });
+        
+        return clasificados;
+    }
+
+    function determinarGanadorPorGames(games) {
+        if (!games || games === "A definir") return null;
+        
+        const sets = games.split(',').map(set => {
+            const [games1, games2] = set.trim().split('-').map(Number);
+            return { games1, games2 };
+        });
+        
+        let setsGanados1 = 0;
+        let setsGanados2 = 0;
+        
+        sets.forEach(set => {
+            if (set.games1 > set.games2) {
+                setsGanados1++;
+            } else {
+                setsGanados2++;
+            }
+        });
+        
+        return setsGanados1 > setsGanados2 ? 1 : 2;
     }
 });
