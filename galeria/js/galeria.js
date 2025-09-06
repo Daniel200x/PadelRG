@@ -72,11 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
  // =============================================
-    // Galería de álbumes
+    // Galería de álbumes - Carga automática desde carpetas
     // =============================================
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const albums = document.querySelectorAll('.album');
-    const viewAlbumButtons = document.querySelectorAll('.view-album-btn');
+    const albumsContainer = document.querySelector('.albums-container');
     const albumLightbox = document.querySelector('.album-lightbox');
     const lightboxClose = document.querySelector('.lightbox-close');
     const lightboxPrev = document.querySelector('.lightbox-prev');
@@ -86,117 +85,242 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxCounter = document.querySelector('.lightbox-counter');
     const lightboxThumbnails = document.querySelector('.lightbox-thumbnails');
     
-    // Datos de los álbumes (deberías expandir esto con todas tus imágenes)
-    const albumData = {
-        'arenas': {
+    // Estructura de carpetas de álbumes (ajusta estas rutas según tu estructura real)
+    const albumFolders = {
+      /*  'arenas': {
             title: 'Torneo Arena 2025',
-            images: [
-                { src: '../img/gallery/1.jpg', caption: 'Final masculina - Octubre 2023' },
-                { src: '../img/gallery/4.jpg', caption: 'Entrega de premios - Octubre 2023' },
-                // Agrega más imágenes aquí
-            ]
+            folder: '../img/gallery/arenas/',
+           description: 'Imágenes del torneo realizado en Agosto 2025'
         },
-        'punto-de-oro': {
+*/        'punto-de-oro': {
             title: 'Torneo Punto de Oro 2025',
-            images: [
-                { src: '../img/gallery/21.jpg', caption: 'Semifinal femenina - Agosto 2023' },
-                { src: '../img/gallery/22.jpg', caption: 'Partido emocionante - Agosto 2023' },
-                // Agrega más imágenes aquí
-            ]
-        },
+            folder: '../img/gallery/punto-de-oro/',
+            description: 'Imágenes del torneo realizado en Septiembre 2025'
+        }/*,
         'segundo-set': {
             title: 'Torneo 2do Set 2025',
-            images: [
-                { src: '../img/gallery/10.jpg', caption: 'Semifinal femenina - Agosto 2023' },
-                { src: '../img/gallery/14.jpg', caption: 'Partido emocionante - Agosto 2023' },
-                // Agrega más imágenes aquí
-            ]
+            folder: '../img/gallery/segundo-set/',
+            description: 'Imágenes del torneo realizado en Septiembre 2025'
         },
         'martin-gallardo': {
-            title: 'Torneo por equipos 2025',
-            images: [
-                { src: '../img/gallery/10.jpg', caption: 'Semifinal femenina - Agosto 2023' },
-                { src: '../img/gallery/14.jpg', caption: 'Partido emocionante - Agosto 2023' },
-                // Agrega más imágenes aquí
-            ]
-        },
-        // Agregar más álbumes aquí
+            title: 'Torneo Copa Challenger 2025',
+            folder: '../img/gallery/martin-gallardo/',
+            description: 'Imágenes del torneo realizado en Septiembre 2025'
+        }*/
     };
     
     let currentAlbum = null;
     let currentImageIndex = 0;
+    let albumImages = {}; // Aquí almacenaremos las imágenes encontradas
 
-    // Filtrado de álbumes
-    if (filterButtons && albums) {
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Actualizar botón activo
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
+    // Inicializar la galería
+    initGallery();
+
+    async function initGallery() {
+        // Cargar imágenes para cada álbum
+        for (const [albumId, albumInfo] of Object.entries(albumFolders)) {
+            try {
+                const images = await loadAlbumImages(albumInfo.folder);
+                albumImages[albumId] = images;
                 
-                // Filtrar álbumes
-                const filterValue = button.dataset.filter;
-                albums.forEach(album => {
-                    album.style.display = (filterValue === 'all' || album.classList.contains(filterValue)) 
-                        ? 'block' 
-                        : 'none';
+                // Crear elemento de álbum solo si hay imágenes
+                if (images.length > 0) {
+                    createAlbumElement(albumId, albumInfo, images);
+                }
+            } catch (error) {
+                console.error(`Error cargando imágenes para ${albumId}:`, error);
+            }
+        }
+
+        // Inicializar eventos después de crear los álbumes
+        initEvents();
+    }
+
+    // Función para cargar imágenes de un álbum
+    async function loadAlbumImages(folderPath) {
+        // En GitHub Pages, podemos usar una técnica para obtener la lista de imágenes
+        // Nota: Esto requiere que tengas un archivo index.json en cada carpeta o uses un enfoque alternativo
+        
+        // Como alternativa, podemos asumir una estructura de nombres de archivo
+        // o usar una lista predefinida si sabemos los nombres
+        
+        // Esta es una solución temporal - en un entorno real necesitarías
+        // un servidor que proporcione la lista de archivos
+        const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+        const images = [];
+        
+        // Para GitHub Pages, una opción es tener un archivo JSON con la lista de imágenes
+        try {
+            const response = await fetch(`${folderPath}images.json`);
+            if (response.ok) {
+                const imageList = await response.json();
+                return imageList.map(img => ({
+                    src: `${folderPath}${img.filename}`,
+                    caption: img.caption || ''
+                }));
+            }
+        } catch (e) {
+            // Si no hay images.json, usar nombres predefinidos
+            console.log('No se encontró images.json, usando imágenes por defecto');
+        }
+        
+        // Fallback: intentar cargar imágenes con nombres predecibles
+        for (let i = 1; i <= 57; i++) {
+            for (const ext of imageExtensions) {
+                const imgPath = `${folderPath}${i}${ext}`;
+                // No podemos verificar si existe realmente, pero podemos intentar
+                images.push({
+                    src: imgPath,
+                    caption: `Imagen ${i}`
                 });
+                break; // Solo una extensión por número
+            }
+        }
+        
+        return images;
+    }
+
+    // Función para crear elemento de álbum
+    function createAlbumElement(albumId, albumInfo, images) {
+        const albumEl = document.createElement('div');
+        albumEl.className = `album ${albumId}`;
+        
+        // Usar las primeras imágenes como miniaturas de vista previa
+        const previewImages = images.slice(0, 3);
+        
+        albumEl.innerHTML = `
+            <h2 class="album-title">${albumInfo.title}</h2>
+            <p class="album-description">${albumInfo.description}</p>
+            <div class="album-preview">
+                <div class="main-preview">
+                    <img src="${previewImages[0].src}" alt="${albumInfo.title}" data-index="0" />
+                </div>
+                <div class="thumbnails">
+                    ${previewImages.map((img, index) => 
+                        `<img src="${img.src}" alt="Miniatura ${index + 1}" data-index="${index}" />`
+                    ).join('')}
+                </div>
+            </div>
+            <button class="view-album-btn" data-album="${albumId}">
+                Ver álbum completo (${images.length} imágenes)
+            </button>
+        `;
+        
+        albumsContainer.appendChild(albumEl);
+        
+        // Añadir eventos a las miniaturas de este álbum
+        const thumbnails = albumEl.querySelectorAll('.thumbnails img');
+        const mainImage = albumEl.querySelector('.main-preview img');
+        
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                mainImage.src = this.src;
+                mainImage.dataset.index = this.dataset.index;
             });
         });
-    }
-    
-    // Cambiar imagen principal al hacer clic en miniaturas
-    document.querySelectorAll('.thumbnails img').forEach(thumb => {
-        thumb.addEventListener('click', function() {
-            const albumPreview = this.closest('.album-preview');
-            const mainImage = albumPreview.querySelector('.main-preview img');
-            mainImage.src = this.src;
-            mainImage.dataset.index = this.dataset.index;
-        });
-    });
-    
-    // Abrir lightbox de álbum
-    if (viewAlbumButtons) {
-        viewAlbumButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const albumId = this.dataset.album;
-                openAlbum(albumId);
-            });
-        });
-    }
-    
-    // También abrir álbum al hacer clic en la imagen principal
-    document.querySelectorAll('.main-preview img').forEach(img => {
-        img.addEventListener('click', function() {
-            const albumId = this.closest('.album').classList[1]; // Obtiene la segunda clase que es el ID del álbum
+        
+        // Evento para la imagen principal
+        mainImage.addEventListener('click', function() {
             openAlbum(albumId, parseInt(this.dataset.index));
         });
-    });
-    
-    // Función para abrir un álbum
-    function openAlbum(albumId, startIndex = 0) {
-        if (!albumData[albumId]) return;
         
-        currentAlbum = albumId;
-        currentImageIndex = startIndex;
-        
-        // Actualizar lightbox con la primera imagen
-        updateLightboxImage();
-        
-        // Crear miniaturas
-        createThumbnails();
-        
-        // Mostrar lightbox
-        albumLightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // Evento para el botón
+        albumEl.querySelector('.view-album-btn').addEventListener('click', function() {
+            openAlbum(albumId);
+        });
     }
+
+    // Función para inicializar eventos
+    function initEvents() {
+        // Filtrado de álbumes
+        if (filterButtons) {
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const filterValue = button.dataset.filter;
+                    document.querySelectorAll('.album').forEach(album => {
+                        album.style.display = (filterValue === 'all' || album.classList.contains(filterValue)) 
+                            ? 'block' 
+                            : 'none';
+                    });
+                });
+            });
+        }
+        
+        // Eventos del lightbox
+        if (lightboxPrev && lightboxNext) {
+            lightboxPrev.addEventListener('click', showPrevImage);
+            lightboxNext.addEventListener('click', showNextImage);
+        }
+        
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', closeLightbox);
+        }
+        
+        // Eventos de teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && albumLightbox.classList.contains('active')) {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft' && albumLightbox.classList.contains('active')) {
+                showPrevImage();
+            } else if (e.key === 'ArrowRight' && albumLightbox.classList.contains('active')) {
+                showNextImage();
+            }
+        });
+        
+        // Cerrar al hacer clic fuera de la imagen
+        albumLightbox.addEventListener('click', function(e) {
+            if (e.target === albumLightbox) {
+                closeLightbox();
+            }
+        });
+    }
+
+   // Función para abrir un álbum
+function openAlbum(albumId, startIndex = 0) {
+    if (!albumImages[albumId] || albumImages[albumId].length === 0) return;
+    
+    currentAlbum = albumId;
+    currentImageIndex = startIndex;
+    
+    // Actualizar lightbox
+    updateLightboxImage();
+    createThumbnails();
+    
+    // Mostrar lightbox
+    albumLightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Centrar imagen después de cargar
+    centerLightboxImage();
+}
+
+// Función para centrar la imagen en el lightbox
+function centerLightboxImage() {
+    const img = new Image();
+    img.onload = function() {
+        // La imagen ya se centra con CSS, pero podemos añadir lógica adicional si es necesario
+        console.log("Imagen cargada correctamente");
+    };
+    img.src = lightboxImage.src;
+}
+
+// Añadir esta función al final del evento DOMContentLoaded
+// Para manejar el redimensionamiento de la ventana
+window.addEventListener('resize', function() {
+    if (albumLightbox.classList.contains('active')) {
+        centerLightboxImage();
+    }
+});
     
     // Actualizar imagen en el lightbox
     function updateLightboxImage() {
-        const imageData = albumData[currentAlbum].images[currentImageIndex];
+        const imageData = albumImages[currentAlbum][currentImageIndex];
         lightboxImage.src = imageData.src;
-        lightboxTitle.textContent = albumData[currentAlbum].title;
-        lightboxCounter.textContent = `${currentImageIndex + 1} / ${albumData[currentAlbum].images.length}`;
+        lightboxTitle.textContent = albumFolders[currentAlbum].title;
+        lightboxCounter.textContent = `${currentImageIndex + 1} / ${albumImages[currentAlbum].length}`;
         
         // Actualizar miniatura activa
         document.querySelectorAll('.lightbox-thumbnails img').forEach((img, index) => {
@@ -208,9 +332,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function createThumbnails() {
         lightboxThumbnails.innerHTML = '';
         
-        albumData[currentAlbum].images.forEach((image, index) => {
+        albumImages[currentAlbum].forEach((image, index) => {
             const thumb = document.createElement('img');
-            thumb.src = image.src.replace('.jpg', '-thumb.jpg');
+            thumb.src = image.src;
             thumb.alt = `Miniatura ${index + 1}`;
             thumb.classList.toggle('active', index === currentImageIndex);
             thumb.addEventListener('click', () => {
@@ -222,23 +346,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Navegación en el lightbox
-    if (lightboxPrev && lightboxNext) {
-        lightboxPrev.addEventListener('click', showPrevImage);
-        lightboxNext.addEventListener('click', showNextImage);
-    }
-    
     function showPrevImage() {
         if (currentImageIndex > 0) {
             currentImageIndex--;
         } else {
-            currentImageIndex = albumData[currentAlbum].images.length - 1;
+            currentImageIndex = albumImages[currentAlbum].length - 1;
         }
         updateLightboxImage();
     }
     
     function showNextImage() {
-        if (currentImageIndex < albumData[currentAlbum].images.length - 1) {
+        if (currentImageIndex < albumImages[currentAlbum].length - 1) {
             currentImageIndex++;
         } else {
             currentImageIndex = 0;
@@ -246,33 +364,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateLightboxImage();
     }
     
-    // Cerrar lightbox
-    if (lightboxClose) {
-        lightboxClose.addEventListener('click', closeLightbox);
-    }
-    
     function closeLightbox() {
         albumLightbox.classList.remove('active');
         document.body.style.overflow = '';
     }
-    
-    // Cerrar con tecla ESC
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && albumLightbox.classList.contains('active')) {
-            closeLightbox();
-        } else if (e.key === 'ArrowLeft' && albumLightbox.classList.contains('active')) {
-            showPrevImage();
-        } else if (e.key === 'ArrowRight' && albumLightbox.classList.contains('active')) {
-            showNextImage();
-        }
-    });
-    
-    // Cerrar al hacer clic fuera de la imagen
-    albumLightbox.addEventListener('click', function(e) {
-        if (e.target === albumLightbox) {
-            closeLightbox();
-        }
-    });
+
     // =============================================
     // Año actual en el footer
     // =============================================
@@ -280,11 +376,4 @@ document.addEventListener('DOMContentLoaded', function() {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
-
-    // =============================================
-    // Ajustar altura de los items de la galería
-    // =============================================
-   
-    
-  
 });
