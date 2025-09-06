@@ -215,14 +215,14 @@
       {
         "equipo1": "2do B",
           "equipo2": "2do C",
-          "fecha": "Sabado 22:00",
+          "fecha": "Sabado 17:00",
           "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "2do A",
           "equipo2": "2do D",
-          "fecha": "Sabado 23:00",
+          "fecha": "Sabado 17:00",
           "resultado": "",
           "games":"A definir"
       }
@@ -261,14 +261,14 @@
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 13:00",
+          "fecha": "Domingo 14:00",
           "resultado": "",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 13:00",
+          "fecha": "Domingo 14:00",
           "resultado": "",
           "games":"A definir"
       }
@@ -276,7 +276,7 @@
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo 18:00",
+          "fecha": "Domingo 19:00",
           "resultado": "",
           "games":"A definir"
     }
