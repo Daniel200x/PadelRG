@@ -95,7 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
 */        'punto-de-oro': {
             title: 'Torneo Punto de Oro 2025',
             folder: '../img/gallery/punto-de-oro/',
-            description: 'Imágenes del torneo realizado en Septiembre 2025'
+            description: 'Imágenes del 3er Oficial de Punto de Oro'
+        },
+        'punto-de-oro-mierc': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro-mierc/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro'
         }/*,
         'segundo-set': {
             title: 'Torneo 2do Set 2025',
