@@ -1,220 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Galería de Torneos de Pádel</title>
-        <!-- Favicon básico (formato ICO) -->
-<link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Favicon básico (formato ICO) -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
-<!-- Para dispositivos Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <!-- Para dispositivos Apple -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/apple-touch-icon.png"
+    />
 
-<!-- Para Android -->
-<link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png">
+    <!-- Para Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../img/android-chrome-192x192.png"
+    />
 
-<!-- Para大多数 navegadores modernos -->
-<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <!-- Para大多数 navegadores modernos -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
 
-<!-- Manifest para PWA (opcional) -->
-<link rel="manifest" href="../site.webmanifest">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="css/galeria.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Manifest para PWA (opcional) -->
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-81C2M2PPXT');
-</script>
-</head>
-<body>
+      gtag("config", "G-81C2M2PPXT");
+    </script>
+  </head>
+  <body>
     <!-- Menú de navegación -->
     <nav class="main-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html">
-                    <img src="../img/logo1.png" alt="Pádel RG Logo">
-                </a>
-            </div>
-            
-          <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
-                            <li><a href="../arenas/arenas.html">Arenas</a></li>
-                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
-                            <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Fixture <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/blanco/fixture.html">Punto de Oro</a></li>
-                            <li><a href="/blanco/arenas.html">Arenas</a></li>
-                            <li><a href="/blanco/segundo.html">2do Set</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li><a href="/ranking/ranking.html">Ranking</a></li>
-                  
-                    <li><a href="/galeria/galeria.html">Galería</a></li>
-                    <li><a href="/contacto/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            
-             <div class="nav-social">
-          <a href="https://www.instagram.com/padel__rg/#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="../index.html">
+            <img src="../img/logo1.png" alt="Pádel RG Logo" />
+          </a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a>
+                </li>
+                <li><a href="../arenas/arenas.html">Arena</a></li>
+                <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Fixture <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/blanco/fixture.html">Punto de Oro</a></li>
+                <li><a href="/blanco/arenas.html">Arena</a></li>
+                <li><a href="/blanco/segundo.html">2do Set</a></li>
+              </ul>
+            </li>
+            <li><a href="/ranking/ranking.html">Ranking</a></li>
+
+            <li><a href="/galeria/galeria.html">Galería</a></li>
+            <li><a href="/contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-social">
+          <a href="https://www.instagram.com/padel__rg/#" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
           <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
-            
-            <button class="hamburger" aria-label="Menú móvil">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+
+        <button class="hamburger" aria-label="Menú móvil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
-    <!-- Contenido principal de la galería -->
     <main class="gallery-container">
-        <h1>Galería de Torneos</h1>
-        <p class="gallery-subtitle">Revive los mejores momentos de nuestros torneos</p>
-        
-        <div class="gallery-filter">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="punto-de-oro">Punto de Oro</button>
-            <button class="filter-btn" data-filter="arenas">Arenas</button>
-            <button class="filter-btn" data-filter="segundo-set">2do Set</button>
-            <button class="filter-btn" data-filter="martin-gallardo">Torneo Martin Gallardo</button>
-        </div>
-        
-        <div class="gallery-grid">
-            <!-- Ejemplo de elementos de la galería - reemplaza con tus imágenes -->
-            <a href="../img/gallery/1.jpg" class="gallery-item arenas" data-sub-html="<h4>Torneo Arenas 2023</h4><p>Final masculina - Octubre 2023</p>">
-                <img src="../img/gallery/1-thumb.jpg" alt="Partido de pádel en Torneo Arenas">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Torneo Arenas</h3>
-                        <p>Octubre 2023</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../img/gallery/2.jpg" class="gallery-item punto-de-oro" data-sub-html="<h4>Torneo Punto de Oro 2023</h4><p>Semifinal femenina - Agosto 2023</p>">
-                <img src="../img/gallery/2-thumb.jpg" alt="Partido de pádel en Torneo Punto de Oro">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Punto de Oro</h3>
-                        <p>Agosto 2023</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../img/gallery/3.jpg" class="gallery-item segundo-set" data-sub-html="<h4>Torneo 2do Set 2023</h4><p>Cuartos de final - Junio 2023</p>">
-                <img src="../img/gallery/3-thumb.jpg" alt="Partido de pádel en Torneo 2do Set">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>2do Set</h3>
-                        <p>Junio 2023</p>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- Añade más imágenes siguiendo el mismo patrón -->
-            <!-- Ejemplo de cómo continuarías agregando más imágenes -->
-            <a href="../img/gallery/4.jpg" class="gallery-item arenas" data-sub-html="<h4>Torneo Arenas 2023</h4><p>Entrega de premios - Octubre 2023</p>">
-                <img src="../img/gallery/4-thumb.jpg" alt="Entrega de premios Torneo Arenas">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Torneo Arenas</h3>
-                        <p>Entrega de premios</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../img/gallery/5.jpg" class="gallery-item punto-de-oro" data-sub-html="<h4>Torneo Punto de Oro 2023</h4><p>Partido emocionante - Agosto 2023</p>">
-                <img src="../img/gallery/5-thumb.jpg" alt="Partido emocionante Punto de Oro">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Punto de Oro</h3>
-                        <p>Partido destacado</p>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../img/gallery/6.jpg" class="gallery-item segundo-set" data-sub-html="<h4>Torneo 2do Set 2023</h4><p>Momento divertido - Junio 2023</p>">
-                <img src="../img/gallery/6-thumb.jpg" alt="Momento divertido 2do Set">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>2do Set</h3>
-                        <p>Momento divertido</p>
-                    </div>
-                </div>
-            </a>
+      <h1>Galería de Torneos</h1>
+      <p class="gallery-subtitle">
+        Revive los mejores momentos de nuestros torneos
+      </p>
 
-            <a href="../img/1.jpg" class="gallery-item martin-gallardo" data-sub-html="<h4>Torneo Martin Gallardo</h4><p>Agosto 2025</p>">
-                <img src="../img/1-thumb.jpg" alt="Partidos del Torneo">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Torneo Martin Gallardo</h3>
-                        <p>Torneo por equipos</p>
-                    </div>
-                </div>
-            </a>
-            <a href="../img/gallery/10.jpg" class="gallery-item martin-gallardo" data-sub-html="<h4>Torneo Martin Gallardo</h4><p>23 de agosto 2025</p>">
-                <img src="../img/gallery/10-thumb.jpg" alt="Partidos del Torneo">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Torneo Martin Gallardo</h3>
-                        <p>Torneo por equipos</p>
-                    </div>
-                </div>
-            </a>
-            <a href="../img/gallery/14.jpg" class="gallery-item martin-gallardo" data-sub-html="<h4>Torneo Martin Gallardo</h4><p>23 de agosto 2025</p>">
-                <img src="../img/gallery/14-thumb.jpg" alt="Partidos del Torneo">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                    <div class="gallery-caption">
-                        <h3>Torneo Martin Gallardo</h3>
-                        <p>Torneo por equipos</p>
-                    </div>
-                </div>
-            </a>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="punto-de-oro">
+          Punto de Oro
+        </button>
+        <button class="filter-btn" data-filter="arenas">Arena</button>
+        <button class="filter-btn" data-filter="segundo-set">2do Set</button>
+        <button class="filter-btn" data-filter="martin-gallardo">
+          Torneo Martin Gallardo
+        </button>
+      </div>
+
+      <!-- Nueva estructura de álbumes -->
+      <div class="albums-container">
+        <!-- Álbum Arena -->
+        <div class="album arenas">
+          <h2 class="album-title">Torneo Arena 2025</h2>
+          <p class="album-description">
+            Imágenes del torneo realizado en Agosto 2025
+          </p>
+          <div class="album-preview">
+            <div class="main-preview">
+              <img
+                src="../img/gallery/1-thumb.jpg"
+                alt="Torneo Arena"
+                data-index="0"
+              />
+            </div>
+            <div class="thumbnails">
+              <img
+                src="../img/gallery/1-thumb.jpg"
+                alt="Miniatura 1"
+                data-index="0"
+              />
+              <img
+                src="../img/gallery/4-thumb.jpg"
+                alt="Miniatura 2"
+                data-index="1"
+              />
+              <!-- Agrega más miniaturas aquí -->
+            </div>
+          </div>
+          <button class="view-album-btn" data-album="arenas">
+            Ver álbum completo
+          </button>
         </div>
+
+        <!-- Álbum Punto de Oro -->
+        <div class="album punto-de-oro">
+          <h2 class="album-title">Torneo Punto de Oro 2025</h2>
+          <p class="album-description">
+            Imágenes del torneo realizado en Septiembre 2025
+          </p>
+          <div class="album-preview">
+            <div class="main-preview">
+              <img
+                src="../img/gallery/21-thumb.jpg"
+                alt="Torneo Punto de Oro"
+                data-index="0"
+              />
+            </div>
+            <div class="thumbnails">
+              <img
+                src="../img/gallery/21-thumb.jpg"
+                alt="Miniatura 1"
+                data-index="0"
+              />
+              <img
+                src="../img/gallery/22-thumb.jpg"
+                alt="Miniatura 2"
+                data-index="1"
+              />
+              <!-- Agrega más miniaturas aquí -->
+            </div>
+          </div>
+          <button class="view-album-btn" data-album="punto-de-oro">
+            Ver álbum completo
+          </button>
+        </div>
+        <!-- Álbum 2do Set -->
+        <div class="album segundo-set">
+          <h2 class="album-title">Torneo 2do Set 2025</h2>
+          <p class="album-description">
+            Imágenes del torneo realizado en Septiembre 2025
+          </p>
+          <div class="album-preview">
+            <div class="main-preview">
+              <img
+                src="../img/gallery/14-thumb.jpg"
+                alt="Torneo 2do Set"
+                data-index="0"
+              />
+            </div>
+            <div class="thumbnails">
+              <img
+                src="../img/gallery/10-thumb.jpg"
+                alt="Miniatura 1"
+                data-index="0"
+              />
+              <img
+                src="../img/gallery/14-thumb.jpg"
+                alt="Miniatura 2"
+                data-index="1"
+              />
+              <!-- Agrega más miniaturas aquí -->
+            </div>
+          </div>
+          <button class="view-album-btn" data-album="segundo-set">
+            Ver álbum completo
+          </button>
+        </div>
+        <!-- Álbum Copa Challenger -->
+        <div class="album martin-gallardo">
+          <h2 class="album-title">Torneo Copa Challenger 2025</h2>
+          <p class="album-description">
+            Imágenes del torneo realizado en Septiembre 2025
+          </p>
+          <div class="album-preview">
+            <div class="main-preview">
+              <img
+                src="../img/gallery/10-thumb.jpg"
+                alt="Torneo por equipos"
+                data-index="0"
+              />
+            </div>
+            <div class="thumbnails">
+              <img
+                src="../img/gallery/10-thumb.jpg"
+                alt="Miniatura 1"
+                data-index="0"
+              />
+              <img
+                src="../img/gallery/14-thumb.jpg"
+                alt="Miniatura 2"
+                data-index="1"
+              />
+              <!-- Agrega más miniaturas aquí -->
+            </div>
+          </div>
+          <button class="view-album-btn" data-album="martin-gallardo">
+            Ver álbum completo
+          </button>
+        </div>
+        <!-- Repetir la estructura para los demás álbumes -->
+      </div>
+
+      <!-- Lightbox para álbumes completos -->
+      <div class="album-lightbox">
+        <div class="lightbox-content">
+          <button class="lightbox-close">&times;</button>
+          <button class="lightbox-prev">&lt;</button>
+          <button class="lightbox-next">&gt;</button>
+          <div class="lightbox-image-container">
+            <img src="" alt="" class="lightbox-image" />
+          </div>
+          <div class="lightbox-caption">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-counter"></p>
+          </div>
+          <div class="lightbox-thumbnails"></div>
+        </div>
+      </div>
     </main>
-        <!-- Espacio de publicidad -->
-<div class="ad-space">
-  <div class="ad-container">
-    <div class="ad-title">Publicidad</div>
-    <div class="ads-wrapper">
-      <a href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4" target="_blank" class="ad-item">
-        <img src="../img/muebles.jpeg" alt="Publicidad" class="ad-image" />
-      </a>
-      <a href="https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w" target="_blank" class="ad-item">
-        <img src="../img/publi/trexx.jpeg" alt="Publicidad" class="ad-image" />
-      </a>
-      <!-- Puedes agregar más publicidades aquí -->
+    <!-- Espacio de publicidad -->
+    <div class="ad-space">
+      <div class="ad-container">
+        <div class="ad-title">Publicidad</div>
+        <div class="ads-wrapper">
+          <a
+            href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4"
+            target="_blank"
+            class="ad-item"
+          >
+            <img src="../img/muebles.jpeg" alt="Publicidad" class="ad-image" />
+          </a>
+          <a
+            href="https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w"
+            target="_blank"
+            class="ad-item"
+          >
+            <img
+              src="../img/publi/trexx.jpeg"
+              alt="Publicidad"
+              class="ad-image"
+            />
+          </a>
+          <!-- Puedes agregar más publicidades aquí -->
+        </div>
+      </div>
     </div>
-  </div>
-</div>
- <!-- Footer -->
+    <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
         <div class="footer-links">
@@ -234,7 +336,10 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script src="js/galeria.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
-     crossorigin="anonymous"></script>
-</body>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
