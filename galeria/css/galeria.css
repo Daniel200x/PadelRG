@@ -502,3 +502,40 @@
         max-height: 50vh;
     }
 }
+/* Mejoras para dispositivos táctiles */
+@media (max-width: 768px) {
+    .lightbox-prev,
+    .lightbox-next {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        z-index: 1001;
+    }
+    
+    .lightbox-close {
+        top: -50px;
+        right: 10px;
+        font-size: 2.5rem;
+        z-index: 1001;
+    }
+    
+    /* Asegurar que los botones sean fácilmente tocables */
+    .view-album-btn {
+        min-height: 44px; /* Tamaño mínimo recomendado para elementos táctiles */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        padding: 12px 20px;
+        min-height: 44px;
+    }
+}
+
+/* Prevenir zoom en inputs en iOS */
+@media screen and (max-width: 768px) {
+    select, textarea, input[type="text"] {
+        font-size: 16px; /* Previene zoom en iOS */
+    }
+}

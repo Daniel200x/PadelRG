@@ -230,53 +230,109 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función para inicializar eventos
-    function initEvents() {
-        // Filtrado de álbumes
-        if (filterButtons) {
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    
-                    const filterValue = button.dataset.filter;
-                    document.querySelectorAll('.album').forEach(album => {
-                        album.style.display = (filterValue === 'all' || album.classList.contains(filterValue)) 
-                            ? 'block' 
-                            : 'none';
-                    });
+ // Función para inicializar eventos
+function initEvents() {
+    // Filtrado de álbumes
+    if (filterButtons) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Prevenir comportamiento por defecto en móviles
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                }
+                
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.dataset.filter;
+                document.querySelectorAll('.album').forEach(album => {
+                    album.style.display = (filterValue === 'all' || album.classList.contains(filterValue)) 
+                        ? 'block' 
+                        : 'none';
                 });
             });
-        }
-        
-        // Eventos del lightbox
-        if (lightboxPrev && lightboxNext) {
-            lightboxPrev.addEventListener('click', showPrevImage);
-            lightboxNext.addEventListener('click', showNextImage);
-        }
-        
-        if (lightboxClose) {
-            lightboxClose.addEventListener('click', closeLightbox);
-        }
-        
-        // Eventos de teclado
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && albumLightbox.classList.contains('active')) {
-                closeLightbox();
-            } else if (e.key === 'ArrowLeft' && albumLightbox.classList.contains('active')) {
-                showPrevImage();
-            } else if (e.key === 'ArrowRight' && albumLightbox.classList.contains('active')) {
-                showNextImage();
-            }
-        });
-        
-        // Cerrar al hacer clic fuera de la imagen
-        albumLightbox.addEventListener('click', function(e) {
-            if (e.target === albumLightbox) {
-                closeLightbox();
-            }
         });
     }
+    
+    // Eventos del lightbox - Mejorados para touch
+    if (lightboxPrev && lightboxNext) {
+        // Para dispositivos táctiles
+        lightboxPrev.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            showPrevImage();
+        }, {passive: false});
+        
+        lightboxNext.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            showNextImage();
+        }, {passive: false});
+        
+        // Para dispositivos con mouse
+        lightboxPrev.addEventListener('click', showPrevImage);
+        lightboxNext.addEventListener('click', showNextImage);
+    }
+    
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxClose.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            closeLightbox();
+        }, {passive: false});
+    }
+    
+    // Navegación por gestos táctiles en la imagen
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    lightboxImage.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+    
+    lightboxImage.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, {passive: true});
+    
+    function handleSwipe() {
+        const minSwipeDistance = 50; // Distancia mínima para considerar un swipe
+        const distance = touchStartX - touchEndX;
+        
+        if (Math.abs(distance) < minSwipeDistance) return;
+        
+        if (distance > 0) {
+            // Swipe izquierda - siguiente imagen
+            showNextImage();
+        } else {
+            // Swipe derecha - imagen anterior
+            showPrevImage();
+        }
+    }
+    
+    // Eventos de teclado
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && albumLightbox.classList.contains('active')) {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft' && albumLightbox.classList.contains('active')) {
+            showPrevImage();
+        } else if (e.key === 'ArrowRight' && albumLightbox.classList.contains('active')) {
+            showNextImage();
+        }
+    });
+    
+    // Cerrar al hacer clic fuera de la imagen
+    albumLightbox.addEventListener('click', function(e) {
+        if (e.target === albumLightbox) {
+            closeLightbox();
+        }
+    });
+    
+    // Prevenir zoom no deseado en dispositivos táctiles
+    document.addEventListener('touchstart', function(e) {
+        if (albumLightbox.classList.contains('active') && e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+}
 
    // Función para abrir un álbum
 function openAlbum(albumId, startIndex = 0) {
