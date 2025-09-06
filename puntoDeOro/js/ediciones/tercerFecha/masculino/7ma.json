@@ -30,8 +30,8 @@
           "fecha": "Viernes 20:00 hs Cancha 6",
           "equipo1": "S. Rodriguez/A. Garcia",
           "equipo2": "C. Cardenas/D. Galdames",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
         },
         {
           "fecha": "Sabado 14:00 hs Cancha 2",
@@ -122,8 +122,8 @@
           "fecha": "Viernes 21:00 hs Cancha 3",
           "equipo1": "D. Ruiz/S. Aranda",
           "equipo2": "F. Mariani/A. Ponce",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 5-7"
         }
       ]
     },
@@ -204,8 +204,8 @@
           "fecha": "Viernes 21:00 hs Cancha 4",
           "equipo1": "F. Marquez/R. Garcia",
           "equipo2": "A. Maluf/Segovia",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 7-5"
         }
       ]
     },
@@ -424,8 +424,8 @@
           "fecha": "Viernes 20:00 hs Cancha 3",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha 3",
