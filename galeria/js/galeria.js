@@ -284,16 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // =============================================
     // Ajustar altura de los items de la galería
     // =============================================
-    const adjustGalleryItems = () => {
-        if (galleryItems.length > 0) {
-            const width = galleryItems[0].offsetWidth;
-            galleryItems.forEach(item => {
-                item.style.height = `${width}px`;
-            });
-        }
-    };
+   
     
-    // Ejecutar al cargar y al redimensionar
-    window.addEventListener('load', adjustGalleryItems);
-    window.addEventListener('resize', adjustGalleryItems);
+  
 });
