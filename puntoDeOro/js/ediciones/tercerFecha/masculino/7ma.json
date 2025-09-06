@@ -36,9 +36,9 @@
         {
           "fecha": "Sabado 14:00 hs Cancha 2",
           "equipo1": "C. Chalier/J. Gimenez",
-          "equipo2": "C. Cardenas/D. Galdames",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "S. Rodriguez/A. Garcia",
+          "resultado": "2-0",
+          "games":"6-2,6-0"
         }
         
       ]
@@ -163,8 +163,8 @@
           "fecha": "Viernes 22:00 hs Cancha 5",
           "equipo1": "A. Porcu/F. Ruiz",
           "equipo2": "E. Sanchez/E. Arteaga",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-6, 0-6"
         }
       ]
     },
@@ -328,7 +328,7 @@
           "equipo1": "J. Paniagua/C. Ortiz",
           "equipo2": "C. Ozores/W. Arrua",
           "resultado": "0-2",
-          "games":"4-6, 4-6"
+          "games":"3-6, 3-6"
         }
       ]
     },
