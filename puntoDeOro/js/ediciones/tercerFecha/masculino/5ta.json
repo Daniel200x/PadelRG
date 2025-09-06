@@ -290,15 +290,15 @@
           "fecha": "Sabado 16:00 hs Cancha 1",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"7-5, 5-7, 6-7"
         },
         {
           "fecha": "Sabado 16:00 hs Cancha 2",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-6,0-6"
         }
       ]
     }
