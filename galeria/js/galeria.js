@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Esta es una solución temporal - en un entorno real necesitarías
         // un servidor que proporcione la lista de archivos
-        const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+        const imageExtensions = ['.jpg','.JPG', '.jpeg', '.png', '.gif', '.webp'];
         const images = [];
         
         // Para GitHub Pages, una opción es tener un archivo JSON con la lista de imágenes
