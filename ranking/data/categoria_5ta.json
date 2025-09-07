@@ -84,7 +84,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -204,7 +205,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -252,7 +254,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 100}
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -324,7 +327,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 100}
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -396,7 +400,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -420,7 +425,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -433,7 +439,7 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3ro Torneo", "puntos": 25}
+          {"edicion": "3ro Torneo", "puntos": 0}
         ]
       }
     },
@@ -541,7 +547,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -614,7 +621,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 75},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -664,7 +672,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -689,7 +698,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -839,7 +849,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 150},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -964,7 +975,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1014,7 +1026,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1039,7 +1052,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1239,7 +1253,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1289,7 +1304,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1339,7 +1355,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1364,7 +1381,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1412,7 +1430,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 150},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1436,7 +1455,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 150},
-          {"edicion": "2do Torneo", "puntos": 175}
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1604,7 +1624,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1628,7 +1649,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1676,7 +1698,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -1700,7 +1723,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -1988,7 +2012,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -2038,7 +2063,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 100}
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -2311,7 +2337,59 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3ro Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 246,
+      "name": "Cesar Andrade",
+      "gender": "masculino",
+      "category": "5ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 247,
+      "name": "M Demarchi",
+      "gender": "masculino",
+      "category": "5ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 75}
           
         ],
         "arenas": [
