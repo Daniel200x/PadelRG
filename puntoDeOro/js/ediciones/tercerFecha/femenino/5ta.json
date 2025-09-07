@@ -216,15 +216,15 @@
         "equipo1": "2do B",
           "equipo2": "2do C",
           "fecha": "Sabado 19:00",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
       },
       {
          "equipo1": "2do A",
           "equipo2": "2do D",
           "fecha": "Sabado 19:00",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4,7-6"
       }
     ],
     "cuartos": [
