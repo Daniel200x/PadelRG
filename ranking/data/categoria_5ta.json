@@ -432,7 +432,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3ro Torneo", "puntos": 25}
         ]
       }
     },
