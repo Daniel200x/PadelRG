@@ -419,38 +419,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function actualizarResultadosGrupos(grupos) {
         grupos.forEach(grupo => {
-            // Mapear resultados de los primeros partidos
-            const resultadosPrimerosPartidos = {};
+            // Mapear resultados de TODOS los partidos, no solo los primeros 2
+            const resultadosPartidos = {};
             
-            // Procesar los primeros 2 partidos de cada grupo
-            for (let i = 0; i < 2 && i < grupo.partidos.length; i++) {
-                const partido = grupo.partidos[i];
-                
+            // Procesar TODOS los partidos del grupo
+            grupo.partidos.forEach((partido, index) => {
                 if (partido.resultado && partido.resultado !== '-' && partido.resultado !== 'A definir') {
                     const [sets1, sets2] = partido.resultado.split('-').map(Number);
                     
                     if (sets1 > sets2) {
-                        resultadosPrimerosPartidos[`Ganador Partido ${i+1}`] = partido.equipo1;
-                        resultadosPrimerosPartidos[`Perdedor Partido ${i+1}`] = partido.equipo2;
+                        resultadosPartidos[`Ganador Partido ${index+1}`] = partido.equipo1;
+                        resultadosPartidos[`Perdedor Partido ${index+1}`] = partido.equipo2;
                     } else {
-                        resultadosPrimerosPartidos[`Ganador Partido ${i+1}`] = partido.equipo2;
-                        resultadosPrimerosPartidos[`Perdedor Partido ${i+1}`] = partido.equipo1;
+                        resultadosPartidos[`Ganador Partido ${index+1}`] = partido.equipo2;
+                        resultadosPartidos[`Perdedor Partido ${index+1}`] = partido.equipo1;
                     }
                 }
-            }
+            });
             
             // Actualizar los partidos posteriores con los resultados
             grupo.partidos.forEach(partido => {
                 if (partido.equipo1 && partido.equipo2) {
                     // Reemplazar en equipo1
-                    for (const [key, value] of Object.entries(resultadosPrimerosPartidos)) {
+                    for (const [key, value] of Object.entries(resultadosPartidos)) {
                         if (partido.equipo1.includes(key)) {
                             partido.equipo1 = value;
                         }
                     }
                     
                     // Reemplazar en equipo2
-                    for (const [key, value] of Object.entries(resultadosPrimerosPartidos)) {
+                    for (const [key, value] of Object.entries(resultadosPartidos)) {
                         if (partido.equipo2.includes(key)) {
                             partido.equipo2 = value;
                         }
