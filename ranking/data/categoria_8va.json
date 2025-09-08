@@ -250,7 +250,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -466,7 +466,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -582,7 +582,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 175}
           
         ],
         "arenas": [
@@ -3062,13 +3062,13 @@
     },
     {
       "id": 1227,
-      "name": "",
+      "name": "Pedro Di Bahia",
       "gender": "masculino",
       "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
           {"edicion": "3er Torneo", "puntos": 0}
           
         ],
