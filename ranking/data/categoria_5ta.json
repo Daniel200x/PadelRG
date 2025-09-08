@@ -303,7 +303,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
@@ -2364,7 +2365,7 @@
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
