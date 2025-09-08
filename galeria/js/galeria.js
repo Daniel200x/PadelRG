@@ -92,15 +92,26 @@ document.addEventListener('DOMContentLoaded', function() {
             folder: '../img/gallery/arenas/',
            description: 'Imágenes del torneo realizado en Agosto 2025'
         },
-*/        'punto-de-oro': {
-            title: 'Torneo Punto de Oro 2025',
-            folder: '../img/gallery/punto-de-oro/',
-            description: 'Imágenes del 3er Oficial de Punto de Oro'
-        },
+*/      
         'punto-de-oro-mierc': {
             title: 'Torneo Punto de Oro 2025',
             folder: '../img/gallery/punto-de-oro-mierc/',
-            description: 'Imágenes del 3er Oficial de Punto de Oro'
+            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Miercoles'
+        },
+          'punto-de-oro': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Jueves'
+        },
+        'punto-de-oro-sab': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro-sab/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Sabado'
+        },
+        'punto-de-oro-dom': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro-dom/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Domingo'
         }/*,
         'segundo-set': {
             title: 'Torneo 2do Set 2025',
