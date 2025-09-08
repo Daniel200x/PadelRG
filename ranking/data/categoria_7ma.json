@@ -4806,7 +4806,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 175}
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -4831,7 +4832,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 175}
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -5358,7 +5360,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 200}
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 175}
           
         ],
         "arenas": [
@@ -5383,7 +5386,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 25},
-          {"edicion": "2do Torneo", "puntos": 200}
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 175}
           
         ],
         "arenas": [
