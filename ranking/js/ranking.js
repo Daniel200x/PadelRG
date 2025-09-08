@@ -221,10 +221,32 @@ function applyFilters() {
                 a.torneos[currentTournamentFilter].reduce((sum, ed) => sum + ed.puntos, 0) : 0;
             const bPoints = b.torneos && b.torneos[currentTournamentFilter] ? 
                 b.torneos[currentTournamentFilter].reduce((sum, ed) => sum + ed.puntos, 0) : 0;
+            
+            // Si hay empate en puntos, ordenar por cantidad de torneos jugados
+            if (bPoints === aPoints) {
+                const aTournamentsCount = a.torneos && a.torneos[currentTournamentFilter] ? 
+                    a.torneos[currentTournamentFilter].length : 0;
+                const bTournamentsCount = b.torneos && b.torneos[currentTournamentFilter] ? 
+                    b.torneos[currentTournamentFilter].length : 0;
+                
+                return bTournamentsCount - aTournamentsCount;
+            }
+            
             return bPoints - aPoints;
         });
     } else {
-        filteredData.sort((a, b) => b.points - a.points);
+        filteredData.sort((a, b) => {
+            // Primero por puntos totales
+            if (b.points !== a.points) {
+                return b.points - a.points;
+            }
+            
+            // En caso de empate, contar torneos jugados en todos los complejos
+            const aTournamentsCount = countAllTournamentsPlayed(a);
+            const bTournamentsCount = countAllTournamentsPlayed(b);
+            
+            return bTournamentsCount - aTournamentsCount;
+        });
     }
     
     currentPage = 1;
@@ -232,6 +254,18 @@ function applyFilters() {
     updatePagination();
 }
 
+// Función auxiliar para contar todos los torneos jugados por un jugador
+function countAllTournamentsPlayed(player) {
+    if (!player.torneos) return 0;
+    
+    let count = 0;
+    for (const torneo in player.torneos) {
+        if (player.torneos[torneo]) {
+            count += player.torneos[torneo].length;
+        }
+    }
+    return count;
+}
 // Renderizar la tabla de ranking
 function renderRankingTable() {
     rankingTable.innerHTML = '';
