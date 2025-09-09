@@ -6,6 +6,7 @@
     <title>Fixture del Día Punto de Oro - Pádel RG</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/blanco.css">
+    <link rel="stylesheet" href="css/llaves.css">
     <link rel="stylesheet" href="../ranking/css/ranking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -71,43 +72,61 @@
 
     <!-- Contenedor principal del fixture del día -->
     <div class="fixture-container">
-        <h1>Fixture del Día Punto de Oro</h1>
+        <h1>Punto de Oro - Tercera Fecha</h1>
         
-        <!-- Selector de día -->
-        <div class="day-selector">
-            <h2>Selecciona un día:</h2>
-            <div class="day-buttons">
-                <button class="day-btn" data-day="Miercoles">Miércoles</button>
-                <button class="day-btn active" data-day="Jueves">Jueves</button>
-                <button class="day-btn" data-day="Viernes">Viernes</button>
-                <button class="day-btn" data-day="Sabado">Sábado</button>
-                <button class="day-btn" data-day="Domingo">Domingo</button>
+        <!-- Sistema de pestañas -->
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li class="tab active" data-tab="groups">Fixture de Grupos</li>
+                <li class="tab" data-tab="brackets">Llaves de Eliminatorias</li>
+            </ul>
+        </div>
+        
+        <!-- Contenido de la pestaña de Grupos -->
+        <div id="groups-tab" class="tab-content active">
+            <!-- Selector de día -->
+            <div class="day-selector">
+                <h2>Selecciona un día:</h2>
+                <div class="day-buttons">
+                    <button class="day-btn" data-day="Miercoles">Miércoles</button>
+                    <button class="day-btn active" data-day="Jueves">Jueves</button>
+                    <button class="day-btn" data-day="Viernes">Viernes</button>
+                    <button class="day-btn" data-day="Sabado">Sábado</button>
+                    <button class="day-btn" data-day="Domingo">Domingo</button>
+                </div>
+            </div>
+            
+            <!-- Tabla de partidos -->
+            <div class="matches-table-container">
+                <table class="matches-table">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Categoría</th>
+                            <th>Zona</th>
+                            <th>Equipo 1</th>
+                            <th>Equipo 2</th>
+                            <th>Cancha</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matchesTableBody">
+                        <!-- Los partidos se cargarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Contador de partidos -->
+            <div class="matches-count">
+                <p>Total de partidos: <span id="totalMatches">0</span></p>
             </div>
         </div>
         
-<!-- Tabla de partidos -->
-<div class="matches-table-container">
-    <table class="matches-table">
-        <thead>
-            <tr>
-                <th>Horario</th>
-                <th>Categoría</th>
-                <th>Zona</th>
-                <th>Equipo 1</th>
-                <th>Equipo 2</th>
-                <th>Cancha</th>
-                <th>Resultado</th>
-            </tr>
-        </thead>
-        <tbody id="matchesTableBody">
-            <!-- Los partidos se cargarán aquí -->
-        </tbody>
-    </table>
-</div>
-        
-        <!-- Contador de partidos -->
-        <div class="matches-count">
-            <p>Total de partidos: <span id="totalMatches">0</span></p>
+        <!-- Contenido de la pestaña de Eliminatorias -->
+        <div id="brackets-tab" class="tab-content">
+            <div class="brackets-container" id="bracketsContainer">
+                <!-- Las llaves se generarán aquí mediante JavaScript -->
+            </div>
         </div>
     </div>
 
@@ -144,5 +163,6 @@
 
     <script src="../blanco/js/blanco.js"></script>
     <script src="../blanco/js/fixture-del-dia.js"></script>
+    <script src="../blanco/js/llaves.js"></script>
 </body>
 </html>
