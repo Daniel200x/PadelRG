@@ -1,4 +1,4 @@
-// fixture-del-dia.js - Gestión del fixture del día
+// fixture-del-dia.js - Gestión del fixture del día (solo grupos)
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
     let diaActual = 'Jueves';
@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     mostrarAdvertencia(archivosFallidos);
                 }
                 
-                // Obtener todos los días disponibles
+                // Obtener todos los días disponibles (solo de grupos)
                 obtenerDiasDisponibles();
                 
                 // Seleccionar el día apropiado
                 seleccionarDiaAutomaticamente();
                 
-                // Mostrar partidos
+                // Mostrar partidos (solo de grupos)
                 mostrarPartidosDelDia();
             })
             .catch(error => {
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function obtenerDiasDisponibles() {
         diasDisponibles.clear();
         
-        // Recorrer todas las categorías para encontrar días con partidos
+        // Recorrer todas las categorías para encontrar días con partidos de GRUPOS solamente
         for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
-            // Partidos de grupos
+            // Solo partidos de grupos
             if (categoria.grupos && Array.isArray(categoria.grupos)) {
                 categoria.grupos.forEach(grupo => {
                     if (grupo.partidos && Array.isArray(grupo.partidos)) {
@@ -95,60 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            // Partidos de eliminatorias
-            if (categoria.eliminatorias) {
-                procesarEliminatoriasParaDias(categoria.eliminatorias);
-            }
-        }
-    }
-
-    function procesarEliminatoriasParaDias(eliminatorias) {
-        // Dieciseisavos de final
-        if (eliminatorias.dieciseisavos && Array.isArray(eliminatorias.dieciseisavos)) {
-            eliminatorias.dieciseisavos.forEach(partido => {
-                const fechaInfo = extraerInformacionFecha(partido.fecha);
-                if (fechaInfo.dia !== "Por definir") {
-                    diasDisponibles.add(fechaInfo.dia);
-                }
-            });
-        }
-        
-        // Octavos de final
-        if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
-            eliminatorias.octavos.forEach(partido => {
-                const fechaInfo = extraerInformacionFecha(partido.fecha);
-                if (fechaInfo.dia !== "Por definir") {
-                    diasDisponibles.add(fechaInfo.dia);
-                }
-            });
-        }
-        
-        // Cuartos de final
-        if (eliminatorias.cuartos && Array.isArray(eliminatorias.cuartos)) {
-            eliminatorias.cuartos.forEach(partido => {
-                const fechaInfo = extraerInformacionFecha(partido.fecha);
-                if (fechaInfo.dia !== "Por definir") {
-                    diasDisponibles.add(fechaInfo.dia);
-                }
-            });
-        }
-        
-        // Semifinales
-        if (eliminatorias.semis && Array.isArray(eliminatorias.semis)) {
-            eliminatorias.semis.forEach(partido => {
-                const fechaInfo = extraerInformacionFecha(partido.fecha);
-                if (fechaInfo.dia !== "Por definir") {
-                    diasDisponibles.add(fechaInfo.dia);
-                }
-            });
-        }
-        
-        // Final
-        if (eliminatorias.final) {
-            const fechaInfo = extraerInformacionFecha(eliminatorias.final.fecha);
-            if (fechaInfo.dia !== "Por definir") {
-                diasDisponibles.add(fechaInfo.dia);
-            }
+            // Eliminamos el procesamiento de eliminatorias para la detección de días
         }
     }
 
@@ -192,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // PROCESAR LOS DATOS ANTES DE MOSTRARLOS
             const categoriaProcesada = procesarDatosParaFixture(categoria);
             
-            // Partidos de grupos (usar categoriaProcesada en lugar de categoria)
+            // Solo partidos de grupos (usar categoriaProcesada en lugar de categoria)
             if (categoriaProcesada.grupos && Array.isArray(categoriaProcesada.grupos)) {
                 categoriaProcesada.grupos.forEach(grupo => {
                     if (grupo.partidos && Array.isArray(grupo.partidos)) {
@@ -203,50 +150,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            // Partidos de eliminatorias (usar categoriaProcesada)
-            if (categoriaProcesada.eliminatorias) {
-                procesarEliminatorias(categoriaProcesada.eliminatorias, categoriaProcesada.nombre, todosLosPartidos);
-            }
+            // Eliminamos el procesamiento de eliminatorias para la visualización
         }
         
         // Ordenar y mostrar partidos
         todosLosPartidos.sort((a, b) => a.tiempoEnMinutos - b.tiempoEnMinutos);
         mostrarPartidosEnTabla(todosLosPartidos);
-    }
-
-    function procesarEliminatorias(eliminatorias, categoria, todosLosPartidos) {
-        // Dieciseisavos de final
-        if (eliminatorias.dieciseisavos && Array.isArray(eliminatorias.dieciseisavos)) {
-            eliminatorias.dieciseisavos.forEach(partido => {
-                procesarPartido(partido, categoria, "Dieciseisavos", "Eliminatoria", todosLosPartidos);
-            });
-        }
-        
-        // Octavos de final
-        if (eliminatorias.octavos && Array.isArray(eliminatorias.octavos)) {
-            eliminatorias.octavos.forEach(partido => {
-                procesarPartido(partido, categoria, "Octavos", "Eliminatoria", todosLosPartidos);
-            });
-        }
-        
-        // Cuartos de final
-        if (eliminatorias.cuartos && Array.isArray(eliminatorias.cuartos)) {
-            eliminatorias.cuartos.forEach(partido => {
-                procesarPartido(partido, categoria, "Cuartos", "Eliminatoria", todosLosPartidos);
-            });
-        }
-        
-        // Semifinales
-        if (eliminatorias.semis && Array.isArray(eliminatorias.semis)) {
-            eliminatorias.semis.forEach(partido => {
-                procesarPartido(partido, categoria, "Semifinal", "Eliminatoria", todosLosPartidos);
-            });
-        }
-        
-        // Final
-        if (eliminatorias.final) {
-            procesarPartido(eliminatorias.final, categoria, "Final", "Eliminatoria", todosLosPartidos);
-        }
     }
 
     function procesarPartido(partido, categoria, zona, fase, todosLosPartidos) {
@@ -275,10 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         partidos.forEach(partido => {
             const row = document.createElement('tr');
-            
-            if (partido.fase === "Eliminatoria") {
-                row.classList.add('partido-eliminatoria');
-            }
             
             // Obtener solo el campo "games" del partido
             const games = partido.partidoRaw.games || "A definir";
@@ -381,40 +286,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 calcularEstadisticas(grupo);
             });
             
-            // 3. Determinar clasificados y actualizar eliminatorias
+            // 3. Determinar clasificados (aunque no los usaremos para eliminatorias)
             if (data.eliminatorias) {
                 const clasificados = determinarClasificados(data.grupos);
-                actualizarEliminatoriasParaFixture(data.eliminatorias, clasificados);
+                // No actualizamos eliminatorias ya que no las mostramos
             }
         }
         
         return data;
-    }
-
-    function actualizarEliminatoriasParaFixture(eliminatorias, clasificados) {
-        const reemplazarClasificacion = (texto) => {
-            return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupo) => {
-                return clasificados[`${posicion} ${grupo}`] || match;
-            });
-        };
-
-        // Procesar todas las fases de eliminatorias
-        const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
-        
-        fases.forEach(fase => {
-            if (eliminatorias[fase]) {
-                if (Array.isArray(eliminatorias[fase])) {
-                    eliminatorias[fase].forEach(partido => {
-                        partido.equipo1 = reemplazarClasificacion(partido.equipo1);
-                        partido.equipo2 = reemplazarClasificacion(partido.equipo2);
-                    });
-                } else if (typeof eliminatorias[fase] === 'object') {
-                    // Para la final que es un objeto, no un array
-                    eliminatorias[fase].equipo1 = reemplazarClasificacion(eliminatorias[fase].equipo1);
-                    eliminatorias[fase].equipo2 = reemplazarClasificacion(eliminatorias[fase].equipo2);
-                }
-            }
-        });
     }
 
     function actualizarResultadosGrupos(grupos) {
@@ -535,27 +414,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         return clasificados;
-    }
-
-    function determinarGanadorPorGames(games) {
-        if (!games || games === "A definir") return null;
-        
-        const sets = games.split(',').map(set => {
-            const [games1, games2] = set.trim().split('-').map(Number);
-            return { games1, games2 };
-        });
-        
-        let setsGanados1 = 0;
-        let setsGanados2 = 0;
-        
-        sets.forEach(set => {
-            if (set.games1 > set.games2) {
-                setsGanados1++;
-            } else {
-                setsGanados2++;
-            }
-        });
-        
-        return setsGanados1 > setsGanados2 ? 1 : 2;
     }
 });
