@@ -173,18 +173,18 @@
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 23:30 hs Cancha 1",
+          "fecha": "Viernes 23:30 hs ",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "resultado": "2-0",
-          "games":"6-2, 6-4"
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "fecha": "Viernes 23:30 hs Cancha 2",
+          "fecha": "Viernes 23:30 hs ",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "resultado": "2-0",
-          "games":"6-0, 6-0"
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     }
