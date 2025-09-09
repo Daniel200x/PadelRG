@@ -5,33 +5,33 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "M. Pereyra/W. Sosa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "W. Alvarado/I. Perez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "J. Mendez/F. Insfran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 21:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 23:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Sabado 14:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
@@ -44,33 +44,33 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "C. Andrade/V. Lemus","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "W. Gimenez/A. Garcia","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Aballay/A. Ojeda","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 22:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 23:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Sabado 12:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
@@ -84,33 +84,33 @@
       "nombre": "Grupo C",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Escobar/M. Soto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "S. Barila/N. Romero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "R. Muriño/J. Baldovino","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Miercoles 17:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 20:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 18:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
@@ -122,33 +122,33 @@
       "nombre": "Grupo D",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "D. Floriani/F. Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "J. Chaparro/C. Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "C. Chalier/J. Gimenez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Miercoles 17:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 17:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 17:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
@@ -160,33 +160,33 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Quiroz/F. Galucci","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "W. Nieva/N. Paredes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "F. Forno/R. Gomez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Miercoles 21:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 21:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 20:00 hs",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
