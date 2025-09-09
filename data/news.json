@@ -143,6 +143,16 @@
       "image": "../img/gallery/21.jpg",
       "alt": "Formato de torneo",
       "fullContent": "Dio inicio el ultimo torneo de Punto de Oro en categorias impares.\n\n Con mas de 90 parejas inscriptas en Damas y Caballeros se viene desarrollando con exito los partidos de grupos, finalizando los mismos el dia Sabado. \n\n A partir de las 17 del mismo sabado arranca la etapa eliminatoria buscando consagrarse en el ultimo torneo puntuable para el Master de fin de año."
-    } 
+    },
+    {
+      "id": 15,
+      "title": "Disfruta la galeria de fotos en Punto de Oro",
+      "date": "08 Septiembre 2025",
+      "timestamp": "2025-09-08", 
+      "summary": "Accede a la galeria de fotos del 3er Oficial en Punto...",
+      "image": "../img/news/galeria.jpg",
+      "alt": "Formato de torneo",
+      "fullContent": "Ya podes ingresar a la galeria de fotos del ultimo torneo de Punto de Oro en categorias impares.\n\n Con mas de 90 parejas inscriptas en Damas y Caballeros se desarrollo con exito el torneo, finalizando el dia Domingo. \n\n Ingresa en <a href='https://padelrg.com.ar/galeria/galeria.html' target='_blank'>https://padelrg.com.ar/galeria/galeria.html</a>."
+    }  
 ]
 }
