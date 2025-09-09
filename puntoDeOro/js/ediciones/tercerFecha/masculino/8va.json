@@ -5,35 +5,35 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "F. Marquez/R. Garcia","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "L. Loberche/T. Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "C. Trani/A. Guzman","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "L. Loberche/T. Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "C. Trani/A. Guzman",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "C. Trani/A. Guzman",
+          "equipo2": "L. Loberche/T. Ruiz",
           "resultado": "",
           "games":"A definir"
         }
@@ -44,35 +44,35 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "D. Fernandez/H. Aceri","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "J. Rivero/A. Muller","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "A. Faletti/F. Faletti","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "D. Fernandez/H. Aceri",
+          "equipo2": "A. Faletti/F. Faletti",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:00 hs",
+          "equipo1": "D. Fernandez/H. Aceri",
+          "equipo2": "J. Rivero/A. Muller",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "J. Rivero/A. Muller",
+          "equipo2": "A. Faletti/F. Faletti",
           "resultado": "",
           "games":"A definir"
         }
@@ -84,35 +84,35 @@
       "nombre": "Grupo C",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "A. Mondaca/M. Nuñez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "C. Ruiz/G. Muñoz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "A. Maluf/H. Samaniego","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "C. Ruiz/G. Muñoz",
+          "equipo2": "A. Maluf/H. Samaniego",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "A. Mondaca/M. Nuñez",
+          "equipo2": "A. Maluf/H. Samaniego",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "C. Ruiz/G. Muñoz",
+          "equipo2": "A. Mondaca/M. Nuñez",
           "resultado": "",
           "games":"A definir"
         }
@@ -122,35 +122,35 @@
       "nombre": "Grupo D",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "A. Romero/D. Minicucci","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "F. Molina/A. Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "R. Rodriguez/R. Rodriguez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "A. Romero/D. Minicucci",
+          "equipo2": "R. Rodriguez/R. Rodriguez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "F. Molina/A. Gonzalez",
+          "equipo2": "R. Rodriguez/R. Rodriguez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "A. Romero/D. Minicucci",
+          "equipo2": "F. Molina/A. Gonzalez",
           "resultado": "",
           "games":"A definir"
         }
@@ -160,35 +160,35 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Martinez/S. Loncopan","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+         "nombre": "A. Graneros/F. Wasinger","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "D. Radwanitzer/N. Magallanes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs",
+          "equipo1": "G. Martinez/S. Loncopan",
+          "equipo2": "D. Radwanitzer/N. Magallanes",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs",
+          "equipo1": "G. Martinez/E. Alfonzo",
+          "equipo2": "A. Graneros/F. Wasinger",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "A. Graneros/F. Wasinger",
+          "equipo2": "D. Radwanitzer/N. Magallanes",
           "resultado": "",
           "games":"A definir"
         }
