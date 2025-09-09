@@ -5,31 +5,13 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -62,31 +44,13 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -119,32 +83,14 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+       {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -175,32 +121,14 @@
     {
       "nombre": "Grupo D",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+       {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -232,31 +160,206 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+       {
+          "nombre": "G. Martinez/E. Alfonzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "F. Riveros/M. Reyes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "R. Pedraza/E. Barrera","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 20:00 hs",
+          "equipo1": "G. Martinez/E. Alfonzo",
+          "equipo2": "F. Riveros/M. Reyes",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "G. Martinez/E. Alfonzo",
+          "equipo2": "R. Pedraza/E. Barrera",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "F. Riveros/M. Reyes",
+          "equipo2": "R. Pedraza/E. Barrera",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+       {
+          "nombre": "H. Sanabria/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "M. Gomez/J. Ruano","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "G. Ojeda/L. Pugnale","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 23:00 hs",
+          "equipo1": "H. Sanabria/A confirmar",
+          "equipo2": "M. Gomez/J. Ruano",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 23:00 hs",
+          "equipo1": "H. Sanabria/A confirmar",
+          "equipo2": "G. Ojeda/L. Pugnale",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "M. Gomez/J. Ruano",
+          "equipo2": "G. Ojeda/L. Pugnale",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },{
+      "nombre": "Grupo H",
+      "equipos": [
+       {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },{
+      "nombre": "Grupo I",
+      "equipos": [
+       {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },{
+      "nombre": "Grupo J",
+      "equipos": [
+       {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -285,75 +388,148 @@
       ]
     }
   ],
- "eliminatorias": {
-    "octavos": [
+  "eliminatorias": {
+  "dieciseisavos": [
       {
-        "equipo1": "2do B",
-          "equipo2": "2do C",
-          "fecha": "Sabado 17:00",
-          "resultado": "0-2",
-          "games":"4-6, 2-6"
+         "equipo1": "2do C",
+          "equipo2": "2do F",
+          "fecha": "Sabado 18:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "2do G",
+          "equipo2": "2do B",
+          "fecha": "Sabado 18:00 hs",
+         "resultado": "",
+        "games": ""
       },
       {
          "equipo1": "2do A",
+          "equipo2": "2do H",
+          "fecha": "Sabado 18:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "2do E",
           "equipo2": "2do D",
-          "fecha": "Sabado 17:00",
-          "resultado": "2-0",
-          "games":"6-1, 7-5"
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "",
+        "games": ""
+      }
+
+    ],  
+  "octavos": [
+      {
+        "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Sabado 23:00 hs",
+         "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "1ro I",
+          "equipo2": "1ro H",
+          "fecha": "Sabado 23:00 hs",
+          "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "2do J",
+          "fecha": "Sabado 22:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro D",
+          "fecha": "Sabado 22:00 hs",
+         "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro C",
+          "equipo2": "Ganador P3",
+          "fecha": "Sabado 23:00 hs",
+          "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "2do I",
+          "equipo2": "1ro F",
+          "fecha": "Sabado 22:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "1ro G",
+          "equipo2": "1ro J",
+          "fecha": "Sabado 22:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Ganador P4",
+          "equipo2": "1ro B",
+          "fecha": "Sabado 23:00 hs",
+          "resultado": "",
+        "games": ""
       }
     ],
     "cuartos": [
       {
-         "equipo1": "1ro A",
-          "equipo2": "Ganador P1",
-          "fecha": "Domingo 10:00 ",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 11:00 hs",
           "resultado": "",
-          "games":"6-3,6-1"
+        "games": ""
       },
       {
-         "equipo1": "1ro E",
-          "equipo2": "1ro D",
-          "fecha": "Domingo 10:00 ",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 11:00 hs",
           "resultado": "",
-          "games":"4-6,4-6"
+        "games": ""
       },
       {
-         "equipo1": "1ro C",
-          "equipo2": "2do E",
-          "fecha": "Domingo 10:00 ",
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 11:00 hs",
           "resultado": "",
-          "games":"6-0,6-2"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P2",
-          "equipo2": "1ro B",
-          "fecha": "Domingo 10:00 ",
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo 11:00 hs",
           "resultado": "",
-          "games":"6-4,4-6,6-7"
+        "games": ""
       }
     ],
     "semis": [
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 14:00",
-          "resultado": "",
-          "games":"6-2, 6-3"
+          "fecha": "Domingo 15:30 hs",
+         "resultado": "",
+        "games": ""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 14:00",
+          "fecha": "Domingo 15:30 hs",
           "resultado": "",
-          "games":"2-6, 1-6"
+        "games": ""
       }
     ],
     "final": {
-       "equipo1": "Ganador P5",
+        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo 20:00",
+          "fecha": "Domingo 20:00 hs",
           "resultado": "",
-          "games":"3-6, 4-6"
+        "games": ""
     }
   }
 }
