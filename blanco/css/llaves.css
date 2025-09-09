@@ -1,3 +1,4 @@
+/* llaves.css - Estilos mejorados para las llaves */
 /* Estilos para las pestañas */
 .tabs-container {
     margin: 20px 0;
@@ -9,6 +10,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .tab {
@@ -22,6 +24,7 @@
     font-weight: bold;
     color: #555;
     transition: all 0.3s ease;
+    margin-bottom: 5px;
 }
 
 .tab:hover {
@@ -42,179 +45,348 @@
     display: block;
 }
 
-/* Estilos para las llaves de torneo */
+/* Estilos mejorados para las llaves de torneo */
 .brackets-container {
     overflow-x: auto;
     margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .bracket-category {
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    position: relative;
 }
 
 .bracket-title {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    padding: 12px 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 18px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .bracket {
     display: flex;
     min-width: 100%;
     overflow-x: auto;
-    padding-bottom: 10px;
-}
-
-.round {
-    flex: 1;
-    min-width: 220px;
-    margin-right: 25px;
+    padding: 20px 0;
+    gap: 30px;
     position: relative;
 }
 
-.round:not(:last-child):after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -12px;
-    width: 20px;
-    height: 2px;
-    background-color: #ccc;
-    transform: translateY(-50%);
+.round {
+    flex: 0 0 auto;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .round-title {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 15px;
-    padding: 8px;
-    background-color: #ecf0f1;
-    border-radius: 5px;
-    color: #2c3e50;
-    font-size: 16px;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 3;
 }
 
 .match {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    background: white;
+    min-height: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .match:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #FF8C00;
 }
 
 .team {
-    padding: 10px 12px;
-    border-bottom: 1px solid #eee;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 45px;
+    transition: background-color 0.2s ease;
+    position: relative;
 }
 
 .team:last-child {
     border-bottom: none;
 }
 
+.team:hover {
+    background-color: #f8f9fa;
+}
+
 .team-name {
     flex: 1;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2c3e50;
+    line-height: 1.4;
 }
 
 .team-seed {
-    background-color: #f0f0f0;
-    padding: 2px 6px;
-    border-radius: 10px;
-    font-size: 11px;
-    margin-left: 8px;
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-left: 10px;
     font-weight: bold;
-    color: #666;
+    color: white;
+    min-width: 25px;
+    text-align: center;
 }
 
 .team.winner {
-    background-color: #e8f5e9;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
     font-weight: bold;
 }
 
 .team.winner .team-seed {
-    background-color: #4caf50;
-    color: white;
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
 }
 
 .match-score {
     text-align: center;
-    padding: 8px;
-    background-color: #f5f5f5;
+    padding: 10px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     font-weight: bold;
     color: #2c3e50;
-    border-top: 1px solid #eee;
+    border-top: 2px solid #e0e0e0;
+    font-size: 15px;
 }
 
 .match-info {
-    padding: 6px 10px;
-    background-color: #f9f9f9;
+    padding: 8px 12px;
+    background: #f8f9fa;
     font-size: 12px;
-    color: #666;
+    color: #6c757d;
     text-align: center;
-    border-top: 1px solid #eee;
-}
-
-.empty-match {
-    padding: 30px;
-    text-align: center;
-    color: #999;
+    border-top: 1px solid #e9ecef;
     font-style: italic;
-    border: 2px dashed #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
 }
 
-/* Líneas conectivas entre rondas */
+/* LÍNEAS CONECTIVAS MEJORADAS */
 .round-connector {
     position: relative;
 }
 
-.round-connector:before {
+.round-connector::before {
     content: '';
     position: absolute;
     top: 50%;
-    right: -10px;
-    height: 50%;
+    left: -15px;
     width: 15px;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-top-right-radius: 5px;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    z-index: 1;
 }
 
-.round-connector:after {
+.round-connector::after {
     content: '';
     position: absolute;
-    bottom: 50%;
-    right: -10px;
-    height: 50%;
+    top: 50%;
+    right: -15px;
     width: 15px;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
-    border-bottom-right-radius: 5px;
+    height: 2px;
+    background: linear-gradient(to left, #3498db, #2980b9);
+    z-index: 1;
+}
+
+/* Líneas verticales entre partidos */
+.match::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    width: 2px;
+    height: 120%;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.match::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    width: 2px;
+    height: 120%;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Ocultar líneas en los extremos */
+.round:first-child .match::before,
+.round:last-child .match::after {
+    display: none;
+}
+
+/* Conectores especiales para la final */
+.round[data-phase="final"] .match::before,
+.round[data-phase="final"] .match::after {
+    height: 100%;
+}
+
+/* Empty states */
+.empty-match {
+    padding: 40px;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    border: 2px dashed #dee2e6;
+    border-radius: 10px;
+    background: #f8f9fa;
+    margin: 20px 0;
+}
+
+.empty-match i {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #ced4da;
+    display: block;
+}
+
+.empty-match h3 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.empty-match p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.empty-match button {
+    margin: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.empty-match button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2980b9 0%, #2471a3 100%);
+}
+
+/* Colores diferentes para cada fase */
+.round[data-phase="dieciseisavos"] .round-title {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.round[data-phase="octavos"] .round-title {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+}
+
+.round[data-phase="cuartos"] .round-title {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+}
+
+.round[data-phase="semifinales"] .round-title {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.round[data-phase="final"] .round-title {
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.round[data-phase="tercero"] .round-title {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+}
+
+/* Scrollbar personalizado */
+.brackets-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.brackets-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.brackets-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    border-radius: 5px;
+    border: 2px solid #f1f1f1;
+}
+
+.brackets-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #2471a3 100%);
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+    .round {
+        min-width: 220px;
+    }
+    
+    .bracket {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .round {
+        min-width: 200px;
+    }
+    
+    .bracket {
+        gap: 20px;
+    }
+    
+    .bracket-title {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .tabs {
         flex-direction: column;
@@ -223,61 +395,200 @@
     .tab {
         border-radius: 5px;
         border: 1px solid #ddd;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         text-align: center;
+        width: 100%;
     }
     
     .round {
         min-width: 180px;
-        margin-right: 15px;
+        gap: 15px;
     }
     
-    .team {
-        padding: 8px 10px;
-        font-size: 14px;
+    .bracket {
+        gap: 15px;
+        padding: 15px 0;
     }
     
     .bracket-title {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+    
+    .round-title {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+    
+    .team {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .match-score {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    /* Ajustar líneas para móviles */
+    .round-connector::before,
+    .round-connector::after {
+        display: none;
+    }
+    
+    .match::before,
+    .match::after {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
+    .brackets-container {
+        padding: 15px;
+    }
+    
+    .bracket-category {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
     .round {
         min-width: 160px;
+        gap: 12px;
+    }
+    
+    .bracket-title {
+        font-size: 16px;
+        padding: 10px 12px;
     }
     
     .team {
-        padding: 6px 8px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    
+    .team-seed {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+    
+    .match-score {
         font-size: 13px;
     }
     
-    .match-info {
-        font-size: 11px;
+    .empty-match {
+        padding: 25px;
     }
     
-    .tab {
-        padding: 10px 15px;
-        font-size: 14px;
+    .empty-match h3 {
+        font-size: 18px;
+    }
+    
+    .empty-match button {
+        padding: 10px 18px;
+        font-size: 13px;
     }
 }
 
-/* Mejorar la apariencia del scroll horizontal */
-.brackets-container::-webkit-scrollbar {
-    height: 8px;
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.brackets-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.brackets-container::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 4px;
+.bracket-category {
+    animation: fadeIn 0.6s ease-out;
 }
 
-.brackets-container::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+.match {
+    animation: slideIn 0.4s ease-out;
+}
+
+/* Efectos de hover mejorados */
+.tab {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Mejoras visuales para ganadores */
+.team.winner .team-name {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+/* Estilo para resultados pendientes */
+.resultado-pendiente {
+    color: #7f8c8d !important;
+    font-style: italic;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+}
+
+/* Mejora para la visualización en dispositivos táctiles */
+@media (hover: none) {
+    .match:hover {
+        transform: none;
+    }
+    
+    .tab:hover {
+        transform: none;
+    }
+    
+    .empty-match button:hover {
+        transform: none;
+    }
+}
+
+/* Asegurar que el contenido sea legible en todos los dispositivos */
+.bracket {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mejorar la accesibilidad */
+.team:focus,
+.match:focus,
+.tab:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Estilos para las coronas de ganadores */
+.fa-crown {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Gradientes suaves para las fases */
+.round[data-phase] .round-title {
+    background-blend-mode: multiply;
+}
+
+/* Sombreado suave para mejor contraste */
+.bracket {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
 }

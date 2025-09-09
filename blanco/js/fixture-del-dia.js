@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
     let diaActual = 'Jueves';
-    let torneosData = {};
+    window.torneosData = {};
+    window.datosProcesados = {}; // <-- NUEVO: Para compartir datos procesados
     let diasDisponibles = new Set();
 
     // Inicializar el fixture del día
@@ -30,12 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function cargarDatosExternos() {
-        const archivosJSON = ['../puntoDeOro/js/ediciones/tercerFecha/femenino/4ta.json',
+        const archivosJSON = [
+            '../puntoDeOro/js/ediciones/tercerFecha/femenino/4ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/6ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/8va.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/4ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/6ta.json',
-            '../puntoDeOro/js/ediciones/tercerFecha/masculino/8va.json'];
+            '../puntoDeOro/js/ediciones/tercerFecha/masculino/8va.json'
+        ];
+        
         const promesasCarga = archivosJSON.map(archivo => {
             return fetch(archivo)
                 .then(response => {
@@ -43,8 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     return response.json();
                 })
                 .then(data => {
-                    const nombreCategoria = archivo.replace('.json', '');
-                    torneosData[nombreCategoria] = data;
+                    // Extraer nombre de categoría del path del archivo
+                    const pathParts = archivo.split('/');
+                    const categoriaKey = `${pathParts[pathParts.length - 3]}_${pathParts[pathParts.length - 2]}_${pathParts[pathParts.length - 1].replace('.json', '')}`;
+                    window.torneosData[categoriaKey] = data;
                     return { archivo, success: true };
                 })
                 .catch(error => {
@@ -60,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.warn('Algunos archivos no se pudieron cargar:', archivosFallidos);
                     mostrarAdvertencia(archivosFallidos);
                 }
+                
+                // Hacer los datos disponibles globalmente
+                window.torneosData = window.torneosData;
                 
                 // Obtener todos los días disponibles (solo de grupos)
                 obtenerDiasDisponibles();
@@ -80,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         diasDisponibles.clear();
         
         // Recorrer todas las categorías para encontrar días con partidos de GRUPOS solamente
-        for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
+        for (const [categoriaKey, categoria] of Object.entries(window.torneosData)) {
             // Solo partidos de grupos
             if (categoria.grupos && Array.isArray(categoria.grupos)) {
                 categoria.grupos.forEach(grupo => {
@@ -127,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarPartidosDelDia() {
-        if (Object.keys(torneosData).length === 0) return;
+        if (Object.keys(window.torneosData).length === 0) return;
         
         const tableBody = document.getElementById('matchesTableBody');
         tableBody.innerHTML = '';
@@ -135,9 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let todosLosPartidos = [];
         
         // Recorrer todas las categorías
-        for (const [categoriaKey, categoria] of Object.entries(torneosData)) {
+        for (const [categoriaKey, categoria] of Object.entries(window.torneosData)) {
             // PROCESAR LOS DATOS ANTES DE MOSTRARLOS
-            const categoriaProcesada = procesarDatosParaFixture(categoria);
+            const categoriaProcesada = procesarDatosParaFixture(categoria, categoriaKey);
             
             // Solo partidos de grupos (usar categoriaProcesada en lugar de categoria)
             if (categoriaProcesada.grupos && Array.isArray(categoriaProcesada.grupos)) {
@@ -273,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // FUNCIONES COPIADAS DESDE script.js PARA PROCESAR LOS DATOS
 
-    function procesarDatosParaFixture(categoriaData) {
+    function procesarDatosParaFixture(categoriaData, categoriaKey) {
         // Hacer copia profunda para no modificar los datos originales
         const data = JSON.parse(JSON.stringify(categoriaData));
         
@@ -286,10 +295,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 calcularEstadisticas(grupo);
             });
             
-            // 3. Determinar clasificados (aunque no los usaremos para eliminatorias)
+            // 3. Determinar clasificados y actualizar eliminatorias
             if (data.eliminatorias) {
                 const clasificados = determinarClasificados(data.grupos);
-                // No actualizamos eliminatorias ya que no las mostramos
+                actualizarEliminatorias(data.eliminatorias, clasificados);
+                
+                // GUARDAR LOS DATOS PROCESADOS GLOBALMENTE
+                window.datosProcesados[categoriaKey] = {
+                    grupos: data.grupos,
+                    eliminatorias: data.eliminatorias,
+                    clasificados: clasificados,
+                    nombre: data.nombre
+                };
             }
         }
         
@@ -415,4 +432,140 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return clasificados;
     }
+
+    function actualizarEliminatorias(eliminatorias, clasificados) {
+        const reemplazarClasificacion = (texto) => {
+            return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupo) => {
+                return clasificados[`${posicion} ${grupo}`] || match;
+            });
+        };
+
+        // Procesar 16vos si existen
+        if (eliminatorias.dieciseisavos) {
+            eliminatorias.dieciseisavos.forEach((partido, index) => {
+                partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+                partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+                
+                // Determinar ganador basado en games
+                const ganadorIndex = determinarGanadorPorGames(partido.games);
+                if (ganadorIndex) {
+                    partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                    partido.resultado = partido.games; // Actualizar resultado con los games
+                    
+                    // Actualizar octavos
+                    if (eliminatorias.octavos) {
+                        eliminatorias.octavos.forEach(octavo => {
+                            octavo.equipo1 = octavo.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                            octavo.equipo2 = octavo.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                        });
+                    }
+                }
+            });
+        }
+
+        // Procesar octavos si existen
+        if (eliminatorias.octavos) {
+            eliminatorias.octavos.forEach((partido, index) => {
+                partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+                partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+                
+                // Determinar ganador basado en games
+                const ganadorIndex = determinarGanadorPorGames(partido.games);
+                if (ganadorIndex) {
+                    partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                    partido.resultado = partido.games; // Actualizar resultado con los games
+                    
+                    // Actualizar cuartos
+                    if (eliminatorias.cuartos) {
+                        eliminatorias.cuartos.forEach(cuarto => {
+                            cuarto.equipo1 = cuarto.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                            cuarto.equipo2 = cuarto.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                        });
+                    }
+                }
+            });
+        }
+        
+        // Procesar cuartos si existen
+        if (eliminatorias.cuartos) {
+            eliminatorias.cuartos.forEach((partido, index) => {
+                partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+                partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+                
+                // Determinar ganador basado en games
+                const ganadorIndex = determinarGanadorPorGames(partido.games);
+                if (ganadorIndex) {
+                    partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                    partido.resultado = partido.games; // Actualizar resultado con los games
+                    
+                    // Actualizar semifinales
+                    if (eliminatorias.semis) {
+                        eliminatorias.semis.forEach(semi => {
+                            semi.equipo1 = semi.equipo1.replace(`Ganador P${index + 1}`, partido.ganador);
+                            semi.equipo2 = semi.equipo2.replace(`Ganador P${index + 1}`, partido.ganador);
+                        });
+                    }
+                }
+            });
+        }
+
+        // Procesar semifinales si existen
+        if (eliminatorias.semis) {
+            eliminatorias.semis.forEach((partido, index) => {
+                partido.equipo1 = reemplazarClasificacion(partido.equipo1);
+                partido.equipo2 = reemplazarClasificacion(partido.equipo2);
+                
+                const ganadorIndex = determinarGanadorPorGames(partido.games);
+                if (ganadorIndex) {
+                    partido.ganador = ganadorIndex === 1 ? partido.equipo1 : partido.equipo2;
+                    partido.resultado = partido.games;
+                    
+                    // Actualizar final
+                    if (eliminatorias.final) {
+                        eliminatorias.final.equipo1 = eliminatorias.final.equipo1.replace(`Ganador P${index + 5}`, partido.ganador);
+                        eliminatorias.final.equipo2 = eliminatorias.final.equipo2.replace(`Ganador P${index + 5}`, partido.ganador);
+                    }
+                }
+            });
+        }
+        
+        // Procesar final si existe
+        if (eliminatorias.final) {
+            eliminatorias.final.equipo1 = reemplazarClasificacion(eliminatorias.final.equipo1);
+            eliminatorias.final.equipo2 = reemplazarClasificacion(eliminatorias.final.equipo2);
+            
+            const ganadorIndex = determinarGanadorPorGames(eliminatorias.final.games);
+            if (ganadorIndex) {
+                eliminatorias.final.ganador = ganadorIndex === 1 ? eliminatorias.final.equipo1 : eliminatorias.final.equipo2;
+                eliminatorias.final.resultado = eliminatorias.final.games;
+            }
+        }
+    }
+
+    function determinarGanadorPorGames(games) {
+        if (!games || games === "A definir") return null;
+        
+        const sets = games.split(',').map(set => {
+            const [games1, games2] = set.trim().split('-').map(Number);
+            return { games1, games2 };
+        });
+        
+        let setsGanados1 = 0;
+        let setsGanados2 = 0;
+        
+        sets.forEach(set => {
+            if (set.games1 > set.games2) {
+                setsGanados1++;
+            } else {
+                setsGanados2++;
+            }
+        });
+        
+        return setsGanados1 > setsGanados2 ? 1 : 2;
+    }
 });
+
+// Hacer funciones disponibles globalmente
+window.procesarDatosParaFixture = procesarDatosParaFixture;
+window.extraerInformacionFecha = extraerInformacionFecha;
+window.convertirHorarioAMinutos = convertirHorarioAMinutos;

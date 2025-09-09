@@ -118,14 +118,14 @@
           "equipo2": "2do C",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"6-1"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do A",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"4-6"
       }
     ],
     "semis": [
@@ -134,14 +134,14 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"6-2"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":""
+          "games":"5-7"
       }
     ],
     "final": {
