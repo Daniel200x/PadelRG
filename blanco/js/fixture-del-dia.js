@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function cargarDatosExternos() {
-        const archivosJSON = ['../puntoDeOro/js/ediciones/tercerFecha/femenino/5ta.json',
-            '../puntoDeOro/js/ediciones/tercerFecha/femenino/7ma.json',
-            '../puntoDeOro/js/ediciones/tercerFecha/masculino/5ta.json',
-            '../puntoDeOro/js/ediciones/tercerFecha/masculino/7ma.json'];
+        const archivosJSON = ['../puntoDeOro/js/ediciones/tercerFecha/femenino/4ta.json',
+            '../puntoDeOro/js/ediciones/tercerFecha/femenino/6ta.json',
+            '../puntoDeOro/js/ediciones/tercerFecha/femenino/8va.json',
+            '../puntoDeOro/js/ediciones/tercerFecha/masculino/4ta.json',
+            '../puntoDeOro/js/ediciones/tercerFecha/masculino/6ta.json',
+            '../puntoDeOro/js/ediciones/tercerFecha/masculino/8va.json'];
         const promesasCarga = archivosJSON.map(archivo => {
             return fetch(archivo)
                 .then(response => {
@@ -151,23 +153,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function seleccionarDiaAutomaticamente() {
-        // Obtener el día actual en español
-        const diasSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
-        const fecha = new Date();
-        const diaHoy = diasSemana[fecha.getDay()];
+        // Obtener todos los días disponibles
+        const diasArray = Array.from(diasDisponibles);
         
-        // Verificar si el día actual está disponible
-        if (diasDisponibles.has(diaHoy)) {
-            diaActual = diaHoy;
+        if (diasArray.length > 0) {
+            // Ordenar los días cronológicamente
+            const ordenDias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+            const diasOrdenados = diasArray.sort((a, b) => {
+                return ordenDias.indexOf(a) - ordenDias.indexOf(b);
+            });
+            
+            // Seleccionar el primer día cronológico con partidos
+            diaActual = diasOrdenados[0];
         } else {
-            // Si no está disponible, seleccionar el primer día disponible
-            const diasArray = Array.from(diasDisponibles);
-            if (diasArray.length > 0) {
-                diaActual = diasArray[0];
-            } else {
-                // Si no hay días disponibles, mantener el valor por defecto
-                console.warn("No se encontraron días con partidos disponibles");
-            }
+            // Si no hay días disponibles, mantener el valor por defecto
+            console.warn("No se encontraron días con partidos disponibles");
         }
         
         // Actualizar la interfaz para reflejar el día seleccionado
