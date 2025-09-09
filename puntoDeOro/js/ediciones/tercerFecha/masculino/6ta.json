@@ -337,11 +337,18 @@
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
+        }, 
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
           "resultado": "",
           "games":"A definir"
         }
@@ -378,10 +385,17 @@
           "resultado": "",
           "games":"A definir"
         },
+         {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
           "resultado": "",
           "games":"A definir"
         }
