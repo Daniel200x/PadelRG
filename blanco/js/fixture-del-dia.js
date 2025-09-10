@@ -33,10 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function cargarDatosExternos() {
         const archivosJSON = [
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/4ta.json',
+            //'../puntoDeOro/js/ediciones/tercerFecha/femenino/5ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/6ta.json',
+            //'../puntoDeOro/js/ediciones/tercerFecha/femenino/7ma.json',
             '../puntoDeOro/js/ediciones/tercerFecha/femenino/8va.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/4ta.json',
+            //'../puntoDeOro/js/ediciones/tercerFecha/masculino/5ta.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/6ta.json',
+            //'../puntoDeOro/js/ediciones/tercerFecha/masculino/7ma.json',
             '../puntoDeOro/js/ediciones/tercerFecha/masculino/8va.json'
         ];
         

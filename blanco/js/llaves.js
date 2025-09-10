@@ -1,4 +1,4 @@
-// llaves.js - Versión compacta con conexiones visuales
+// llaves.js - Versión con categorías en pestañas
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -38,59 +38,165 @@ window.generarLlavesEliminatorias = function() {
     
     setTimeout(() => {
         generarLlavesConEliminatoriasReales(datosUsar);
-        setTimeout(dibujarTodasLasConexiones, 300);
     }, 100);
 };
 
+// En llaves.js, modificar la función generarLlavesConEliminatoriasReales
 function generarLlavesConEliminatoriasReales(datos) {
     const bracketsContainer = document.getElementById('bracketsContainer');
     bracketsContainer.innerHTML = '';
     
     let llavesGeneradas = false;
     
+    // Agrupar datos por categoría
+    const categorias = {};
+    
     for (const [categoriaKey, categoria] of Object.entries(datos)) {
-        const eliminatorias = categoria.eliminatorias;
+        // Extraer información de categoría de la clave
+        const partes = categoriaKey.split('_');
+        let nombreCategoria = categoria.nombre || formatearNombreCategoria(categoriaKey);
         
-        if (eliminatorias && Object.keys(eliminatorias).length > 0) {
-            llavesGeneradas = true;
-            
-            const categoryDiv = document.createElement('div');
-            categoryDiv.className = 'bracket-category compact-view';
-            
-            const titleDiv = document.createElement('div');
-            titleDiv.className = 'bracket-title compact-title';
-            titleDiv.innerHTML = `
-                <i class="fas fa-trophy"></i>
-                ${categoria.nombre || formatearNombreCategoria(categoriaKey)}
-                <div>Fase Eliminatoria</div>
-            `;
-            categoryDiv.appendChild(titleDiv);
-            
-            const bracketDiv = document.createElement('div');
-            bracketDiv.className = 'bracket compact-bracket';
-            bracketDiv.id = `bracket-${categoriaKey.replace(/\s+/g, '-')}`;
-            
-            const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
-            
-            fases.forEach((fase, index) => {
-                if (eliminatorias[fase]) {
-                    generarFaseEliminatoria(
-                        bracketDiv, 
-                        fase, 
-                        eliminatorias[fase], 
-                        index, 
-                        fases.length,
-                        categoria.clasificados
-                    );
-                }
-            });
-            
-            categoryDiv.appendChild(bracketDiv);
-            bracketsContainer.appendChild(categoryDiv);
+        // Si es una categoría de Punto de Oro, extraer más detalles
+        if (partes.length >= 3) {
+            const tipo = partes[1] === 'femenino' ? 'Femenino' : 'Masculino';
+            const nivel = partes[2].charAt(0).toUpperCase() + partes[2].slice(1);
+            nombreCategoria = `${nivel} ${tipo}`;
         }
+        
+        if (!categorias[nombreCategoria]) {
+            categorias[nombreCategoria] = [];
+        }
+        
+        categorias[nombreCategoria].push({
+            key: categoriaKey,
+            data: categoria
+        });
     }
     
-    if (!llavesGeneradas) mostrarMensajeSinEliminatorias();
+    // ORDENAR LAS CATEGORÍAS DE MENOR A MAYOR
+    const ordenCategorias = [
+        '4ta Femenino', '5ta Femenino', '6ta Femenino', '8va Femenino',
+        '4ta Masculino', '6ta Masculino', '8va Masculino'
+    ];
+    
+    // Crear un objeto ordenado
+    const categoriasOrdenadas = {};
+    ordenCategorias.forEach(cat => {
+        if (categorias[cat]) {
+            categoriasOrdenadas[cat] = categorias[cat];
+        }
+    });
+    
+    // Añadir cualquier categoría que no esté en la lista ordenada
+    Object.keys(categorias).forEach(cat => {
+        if (!categoriasOrdenadas[cat]) {
+            categoriasOrdenadas[cat] = categorias[cat];
+        }
+    });
+    
+    // Crear pestañas para cada categoría
+    const categoryTabsContainer = document.createElement('div');
+    categoryTabsContainer.className = 'category-tabs-container';
+    
+    const categoryTabs = document.createElement('ul');
+    categoryTabs.className = 'category-tabs';
+    
+    const categoryContents = document.createElement('div');
+    categoryContents.className = 'category-contents';
+    
+    let firstTab = true;
+    
+    // Generar pestañas y contenido para cada categoría (usando categoriasOrdenadas)
+    for (const [nombreCategoria, torneos] of Object.entries(categoriasOrdenadas)) {
+        let tieneEliminatorias = false;
+        
+        // Verificar si esta categoría tiene eliminatorias
+        for (const torneo of torneos) {
+            const eliminatorias = torneo.data.eliminatorias;
+            if (eliminatorias && Object.keys(eliminatorias).length > 0) {
+                tieneEliminatorias = true;
+                llavesGeneradas = true;
+                break;
+            }
+        }
+        
+        if (!tieneEliminatorias) continue;
+        
+        // Crear pestaña para esta categoría
+        const tabId = nombreCategoria.toLowerCase().replace(/\s+/g, '-');
+        const tab = document.createElement('li');
+        tab.className = `category-tab ${firstTab ? 'active' : ''}`;
+        tab.setAttribute('data-category-tab', tabId);
+        tab.textContent = nombreCategoria;
+        tab.addEventListener('click', () => {
+            // Activar esta pestaña y desactivar las demás
+            document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.category-content').forEach(c => c.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById(`category-${tabId}`).classList.add('active');
+        });
+        categoryTabs.appendChild(tab);
+        
+        // Crear contenido para esta categoría
+        const categoryContent = document.createElement('div');
+        categoryContent.className = `category-content ${firstTab ? 'active' : ''}`;
+        categoryContent.id = `category-${tabId}`;
+        
+        const torneosContainer = document.createElement('div');
+        torneosContainer.className = 'tournaments-container';
+        
+        for (const torneo of torneos) {
+            const eliminatorias = torneo.data.eliminatorias;
+            
+            if (eliminatorias && Object.keys(eliminatorias).length > 0) {
+                const tournamentDiv = document.createElement('div');
+                tournamentDiv.className = 'tournament-bracket';
+                
+                // Añadir subtítulo para el torneo si es necesario
+                if (torneos.length > 1) {
+                    const subTitle = document.createElement('h3');
+                    subTitle.className = 'tournament-subtitle';
+                    subTitle.textContent = torneo.data.nombre || '';
+                    tournamentDiv.appendChild(subTitle);
+                }
+                
+                const bracketDiv = document.createElement('div');
+                bracketDiv.className = 'bracket';
+                bracketDiv.id = `bracket-${torneo.key.replace(/\s+/g, '-')}`;
+                
+                const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
+                
+                fases.forEach((fase, index) => {
+                    if (eliminatorias[fase]) {
+                        generarFaseEliminatoria(
+                            bracketDiv, 
+                            fase, 
+                            eliminatorias[fase], 
+                            index, 
+                            fases.length,
+                            torneo.data.clasificados
+                        );
+                    }
+                });
+                
+                tournamentDiv.appendChild(bracketDiv);
+                torneosContainer.appendChild(tournamentDiv);
+            }
+        }
+        
+        categoryContent.appendChild(torneosContainer);
+        categoryContents.appendChild(categoryContent);
+        
+        firstTab = false;
+    }
+    
+    if (llavesGeneradas) {
+        categoryTabsContainer.appendChild(categoryTabs);
+        categoryTabsContainer.appendChild(categoryContents);
+        bracketsContainer.appendChild(categoryTabsContainer);
+    } else {
+        mostrarMensajeSinEliminatorias();
+    }
 }
 
 function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, totalFases, clasificados) {
@@ -180,58 +286,6 @@ function obtenerFaseAnterior(faseActual) {
         'final': 'semis'
     };
     return fases[faseActual] || 'dieciseisavos';
-}
-
-function dibujarTodasLasConexiones() {
-    document.querySelectorAll('.conexion-partido').forEach(el => el.remove());
-    
-    conectarFase('dieciseisavos', 'octavos');
-    conectarFase('octavos', 'cuartos');
-    conectarFase('cuartos', 'semis');
-    conectarFase('semis', 'final');
-}
-
-function conectarFase(faseOrigen, faseDestino) {
-    const partidosDestino = document.querySelectorAll(`.round[data-phase="${faseDestino}"] .match`);
-    
-    partidosDestino.forEach(partidoDestino => {
-        const refSource1 = partidoDestino.getAttribute('data-ref-source-1');
-        const refIndex1 = partidoDestino.getAttribute('data-ref-index-1');
-        const refSource2 = partidoDestino.getAttribute('data-ref-source-2');
-        const refIndex2 = partidoDestino.getAttribute('data-ref-index-2');
-        
-        if (refSource1 === faseOrigen && refIndex1 !== null) {
-            const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${parseInt(refIndex1) + 1})`);
-            if (partidoOrigen) conectarPartidos(partidoOrigen, partidoDestino, 'left');
-        }
-        
-        if (refSource2 === faseOrigen && refIndex2 !== null) {
-            const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${parseInt(refIndex2) + 1})`);
-            if (partidoOrigen) conectarPartidos(partidoOrigen, partidoDestino, 'right');
-        }
-        
-        if (!refSource1 && !refSource2) {
-            const equipo1 = partidoDestino.querySelector('.team:first-child .team-name').textContent;
-            const equipo2 = partidoDestino.querySelector('.team:last-child .team-name').textContent;
-            
-            if (equipo1.includes('Ganador P') || equipo2.includes('Ganador P')) {
-                const refMatch1 = equipo1.match(/Ganador P(\d+)/);
-                const refMatch2 = equipo2.match(/Ganador P(\d+)/);
-                
-                if (refMatch1) {
-                    const partidoId = parseInt(refMatch1[1]) - 1;
-                    const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${partidoId + 1})`);
-                    if (partidoOrigen) conectarPartidos(partidoOrigen, partidoDestino, 'left');
-                }
-                
-                if (refMatch2) {
-                    const partidoId = parseInt(refMatch2[1]) - 1;
-                    const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${partidoId + 1})`);
-                    if (partidoOrigen) conectarPartidos(partidoOrigen, partidoDestino, 'right');
-                }
-            }
-        }
-    });
 }
 
 function conectarPartidos(partidoOrigen, partidoDestino, lado = 'left') {
@@ -405,8 +459,9 @@ function mostrarMensajeSinEliminatorias() {
 function formatearNombreCategoria(clave) {
     const partes = clave.split('_');
     if (partes.length >= 3) {
-        const genero = partes[1] === 'femenino' ? 'Fem' : 'Masc';
-        return `${partes[2]} ${genero}`;
+        const genero = partes[1] === 'femenino' ? 'Femenino' : 'Masculino';
+        const nivel = partes[2].charAt(0).toUpperCase() + partes[2].slice(1);
+        return `${nivel} ${genero}`;
     }
     return clave;
 }
@@ -436,6 +491,59 @@ compactStyles.textContent = `
         .compact-round { min-width: 130px; }
         .compact-round-title { font-size: 11px; }
         .compact-team-name { font-size: 10px; }
+    }
+    
+    /* Estilos para la separación de categorías */
+    .tournaments-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 15px;
+    }
+    
+    .tournament-bracket {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tournament-subtitle {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #FF8C00;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .bracket-category {
+        margin-bottom: 40px;
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+    }
+    
+    .bracket-category:last-child {
+        margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .tournament-bracket {
+            padding: 10px;
+        }
+        
+        .bracket-category {
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .tournament-subtitle {
+            font-size: 16px;
+        }
     }
 `;
 document.head.appendChild(compactStyles);
