@@ -99,8 +99,8 @@
           "fecha": "Miercoles 17:00 hs",
           "equipo1": "G. Escobar/M. Soto",
           "equipo2": "S. Barila/N. Romero",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"4-6, 6-1, 7-6"
         },
         {
           "fecha": "Jueves 20:00 hs",
@@ -135,10 +135,10 @@
       "partidos": [
         {
           "fecha": "Miercoles 17:00 hs",
-          "equipo1": "D. Floriani/F. Gonzalez",
+          "equipo1": "J. Chaparro/C. Graneros",
           "equipo2": "C. Chalier/J. Gimenez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 7-5"
         },
         {
           "fecha": "Jueves 17:00 hs",
@@ -149,7 +149,7 @@
         },
         {
           "fecha": "Viernes 17:00 hs",
-          "equipo1": "J. Chaparro/C. Graneros",
+          "equipo1": "D. Floriani/F. Gonzalez",
           "equipo2": "C. Chalier/J. Gimenez",
           "resultado": "",
           "games":"A definir"
