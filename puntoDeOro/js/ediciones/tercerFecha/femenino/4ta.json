@@ -7,7 +7,7 @@
         {
           "nombre": "M. Medina/R. Torres","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "C. Gersisich/A. Zampini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+         "nombre": "C. Gersicich/A. Zampini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
          "nombre": "A. Romero/V. Fernandez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
@@ -15,14 +15,14 @@
       "partidos": [
         {
           "fecha": "Miercoles 19:00 hs",
-          "equipo1": "C. Gersisich/A. Zampini",
+          "equipo1": "C. Gersicich/A. Zampini",
           "equipo2": "A. Romero/V. Fernandez",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Jueves 19:00 hs",
-          "equipo1": "C. Gersisich/A. Zampini",
+          "equipo1": "C. Gersicich/A. Zampini",
           "equipo2": "M. Medina/R. Torres",
           "resultado": "",
           "games":"A definir"
