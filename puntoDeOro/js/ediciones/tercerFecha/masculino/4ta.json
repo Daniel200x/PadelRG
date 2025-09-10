@@ -43,7 +43,7 @@
          {
           "nombre": "J. Servian/Y. Sanchez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "J. Morales/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+         "nombre": "J. Morales/Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
          "nombre": "L. Ojeda/A. Chalier","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
@@ -51,7 +51,7 @@
       "partidos": [
         {
           "fecha": "Miercoles 23:00 hs",
-          "equipo1": "J. Morales/A confirmar",
+          "equipo1": "J. Morales/Gonzalez",
           "equipo2": "L. Ojeda/A. Chalier",
           "resultado": "",
           "games":"A definir"
@@ -66,7 +66,7 @@
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "J. Servian/Y. Sanchez",
-          "equipo2": "J. Morales/A confirmar",
+          "equipo2": "J. Morales/Gonzalez",
           "resultado": "",
           "games":"A definir"
         }

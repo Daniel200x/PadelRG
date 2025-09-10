@@ -210,7 +210,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 20:00 hs",
+          "fecha": "Miercoles 19:00 hs",
           "equipo1": "G. Martinez/E. Alfonzo",
           "equipo2": "F. Riveros/M. Reyes",
           "resultado": "",
@@ -242,14 +242,14 @@
          "nombre": "M. Gomez/J. Ruano","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "G. Ojeda/L. Pugnale","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Ojeda/Yañez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Miercoles 23:00 hs",
-          "equipo1": "H. Sanabria/A confirmar",
+          "equipo1": "G. Ojeda/Yañez",
           "equipo2": "M. Gomez/J. Ruano",
           "resultado": "",
           "games":"A definir"
@@ -264,7 +264,7 @@
         {
           "fecha": "Viernes 20:00 hs",
           "equipo1": "M. Gomez/J. Ruano",
-          "equipo2": "G. Ojeda/L. Pugnale",
+          "equipo2": "H. Sanabria/A confirmar",
           "resultado": "",
           "games":"A definir"
         }
@@ -310,7 +310,7 @@
       "nombre": "Grupo I",
       "equipos": [
        {
-          "nombre": "C. Velazquez/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "C. Velazquez/Soto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
          "nombre": "G. Trezani/A. Velazquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -326,7 +326,7 @@
       "partidos": [
         {
           "fecha": "Miercoles 20:00 hs",
-          "equipo1": "C. Velazquez/A confirmar",
+          "equipo1": "C. Velazquez/Soto",
           "equipo2": "G. Trezani/A. Velazquez",
           "resultado": "",
           "games":"A definir"
@@ -366,7 +366,7 @@
           "nombre": "J. Gonzalez/C. Cardenas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "L. Rivero/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "L. Rivero/J. Lara","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -381,7 +381,7 @@
         {
           "fecha": "Miercoles 21:00 hs",
           "equipo1": "J. Gonzalez/C. Cardenas",
-          "equipo2": "L. Rivero/A confirmar",
+          "equipo2": "L. Rivero/J. Lara",
           "resultado": "",
           "games":"A definir"
         },
