@@ -565,7 +565,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Hacer funciones disponibles globalmente
-window.procesarDatosParaFixture = procesarDatosParaFixture;
-window.extraerInformacionFecha = extraerInformacionFecha;
-window.convertirHorarioAMinutos = convertirHorarioAMinutos;

@@ -1,4 +1,4 @@
-// llaves.js - Versión que usa las eliminatorias reales procesadas
+// llaves.js - Solución definitiva con conexiones precisas
 document.addEventListener('DOMContentLoaded', function() {
     // Configurar pestañas
     const tabs = document.querySelectorAll('.tab');
@@ -21,57 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-window.verificarEstructuraDatos = function() {
-    console.clear();
-    console.log("=== VERIFICACIÓN DE ESTRUCTURA DE DATOS ===");
-    
-    if (!window.torneosData || Object.keys(window.torneosData).length === 0) {
-        console.log("No hay datos disponibles");
-        alert("No hay datos de torneos disponibles. Por favor, recarga la página.");
-        return;
-    }
-    
-    for (const [categoriaKey, categoria] of Object.entries(window.torneosData)) {
-        console.log(`\n--- ${categoriaKey} ---`);
-        console.log("Estructura completa:", categoria);
-        
-        if (categoria.grupos && Array.isArray(categoria.grupos)) {
-            console.log(`✓ Grupos encontrados: ${categoria.grupos.length}`);
-        }
-        
-        if (categoria.eliminatorias) {
-            console.log("✓ Eliminatorias encontradas:", Object.keys(categoria.eliminatorias));
-        }
-    }
-    
-    alert("Verificación completada. Revisa la consola (F12) para ver los detalles.");
-};
-
-window.verificarDatosProcesados = function() {
-    console.clear();
-    console.log("=== DATOS PROCESADOS ===");
-    
-    if (window.datosProcesados && Object.keys(window.datosProcesados).length > 0) {
-        console.log("Datos procesados disponibles:", window.datosProcesados);
-        
-        for (const [categoria, datos] of Object.entries(window.datosProcesados)) {
-            console.log(`\n--- ${categoria} ---`);
-            console.log("Clasificados:", datos.clasificados);
-            
-            if (datos.eliminatorias) {
-                console.log("Eliminatorias procesadas:");
-                Object.entries(datos.eliminatorias).forEach(([fase, partidos]) => {
-                    console.log(`  ${fase}:`, partidos);
-                });
-            }
-        }
-    } else {
-        console.log("No hay datos procesados disponibles");
-    }
-    
-    alert("Verificación de datos procesados completada. Revisa la consola (F12).");
-};
-
 window.generarLlavesEliminatorias = function() {
     const bracketsContainer = document.getElementById('bracketsContainer');
     bracketsContainer.innerHTML = `
@@ -91,8 +40,16 @@ window.generarLlavesEliminatorias = function() {
         return;
     }
     
+    // Pequeño delay para asegurar que el DOM esté listo
     setTimeout(() => {
         generarLlavesConEliminatoriasReales(datosUsar);
+        
+        // Esperar a que el DOM se renderice completamente antes de dibujar conexiones
+        setTimeout(() => {
+            dibujarTodasLasConexiones();
+            // Re-dibujar después de un breve momento para asegurar que todo esté renderizado
+            setTimeout(dibujarTodasLasConexiones, 100);
+        }, 300);
     }, 100);
 };
 
@@ -125,9 +82,10 @@ function generarLlavesConEliminatoriasReales(datos) {
             
             const bracketDiv = document.createElement('div');
             bracketDiv.className = 'bracket';
+            bracketDiv.id = `bracket-${categoriaKey.replace(/\s+/g, '-')}`;
             
-            // Generar cada fase de eliminatorias
-            const fases = Object.keys(eliminatorias);
+            // Generar cada fase de eliminatorias en orden
+            const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
             
             fases.forEach((fase, index) => {
                 if (eliminatorias[fase]) {
@@ -155,7 +113,8 @@ function generarLlavesConEliminatoriasReales(datos) {
 function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, totalFases, clasificados) {
     const roundDiv = document.createElement('div');
     roundDiv.className = 'round';
-    roundDiv.setAttribute('data-phase', obtenerTipoFase(nombreFase));
+    roundDiv.setAttribute('data-phase', nombreFase);
+    roundDiv.setAttribute('data-fase-index', index);
     
     if (index > 0) {
         roundDiv.classList.add('round-connector');
@@ -163,7 +122,7 @@ function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, to
     
     const roundTitle = document.createElement('div');
     roundTitle.className = 'round-title';
-    roundTitle.innerHTML = `<i class="fas ${obtenerIconoTipo(obtenerTipoFase(nombreFase))}" style="margin-right: 8px;"></i>${formatearNombreFase(nombreFase)}`;
+    roundTitle.innerHTML = `<i class="fas ${obtenerIconoTipo(nombreFase)}" style="margin-right: 8px;"></i>${formatearNombreFase(nombreFase)}`;
     roundDiv.appendChild(roundTitle);
     
     // Si es un objeto (como en "final"), convertirlo a array
@@ -172,6 +131,62 @@ function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, to
     partidos.forEach((partido, partidoIndex) => {
         const matchDiv = document.createElement('div');
         matchDiv.className = 'match';
+        matchDiv.setAttribute('data-match-id', `${nombreFase}-${partidoIndex}`);
+        matchDiv.setAttribute('data-phase', nombreFase);
+        matchDiv.setAttribute('data-index', partidoIndex);
+        
+        // Almacenar información de referencia para conexiones
+        if (partido.equipo1 && partido.equipo1.includes('Ganador P')) {
+            const matchRef = partido.equipo1.match(/Ganador P(\d+)/);
+            if (matchRef) {
+                const refIndex = parseInt(matchRef[1]) - 1;
+                matchDiv.setAttribute('data-ref-1', `dieciseisavos-${refIndex}`);
+                // Para octavos, la referencia es a 16vos
+                if (nombreFase === 'octavos') {
+                    matchDiv.setAttribute('data-ref-source-1', 'dieciseisavos');
+                    matchDiv.setAttribute('data-ref-index-1', refIndex);
+                }
+                // Para cuartos, la referencia es a octavos, etc.
+                else if (nombreFase === 'cuartos') {
+                    matchDiv.setAttribute('data-ref-source-1', 'octavos');
+                    matchDiv.setAttribute('data-ref-index-1', refIndex);
+                }
+                else if (nombreFase === 'semis') {
+                    matchDiv.setAttribute('data-ref-source-1', 'cuartos');
+                    matchDiv.setAttribute('data-ref-index-1', refIndex);
+                }
+                else if (nombreFase === 'final') {
+                    matchDiv.setAttribute('data-ref-source-1', 'semis');
+                    matchDiv.setAttribute('data-ref-index-1', refIndex);
+                }
+            }
+        }
+        
+        if (partido.equipo2 && partido.equipo2.includes('Ganador P')) {
+            const matchRef = partido.equipo2.match(/Ganador P(\d+)/);
+            if (matchRef) {
+                const refIndex = parseInt(matchRef[1]) - 1;
+                matchDiv.setAttribute('data-ref-2', `dieciseisavos-${refIndex}`);
+                // Para octavos, la referencia es a 16vos
+                if (nombreFase === 'octavos') {
+                    matchDiv.setAttribute('data-ref-source-2', 'dieciseisavos');
+                    matchDiv.setAttribute('data-ref-index-2', refIndex);
+                }
+                // Para cuartos, la referencia es a octavos, etc.
+                else if (nombreFase === 'cuartos') {
+                    matchDiv.setAttribute('data-ref-source-2', 'octavos');
+                    matchDiv.setAttribute('data-ref-index-2', refIndex);
+                }
+                else if (nombreFase === 'semis') {
+                    matchDiv.setAttribute('data-ref-source-2', 'cuartos');
+                    matchDiv.setAttribute('data-ref-index-2', refIndex);
+                }
+                else if (nombreFase === 'final') {
+                    matchDiv.setAttribute('data-ref-source-2', 'semis');
+                    matchDiv.setAttribute('data-ref-index-2', refIndex);
+                }
+            }
+        }
         
         // Estilo especial para finales
         if (nombreFase === 'final') {
@@ -214,7 +229,7 @@ function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, to
         if (partido.fecha && partido.fecha !== 'A definir') {
             infoDiv.textContent = partido.fecha;
         } else {
-            infoDiv.textContent = obtenerInfoPartidoReal(obtenerTipoFase(nombreFase), partidoIndex, index, totalFases);
+            infoDiv.textContent = obtenerInfoPartidoReal(nombreFase, partidoIndex, index, totalFases);
         }
         
         matchDiv.appendChild(infoDiv);
@@ -225,6 +240,145 @@ function generarFaseEliminatoria(bracketDiv, nombreFase, partidosFase, index, to
     bracketDiv.appendChild(roundDiv);
 }
 
+// Función principal para dibujar todas las conexiones
+function dibujarTodasLasConexiones() {
+    // Limpiar conexiones existentes
+    document.querySelectorAll('.conexion-partido').forEach(el => el.remove());
+    
+    // Conectar cada fase con la siguiente
+    conectarFase('dieciseisavos', 'octavos');
+    conectarFase('octavos', 'cuartos');
+    conectarFase('cuartos', 'semis');
+    conectarFase('semis', 'final');
+}
+
+// Función mejorada para conectar partidos entre dos fases
+function conectarFase(faseOrigen, faseDestino) {
+    const partidosDestino = document.querySelectorAll(`.round[data-phase="${faseDestino}"] .match`);
+    
+    partidosDestino.forEach(partidoDestino => {
+        // Buscar referencias explícitas a partidos de la fase anterior
+        const refSource1 = partidoDestino.getAttribute('data-ref-source-1');
+        const refIndex1 = partidoDestino.getAttribute('data-ref-index-1');
+        const refSource2 = partidoDestino.getAttribute('data-ref-source-2');
+        const refIndex2 = partidoDestino.getAttribute('data-ref-index-2');
+        
+        // Si hay referencia a la fase de origen, conectar
+        if (refSource1 === faseOrigen && refIndex1 !== null) {
+            const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${parseInt(refIndex1) + 1})`);
+            if (partidoOrigen) {
+                conectarPartidos(partidoOrigen, partidoDestino, 'left');
+            }
+        }
+        
+        if (refSource2 === faseOrigen && refIndex2 !== null) {
+            const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${parseInt(refIndex2) + 1})`);
+            if (partidoOrigen) {
+                conectarPartidos(partidoOrigen, partidoDestino, 'right');
+            }
+        }
+        
+        // Método de respaldo: buscar por texto en caso de que los atributos data no estén disponibles
+        if (!refSource1 && !refSource2) {
+            const equipo1 = partidoDestino.querySelector('.team:first-child .team-name').textContent;
+            const equipo2 = partidoDestino.querySelector('.team:last-child .team-name').textContent;
+            
+            // Verificar si hay referencia a un partido de la fase anterior
+            if (equipo1.includes('Ganador P') || equipo2.includes('Ganador P')) {
+                const refMatch1 = equipo1.match(/Ganador P(\d+)/);
+                const refMatch2 = equipo2.match(/Ganador P(\d+)/);
+                
+                if (refMatch1) {
+                    const partidoId = parseInt(refMatch1[1]) - 1;
+                    const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${partidoId + 1})`);
+                    if (partidoOrigen) {
+                        conectarPartidos(partidoOrigen, partidoDestino, 'left');
+                    }
+                }
+                
+                if (refMatch2) {
+                    const partidoId = parseInt(refMatch2[1]) - 1;
+                    const partidoOrigen = document.querySelector(`.round[data-phase="${faseOrigen}"] .match:nth-child(${partidoId + 1})`);
+                    if (partidoOrigen) {
+                        conectarPartidos(partidoOrigen, partidoDestino, 'right');
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Función para conectar dos partidos con una línea
+function conectarPartidos(partidoOrigen, partidoDestino, lado = 'left') {
+    const contenedor = partidoOrigen.closest('.bracket');
+    const contenedorRect = contenedor.getBoundingClientRect();
+    
+    const origenRect = partidoOrigen.getBoundingClientRect();
+    const destinoRect = partidoDestino.getBoundingClientRect();
+    
+    // Calcular posiciones relativas al contenedor
+    const origenX = origenRect.right - contenedorRect.left;
+    const origenY = origenRect.top + origenRect.height / 2 - contenedorRect.top;
+    const destinoX = destinoRect.left - contenedorRect.left;
+    const destinoY = destinoRect.top + destinoRect.height / 2 - contenedorRect.top;
+    
+    // Ajustar puntos de conexión según el lado
+    const puntoOrigenX = lado === 'left' ? origenX : origenRect.left - contenedorRect.left + origenRect.width;
+    const puntoDestinoX = lado === 'left' ? destinoX : destinoRect.left - contenedorRect.left;
+    
+    // Crear la línea conectiva
+    const linea = document.createElement('div');
+    linea.className = 'conexion-partido';
+    
+    // Calcular dimensiones y posición de la línea
+    const width = Math.abs(puntoDestinoX - puntoOrigenX);
+    const height = Math.abs(destinoY - origenY);
+    const top = Math.min(origenY, destinoY);
+    const left = Math.min(puntoOrigenX, puntoDestinoX);
+    
+    // Establecer estilos para la línea
+    linea.style.position = 'absolute';
+    linea.style.top = `${top}px`;
+    linea.style.left = `${left}px`;
+    linea.style.width = `${width}px`;
+    linea.style.height = `${height}px`;
+    linea.style.zIndex = '1';
+    linea.style.pointerEvents = 'none';
+    
+    // Determinar la dirección de la línea
+    if (destinoY > origenY) {
+        // Línea hacia abajo
+        if (puntoDestinoX > puntoOrigenX) {
+            // Diagonal hacia abajo y derecha
+            linea.style.borderRight = '2px solid #3498db';
+            linea.style.borderBottom = '2px solid #3498db';
+            linea.style.borderBottomRightRadius = '10px';
+        } else {
+            // Diagonal hacia abajo y izquierda
+            linea.style.borderLeft = '2px solid #3498db';
+            linea.style.borderBottom = '2px solid #3498db';
+            linea.style.borderBottomLeftRadius = '10px';
+        }
+    } else {
+        // Línea hacia arriba
+        if (puntoDestinoX > puntoOrigenX) {
+            // Diagonal hacia arriba y derecha
+            linea.style.borderRight = '2px solid #3498db';
+            linea.style.borderTop = '2px solid #3498db';
+            linea.style.borderTopRightRadius = '10px';
+        } else {
+            // Diagonal hacia arriba y izquierda
+            linea.style.borderLeft = '2px solid #3498db';
+            linea.style.borderTop = '2px solid #3498db';
+            linea.style.borderTopLeftRadius = '10px';
+        }
+    }
+    
+    // Agregar la línea al contenedor del bracket
+    contenedor.appendChild(linea);
+}
+
+// Resto de las funciones (sin cambios)
 function crearEquipoDivReal(nombreEquipo, resultado, esEquipo1, clasificados) {
     const teamDiv = document.createElement('div');
     teamDiv.className = 'team';
@@ -246,27 +400,7 @@ function crearEquipoDivReal(nombreEquipo, resultado, esEquipo1, clasificados) {
     
     const teamName = document.createElement('div');
     teamName.className = 'team-name';
-    
-    // Mostrar información del equipo (posición y grupo si está disponible)
-    let textoEquipo = nombreEquipo;
-    
-    // Buscar en los clasificados para obtener información adicional
-    if (clasificados) {
-        for (const [clave, equipo] of Object.entries(clasificados)) {
-            if (equipo === nombreEquipo) {
-                // Extraer información de la clave (ej: "1ro A")
-                const match = clave.match(/(\w+)\s([A-Z])/);
-                if (match) {
-                    const posicion = match[1]; // "1ro", "2do"
-                    const grupo = match[2];    // "A", "B", etc.
-                    textoEquipo = `${nombreEquipo} (${posicion} ${grupo})`;
-                }
-                break;
-            }
-        }
-    }
-    
-    teamName.textContent = textoEquipo;
+    teamName.textContent = nombreEquipo;
     teamDiv.appendChild(teamName);
     
     return teamDiv;
@@ -311,21 +445,12 @@ function formatearNombreFase(nombreFase) {
     return nombres[nombreFase] || nombreFase;
 }
 
-function obtenerTipoFase(nombreFase) {
-    if (nombreFase.includes('dieciseisavos')) return 'dieciseisavos';
-    if (nombreFase.includes('octavos')) return 'octavos';
-    if (nombreFase.includes('cuartos')) return 'cuartos';
-    if (nombreFase.includes('semis')) return 'semifinales';
-    if (nombreFase.includes('final')) return 'final';
-    return 'default';
-}
-
 function obtenerIconoTipo(tipo) {
     switch(tipo) {
         case 'dieciseisavos': return 'fa-chess-pawn';
         case 'octavos': return 'fa-chess-knight';
         case 'cuartos': return 'fa-chess-bishop';
-        case 'semifinales': return 'fa-chess-rook';
+        case 'semis': return 'fa-chess-rook';
         case 'final': return 'fa-chess-king';
         default: return 'fa-chess';
     }
@@ -376,14 +501,6 @@ function mostrarMensajeSinEliminatorias() {
             <p style="font-size: 12px; margin-top: 8px;">
                 Las eliminatorias se mostrarán automáticamente cuando estén disponibles en los JSON.
             </p>
-            <div class="button-group">
-                <button onclick="verificarDatosProcesados()" class="btn-secondary">
-                    <i class="fas fa-search" style="margin-right: 8px;"></i>Verificar datos
-                </button>
-                <button onclick="verificarEstructuraDatos()" class="btn-secondary">
-                    <i class="fas fa-database" style="margin-right: 8px;"></i>Ver estructura
-                </button>
-            </div>
         </div>
     `;
 }
@@ -398,67 +515,22 @@ function formatearNombreCategoria(clave) {
     return clave;
 }
 
-// Agregar estilos dinámicos
+// Agregar estilos dinámicos para las conexiones
 const style = document.createElement('style');
 style.textContent = `
-    .btn-primary {
-        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: 600;
-        margin: 4px;
-        transition: all 0.3s ease;
-        font-size: 13px;
+    .conexion-partido {
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
     }
-    
-    .btn-secondary {
-        background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: 600;
-        margin: 4px;
-        transition: all 0.3s ease;
-        font-size: 13px;
+
+    .bracket {
+        position: relative;
     }
-    
-    .btn-primary:hover, .btn-secondary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    }
-    
-    .button-group {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 15px;
-    }
-    
-    .btn-reload {
-        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: 600;
-        margin-top: 12px;
-        transition: all 0.3s ease;
-        font-size: 13px;
-    }
-    
-    .resultado-pendiente {
-        color: #7f8c8d !important;
-        font-style: italic;
-    }
-    
-    .team .fa-crown {
-        font-size: 12px;
+
+    .match {
+        position: relative;
+        z-index: 2;
     }
 `;
 document.head.appendChild(style);

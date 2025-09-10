@@ -592,3 +592,43 @@
 .bracket {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
 }
+/* Estilos para las conexiones entre partidos */
+.conexion-partido {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bracket {
+    position: relative;
+}
+
+/* Ajustar el z-index de los partidos para que estén sobre las líneas */
+.match {
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
+/* Mejora para las líneas existentes entre rondas */
+.round-connector::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 15px;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    z-index: 1;
+}
+
+.round-connector::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 15px;
+    height: 2px;
+    background: linear-gradient(to left, #3498db, #2980b9);
+    z-index: 1;
+}
