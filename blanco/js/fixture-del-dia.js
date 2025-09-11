@@ -1,7 +1,7 @@
 // fixture-del-dia.js - Gestión del fixture del día (solo grupos)
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
-    let diaActual = 'Jueves';
+    let diaActual = obtenerDiaActual();
     window.torneosData = {};
     window.datosProcesados = {}; // <-- NUEVO: Para compartir datos procesados
     let diasDisponibles = new Set();
@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 mostrarPartidosDelDia();
             });
         });
+    }
+
+    // Función para obtener el día actual en español
+    function obtenerDiaActual() {
+        const diasSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+        const fecha = new Date();
+        return diasSemana[fecha.getDay()];
     }
 
     function cargarDatosExternos() {
@@ -77,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Obtener todos los días disponibles (solo de grupos)
                 obtenerDiasDisponibles();
                 
-                // Seleccionar el día apropiado
+                // Seleccionar el día apropiado (ahora prioriza el día actual)
                 seleccionarDiaAutomaticamente();
                 
                 // Mostrar partidos (solo de grupos)
@@ -117,14 +124,35 @@ document.addEventListener('DOMContentLoaded', function() {
         const diasArray = Array.from(diasDisponibles);
         
         if (diasArray.length > 0) {
-            // Ordenar los días cronológicamente
-            const ordenDias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
-            const diasOrdenados = diasArray.sort((a, b) => {
-                return ordenDias.indexOf(a) - ordenDias.indexOf(b);
-            });
-            
-            // Seleccionar el primer día cronológico con partidos
-            diaActual = diasOrdenados[0];
+            // Verificar si el día actual está disponible
+            if (diasArray.includes(diaActual)) {
+                // Usar el día actual si hay partidos programados
+                console.log(`Mostrando partidos del día actual: ${diaActual}`);
+            } else {
+                // Si no hay partidos hoy, buscar el próximo día con partidos
+                const ordenDias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+                const indiceHoy = ordenDias.indexOf(diaActual);
+                
+                // Buscar el próximo día con partidos
+                let proximoDia = null;
+                for (let i = 1; i <= 7; i++) {
+                    const siguienteDia = ordenDias[(indiceHoy + i) % 7];
+                    if (diasArray.includes(siguienteDia)) {
+                        proximoDia = siguienteDia;
+                        break;
+                    }
+                }
+                
+                // Si encontramos un próximo día, usarlo
+                if (proximoDia) {
+                    diaActual = proximoDia;
+                    console.log(`No hay partidos hoy. Mostrando próximo día con partidos: ${diaActual}`);
+                } else {
+                    // Si no hay próximos días, usar el primero disponible
+                    diaActual = diasArray[0];
+                    console.log(`Mostrando primer día disponible: ${diaActual}`);
+                }
+            }
         } else {
             // Si no hay días disponibles, mantener el valor por defecto
             console.warn("No se encontraron días con partidos disponibles");
