@@ -27,8 +27,8 @@
           "fecha": "Jueves 20:00 hs",
           "equipo1": "F. Marquez/R. Garcia",
           "equipo2": "C. Trani/A. Guzman",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Viernes 21:00 hs",
@@ -66,8 +66,8 @@
           "fecha": "Jueves 23:00 hs",
           "equipo1": "D. Fernandez/H. Aceri",
           "equipo2": "J. Rivero/A. Muller",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"3-6, 6-4, 7-6"
         },
         {
           "fecha": "Viernes 23:00 hs",
@@ -106,8 +106,8 @@
           "fecha": "Jueves 21:00 hs",
           "equipo1": "A. Mondaca/M. Nuñez",
           "equipo2": "A. Maluf/H. Samaniego",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
         },
         {
           "fecha": "Viernes 21:00 hs",
@@ -144,8 +144,8 @@
           "fecha": "Jueves 20:00 hs",
           "equipo1": "F. Molina/A. Gonzalez",
           "equipo2": "R. Rodriguez/R. Rodriguez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 4-6"
         },
         {
           "fecha": "Viernes 22:00 hs",
@@ -182,8 +182,8 @@
           "fecha": "Jueves 19:00 hs",
           "equipo1": "G. Martinez/S. Loncopan",
           "equipo2": "A. Graneros/F. Wasinger",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
         },
         {
           "fecha": "Viernes 19:00 hs",
@@ -220,8 +220,8 @@
           "fecha": "Jueves 20:00 hs",
           "equipo1": "G. Martinez/E. Alfonzo",
           "equipo2": "R. Pedraza/E. Barrera",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
         },
         {
           "fecha": "Viernes 20:00 hs",
@@ -236,35 +236,35 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "H. Sanabria/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "G. Ojeda/L. Pugnale","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
          "nombre": "M. Gomez/J. Ruano","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "G. Ojeda/Yañez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "M. Ojeda/I. Yañez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Miercoles 23:00 hs",
-          "equipo1": "G. Ojeda/Yañez",
+          "equipo1": "M. Ojeda/I. Yañez",
           "equipo2": "M. Gomez/J. Ruano",
           "resultado": "2-0",
           "games":"6-4, 7-6"
         },
         {
           "fecha": "Jueves 23:00 hs",
-          "equipo1": "H. Sanabria/A confirmar",
+          "equipo1": "M. Ojeda/I. Yañez",
           "equipo2": "G. Ojeda/L. Pugnale",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
         },
         {
           "fecha": "Viernes 20:00 hs",
           "equipo1": "M. Gomez/J. Ruano",
-          "equipo2": "H. Sanabria/A confirmar",
+          "equipo2": "G. Ojeda/L. Pugnale",
           "resultado": "",
           "games":"A definir"
         }
@@ -295,8 +295,8 @@
           "fecha": "Jueves 23:00 hs",
           "equipo1": "J. Crespo/D. Ruiz",
           "equipo2": "F. Bilbao/A confirmar",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
         },
         {
           "fecha": "Viernes 17:00 hs",
@@ -407,28 +407,28 @@
       {
          "equipo1": "2do C",
           "equipo2": "2do F",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado ",
         "resultado": "",
         "games": ""
       },
       {
          "equipo1": "2do G",
           "equipo2": "2do B",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado ",
          "resultado": "",
         "games": ""
       },
       {
          "equipo1": "2do A",
           "equipo2": "2do H",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado ",
         "resultado": "",
         "games": ""
       },
       {
          "equipo1": "2do E",
           "equipo2": "2do D",
-          "fecha": "Sabado 18:00 hs",
+          "fecha": "Sabado ",
           "resultado": "",
         "games": ""
       }
@@ -438,56 +438,56 @@
       {
         "equipo1": "1ro A",
           "equipo2": "Ganador P1",
-          "fecha": "Sabado 23:00 hs",
+          "fecha": "Sabado ",
          "resultado": "",
         "games": ""
       },
       {
          "equipo1": "1ro I",
           "equipo2": "1ro H",
-          "fecha": "Sabado 23:00 hs",
+          "fecha": "Sabado ",
           "resultado": "",
         "games": ""
       },
       {
          "equipo1": "1ro E",
           "equipo2": "2do J",
-          "fecha": "Sabado 22:00 hs",
+          "fecha": "Sabado ",
         "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro D",
-          "fecha": "Sabado 22:00 hs",
+          "fecha": "Sabado ",
          "resultado": "",
         "games": ""
       },
       {
         "equipo1": "1ro C",
           "equipo2": "Ganador P3",
-          "fecha": "Sabado 23:00 hs",
+          "fecha": "Sabado ",
           "resultado": "",
         "games": ""
       },
       {
          "equipo1": "2do I",
           "equipo2": "1ro F",
-          "fecha": "Sabado 22:00 hs",
+          "fecha": "Sabado ",
         "resultado": "",
         "games": ""
       },
       {
          "equipo1": "1ro G",
           "equipo2": "1ro J",
-          "fecha": "Sabado 22:00 hs",
+          "fecha": "Sabado ",
         "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P4",
           "equipo2": "1ro B",
-          "fecha": "Sabado 23:00 hs",
+          "fecha": "Sabado ",
           "resultado": "",
         "games": ""
       }
@@ -496,28 +496,28 @@
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 11:00 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 11:00 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo 11:00 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
-          "fecha": "Domingo 11:00 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
       }
@@ -526,14 +526,14 @@
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 15:30 hs",
+          "fecha": "Domingo ",
          "resultado": "",
         "games": ""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 15:30 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
       }
@@ -541,7 +541,7 @@
     "final": {
         "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo 20:00 hs",
+          "fecha": "Domingo ",
           "resultado": "",
         "games": ""
     }
