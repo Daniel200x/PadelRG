@@ -620,10 +620,10 @@ function handleHashAnchor() {
                 description: 'Publicita tu producto con nosotros.'
             },
             {
-                image: 'img/publi/clases.jpg',
+                image: 'img/publi/fixg.jpg',
                 link: '',
-                title: 'Clases de Pádel',
-                description: 'Mejora tu técnica con profesores certificados. Todos los niveles.'
+                title: 'Fix - Car - Mecanica Integral',
+                description: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.'
             }
         ];
             
