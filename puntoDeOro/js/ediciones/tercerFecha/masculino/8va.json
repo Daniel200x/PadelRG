@@ -73,8 +73,8 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "J. Rivero/A. Muller",
           "equipo2": "A. Faletti/F. Faletti",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 7-5"
         }
         
       ]
@@ -328,8 +328,8 @@
           "fecha": "Miercoles 20:00 hs",
           "equipo1": "C. Velazquez/Soto",
           "equipo2": "G. Trezani/A. Velazquez",
-          "resultado": "0-2",
-          "games":"5-7, 4-6"
+          "resultado": "2-0",
+          "games":"7-5, 6-4"
         },
         {
           "fecha": "Miercoles 19:00 hs",
@@ -349,8 +349,8 @@
           "fecha": "Sabado 14:00 hs",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
         }
       ]
     },{
