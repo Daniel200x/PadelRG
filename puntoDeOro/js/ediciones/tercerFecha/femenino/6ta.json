@@ -31,8 +31,8 @@
           "fecha": "Sabado 11:00",
           "equipo1": "L. Ramirez/V. Lopez",
           "equipo2": "M. Polizzi/L. Miranda",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 1-6"
         }
         
       ]
@@ -67,8 +67,8 @@
           "fecha": "Sabado 11:00",
           "equipo1": "F. Bianchi/S. Cortes",
           "equipo2": "S. Sanabria/J. Ramadori",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         }
         
       ]
@@ -132,8 +132,8 @@
           "fecha": "Sabado 12:00 hs",
           "equipo1": "J. Rojas/A confirmar",
           "equipo2": "B. Cordoba/R. Terrado",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"3-6, 7-5, 6-7"
         },
         {
           "fecha": "Sabado 16:00 hs",
@@ -174,8 +174,8 @@
           "fecha": "Viernes 22:00 hs",
           "equipo1": "L. Niz/D. Corzo",
           "equipo2": "G. Flamenco/E. Martinez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         }
       ]
     }
