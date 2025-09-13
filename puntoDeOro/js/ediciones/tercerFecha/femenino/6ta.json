@@ -115,7 +115,7 @@
          {
           "nombre": "B. Cordoba/R. Terrado","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-           "nombre": "J. Rojas/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+           "nombre": "J. Rojas/Torres","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
            "nombre": "L. Saldivia/A. Tarchini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
@@ -130,7 +130,7 @@
         },
         {
           "fecha": "Sabado 12:00 hs",
-          "equipo1": "J. Rojas/A confirmar",
+          "equipo1": "J. Rojas/Torres",
           "equipo2": "B. Cordoba/R. Terrado",
           "resultado": "2-1",
           "games":"3-6, 7-5, 6-7"
@@ -138,9 +138,9 @@
         {
           "fecha": "Sabado 16:00 hs",
           "equipo1": "L. Saldivia/A. Tarchini",
-          "equipo2": "J. Rojas/A confirmar",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "J. Rojas/Torres",
+          "resultado": "0-2",
+          "games":"4-6, 0-6"
         }
       ]
     },

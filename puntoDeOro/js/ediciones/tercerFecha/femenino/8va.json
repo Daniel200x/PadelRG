@@ -139,8 +139,8 @@
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Y. Fleuri/V. Rocamora",
           "equipo2": "C. Barria/S. Davalos",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"3-6, 1-6"
         }
       ]
     },
@@ -173,14 +173,14 @@
           "games":"6-7, 6-4, 6-7"
         },
         {
-          "fecha": "Viernes 23:00 hs ",
+          "fecha": "Sabado 23:00 hs ",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 23:00 hs ",
+          "fecha": "Sabado 23:00 hs ",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "resultado": "",
