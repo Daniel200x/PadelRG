@@ -27,15 +27,15 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "J. Mendez/F. Insfran",
           "equipo2": "W. Alvarado/I. Perez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
         },
         {
           "fecha": "Sabado 14:00 hs",
           "equipo1": "M. Pereyra/W. Sosa",
           "equipo2": "J. Mendez/F. Insfran",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
         }
         
       ]
@@ -66,15 +66,15 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "C. Andrade/V. Lemus",
           "equipo2": "W. Gimenez/A. Garcia",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Sabado 12:00 hs",
           "equipo1": "W. Gimenez/A. Garcia",
           "equipo2": "G. Aballay/A. Ojeda",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
         }
         
       ]
@@ -227,8 +227,8 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "N. Barrios/J. Bogunovich",
           "equipo2": "R. Ledo/J. Rodriguez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"7-6, 7-5"
         }
       ]
     },
@@ -322,7 +322,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 23:00 hs",
+          "fecha": "Sabado 15:00 hs",
           "equipo1": "N. Barbosa/D. Villalba",
           "equipo2": "P. Alegre/J. Millacahuin",
           "resultado": "",
@@ -377,8 +377,8 @@
           "fecha": "Sabado 14:00 hs",
           "equipo1": "R. Luna/N. Gonzalez",
           "equipo2": "B. Gamarra/S. Liendro",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"6-4, 3-6, 7-6"
         }
       ]
     }
