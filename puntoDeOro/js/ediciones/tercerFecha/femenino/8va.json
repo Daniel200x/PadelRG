@@ -212,28 +212,28 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo 10:00",
           "resultado": "",
-          "games":""
+          "games":"6-2, 6-4"
       },
       {
          "equipo1": "1ro E",
           "equipo2": "1ro D",
           "fecha": "Domingo 10:00",
           "resultado": "",
-          "games":""
+          "games":"7-5, 6-1"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do E",
           "fecha": "Domingo 10:00",
           "resultado": "",
-          "games":""
+          "games":"6-0, 6-0"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo 10:00",
           "resultado": "",
-          "games":""
+          "games":"1-6, 1-6"
       }
     ],
     "semis": [
