@@ -605,7 +605,7 @@ function handleHashAnchor() {
                 image: 'img/publi/pino.jpeg',
                 link: 'https://www.instagram.com/padelpino/',
                 title: 'Padel Pino',
-                description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram.'
+                description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
             },
             {
                 image: 'img/publi/fixg.jpg',
