@@ -601,6 +601,18 @@ function handleHashAnchor() {
                 title: 'Tu publicidad acá',
                 description: 'Publicita tu producto con nosotros.'
             },
+            {
+                image: 'img/publi/pino.jpeg',
+                link: 'https://www.instagram.com/padelpino/',
+                title: 'Padel Pino',
+                description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram.'
+            },
+            {
+                image: 'img/publi/fixg.jpg',
+                link: '',
+                title: 'Fix - Car - Mecanica Integral',
+                description: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.'
+            },
                 {
                 image: 'img/publi/muebles.jpeg',
                 link: 'https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4',
@@ -613,11 +625,11 @@ function handleHashAnchor() {
                 title: 'Trexx TDF',
                 description: 'Encontra las mejores palas, indumentaria, pelotas y accesorios para tu juego. ¡Distribuidor oficial de Trexx en TDF!'
             },
-            {
-                image: 'img/publi/publi.jpg',
-                link: '',
-                title: 'Tu publicidad acá',
-                description: 'Publicita tu producto con nosotros.'
+             {
+                image: 'img/publi/pino.jpeg',
+                link: 'https://www.instagram.com/padelpino/',
+                title: 'Padel Pino',
+                description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
             },
             {
                 image: 'img/publi/fixg.jpg',
