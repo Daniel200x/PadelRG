@@ -134,14 +134,14 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo 15:00",
           "resultado": "A definir",
-          "games":""
+          "games":"6-1, 6-0"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo 15:00",
           "resultado": "A definir",
-          "games":""
+          "games":"3-6, 3-6"
       }
     ],
     "final": {
@@ -149,7 +149,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"3-6, 1-6"
     }
   }
 }

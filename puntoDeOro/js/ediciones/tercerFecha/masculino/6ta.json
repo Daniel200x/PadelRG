@@ -509,14 +509,14 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo 17:30",
          "resultado": "",
-        "games": ""
+        "games": "0-1"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo 17:30",
           "resultado": "",
-        "games": ""
+        "games": "6-2, 4-6, 7-6 "
       }
     ],
     "final": {
@@ -524,7 +524,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo ",
           "resultado": "",
-        "games": ""
+        "games": "3-6, 6-7"
     }
   }
 }
