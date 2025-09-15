@@ -56,7 +56,7 @@
                         <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
-                            <li><a href="../arenas/arenas.html">Arenas</a></li>
+                            <li><a href="../arenas/arenas.html">Arena</a></li>
                             <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
                             <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
                         </ul>
@@ -65,7 +65,7 @@
                         <a href="#">Fixture <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="/blanco/fixture.html">Punto de Oro</a></li>
-                            <li><a href="/blanco/arenas.html">Arenas</a></li>
+                            <li><a href="/blanco/arenas.html">Arena</a></li>
                             <li><a href="/blanco/segundo.html">2do Set</a></li>
                             
                         </ul>
@@ -90,27 +90,7 @@
         </div>
     </nav>
 <!-- Espacio de publicidad -->
-<div class="ad-space">
-  <div class="ad-container">
-    <div class="ad-title">Publicidad</div>
-    <div class="ads-wrapper">
-      <a href="https://www.instagram.com/rpamoblamientos.tdf?igsh=dTNrcHEwNndmeGF4" target="_blank" class="ad-item">
-        <img src="../img/muebles.jpeg" alt="Publicidad" class="ad-image" />
-      </a>
-      <a href="https://www.instagram.com/padelpino/" target="_blank" class="ad-item">
-        <img src="../img/publi/pino.jpeg" alt="Publicidad" class="ad-image" />
-      </a>
-      <a href="https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w" target="_blank" class="ad-item">
-        <img src="../img/publi/trexx.jpeg" alt="Publicidad" class="ad-image" />
-      </a>
-
-      <a href="https://www.instagram.com/fixcar369/" target="_blank" class="ad-item">
-        <img src="../img/publi/fixm.jpg" alt="Publicidad" class="ad-image" />
-      </a>
-      <!-- Puedes agregar más publicidades aquí -->
-    </div>
-  </div>
-</div>
+<div id="publicidad-container"></div>
 
     <div class="container ranking-container">
         <div class="header-torneo">
@@ -208,5 +188,14 @@
    <script src="/ranking/js/ranking.js"></script>
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
      crossorigin="anonymous"></script>
+          <script>
+  // Cargar publicidad
+  fetch('../publicidad/publicidad.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('publicidad-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando publicidad:', error));
+</script>
 </body>
 </html>

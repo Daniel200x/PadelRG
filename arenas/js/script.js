@@ -3,21 +3,21 @@ const edicionesInfo = {
     "primerFecha": {
         nombre: "1ra Fecha - Torneo Arenas 2025",
         fecha: "15-30 Marzo 2025",
-        lugar: "Arenas",
+        lugar: "Arena",
         descripcion: "Primera fecha 2025",
         path: "js/ediciones/primerFecha"
     },
     "segundaFecha": {
         nombre: "2da Fecha - Torneo Arenas 2025",
         fecha: "15-30 Junio 2025",
-        lugar: "Arenas",
+        lugar: "Arena",
         descripcion: "Segunda fecha 2025",
         path: "js/ediciones/segundaFecha"
     },
     "tercerFecha": {
         nombre: "3ra Fecha - Torneo Arenas 2025",
         fecha: "29/07 a 10/08 2025",
-        lugar: "Arenas",
+        lugar: "Arena",
         descripcion: "Tercera fecha 2025",
         path: "js/ediciones/tercerFecha"
     }
