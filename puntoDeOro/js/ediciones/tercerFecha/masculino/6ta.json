@@ -11,7 +11,7 @@
          "nombre": "W. Alvarado/I. Perez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "J. Mendez/F. Insfran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "J. Mendez/F. Infran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -25,7 +25,7 @@
         },
         {
           "fecha": "Viernes 23:00 hs",
-          "equipo1": "J. Mendez/F. Insfran",
+          "equipo1": "J. Mendez/F. Infran",
           "equipo2": "W. Alvarado/I. Perez",
           "resultado": "2-0",
           "games":"6-4, 6-1"
@@ -33,7 +33,7 @@
         {
           "fecha": "Sabado 14:00 hs",
           "equipo1": "M. Pereyra/W. Sosa",
-          "equipo2": "J. Mendez/F. Insfran",
+          "equipo2": "J. Mendez/F. Infran",
           "resultado": "2-0",
           "games":"6-4, 6-3"
         }
