@@ -211,6 +211,7 @@
         padding: 6px 12px;
     }
 }
+
 /* Nuevos estilos para álbumes */
 .albums-container {
     display: grid;
@@ -368,6 +369,9 @@
     max-width: 100%;
     max-height: 70vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lightbox-image {
@@ -377,15 +381,14 @@
 }
 
 .lightbox-caption {
-    text-align: center;
     color: white;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .lightbox-thumbnails {
     display: flex;
     gap: 10px;
-    justify-content: center;
     margin-top: 20px;
     overflow-x: auto;
     padding: 10px 0;
@@ -401,12 +404,25 @@
     transition: opacity 0.3s ease;
 }
 
-.lightbox-thumbnails img.active {
+.lightbox-thumbnails img.active,
+.lightbox-thumbnails img:hover {
     opacity: 1;
-    border: 2px solid #3498db;
 }
 
-/* Estilos responsivos para álbumes */
+/* Enlace externo para álbumes */
+.external-album-link {
+    display: inline-block;
+    margin-left: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.external-album-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive para álbumes */
 @media (max-width: 768px) {
     .album-preview {
         flex-direction: column;
@@ -422,16 +438,6 @@
         height: 40px;
         font-size: 1.2rem;
     }
-}
-
-@media (max-width: 576px) {
-    .album {
-        padding: 15px;
-    }
-    
-    .thumbnails {
-        grid-template-columns: repeat(3, 1fr);
-    }
     
     .lightbox-thumbnails img {
         width: 50px;
@@ -439,142 +445,15 @@
     }
 }
 
-/* Centrar imagen principal en vista previa */
-.main-preview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-}
-
-.main-preview img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 250px;
-    object-fit: contain;
-}
-
-/* Centrar imágenes en el lightbox */
-.lightbox-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 70vh;
-    overflow: hidden;
-    background-color: #000;
-}
-
-.lightbox-image {
-    max-width: 100%;
-    max-height: 70vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Ajustar tamaño de miniaturas en vista previa */
-.thumbnails img {
-    width: 100%;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* Mejorar el diseño responsive */
-@media (max-width: 768px) {
-    .main-preview img {
-        max-height: 200px;
-    }
-    
-    .lightbox-image {
-        max-height: 60vh;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-preview img {
-        max-height: 180px;
-    }
-    
-    .lightbox-image {
-        max-height: 50vh;
-    }
-}
-/* Mejoras para dispositivos táctiles */
-@media (max-width: 768px) {
-    .lightbox-prev,
-    .lightbox-next {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
-        z-index: 1001;
-    }
-    
-    .lightbox-close {
-        top: -50px;
-        right: 10px;
-        font-size: 2.5rem;
-        z-index: 1001;
-    }
-    
-    /* Asegurar que los botones sean fácilmente tocables */
-    .view-album-btn {
-        min-height: 44px; /* Tamaño mínimo recomendado para elementos táctiles */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .filter-btn {
-        padding: 12px 20px;
-        min-height: 44px;
-    }
-}
-
-/* Prevenir zoom en inputs en iOS */
-@media screen and (max-width: 768px) {
-    select, textarea, input[type="text"] {
-        font-size: 16px; /* Previene zoom en iOS */
-    }
-}
-/* Estilos para las acciones del álbum */
-.album-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items: center;
-}
-
-/* Estilos para el enlace externo del álbum */
-.external-album-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    background: #27ae60;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.external-album-link:hover {
-    background: #219653;
-    color: white;
-}
-
-/* Estilos responsivos para las acciones del álbum */
 @media (max-width: 576px) {
     .album-actions {
+        display: flex;
         flex-direction: column;
-        align-items: stretch;
+        gap: 10px;
     }
     
     .external-album-link {
-        justify-content: center;
+        margin-left: 0;
         text-align: center;
     }
 }

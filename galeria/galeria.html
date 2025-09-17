@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Galería de Torneos de Pádel</title>
     <!-- Favicon básico (formato ICO) -->
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
@@ -128,17 +128,18 @@
         <button class="filter-btn" data-filter="punto-de-oro">
           Punto de Oro
         </button>
+        
         <button class="filter-btn" data-filter="arenas">Arena</button>
         <button class="filter-btn" data-filter="segundo-set">2do Set</button>
         <button class="filter-btn" data-filter="martin-gallardo">
-          Torneo Martin Gallardo
+          Copa Challenger
         </button>
       </div>
 
       <!-- Nueva estructura de álbumes -->
-<div class="albums-container">
-    <!-- Los álbumes se generarán automáticamente con JavaScript -->
-</div>
+      <div class="albums-container">
+          <!-- Los álbumes se generarán automáticamente con JavaScript -->
+      </div>
 
       <!-- Lightbox para álbumes completos -->
       <div class="album-lightbox">
@@ -157,8 +158,10 @@
         </div>
       </div>
     </main>
-<!-- Espacio de publicidad -->
-<div id="publicidad-container"></div>
+    
+    <!-- Espacio de publicidad -->
+    <div id="publicidad-container"></div>
+    
     <!-- Footer -->
     <div class="footer">
       <div class="footer-content">
@@ -184,14 +187,14 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
       crossorigin="anonymous"
     ></script>
-         <script>
-  // Cargar publicidad
-  fetch('../publicidad/publicidad.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('publicidad-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error cargando publicidad:', error));
-</script>
+    <script>
+      // Cargar publicidad
+      fetch('../publicidad/publicidad.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('publicidad-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando publicidad:', error));
+    </script>
   </body>
 </html>
