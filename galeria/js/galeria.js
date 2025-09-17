@@ -112,6 +112,13 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Torneo Punto de Oro 2025',
             folder: '../img/gallery/punto-de-oro-dom/',
             description: 'Imágenes del 3er Oficial de Punto de Oro Dia Domingo'
+        }
+        ,
+        'punto-de-oro-dom': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro-pares/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro Pares',
+        externalLink: 'https://photos.app.goo.gl/yx4Q8SLknfKMRyVEA' // Añadir este campo
         }/*,
         'segundo-set': {
             title: 'Torneo 2do Set 2025',
@@ -197,32 +204,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Función para crear elemento de álbum
-    function createAlbumElement(albumId, albumInfo, images) {
-        const albumEl = document.createElement('div');
-        albumEl.className = `album ${albumId}`;
-        
-        // Usar las primeras imágenes como miniaturas de vista previa
-        const previewImages = images.slice(0, 3);
-        
-        albumEl.innerHTML = `
-            <h2 class="album-title">${albumInfo.title}</h2>
-            <p class="album-description">${albumInfo.description}</p>
-            <div class="album-preview">
-                <div class="main-preview">
-                    <img src="${previewImages[0].src}" alt="${albumInfo.title}" data-index="0" />
-                </div>
-                <div class="thumbnails">
-                    ${previewImages.map((img, index) => 
-                        `<img src="${img.src}" alt="Miniatura ${index + 1}" data-index="${index}" />`
-                    ).join('')}
-                </div>
+function createAlbumElement(albumId, albumInfo, images) {
+    const albumEl = document.createElement('div');
+    albumEl.className = `album ${albumId}`;
+    
+    // Usar las primeras imágenes como miniaturas de vista previa
+    const previewImages = images.slice(0, 3);
+    
+    // Verificar si hay enlace externo
+    const externalLinkHTML = albumInfo.externalLink ? 
+        `<a href="${albumInfo.externalLink}" target="_blank" class="external-album-link">
+            <i class="fas fa-external-link-alt"></i> Ver album completo
+        </a>` : '';
+    
+    albumEl.innerHTML = `
+        <h2 class="album-title">${albumInfo.title}</h2>
+        <p class="album-description">${albumInfo.description}</p>
+        <div class="album-preview">
+            <div class="main-preview">
+                <img src="${previewImages[0].src}" alt="${albumInfo.title}" data-index="0" />
             </div>
+            <div class="thumbnails">
+                ${previewImages.map((img, index) => 
+                    `<img src="${img.src}" alt="Miniatura ${index + 1}" data-index="${index}" />`
+                ).join('')}
+            </div>
+        </div>
+        <div class="album-actions">
             <button class="view-album-btn" data-album="${albumId}">
                 Ver álbum completo (${images.length} imágenes)
             </button>
-        `;
-        
-        albumsContainer.appendChild(albumEl);
+            ${externalLinkHTML}
+        </div>
+    `;
+    
+    albumsContainer.appendChild(albumEl);
         
         // Añadir eventos a las miniaturas de este álbum
         const thumbnails = albumEl.querySelectorAll('.thumbnails img');

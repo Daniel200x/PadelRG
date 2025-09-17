@@ -539,3 +539,42 @@
         font-size: 16px; /* Previene zoom en iOS */
     }
 }
+/* Estilos para las acciones del álbum */
+.album-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Estilos para el enlace externo del álbum */
+.external-album-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.external-album-link:hover {
+    background: #219653;
+    color: white;
+}
+
+/* Estilos responsivos para las acciones del álbum */
+@media (max-width: 576px) {
+    .album-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .external-album-link {
+        justify-content: center;
+        text-align: center;
+    }
+}
