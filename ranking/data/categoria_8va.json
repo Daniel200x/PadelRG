@@ -3200,7 +3200,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 175}
           
         ],
         "arenas": [
@@ -3225,7 +3226,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 175}
           
         ],
         "arenas": [
@@ -3250,7 +3252,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3275,7 +3278,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3450,7 +3454,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -3475,7 +3480,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75}
           
         ],
         "arenas": [
@@ -3500,7 +3506,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3525,7 +3532,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3550,7 +3558,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -3575,7 +3584,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -3650,7 +3660,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
@@ -3675,7 +3686,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
@@ -3725,7 +3737,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3775,7 +3788,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
@@ -3800,7 +3814,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
           
         ],
         "arenas": [
@@ -3875,7 +3890,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -3900,7 +3916,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -3925,7 +3942,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -3950,7 +3968,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -4050,7 +4069,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -4075,7 +4095,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -4100,7 +4121,8 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -4138,6 +4160,256 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 1343,
+      "name": "Micaela Villagra",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1344,
+      "name": "Laura Cuesta",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1345,
+      "name": "Celeste Muñoz",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1346,
+      "name": "Jainen Loustau",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1347,
+      "name": "Rocio Figueroa",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1348,
+      "name": "Vanina Rocamora",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1349,
+      "name": "Miriam Paredes",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1350,
+      "name": "Silvina Arteaga",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1351,
+      "name": "Vanesa Sanchez",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 1352,
+      "name": "Natalia Molina",
+      "gender": "femenino",
+      "category": "8va",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
         ]
       }
     }
