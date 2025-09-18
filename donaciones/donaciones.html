@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Donaciones - Pádel RG</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/donaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81C2M2PPXT');
+    </script>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../img/logo1.png" alt="Pádel RG Logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Torneos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../puntoDeOro/puntoDeOro.html">Punto de Oro</a></li>
+                            <li><a href="../arenas/arenas.html">Arena</a></li>
+                            <li><a href="../segundoSet/segundoSet.html">2do Set</a></li>
+                            <li><a href="../equipos/equipos.html">Copa Challenger</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Fixture <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../blanco/fixture.html">Punto de Oro</a></li>
+                            <li><a href="../blanco/arenas.html">Arena</a></li>
+                            <li><a href="../blanco/segundo.html">2do Set</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../ranking/ranking.html">Ranking</a></li>
+                    <li><a href="donaciones.html">Donaciones</a></li>
+                    <li><a href="../galeria/galeria.html">Galería</a></li>
+                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-social">
+                <a href="https://www.instagram.com/padelrg_/#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de donaciones -->
+    <main class="main-content">
+        <div class="donaciones-container">
+            <h1>Apoya a Pádel RG</h1>
+            <p class="donaciones-descripcion">
+                Tu apoyo nos ayuda a seguir asistiendo a torneos y eventos de pádel para la comunidad. 
+                Cualquier contribución, por pequeña que sea, hace una gran diferencia.
+            </p>
+            
+            <div class="donaciones-opciones">
+                <div class="donacion-card">
+                    <i class="fas fa-mug-hot"></i>
+                    <h3>Colaborar</h3>
+                    <p>Apóyanos a través de Cafecito.app</p>
+                    
+                    <!-- Botón de Cafecito.app -->
+                    <div class="cafecito-btn">
+                        <a href='https://cafecito.app/padelrg' rel='noopener' target='_blank'>
+                            <img srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' 
+                                 src='https://cdn.cafecito.app/imgs/buttons/button_5.png' 
+                                 alt='Invitame un café en cafecito.app' />
+                        </a>
+                    </div>
+                    
+                    <p class="cafecito-desc">Haz clic en el botón para apoyarnos con tu colaboración</p>
+                </div>
+                
+                <div class="donacion-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Comparte nuestro contenido</h3>
+                    <p>Ayúdanos a llegar a más gente</p>
+                    
+                    <div class="compartir-redes">
+                        <button class="btn-compartir" onclick="compartirFacebook()">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button class="btn-compartir" onclick="compartirTwitter()">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </button>
+                        <button class="btn-compartir" onclick="compartirWhatsApp()">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+          
+            
+            <div class="agradecimiento">
+                <h2>¡Gracias por tu apoyo!</h2>
+                <p>Con tu ayuda puede seguir creciendo la comunidad de pádel.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Espacio de publicidad -->
+    <div id="publicidad-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Torneos</a>
+                <a href="../acerca/acerca.html">Acerca de</a>
+                <a href="../contacto/contacto.html">Contacto</a>
+                <a href="../privacidad/privacidad.html">Política de Privacidad</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> Pádel RG. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+
+    <script src="js/nuevo.js"></script>
+    <script src="js/donaciones.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858" crossorigin="anonymous"></script>
+    <script>
+        // Cargar publicidad
+        fetch('../publicidad/publicidad.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('publicidad-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando publicidad:', error));
+            
+        // Actualizar año en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

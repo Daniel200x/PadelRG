@@ -1,0 +1,289 @@
+/* Estilos para la página de donaciones */
+.main-content {
+    padding: 100px 20px 80px; /* Aumenté el padding inferior para dar más espacio */
+    min-height: calc(100vh - 160px); /* Ajusté la altura mínima */
+    background-color: #f8f9fa;
+    box-sizing: border-box; /* Asegura que el padding se incluya en la altura */
+}
+
+.donaciones-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.donaciones-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.donaciones-descripcion {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.donaciones-opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.donacion-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.donacion-card:hover {
+    transform: translateY(-5px);
+}
+
+.donacion-card i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.donacion-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.donacion-card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.cafecito-btn {
+    margin: 20px 0;
+}
+
+.cafecito-btn a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cafecito-btn a:hover {
+    transform: scale(1.05);
+}
+
+.cafecito-desc {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #95a5a6;
+}
+
+.compartir-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-compartir {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-compartir:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-compartir i {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.btn-compartir:nth-child(1) {
+    background-color: #3b5998;
+}
+
+.btn-compartir:nth-child(1):hover {
+    background-color: #2d4373;
+}
+
+.btn-compartir:nth-child(2) {
+    background-color: #1da1f2;
+}
+
+.btn-compartir:nth-child(2):hover {
+    background-color: #0d8bd9;
+}
+
+.btn-compartir:nth-child(3) {
+    background-color: #25d366;
+}
+
+.btn-compartir:nth-child(3):hover {
+    background-color: #128c7e;
+}
+
+.donaciones-info {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.donaciones-info h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.donaciones-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donaciones-info li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.donaciones-info i {
+    color: #27ae60;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.agradecimiento {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Añadí margen inferior para separación */
+}
+
+.agradecimiento h2 {
+    margin-bottom: 15px;
+}
+
+/* Ajustes para el footer */
+.footer {
+    position: relative; /* Cambié de absolute a relative */
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* Para que se mantenga al final */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 90px 15px 70px; /* Ajusté para dispositivos móviles */
+    }
+    
+    .donaciones-container {
+        padding: 25px;
+    }
+    
+    .donaciones-container h1 {
+        font-size: 2rem;
+    }
+    
+    .donacion-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .donaciones-opciones {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 80px 10px 60px; /* Ajusté para móviles pequeños */
+    }
+    
+    .donaciones-container {
+        padding: 20px 15px;
+    }
+    
+    .donaciones-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .donaciones-descripcion {
+        font-size: 1rem;
+    }
+    
+    .donacion-card {
+        padding: 20px;
+    }
+    
+    .cafecito-btn img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .agradecimiento {
+        padding: 20px 15px;
+    }
+}
