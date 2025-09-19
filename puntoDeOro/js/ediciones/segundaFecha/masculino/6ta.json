@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "P. Velazquez/M. Pereyra",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "C. Lopez/D. Ibarra",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "L. Gomez/D. Villalba",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "D. Orellano/E. Arteaga",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -62,7 +71,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "N. Barrios/J. Gimenez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -71,7 +80,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "F. Infran/J. Mendez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -80,7 +89,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "L. Vera/J. Gimenez",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "G. Santana/N. De Guevara",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -120,7 +138,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "E. Garay/D. Floriani",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +147,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "J. Aguilar/M. Trangoni",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +156,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "R. Luna/F. Forno",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -176,7 +194,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "H. Rojo/M. Soto",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -185,7 +203,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "G. Quiroz/F. Gonzalez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -194,7 +212,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "W. Nieva/C. Ventura",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "G. Aballay/U. Veron",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -232,7 +259,7 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/",
+          "nombre": "F. Herlein/E. Larrechea",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -241,7 +268,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "W. Retamal/L. Lapadula",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -250,7 +277,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "R. Retuerto/L. Lapadula",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "H. Juarez/J. Orellana",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -288,7 +324,7 @@
       "nombre": "Grupo F",
       "equipos": [
        {
-          "nombre": "/",
+          "nombre": "P. Ulloa/C. Gabriel",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -297,7 +333,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "C. Peschiuta/L. Ruiz",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -306,7 +342,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "J. Sena/G. Escobar",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "J. Villalobos/V. Gonzalez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -344,7 +389,7 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "/",
+          "nombre": "C. Andrade/V. Lemus",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -353,7 +398,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "S. Lonne/J. Cuenca",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -362,7 +407,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "A. Facio/D. Facio",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "W. Sosa/M. Dos Santos",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -400,7 +454,7 @@
       "nombre": "Grupo H",
       "equipos": [
        {
-          "nombre": "/",
+          "nombre": "N. Barbosa/W. Sanchez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -409,7 +463,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "B. Gamarra/L. Galvan",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -418,7 +472,16 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "P. Figueroa/R. Oyarzun",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "F. Saldaño/N. Dominguez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
