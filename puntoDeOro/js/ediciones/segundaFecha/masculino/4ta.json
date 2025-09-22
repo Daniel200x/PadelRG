@@ -38,22 +38,22 @@
           "fecha": ":00 hs",
           "equipo1": "J. Villarreal/A. Floriani",
           "equipo2": "J. Servian/Y. Sanchez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"6-4"
         },
         {
           "fecha": ":00 hs",
           "equipo1": "J. Villarreal/A. Floriani",
           "equipo2": "A. Santi/L. Lapadula",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"6-4"
         },
         {
           "fecha": ":00 hs",
           "equipo1": "A. Santi/L. Lapadula",
           "equipo2": "J. Servian/Y. Sanchez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"4-6"
         }
         
       ]
@@ -95,22 +95,22 @@
           "fecha": ":00 hs",
           "equipo1": "N. Escufachi/A. Agnes",
           "equipo2": "L. Ojeda/F. Gallardo",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"4-6"
         },
         {
           "fecha": ":00 hs",
           "equipo1": "J. Andrade/I. Gallardo",
           "equipo2": "L. Ojeda/F. Gallardo",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"6-4"
         },
         {
           "fecha": ":00 hs",
           "equipo1": "N. Escufachi/A. Agnes",
           "equipo2": "J. Andrade/I. Gallardo",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"4-6"
         }
         
       ]
@@ -153,8 +153,8 @@
           "fecha": ":00 hs",
           "equipo1": "C. Escobar/J. Rivero",
           "equipo2": "N. Gonzalez/A. Fulco",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"6-4"
         },
         {
           "fecha": ":00 hs",
@@ -167,8 +167,8 @@
           "fecha": ":00 hs",
           "equipo1": "T. Andrade/T. Echeverria",
           "equipo2": "C. Escobar/J. Rivero",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"6-4"
         }
       ]
     }
@@ -181,14 +181,14 @@
           "equipo2": "2do C",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"1-0"
       },
       {
           "equipo1": "1ro C",
           "equipo2": "2do A",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"0-1"
       }
     ],
     "semis": [
@@ -197,14 +197,14 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"1-0"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"0-1"
       }
     ],
     "final": {
@@ -212,7 +212,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"0-1"
     }
   }
 }
