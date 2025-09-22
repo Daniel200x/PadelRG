@@ -608,6 +608,12 @@ function handleHashAnchor() {
                 description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
             },
             {
+                image: 'img/publi/coren.jpg',
+                link: 'https://www.instagram.com/corenindumentaria/',
+                title: 'Coren Indumentaria',
+                description: '"Técnica mata Galan.." ;) ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
+            },
+            {
                 image: 'img/publi/fixg.jpg',
                 link: '',
                 title: 'Fix - Car - Mecanica Integral',
@@ -624,6 +630,12 @@ function handleHashAnchor() {
                 link: 'https://www.instagram.com/trexx.tdf?igsh=cXNqYnJsNzV1NG5w',
                 title: 'Trexx TDF',
                 description: 'Encontra las mejores palas, indumentaria, pelotas y accesorios para tu juego. ¡Distribuidor oficial de Trexx en TDF!'
+            },
+            {
+                image: 'img/publi/coren.jpg',
+                link: 'https://www.instagram.com/corenindumentaria/',
+                title: 'Coren Indumentaria',
+                description: '"Técnica mata Galan.." ;) ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
             },
              {
                 image: 'img/publi/pino.jpeg',
