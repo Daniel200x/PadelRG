@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcador de Tenis - OBS</title>
+    <title>Marcador de Pádel - OBS</title>
     <style>
         * {
             margin: 0;
@@ -93,6 +93,11 @@
             font-weight: bold;
         }
         
+        .super-tie-break {
+            color: #ff5252;
+            font-weight: bold;
+        }
+        
         .match-status {
             text-align: center;
             padding: 8px;
@@ -161,6 +166,10 @@
             background: #ffa726;
         }
         
+        .super-tie-break-btn {
+            background: #ff5252;
+        }
+        
         .reset-btn {
             background: #ef4444;
         }
@@ -180,12 +189,17 @@
             color: white;
             font-size: 12px;
         }
+        
+        .current-set {
+            background: rgba(255, 167, 38, 0.3) !important;
+            border: 1px solid #ffa726 !important;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="scoreboard">
-            <div class="header">MARCADOR DE TENIS</div>
+            <div class="header">MARCADOR DE PÁDEL</div>
             
             <table class="score-table">
                 <thead>
@@ -194,7 +208,6 @@
                         <th>SET 1</th>
                         <th>SET 2</th>
                         <th>SET 3</th>
-                        <th>GAME</th>
                         <th>PUNTOS</th>
                     </tr>
                 </thead>
@@ -204,7 +217,6 @@
                         <td id="set1-a">0</td>
                         <td id="set2-a">0</td>
                         <td id="set3-a">0</td>
-                        <td id="game-a">0</td>
                         <td id="points-a">0</td>
                     </tr>
                     <tr class="team-b">
@@ -212,7 +224,6 @@
                         <td id="set1-b">0</td>
                         <td id="set2-b">0</td>
                         <td id="set3-b">0</td>
-                        <td id="game-b">0</td>
                         <td id="points-b">0</td>
                     </tr>
                 </tbody>
@@ -253,6 +264,15 @@
                 </div>
             </div>
             
+            <div class="control-group">
+                <h4>SUPER TIE-BREAK</h4>
+                <div class="control-buttons">
+                    <button class="super-tie-break-btn" onclick="startSuperTieBreak()">Iniciar</button>
+                    <button class="super-tie-break-btn" onclick="addSuperTieBreakPoint('A')">Punto A</button>
+                    <button class="super-tie-break-btn" onclick="addSuperTieBreakPoint('B')">Punto B</button>
+                </div>
+            </div>
+            
             <div class="control-buttons">
                 <button class="reset-btn" onclick="resetMatch()">Reiniciar Partido</button>
             </div>
@@ -260,61 +280,90 @@
     </div>
 
     <script>
-        // Estado del partido - SIMPLIFICADO
+        // Estado del partido
         let matchState = {
+            pointsA: 0,
+            pointsB: 0,
             currentSet: 1,
-            set1: { a: 0, b: 0 },
-            set2: { a: 0, b: 0 },
-            set3: { a: 0, b: 0 },
-            game: { a: 0, b: 0 },
-            points: { a: 0, b: 0 },
+            set1A: 0,
+            set1B: 0,
+            set2A: 0,
+            set2B: 0,
+            set3A: 0,
+            set3B: 0,
             tieBreak: false,
+            superTieBreak: false,
             matchFinished: false
         };
 
+        // Función para convertir puntos numéricos a formato de pádel (sin ventaja)
+        function formatPoints(points) {
+            if (matchState.superTieBreak) {
+                return points.toString();
+            }
+            
+            if (points === 0) return '0';
+            if (points === 1) return '15';
+            if (points === 2) return '30';
+            if (points === 3) return '40';
+            // No hay ventaja (AD) en pádel - cuando van 40-40, el siguiente punto gana
+            return '40';
+        }
+
         // Actualizar la visualización
         function updateDisplay() {
-            console.log("Actualizando display:", matchState);
+            console.log("Actualizando display...");
+            
+            // Actualizar nombres
+            document.getElementById('player-a-name').textContent = 
+                document.getElementById('player-a-input').value || 'Player A';
+            document.getElementById('player-b-name').textContent = 
+                document.getElementById('player-b-input').value || 'Player B';
             
             // Actualizar sets
-            document.getElementById('set1-a').textContent = matchState.set1.a;
-            document.getElementById('set1-b').textContent = matchState.set1.b;
-            document.getElementById('set2-a').textContent = matchState.set2.a;
-            document.getElementById('set2-b').textContent = matchState.set2.b;
-            document.getElementById('set3-a').textContent = matchState.set3.a;
-            document.getElementById('set3-b').textContent = matchState.set3.b;
+            document.getElementById('set1-a').textContent = matchState.set1A;
+            document.getElementById('set1-b').textContent = matchState.set1B;
+            document.getElementById('set2-a').textContent = matchState.set2A;
+            document.getElementById('set2-b').textContent = matchState.set2B;
+            document.getElementById('set3-a').textContent = matchState.set3A;
+            document.getElementById('set3-b').textContent = matchState.set3B;
             
-            // Actualizar games
-            document.getElementById('game-a').textContent = matchState.game.a;
-            document.getElementById('game-b').textContent = matchState.game.b;
+            // Quitar resaltado de todos los sets
+            document.getElementById('set1-a').classList.remove('current-set');
+            document.getElementById('set1-b').classList.remove('current-set');
+            document.getElementById('set2-a').classList.remove('current-set');
+            document.getElementById('set2-b').classList.remove('current-set');
+            document.getElementById('set3-a').classList.remove('current-set');
+            document.getElementById('set3-b').classList.remove('current-set');
+            
+            // Resaltar set actual (solo si el partido no ha terminado)
+            if (!matchState.matchFinished && !matchState.superTieBreak) {
+                if (matchState.currentSet === 1) {
+                    document.getElementById('set1-a').classList.add('current-set');
+                    document.getElementById('set1-b').classList.add('current-set');
+                } else if (matchState.currentSet === 2) {
+                    document.getElementById('set2-a').classList.add('current-set');
+                    document.getElementById('set2-b').classList.add('current-set');
+                } else if (matchState.currentSet === 3) {
+                    document.getElementById('set3-a').classList.add('current-set');
+                    document.getElementById('set3-b').classList.add('current-set');
+                }
+            }
             
             // Actualizar puntos
-            if (matchState.tieBreak) {
-                document.getElementById('points-a').textContent = matchState.points.a;
-                document.getElementById('points-b').textContent = matchState.points.b;
+            if (matchState.superTieBreak) {
+                document.getElementById('points-a').textContent = matchState.pointsA;
+                document.getElementById('points-b').textContent = matchState.pointsB;
+                document.getElementById('points-a').className = 'super-tie-break';
+                document.getElementById('points-b').className = 'super-tie-break';
+            } else if (matchState.tieBreak) {
+                document.getElementById('points-a').textContent = matchState.pointsA;
+                document.getElementById('points-b').textContent = matchState.pointsB;
                 document.getElementById('points-a').className = 'tie-break';
                 document.getElementById('points-b').className = 'tie-break';
             } else {
-                let pointsA = matchState.points.a;
-                let pointsB = matchState.points.b;
-                
-                // Convertir a sistema de tenis
-                if (pointsA === 0) pointsA = '0';
-                else if (pointsA === 1) pointsA = '15';
-                else if (pointsA === 2) pointsA = '30';
-                else if (pointsA === 3) pointsA = '40';
-                else if (pointsA === pointsB) pointsA = '40';
-                else if (pointsA > pointsB) pointsA = 'AD';
-                
-                if (pointsB === 0) pointsB = '0';
-                else if (pointsB === 1) pointsB = '15';
-                else if (pointsB === 2) pointsB = '30';
-                else if (pointsB === 3) pointsB = '40';
-                else if (pointsB === pointsA) pointsB = '40';
-                else if (pointsB > pointsA) pointsB = 'AD';
-                
-                document.getElementById('points-a').textContent = pointsA;
-                document.getElementById('points-b').textContent = pointsB;
+                document.getElementById('points-a').textContent = formatPoints(matchState.pointsA);
+                document.getElementById('points-b').textContent = formatPoints(matchState.pointsB);
                 document.getElementById('points-a').className = '';
                 document.getElementById('points-b').className = '';
             }
@@ -322,34 +371,163 @@
             // Estado del partido
             if (matchState.matchFinished) {
                 document.getElementById('match-status').textContent = 'PARTIDO FINALIZADO';
+            } else if (matchState.superTieBreak) {
+                document.getElementById('match-status').textContent = 'SUPER TIE-BREAK';
             } else if (matchState.tieBreak) {
-                document.getElementById('match-status').textContent = 'TIE-BREAK';
+                document.getElementById('match-status').textContent = 'TIE-BREAK - Set ' + matchState.currentSet;
             } else {
-                document.getElementById('match-status').textContent = 'Partido en curso';
+                document.getElementById('match-status').textContent = 'Partido en curso - Set ' + matchState.currentSet;
             }
         }
 
-        // Añadir punto - VERSIÓN SIMPLIFICADA
+        // Obtener el marcador actual del set en juego
+        function getCurrentSetScore() {
+            if (matchState.currentSet === 1) {
+                return { a: matchState.set1A, b: matchState.set1B };
+            } else if (matchState.currentSet === 2) {
+                return { a: matchState.set2A, b: matchState.set2B };
+            } else if (matchState.currentSet === 3) {
+                return { a: matchState.set3A, b: matchState.set3B };
+            }
+            return { a: 0, b: 0 };
+        }
+
+        // Actualizar el marcador del set actual
+        function updateCurrentSetScore(scoreA, scoreB) {
+            if (matchState.currentSet === 1) {
+                matchState.set1A = scoreA;
+                matchState.set1B = scoreB;
+            } else if (matchState.currentSet === 2) {
+                matchState.set2A = scoreA;
+                matchState.set2B = scoreB;
+            } else if (matchState.currentSet === 3) {
+                matchState.set3A = scoreA;
+                matchState.set3B = scoreB;
+            }
+        }
+
+        // Añadir punto
         function addPoint(team) {
-            if (matchState.matchFinished) return;
+            if (matchState.matchFinished) {
+                alert('El partido ha terminado. Reinicia para comenzar uno nuevo.');
+                return;
+            }
             
-            const opp = team === 'A' ? 'B' : 'A';
+            if (matchState.superTieBreak) {
+                addSuperTieBreakPoint(team);
+                return;
+            }
             
-            console.log(`Añadiendo punto a ${team}`, matchState);
+            console.log(`Añadiendo punto a ${team}`);
             
-            matchState.points[team]++;
+            if (team === 'A') {
+                matchState.pointsA++;
+            } else {
+                matchState.pointsB++;
+            }
             
-            // Verificar si se gana el game
+            checkGameWin(team);
+            updateDisplay();
+        }
+
+        // Verificar si se gana un game (sin ventaja - punto de oro en 40-40)
+        function checkGameWin(team) {
+            const pointsA = matchState.pointsA;
+            const pointsB = matchState.pointsB;
+            
             if (matchState.tieBreak) {
-                // Tie-break
-                if (matchState.points[team] >= 7 && matchState.points[team] - matchState.points[opp] >= 2) {
+                // Lógica de tie-break
+                if ((team === 'A' && pointsA >= 7 && pointsA - pointsB >= 2) ||
+                    (team === 'B' && pointsB >= 7 && pointsB - pointsA >= 2)) {
                     winGame(team);
                 }
             } else {
-                // Game normal
-                if (matchState.points[team] >= 4 && matchState.points[team] - matchState.points[opp] >= 2) {
-                    winGame(team);
+                // Lógica de pádel: sin ventaja - punto de oro en 40-40
+                if (pointsA >= 3 && pointsB >= 3) {
+                    // Situación de 40-40 - el siguiente punto gana
+                    if (team === 'A' && pointsA > pointsB) {
+                        winGame('A');
+                    } else if (team === 'B' && pointsB > pointsA) {
+                        winGame('B');
+                    }
+                } else {
+                    // Situación normal
+                    if ((team === 'A' && pointsA >= 4) || (team === 'B' && pointsB >= 4)) {
+                        winGame(team);
+                    }
                 }
+            }
+        }
+
+        // Ganar un game
+        function winGame(team) {
+            console.log(`Game para ${team} en el set ${matchState.currentSet}`);
+            
+            const currentSet = getCurrentSetScore();
+            let newScoreA = currentSet.a;
+            let newScoreB = currentSet.b;
+            
+            if (team === 'A') {
+                newScoreA++;
+            } else {
+                newScoreB++;
+            }
+            
+            // Actualizar el marcador del set actual
+            updateCurrentSetScore(newScoreA, newScoreB);
+            
+            // Verificar tie-break (6-6)
+            if (newScoreA === 6 && newScoreB === 6) {
+                matchState.tieBreak = true;
+                matchState.pointsA = 0;
+                matchState.pointsB = 0;
+                updateDisplay();
+                return;
+            }
+            
+            // Verificar si se gana el set (6 games con diferencia de 2, o 7-5, 7-6)
+            if ((newScoreA >= 6 || newScoreB >= 6) && 
+                (Math.abs(newScoreA - newScoreB) >= 2 || newScoreA === 7 || newScoreB === 7)) {
+                winSet(team);
+            } else {
+                // Resetear puntos para el siguiente game
+                matchState.pointsA = 0;
+                matchState.pointsB = 0;
+                matchState.tieBreak = false;
+            }
+            
+            updateDisplay();
+        }
+
+        // Ganar un set y pasar automáticamente al siguiente
+        function winSet(team) {
+            console.log(`Set ${matchState.currentSet} para ${team}`);
+            
+            // Verificar si se gana el partido
+            const setsWonA = (matchState.set1A > matchState.set1B ? 1 : 0) + 
+                           (matchState.set2A > matchState.set2B ? 1 : 0) + 
+                           (matchState.set3A > matchState.set3A ? 1 : 0);
+            
+            const setsWonB = (matchState.set1B > matchState.set1A ? 1 : 0) + 
+                           (matchState.set2B > matchState.set2A ? 1 : 0) + 
+                           (matchState.set3B > matchState.set3A ? 1 : 0);
+            
+            // Si van 1-1 en sets, iniciar Super Tie Break
+            if (setsWonA === 1 && setsWonB === 1 && matchState.currentSet === 2) {
+                startSuperTieBreak();
+                return;
+            }
+            
+            if (setsWonA >= 2 || setsWonB >= 2) {
+                matchState.matchFinished = true;
+                console.log("Partido terminado");
+            } else {
+                // Pasar automáticamente al siguiente set
+                matchState.currentSet++;
+                matchState.pointsA = 0;
+                matchState.pointsB = 0;
+                matchState.tieBreak = false;
+                console.log(`Comenzando set ${matchState.currentSet}`);
             }
             
             updateDisplay();
@@ -357,99 +535,105 @@
 
         // Añadir game completo
         function addGame(team) {
-            if (matchState.matchFinished) return;
+            if (matchState.matchFinished || matchState.superTieBreak) return;
             
-            console.log(`Añadiendo game a ${team}`);
+            console.log(`Añadiendo game completo a ${team}`);
             winGame(team);
-            updateDisplay();
-        }
-
-        // Ganar un game
-        function winGame(team) {
-            const opp = team === 'A' ? 'B' : 'A';
-            
-            matchState.game[team]++;
-            
-            // Verificar tie-break (6-6)
-            if (matchState.game.a === 6 && matchState.game.b === 6) {
-                matchState.tieBreak = true;
-                matchState.points = { a: 0, b: 0 };
-                updateDisplay();
-                return;
-            }
-            
-            // Verificar si se gana el set
-            if (matchState.game[team] >= 6 && matchState.game[team] - matchState.game[opp] >= 2) {
-                winSet(team);
-            }
-            
-            // Resetear puntos
-            matchState.points = { a: 0, b: 0 };
-            matchState.tieBreak = false;
-        }
-
-        // Ganar un set
-        function winSet(team) {
-            // Guardar en el set actual
-            if (matchState.currentSet === 1) {
-                matchState.set1[team]++;
-            } else if (matchState.currentSet === 2) {
-                matchState.set2[team]++;
-            } else if (matchState.currentSet === 3) {
-                matchState.set3[team]++;
-            }
-            
-            // Verificar si se gana el partido
-            const setsA = matchState.set1.a + matchState.set2.a + matchState.set3.a;
-            const setsB = matchState.set1.b + matchState.set2.b + matchState.set3.b;
-            
-            if (setsA >= 2 || setsB >= 2) {
-                matchState.matchFinished = true;
-            } else {
-                // Pasar al siguiente set
-                matchState.currentSet++;
-                matchState.game = { a: 0, b: 0 };
-                matchState.points = { a: 0, b: 0 };
-            }
         }
 
         // Punto de tie-break
         function addTieBreakPoint(team) {
+            if (matchState.superTieBreak) {
+                addSuperTieBreakPoint(team);
+                return;
+            }
+            
             if (!matchState.tieBreak) {
                 matchState.tieBreak = true;
-                matchState.points = { a: 0, b: 0 };
+                matchState.pointsA = 0;
+                matchState.pointsB = 0;
             }
             addPoint(team);
+        }
+
+        // Iniciar Super Tie Break
+        function startSuperTieBreak() {
+            if (matchState.matchFinished) return;
+            
+            console.log("Iniciando Super Tie Break");
+            matchState.superTieBreak = true;
+            matchState.pointsA = 0;
+            matchState.pointsB = 0;
+            updateDisplay();
+        }
+
+        // Añadir punto de Super Tie Break
+        function addSuperTieBreakPoint(team) {
+            if (!matchState.superTieBreak) {
+                startSuperTieBreak();
+            }
+            
+            if (matchState.matchFinished) return;
+            
+            console.log(`Añadiendo punto de Super Tie Break a ${team}`);
+            
+            if (team === 'A') {
+                matchState.pointsA++;
+            } else {
+                matchState.pointsB++;
+            }
+            
+            // Verificar si se gana el Super Tie Break (10 puntos con diferencia de 2)
+            if ((matchState.pointsA >= 11 || matchState.pointsB >= 11) ) {
+                winSuperTieBreak(team);
+            }
+            
+            updateDisplay();
+        }
+
+        // Ganar Super Tie Break y finalizar partido
+        function winSuperTieBreak(team) {
+            console.log(`Super Tie Break ganado por ${team}`);
+            
+            // Registrar el Super Tie Break como el tercer set
+            if (team === 'A') {
+                matchState.set3A = 7;
+                matchState.set3B = 6;
+            } else {
+                matchState.set3A = 6;
+                matchState.set3B = 7;
+            }
+            
+            matchState.matchFinished = true;
+            updateDisplay();
         }
 
         // Reiniciar partido
         function resetMatch() {
             console.log("Reiniciando partido");
             matchState = {
+                pointsA: 0,
+                pointsB: 0,
                 currentSet: 1,
-                set1: { a: 0, b: 0 },
-                set2: { a: 0, b: 0 },
-                set3: { a: 0, b: 0 },
-                game: { a: 0, b: 0 },
-                points: { a: 0, b: 0 },
+                set1A: 0,
+                set1B: 0,
+                set2A: 0,
+                set2B: 0,
+                set3A: 0,
+                set3B: 0,
                 tieBreak: false,
+                superTieBreak: false,
                 matchFinished: false
             };
             updateDisplay();
         }
 
-        // Actualizar nombres
-        document.getElementById('player-a-input').addEventListener('input', function() {
-            document.getElementById('player-a-name').textContent = this.value || 'Player A';
-        });
-        
-        document.getElementById('player-b-input').addEventListener('input', function() {
-            document.getElementById('player-b-name').textContent = this.value || 'Player B';
-        });
-
         // Inicializar
+        document.getElementById('player-a-input').addEventListener('input', updateDisplay);
+        document.getElementById('player-b-input').addEventListener('input', updateDisplay);
+        
         updateDisplay();
-        console.log("Marcador inicializado correctamente");
+        console.log("Marcador de pádel inicializado correctamente");
     </script>
 </body>
 </html>
