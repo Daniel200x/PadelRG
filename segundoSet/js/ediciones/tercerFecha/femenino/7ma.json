@@ -17,23 +17,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs",
+          "equipo1": "D. Martinez/O. Martinez",
+          "equipo2": "V. Nehue/S. Guerrero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "D. Martinez/O. Martinez",
+          "equipo2": "R. Diaz/M. Araoz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "R. Diaz/M. Araoz",
+          "equipo2": "V. Nehue/S. Guerrero",
           "resultado": "",
           "games":"A definir"
         }
@@ -56,23 +56,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs",
+          "equipo1": "V. Iglesias/A. Quezada",
+          "equipo2": "V. Vera/M. Velasco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "V. Vera/M. Velasco",
+          "equipo2": "J. Andino/C. Racedo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "V. Iglesias/A. Quezada",
+          "equipo2": "J. Andino/C. Racedo",
           "resultado": "",
           "games":"A definir"
         }
@@ -99,25 +99,32 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "V. Lopez/L. Ramirez",
+          "equipo2": "S. Sanabria/R. Gamarra",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "L. Fernandez/C. Vargas",
+          "equipo2": "K. Girollet/D. Corzo",
           "resultado": "",
           "games":"A definir"
         },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "",
-          "games":"A definir"
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "",
+          "games":""
         }
       ]
     },
@@ -140,25 +147,32 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "F. Graneros/A. Graneros",
+          "equipo2": "S. Ilarregui/S. Davalos",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "L. Gomez/C. Nieto",
+          "equipo2": "L. Barria/F. Escobar",
           "resultado": "",
           "games":"A definir"
         },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 18:00 hs",
           "resultado": "",
-          "games":"A definir"
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 19:00 hs",
+          "resultado": "",
+          "games":""
         }
       ]
     }
