@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function cargarDatosExternos() {
         const archivosJSON = [
            // '../segundoSet/js/ediciones/tercerFecha/femenino/4ta.json',
-            //'../segundoSet/js/ediciones/tercerFecha/femenino/5ta.json',
+            '../segundoSet/js/ediciones/tercerFecha/femenino/5ta.json',
             //'../segundoSet/js/ediciones/tercerFecha/femenino/6ta.json',
-            //'../segundoSet/js/ediciones/tercerFecha/femenino/7ma.json',
+            '../segundoSet/js/ediciones/tercerFecha/femenino/7ma.json',
             //'../segundoSet/js/ediciones/tercerFecha/femenino/8va.json',
             //'../segundoSet/js/ediciones/tercerFecha/masculino/4ta.json',
-            //'../segundoSet/js/ediciones/tercerFecha/masculino/5ta.json',
+            '../segundoSet/js/ediciones/tercerFecha/masculino/5ta.json',
             //'../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json',
-            //'../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json',
+            '../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json',
             //'../segundoSet/js/ediciones/tercerFecha/masculino/8va.json'
         ];
         

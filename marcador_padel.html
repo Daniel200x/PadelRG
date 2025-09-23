@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador de Tenis - OBS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .scoreboard {
+            width: 700px;
+            background: rgba(0, 30, 60, 0.85);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid #1a5fb4;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #1a5fb4, #3584e4);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+        
+        .score-table th {
+            background: rgba(0, 20, 40, 0.9);
+            padding: 12px 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .score-table th:last-child {
+            border-right: none;
+        }
+        
+        .score-table td {
+            padding: 15px 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 40, 80, 0.7);
+        }
+        
+        .score-table td:first-child {
+            text-align: left;
+            padding-left: 20px;
+            background: rgba(0, 20, 40, 0.9);
+            font-weight: 600;
+        }
+        
+        .score-table td:last-child {
+            border-right: none;
+        }
+        
+        .team-a td:first-child {
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .team-b td:first-child {
+            border-left: 4px solid #4ecdc4;
+        }
+        
+        .current-game {
+            background: rgba(255, 215, 0, 0.2) !important;
+        }
+        
+        .tie-break {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .controls {
+            display: flex;
+            padding: 15px;
+            background: rgba(0, 20, 40, 0.9);
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            display: flex;
+            gap: 5px;
+        }
+        
+        button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #3584e4;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 80px;
+        }
+        
+        button:hover {
+            background: #1c71d8;
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .team-a-btn {
+            background: #ff6b6b;
+        }
+        
+        .team-a-btn:hover {
+            background: #ff5252;
+        }
+        
+        .team-b-btn {
+            background: #4ecdc4;
+        }
+        
+        .team-b-btn:hover {
+            background: #26a69a;
+        }
+        
+        .tie-break-btn {
+            background: #ffa726;
+        }
+        
+        .tie-break-btn:hover {
+            background: #ff9800;
+        }
+        
+        .reset-btn {
+            background: #ef4444;
+        }
+        
+        .reset-btn:hover {
+            background: #dc2626;
+        }
+        
+        .game-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .game-controls-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .tie-break-controls {
+            display: none;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .tie-break-active {
+            display: flex;
+        }
+        
+        .match-status {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 20, 40, 0.9);
+            color: #ffa726;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="header">MARCADOR DE TENIS</div>
+        
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th>EQUIPO</th>
+                    <th>SET 1</th>
+                    <th>SET 2</th>
+                    <th>SET 3</th>
+                    <th>GAME</th>
+                    <th>PUNTOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="team-a">
+                    <td>Player A</td>
+                    <td id="set1-a">0</td>
+                    <td id="set2-a">0</td>
+                    <td id="set3-a">0</td>
+                    <td id="game-a">0</td>
+                    <td id="points-a">0</td>
+                </tr>
+                <tr class="team-b">
+                    <td>Player B</td>
+                    <td id="set1-b">0</td>
+                    <td id="set2-b">0</td>
+                    <td id="set3-b">0</td>
+                    <td id="game-b">0</td>
+                    <td id="points-b">0</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="match-status" id="match-status">Partido en curso</div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <button class="team-a-btn" onclick="addPoint('A')">Punto A</button>
+                <button class="team-b-btn" onclick="addPoint('B')">Punto B</button>
+            </div>
+            
+            <div class="game-controls">
+                <div class="game-controls-row">
+                    <button class="team-a-btn" onclick="addGame('A')">Game A</button>
+                    <button class="team-b-btn" onclick="addGame('B')">Game B</button>
+                </div>
+                
+                <div class="tie-break-controls" id="tie-break-controls">
+                    <button class="tie-break-btn" onclick="addTieBreakPoint('A')">Punto TB A</button>
+                    <button class="tie-break-btn" onclick="addTieBreakPoint('B')">Punto TB B</button>
+                </div>
+                
+                <div class="game-controls-row">
+                    <button class="reset-btn" onclick="resetMatch()">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estado del partido
+        const matchState = {
+            currentSet: 1,
+            sets: {
+                1: { a: 0, b: 0 },
+                2: { a: 0, b: 0 },
+                3: { a: 0, b: 0 }
+            },
+            currentGame: { a: 0, b: 0 },
+            points: { a: 0, b: 0 },
+            tieBreak: false,
+            matchFinished: false
+        };
+        
+        // Sistema de puntuación de tenis
+        const pointValues = [0, 15, 30, 40];
+        
+        // Actualizar la visualización
+        function updateDisplay() {
+            // Actualizar sets
+            document.getElementById('set1-a').textContent = matchState.sets[1].a;
+            document.getElementById('set1-b').textContent = matchState.sets[1].b;
+            document.getElementById('set2-a').textContent = matchState.sets[2].a;
+            document.getElementById('set2-b').textContent = matchState.sets[2].b;
+            document.getElementById('set3-a').textContent = matchState.sets[3].a;
+            document.getElementById('set3-b').textContent = matchState.sets[3].b;
+            
+            // Actualizar games
+            document.getElementById('game-a').textContent = matchState.currentGame.a;
+            document.getElementById('game-b').textContent = matchState.currentGame.b;
+            
+            // Actualizar puntos
+            if (matchState.tieBreak) {
+                document.getElementById('points-a').textContent = matchState.points.a;
+                document.getElementById('points-b').textContent = matchState.points.b;
+                document.getElementById('points-a').classList.add('tie-break');
+                document.getElementById('points-b').classList.add('tie-break');
+            } else {
+                const pointsA = matchState.points.a >= 4 ? (matchState.points.a === matchState.points.b ? '40' : 'AD') : pointValues[matchState.points.a] || matchState.points.a;
+                const pointsB = matchState.points.b >= 4 ? (matchState.points.a === matchState.points.b ? '40' : 'AD') : pointValues[matchState.points.b] || matchState.points.b;
+                
+                document.getElementById('points-a').textContent = pointsA;
+                document.getElementById('points-b').textContent = pointsB;
+                document.getElementById('points-a').classList.remove('tie-break');
+                document.getElementById('points-b').classList.remove('tie-break');
+            }
+            
+            // Resaltar game actual
+            document.querySelectorAll('.current-game').forEach(el => el.classList.remove('current-game'));
+            document.getElementById(`game-${matchState.tieBreak ? 'a' : 'a'}`).classList.add('current-game');
+            document.getElementById(`game-${matchState.tieBreak ? 'b' : 'b'}`).classList.add('current-game');
+            
+            // Mostrar/ocultar controles de tie-break
+            const tieBreakControls = document.getElementById('tie-break-controls');
+            if (matchState.tieBreak) {
+                tieBreakControls.classList.add('tie-break-active');
+                document.getElementById('match-status').textContent = 'TIE-BREAK EN CURSO';
+            } else {
+                tieBreakControls.classList.remove('tie-break-active');
+                document.getElementById('match-status').textContent = matchState.matchFinished ? 'PARTIDO FINALIZADO' : 'Partido en curso';
+            }
+            
+            // Verificar si el partido ha terminado
+            if (matchState.matchFinished) {
+                document.getElementById('match-status').textContent = 'PARTIDO FINALIZADO';
+            }
+        }
+        
+        // Añadir un punto
+        function addPoint(team) {
+            if (matchState.matchFinished) return;
+            
+            const opponent = team === 'A' ? 'B' : 'A';
+            
+            if (matchState.tieBreak) {
+                // Lógica de tie-break
+                matchState.points[team]++;
+                
+                // Verificar ganador del tie-break
+                if (matchState.points[team] >= 7 && matchState.points[team] - matchState.points[opponent] >= 2) {
+                    winGame(team);
+                    matchState.tieBreak = false;
+                }
+            } else {
+                // Puntuación normal
+                matchState.points[team]++;
+                
+                // Verificar si hay ventaja o game
+                if (matchState.points[team] >= 4 && matchState.points[team] - matchState.points[opponent] >= 2) {
+                    winGame(team);
+                } else if (matchState.points[team] >= 3 && matchState.points[opponent] >= 3) {
+                    // Deuce
+                    if (matchState.points[team] === matchState.points[opponent]) {
+                        // Volver a 40-40
+                        matchState.points.a = 3;
+                        matchState.points.b = 3;
+                    }
+                }
+            }
+            
+            updateDisplay();
+        }
+        
+        // Añadir un game completo
+        function addGame(team) {
+            if (matchState.matchFinished) return;
+            
+            winGame(team);
+            updateDisplay();
+        }
+        
+        // Añadir un punto de tie-break
+        function addTieBreakPoint(team) {
+            if (!matchState.tieBreak) {
+                // Activar tie-break si no está activo
+                matchState.tieBreak = true;
+                matchState.points.a = 0;
+                matchState.points.b = 0;
+            }
+            
+            addPoint(team);
+        }
+        
+        // Ganar un game
+        function winGame(team) {
+            const opponent = team === 'A' ? 'B' : 'A';
+            
+            matchState.currentGame[team]++;
+            
+            // Verificar si hay tie-break (6-6)
+            if (matchState.currentGame[team] === 6 && matchState.currentGame[opponent] === 6) {
+                matchState.tieBreak = true;
+                matchState.points.a = 0;
+                matchState.points.b = 0;
+                return;
+            }
+            
+            // Verificar si se gana el set
+            if (matchState.currentGame[team] >= 6 && matchState.currentGame[team] - matchState.currentGame[opponent] >= 2) {
+                winSet(team);
+            } else if (matchState.currentGame[team] === 7) {
+                // Ganar por tie-break 7-6
+                winSet(team);
+            }
+            
+            // Resetear puntos para el siguiente game
+            matchState.points.a = 0;
+            matchState.points.b = 0;
+            matchState.tieBreak = false;
+        }
+        
+        // Ganar un set
+        function winSet(team) {
+            matchState.sets[matchState.currentSet][team]++;
+            
+            // Verificar si se gana el partido
+            const setsWonA = Object.values(matchState.sets).reduce((sum, set) => sum + set.a, 0);
+            const setsWonB = Object.values(matchState.sets).reduce((sum, set) => sum + set.b, 0);
+            
+            if (setsWonA >= 2 || setsWonB >= 2) {
+                matchState.matchFinished = true;
+            } else {
+                // Pasar al siguiente set
+                matchState.currentSet++;
+                matchState.currentGame.a = 0;
+                matchState.currentGame.b = 0;
+                matchState.points.a = 0;
+                matchState.points.b = 0;
+                matchState.tieBreak = false;
+            }
+        }
+        
+        // Reiniciar el partido
+        function resetMatch() {
+            matchState.currentSet = 1;
+            matchState.sets = {
+                1: { a: 0, b: 0 },
+                2: { a: 0, b: 0 },
+                3: { a: 0, b: 0 }
+            };
+            matchState.currentGame.a = 0;
+            matchState.currentGame.b = 0;
+            matchState.points.a = 0;
+            matchState.points.b = 0;
+            matchState.tieBreak = false;
+            matchState.matchFinished = false;
+            
+            updateDisplay();
+        }
+        
+        // Inicializar la visualización
+        updateDisplay();
+    </script>
+</body>
+</html>
