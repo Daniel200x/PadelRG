@@ -572,7 +572,7 @@
           {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 100},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 200}
           
         ],
         "segundoSet": [
@@ -1152,7 +1152,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 200}
           
         ],
         "segundoSet": [
