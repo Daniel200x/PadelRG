@@ -139,6 +139,12 @@
             gap: 5px;
         }
         
+        .control-buttons-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        
         button {
             padding: 8px 5px;
             border: none;
@@ -174,6 +180,10 @@
             background: #ef4444;
         }
         
+        .undo-btn {
+            background: #f59e0b;
+        }
+        
         .player-names {
             display: flex;
             flex-direction: column;
@@ -193,6 +203,13 @@
         .current-set {
             background: rgba(255, 167, 38, 0.3) !important;
             border: 1px solid #ffa726 !important;
+        }
+        
+        .history-info {
+            color: #ccc;
+            font-size: 11px;
+            text-align: center;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -266,15 +283,20 @@
             
             <div class="control-group">
                 <h4>SUPER TIE-BREAK</h4>
-                <div class="control-buttons">
+                <div class="control-buttons-3">
                     <button class="super-tie-break-btn" onclick="startSuperTieBreak()">Iniciar</button>
                     <button class="super-tie-break-btn" onclick="addSuperTieBreakPoint('A')">Punto A</button>
                     <button class="super-tie-break-btn" onclick="addSuperTieBreakPoint('B')">Punto B</button>
                 </div>
             </div>
             
-            <div class="control-buttons">
-                <button class="reset-btn" onclick="resetMatch()">Reiniciar Partido</button>
+            <div class="control-group">
+                <h4>FUNCIONES ESPECIALES</h4>
+                <div class="control-buttons-3">
+                    <button class="undo-btn" onclick="undoLastAction()" id="undo-btn">Deshacer</button>
+                    <button class="reset-btn" onclick="resetMatch()">Reiniciar</button>
+                </div>
+                <div class="history-info" id="history-info">Historial: 0 cambios</div>
             </div>
         </div>
     </div>
@@ -295,6 +317,52 @@
             superTieBreak: false,
             matchFinished: false
         };
+
+        // Historial de cambios para deshacer
+        let history = [];
+        const MAX_HISTORY = 20; // Límite de cambios en el historial
+
+        // Guardar estado actual en el historial
+        function saveState() {
+            // Crear una copia profunda del estado actual
+            const stateCopy = JSON.parse(JSON.stringify(matchState));
+            history.push(stateCopy);
+            
+            // Limitar el historial al tamaño máximo
+            if (history.length > MAX_HISTORY) {
+                history.shift(); // Eliminar el estado más antiguo
+            }
+            
+            updateHistoryInfo();
+        }
+
+        // Deshacer último cambio
+        function undoLastAction() {
+            if (history.length > 0) {
+                // Restaurar el estado anterior
+                matchState = history.pop();
+                updateDisplay();
+                updateHistoryInfo();
+            } else {
+                alert("No hay acciones para deshacer");
+            }
+        }
+
+        // Actualizar información del historial
+        function updateHistoryInfo() {
+            const infoElement = document.getElementById('history-info');
+            const undoButton = document.getElementById('undo-btn');
+            
+            if (history.length > 0) {
+                infoElement.textContent = `Historial: ${history.length} cambios (máx. ${MAX_HISTORY})`;
+                undoButton.disabled = false;
+                undoButton.style.opacity = "1";
+            } else {
+                infoElement.textContent = "Historial: 0 cambios";
+                undoButton.disabled = true;
+                undoButton.style.opacity = "0.6";
+            }
+        }
 
         // Función para convertir puntos numéricos a formato de pádel (sin ventaja)
         function formatPoints(points) {
@@ -420,6 +488,9 @@
             
             console.log(`Añadiendo punto a ${team}`);
             
+            // Guardar estado actual antes de realizar cambios
+            saveState();
+            
             if (team === 'A') {
                 matchState.pointsA++;
             } else {
@@ -538,6 +609,10 @@
             if (matchState.matchFinished || matchState.superTieBreak) return;
             
             console.log(`Añadiendo game completo a ${team}`);
+            
+            // Guardar estado actual antes de realizar cambios
+            saveState();
+            
             winGame(team);
         }
 
@@ -553,6 +628,10 @@
                 matchState.pointsA = 0;
                 matchState.pointsB = 0;
             }
+            
+            // Guardar estado actual antes de realizar cambios
+            saveState();
+            
             addPoint(team);
         }
 
@@ -561,6 +640,10 @@
             if (matchState.matchFinished) return;
             
             console.log("Iniciando Super Tie Break");
+            
+            // Guardar estado actual antes de realizar cambios
+            saveState();
+            
             matchState.superTieBreak = true;
             matchState.pointsA = 0;
             matchState.pointsB = 0;
@@ -571,11 +654,15 @@
         function addSuperTieBreakPoint(team) {
             if (!matchState.superTieBreak) {
                 startSuperTieBreak();
+                return;
             }
             
             if (matchState.matchFinished) return;
             
             console.log(`Añadiendo punto de Super Tie Break a ${team}`);
+            
+            // Guardar estado actual antes de realizar cambios
+            saveState();
             
             if (team === 'A') {
                 matchState.pointsA++;
@@ -611,6 +698,10 @@
         // Reiniciar partido
         function resetMatch() {
             console.log("Reiniciando partido");
+            
+            // Guardar estado actual antes de realizar cambios
+            saveState();
+            
             matchState = {
                 pointsA: 0,
                 pointsB: 0,
@@ -633,6 +724,7 @@
         document.getElementById('player-b-input').addEventListener('input', updateDisplay);
         
         updateDisplay();
+        updateHistoryInfo();
         console.log("Marcador de pádel inicializado correctamente");
     </script>
 </body>
