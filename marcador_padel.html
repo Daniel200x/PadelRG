@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         
         body {
@@ -21,23 +21,28 @@
             padding: 20px;
         }
         
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
         .scoreboard {
-            width: 700px;
-            background: rgba(0, 30, 60, 0.85);
-            border-radius: 12px;
+            width: 600px;
+            background: rgba(0, 30, 60, 0.95);
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             border: 2px solid #1a5fb4;
         }
         
         .header {
             background: linear-gradient(to right, #1a5fb4, #3584e4);
             color: white;
-            padding: 15px 20px;
+            padding: 12px 20px;
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
-            letter-spacing: 1px;
         }
         
         .score-table {
@@ -48,21 +53,21 @@
         
         .score-table th {
             background: rgba(0, 20, 40, 0.9);
-            padding: 12px 10px;
+            padding: 10px 5px;
             text-align: center;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px;
             border-right: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .score-table th:last-child {
-            border-right: none;
+        .score-table th:first-child {
+            width: 120px;
         }
         
         .score-table td {
-            padding: 15px 10px;
+            padding: 12px 5px;
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             border-right: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 40, 80, 0.7);
@@ -70,13 +75,9 @@
         
         .score-table td:first-child {
             text-align: left;
-            padding-left: 20px;
+            padding-left: 15px;
             background: rgba(0, 20, 40, 0.9);
             font-weight: 600;
-        }
-        
-        .score-table td:last-child {
-            border-right: none;
         }
         
         .team-a td:first-child {
@@ -87,86 +88,65 @@
             border-left: 4px solid #4ecdc4;
         }
         
-        .current-game {
-            background: rgba(255, 215, 0, 0.2) !important;
-        }
-        
         .tie-break {
-            color: #ff6b6b;
+            color: #ffa726;
             font-weight: bold;
         }
         
         .match-status {
             text-align: center;
-            padding: 10px;
+            padding: 8px;
             background: rgba(0, 20, 40, 0.9);
             color: #ffa726;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
         
-        /* Ocultar controles en el marcador principal */
-        .controls {
-            display: none;
-        }
-        
-        /* Panel de control externo */
         .control-panel {
-            position: fixed;
-            top: 20px;
-            right: 20px;
             background: rgba(0, 30, 60, 0.95);
             border-radius: 10px;
             padding: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             border: 2px solid #1a5fb4;
-            z-index: 1000;
-            width: 300px;
+            width: 250px;
         }
         
         .control-panel h3 {
             color: white;
             text-align: center;
             margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 16px;
         }
         
         .control-group {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         
-        .control-group label {
+        .control-group h4 {
             color: white;
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
         
         .control-buttons {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            margin-bottom: 10px;
+            gap: 5px;
         }
         
         button {
-            padding: 8px 12px;
+            padding: 8px 5px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             background: #3584e4;
             color: white;
             font-weight: bold;
             cursor: pointer;
-            transition: all 0.3s;
+            font-size: 12px;
         }
         
         button:hover {
             opacity: 0.9;
-            transform: translateY(-2px);
-        }
-        
-        button:active {
-            transform: translateY(0);
         }
         
         .team-a-btn {
@@ -183,321 +163,293 @@
         
         .reset-btn {
             background: #ef4444;
-            grid-column: span 2;
         }
         
         .player-names {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
             margin-bottom: 15px;
         }
         
         .player-names input {
-            padding: 8px;
+            padding: 6px;
             border: 1px solid #3584e4;
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.1);
             color: white;
-        }
-        
-        .player-names input:focus {
-            outline: none;
-            border-color: #1c71d8;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="scoreboard">
-        <div class="header">MARCADOR DE TENIS</div>
-        
-        <table class="score-table">
-            <thead>
-                <tr>
-                    <th>EQUIPO</th>
-                    <th>SET 1</th>
-                    <th>SET 2</th>
-                    <th>SET 3</th>
-                    <th>GAME</th>
-                    <th>PUNTOS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="team-a">
-                    <td id="player-a-name">Player A</td>
-                    <td id="set1-a">0</td>
-                    <td id="set2-a">0</td>
-                    <td id="set3-a">0</td>
-                    <td id="game-a">0</td>
-                    <td id="points-a">0</td>
-                </tr>
-                <tr class="team-b">
-                    <td id="player-b-name">Player B</td>
-                    <td id="set1-b">0</td>
-                    <td id="set2-b">0</td>
-                    <td id="set3-b">0</td>
-                    <td id="game-b">0</td>
-                    <td id="points-b">0</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div class="match-status" id="match-status">Partido en curso</div>
-        
-        <!-- Estos controles están ocultos en OBS -->
-        <div class="controls">
-            <button onclick="addPoint('A')">Punto A</button>
-            <button onclick="addPoint('B')">Punto B</button>
-            <button onclick="addGame('A')">Game A</button>
-            <button onclick="addGame('B')">Game B</button>
-            <button onclick="resetMatch()">Reiniciar</button>
+    <div class="container">
+        <div class="scoreboard">
+            <div class="header">MARCADOR DE TENIS</div>
+            
+            <table class="score-table">
+                <thead>
+                    <tr>
+                        <th>JUGADOR</th>
+                        <th>SET 1</th>
+                        <th>SET 2</th>
+                        <th>SET 3</th>
+                        <th>GAME</th>
+                        <th>PUNTOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="team-a">
+                        <td id="player-a-name">Player A</td>
+                        <td id="set1-a">0</td>
+                        <td id="set2-a">0</td>
+                        <td id="set3-a">0</td>
+                        <td id="game-a">0</td>
+                        <td id="points-a">0</td>
+                    </tr>
+                    <tr class="team-b">
+                        <td id="player-b-name">Player B</td>
+                        <td id="set1-b">0</td>
+                        <td id="set2-b">0</td>
+                        <td id="set3-b">0</td>
+                        <td id="game-b">0</td>
+                        <td id="points-b">0</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="match-status" id="match-status">Partido en curso</div>
         </div>
-    </div>
 
-    <!-- Panel de control externo (solo visible fuera de OBS) -->
-    <div class="control-panel">
-        <h3>Panel de Control</h3>
-        
-        <div class="player-names">
-            <input type="text" id="player-a-input" placeholder="Jugador A" value="Player A">
-            <input type="text" id="player-b-input" placeholder="Jugador B" value="Player B">
-        </div>
-        
-        <div class="control-group">
-            <label>Puntos:</label>
-            <div class="control-buttons">
-                <button class="team-a-btn" onclick="addPoint('A')">Punto A</button>
-                <button class="team-b-btn" onclick="addPoint('B')">Punto B</button>
+        <div class="control-panel">
+            <h3>PANEL DE CONTROL</h3>
+            
+            <div class="player-names">
+                <input type="text" id="player-a-input" placeholder="Jugador A" value="Player A">
+                <input type="text" id="player-b-input" placeholder="Jugador B" value="Player B">
             </div>
-        </div>
-        
-        <div class="control-group">
-            <label>Games:</label>
-            <div class="control-buttons">
-                <button class="team-a-btn" onclick="addGame('A')">Game A</button>
-                <button class="team-b-btn" onclick="addGame('B')">Game B</button>
+            
+            <div class="control-group">
+                <h4>CONTROLES DE PUNTOS</h4>
+                <div class="control-buttons">
+                    <button class="team-a-btn" onclick="addPoint('A')">Punto A</button>
+                    <button class="team-b-btn" onclick="addPoint('B')">Punto B</button>
+                </div>
             </div>
-        </div>
-        
-        <div class="control-group">
-            <label>Tie-Break:</label>
-            <div class="control-buttons">
-                <button class="tie-break-btn" onclick="addTieBreakPoint('A')">Punto TB A</button>
-                <button class="tie-break-btn" onclick="addTieBreakPoint('B')">Punto TB B</button>
+            
+            <div class="control-group">
+                <h4>CONTROLES DE GAMES</h4>
+                <div class="control-buttons">
+                    <button class="team-a-btn" onclick="addGame('A')">Game A</button>
+                    <button class="team-b-btn" onclick="addGame('B')">Game B</button>
+                </div>
             </div>
-        </div>
-        
-        <div class="control-buttons">
-            <button class="reset-btn" onclick="resetMatch()">Reiniciar Partido</button>
+            
+            <div class="control-group">
+                <h4>TIE-BREAK</h4>
+                <div class="control-buttons">
+                    <button class="tie-break-btn" onclick="addTieBreakPoint('A')">Punto A</button>
+                    <button class="tie-break-btn" onclick="addTieBreakPoint('B')">Punto B</button>
+                </div>
+            </div>
+            
+            <div class="control-buttons">
+                <button class="reset-btn" onclick="resetMatch()">Reiniciar Partido</button>
+            </div>
         </div>
     </div>
 
     <script>
-        // Estado del partido
-        const matchState = {
+        // Estado del partido - SIMPLIFICADO
+        let matchState = {
             currentSet: 1,
-            sets: {
-                1: { a: 0, b: 0 },
-                2: { a: 0, b: 0 },
-                3: { a: 0, b: 0 }
-            },
-            currentGame: { a: 0, b: 0 },
+            set1: { a: 0, b: 0 },
+            set2: { a: 0, b: 0 },
+            set3: { a: 0, b: 0 },
+            game: { a: 0, b: 0 },
             points: { a: 0, b: 0 },
             tieBreak: false,
-            matchFinished: false,
-            playerNames: { a: "Player A", b: "Player B" }
+            matchFinished: false
         };
-        
-        // Sistema de puntuación de tenis
-        const pointValues = [0, 15, 30, 40];
-        
+
         // Actualizar la visualización
         function updateDisplay() {
-            // Actualizar nombres
-            document.getElementById('player-a-name').textContent = matchState.playerNames.a;
-            document.getElementById('player-b-name').textContent = matchState.playerNames.b;
+            console.log("Actualizando display:", matchState);
             
             // Actualizar sets
-            document.getElementById('set1-a').textContent = matchState.sets[1].a;
-            document.getElementById('set1-b').textContent = matchState.sets[1].b;
-            document.getElementById('set2-a').textContent = matchState.sets[2].a;
-            document.getElementById('set2-b').textContent = matchState.sets[2].b;
-            document.getElementById('set3-a').textContent = matchState.sets[3].a;
-            document.getElementById('set3-b').textContent = matchState.sets[3].b;
+            document.getElementById('set1-a').textContent = matchState.set1.a;
+            document.getElementById('set1-b').textContent = matchState.set1.b;
+            document.getElementById('set2-a').textContent = matchState.set2.a;
+            document.getElementById('set2-b').textContent = matchState.set2.b;
+            document.getElementById('set3-a').textContent = matchState.set3.a;
+            document.getElementById('set3-b').textContent = matchState.set3.b;
             
             // Actualizar games
-            document.getElementById('game-a').textContent = matchState.currentGame.a;
-            document.getElementById('game-b').textContent = matchState.currentGame.b;
+            document.getElementById('game-a').textContent = matchState.game.a;
+            document.getElementById('game-b').textContent = matchState.game.b;
             
             // Actualizar puntos
             if (matchState.tieBreak) {
                 document.getElementById('points-a').textContent = matchState.points.a;
                 document.getElementById('points-b').textContent = matchState.points.b;
-                document.getElementById('points-a').classList.add('tie-break');
-                document.getElementById('points-b').classList.add('tie-break');
+                document.getElementById('points-a').className = 'tie-break';
+                document.getElementById('points-b').className = 'tie-break';
             } else {
-                const pointsA = matchState.points.a >= 4 ? 
-                    (matchState.points.a === matchState.points.b ? '40' : 'AD') : 
-                    pointValues[matchState.points.a] || matchState.points.a;
+                let pointsA = matchState.points.a;
+                let pointsB = matchState.points.b;
                 
-                const pointsB = matchState.points.b >= 4 ? 
-                    (matchState.points.a === matchState.points.b ? '40' : 'AD') : 
-                    pointValues[matchState.points.b] || matchState.points.b;
+                // Convertir a sistema de tenis
+                if (pointsA === 0) pointsA = '0';
+                else if (pointsA === 1) pointsA = '15';
+                else if (pointsA === 2) pointsA = '30';
+                else if (pointsA === 3) pointsA = '40';
+                else if (pointsA === pointsB) pointsA = '40';
+                else if (pointsA > pointsB) pointsA = 'AD';
+                
+                if (pointsB === 0) pointsB = '0';
+                else if (pointsB === 1) pointsB = '15';
+                else if (pointsB === 2) pointsB = '30';
+                else if (pointsB === 3) pointsB = '40';
+                else if (pointsB === pointsA) pointsB = '40';
+                else if (pointsB > pointsA) pointsB = 'AD';
                 
                 document.getElementById('points-a').textContent = pointsA;
                 document.getElementById('points-b').textContent = pointsB;
-                document.getElementById('points-a').classList.remove('tie-break');
-                document.getElementById('points-b').classList.remove('tie-break');
+                document.getElementById('points-a').className = '';
+                document.getElementById('points-b').className = '';
             }
             
-            // Mostrar estado del partido
+            // Estado del partido
             if (matchState.matchFinished) {
                 document.getElementById('match-status').textContent = 'PARTIDO FINALIZADO';
             } else if (matchState.tieBreak) {
-                document.getElementById('match-status').textContent = 'TIE-BREAK EN CURSO';
+                document.getElementById('match-status').textContent = 'TIE-BREAK';
             } else {
                 document.getElementById('match-status').textContent = 'Partido en curso';
             }
         }
-        
-        // Añadir un punto
+
+        // Añadir punto - VERSIÓN SIMPLIFICADA
         function addPoint(team) {
             if (matchState.matchFinished) return;
             
-            const opponent = team === 'A' ? 'B' : 'A';
+            const opp = team === 'A' ? 'B' : 'A';
             
+            console.log(`Añadiendo punto a ${team}`, matchState);
+            
+            matchState.points[team]++;
+            
+            // Verificar si se gana el game
             if (matchState.tieBreak) {
-                // Lógica de tie-break
-                matchState.points[team]++;
-                
-                // Verificar ganador del tie-break
-                if (matchState.points[team] >= 7 && matchState.points[team] - matchState.points[opponent] >= 2) {
+                // Tie-break
+                if (matchState.points[team] >= 7 && matchState.points[team] - matchState.points[opp] >= 2) {
                     winGame(team);
-                    matchState.tieBreak = false;
                 }
             } else {
-                // Puntuación normal
-                matchState.points[team]++;
-                
-                // Verificar si hay ventaja o game
-                if (matchState.points[team] >= 4 && matchState.points[team] - matchState.points[opponent] >= 2) {
+                // Game normal
+                if (matchState.points[team] >= 4 && matchState.points[team] - matchState.points[opp] >= 2) {
                     winGame(team);
-                } else if (matchState.points[team] >= 3 && matchState.points[opponent] >= 3) {
-                    // Deuce
-                    if (matchState.points[team] === matchState.points[opponent]) {
-                        // Volver a 40-40
-                        matchState.points.a = 3;
-                        matchState.points.b = 3;
-                    }
                 }
             }
             
             updateDisplay();
         }
-        
-        // Añadir un game completo
+
+        // Añadir game completo
         function addGame(team) {
             if (matchState.matchFinished) return;
             
+            console.log(`Añadiendo game a ${team}`);
             winGame(team);
             updateDisplay();
         }
-        
-        // Añadir un punto de tie-break
-        function addTieBreakPoint(team) {
-            if (!matchState.tieBreak) {
-                // Activar tie-break si no está activo
-                matchState.tieBreak = true;
-                matchState.points.a = 0;
-                matchState.points.b = 0;
-            }
-            
-            addPoint(team);
-        }
-        
+
         // Ganar un game
         function winGame(team) {
-            const opponent = team === 'A' ? 'B' : 'A';
+            const opp = team === 'A' ? 'B' : 'A';
             
-            matchState.currentGame[team]++;
+            matchState.game[team]++;
             
-            // Verificar si hay tie-break (6-6)
-            if (matchState.currentGame[team] === 6 && matchState.currentGame[opponent] === 6) {
+            // Verificar tie-break (6-6)
+            if (matchState.game.a === 6 && matchState.game.b === 6) {
                 matchState.tieBreak = true;
-                matchState.points.a = 0;
-                matchState.points.b = 0;
+                matchState.points = { a: 0, b: 0 };
                 updateDisplay();
                 return;
             }
             
             // Verificar si se gana el set
-            if (matchState.currentGame[team] >= 6 && matchState.currentGame[team] - matchState.currentGame[opponent] >= 2) {
-                winSet(team);
-            } else if (matchState.currentGame[team] === 7) {
-                // Ganar por tie-break 7-6
+            if (matchState.game[team] >= 6 && matchState.game[team] - matchState.game[opp] >= 2) {
                 winSet(team);
             }
             
-            // Resetear puntos para el siguiente game
-            matchState.points.a = 0;
-            matchState.points.b = 0;
+            // Resetear puntos
+            matchState.points = { a: 0, b: 0 };
             matchState.tieBreak = false;
         }
-        
+
         // Ganar un set
         function winSet(team) {
-            matchState.sets[matchState.currentSet][team]++;
+            // Guardar en el set actual
+            if (matchState.currentSet === 1) {
+                matchState.set1[team]++;
+            } else if (matchState.currentSet === 2) {
+                matchState.set2[team]++;
+            } else if (matchState.currentSet === 3) {
+                matchState.set3[team]++;
+            }
             
             // Verificar si se gana el partido
-            const setsWonA = matchState.sets[1].a + matchState.sets[2].a + matchState.sets[3].a;
-            const setsWonB = matchState.sets[1].b + matchState.sets[2].b + matchState.sets[3].b;
+            const setsA = matchState.set1.a + matchState.set2.a + matchState.set3.a;
+            const setsB = matchState.set1.b + matchState.set2.b + matchState.set3.b;
             
-            if (setsWonA >= 2 || setsWonB >= 2) {
+            if (setsA >= 2 || setsB >= 2) {
                 matchState.matchFinished = true;
             } else {
                 // Pasar al siguiente set
                 matchState.currentSet++;
-                matchState.currentGame.a = 0;
-                matchState.currentGame.b = 0;
-                matchState.points.a = 0;
-                matchState.points.b = 0;
-                matchState.tieBreak = false;
+                matchState.game = { a: 0, b: 0 };
+                matchState.points = { a: 0, b: 0 };
             }
         }
-        
-        // Reiniciar el partido
+
+        // Punto de tie-break
+        function addTieBreakPoint(team) {
+            if (!matchState.tieBreak) {
+                matchState.tieBreak = true;
+                matchState.points = { a: 0, b: 0 };
+            }
+            addPoint(team);
+        }
+
+        // Reiniciar partido
         function resetMatch() {
-            matchState.currentSet = 1;
-            matchState.sets = {
-                1: { a: 0, b: 0 },
-                2: { a: 0, b: 0 },
-                3: { a: 0, b: 0 }
+            console.log("Reiniciando partido");
+            matchState = {
+                currentSet: 1,
+                set1: { a: 0, b: 0 },
+                set2: { a: 0, b: 0 },
+                set3: { a: 0, b: 0 },
+                game: { a: 0, b: 0 },
+                points: { a: 0, b: 0 },
+                tieBreak: false,
+                matchFinished: false
             };
-            matchState.currentGame.a = 0;
-            matchState.currentGame.b = 0;
-            matchState.points.a = 0;
-            matchState.points.b = 0;
-            matchState.tieBreak = false;
-            matchState.matchFinished = false;
-            
             updateDisplay();
         }
+
+        // Actualizar nombres
+        document.getElementById('player-a-input').addEventListener('input', function() {
+            document.getElementById('player-a-name').textContent = this.value || 'Player A';
+        });
         
-        // Actualizar nombres de jugadores
-        function updatePlayerNames() {
-            const nameA = document.getElementById('player-a-input').value || 'Player A';
-            const nameB = document.getElementById('player-b-input').value || 'Player B';
-            
-            matchState.playerNames.a = nameA;
-            matchState.playerNames.b = nameB;
-            
-            updateDisplay();
-        }
-        
+        document.getElementById('player-b-input').addEventListener('input', function() {
+            document.getElementById('player-b-name').textContent = this.value || 'Player B';
+        });
+
         // Inicializar
-        document.getElementById('player-a-input').addEventListener('input', updatePlayerNames);
-        document.getElementById('player-b-input').addEventListener('input', updatePlayerNames);
         updateDisplay();
+        console.log("Marcador inicializado correctamente");
     </script>
 </body>
 </html>
