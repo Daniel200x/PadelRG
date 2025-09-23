@@ -96,22 +96,61 @@
             font-weight: bold;
         }
         
-        .controls {
-            display: flex;
-            padding: 15px;
+        .match-status {
+            text-align: center;
+            padding: 10px;
             background: rgba(0, 20, 40, 0.9);
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            color: #ffa726;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        /* Ocultar controles en el marcador principal */
+        .controls {
+            display: none;
+        }
+        
+        /* Panel de control externo */
+        .control-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 30, 60, 0.95);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid #1a5fb4;
+            z-index: 1000;
+            width: 300px;
+        }
+        
+        .control-panel h3 {
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 18px;
         }
         
         .control-group {
-            display: flex;
-            gap: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .control-group label {
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .control-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 10px;
         }
         
         button {
-            padding: 8px 15px;
+            padding: 8px 12px;
             border: none;
             border-radius: 5px;
             background: #3584e4;
@@ -119,11 +158,10 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
-            min-width: 80px;
         }
         
         button:hover {
-            background: #1c71d8;
+            opacity: 0.9;
             transform: translateY(-2px);
         }
         
@@ -135,67 +173,37 @@
             background: #ff6b6b;
         }
         
-        .team-a-btn:hover {
-            background: #ff5252;
-        }
-        
         .team-b-btn {
             background: #4ecdc4;
-        }
-        
-        .team-b-btn:hover {
-            background: #26a69a;
         }
         
         .tie-break-btn {
             background: #ffa726;
         }
         
-        .tie-break-btn:hover {
-            background: #ff9800;
-        }
-        
         .reset-btn {
             background: #ef4444;
+            grid-column: span 2;
         }
         
-        .reset-btn:hover {
-            background: #dc2626;
-        }
-        
-        .game-controls {
-            display: flex;
-            flex-direction: column;
+        .player-names {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
-            margin-top: 10px;
-            width: 100%;
+            margin-bottom: 15px;
         }
         
-        .game-controls-row {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
+        .player-names input {
+            padding: 8px;
+            border: 1px solid #3584e4;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
         }
         
-        .tie-break-controls {
-            display: none;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-            width: 100%;
-        }
-        
-        .tie-break-active {
-            display: flex;
-        }
-        
-        .match-status {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 20, 40, 0.9);
-            color: #ffa726;
-            font-weight: bold;
-            font-size: 18px;
+        .player-names input:focus {
+            outline: none;
+            border-color: #1c71d8;
         }
     </style>
 </head>
@@ -216,7 +224,7 @@
             </thead>
             <tbody>
                 <tr class="team-a">
-                    <td>Player A</td>
+                    <td id="player-a-name">Player A</td>
                     <td id="set1-a">0</td>
                     <td id="set2-a">0</td>
                     <td id="set3-a">0</td>
@@ -224,7 +232,7 @@
                     <td id="points-a">0</td>
                 </tr>
                 <tr class="team-b">
-                    <td>Player B</td>
+                    <td id="player-b-name">Player B</td>
                     <td id="set1-b">0</td>
                     <td id="set2-b">0</td>
                     <td id="set3-b">0</td>
@@ -236,27 +244,51 @@
         
         <div class="match-status" id="match-status">Partido en curso</div>
         
+        <!-- Estos controles están ocultos en OBS -->
         <div class="controls">
-            <div class="control-group">
+            <button onclick="addPoint('A')">Punto A</button>
+            <button onclick="addPoint('B')">Punto B</button>
+            <button onclick="addGame('A')">Game A</button>
+            <button onclick="addGame('B')">Game B</button>
+            <button onclick="resetMatch()">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Panel de control externo (solo visible fuera de OBS) -->
+    <div class="control-panel">
+        <h3>Panel de Control</h3>
+        
+        <div class="player-names">
+            <input type="text" id="player-a-input" placeholder="Jugador A" value="Player A">
+            <input type="text" id="player-b-input" placeholder="Jugador B" value="Player B">
+        </div>
+        
+        <div class="control-group">
+            <label>Puntos:</label>
+            <div class="control-buttons">
                 <button class="team-a-btn" onclick="addPoint('A')">Punto A</button>
                 <button class="team-b-btn" onclick="addPoint('B')">Punto B</button>
             </div>
-            
-            <div class="game-controls">
-                <div class="game-controls-row">
-                    <button class="team-a-btn" onclick="addGame('A')">Game A</button>
-                    <button class="team-b-btn" onclick="addGame('B')">Game B</button>
-                </div>
-                
-                <div class="tie-break-controls" id="tie-break-controls">
-                    <button class="tie-break-btn" onclick="addTieBreakPoint('A')">Punto TB A</button>
-                    <button class="tie-break-btn" onclick="addTieBreakPoint('B')">Punto TB B</button>
-                </div>
-                
-                <div class="game-controls-row">
-                    <button class="reset-btn" onclick="resetMatch()">Reiniciar</button>
-                </div>
+        </div>
+        
+        <div class="control-group">
+            <label>Games:</label>
+            <div class="control-buttons">
+                <button class="team-a-btn" onclick="addGame('A')">Game A</button>
+                <button class="team-b-btn" onclick="addGame('B')">Game B</button>
             </div>
+        </div>
+        
+        <div class="control-group">
+            <label>Tie-Break:</label>
+            <div class="control-buttons">
+                <button class="tie-break-btn" onclick="addTieBreakPoint('A')">Punto TB A</button>
+                <button class="tie-break-btn" onclick="addTieBreakPoint('B')">Punto TB B</button>
+            </div>
+        </div>
+        
+        <div class="control-buttons">
+            <button class="reset-btn" onclick="resetMatch()">Reiniciar Partido</button>
         </div>
     </div>
 
@@ -272,7 +304,8 @@
             currentGame: { a: 0, b: 0 },
             points: { a: 0, b: 0 },
             tieBreak: false,
-            matchFinished: false
+            matchFinished: false,
+            playerNames: { a: "Player A", b: "Player B" }
         };
         
         // Sistema de puntuación de tenis
@@ -280,6 +313,10 @@
         
         // Actualizar la visualización
         function updateDisplay() {
+            // Actualizar nombres
+            document.getElementById('player-a-name').textContent = matchState.playerNames.a;
+            document.getElementById('player-b-name').textContent = matchState.playerNames.b;
+            
             // Actualizar sets
             document.getElementById('set1-a').textContent = matchState.sets[1].a;
             document.getElementById('set1-b').textContent = matchState.sets[1].b;
@@ -299,8 +336,13 @@
                 document.getElementById('points-a').classList.add('tie-break');
                 document.getElementById('points-b').classList.add('tie-break');
             } else {
-                const pointsA = matchState.points.a >= 4 ? (matchState.points.a === matchState.points.b ? '40' : 'AD') : pointValues[matchState.points.a] || matchState.points.a;
-                const pointsB = matchState.points.b >= 4 ? (matchState.points.a === matchState.points.b ? '40' : 'AD') : pointValues[matchState.points.b] || matchState.points.b;
+                const pointsA = matchState.points.a >= 4 ? 
+                    (matchState.points.a === matchState.points.b ? '40' : 'AD') : 
+                    pointValues[matchState.points.a] || matchState.points.a;
+                
+                const pointsB = matchState.points.b >= 4 ? 
+                    (matchState.points.a === matchState.points.b ? '40' : 'AD') : 
+                    pointValues[matchState.points.b] || matchState.points.b;
                 
                 document.getElementById('points-a').textContent = pointsA;
                 document.getElementById('points-b').textContent = pointsB;
@@ -308,24 +350,13 @@
                 document.getElementById('points-b').classList.remove('tie-break');
             }
             
-            // Resaltar game actual
-            document.querySelectorAll('.current-game').forEach(el => el.classList.remove('current-game'));
-            document.getElementById(`game-${matchState.tieBreak ? 'a' : 'a'}`).classList.add('current-game');
-            document.getElementById(`game-${matchState.tieBreak ? 'b' : 'b'}`).classList.add('current-game');
-            
-            // Mostrar/ocultar controles de tie-break
-            const tieBreakControls = document.getElementById('tie-break-controls');
-            if (matchState.tieBreak) {
-                tieBreakControls.classList.add('tie-break-active');
-                document.getElementById('match-status').textContent = 'TIE-BREAK EN CURSO';
-            } else {
-                tieBreakControls.classList.remove('tie-break-active');
-                document.getElementById('match-status').textContent = matchState.matchFinished ? 'PARTIDO FINALIZADO' : 'Partido en curso';
-            }
-            
-            // Verificar si el partido ha terminado
+            // Mostrar estado del partido
             if (matchState.matchFinished) {
                 document.getElementById('match-status').textContent = 'PARTIDO FINALIZADO';
+            } else if (matchState.tieBreak) {
+                document.getElementById('match-status').textContent = 'TIE-BREAK EN CURSO';
+            } else {
+                document.getElementById('match-status').textContent = 'Partido en curso';
             }
         }
         
@@ -395,6 +426,7 @@
                 matchState.tieBreak = true;
                 matchState.points.a = 0;
                 matchState.points.b = 0;
+                updateDisplay();
                 return;
             }
             
@@ -417,8 +449,8 @@
             matchState.sets[matchState.currentSet][team]++;
             
             // Verificar si se gana el partido
-            const setsWonA = Object.values(matchState.sets).reduce((sum, set) => sum + set.a, 0);
-            const setsWonB = Object.values(matchState.sets).reduce((sum, set) => sum + set.b, 0);
+            const setsWonA = matchState.sets[1].a + matchState.sets[2].a + matchState.sets[3].a;
+            const setsWonB = matchState.sets[1].b + matchState.sets[2].b + matchState.sets[3].b;
             
             if (setsWonA >= 2 || setsWonB >= 2) {
                 matchState.matchFinished = true;
@@ -451,7 +483,20 @@
             updateDisplay();
         }
         
-        // Inicializar la visualización
+        // Actualizar nombres de jugadores
+        function updatePlayerNames() {
+            const nameA = document.getElementById('player-a-input').value || 'Player A';
+            const nameB = document.getElementById('player-b-input').value || 'Player B';
+            
+            matchState.playerNames.a = nameA;
+            matchState.playerNames.b = nameB;
+            
+            updateDisplay();
+        }
+        
+        // Inicializar
+        document.getElementById('player-a-input').addEventListener('input', updatePlayerNames);
+        document.getElementById('player-b-input').addEventListener('input', updatePlayerNames);
         updateDisplay();
     </script>
 </body>
