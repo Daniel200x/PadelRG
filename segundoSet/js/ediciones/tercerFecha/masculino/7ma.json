@@ -161,48 +161,48 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "F. Marquez/R. Garcia",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "C. Cardenas/L. Olmos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "G. Tiraboschi/L. Ruiz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "R. Pedraza/M. Aguila",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "18:00 hs",
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "C. Cardenas/L. Olmos",
+          "fecha": "Viernes 23:00 hs",
           "resultado": "",
           "games":""
         },
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "20:00 hs",
+          "equipo1": "G. Tiraboschi/L. Ruiz",
+          "equipo2": "R. Pedraza/M. Aguila",
+          "fecha": "Viernes 19:00 hs",
           "resultado": "",
           "games":""
         },
           {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 17:00 hs",
           "resultado": "",
           "games":""
         }
@@ -212,48 +212,48 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "R. Fritz/J. Del Cantare",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "Y. Arcella/F. Saldaño",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "M. Olivera/A definir",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "A. Roldan/G. Ojeda",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "18:00 hs",
+          "equipo1": "R. Fritz/J. Del Cantare",
+          "equipo2": "Y. Arcella/F. Saldaño",
+          "fecha": "Viernes 19:00 hs",
           "resultado": "",
           "games":""
         },
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "20:00 hs",
+          "equipo1": "M. Olivera/A definir",
+          "equipo2": "A. Roldan/G. Ojeda",
+          "fecha": "Viernes 23:45 hs",
           "resultado": "",
           "games":""
         },
           {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 11:00 hs",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 11:00 hs",
           "resultado": "",
           "games":""
         }
@@ -263,48 +263,48 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "G. Vera/D. Fernandez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "R. Gonzalez/M. Llanes",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "M. Garde/R. Peix",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "S. Rubio/P. Alfonzo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "18:00 hs",
+          "equipo1": "G. Vera/D. Fernandez",
+          "equipo2": "R. Gonzalez/M. Llanes",
+          "fecha": "Viernes 18:00 hs",
           "resultado": "",
           "games":""
         },
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "20:00 hs",
+          "equipo1": "M. Garde/R. Peix",
+          "equipo2": "S. Rubio/P. Alfonzo",
+          "fecha": "Viernes 20:00 hs",
           "resultado": "",
           "games":""
         },
           {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 15:00 hs",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 16:00 hs",
           "resultado": "",
           "games":""
         }
@@ -314,48 +314,48 @@
       "nombre": "Grupo G",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "V. Perez/C. Barrionuevo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "P. Aguila/G. Barria",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "J. Retamar/H. Bucci",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "E. Arteaga/F. Mariani",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "18:00 hs",
+          "equipo1": "V. Perez/C. Barrionuevo",
+          "equipo2": "P. Aguila/G. Barria",
+          "fecha": "Viernes 21:00 hs",
           "resultado": "",
           "games":""
         },
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "20:00 hs",
+          "equipo1": "J. Retamar/H. Bucci",
+          "equipo2": "E. Arteaga/F. Mariani",
+          "fecha": "Viernes 22:00 hs",
           "resultado": "",
           "games":""
         },
           {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 18:00 hs",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 18:00 hs",
           "resultado": "",
           "games":""
         }
@@ -365,48 +365,48 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "N. Romero/S. Barila",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "J. Marchevsky/J. Nuñez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "A. Vargas/S. Leiva",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-         "nombre": "",
+         "nombre": "A. Maluf/A definir",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
       ],
       "partidos": [
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "18:00 hs",
+          "equipo1": "N. Romero/S. Barila",
+          "equipo2": "J. Marchevsky/J. Nuñez",
+          "fecha": "Viernes 19:00 hs",
           "resultado": "",
           "games":""
         },
         {
-          "equipo1": "",
-          "equipo2": "",
-          "fecha": "20:00 hs",
+          "equipo1": "A. Vargas/S. Leiva",
+          "equipo2": "A. Maluf/A definir",
+          "fecha": "Viernes 22:00 hs",
           "resultado": "",
           "games":""
         },
           {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 14:00 hs",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
+          "fecha": "Sabado 14:00 hs",
           "resultado": "",
           "games":""
         }
