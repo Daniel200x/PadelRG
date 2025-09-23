@@ -17,23 +17,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "A. Soto/D. Martinez",
+          "equipo2": "V. Pereda/M. Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "C. Lucero/M. Salinas",
+          "equipo2": "V. Pereda/M. Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "A. Soto/D. Martinez",
+          "equipo2": "C. Lucero/M. Salinas",
           "resultado": "",
           "games":"A definir"
         }
@@ -56,23 +56,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "L. Rodriguez/S. Vera",
+          "equipo2": "M. Barboza/R. Castillo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "S. Ackerman/E. Martinez",
+          "equipo2": "M. Barboza/R. Castillo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "L. Rodriguez/S. Vera",
+          "equipo2": "S. Ackerman/E. Martinez",
           "resultado": "",
           "games":"A definir"
         }
@@ -96,23 +96,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Y. Murga/L. Romano",
+          "equipo2": "G. Flamenco/L. Saldivia",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "G. Flamenco/L. Saldivia",
+          "equipo2": "B. Bordon/A. Zampini",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "Y. Murga/L. Romano",
+          "equipo2": "B. Bordon/A. Zampini",
           "resultado": "",
           "games":"A definir"
         }
@@ -121,47 +121,33 @@
   ],
   "eliminatorias": {
     
-    "cuartos": [
+   "cuartos": [
       {
-        "equipo1": "1ro A",
+         "equipo1": "2do C",
           "equipo2": "2do B",
-          "fecha": "Sabado :00",
+          "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":""
       },
       {
          "equipo1": "1ro C",
-          "equipo2": "2do D",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-        "equipo1": "1ro B",
           "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro D",
-          "equipo2": "2do C",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "fecha": "Domingo",
+         "resultado": "A definir",
+          "games":""
       }
     ],
     "semis": [
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
           "fecha": "Domingo",
           "resultado": "A definir",
           "games":"A definir"
