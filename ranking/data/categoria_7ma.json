@@ -348,7 +348,7 @@
           {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 50},
-          {"edicion": "First Class", "puntos": 50}
+          {"edicion": "First Class", "puntos": 90}
           
         ],
         "segundoSet": [
@@ -372,7 +372,7 @@
           {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 50},
-          {"edicion": "First Class", "puntos": 75}
+          {"edicion": "First Class", "puntos": 115}
           
         ],
         "segundoSet": [
@@ -4057,7 +4057,7 @@
       }
     },{
       "id": 872,
-      "name": "E Barrera",
+      "name": "Elias Barrera",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -4081,7 +4081,7 @@
       }
     },{
       "id": 873,
-      "name": "F Ruiz",
+      "name": "Federico Ruiz",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -4105,7 +4105,7 @@
       }
     },{
       "id": 874,
-      "name": "A Maluf",
+      "name": "Agustin Maluf",
       "gender": "masculino",
       "category": "7ma",
        "torneos": {
@@ -4561,7 +4561,7 @@
           {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 25},
-          {"edicion": "First Class", "puntos": 25}
+          {"edicion": "First Class", "puntos": 75}
           
         ],
         "segundoSet": [
@@ -4939,7 +4939,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -4991,7 +4991,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 25},
-          {"edicion": "First Class", "puntos": 25}
+          {"edicion": "First Class", "puntos": 50}
           
         ],
         "segundoSet": [

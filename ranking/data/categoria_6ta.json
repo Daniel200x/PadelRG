@@ -118,7 +118,7 @@
           {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 150},
-          {"edicion": "First Class", "puntos": 40}
+          {"edicion": "First Class", "puntos": 140}
           
         ],
         "segundoSet": [
@@ -290,7 +290,7 @@
           {"edicion": "1er Torneo", "puntos": 100},
           {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 50},
-          {"edicion": "First Class", "puntos": 25}
+          {"edicion": "First Class", "puntos": 100}
           
         ],
         "segundoSet": [
@@ -703,7 +703,7 @@
           {"edicion": "1er Torneo", "puntos": 25},
           {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 50},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 75}
           
         ],
         "segundoSet": [
@@ -923,7 +923,7 @@
           {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 25},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
@@ -1045,7 +1045,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 100},
-          {"edicion": "First Class", "puntos": 0}
+          {"edicion": "First Class", "puntos": 25}
           
         ],
         "segundoSet": [
