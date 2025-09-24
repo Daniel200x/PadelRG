@@ -36,15 +36,6 @@
             border: 2px solid #1a5fb4;
         }
         
-        .header {
-            background: linear-gradient(to right, #1a5fb4, #3584e4);
-            color: white;
-            padding: 12px 20px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        
         .score-table {
             width: 100%;
             border-collapse: collapse;
@@ -78,6 +69,7 @@
             padding-left: 15px;
             background: rgba(0, 20, 40, 0.9);
             font-weight: 600;
+            width: 40%; /* Más espacio para los nombres */
         }
         
         .team-a td:first-child {
@@ -211,36 +203,66 @@
             text-align: center;
             margin-top: 5px;
         }
+        
+        /* Estilos para columnas dinámicas */
+        .set-column {
+            display: table-cell;
+        }
+        
+        .set-column.hidden {
+            display: none;
+        }
+        
+        /* Configuración de formato */
+        .format-config {
+            background: rgba(0, 20, 40, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .format-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: white;
+            font-size: 13px;
+        }
+        
+        .format-option input {
+            margin-right: 8px;
+        }
+        
+        .format-info {
+            font-size: 11px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        .config-btn {
+            background: #10b981;
+            width: 100%;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="scoreboard">
-            <div class="header">PADELRG.COM.AR</div>
-            
             <table class="score-table">
-                <thead>
-                    <tr>
-                        <th>JUGADOR</th>
-                        <th>SET 1</th>
-                        <th>SET 2</th>
-                        <th>SET 3</th>
-                        <th>PUNTOS</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr class="team-a">
                         <td id="player-a-name">Player A</td>
-                        <td id="set1-a">0</td>
-                        <td id="set2-a">0</td>
-                        <td id="set3-a">0</td>
+                        <td id="set1-a" class="set-column">0</td>
+                        <td id="set2-a" class="set-column hidden">0</td>
+                        <td id="set3-a" class="set-column hidden">0</td>
                         <td id="points-a">0</td>
                     </tr>
                     <tr class="team-b">
                         <td id="player-b-name">Player B</td>
-                        <td id="set1-b">0</td>
-                        <td id="set2-b">0</td>
-                        <td id="set3-b">0</td>
+                        <td id="set1-b" class="set-column">0</td>
+                        <td id="set2-b" class="set-column hidden">0</td>
+                        <td id="set3-b" class="set-column hidden">0</td>
                         <td id="points-b">0</td>
                     </tr>
                 </tbody>
@@ -251,6 +273,23 @@
 
         <div class="control-panel">
             <h3>PANEL DE CONTROL</h3>
+            
+            <!-- Configuración de formato del partido -->
+            <div class="format-config">
+                <h4>FORMATO DEL PARTIDO</h4>
+                <div class="format-option">
+                    <input type="radio" id="format-super" name="match-format" value="super" checked>
+                    <label for="format-super">Super Tie Break (11 pts)</label>
+                </div>
+                <div class="format-option">
+                    <input type="radio" id="format-tiebreak" name="match-format" value="tiebreak">
+                    <label for="format-tiebreak">Tie Break normal (7 pts)</label>
+                </div>
+                <div class="format-info" id="format-info">
+                    El tercer set se definirá con Super Tie Break a 11 puntos
+                </div>
+                <button class="config-btn" onclick="applyMatchFormat()">Aplicar Formato</button>
+            </div>
             
             <div class="player-names">
                 <input type="text" id="player-a-input" placeholder="Jugador A" value="Player A">
@@ -315,12 +354,59 @@
             set3B: 0,
             tieBreak: false,
             superTieBreak: false,
-            matchFinished: false
+            matchFinished: false,
+            matchFormat: 'super' // 'super' o 'tiebreak'
         };
 
         // Historial de cambios para deshacer
         let history = [];
         const MAX_HISTORY = 20; // Límite de cambios en el historial
+
+        // Aplicar formato de partido seleccionado
+        function applyMatchFormat() {
+            const format = document.querySelector('input[name="match-format"]:checked').value;
+            matchState.matchFormat = format;
+            
+            // Actualizar información de formato
+            const formatInfo = document.getElementById('format-info');
+            if (format === 'super') {
+                formatInfo.textContent = 'El tercer set se definirá con Super Tie Break a 11 puntos';
+            } else {
+                formatInfo.textContent = 'El tercer set se definirá con Tie Break normal a 7 puntos';
+            }
+            
+            alert(`Formato aplicado: ${format === 'super' ? 'Super Tie Break' : 'Tie Break normal'}`);
+        }
+
+        // Función para mostrar/ocultar columnas de sets
+        function updateSetColumns() {
+            // Mostrar siempre el set 1
+            document.querySelectorAll('#set1-a, #set1-b').forEach(el => {
+                el.classList.remove('hidden');
+            });
+            
+            // Mostrar set 2 si ya se ha empezado a jugar
+            if (matchState.currentSet >= 2 || matchState.set2A > 0 || matchState.set2B > 0) {
+                document.querySelectorAll('#set2-a, #set2-b').forEach(el => {
+                    el.classList.remove('hidden');
+                });
+            } else {
+                document.querySelectorAll('#set2-a, #set2-b').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
+            
+            // Mostrar set 3 si ya se ha empezado a jugar
+            if (matchState.currentSet >= 3 || matchState.set3A > 0 || matchState.set3B > 0) {
+                document.querySelectorAll('#set3-a, #set3-b').forEach(el => {
+                    el.classList.remove('hidden');
+                });
+            } else {
+                document.querySelectorAll('#set3-a, #set3-b').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
+        }
 
         // Guardar estado actual en el historial
         function saveState() {
@@ -395,6 +481,9 @@
             document.getElementById('set2-b').textContent = matchState.set2B;
             document.getElementById('set3-a').textContent = matchState.set3A;
             document.getElementById('set3-b').textContent = matchState.set3B;
+            
+            // Actualizar columnas de sets
+            updateSetColumns();
             
             // Quitar resaltado de todos los sets
             document.getElementById('set1-a').classList.remove('current-set');
@@ -583,9 +672,19 @@
                            (matchState.set2B > matchState.set2A ? 1 : 0) + 
                            (matchState.set3B > matchState.set3A ? 1 : 0);
             
-            // Si van 1-1 en sets, iniciar Super Tie Break
+            // Si van 1-1 en sets, iniciar el tercer set según el formato seleccionado
             if (setsWonA === 1 && setsWonB === 1 && matchState.currentSet === 2) {
-                startSuperTieBreak();
+                if (matchState.matchFormat === 'super') {
+                    startSuperTieBreak();
+                } else {
+                    // Para tie break normal, simplemente avanzamos al set 3
+                    matchState.currentSet++;
+                    matchState.pointsA = 0;
+                    matchState.pointsB = 0;
+                    matchState.tieBreak = false;
+                    console.log(`Comenzando set ${matchState.currentSet} (Tie Break normal)`);
+                }
+                updateDisplay();
                 return;
             }
             
@@ -671,7 +770,7 @@
             }
             
             // Verificar si se gana el Super Tie Break (10 puntos con diferencia de 2)
-            if ((matchState.pointsA >= 11 || matchState.pointsB >= 11) ) {
+            if ((matchState.pointsA >= 11 || matchState.pointsB >= 11)) {
                 winSuperTieBreak(team);
             }
             
@@ -684,11 +783,11 @@
             
             // Registrar el Super Tie Break como el tercer set
             if (team === 'A') {
-                matchState.set3A = 7;
+                matchState.set3A = 7; // Se marca como 1 set ganado
                 matchState.set3B = 6;
             } else {
                 matchState.set3A = 6;
-                matchState.set3B = 7;
+                matchState.set3B = 7; // Se marca como 1 set ganado
             }
             
             matchState.matchFinished = true;
@@ -714,7 +813,8 @@
                 set3B: 0,
                 tieBreak: false,
                 superTieBreak: false,
-                matchFinished: false
+                matchFinished: false,
+                matchFormat: matchState.matchFormat // Mantener el formato seleccionado
             };
             updateDisplay();
         }
@@ -722,6 +822,9 @@
         // Inicializar
         document.getElementById('player-a-input').addEventListener('input', updateDisplay);
         document.getElementById('player-b-input').addEventListener('input', updateDisplay);
+        
+        // Actualizar información de formato al cargar
+        applyMatchFormat();
         
         updateDisplay();
         updateHistoryInfo();
