@@ -3207,11 +3207,36 @@
           {"edicion": "2do Torneo", "puntos": 25}
         ]
       }
+    },
+       {
+      "id": 482,
+      "name": "Ignacio Perez",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
     }
     ,
        {
-      "id": 4,
-      "name": "",
+      "id": 483,
+      "name": "Ariel Garcia",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3235,8 +3260,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 484,
+      "name": "Simon Barila",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3260,8 +3285,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 485,
+      "name": "Nahuel Romero",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3285,8 +3310,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 486,
+      "name": "Cristian Chalier",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3310,8 +3335,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 487,
+      "name": "Juan Manuel Gimenez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3335,8 +3360,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 488,
+      "name": "Walter Nieva",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3360,8 +3385,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 489,
+      "name": "Javier Nuñez",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3385,8 +3410,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
+      "id": 490,
+      "name": "Pablo Alegre",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3410,33 +3435,8 @@
       }
     },
        {
-      "id": 4,
-      "name": "",
-      "gender": "masculino",
-      "category": "6ta",
-       "torneos": {
-        "puntoDeOro": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 25}
-          
-        ],
-        "arenas": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0},
-          {"edicion": "First Class", "puntos": 0}
-          
-        ],
-        "segundoSet": [
-          {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
-        ]
-      }
-    },
-       {
-      "id": 4,
-      "name": "",
+      "id": 491,
+      "name": "Jose Millacahuin",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3461,7 +3461,7 @@
     },
        {
       "id": 492,
-      "name": "",
+      "name": "Sebastian Liendro",
       "gender": "masculino",
       "category": "6ta",
        "torneos": {
@@ -3469,6 +3469,131 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+       {
+      "id": 493,
+      "name": "Ramiro Ledo",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+       {
+      "id": 494,
+      "name": "Agustin Ojeda",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+       {
+      "id": 495,
+      "name": "Jose Chaparro",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 50}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+       {
+      "id": 496,
+      "name": "Leo Agnes",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+       {
+      "id": 497,
+      "name": "Aaron Pintos",
+      "gender": "masculino",
+      "category": "6ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
           
         ],
         "arenas": [
