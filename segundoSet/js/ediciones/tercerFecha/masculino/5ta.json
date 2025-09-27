@@ -9,7 +9,7 @@
           "nombre": "C. Escobar/N. Escufachi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "W. Sanchez/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "W. Sanchez/M. Velasquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "V. Lemus/M. Pereyra","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -49,7 +49,7 @@
           "nombre": "B. Sirgo/C. Almaraz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "M. Villavicencio/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "M. Villavicencio/P. Hero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "C. Andradre/C. Andrade","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -60,9 +60,9 @@
         {
           "fecha": "Viernes 23:45 hs",
           "equipo1": "B. Sirgo/C. Almaraz",
-          "equipo2": "M. Villavicencio/A definir",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "M. Villavicencio/P. Hero",
+          "resultado": "2-0",
+          "games":"7-6, 6-1"
         },
         {
           "fecha": "Sabado 11:00 hs",
@@ -74,7 +74,7 @@
         {
           "fecha": "Sabado 16:00 hs",
           "equipo1": "C. Andradre/C. Andrade",
-          "equipo2": "M. Villavicencio/A definir",
+          "equipo2": "M. Villavicencio/P. Hero",
           "resultado": "",
           "games":"A definir"
         }
@@ -140,8 +140,8 @@
           "fecha": "Viernes 23:45 hs",
           "equipo1": "P. Martinez/F. Castro",
           "equipo2": "D. Floriani/A. Floriani",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
         },
         {
           "fecha": "Sabado 13:00 hs",
