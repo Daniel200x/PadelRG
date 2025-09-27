@@ -193,28 +193,28 @@
       {
         "equipo1": "1ro A",
           "equipo2": "2do B",
-          "fecha": "Sabado :00",
+          "fecha": "Domingo 12:00",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do D",
-          "fecha": "Sabado 22:00",
+          "fecha": "Domingo 12:00",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
         "equipo1": "1ro B",
           "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
+          "fecha": "Domingo 12:00",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "1ro D",
           "equipo2": "2do C",
-          "fecha": "Sabado 23:00",
+          "fecha": "Domingo 12:00",
           "resultado": "A definir",
           "games":"A definir"
       }
@@ -223,14 +223,14 @@
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo",
+          "fecha": "Domingo 15:00",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo",
+          "fecha": "Domingo 15:00",
           "resultado": "A definir",
           "games":"A definir"
       }
@@ -238,7 +238,7 @@
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo",
+          "fecha": "Domingo 18:00",
           "resultado": "A definir",
           "games":"A definir"
     }
