@@ -1,4 +1,4 @@
-{
+={
   "nombre": "5ta Caballeros",
   "grupos": [
     {
@@ -68,8 +68,8 @@
           "fecha": "Sabado 11:00 hs",
           "equipo1": "B. Sirgo/C. Almaraz",
           "equipo2": "C. Andradre/C. Andrade",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"6-4, 4-6, 7-6"
         },
         {
           "fecha": "Sabado 16:00 hs",
@@ -93,7 +93,7 @@
           "nombre": "A. Borquez/S. Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "A. Ayala/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "A. Ayala/Linares","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -108,14 +108,14 @@
         {
           "fecha": "Sabado 12:00 hs",
           "equipo1": "B. Lizarraga/A. Fulco",
-          "equipo2": "A. Ayala/A definir",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "A. Ayala/Linares",
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         },
         {
           "fecha": "Sabado 19:00 hs",
           "equipo1": "A. Borquez/S. Graneros",
-          "equipo2": "A. Ayala/A definir",
+          "equipo2": "A. Ayala/Linares",
           "resultado": "",
           "games":"A definir"
         }
