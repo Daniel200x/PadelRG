@@ -85,8 +85,8 @@
           "equipo1": "F. Vargas/C. Peschiutta",
           "equipo2": "W. Ferrigno/S. Loncopan",
           "fecha": "Viernes 23:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"5-7, 6-4, 6-7"
         },
           {
          "equipo1": "Ganador Partido 1",
@@ -182,8 +182,8 @@
           "equipo1": "F. Marquez/R. Garcia",
           "equipo2": "C. Cardenas/L. Olmos",
           "fecha": "Viernes 23:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
         },
         {
           "equipo1": "G. Tiraboschi/L. Ruiz",
@@ -233,8 +233,8 @@
           "equipo1": "R. Fritz/J. Del Cantare",
           "equipo2": "Y. Arcella/F. Saldaño",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
         },
         {
           "equipo1": "M. Olivera/A definir",
@@ -291,8 +291,8 @@
           "equipo1": "M. Garde/R. Peix",
           "equipo2": "S. Rubio/P. Alfonzo",
           "fecha": "Viernes 23:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"4-6, 6-3, 6-7"
         },
           {
          "equipo1": "Ganador Partido 1",
@@ -342,8 +342,8 @@
           "equipo1": "J. Retamar/H. Bucci",
           "equipo2": "E. Arteaga/F. Mariani",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"6-1, 4-6, 7-6"
         },
           {
          "equipo1": "Ganador Partido 1",
@@ -373,7 +373,7 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "A. Vargas/S. Leiva",
+          "nombre": "A. Vargas/Aguilar",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
@@ -390,11 +390,11 @@
           "games":"6-4, 7-6"
         },
         {
-          "equipo1": "A. Vargas/S. Leiva",
+          "equipo1": "A. Vargas/Aguilar",
           "equipo2": "A. Maluf/Martino",
           "fecha": "Viernes 22:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-2, 7-6"
         },
           {
          "equipo1": "Ganador Partido 1",
