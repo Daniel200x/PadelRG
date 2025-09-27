@@ -28,8 +28,8 @@
           "fecha": "Sabado 14:00 hs",
           "equipo1": "W. Sanchez/M. Velasquez",
           "equipo2": "V. Lemus/M. Pereyra",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"3-6, 4-6"
         },
         {
           "fecha": "Sabado 20:00 hs",
@@ -75,8 +75,8 @@
           "fecha": "Sabado 16:00 hs",
           "equipo1": "C. Andradre/C. Andrade",
           "equipo2": "M. Villavicencio/P. Hero",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
         }
         
       ]
@@ -147,8 +147,8 @@
           "fecha": "Sabado 13:00 hs",
           "equipo1": "D. Floriani/A. Floriani",
           "equipo2": "S. Ruiz/D. Mercado",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"6-7, 6-4, 7-6"
         },
           {
          "equipo1": "P. Martinez/F. Castro",
