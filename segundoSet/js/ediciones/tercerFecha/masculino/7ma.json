@@ -247,15 +247,15 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"5-7, 7-6, 6-7"
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 11:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"6-2, 6-7, 6-7"
         }
       ]
     },
