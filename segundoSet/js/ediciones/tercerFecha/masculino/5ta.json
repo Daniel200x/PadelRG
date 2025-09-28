@@ -46,7 +46,7 @@
       "equipos": [
         
         {
-          "nombre": "B. Sirgo/C. Almaraz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "B. Sirgo/E. Bravo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "M. Villavicencio/P. Hero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -59,14 +59,14 @@
       "partidos": [
         {
           "fecha": "Viernes 23:45 hs",
-          "equipo1": "B. Sirgo/C. Almaraz",
+          "equipo1": "B. Sirgo/E. Bravo",
           "equipo2": "M. Villavicencio/P. Hero",
           "resultado": "2-0",
           "games":"7-6, 6-1"
         },
         {
           "fecha": "Sabado 11:00 hs",
-          "equipo1": "B. Sirgo/C. Almaraz",
+          "equipo1": "B. Sirgo/E. Bravo",
           "equipo2": "C. Andradre/C. Andrade",
           "resultado": "2-1",
           "games":"6-4, 4-6, 7-6"
