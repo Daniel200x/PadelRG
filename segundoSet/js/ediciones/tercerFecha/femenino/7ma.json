@@ -76,15 +76,15 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 19:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 6-1"
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 19:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
         }
         
       ]
@@ -126,8 +126,8 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 17:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
         },
         {
         "equipo1": "Ganador Partido 2",
@@ -181,8 +181,8 @@
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 19:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
         }
       ]
     }

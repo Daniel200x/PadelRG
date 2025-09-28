@@ -35,8 +35,8 @@
           "fecha": "Sabado 20:00 hs",
           "equipo1": "V. Lemus/M. Pereyra",
           "equipo2": "C. Escobar/N. Escufachi",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"1-6, 6-7"
         }
         
       ]
@@ -116,8 +116,8 @@
           "fecha": "Sabado 19:00 hs",
           "equipo1": "A. Borquez/S. Graneros",
           "equipo2": "A. Ayala/Linares",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"4-6, 6-4, 7-6"
         }
       ]
     },
@@ -154,8 +154,8 @@
          "equipo1": "P. Martinez/F. Castro",
           "equipo2": "S. Ruiz/D. Mercado",
           "fecha": "Sabado 18:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
         }
       ]
     }
