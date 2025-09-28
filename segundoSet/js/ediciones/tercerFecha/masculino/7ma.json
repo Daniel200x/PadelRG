@@ -508,7 +508,7 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo 14:00",
           "resultado": "A definir",
-          "games":""
+          "games":"6-2, 4-6, 6-3"
       },
       {
          "equipo1": "Ganador P3",
@@ -523,7 +523,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo 18:00",
           "resultado": "A definir",
-          "games":""
+          "games":"6-0, 6-0"
     }
   }
 }
