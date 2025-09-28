@@ -195,28 +195,28 @@
           "equipo2": "2do B",
           "fecha": "Domingo 12:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"2-6, 6-2, 7-6"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do D",
           "fecha": "Domingo 12:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"6-2, 6-4"
       },
       {
         "equipo1": "1ro B",
           "equipo2": "2do A",
           "fecha": "Domingo 12:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"6-2, 6-4"
       },
       {
          "equipo1": "1ro D",
           "equipo2": "2do C",
           "fecha": "Domingo 12:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"6-4, 6-3"
       }
     ],
     "semis": [
