@@ -4,34 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ranking de Pádel</title>
-    <link rel="stylesheet" href="../css/styles.css"><!-- Estilos del index -->
-    <link rel="stylesheet" href="css/blanco.css"> <!-- Estilos de la seccion nueva que se crea -->
-    <link rel="stylesheet" href="../ranking/css/ranking.css"> <!-- Estilos de ranking -->
+    
+    <!-- Corrige la ruta del CSS -->
+    <link rel="stylesheet" href="css/nuevo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
-    
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-81C2M2PPXT');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81C2M2PPXT');
+    </script>
 </head>
 <body>
    <!-- Contenedor para el menú -->
-<div id="menu-container"></div>
-<script src="/js/menu-loader.js"></script>
-<script src="/js/script.js"></script>
+   <div id="menu-container"></div>
 
-<!-- Espacio de publicidad -->
-<div id="publicidad-container"></div>
+   <!-- Espacio de publicidad -->
+   <div id="publicidad-container"></div>
 
    <!-- Footer -->
-    <div class="footer">
+   <div class="footer">
       <div class="footer-content">
         <div class="footer-links">
           <a href="../index.html">Inicio</a>
@@ -45,19 +40,20 @@
           derechos reservados.
         </div>
       </div>
-    </div>
+   </div>
 
-   <script src="../blanco/js/blanco.js"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
-     crossorigin="anonymous"></script>
-          <script>
-  // Cargar publicidad
-  fetch('../publicidad/publicidad.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('publicidad-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error cargando publicidad:', error));
-</script>
+   <!-- Scripts al final, en orden correcto -->
+   <script src="/js/menu-loader.js"></script>
+   <script>
+     // Cargar publicidad
+     fetch('../publicidad/publicidad.html')
+       .then(response => response.text())
+       .then(data => {
+         document.getElementById('publicidad-container').innerHTML = data;
+       })
+       .catch(error => console.error('Error cargando publicidad:', error));
+   </script>
+   <script src="js/nuevo.js"></script>
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858" crossorigin="anonymous"></script>
 </body>
 </html>

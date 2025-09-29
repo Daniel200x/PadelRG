@@ -949,13 +949,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Actualizar año del copyright
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
-    seleccionarFecha('segundaFecha');
-    
-    // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
-    setTimeout(() => {
-        seleccionarGenero('masculino');
-    }, 100);
+
 });
 
 // Detectar cambio de tamaño de pantalla
