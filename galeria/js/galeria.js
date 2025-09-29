@@ -117,6 +117,13 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Imágenes del 3er Oficial de Punto de Oro Pares',
             externalLink: 'https://photos.app.goo.gl/yx4Q8SLknfKMRyVEA',
             category: 'punto-de-oro'
+        },
+        'segundo-set': {
+            title: 'Torneo 2do Set 2025',
+            folder: '../img/gallery/segundo-set/',
+            description: 'Imágenes del torneo realizado en Septiembre 2025',
+            externalLink: 'https://photos.app.goo.gl/yx4Q8SLknfKMRyVEA',
+            category: 'segundo-set'
         }/*,
         'arenas': {
             title: 'Torneo Arena 2025',
