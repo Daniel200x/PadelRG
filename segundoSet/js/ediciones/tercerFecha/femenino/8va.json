@@ -4,28 +4,28 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "K. Beamonte/J. Perolo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "R. Gamarra/R. Sequeira","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Lamberti/A. Zabala","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "K. Beamonte/J. Perolo",
+          "equipo2": "R. Gamarra/R. Sequeira",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "R. Gamarra/R. Sequeira",
+          "equipo2": "M. Lamberti/A. Zabala",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "K. Beamonte/J. Perolo",
+          "equipo2": "M. Lamberti/A. Zabala",
           "resultado": "",
           "games":"A definir"
         }
@@ -35,28 +35,28 @@
    {
       "nombre": "Grupo B",
       "equipos": [
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "C. Barria/S. Davalos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "V. Sanchez/C. Bruzzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "S. Arce/N. Velasquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "C. Barria/S. Davalos",
+          "equipo2": "V. Sanchez/C. Bruzzo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "C. Barria/S. Davalos",
+          "equipo2": "S. Arce/N. Velasquez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "S. Arce/N. Velasquez",
+          "equipo2": "V. Sanchez/C. Bruzzo",
           "resultado": "",
           "games":"A definir"
         }
@@ -67,28 +67,28 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "N. Cagneluti/E. Duca","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "P. Blanco/D. Cejas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Villagra/M. Araoz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "N. Cagneluti/E. Duca",
+          "equipo2": "P. Blanco/D. Cejas",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "P. Blanco/D. Cejas",
+          "equipo2": "M. Villagra/M. Araoz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "N. Cagneluti/E. Duca",
+          "equipo2": "M. Villagra/M. Araoz",
           "resultado": "",
           "games":"A definir"
         }
@@ -97,28 +97,28 @@
     {
       "nombre": "Grupo D",
       "equipos": [
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "J. Cichero/V. Rodriguez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "N. Molina/N. Blanco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Gutierrez/E. Perlo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "J. Cichero/V. Rodriguez",
+          "equipo2": "N. Molina/N. Blanco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "J. Cichero/V. Rodriguez",
+          "equipo2": "L. Gutierrez/E. Perlo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "L. Gutierrez/E. Perlo",
+          "equipo2": "N. Molina/N. Blanco",
           "resultado": "",
           "games":"A definir"
         }
@@ -127,28 +127,28 @@
     {
       "nombre": "Grupo E",
       "equipos": [
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "B. Rivadeneira/N. De La Rosa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Paredes/S. Arteaga","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Rossi/N. Chirino","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "M. Paredes/S. Arteaga",
+          "equipo2": "L. Rossi/N. Chirino",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "B. Rivadeneira/N. De La Rosa",
+          "equipo2": "M. Paredes/S. Arteaga",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "B. Rivadeneira/N. De La Rosa",
+          "equipo2": "L. Rossi/N. Chirino",
           "resultado": "",
           "games":"A definir"
         }
