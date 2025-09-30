@@ -572,14 +572,20 @@ function handleHashAnchor() {
                 description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
             },
             {
+                image: 'img/publi/kira.jpeg',
+                link: 'https://www.instagram.com/kira.tdf/',
+                title: 'Kira Store',
+                description: 'Tendencia, estilo y comodidad: Todo en Kira Store. Ropa femenina con promos exclusivas, 3 cuotas sin interes o descuentos en efectivo/transferencia. Te Esperamos en Viedma 445 y en redes como @kira.tdf ❤️'
+            },
+            {
                 image: 'img/publi/coren.jpg',
                 link: 'https://www.instagram.com/corenindumentaria/',
                 title: 'Coren Indumentaria',
-                description: '"Técnica mata Galan.." ;) ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
+                description: '"Técnica mata Galan.." 😉 ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
             },
             {
                 image: 'img/publi/fixg.jpg',
-                link: '',
+                link: 'https://www.instagram.com/fixcar369/',
                 title: 'Fix - Car - Mecanica Integral',
                 description: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.'
             },
@@ -599,7 +605,7 @@ function handleHashAnchor() {
                 image: 'img/publi/coren.jpg',
                 link: 'https://www.instagram.com/corenindumentaria/',
                 title: 'Coren Indumentaria',
-                description: '"Técnica mata Galan.." ;) ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
+                description: '"Técnica mata Galan.." 😉 ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
             },
              {
                 image: 'img/publi/pino.jpeg',
@@ -608,8 +614,14 @@ function handleHashAnchor() {
                 description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
             },
             {
+                image: 'img/publi/kira.jpeg',
+                link: 'https://www.instagram.com/kira.tdf/',
+                title: 'Kira Store',
+                description: 'Tendencia, estilo y comodidad: Todo en Kira Store. Ropa femenina con promos exclusivas, 3 cuotas sin interes o descuentos en efectivo/transferencia. Te Esperamos en Viedma 445 y en redes como @kira.tdf ❤️'
+            },
+            {
                 image: 'img/publi/fixg.jpg',
-                link: '',
+                link: 'https://www.instagram.com/fixcar369/',
                 title: 'Fix - Car - Mecanica Integral',
                 description: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.'
             }
