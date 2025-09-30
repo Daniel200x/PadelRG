@@ -1,43 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Menú móvil
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Cerrar menú al hacer clic en un enlace
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (window.innerWidth <= 992) {
-                // Solo para móviles
-                if (this.parentElement.classList.contains('dropdown')) {
-                    e.preventDefault();
-                    const dropdownMenu = this.nextElementSibling;
-                    dropdownMenu.classList.toggle('active');
-                } else {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                }
-            }
-        });
-    });
-
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener('click', function(e) {
-        if (window.innerWidth <= 992 && !e.target.closest('.nav-container')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.classList.remove('active');
-            });
-        }
-    });
-    
+  
     
   
    
