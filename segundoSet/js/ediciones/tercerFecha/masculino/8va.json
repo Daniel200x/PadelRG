@@ -46,7 +46,7 @@
         {    "nombre": "D. Fernandez/R. Peix","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "L. Elicheri/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "R. Pedraza/L. Roselli","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "Y. Arcella/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "Y. Arcella/C. Cardenas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Jueves 23:00 hs",
@@ -58,7 +58,7 @@
         {
           "fecha": "Jueves 20:00 hs",
           "equipo1": "R. Pedraza/L. Roselli",
-          "equipo2": "Y. Arcella/A definir",
+          "equipo2": "Y. Arcella/C. Cardenas",
           "resultado": "",
           "games":"A definir"
         },
