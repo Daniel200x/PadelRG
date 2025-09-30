@@ -1,75 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // =============================================
-    // Menú móvil (hamburger menu)
-    // =============================================
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    
-    // Función para toggle del menú móvil
-    const toggleMobileMenu = () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-    };
-    
-    // Evento para el botón hamburger
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
-    // Cerrar menú al hacer click en un link (para móviles)
-    navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Verificar si el clic fue en un dropdown o en su ícono
-        const isDropdown = link.classList.contains('dropdown') || 
-                          e.target.closest('.dropdown') || 
-                          e.target.classList.contains('fa-chevron-down') || 
-                          e.target.classList.contains('fa-chevron-up');
-        
-        if (navMenu.classList.contains('active') && !isDropdown) {
-            toggleMobileMenu();
-            }
-        });
-    });
-
-    // =============================================
-    // Dropdowns del menú
-    // =============================================
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        const link = dropdown.querySelector('a');
-        const menu = dropdown.querySelector('.dropdown-menu');
-        const icon = link.querySelector('i');
-        
-        link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) e.preventDefault();
-            
-            // Cerrar otros dropdowns
-            dropdowns.forEach(other => {
-                if (other !== dropdown) {
-                    other.querySelector('.dropdown-menu').classList.remove('active');
-                    other.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
-                }
-            });
-            
-            // Toggle dropdown actual
-            menu.classList.toggle('active');
-            
-            // Cambiar ícono
-            icon.classList.toggle('fa-chevron-down');
-            icon.classList.toggle('fa-chevron-up');
-        });
-    });
-    
-    // Cerrar dropdowns al hacer click fuera
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.dropdown')) {
-            dropdowns.forEach(dropdown => {
-                dropdown.querySelector('.dropdown-menu').classList.remove('active');
-                dropdown.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
-            });
-        }
-    });
+  
 
     // =============================================
     // Galería de álbumes - Carga automática desde carpetas
@@ -87,12 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Estructura de carpetas de álbumes
     const albumFolders = {
-        'punto-de-oro-mierc': {
-            title: 'Torneo Punto de Oro 2025',
-            folder: '../img/gallery/punto-de-oro-mierc/',
-            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Miercoles',
-            category: 'punto-de-oro'
-        },
+        
+        'segundo-set': {
+            title: 'Torneo 2do Set 2025',
+            folder: '../img/gallery/segundo-set/',
+            description: 'Imágenes del 3er Oficial de 2do Set Impares',
+            externalLink: 'https://photos.app.goo.gl/YK8kajHBdLaV57pB6',
+            category: 'segundo-set'
+        }
+        ,
         'punto-de-oro': {
             title: 'Torneo Punto de Oro 2025',
             folder: '../img/gallery/punto-de-oro/',
@@ -124,6 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Imágenes del 3er Oficial de 2do Set Impares',
             externalLink: 'https://photos.app.goo.gl/YK8kajHBdLaV57pB6',
             category: 'segundo-set'
+        },
+        
+        
+        'punto-de-oro-mierc': {
+            title: 'Torneo Punto de Oro 2025',
+            folder: '../img/gallery/punto-de-oro-mierc/',
+            description: 'Imágenes del 3er Oficial de Punto de Oro Dia Miercoles',
+            category: 'punto-de-oro'
         }/*,
         'arenas': {
             title: 'Torneo Arena 2025',
