@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'segundo-set': {
             title: 'Torneo 2do Set 2025',
             folder: '../img/gallery/segundo-set/',
-            description: 'Imágenes del torneo realizado en Septiembre 2025',
-            externalLink: 'https://photos.app.goo.gl/yx4Q8SLknfKMRyVEA',
+            description: 'Imágenes del 3er Oficial de 2do Set Impares',
+            externalLink: 'https://photos.app.goo.gl/YK8kajHBdLaV57pB6',
             category: 'segundo-set'
         }/*,
         'arenas': {
