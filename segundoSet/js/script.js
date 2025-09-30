@@ -985,3 +985,4 @@ window.addEventListener('resize', function() {
         if (eliminatorias) eliminatorias.classList.add('active');
     }
 });
+

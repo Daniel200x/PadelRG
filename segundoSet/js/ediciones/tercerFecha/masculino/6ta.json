@@ -1,38 +1,12 @@
 {
-  "nombre": "6ta Categoría",
+  "nombre": "6ta Caballeros",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -61,35 +35,9 @@
    {
       "nombre": "Grupo B",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -119,35 +67,9 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -175,35 +97,9 @@
     {
       "nombre": "Grupo D",
       "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -231,35 +127,9 @@
     {
       "nombre": "Grupo E",
       "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -287,35 +157,9 @@
     {
       "nombre": "Grupo F",
       "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -343,91 +187,9 @@
     {
       "nombre": "Grupo G",
       "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo H",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "/","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": ":00 hs",
@@ -452,6 +214,7 @@
         }
       ]
     }
+    
   ],
   "eliminatorias": {
     "octavos": [
