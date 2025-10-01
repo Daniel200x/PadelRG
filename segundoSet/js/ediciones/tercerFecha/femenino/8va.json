@@ -37,7 +37,7 @@
       "equipos": [
         {    "nombre": "C. Barria/S. Davalos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "V. Sanchez/C. Bruzzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "S. Arce/N. Velasquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "S. Arce/C. Vazquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Viernes 19:00 hs",
@@ -49,13 +49,13 @@
         {
           "fecha": "Sabado 10:00 hs",
           "equipo1": "C. Barria/S. Davalos",
-          "equipo2": "S. Arce/N. Velasquez",
+          "equipo2": "S. Arce/C. Vazquez",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Sabado 18:00 hs",
-          "equipo1": "S. Arce/N. Velasquez",
+          "equipo1": "S. Arce/C. Vazquez",
           "equipo2": "V. Sanchez/C. Bruzzo",
           "resultado": "",
           "games":"A definir"
