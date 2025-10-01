@@ -570,7 +570,18 @@ function handleHashAnchor() {
                 link: 'https://www.instagram.com/padelpino/',
                 title: 'Padel Pino',
                 description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
-            },
+            }
+            ,
+            {
+                image: 'img/publi/fritz.jpeg',
+                link: 'https://www.instagram.com/fritzautomotores/',
+                title: 'Fritz Automotores',
+                description: 'Fritz Automotores. Servicios de venta automotor y gestoria, comunicate con nosotros al 2964-600301 y no olvides de seguirnos en redes @fritzautomotores'
+            }
+            
+            
+            
+            ,
             {
                 image: 'img/publi/kira.jpeg',
                 link: 'https://www.instagram.com/kira.tdf/',
@@ -618,6 +629,12 @@ function handleHashAnchor() {
                 link: 'https://www.instagram.com/kira.tdf/',
                 title: 'Kira Store',
                 description: 'Tendencia, estilo y comodidad: Todo en Kira Store. Ropa femenina con promos exclusivas, 3 cuotas sin interes o descuentos en efectivo/transferencia. Te Esperamos en Viedma 445 y en redes como @kira.tdf ❤️'
+            },
+            {
+                image: 'img/publi/fritz.jpeg',
+                link: 'https://www.instagram.com/fritzautomotores/',
+                title: 'Fritz Automotores',
+                description: 'Fritz Automotores. Servicios de venta automotor y gestoria, comunicate con nosotros al 2964-600301 y no olvides de seguirnos en redes @fritzautomotores'
             },
             {
                 image: 'img/publi/fixg.jpg',
