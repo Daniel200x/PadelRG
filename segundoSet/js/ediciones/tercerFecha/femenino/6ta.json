@@ -69,8 +69,7 @@
       "equipos": [
         {    "nombre": "A. Graneros/L. Ramirez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "M. Rausch/M. Arias","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "V. Lopez/J. Ramadori","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "E. Andrade/A. definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "V. Lopez/J. Ramadori","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Viernes 23:45 hs",
@@ -82,21 +81,45 @@
         {
           "fecha": "Sabado 11:00 hs",
           "equipo1": "V. Lopez/J. Ramadori",
+          "equipo2": "M. Rausch/M. Arias",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+         "equipo1": "A. Graneros/L. Ramirez",
+          "equipo2": "V. Lopez/J. Ramadori",
+          "fecha": "Sabado 19:00 hs",
+          "resultado": "",
+          "games":""
+        }
+      ]
+    },
+    
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {    "nombre": "V. Iglesias/D. Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "D. Martinez/O. Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "E. Andrade/A. definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "D. Martinez/O. Martinez",
           "equipo2": "E. Andrade/A. definir",
           "resultado": "",
           "games":"A definir"
         },
         {
-         "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "fecha": "Sabado 19:00 hs",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "V. Iglesias/D. Corzo",
+          "equipo2": "D. Martinez/O. Martinez",
           "resultado": "",
-          "games":""
+          "games":"A definir"
         },
         {
-        "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
-          "fecha": "Sabado 19:00 hs",
+         "equipo1": "V. Iglesias/D. Corzo",
+          "equipo2": "E. Andrade/A. definir",
+          "fecha": "Sabado 21:00 hs",
           "resultado": "",
           "games":""
         }
@@ -107,14 +130,28 @@
     
   "cuartos": [
       {
-         "equipo1": "2do C",
+         "equipo1": "1ro A",
           "equipo2": "2do B",
           "fecha": "Domingo 13:00",
           "resultado": "A definir",
           "games":""
       },
       {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Domingo 13:00",
+         "resultado": "A definir",
+          "games":""
+      },
+      {
          "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Domingo 13:00",
+         "resultado": "A definir",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
           "equipo2": "2do A",
           "fecha": "Domingo 13:00",
          "resultado": "A definir",
@@ -123,15 +160,15 @@
     ],
     "semis": [
       {
-         "equipo1": "1ro A",
-          "equipo2": "Ganador P1",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo 16:00",
           "resultado": "A definir",
           "games":""
       },
       {
-         "equipo1": "Ganador P2",
-          "equipo2": "1ro B",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo 16:00",
           "resultado": "A definir",
           "games":""

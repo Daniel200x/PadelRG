@@ -40,7 +40,7 @@
         {    "nombre": "S. Arce/C. Vazquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": "Viernes 19:00 hs",
+          "fecha": "Viernes 20:00 hs",
           "equipo1": "C. Barria/S. Davalos",
           "equipo2": "V. Sanchez/C. Bruzzo",
           "resultado": "",
@@ -68,19 +68,19 @@
       "nombre": "Grupo C",
       "equipos": [
         {    "nombre": "N. Cagneluti/E. Duca","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "P. Blanco/D. Cejas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Torres/D. Cejas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "M. Villagra/M. Araoz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": "Viernes 20:00 hs",
+          "fecha": "Viernes 19:00 hs",
           "equipo1": "N. Cagneluti/E. Duca",
-          "equipo2": "P. Blanco/D. Cejas",
+          "equipo2": "L. Torres/D. Cejas",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Jueves 20:00 hs",
-          "equipo1": "P. Blanco/D. Cejas",
+          "equipo1": "L. Torres/D. Cejas",
           "equipo2": "M. Villagra/M. Araoz",
           "resultado": "",
           "games":"A definir"
