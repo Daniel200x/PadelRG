@@ -1,0 +1,218 @@
+{
+  "nombre": "5ta Damas",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "final": {
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "  19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
+  }
+}

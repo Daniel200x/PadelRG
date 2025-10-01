@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fixture del Día Segundo Set - Pádel RG</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/blanco.css">
+    <link rel="stylesheet" href="css/llaves.css">
+    <link rel="stylesheet" href="../ranking/css/ranking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81C2M2PPXT');
+    </script>
+</head>
+<body>
+          <!-- Contenedor para el menú -->
+<div id="menu-container"></div>
+<script src="/js/menu-loader.js"></script>
+<script src="/js/script1.js"></script>
+
+    <!-- Contenedor principal del fixture del día -->
+    <div class="fixture-container">
+        <h1>Segundo Set - Tercera Fecha</h1>
+        
+        <!-- Sistema de pestañas -->
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li class="tab active" data-tab="groups">Fixture de Grupos</li>
+                <li class="tab" data-tab="brackets">Llaves de Eliminatorias</li>
+            </ul>
+        </div>
+        
+        <!-- Contenido de la pestaña de Grupos -->
+        <div id="groups-tab" class="tab-content active">
+            <!-- Selector de día -->
+            <div class="day-selector">
+                <h2>Selecciona un día:</h2>
+                <div class="day-buttons">
+                    <button class="day-btn" data-day="Lunes">Lunes</button>
+                    <button class="day-btn" data-day="Martes">Martes</button>
+                    <button class="day-btn" data-day="Miercoles">Miercoles</button>
+                    <button class="day-btn" data-day="Jueves">Jueves</button>
+                    <button class="day-btn" data-day="Viernes">Viernes</button>
+                    <button class="day-btn" data-day="Sabado">Sábado</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Tabla de partidos -->
+            <div class="matches-table-container">
+                <table class="matches-table">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Categoría</th>
+                            <th>Zona</th>
+                            <th>Equipo 1</th>
+                            <th>Equipo 2</th>
+                            <th>Cancha</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matchesTableBody">
+                        <!-- Los partidos se cargarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Contador de partidos -->
+            <div class="matches-count">
+                <p>Total de partidos: <span id="totalMatches">0</span></p>
+            </div>
+        </div>
+        
+        <!-- Contenido de la pestaña de Eliminatorias -->
+<div id="brackets-tab" class="tab-content">
+    <div class="brackets-container" id="bracketsContainer">
+        <!-- Las llaves se generarán aquí mediante JavaScript -->
+    </div>
+</div>
+    </div>
+
+<!-- Espacio de publicidad -->
+<div id="publicidad-container"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Torneos</a>
+                <a href="/acerca/acerca.html">Acerca de</a>
+                <a href="/contacto/contacto.html">Contacto</a>
+                <a href="/privacidad/privacidad.html">Política de Privacidad</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> Pádel RG. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
+     crossorigin="anonymous"></script>
+    <script src="../blanco/js/blanco.js"></script>
+    <script src="../blanco/js/fixture-del-dia-first.js"></script>
+    <script src="../blanco/js/llaves.js"></script>
+         <script>
+  // Cargar publicidad
+  fetch('../publicidad/publicidad.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('publicidad-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando publicidad:', error));
+</script>
+</body>
+</html>

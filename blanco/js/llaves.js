@@ -75,8 +75,8 @@ function generarLlavesConEliminatoriasReales(datos) {
     
     // ORDENAR LAS CATEGORÍAS DE MENOR A MAYOR
     const ordenCategorias = [
-        '4ta Femenino', '5ta Femenino', '6ta Femenino', '8va Femenino',
-        '4ta Masculino', '6ta Masculino', '8va Masculino'
+        '4ta Femenino', '5ta Femenino', '6ta Femenino', '7ma Femenino', '8va Femenino',
+        '4ta Masculino', '5ta Masculino', '6ta Masculino', '7ma Masculino', '8va Masculino'
     ];
     
     // Crear un objeto ordenado

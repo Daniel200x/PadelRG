@@ -2,7 +2,7 @@
 /* Estilos para las pestañas */
 .tabs-container {
     margin: 20px 0;
-    border-bottom: 2px solid #FF8C00;
+    border-bottom: 2px solid #080808;
 }
 
 .tabs {
@@ -32,9 +32,9 @@
 }
 
 .tab.active {
-    background-color: #FF8C00;
+    background-color: #507ddf;
     color: white;
-    border-color: #FF8C00;
+    border-color: #2d09b1;
 }
 
 .tab-content {
@@ -644,7 +644,7 @@
     padding: 0;
     margin: 0 0 20px 0;
     flex-wrap: wrap;
-    border-bottom: 2px solid #FF8C00;
+    border-bottom: 2px solid #307caf;
 }
 
 .category-tab {
