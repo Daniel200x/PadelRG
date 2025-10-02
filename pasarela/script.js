@@ -28,7 +28,7 @@
             id: 'ad-1',
             title: 'RPA Amoblamientos',
             sponsor: 'Muebles a medida',
-            message: 'Descubre la nueva raqueta profesional 2024',
+            message: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.',
             imageUrl: '../img/muebles.jpeg',
             link: 'https://www.instagram.com/rpamoblamientos.tdf/'
         },
@@ -36,7 +36,7 @@
             id: 'ad-2',
             title: 'Padel Pino',
             sponsor: 'Clases de Padel',
-            message: 'Máxima comodidad para tus partidos',
+            message: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino',
             imageUrl: '../img/publi/pino.jpeg',
             link: 'https://www.instagram.com/padelpino/'
         },
@@ -44,7 +44,7 @@
             id: 'ad-3',
             title: 'Coren Indumentaria',
             sponsor: 'Ropa deportiva',
-            message: 'Mejora tu juego con nuestros entrenadores',
+            message: '"Técnica mata Galan.." 😉 ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria',
             imageUrl: '../img/publi/coren.jpg',
             link: 'https://www.instagram.com/corenindumentaria/'
         },
@@ -52,7 +52,7 @@
             id: 'ad-4',
             title: 'Fix Car',
             sponsor: 'Mecanica integral',
-            message: 'Inscríbete en el próximo torneo',
+            message: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.',
             imageUrl: '../img/publi/fixm.jpg',
             link: 'https://www.instagram.com/fixcar369/'
         },
@@ -60,23 +60,23 @@
             id: 'ad-5',
             title: 'Kira TDF',
             sponsor: 'Ropa ',
-            message: 'La mejor calidad para cada partido',
+            message: 'Tendencia, estilo y comodidad: Todo en Kira Store. Ropa femenina con promos exclusivas, 3 cuotas sin interes o descuentos en efectivo/transferencia. Te Esperamos en Viedma 445 y en redes como @kira.tdf ❤️',
             imageUrl: '../img/publi/kira.jpeg',
             link: 'https://www.instagram.com/kira.tdf/'
         },
         {
             id: 'ad-6',
-            title: 'Accesorios Pro',
-            sponsor: 'Pádel Gear',
-            message: 'Todo lo que necesitas para jugar',
+            title: 'Fritz Automotores',
+            sponsor: 'Automotores',
+            message: 'Fritz Automotores. Servicios de venta automotor y gestoria, comunicate con nosotros al 2964-600301 y no olvides de seguirnos en redes @fritzautomotores',
             imageUrl: '../img/publi/fritz.jpeg',
             link: 'https://www.instagram.com/fritzautomotores/'
         },
         {
             id: 'ad-7',
-            title: 'Clínica de Verano',
-            sponsor: 'Pádel Masters',
-            message: 'Perfecciona tu técnica este verano',
+            title: 'Trexx TDF',
+            sponsor: 'Distribuidor Oficial',
+            message: 'Encontra las mejores palas, indumentaria, pelotas y accesorios para tu juego. ¡Distribuidor oficial de Trexx en TDF!',
             imageUrl: '../img/publi/trexx.jpeg',
             link: 'https://www.instagram.com/trexx.tdf/'
         }
@@ -431,21 +431,16 @@
                     <div class="ad-sponsor">${adData.sponsor}</div>
                 </div>
                 <div class="ad-body">
-                    <div class="ad-image">
+                    <div class="ad-imagee">
                         <img src="${adData.imageUrl}" alt="${adData.title}" />
                     </div>
                     <div class="ad-content">
                         <h3 class="ad-title">${adData.title}</h3>
                         <p class="ad-message">${adData.message}</p>
-                        <a href="${adData.link}" class="ad-link" target="_blank">Más información</a>
+                        
                     </div>
                 </div>
-                <div class="ad-footer">
-                    <div class="ad-timer">
-                        <i class="fas fa-ad"></i>
-                        Publicidad - Cambio automático en <span class="countdown-highlight">${countdownValue}</span> segundos
-                    </div>
-                </div>
+                
             </div>
         `;
     }

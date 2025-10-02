@@ -95,6 +95,7 @@ body {
 header {
     margin-bottom: 40px;
     color: white;
+    border: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -368,10 +369,10 @@ header p {
     gap: 20px;
 }
 
-.ad-image {
+.ad-imagee {
     width: 100%;
     max-width: 300px;
-    border-radius: 10px;
+    border-radius: 10px;    
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -734,7 +735,7 @@ header p {
 }
 
 /* Asegurar que las imágenes sean responsivas */
-.logo-img, .ad-image img {
+.logo-img, .ad-imagee img {
     max-width: 100%;
     height: auto;
 }
