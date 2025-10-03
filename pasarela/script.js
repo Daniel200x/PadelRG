@@ -81,6 +81,9 @@
             link: 'https://www.instagram.com/trexx.tdf/'
         }
     ];
+  
+    
+
     
     // Configurar event listeners para los botones de control
     prevBtn.addEventListener('click', showPreviousItem);
