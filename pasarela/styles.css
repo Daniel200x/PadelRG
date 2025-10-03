@@ -868,7 +868,7 @@ header p {
 }
 
 .side-card {
-    width: 300px; /* Ancho ajustado */
+    width: 350px; /* Ancho ajustado */
     height: 80vh;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
@@ -876,7 +876,7 @@ header p {
     overflow: hidden;
     transition: all 0.5s ease;
     pointer-events: auto;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
