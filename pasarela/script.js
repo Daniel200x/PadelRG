@@ -79,12 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Array de imágenes para las tarjetas laterales
     const sideCardImages = [
-        '../img/promos/1.png',
+        '../img/promos/sand.gif',
         '../img/promos/fernet.gif',
         '../img/promos/thorne.gif',
         '../img/promos/kira.gif',
         '../img/promos/rpa.gif',
-        '../img/promos/pino.gif'
+        '../img/promos/pino.gif',
+        '../img/promos/pichanga.gif'
     ];
 
     // Función para actualizar las imágenes de las tarjetas laterales
