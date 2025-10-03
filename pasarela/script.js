@@ -796,22 +796,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function showNextItem() {
-        if (itemsDisplay.length === 0) return;
+    if (itemsDisplay.length === 0) return;
+    
+    // Verificar si estamos en el último item
+    if (currentItemIndex === itemsDisplay.length - 1) {
+        // Llegamos al final, realizar refresco forzado
+        console.log('Fin de los resultados. Realizando refresco forzado...');
         
-        // Verificar si estamos en el último item
-        if (currentItemIndex === itemsDisplay.length - 1) {
-            // Llegamos al final, recargar la página
-            console.log('Fin de los resultados. Recargando página...');
-            setTimeout(() => {
-                location.reload();
-            }, 5000); // Recargar después de 5 segundos para mostrar el último item
-            return;
-        }
+        // Limpiar todos los intervalos antes de recargar
+        if (autoChangeInterval) clearInterval(autoChangeInterval);
+        if (countdownInterval) clearInterval(countdownInterval);
         
-        currentItemIndex = (currentItemIndex + 1) % itemsDisplay.length;
-        showItem(currentItemIndex);
-        resetCountdown();
+        // Mostrar mensaje de recarga
+        matchDisplay.innerHTML = `
+            <div class="reload-message fade-in">
+                <i class="fas fa-sync-alt fa-spin"></i>
+                <h3>Actualizando resultados...</h3>
+                <p>Recargando para mostrar nuevos resultados disponibles.</p>
+            </div>
+        `;
+        
+        // Forzar recarga después de 3 segundos (para que se vea el mensaje)
+        setTimeout(() => {
+            // Recarga forzada (ignorando caché)
+            location.reload(true);
+        }, 3000);
+        return;
     }
+    
+    currentItemIndex = (currentItemIndex + 1) % itemsDisplay.length;
+    showItem(currentItemIndex);
+    resetCountdown();
+}
     
     function startAutoChange() {
         if (autoChangeInterval) clearInterval(autoChangeInterval);
