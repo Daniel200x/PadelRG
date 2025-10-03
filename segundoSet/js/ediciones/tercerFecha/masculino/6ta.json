@@ -37,14 +37,14 @@
       "equipos": [
         {    "nombre": "G. Quiroz/F. Galucci","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "R. Muriño/P. Ulloa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "W. Gimenez/I. Beltran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "W. Gimenez/Serafini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Jueves 20:00 hs",
           "equipo1": "R. Muriño/P. Ulloa",
-          "equipo2": "W. Gimenez/I. Beltran",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "W. Gimenez/Serafini",
+          "resultado": "2-0",
+          "games":"6-3, 7-6"
         },
         {
           "fecha": "Sabado 13:00 hs",
@@ -56,7 +56,7 @@
         {
           "fecha": "Sabado 19:00 hs",
           "equipo1": "G. Quiroz/F. Galucci",
-          "equipo2": "W. Gimenez/I. Beltran",
+          "equipo2": "W. Gimenez/Serafini",
           "resultado": "",
           "games":"A definir"
         }
