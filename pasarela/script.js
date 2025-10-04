@@ -86,7 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/promos/rpa.gif',
         '../img/promos/pino.gif',
         '../img/promos/pichanga.gif',
-        '../img/promos/trexx.gif'
+        '../img/promos/trexx.gif',
+        '../img/promos/coren.gif'
     ];
 
     // Función para actualizar las imágenes de las tarjetas laterales
