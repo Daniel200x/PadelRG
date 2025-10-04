@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const ahora = new Date();
         const horaActual = ahora.getHours();
         
-        // Si es antes de las 3:00 AM, mostrar partidos del día anterior
-        if (horaActual < 3) {
+        // Si es antes de las 7:00 AM, mostrar partidos del día anterior
+        if (horaActual < 7) {
             const ayer = new Date(ahora);
             ayer.setDate(ahora.getDate() - 1);
             return ayer.getDay();
