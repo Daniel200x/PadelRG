@@ -199,22 +199,22 @@
       "equipos": [
         {    "nombre": "C. Ortiz/C. Godoy","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "E. Pintos/A. Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "A. Roldan/G. Ojeda","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Rivero/L. Pugnale","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "A. Mondaca/D. Lezcano","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Viernes 20:00 hs",
           "equipo1": "C. Ortiz/C. Godoy",
           "equipo2": "E. Pintos/A. Graneros",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-0"
         },
         {
           "fecha": "Viernes 20:00 hs",
-          "equipo1": "A. Roldan/G. Ojeda",
+          "equipo1": "L. Rivero/L. Pugnale",
           "equipo2": "A. Mondaca/D. Lezcano",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
         },
         {
          "equipo1": "Ganador Partido 1",
