@@ -1,4 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+     
+           
+               
+   
+  
+    document.addEventListener('DOMContentLoaded', function() {
     const matchDisplay = document.getElementById('matchDisplay');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -16,12 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let countdownInterval;
     let isPlaying = true;
     let countdownValue = 10;
-   
-                
-             
-              
-           
-               
+    
     // Array de publicidades disponibles
     const publicidades = [
         {
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (grupo.partidos && Array.isArray(grupo.partidos)) {
                     grupo.partidos.forEach(partido => {
                         const fechaInfo = extraerInformacionFecha(partido.fecha);
-                        const resultado = partido.games || partido.resultado || "A definir";
+                        const resultado = partido.games || "A definir";
                         
                         partidos.push({
                             categoria: nombreCategoria,
@@ -258,7 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             equipo2: partido.equipo2,
                             horario: fechaInfo.horario,
                             dia: fechaInfo.dia,
-                            
                             resultado: resultado,
                             estado: resultado !== "A definir" && resultado !== "-" ? "completed" : "pending",
                             fechaOriginal: partido.fecha
@@ -279,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                     partidosFase.forEach(partido => {
                         const fechaInfo = extraerInformacionFecha(partido.fecha);
-                        const resultado = partido.games || partido.resultado || "A definir";
+                        const resultado = partido.games || "A definir";
                         const faseFormateada = formatearNombreFase(fase);
                         
                         partidos.push({
@@ -289,7 +288,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             equipo2: partido.equipo2,
                             horario: fechaInfo.horario,
                             dia: fechaInfo.dia,
-                            
                             resultado: resultado,
                             estado: resultado !== "A definir" && resultado !== "-" ? "completed" : "pending",
                             fechaOriginal: partido.fecha
@@ -317,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let diaEncontrado = "Por definir";
         let horario = "Por definir";
         
-        
         // Buscar día en la cadena
         for (const dia of diasSemana) {
             if (fechaStr.toLowerCase().includes(dia.toLowerCase())) {
@@ -334,12 +331,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (horarioMatch) {
             horario = horarioMatch[0];
         }
-       
         
         return {
             dia: diaEncontrado,
             horario: horario,
-            
         };
     }
     
@@ -396,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
             infoTiempo = "Por definir";
         }
         
-        // Crear tarjeta de partido
+        // Crear tarjeta de partido - SOLO MUESTRA EL RESULTADO DEL CAMPO GAMES
         matchDisplay.innerHTML = `
             <div class="match-card fade-in">
                 <div class="match-header">
@@ -407,12 +402,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="teams-container">
                         <div class="team">
                             <div class="team-name">${partido.equipo1}</div>
-                            ${tieneResultado ? `<div class="team-result">${obtenerResultadoEquipo(partido.resultado, 1)}</div>` : ''}
                         </div>
                         <div class="vs">VS</div>
                         <div class="team">
                             <div class="team-name">${partido.equipo2}</div>
-                            ${tieneResultado ? `<div class="team-result">${obtenerResultadoEquipo(partido.resultado, 2)}</div>` : ''}
                         </div>
                     </div>
                     <div class="match-result ${partido.estado}">
@@ -468,35 +461,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         return partidosContados - 1; // Restar 1 porque los índices empiezan en 0
-    }
-    
-    function obtenerResultadoEquipo(resultado, equipo) {
-        if (!resultado || resultado === "A definir") return "-";
-        
-        try {
-            // Intentar parsear el formato de games (ej: "6-3,6-4")
-            if (resultado.includes(',')) {
-                const sets = resultado.split(',');
-                let gamesEquipo = 0;
-                
-                sets.forEach(set => {
-                    const [games1, games2] = set.split('-').map(Number);
-                    gamesEquipo += equipo === 1 ? games1 : games2;
-                });
-                
-                return gamesEquipo;
-            }
-            
-            // Si es un formato de sets (ej: "2-1")
-            if (resultado.includes('-')) {
-                const [sets1, sets2] = resultado.split('-').map(Number);
-                return equipo === 1 ? sets1 : sets2;
-            }
-            
-            return "-";
-        } catch (error) {
-            return "-";
-        }
     }
     
     function showPreviousItem() {
