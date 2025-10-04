@@ -102,7 +102,7 @@
         {    "nombre": "S. Liendro/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": "Jueves 21:00 hs",
+          "fecha": "Jueves 22:00 hs",
           "equipo1": "E. Garay/D. Floriani",
           "equipo2": "P. Alegre/J. Nuñez",
           "resultado": "",
@@ -128,19 +128,19 @@
       "nombre": "Grupo E",
       "equipos": [
         {    "nombre": "C. Corvalan/M. Gomez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "R. Oyarzun/P. Figueroa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "N. Romero/S. Barila","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "P. Hero/P. Palloto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
-          "fecha": "Jueves 22:00 hs",
-          "equipo1": "R. Oyarzun/P. Figueroa",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "N. Romero/S. Barila",
           "equipo2": "P. Hero/P. Palloto",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Viernes 18:00 hs",
-          "equipo1": "R. Oyarzun/P. Figueroa",
+          "equipo1": "N. Romero/S. Barila",
           "equipo2": "C. Corvalan/M. Gomez",
           "resultado": "",
           "games":"A definir"
