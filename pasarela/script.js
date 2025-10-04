@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function cargarDatosPartidos() {
         const archivosJSON = [
-            '../segundoSet/js/ediciones/tercerFecha/femenino/4ta.json',
+            //'../segundoSet/js/ediciones/tercerFecha/femenino/4ta.json',
             '../segundoSet/js/ediciones/tercerFecha/femenino/6ta.json',
             '../segundoSet/js/ediciones/tercerFecha/femenino/8va.json',
             '../segundoSet/js/ediciones/tercerFecha/masculino/4ta.json',
