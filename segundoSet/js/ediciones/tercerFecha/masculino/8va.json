@@ -7,7 +7,7 @@
         {    "nombre": "R. Gonzalez/M. Llanes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "A. Faletti/M. Diaz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "R. Rodriguez/O. Rodriguez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "M. Alvarez/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "M. Alvarez/I. Quinteros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Viernes 21:00 hs",
@@ -19,7 +19,7 @@
         {
           "fecha": "Jueves 22:00 hs",
           "equipo1": "R. Rodriguez/O. Rodriguez",
-          "equipo2": "M. Alvarez/A definir",
+          "equipo2": "M. Alvarez/I. Quinteros",
           "resultado": "2-0",
           "games":"6-0, 6-1"
         },
@@ -135,8 +135,8 @@
         },
         {
           "fecha": "Viernes 23:45 hs",
-          "equipo1": "J. Crespo/D. Ruiz",
-          "equipo2": "J. Rivero/A. Muller",
+          "equipo1": "J. Rivero/A. Muller",
+          "equipo2": "J. Crespo/D. Ruiz",
           "resultado": "2-1",
           "games":"6-4, 3-6, 7-6"
         },
@@ -144,15 +144,15 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 12:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"6-3, 5-7, 7-6"
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 12:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
         }
       ]
     },
@@ -220,15 +220,15 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 10:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"7-6, 6-7, 7-6"
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 10:00 hs",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-1"
         }
       ]
     },
@@ -289,8 +289,8 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "F. Faletti/S. Centurion",
           "equipo2": "C. Alday/L. Frias",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"3-6, 5-7"
         },
        {
          "equipo1": "Ganador Partido 1",

@@ -20,7 +20,7 @@
           "equipo1": "N. Barboza/B. Lizarraga",
           "equipo2": "R. Fritz/P. Alfonzo",
           "resultado": "2-0",
-          "games":"6-3, 6-4"
+          "games":"6-4, 6-3"
         },
         {
           "fecha": "Sabado 16:00 hs",
@@ -50,8 +50,8 @@
           "fecha": "Sabado 13:00 hs",
           "equipo1": "R. Muriño/P. Ulloa",
           "equipo2": "G. Quiroz/F. Galucci",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
         },
         {
           "fecha": "Sabado 19:00 hs",
@@ -82,8 +82,8 @@
           "fecha": "Sabado 12:00 hs",
           "equipo1": "J. Mendez/F. Infran",
           "equipo2": "C. Cejas/M. Zeniquel",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Sabado 18:00 hs",
@@ -99,7 +99,7 @@
       "equipos": [
         {    "nombre": "E. Garay/D. Floriani","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "P. Alegre/J. Nuñez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {    "nombre": "S. Liendro/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+        {    "nombre": "S. Liendro/Bernal","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Jueves 22:00 hs",
@@ -111,13 +111,13 @@
         {
           "fecha": "Sabado 12:00 hs",
           "equipo1": "E. Garay/D. Floriani",
-          "equipo2": "S. Liendro/A definir",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "S. Liendro/Bernal",
+          "resultado": "1-2",
+          "games":"5-7, 7-6, 6-7"
         },
         {
           "fecha": "Sabado 19:00 hs",
-          "equipo1": "S. Liendro/A definir",
+          "equipo1": "S. Liendro/Bernal",
           "equipo2": "P. Alegre/J. Nuñez",
           "resultado": "",
           "games":"A definir"
@@ -209,8 +209,8 @@
           "fecha": "Sabado 11:00 hs",
           "equipo1": "N. De Guevara/S. Rubio",
           "equipo2": "D. Orellana/F. Saldaño",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 4-6"
         }
       ]
     }

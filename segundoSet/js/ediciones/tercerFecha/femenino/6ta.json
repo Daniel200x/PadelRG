@@ -19,8 +19,8 @@
           "fecha": "Sabado 11:00 hs",
           "equipo1": "B. Cordoba/V. Pereda",
           "equipo2": "C. Torres/J. Rojas",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 6-7"
         },
         {
           "fecha": "Sabado 17:00 hs",
@@ -43,15 +43,15 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "A. Domenech/C. Herrera",
           "equipo2": "P. Rusconi/G. Flamenco",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
         },
         {
           "fecha": "Sabado 13:00 hs",
           "equipo1": "P. Rusconi/G. Flamenco",
           "equipo2": "S. Sanabria/A definir",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Sabado 17:00 hs",
@@ -75,15 +75,15 @@
           "fecha": "Viernes 23:45 hs",
           "equipo1": "A. Graneros/L. Ramirez",
           "equipo2": "M. Rausch/M. Arias",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"2-6, 4-6, 6-7"
         },
         {
           "fecha": "Sabado 11:00 hs",
           "equipo1": "V. Lopez/J. Ramadori",
           "equipo2": "M. Rausch/M. Arias",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
         },
         {
          "equipo1": "A. Graneros/L. Ramirez",
@@ -106,8 +106,8 @@
           "fecha": "Sabado 10:00 hs",
           "equipo1": "D. Martinez/O. Martinez",
           "equipo2": "E. Andrade/A. definir",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Sabado 15:00 hs",
