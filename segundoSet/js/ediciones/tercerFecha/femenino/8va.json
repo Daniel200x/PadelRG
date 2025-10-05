@@ -158,18 +158,18 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "2do B",
+        "equipo1": "2do E",
           "equipo2": "2do C",
           "fecha": "Sabado 20:00",
           "resultado": "A definir",
-          "games":""
+          "games":"6-1, 7-6"
       },
       {
          "equipo1": "2do A",
           "equipo2": "2do D",
           "fecha": "Sabado 20:00",
           "resultado": "A definir",
-          "games":""
+          "games":"6-3, 6-3"
       }
     ],
     
@@ -182,15 +182,15 @@
           "games":""
       },
       {
-         "equipo1": "1ro E",
-          "equipo2": "1ro D",
+         "equipo1": "2do B",
+          "equipo2": "2do D",
           "fecha": "Domingo 10:00",
           "resultado": "A definir",
           "games":""
       },
       {
          "equipo1": "1ro C",
-          "equipo2": "2do E",
+          "equipo2": "1ro E",
           "fecha": "Domingo 10:00",
           "resultado": "A definir",
           "games":""
