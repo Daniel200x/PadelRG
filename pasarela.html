@@ -63,8 +63,7 @@
                 <p>Cargando resultados...</p>
             </div>
         </div>
-       <!-- Espacio de publicidad -->
-<div id="publicidad-container"></div>
+    
         <!-- Panel de información oculto -->
         <div class="info-panel hidden">
             <p>Partido <span id="currentMatch">0</span> de <span id="totalMatches">0</span></p>
@@ -76,14 +75,6 @@
     </div>
 
     <script src="/pasarela/script.js"></script>
-    <script>
-  // Cargar publicidad
-  fetch('publicidad.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('publicidad-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error cargando publicidad:', error));
-</script>
+    
 </body>
 </html>
