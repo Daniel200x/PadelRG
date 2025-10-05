@@ -78,7 +78,7 @@
     <script src="/pasarela/script.js"></script>
     <script>
   // Cargar publicidad
-  fetch('../publicidad/publicidad.html')
+  fetch('publicidad.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('publicidad-container').innerHTML = data;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicidades con Espaciado</title>
+    <style>
+        .ads-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .ad-item {
+            flex: 0 0 auto;
+            min-width: 150px;
+        }
+        
+        @media (max-width: 480px) {
+            .ads-wrapper {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-space">
+        <div class="ad-container">
+            <div class="ad-title">Publicidad</div>
+            <div class="ads-wrapper">
+                <a href="https://www.instagram.com/rpamoblamientos.tdf/" target="_blank" class="ad-item">
+                    <img src="../img/muebles.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/padelpino/" target="_blank" class="ad-item">
+                    <img src="../img/publi/pino.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/kira.tdf/" target="_blank" class="ad-item">
+                    <img src="../img/publi/kira.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/corenindumentaria/" target="_blank" class="ad-item">
+                    <img src="../img/publi/coren.jpg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/fritzautomotores/" target="_blank" class="ad-item">
+                    <img src="../img/publi/fritz.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/trexx.tdf/" target="_blank" class="ad-item">
+                    <img src="../img/publi/trexx.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/fixcar369/" target="_blank" class="ad-item">
+                    <img src="../img/publi/fixm.jpg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="https://www.instagram.com/rc.cars.rg/" target="_blank" class="ad-item">
+                    <img src="../img/publi/rgcars.jpeg" alt="Publicidad" class="ad-image" />
+                </a>
+                <a href="" target="_blank" class="ad-item">
+                    <img src="../img/publi/thorne.jpg" alt="Publicidad" class="ad-image" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
