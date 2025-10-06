@@ -17,23 +17,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 21:00 hs Cancha 1",
+          "equipo1": "Federico Bossio/Santiago David",
+          "equipo2": "Dario Chacon/Marcelo Trangoni",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 2",
+          "equipo1": "Pablo Gomez/Bruno Sirgo",
+          "equipo2": "Dario Chacon/Marcelo Trangoni",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "Federico Bossio/Santiago David",
+          "equipo2": "Pablo Gomez/Bruno Sirgo",
           "resultado": "",
           "games":"A definir"
         }
@@ -44,35 +44,35 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Claudio Escobar/Julian Morales",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Lucas Fraile/Pedro Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "David Moreno/A confirmar",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 1",
+          "equipo1": "Lucas Fraile/Pedro Martinez",
+          "equipo2": "David Moreno/A confirmar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 1",
+          "equipo1": "Claudio Escobar/Julian Morales",
+          "equipo2": "David Moreno/A confirmar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 2",
+          "equipo1": "Claudio Escobar/Julian Morales",
+          "equipo2": "Lucas Fraile/Pedro Martinez",
           "resultado": "",
           "games":"A definir"
         }
@@ -82,35 +82,35 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Walter Rumi/Andres Agnes",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Franco Maero/Nicolas Gonzalez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Matias Saldaño/Daniel Veliz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 21:00 hs Cancha 2",
+          "equipo1": "Franco Maero/Nicolas Gonzalez",
+          "equipo2": "Matias Saldaño/Daniel Veliz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs Cancha 1",
+          "equipo1": "Walter Rumi/Andres Agnes",
+          "equipo2": "Matias Saldaño/Daniel Veliz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 17:00 hs Cancha 2",
+          "equipo1": "Walter Rumi/Andres Agnes",
+          "equipo2": "Franco Maero/Nicolas Gonzalez",
           "resultado": "",
           "games":"A definir"
         }
@@ -120,35 +120,35 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Braian Lizarraga/Federico Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Juan Jose Rivero/Guillermo Farias",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Jorge Carabajal/Ignacio Carabajal",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 22:00 hs Cancha 1",
+          "equipo1": "Braian Lizarraga/Federico Martinez",
+          "equipo2": "Jorge Carabajal/Ignacio Carabajal",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 2",
+          "equipo1": "Juan Jose Rivero/Guillermo Farias",
+          "equipo2": "Jorge Carabajal/Ignacio Carabajal",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 13:00 hs Cancha 1",
+          "equipo1": "Braian Lizarraga/Federico Martinez",
+          "equipo2": "Juan Jose Rivero/Guillermo Farias",
           "resultado": "",
           "games":"A definir"
         }
@@ -158,35 +158,35 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Emmanuel Bravo/Cristian Almaraz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Martin Pacheco/Cristian Perez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Javier Pereyra/Alexis Pereyra",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 1",
+          "equipo1": "Emmanuel Bravo/Cristian Almaraz",
+          "equipo2": "Martin Pacheco/Cristian Perez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 1",
+          "equipo1": "Martin Pacheco/Cristian Perez",
+          "equipo2": "Javier Pereyra/Alexis Pereyra",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 17:00 hs Cancha 2",
+          "equipo1": "Emmanuel Bravo/Cristian Almaraz",
+          "equipo2": "Javier Pereyra/Alexis Pereyra",
           "resultado": "",
           "games":"A definir"
         }

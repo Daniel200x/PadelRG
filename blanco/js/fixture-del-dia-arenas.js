@@ -1,3 +1,5 @@
+
+        
 // fixture-del-dia.js - Gestión del fixture del día (solo grupos)
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
@@ -40,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function cargarDatosExternos() {
         const archivosJSON = [
           //  '../arenas/js/ediciones/cuartaFecha/femenino/4ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/femenino/5ta.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/5ta.json',
             //'../arenas/js/ediciones/cuartaFecha/femenino/6ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/femenino/7ma.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/7ma.json',
             //'../arenas/js/ediciones/cuartaFecha/femenino/8va.json',
             //'../arenas/js/ediciones/cuartaFecha/masculino/4ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/masculino/5ta.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/5ta.json',
             //'../arenas/js/ediciones/cuartaFecha/masculino/6ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/masculino/7ma.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/7ma.json',
             //'../arenas/js/ediciones/cuartaFecha/masculino/8va.json'
         ];
         
@@ -596,4 +598,3 @@ document.addEventListener('DOMContentLoaded', function() {
         return setsGanados1 > setsGanados2 ? 1 : 2;
     }
 });
-
