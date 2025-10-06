@@ -283,7 +283,7 @@
           "equipo2": "Ganador P3",
           "fecha": "Domingo 13:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"6-4, 6-3"
       },
       {
          "equipo1": "1ro D",
@@ -299,14 +299,14 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo 16:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"1-0"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo 16:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"0-1"
       }
     ],
     "final": {
@@ -314,7 +314,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo 19:00",
           "resultado": "A definir",
-          "games":"A definir"
+          "games":"1-0"
     }
   }
 }
