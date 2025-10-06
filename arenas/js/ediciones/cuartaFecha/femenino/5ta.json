@@ -1,56 +1,41 @@
 {
-  "nombre": "5ta Categoría",
+  "nombre": "5ta Damas",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Antonella Zampini/Romina Castillo",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 2,
-          "GF": 27,
-          "GC": 26
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Cintia Lucero/Yasna Murga",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 24,
-          "GC": 32
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Nelida Cabezas/Vera",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 2,
-          "GF": 36,
-          "GC": 29
-        }
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": "29/07/25 19:00 hs",
-          "equipo1": "Zampini/Castillo",
-          "equipo2": "Cabezas/Vera",
-          "resultado": "6-4, 2-6, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Zampini/Castillo",
-          "equipo2": "Lucero/Murga",
-          "fecha": "30/07/25 18:30 hs",
-          "resultado": "6-3, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Lucero/Murga",
-          "equipo2": "Cabezas/Vera",
-          "fecha": "01/08/25 17:30 hs",
-          "resultado": "7-6, 2-6, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
         
       ]
@@ -59,51 +44,37 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Alejandra Soto/Rosalia Cruz",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 21,
-          "GC": 15
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Luisa Miranda/Lucia Marcial",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 13,
-          "GC": 9
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Flamenco Graciela/Martinez",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 2,
-          "GC": 12
-        }
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
       ],
       "partidos": [
         {
-          "equipo1": "Flamenco/Martinez",
-          "equipo2": "Soto/Cruz",
-          "fecha": "29/07/25 21:00 hs",
-          "resultado": "1-6, 1-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Flamenco/Martinez",
-          "equipo2": "Miranda/Marcial",
-          "fecha": "31/07/25 20:30 hs",
-          "resultado": "A confirmar"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Miranda/Marcial",
-          "equipo2": "Soto/Cruz",
-          "fecha": "31/07/25 20:30 hs",
-          "resultado": "6-7, 3-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -111,51 +82,37 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Daniela Martinez/Fernanda Martinez",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 27,
-          "GC": 23
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Tania Luna/Fernanda Polizzi",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 3,
-          "GF": 22,
-          "GC": 28
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Emilia Peix/Cutri",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 34,
-          "GC": 32
-        }
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
       ],
       "partidos": [
         {
-          "equipo1": "Luna/Polizzi",
-          "equipo2": "Peix/Cutri",
-          "fecha": "30/07/25 17:30 hs",
-          "resultado": "4-6, 6-4, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Luna/Polizzi",
-          "equipo2": "Martinez/Martinez",
-          "fecha": "31/07/25 22:30 hs",
-          "resultado": "4-6, 1-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Peix/Cutri",
-          "equipo2": "Martinez/Martinez",
-          "fecha": "01/08/25 18:30 hs",
-          "resultado": "6-7, 6-1, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -163,51 +120,37 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Paula Miranda/Luciana Romano",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 26,
-          "GC": 21
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Adelaida Vidart/Natalia Marcolini",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 3,
-          "GC": 12
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Silvina Vera/Lucila Sanz",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 1,
-          "SP": 2,
-          "GF": 18,
-          "GC": 14
-        }
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
       ],
       "partidos": [
         {
-          "equipo1": "Miranda/Romano",
-          "equipo2": "Vidart/Marcolini",
-          "fecha": "29/07/25 21:00 hs",
-          "resultado": "6-0, 6-3"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Vera/Sanz",
-          "equipo2": "Miranda/Romano",
-          "fecha": "1/08/25 18:30 hs",
-          "resultado": "6-0, 6-7, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Vera/Sanz",
-          "equipo2": "Vidart/Marcolini",
-          "fecha": "2/08/25 10:00 hs",
-          "resultado": "A confirmar"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -215,170 +158,111 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Fernanda Retuerto/Malvina Polizzi",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 0,
-          "GF": 26,
-          "GC": 19
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Giuliana Gimenez/Rocio Terrado",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 3,
-          "GF": 26,
-          "GC": 26
-        },
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Ayelen Carpio/Carolina Herrera",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 22,
-          "GC": 29
-        }
+          "nombre": "/",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
       ],
       "partidos": [
         {
-          "equipo1": "Gimenez/Terrado",
-          "equipo2": "Retuerto/Polizzi",
-          "fecha": "29/07/25 20:00 hs",
-          "resultado": "6-7, 4-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Carpio/Herrera",
-          "equipo2": "Retuerto/Polizzi",
-          "fecha": "30/07/25 20:30 hs",
-          "resultado": "6-7, 3-6"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Gimenez/Terrado",
-          "equipo2": "Carpio/Herrera",
-          "fecha": "31/07/25 22:30 hs",
-          "resultado": "3-6, 6-1, 7-6"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo F",
-      "equipos": [
-        {
-          "nombre": "Luciana Rodriguez/Cecilia Gersicich",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 3,
-          "SP": 3,
-          "GF": 34,
-          "GC": 30
-        },
-        {
-          "nombre": "Florencia Bianchi/Fernanda Treppo",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 1,
-          "SP": 2,
-          "GF": 14,
-          "GC": 17
-        },
-        {
-          "nombre": "Natalia Politi/Estela Moyano",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 16,
-          "GC": 17
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "Bianchi/Treppo",
-          "equipo2": "Rodriguez/Gersicich",
-          "fecha": "29/07/25 22:00 hs",
-          "resultado": "6-4, 2-6, 6-7"
-        },
-        {
-          "equipo1": "Politi/Moyano",
-          "equipo2": "Rodriguez/Gersicich",
-          "fecha": "01/08/25 22:30 hs",
-          "resultado": "2-6, 7-5, 7-6"
-        },
-        {
-          "equipo1": "Politi/Moyano",
-          "equipo2": "Bianchi/Treppo",
-          "fecha": "02/08/25 11:00 hs",
-          "resultado": "A confirmar"
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     }
     
   ],
-  "eliminatorias": {
+"eliminatorias": {
     "octavos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+         "equipo1": "2do A",
+          "equipo2": "2do D",
+          "fecha": "Sabado 20:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
       }
     ],
     "cuartos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 14:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+         "equipo1": "1ro E",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 14:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do E",
+          "fecha": "Domingo 15:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 15:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 19:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 19:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
-      "ganador": "/"
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 21:00 hs",
+          "resultado": "A definir",
+          "games":"A definir"
     }
   }
 }

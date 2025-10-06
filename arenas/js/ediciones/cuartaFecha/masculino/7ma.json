@@ -1,56 +1,41 @@
 {
-  "nombre": "7ma Categoría",
+  "nombre": "7ma Caballeros",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Nahuel Velazquez/Blas Sánchez",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 3,
-          "GF": 37,
-          "GC": 37
-        },
+          "nombre": "Ramiro Luna/Nicolas Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Sebastian Torres/Ruben Peix",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 32,
-          "GC": 19
-        },
+          "nombre": "Exequiel Cuellar/Nahuel Ambrosini",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Gonzalo Aguirre/Lucena",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 18,
-          "GC": 31
-        }
+          "nombre": "Martin Guaragna/Gabriel Gandolfi",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": "29/07/25 23:00 hs",
-          "equipo1": "Torres/Peix",
-          "equipo2": "Aguirre/Lucena",
-          "resultado": "6-1, 6-0"
+          "fecha": "Martes 22:00 hs",
+          "equipo1": "Exequiel Cuellar/Nahuel Ambrosini",
+          "equipo2": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Velazquez/Sánchez",
-          "equipo2": "Torres/Peix",
-          "fecha": "30/07/25 21:30 hs",
-          "resultado": "7-6, 5-7, 6-7"
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Martin Guaragna/Gabriel Gandolfi",
+          "equipo2": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Aguirre/Lucena",
-          "equipo2": "Velazquez/Sanchez",
-          "fecha": "31/07/25 18:30 hs",
-          "resultado": "4-6, 7-6, 6-7"
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "Exequiel Cuellar/Nahuel Ambrosini",
+          "equipo2": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "",
+          "games":"A definir"
         }
         
       ]
@@ -59,51 +44,36 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Ramiro Bordon/Francisco Bordon",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 19,
-          "GC": 17
-        },
+          "nombre": "Francisco Bordon/Ramiro Bordon",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Martin Guaragna/Federico Aliaga",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 0,
-          "SP": 4,
-          "GF": 8,
-          "GC": 24
-        },
+          "nombre": "Leandro Corrales/Luis Ruiz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Cristian Ventura/Carlos Barrionuevo",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 0,
-          "GF": 24,
-          "GC": 10
-        }
+          "nombre": "Miguel Lamas/Leandro Carracedo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Bordon/Bordon",
-          "equipo2": "Guaragna/Aliaga",
-          "fecha": "29/07/25 23:00 hs",
-          "resultado": "6-2, 6-3"
+          "fecha": "Miercoles 23:00 hs",
+          "equipo1": "Francisco Bordon/Ramiro Bordon",
+          "equipo2": "Leandro Corrales/Luis Ruiz",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Bordon/Bordon",
-          "equipo2": "Ventura/Barrionuevo",
-          "fecha": "31/07/25 18:30 hs",
-          "resultado": "3-6, 4-6"
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Leandro Corrales/Luis Ruiz",
+          "equipo2": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Ventura/Barrionuevo",
-          "equipo2": "Guaragna/Aliaga",
-          "fecha": "1/08/25 9:00 hs",
-          "resultado": "6-1, 6-2"
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Miguel Lamas/Leandro Carracedo",
+          "equipo2": "Francisco Bordon/Ramiro Bordon",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -111,51 +81,36 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Benjamin Martinez/Lara",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 18,
-          "GC": 16
-        },
+          "nombre": "Benjamin Martinez/Lucas Vera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Leonardo Cardozo/Mauro Olivera",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 2,
-          "GF": 28,
-          "GC": 21
-        },
+          "nombre": "Martin Spamer/Pablo Fiorotto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Exequiel Cuellar/Javier Arrieta",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 3,
-          "GC": 12
-        }
+          "nombre": "Joaquin Rojas/Esteban Costilla",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Cardozo/Olivera",
-          "equipo2": "Cuellar/Arrieta",
-          "fecha": "30/07/25 23:30 hs",
-          "resultado": "6-0, 6-3"
+          "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Benjamin Martinez/Lucas Vera",
+          "equipo2": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Cardozo/Olivera",
-          "equipo2": "Martinez/Lara",
-          "fecha": "31/07/25 20:30 hs",
-          "resultado": "7-5, 3-6, 6-7"
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Martin Spamer/Pablo Fiorotto",
+          "equipo2": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Cuellar/Arrieta",
-          "equipo2": "Martinez/Lara",
-          "fecha": "01/08/25 9:00 hs",
-          "resultado": "A confirmar"
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Joaquin Rojas/Esteban Costilla",
+          "equipo2": "Benjamin Martinez/Lucas Vera",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -163,51 +118,36 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Fernando Mariani/Federico Bustos",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 1,
-          "SP": 4,
-          "GF": 24,
-          "GC": 31
-        },
+          "nombre": "Mauro Olivera/Carlos Barrionuevo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Maximiliano Aperio/Bernardo Fiori",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 30,
-          "GC": 22
-        },
+          "nombre": "Bernardo Fiori/Maximiliano Aperio",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Emmanuel Larocca/Fabian Navarro",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 3,
-          "GF": 36,
-          "GC": 37
-        }
+          "nombre": "Enrique Romero/Marcos Allende",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Mariani/Bustos",
-          "equipo2": "Larocca/Navarro",
-          "fecha": "30/07/25 22:30 hs",
-          "resultado": "7-5, 6-7, 6-7"
+          "fecha": "Miercoles 23:00 hs",
+          "equipo1": "Mauro Olivera/Carlos Barrionuevo",
+          "equipo2": "Enrique Romero/Marcos Allende",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Aperio/Fiori",
-          "equipo2": "Larocca/Navarro",
-          "fecha": "1/08/25 23:30 hs",
-          "resultado": "5-7, 6-4, 7-6"
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Mauro Olivera/Carlos Barrionuevo",
+          "equipo2": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Mariani/Bustos",
-          "equipo2": "Aperio/Fiori",
-          "fecha": "2/08/25 14:00 hs",
-          "resultado": "3-6, 2-6"
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Enrique Romero/Marcos Allende",
+          "equipo2": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -215,51 +155,36 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "Lucas Vera/J. M. Gimenez",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 0,
-          "GF": 24,
-          "GC": 7
-        },
+          "nombre": "Simon Barila/Nahuel Romero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Martin Spamer/Pablo Fiorotto",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 0,
-          "SP": 4,
-          "GF": 8,
-          "GC": 24
-        },
+          "nombre": "Gaston Tapia/Mario Roldan",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Luis Ruiz/Zurita",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 2,
-          "SP": 2,
-          "GF": 16,
-          "GC": 17
-        }
+          "nombre": "Gonzalo Figueroa/Jesus Ferreyra",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Spammer/Fiorotto",
-          "equipo2": "Ruiz/Zurita",
-          "fecha": "30/07/25 23:30 hs",
-          "resultado": "2-6, 3-6"
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Simon Barila/Nahuel Romero",
+          "equipo2": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Vera/Gimenez",
-          "equipo2": "Spammer/Fiorotto",
-          "fecha": "31/07/25 19:30 hs",
-          "resultado": "6-2, 6-1"
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Gaston Tapia/Mario Roldan",
+          "equipo2": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Vera/Gimenez",
-          "equipo2": "Ruiz/Ojeda",
-          "fecha": "01/08/25 17:30 hs",
-          "resultado": "6-2, 6-2"
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Simon Barila/Nahuel Romero",
+          "equipo2": "Gaston Tapia/Mario Roldan",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -267,51 +192,36 @@
       "nombre": "Grupo F",
       "equipos": [
         {
-          "nombre": "Hector Rojo/Cristian Chalier",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 7
-        },
+          "nombre": "Fernando Mariani/Leonardo Cardozo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Agustin Ojeda/Aaron Pintos",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 4
-        },
+          "nombre": "Jorge Vera/Walter Arrua",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Rodrigo Fritz/Daniel Camargo",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 0,
-          "SP": 4,
-          "GF": 11,
-          "GC": 24
-        }
+          "nombre": "Esteban Sanchez/Carlos Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Rojo/Chalier",
-          "equipo2": "Fritz/Camargo",
-          "fecha": "30/07/25 20:30 hs",
-          "resultado": "6-4, 6-3"
+          "fecha": "Miercoles 17:00 hs",
+          "equipo1": "Esteban Sanchez/Carlos Gonzalez",
+          "equipo2": "Jorge Vera/Walter Arrua",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Ojeda/Pintos",
-          "equipo2": "Fritz/Camargo",
-          "fecha": "01/08/25 23:50 hs",
-          "resultado": "6-4, 6-0"
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "Jorge Vera/Walter Arrua",
+          "equipo2": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Rojo/Chalier",
-          "equipo2": "Ojeda/Pintos",
-          "fecha": "02/08/25 15:00 hs",
-          "resultado": "A confirmar"
+          "fecha": "Viernes 23:50 hs",
+          "equipo1": "Esteban Sanchez/Carlos Gonzalez",
+          "equipo2": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -319,51 +229,45 @@
       "nombre": "Grupo G",
       "equipos": [
         {
-          "nombre": "Sebastian Rubio/Gustavo Santana",
-          "PJ": 2,
-          "PG": 1,
-          "SG": 3,
-          "SP": 2,
-          "GF": 30,
-          "GC": 24
-        },
+          "nombre": "Blas Sanchez/Jorge Ugarte",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Gustavo Vera/Walter Carrizo",
-          "PJ": 2,
-          "PG": 2,
-          "SG": 4,
-          "SP": 1,
-          "GF": 32,
-          "GC": 21
-        },
+          "nombre": "Ruben Pedraza/Martin Aguila",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Marcos Allende/Nahuel Castro",
-          "PJ": 2,
-          "PG": 0,
-          "SG": 0,
-          "SP": 4,
-          "GF": 12,
-          "GC": 25
-        }
+          "nombre": "Horacio Bucci/Jose Retamar",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Luciano Baroni/Gonzalo Muñoz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
         {
-          "equipo1": "Vera/Carrizo",
-          "equipo2": "Allende/Castro",
-          "fecha": "30/07/25 16:30 hs",
-          "resultado": "6-1, 6-2"
+          "fecha": "Martes 23:00 hs",
+          "equipo1": "Blas Sanchez/Jorge Ugarte",
+          "equipo2": "Ruben Pedraza/Martin Aguila",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Rubio/Santana",
-          "equipo2": "Allende/Castro",
-          "fecha": "31/07/25 20:00 hs",
-          "resultado": "6-3, 6-1"
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Horacio Bucci/Jose Retamar",
+          "equipo2": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Vera/Carrizo",
-          "equipo2": "Rubio/Santana",
-          "fecha": "01/08/25 23:50 hs",
-          "resultado": "7-5, 6-7, 7-6"
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Viernes 15:00 hs",
+          "resultado": "",
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Viernes 23:50 hs",
+          "resultado": "",
+          "games":""
         }
       ]
     },
@@ -371,133 +275,42 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "Horacio Bucci/Jose Retamar",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 1,
-          "GF": 17,
-          "GC": 16
-        },
+          "nombre": "Sebastian Rubio/Gustavo Santana","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "Joaquin Rojas/Leandro Carracedo",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 1,
-          "SP": 2,
-          "GF": 16,
-          "GC": 17
-        },
+          "nombre": "Juan Valero/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-        "nombre": "Jose Muñoz/Bruno Trellini",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 4,
-          "GC": 12
-        },
+          "nombre": "Gustavo Vera/Walter Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "Justin Henninger/Miguel Lamas",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 4
-        }
+          "nombre": "Walter Gimenez/Alexis Beltran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
-        {
-          "equipo1": "Bucci/Retamar",
-          "equipo2": "Rojas/Carracedo",
-          "fecha": "01/08/25 21:30 hs",
-          "resultado": "4-6, 6-4, 7-6"
+       {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Sebastian Rubio/Gustavo Santana",
+          "equipo2": "Juan Valero/A confirmar",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Muñoz/Trellini",
-          "equipo2": "Henninger/Lamas",
-          "fecha": "01/08/25 19:30 hs",
-          "resultado": "6-3, 6-1"
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Gustavo Vera/Walter Carrizo",
+          "equipo2": "Walter Gimenez/Alexis Beltran",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "equipo1": "Bucci/Retamar",
-          "equipo2": "Muñoz/Trellini",
-          "fecha": "02/08/25 13:00 hs",
-          "resultado": "A confirmar"
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 12:00 hs",
+          "resultado": "",
+          "games":""
         },
         {
-          "equipo1": "Henninger/Lamas",
-          "equipo2": "Rojas/Carracedo",
-          "fecha": "02/08/25 16:00 hs",
-          "resultado": "A confirmar"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo I",
-      "equipos": [
-        {
-          "nombre": "Mario Roldan/Gaston Tapia",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 7,
-          "GC": 12
-        },
-        {
-          "nombre": "Perez/Salvaña",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 7
-        },
-        {
-          "nombre": "Nahuel Romero/Simon Barila",
-          "PJ": 1,
-          "PG": 1,
-          "SG": 2,
-          "SP": 0,
-          "GF": 12,
-          "GC": 6
-        },
-        {
-          "nombre": "Pablo Almada/Diego Garcia",
-          "PJ": 1,
-          "PG": 0,
-          "SG": 0,
-          "SP": 2,
-          "GF": 6,
-          "GC": 12
-        }
-      ],
-      "partidos": [
-        {
-          "equipo1": "Roldan/Tapia",
-          "equipo2": "Perez/Salvaña",
-          "fecha": "01/08/25 23:30 hs",
-          "resultado": "4-6, 3-6"
-        },
-        {
-          "equipo1": "Romero/Barila",
-          "equipo2": "Almada/Garcia",
-          "fecha": "01/08/25 20:30 hs",
-          "resultado": "3-6, 3-6"
-        },
-        {
-        "equipo1": "Perez/Salvaña",
-          "equipo2": "Almada/Garcia",
-          "fecha": "02/08/25 10:00 hs",
-          "resultado": "A confirmar"
-        },
-        {
-          "equipo1": "Romero/Barila",
-          "equipo2": "Roldan/Tapia",
-          "fecha": "02/08/25 12:00 hs",
-          "resultado": "A confirmar"
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 14:00 hs",
+          "resultado": "",
+          "games":""
         }
       ]
     }
@@ -505,130 +318,130 @@
  "eliminatorias": {
   "dieciseisavos": [
       {
-         "equipo1": "Partido 1 - Bordon/Bordon",
-          "equipo2": "2do Zona C",
-          "fecha": "Sabado 17:00 hs",
+         "equipo1": "",
+          "equipo2": "",
+          "fecha": "Sabado",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 2 - Larocca/Navarro",
-          "equipo2": "Velazquez/Sanchez",
-          "fecha": "Sabado 17:00 hs",
+         "equipo1": "",
+          "equipo2": "",
+          "fecha": "Sabado",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],  
   "octavos": [
       {
-        "equipo1": "Partido 3 - Torres/Peix",
-          "equipo2": "Ganador Partido 1",
+        "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 4 - 1ro Zona I",
+         "equipo1": "",
           "equipo2": "1ro Zona H",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 5 - Vera/Gimenez",
-          "equipo2": "Rubio/Santana",
+         "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 6 - 2do Zona F",
-          "equipo2": "Aperio/Fiori",
+         "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-        "equipo1": "Partido 7 - 1ro Zona C",
-          "equipo2": "2do Ruiz/Zurita",
+        "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 8 - 2do Zona H",
-          "equipo2": "1ro Zona F",
+         "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 9 - Vera/Carrizo",
+         "equipo1": "",
           "equipo2": "2do Zona I",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 10 - Ganador Partido 2",
-          "equipo2": "Ventura/Barrionuevo",
+         "equipo1": "",
+          "equipo2": "",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],
     "cuartos": [
       {
-         "equipo1": "Partido 11 - Ganador Partido 3",
-          "equipo2": "Ganador Partido 4",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo 10:00 hs",
           "resultado": "A definir",
-        "ganador": "/"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 12 - Ganador Partido 5",
-          "equipo2": "Ganador Partido 6",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo 10:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 13 - Ganador Partido 7",
-          "equipo2": "Ganador Partido 8",
+         "equipo1": "GanadorP5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo 11:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 14 - Ganador Partido 9",
-          "equipo2": "Ganador Partido 10",
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
           "fecha": "Domingo 11:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],
     "semis": [
       {
-         "equipo1": "Partido 15 - Ganador Partido 11",
-          "equipo2": "Ganador Partido 12",
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       },
       {
-         "equipo1": "Partido 16 - Ganador Partido 13",
-          "equipo2": "Ganador Partido 14",
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
       }
     ],
     "final": {
-        "equipo1": "Ganador Partido 15",
-          "equipo2": "Ganador Partido 16",
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
           "fecha": "Domingo 20:00 hs",
           "resultado": "A definir",
-        "ganador": "A definir"
+          "games":"A definir"
     }
   }
 }

@@ -20,6 +20,13 @@ const edicionesInfo = {
         lugar: "Arena",
         descripcion: "Tercera fecha 2025",
         path: "js/ediciones/tercerFecha"
+    },
+    "cuartaFecha": {
+        nombre: "4ta Fecha - Torneo Arenas 2025",
+        fecha: "07/10 a 19/10 2025",
+        lugar: "Arena",
+        descripcion: "Cuarta fecha 2025",
+        path: "js/ediciones/cuartaFecha"
     }
 };
 
@@ -966,7 +973,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
-    seleccionarFecha('tercerFecha');
+    seleccionarFecha('cuartaFecha');
     
     // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
     setTimeout(() => {
