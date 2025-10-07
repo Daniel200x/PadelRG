@@ -136,15 +136,15 @@
       "partidos": [
         {
           "fecha": "Viernes 18:00 hs Cancha 1",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "Ines Sosa/Paula Miranda",
+          "equipo2": "Natalia Politi/Estela Moyano",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Jueves 17:00 hs Cancha 1",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "Sabrina Morales/Rosalia Cruz",
+          "equipo2": "Natalia Politi/Estela Moyano",
           "resultado": "",
           "games":"A definir"
         },
