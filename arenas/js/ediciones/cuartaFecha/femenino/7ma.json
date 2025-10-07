@@ -5,35 +5,35 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Agustina Quezada/Vanesa Iglesias",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Karina Girollet/Lucia Ramirez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Silvina Davalos/Karen Beamonte",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 2",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Silvina Davalos/Karen Beamonte",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 12:00 hs Cancha 2",
+          "equipo1": "Karina Girollet/Lucia Ramirez",
+          "equipo2": "Silvina Davalos/Karen Beamonte",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 17:00 hs Cancha 1",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
           "games":"A definir"
         }
@@ -44,35 +44,35 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Antonela Tarchini/Lorena Saldivia",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Viviana Nehue/Silvana Guerrero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Emilce Duca/Noelia Cagnelutti",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:00 hs Cancha 2",
+          "equipo1": "Antonela Tarchini/Lorena Saldivia",
+          "equipo2": "Emilce Duca/Noelia Cagnelutti",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs Cancha 1",
+          "equipo1": "Viviana Nehue/Silvana Guerrero",
+          "equipo2": "Antonela Tarchini/Lorena Saldivia",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 14:00 hs Cancha 2",
+          "equipo1": "Emilce Duca/Noelia Cagnelutti",
+          "equipo2": "Viviana Nehue/Silvana Guerrero",
           "resultado": "",
           "games":"A definir"
         }
@@ -82,35 +82,35 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Oriana Martinez/Dana Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Pamela Lirola/Victoria Visñuk",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Andrea Graneros/Florencia Graneros",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 2",
+          "equipo1": "Oriana Martinez/Dana Martinez",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 12:00 hs Cancha 1",
+          "equipo1": "Pamela Lirola/Victoria Visñuk",
+          "equipo2": "Oriana Martinez/Dana Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 15:00 hs Cancha 2",
+          "equipo1": "Pamela Lirola/Victoria Visñuk",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
           "resultado": "",
           "games":"A definir"
         }
@@ -120,35 +120,35 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Marcia Mella/Belen Rojas",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Emilia Velazco/Vanesa Vera",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Paula Elstner/Graciela Perez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs Cancha 2",
+          "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 11:00 hs Cancha 2",
+          "equipo1": "Marcia Mella/Belen Rojas",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 15:00 hs Cancha 1",
+          "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Marcia Mella/Belen Rojas",
           "resultado": "",
           "games":"A definir"
         }
@@ -158,37 +158,47 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Violeta Lopez/Jimena Ramadori",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Soledad Silva/Vangy Sura",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Macarena Oyarzun/Laura Gomez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Emilse Molina/Iliana Luggren",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:00 hs Cancha 2",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Soledad Silva/Vangy Sura",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 2",
+          "equipo1": "Macarena Oyarzun/Laura Gomez",
+          "equipo2": "Emilse Molina/Iliana Luggren",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 09:00 hs Cancha 1",
           "resultado": "",
-          "games":"A definir"
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 09:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
         }
       ]
     }

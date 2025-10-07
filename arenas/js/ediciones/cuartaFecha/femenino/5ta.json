@@ -5,35 +5,35 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Antonella Zampini/Romina Castillo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Fernanda Retuerto/Daniela Bergondi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Florencia Bianchi/Giuliana Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 1",
+          "equipo1": "Fernanda Retuerto/Daniela Bergondi",
+          "equipo2": "Florencia Bianchi/Giuliana Gimenez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 14:00 hs Cancha 1",
+          "equipo1": "Antonella Zampini/Romina Castillo",
+          "equipo2": "Fernanda Retuerto/Daniela Bergondi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 16:00 hs Cancha 1",
+          "equipo1": "Florencia Bianchi/Giuliana Gimenez",
+          "equipo2": "Antonella Zampini/Romina Castillo",
           "resultado": "",
           "games":"A definir"
         }
@@ -44,35 +44,35 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Luciana Rodriguez/Mariana Pratto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Silvina Vera/Lucila Saenz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Cecilia Gersicich/Carla Ortega",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 1",
+          "equipo1": "Luciana Rodriguez/Mariana Pratto",
+          "equipo2": "Cecilia Gersicich/Carla Ortega",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 13:00 hs Cancha 2",
+          "equipo1": "Silvina Vera/Lucila Saenz",
+          "equipo2": "Luciana Rodriguez/Mariana Pratto",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 16:00 hs Cancha 2",
+          "equipo1": "Cecilia Gersicich/Carla Ortega",
+          "equipo2": "Silvina Vera/Lucila Saenz",
           "resultado": "",
           "games":"A definir"
         }
@@ -82,35 +82,35 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Daniela Martinez/Alejandra Soto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Antonella Domeneh/Griselda Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Adelaida Vidart/Sara Cortez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 23:00 hs Cancha 1",
+          "equipo1": "Daniela Martinez/Alejandra Soto",
+          "equipo2": "Antonella Domeneh/Griselda Gimenez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs Cancha 1",
+          "equipo1": "Antonella Domeneh/Griselda Gimenez",
+          "equipo2": "Adelaida Vidart/Sara Cortez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 16:00 hs Cancha 2",
+          "equipo1": "Adelaida Vidart/Sara Cortez",
+          "equipo2": "Daniela Martinez/Alejandra Soto",
           "resultado": "",
           "games":"A definir"
         }
@@ -120,37 +120,47 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Ines Sosa/Paula Miranda",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Natalia Politi/Estela Moyano",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Sabrina Morales/Rosalia Cruz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Erika Martinez/Sandra Ackerman",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 18:00 hs Cancha 1",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Jueves 17:00 hs Cancha 1",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 13:00 hs Cancha 2",
           "resultado": "",
-          "games":"A definir"
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 17:00 hs Cancha 1",
+          "resultado": "",
+          "games":""
         }
       ]
     },
@@ -158,37 +168,47 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Fernanda Martinez/Rocio Terrado",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Cintia Lucero/Barbara Rigoni",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Luciana Romano/Yazna Murga",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Evelin Tissera/Natalia Bequi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 16:00 hs Cancha 1",
+          "equipo1": "Fernanda Martinez/Rocio Terrado",
+          "equipo2": "Cintia Lucero/Barbara Rigoni",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:00 hs Cancha 2",
+          "equipo1": "Luciana Romano/Yazna Murga",
+          "equipo2": "Evelin Tissera/Natalia Bequi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 10:00 hs Cancha 2",
           "resultado": "",
-          "games":"A definir"
+          "games":""
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 15:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
         }
       ]
     }
