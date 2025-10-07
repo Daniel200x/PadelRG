@@ -17,21 +17,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Martes 22:00 hs",
+          "fecha": "Martes 22:00 hs Cancha 2",
           "equipo1": "Exequiel Cuellar/Nahuel Ambrosini",
           "equipo2": "Martin Guaragna/Gabriel Gandolfi",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Miercoles 22:00 hs",
+          "fecha": "Miercoles 22:00 hs Cancha 1",
           "equipo1": "Martin Guaragna/Gabriel Gandolfi",
           "equipo2": "Ramiro Luna/Nicolas Gonzalez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 22:00 hs",
+          "fecha": "Jueves 22:00 hs Cancha 2",
           "equipo1": "Exequiel Cuellar/Nahuel Ambrosini",
           "equipo2": "Ramiro Luna/Nicolas Gonzalez",
           "resultado": "",
@@ -55,21 +55,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 23:00 hs",
+          "fecha": "Miercoles 23:00 hs Cancha 1",
           "equipo1": "Francisco Bordon/Ramiro Bordon",
           "equipo2": "Leandro Corrales/Luis Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 21:00 hs",
+          "fecha": "Viernes 21:00 hs Cancha 2",
           "equipo1": "Leandro Corrales/Luis Ruiz",
           "equipo2": "Miguel Lamas/Leandro Carracedo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Sabado 12:00 hs",
+          "fecha": "Sabado 12:00 hs Cancha 1",
           "equipo1": "Miguel Lamas/Leandro Carracedo",
           "equipo2": "Francisco Bordon/Ramiro Bordon",
           "resultado": "",
@@ -92,21 +92,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 20:00 hs",
+          "fecha": "Miercoles 20:00 hs Cancha 2",
           "equipo1": "Benjamin Martinez/Lucas Vera",
           "equipo2": "Martin Spamer/Pablo Fiorotto",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 23:00 hs",
+          "fecha": "Viernes 23:00 hs Cancha 2",
           "equipo1": "Martin Spamer/Pablo Fiorotto",
           "equipo2": "Joaquin Rojas/Esteban Costilla",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Sabado 13:00 hs",
+          "fecha": "Sabado 13:00 hs Cancha 1",
           "equipo1": "Joaquin Rojas/Esteban Costilla",
           "equipo2": "Benjamin Martinez/Lucas Vera",
           "resultado": "",
@@ -129,21 +129,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 23:00 hs",
+          "fecha": "Miercoles 23:00 hs Cancha 2",
           "equipo1": "Mauro Olivera/Carlos Barrionuevo",
           "equipo2": "Enrique Romero/Marcos Allende",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 22:00 hs",
+          "fecha": "Viernes 22:00 hs Cancha 1",
           "equipo1": "Mauro Olivera/Carlos Barrionuevo",
           "equipo2": "Bernardo Fiori/Maximiliano Aperio",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Sabado 11:00 hs",
+          "fecha": "Sabado 11:00 hs Cancha 1",
           "equipo1": "Enrique Romero/Marcos Allende",
           "equipo2": "Bernardo Fiori/Maximiliano Aperio",
           "resultado": "",
@@ -166,21 +166,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Jueves 21:00 hs",
+          "fecha": "Jueves 21:00 hs Cancha 1",
           "equipo1": "Simon Barila/Nahuel Romero",
           "equipo2": "Gonzalo Figueroa/Jesus Ferreyra",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 21:00 hs",
+          "fecha": "Viernes 21:00 hs Cancha 1",
           "equipo1": "Gaston Tapia/Mario Roldan",
           "equipo2": "Gonzalo Figueroa/Jesus Ferreyra",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Sabado 14:00 hs",
+          "fecha": "Sabado 14:00 hs Cancha 2",
           "equipo1": "Simon Barila/Nahuel Romero",
           "equipo2": "Gaston Tapia/Mario Roldan",
           "resultado": "",
@@ -203,21 +203,21 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 17:00 hs",
+          "fecha": "Miercoles 17:00 hs Cancha 2",
           "equipo1": "Esteban Sanchez/Carlos Gonzalez",
           "equipo2": "Jorge Vera/Walter Arrua",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 22:00 hs",
+          "fecha": "Jueves 22:00 hs Cancha 1",
           "equipo1": "Jorge Vera/Walter Arrua",
           "equipo2": "Fernando Mariani/Leonardo Cardozo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 23:50 hs",
+          "fecha": "Viernes 23:50 hs Cancha 1",
           "equipo1": "Esteban Sanchez/Carlos Gonzalez",
           "equipo2": "Fernando Mariani/Leonardo Cardozo",
           "resultado": "",
@@ -242,14 +242,14 @@
       ],
       "partidos": [
         {
-          "fecha": "Martes 23:00 hs",
+          "fecha": "Martes 23:00 hs Cancha 2",
           "equipo1": "Blas Sanchez/Jorge Ugarte",
           "equipo2": "Ruben Pedraza/Martin Aguila",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Jueves 21:00 hs",
+          "fecha": "Jueves 21:00 hs Cancha 2",
           "equipo1": "Horacio Bucci/Jose Retamar",
           "equipo2": "Luciano Baroni/Gonzalo Muñoz",
           "resultado": "",
@@ -258,14 +258,14 @@
         {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "Viernes 15:00 hs",
+          "fecha": "Viernes 15:00 hs Cancha 1",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "Viernes 23:50 hs",
+          "fecha": "Viernes 23:50 hs Cancha 2",
           "resultado": "",
           "games":""
         }
@@ -285,14 +285,14 @@
       ],
       "partidos": [
        {
-          "fecha": "Viernes 23:00 hs",
+          "fecha": "Viernes 23:00 hs Cancha 1",
           "equipo1": "Sebastian Rubio/Gustavo Santana",
           "equipo2": "Juan Valero/A confirmar",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Viernes 20:00 hs",
+          "fecha": "Viernes 20:00 hs Cancha 1",
           "equipo1": "Gustavo Vera/Walter Carrizo",
           "equipo2": "Walter Gimenez/Alexis Beltran",
           "resultado": "",
@@ -301,14 +301,14 @@
         {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "Sabado 12:00 hs",
+          "fecha": "Sabado 12:00 hs Cancha 2",
           "resultado": "",
           "games":""
         },
         {
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
-          "fecha": "Sabado 14:00 hs",
+          "fecha": "Sabado 14:00 hs Cancha 1",
           "resultado": "",
           "games":""
         }
