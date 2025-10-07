@@ -138,16 +138,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function cargarDatosPartidos() {
         const archivosJSON = [
-            '../arenas/js/ediciones/cuartaFecha/femenino/4ta.json',
+           // '../arenas/js/ediciones/cuartaFecha/femenino/4ta.json',
             '../arenas/js/ediciones/cuartaFecha/femenino/5ta.json',
-            '../arenas/js/ediciones/cuartaFecha/femenino/6ta.json',
+            //'../arenas/js/ediciones/cuartaFecha/femenino/6ta.json',
             '../arenas/js/ediciones/cuartaFecha/femenino/7ma.json',
-            '../arenas/js/ediciones/cuartaFecha/femenino/8va.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/4ta.json',
+            //'../arenas/js/ediciones/cuartaFecha/femenino/8va.json',
+            //'../arenas/js/ediciones/cuartaFecha/masculino/4ta.json',
             '../arenas/js/ediciones/cuartaFecha/masculino/5ta.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/6ta.json',
+            //'../arenas/js/ediciones/cuartaFecha/masculino/6ta.json',
             '../arenas/js/ediciones/cuartaFecha/masculino/7ma.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/8va.json'
+            //'../arenas/js/ediciones/cuartaFecha/masculino/8va.json'
         ];
         
         const promesasCarga = archivosJSON.map(archivo => {
