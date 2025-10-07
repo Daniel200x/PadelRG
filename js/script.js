@@ -619,7 +619,7 @@ function handleHashAnchor() {
                 description: '"Técnica mata Galan.." 😉 ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria'
             },
              {
-                image: 'img/publi/pino.jpeg',
+                image: 'img/publi/pino.jpg',
                 link: 'https://www.instagram.com/padelpino/',
                 title: 'Padel Pino',
                 description: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino.'
