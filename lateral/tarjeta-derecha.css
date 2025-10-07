@@ -1,0 +1,144 @@
+/* tarjeta-derecha.css */
+.tarjeta-derecha-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.tarjeta-derecha {
+    width: 350px;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    pointer-events: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: calc(50vw - 100px);
+    margin-right: 10px;
+}
+
+.contenido-tarjeta-derecha {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-tarjeta-derecha {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.imagen-tarjeta-derecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efectos hover */
+.tarjeta-derecha:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+.tarjeta-derecha:hover .imagen-tarjeta-derecha img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .tarjeta-derecha {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tarjeta-derecha {
+        width: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tarjeta-derecha {
+        width: 200px;
+    }
+    
+    .tarjeta-derecha-container {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .tarjeta-derecha {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tarjeta-derecha-container {
+        padding-right: 10px;
+    }
+    
+    .tarjeta-derecha {
+        width: 150px;
+        height: 75vh;
+    }
+    
+    .contenido-tarjeta-derecha {
+        padding: 12px;
+    }
+    
+    .tarjeta-derecha {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+    .tarjeta-derecha {
+        width: 130px;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta-derecha {
+        width: 110px;
+        height: 65vh;
+    }
+    
+    .contenido-tarjeta-derecha {
+        padding: 8px;
+    }
+    
+    .tarjeta-derecha {
+        margin-right: 2px;
+    }
+}
+
+/* Ocultar en pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .tarjeta-derecha-container {
+        display: none;
+    }
+}

@@ -17,80 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
     let isPlaying = true;
     let countdownValue = 10;
     
-    // Array de publicidades disponibles
-    const publicidades = [
-        {
-            id: 'ad-1',
-            title: 'RPA Amoblamientos',
-            sponsor: 'Muebles a medida',
-            message: 'Los mejores muebles para tu hogar en Tierra del Fuego. Calidad y diseño en cada pieza.',
-            imageUrl: '../img/muebles.jpeg',
-            link: 'https://www.instagram.com/rpamoblamientos.tdf/'
-        },
-        {
-            id: 'ad-2',
-            title: 'Padel Pino',
-            sponsor: 'Clases de Padel',
-            message: 'Clases de Padel personalizadas para todos los niveles, comunicate al 2964-474217 y no te olvides de seguirnos en Instagram @padelpino',
-            imageUrl: '../img/publi/pino.jpeg',
-            link: 'https://www.instagram.com/padelpino/'
-        },
-        {
-            id: 'ad-3',
-            title: 'Coren Indumentaria',
-            sponsor: 'Ropa deportiva',
-            message: '"Técnica mata Galan.." 😉 ... pero con el outfit correcto, cualquiera puede ganar. Coren indumentaria, toda la ropa de los PRO en un solo lugar. Seguinos en Instagram y enterate de todas las novedades! @corenindumentaria',
-            imageUrl: '../img/publi/coren.jpg',
-            link: 'https://www.instagram.com/corenindumentaria/'
-        },
-        {
-            id: 'ad-4',
-            title: 'Fix Car',
-            sponsor: 'Mecanica integral',
-            message: 'Necesitas mecanico? Contactanos al 2964-629986. Realizamos Service, diagnosticos, transmision, frenos, distribucion y mucho mas. Podes encontrarnos en Pasaje Roca 1266 en nuestro horario de atención de 10:00 a 21:30 hs.',
-            imageUrl: '../img/publi/fixm.jpg',
-            link: 'https://www.instagram.com/fixcar369/'
-        },
-        {
-            id: 'ad-5',
-            title: 'Kira TDF',
-            sponsor: 'Ropa ',
-            message: 'Tendencia, estilo y comodidad: Todo en Kira Store. Ropa femenina con promos exclusivas, 3 cuotas sin interes o descuentos en efectivo/transferencia. Te Esperamos en Viedma 445 y en redes como @kira.tdf ❤️',
-            imageUrl: '../img/publi/kira.jpeg',
-            link: 'https://www.instagram.com/kira.tdf/'
-        },
-        {
-            id: 'ad-6',
-            title: 'Fritz Automotores',
-            sponsor: 'Automotores',
-            message: 'Fritz Automotores. Servicios de venta automotor y gestoria, comunicate con nosotros al 2964-600301 y no olvides de seguirnos en redes @fritzautomotores',
-            imageUrl: '../img/publi/fritz.jpeg',
-            link: 'https://www.instagram.com/fritzautomotores/'
-        },
-        {
-            id: 'ad-7',
-            title: 'Trexx TDF',
-            sponsor: 'Distribuidor Oficial',
-            message: 'Encontra las mejores palas, indumentaria, pelotas y accesorios para tu juego. ¡Distribuidor oficial de Trexx en TDF!',
-            imageUrl: '../img/publi/trexx.jpeg',
-            link: 'https://www.instagram.com/trexx.tdf/'
-        }
-    ];
+    
 
     // Array de imágenes para las tarjetas laterales
     const sideCardImages = [
-        '../img/promos/sand.gif',
-        '../img/promos/fernet.gif',
+        
+        
         '../img/promos/thorne.gif',
         '../img/promos/kira.gif',
         '../img/promos/rpa.gif',
         '../img/promos/pino.gif',
-        '../img/promos/pichanga.gif',
+        
         '../img/promos/trexx.gif',
         '../img/promos/coren.gif',
         '../img/promos/rccars.gif',
-        '../img/promos/pizzas.gif',
-        '../img/promos/padel.jpg'
+        
+        '../img/promos/padel.jpg',
+        '../img/promos/ultra.gif',
+        '../img/promos/fritz.gif',
+        '../img/promos/fix.gif'
+
     ];
 
     // Función para actualizar las imágenes de las tarjetas laterales
@@ -173,42 +119,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Función para crear array de items con publicidades cada 5 partidos
-    function crearItemsConPublicidad(partidos) {
-        const items = [];
-        let adIndex = 0; // Índice para rotar entre las publicidades
-        
-        partidos.forEach((partido, index) => {
-            // Agregar el partido
-            items.push({
-                type: 'match',
-                data: partido,
-                originalIndex: index
-            });
-            
-            // Agregar publicidad cada 5 partidos (después del 5to, 10mo, etc.)
-            if ((index + 1) % 3 === 0 && publicidades.length > 0) {
-                // Seleccionar publicidad rotativamente
-                const publicidad = publicidades[adIndex % publicidades.length];
-                items.push({
-                    type: 'ad',
-                    data: publicidad
-                });
-                adIndex++; // Incrementar para la siguiente publicidad
-            }
+   function crearItemsConPublicidad(partidos) {
+    const items = [];
+    
+    partidos.forEach((partido, index) => {
+        // Agregar solo el partido (sin publicidades)
+        items.push({
+            type: 'match',
+            data: partido,
+            originalIndex: index
         });
-        
-        console.log(`Se crearon ${items.length} items (${partidos.length} partidos + ${Math.floor(partidos.length / 3)} publicidades)`);
-        return items;
-    }
+    });
+    
+    console.log(`Se crearon ${items.length} items (solo partidos)`);
+    return items;
+}
+
     
     function cargarDatosPartidos() {
         const archivosJSON = [
-            //'../segundoSet/js/ediciones/tercerFecha/femenino/4ta.json',
-            '../segundoSet/js/ediciones/tercerFecha/femenino/6ta.json',
-            '../segundoSet/js/ediciones/tercerFecha/femenino/8va.json',
-            '../segundoSet/js/ediciones/tercerFecha/masculino/4ta.json',
-            '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json',
-            '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json'
+            '../arenas/js/ediciones/cuartaFecha/femenino/4ta.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/5ta.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/6ta.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/7ma.json',
+            '../arenas/js/ediciones/cuartaFecha/femenino/8va.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/4ta.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/5ta.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/6ta.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/7ma.json',
+            '../arenas/js/ediciones/cuartaFecha/masculino/8va.json'
         ];
         
         const promesasCarga = archivosJSON.map(archivo => {
@@ -264,8 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 console.log(`Mostrando partidos del día: ${diaNombre}`);
                 console.log(`Partidos filtrados:`, filteredMatches);
-                console.log(`Publicidades disponibles:`, publicidades.length);
-                
+console.log(`Publicidades deshabilitadas en tarjeta central`);                
                 // Crear array de items con publicidades
                 itemsDisplay = crearItemsConPublicidad(filteredMatches);
                 
@@ -698,11 +636,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Actualizar barra de progreso (solo partidos reales)
         progressBar.style.width = `${((partidoRealIndex + 1) / filteredMatches.length) * 100}%`;
         
-        if (item.type === 'match') {
+        
             showMatch(item.data);
-        } else if (item.type === 'ad') {
-            showAdvertisement(item.data);
-        }
+        
         
         // Reiniciar cuenta atrás
         resetCountdown();
@@ -756,28 +692,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
     
-    function showAdvertisement(adData) {
-        // Crear tarjeta de publicidad
-        matchDisplay.innerHTML = `
-            <div class="ad-card fade-in">
-                <div class="ad-header">
-                    <div class="ad-badge">PUBLICIDAD</div>
-                    <div class="ad-sponsor">${adData.sponsor}</div>
-                </div>
-                <div class="ad-body">
-                    <div class="ad-imagee">
-                        <img src="${adData.imageUrl}" alt="${adData.title}" />
-                    </div>
-                    <div class="ad-content">
-                        <h3 class="ad-title">${adData.title}</h3>
-                        <p class="ad-message">${adData.message}</p>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        `;
-    }
+  
     
     // Función para calcular el índice real del partido (sin publicidades)
     function calcularIndicePartidoReal(indexActual) {

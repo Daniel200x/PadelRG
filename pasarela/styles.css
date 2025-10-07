@@ -85,6 +85,17 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+.logo-img1 {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
 /* Efecto hover en logos */
 .logo-img:hover {
     opacity: 1;
@@ -328,113 +339,7 @@ header p {
     font-size: 1.8rem;
 }
 
-/* Tarjetas de publicidad */
-.ad-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    margin-bottom: 30px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    color: white;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-}
 
-.ad-header {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ad-badge {
-    background: #FF8C00;
-    padding: 6px 12px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.ad-sponsor {
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.ad-body {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.ad-imagee {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;    
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.ad-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.ad-content {
-    text-align: center;
-}
-
-.ad-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.ad-message {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-
-.ad-link {
-    display: inline-block;
-    background: white;
-    color: #667eea;
-    padding: 10px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.ad-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.ad-footer {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.ad-timer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.countdown-highlight {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-weight: bold;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -868,8 +773,8 @@ header p {
 }
 
 .side-card {
-    width: 350px; /* Ancho ajustado */
-    height: 80vh;
+    width: 320px; /* Ancho ajustado */
+    height: 75vh;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
