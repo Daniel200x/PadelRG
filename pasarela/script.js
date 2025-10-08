@@ -712,7 +712,29 @@ function obtenerImagenEquipo(nombreEquipo) {
         // Ejemplos - reemplaza con tus equipos reales
         'Walter Rumi/Andres Agnes': '../img/equipos/walter-rumi-andres-agnes.jpg',
         'Matias Saldaño/Daniel Veliz': '../img/equipos/matias-saldano-daniel-veliz.jpg',
-        'Equipo C': '../img/equipos/equipo-c.jpg',
+        'Jorge Vera/Walter Arrua': '../img/equipos/jorge-vera-walter-arrua.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+        'Gustavo Vera/Walter Carrizo': '../img/equipos/gustavo-vera-walter-carrizo.jpg',
+
+        
+        
+        
+        
+        
+        
         // Agrega más equipos según necesites
     };
     
