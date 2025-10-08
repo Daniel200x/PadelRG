@@ -1056,3 +1056,81 @@ header p {
 .match-body {
     padding: 10px 10px; /* Aumentado padding vertical */
 }
+/* Footer con imágenes */
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border-top: 2px solid rgba(255, 140, 0, 0.3);
+}
+
+.footer-images-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-image {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-image:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustes responsive para el footer */
+@media (max-width: 768px) {
+    .footer-images-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .footer-image {
+        height: 50px;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-images-container {
+        gap: 10px;
+    }
+    
+    .footer-image {
+        height: 40px;
+    }
+    
+    .main-footer {
+        padding: 8px 0;
+    }
+}
+
+/* Ajustar el padding inferior del body para que el contenido no se superponga con el footer */
+body {
+    padding-bottom: 90px; /* Ajusta según la altura de tu footer */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-bottom: 70px;
+    }
+}
