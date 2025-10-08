@@ -46,33 +46,30 @@ document.addEventListener('DOMContentLoaded', function() {
         
         console.log('Actualizando tarjetas laterales...');
         console.log('Elementos encontrados:', leftCardImage, rightCardImage);
-        
-        // Seleccionar imágenes aleatorias del array
-        const randomLeftIndex = Math.floor(Math.random() * sideCardImages.length);
-        let randomRightIndex;
-        
-        // Asegurarse de que las imágenes sean diferentes
-        do {
-            randomRightIndex = Math.floor(Math.random() * sideCardImages.length);
-        } while (randomRightIndex === randomLeftIndex && sideCardImages.length > 1);
-        
-        // Actualizar las imágenes
-        if (leftCardImage) {
-            leftCardImage.src = sideCardImages[randomLeftIndex];
-            leftCardImage.alt = `Imagen lateral izquierda ${randomLeftIndex + 1}`;
-            console.log('Imagen izquierda asignada:', sideCardImages[randomLeftIndex]);
-        } else {
-            console.error('No se encontró leftCardImage');
-        }
-        
-        if (rightCardImage) {
-            rightCardImage.src = sideCardImages[randomRightIndex];
-            rightCardImage.alt = `Imagen lateral derecha ${randomRightIndex + 1}`;
-            console.log('Imagen derecha asignada:', sideCardImages[randomRightIndex]);
-        } else {
-            console.error('No se encontró rightCardImage');
-        }
+       
+     // IMAGEN FIJA PARA LA TARJETA IZQUIERDA
+    const imagenFijaIzquierda = '../img/promos/padel.jpg'; // Cambia por la ruta de tu imagen fija    
+
+    // Seleccionar imagen aleatoria solo para la derecha
+    let randomRightIndex = Math.floor(Math.random() * sideCardImages.length);
+    
+    // Actualizar las imágenes
+    if (leftCardImage) {
+        leftCardImage.src = imagenFijaIzquierda;
+        leftCardImage.alt = 'Promoción fija';
+        console.log('Imagen izquierda FIJA asignada:', imagenFijaIzquierda);
+    } else {
+        console.error('No se encontró leftCardImage');
     }
+    
+    if (rightCardImage) {
+        rightCardImage.src = sideCardImages[randomRightIndex];
+        rightCardImage.alt = `Imagen lateral derecha ${randomRightIndex + 1}`;
+        console.log('Imagen derecha asignada:', sideCardImages[randomRightIndex]);
+    } else {
+        console.error('No se encontró rightCardImage');
+    }
+}
 
     // Configurar event listeners para los botones de control
     prevBtn.addEventListener('click', showPreviousItem);
