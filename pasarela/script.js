@@ -711,7 +711,7 @@ function obtenerImagenEquipo(nombreEquipo) {
     const mapaImagenes = {
         // Ejemplos - reemplaza con tus equipos reales
         'Walter Rumi/Andres Agnes': '../img/equipos/walter-rumi-andres-agnes.jpg',
-        'Equipo B': '../img/equipos/equipo-b.jpg',
+        'Matias Saldaño/Daniel Veliz': '../img/equipos/matias-saldano-daniel-veliz.jpg',
         'Equipo C': '../img/equipos/equipo-c.jpg',
         // Agrega más equipos según necesites
     };
