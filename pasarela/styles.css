@@ -741,11 +741,11 @@ header p {
 }
 
 .side-card.left-card {
-    transform: translateX(40px);
+    transform: translateX(70px);
 }
 
 .side-card.right-card {
-    transform: translateX(-40px);
+    transform: translateX(-70px);
 }
 
 .side-card-content {
@@ -800,13 +800,7 @@ header p {
 }
 
 
-.side-card.left-card {
-    margin-left: 20px; /* Aumentado para más espacio del borde izquierdo */
-}
 
-.side-card.right-card {
-    margin-right: 20px; /* Aumentado para más espacio del borde derecho */
-}
 
 /* Asegurar que el contenido principal se ajuste entre las tarjetas laterales */
 .container {
