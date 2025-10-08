@@ -741,11 +741,11 @@ header p {
 }
 
 .side-card.left-card {
-    transform: translateX(70px);
+    transform: translateX(170px);
 }
 
 .side-card.right-card {
-    transform: translateX(-70px);
+    transform: translateX(-170px);
 }
 
 .side-card-content {
