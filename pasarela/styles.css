@@ -808,111 +808,76 @@ header p {
 }
 
 
-/* Responsive para el nuevo diseño */
+/* Ajustes responsive para las tarjetas laterales */
 @media (max-width: 1400px) {
     .side-card {
-        width: 240px;
-    }
-    
-    .container {
-        width: calc(100% - 540px); /* Ajustado proporcionalmente */
+        width: 220px; /* Reducido de 240px */
     }
 }
 
 @media (max-width: 1200px) {
     .side-card {
-        width: 200px;
-    }
-    
-    .container {
-        width: calc(100% - 460px); /* Ajustado proporcionalmente */
+        width: 180px; /* Reducido de 200px */
     }
 }
 
 @media (max-width: 1024px) {
     .side-card {
-        width: 180px;
-    }
-    
-    .side-cards-container {
-        padding: 0 30px;
-    }
-    
-    .container {
-        width: calc(100% - 420px); /* Ajustado proporcionalmente */
+        width: 160px; /* Reducido de 180px */
     }
 }
 
 @media (max-width: 900px) {
     .side-card {
-        width: 160px;
-    }
-    
-    .container {
-        width: calc(100% - 380px); /* Ajustado proporcionalmente */
+        width: 140px; /* Reducido de 160px */
     }
 }
 
 @media (max-width: 768px) {
-    .side-cards-container {
-        padding: 0 20px;
-    }
-    
     .side-card {
-        width: 140px;
-        height: 75vh;
-    }
-    
-    .side-card.left-card {
-        margin-left: 10px;
-    }
-    
-    .side-card.right-card {
-        margin-right: 10px;
-    }
-    
-    .container {
-        width: calc(100% - 320px); /* Ajustado proporcionalmente */
-        min-width: 350px;
-    }
-}
-
-@media (max-width: 640px) {
-    .side-card {
-        width: 120px;
-        height: 70vh;
-    }
-    
-    .container {
-        width: calc(100% - 280px); /* Ajustado proporcionalmente */
-        min-width: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .side-card {
-        width: 100px;
-        height: 65vh;
+        width: 120px; /* Reducido de 140px */
+        height: 65vh; /* Reducido de 75vh */
     }
     
     .side-card-content {
         padding: 8px;
     }
-    
-    .side-card.left-card {
-        margin-left: 5px;
-    }
-    
-    .side-card.right-card {
-        margin-right: 5px;
-    }
-    
-    .container {
-        width: calc(100% - 220px); /* Ajustado proporcionalmente */
-        min-width: 250px;
+}
+
+@media (max-width: 640px) {
+    .side-card {
+        width: 100px; /* Reducido de 120px */
+        height: 60vh; /* Reducido de 70vh */
     }
 }
 
+@media (max-width: 480px) {
+    .side-card {
+        width: 90px; /* Reducido de 100px */
+        height: 55vh; /* Reducido de 65vh */
+    }
+    
+    .side-card-content {
+        padding: 6px;
+    }
+}
+
+/* Opcional: Si quieres que las imágenes GIF animadas se vean mejor */
+.side-card-image img[src*=".gif"] {
+    image-rendering: auto; /* Para mantener la calidad de los GIFs */
+}
+
+/* Para imágenes con relaciones de aspecto muy diferentes */
+.side-card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; /* Fondo blanco para contraste */
+}
 /* Ocultar tarjetas laterales en pantallas muy pequeñas */
 @media (max-width: 360px) {
     .side-cards-container {
