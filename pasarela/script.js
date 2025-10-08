@@ -645,53 +645,95 @@ console.log(`Publicidades deshabilitadas en tarjeta central`);
     }
     
     function showMatch(partido) {
-        // Determinar si el partido tiene resultado
-        const tieneResultado = partido.estado === 'completed';
-        const resultadoDisplay = tieneResultado ? partido.resultado : 'A JUGAR';
-        
-        // Formatear la información de fecha y hora para mostrar
-        let infoTiempo = '';
-        if (partido.dia !== "Por definir" && partido.horario !== "Por definir") {
-            infoTiempo = `${partido.dia} - ${partido.horario}`;
-        } else if (partido.dia !== "Por definir") {
-            infoTiempo = partido.dia;
-        } else if (partido.horario !== "Por definir") {
-            infoTiempo = partido.horario;
-        } else {
-            infoTiempo = "Por definir";
-        }
-        
-        // Crear tarjeta de partido - SOLO MUESTRA EL RESULTADO DEL CAMPO GAMES
-        matchDisplay.innerHTML = `
-            <div class="match-card fade-in">
-                <div class="match-header">
-                    <div class="match-category">${partido.categoria}</div>
-                    <div class="match-zone">${partido.zona}</div>
-                </div>
-                <div class="match-body">
-                    <div class="teams-container">
-                        <div class="team">
-                            <div class="team-name">${partido.equipo1}</div>
-                        </div>
-                        <div class="vs">VS</div>
-                        <div class="team">
-                            <div class="team-name">${partido.equipo2}</div>
-                        </div>
-                    </div>
-                    <div class="match-result ${partido.estado}">
-                        ${resultadoDisplay}
-                    </div>
-                </div>
-                <div class="match-footer">
-                    <div class="match-time">
-                        <i class="far fa-clock"></i>
-                        ${infoTiempo}
-                    </div>
-                </div>
-            </div>
-        `;
+    // Determinar si el partido tiene resultado
+    const tieneResultado = partido.estado === 'completed';
+    const resultadoDisplay = tieneResultado ? partido.resultado : 'A JUGAR';
+    
+    // Formatear la información de fecha y hora para mostrar
+    let infoTiempo = '';
+    if (partido.dia !== "Por definir" && partido.horario !== "Por definir") {
+        infoTiempo = `${partido.dia} - ${partido.horario}`;
+    } else if (partido.dia !== "Por definir") {
+        infoTiempo = partido.dia;
+    } else if (partido.horario !== "Por definir") {
+        infoTiempo = partido.horario;
+    } else {
+        infoTiempo = "Por definir";
     }
     
+    // Obtener URLs de imágenes de los equipos
+    const imagenEquipo1 = obtenerImagenEquipo(partido.equipo1);
+    const imagenEquipo2 = obtenerImagenEquipo(partido.equipo2);
+    
+    // Crear tarjeta de partido con imágenes
+    matchDisplay.innerHTML = `
+        <div class="match-card fade-in">
+            <div class="match-header">
+                <div class="match-category">${partido.categoria}</div>
+                <div class="match-zone">${partido.zona}</div>
+            </div>
+            <div class="match-body">
+                <div class="teams-container">
+                    <div class="team-with-image">
+                        ${imagenEquipo1 ? 
+                            `<img src="${imagenEquipo1}" alt="${partido.equipo1}" class="team-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik00MCAyMEM0My4zMTM3IDIwIDQ2IDIyLjY4NjMgNDYgMjZDNDYgMjkuMzEzNyA0My4zMTM3IDMyIDQwIDMyQzM2LjY4NjMgMzIgMzQgMjkuMzEzNyAzNCAyNkMzNCAyMi42ODYzIDM2LjY4NjMgMjAgNDAgMjBaTTQ4IDM2SDUyQzU2LjQyIDM2IDYwIDM5LjU4IDYwIDQ0VjUyQzYwIDUzLjEwNDYgNTkuMTA0NiA1NCA1OCA1NEgyMkMyMC44OTU0IDU0IDIwIDUzLjEwNDYgMjAgNTJWNDRDMjAgMzkuNTggMjMuNTggMzYgMjggMzZIMzJDMzIgMzMuNzkgMzMuNzkgMzIgMzYgMzJINDRDNDYuMjEgMzIgNDggMzMuNzkgNDggMzZaIiBmaWxsPSIjOEM4QzhDIi8+Cjwvc3ZnPgo=';">` : 
+                            `<div class="team-image placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>`
+                        }
+                        <div class="team-name">${partido.equipo1}</div>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team-with-image">
+                        ${imagenEquipo2 ? 
+                            `<img src="${imagenEquipo2}" alt="${partido.equipo2}" class="team-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik00MCAyMEM0My4zMTM3IDIwIDQ2IDIyLjY4NjMgNDYgMjZDNDYgMjkuMzEzNyA0My4zMTM3IDMyIDQwIDMyQzM2LjY4NjMgMzIgMzQgMjkuMzEzNyAzNCAyNkMzNCAyMi42ODYzIDM2LjY4NjMgMjAgNDAgMjBaTTQ4IDM2SDUyQzU2LjQyIDM2IDYwIDM5LjU4IDYwIDQ0VjUyQzYwIDUzLjEwNDYgNTkuMTA0NiA1NCA1OCA1NEgyMkMyMC44OTU0IDU0IDIwIDUzLjEwNDYgMjAgNTJWNDRDMjAgMzkuNTggMjMuNTggMzYgMjggMzZIMzJDMzIgMzMuNzkgMzMuNzkgMzIgMzYgMzJINDRDNDYuMjEgMzIgNDggMzMuNzkgNDggMzZaIiBmaWxsPSIjOEM4QzhDIi8+Cjwvc3ZnPgo=';">` : 
+                            `<div class="team-image placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>`
+                        }
+                        <div class="team-name">${partido.equipo2}</div>
+                    </div>
+                </div>
+                <div class="match-result ${partido.estado}">
+                    ${resultadoDisplay}
+                </div>
+            </div>
+            <div class="match-footer">
+                <div class="match-time">
+                    <i class="far fa-clock"></i>
+                    ${infoTiempo}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Función para obtener la URL de la imagen del equipo
+function obtenerImagenEquipo(nombreEquipo) {
+    // Mapeo de nombres de equipos a URLs de imágenes
+    const mapaImagenes = {
+        // Ejemplos - reemplaza con tus equipos reales
+        'Walter Rumi/Andres Agnes': '../img/equipos/walter-rumi-andres-agnes.jpg',
+        'Equipo B': '../img/equipos/equipo-b.jpg',
+        'Equipo C': '../img/equipos/equipo-c.jpg',
+        // Agrega más equipos según necesites
+    };
+    
+    // Buscar coincidencia exacta
+    if (mapaImagenes[nombreEquipo]) {
+        return mapaImagenes[nombreEquipo];
+    }
+    
+    // Buscar coincidencia parcial (útil si los nombres no son exactos)
+    for (const [key, value] of Object.entries(mapaImagenes)) {
+        if (nombreEquipo.includes(key) || key.includes(nombreEquipo)) {
+            return value;
+        }
+    }
+    
+    // Si no se encuentra imagen, devolver null para mostrar placeholder
+    return null;
+}
   
     
     // Función para calcular el índice real del partido (sin publicidades)

@@ -992,3 +992,92 @@ header p {
     color: #7f8c8d;
     font-size: 1.2rem;
 }
+/* Estilos para imágenes de equipos */
+.team-with-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.team-image {
+    width: 200px;  /* Aumentado de 80px a 120px */
+    height: 200px; /* Aumentado de 80px a 120px */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #FF8C00; /* Borde más grueso */
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.team-image.placeholder {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #dee2e6;
+}
+
+.team-image.placeholder i {
+    font-size: 3rem; /* Aumentado de 2rem a 3rem */
+    color: #6c757d;
+}
+/* Aumentar también el tamaño del nombre del equipo */
+.team-name {
+    font-weight: bold;
+    font-size: 1.1rem; /* Aumentado ligeramente */
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Ajustes responsive para imágenes grandes de equipos */
+@media (max-width: 768px) {
+    .team-image {
+        width: 100px;  /* Aumentado de 60px a 100px en tablets */
+        height: 100px; /* Aumentado de 60px a 100px en tablets */
+    }
+    
+    .team-image.placeholder i {
+        font-size: 2.5rem; /* Aumentado de 1.5rem a 2.5rem */
+    }
+    
+    .team-name {
+        font-size: 1.2rem; /* Aumentado ligeramente */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-image {
+        width: 90px;   /* Aumentado de 50px a 90px en móviles */
+        height: 90px;  /* Aumentado de 50px a 90px en móviles */
+    }
+    
+    .team-image.placeholder i {
+        font-size: 2rem; /* Aumentado de 1.5rem a 2rem */
+    }
+    
+    .team-name {
+        font-size: 1.1rem;
+        min-height: 50px;
+    }
+}
+
+/* Ajustar el contenedor de equipos para las imágenes más grandes */
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Aumentado margen inferior */
+}
+
+/* Aumentar el padding del match-body para más espacio */
+.match-body {
+    padding: 40px 30px; /* Aumentado padding vertical */
+}
