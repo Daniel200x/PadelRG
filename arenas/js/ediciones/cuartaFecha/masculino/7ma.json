@@ -44,7 +44,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Francisco Bordon/Ramiro Bordon",
+          "nombre": "Francisco Bordon/Benjamin Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Leandro Corrales/Luis Ruiz",
@@ -56,7 +56,7 @@
       "partidos": [
         {
           "fecha": "Miercoles 23:00 hs Cancha 1",
-          "equipo1": "Francisco Bordon/Ramiro Bordon",
+          "equipo1": "Francisco Bordon//Benjamin Martinez",
           "equipo2": "Leandro Corrales/Luis Ruiz",
           "resultado": "",
           "games":"A definir"
@@ -71,7 +71,7 @@
         {
           "fecha": "Sabado 12:00 hs Cancha 1",
           "equipo1": "Miguel Lamas/Leandro Carracedo",
-          "equipo2": "Francisco Bordon/Ramiro Bordon",
+          "equipo2": "Francisco Bordon//Benjamin Martinez",
           "resultado": "",
           "games":"A definir"
         }
@@ -81,7 +81,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Benjamin Martinez/Lucas Vera",
+          "nombre": "Jose Muñoz/Juan Villanueva",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Martin Spamer/Pablo Fiorotto",
@@ -93,7 +93,7 @@
       "partidos": [
         {
           "fecha": "Miercoles 20:00 hs Cancha 2",
-          "equipo1": "Benjamin Martinez/Lucas Vera",
+          "equipo1": "Jose Muñoz/Juan Villanueva",
           "equipo2": "Martin Spamer/Pablo Fiorotto",
           "resultado": "",
           "games":"A definir"
@@ -108,7 +108,7 @@
         {
           "fecha": "Sabado 13:00 hs Cancha 1",
           "equipo1": "Joaquin Rojas/Esteban Costilla",
-          "equipo2": "Benjamin Martinez/Lucas Vera",
+          "equipo2": "Jose Muñoz/Juan Villanueva",
           "resultado": "",
           "games":"A definir"
         }
@@ -277,7 +277,7 @@
         {
           "nombre": "Sebastian Rubio/Gustavo Santana","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Juan Valero/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+          "nombre": "Pablo Alegre/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Gustavo Vera/Walter Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
@@ -287,7 +287,7 @@
        {
           "fecha": "Viernes 23:00 hs Cancha 1",
           "equipo1": "Sebastian Rubio/Gustavo Santana",
-          "equipo2": "Juan Valero/A confirmar",
+          "equipo2": "Pablo Alegre/A confirmar",
           "resultado": "",
           "games":"A definir"
         },
