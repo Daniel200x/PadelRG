@@ -79,6 +79,7 @@ body {
     height: 160px;
     object-fit: contain;
     border-radius: 10px;
+    padding: 10px 10px 10px; /* Espacio a los lados */
   
 }
 
@@ -118,7 +119,7 @@ header {
     justify-content: space-between; /* Distribuir espacio entre elementos */
     align-items: center; /* Centrar verticalmente */
     width: 100%; /* Ocupar todo el ancho disponible */
-    padding: 20px 20px; /* Espacio a los lados */
+    padding: 80px 10px 10px; /* Espacio a los lados */
 }
 header .logo-padelrg,
 header .logo-sancor,
