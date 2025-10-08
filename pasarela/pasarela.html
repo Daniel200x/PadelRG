@@ -6,84 +6,77 @@
     <title>Pasarela de Resultados - Pádel RG</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-    <div class="container">
-        <!-- Logos alrededor de la tarjeta -->
-        <div class="logo-top-left">
-            <img src="/img/logo1.png" alt="Complejo Deportivo" class="logo-img">
-        </div>
-        <div class="logo-top-right">
-            <img src="/img/2set.jpeg" alt="Torneo Pádel" class="logo-img">
-        </div>
-      
-        
-        <header>
-            <h1>PADELRG.COM.AR</h1>
-            <p>Segundo Set - Pádel RG</p>
-        </header>
-        
-
-<!-- Tarjetas laterales para imágenes -->
-<div class="side-cards-container">
-    <div class="side-card left-card">
-        <div class="side-card-content">
-            <div class="side-card-image">
-                <img id="leftCardImage" src="" alt="Imagen lateral izquierda">
-            </div>
-        </div>
+    <!-- Logos alrededor de la tarjeta -->
+    <div class="logo-top-left">
+        <img src="/img/logo1.png" alt="Complejo Deportivo" class="logo-img">
+    </div>
+    <div class="logo-top-right">
+        <img src="/img/2set.jpeg" alt="Torneo Pádel" class="logo-img">
     </div>
     
-    <div class="side-card right-card">
-        <div class="side-card-content">
-            <div class="side-card-image">
-                <img id="rightCardImage" src="" alt="Imagen lateral derecha">
+    <!-- Tarjetas laterales para imágenes -->
+    <div class="side-cards-container">
+        <div class="side-card left-card">
+            <div class="side-card-content">
+                <div class="side-card-image">
+                    <img id="leftCardImage" src="" alt="Imagen lateral izquierda">
+                </div>
             </div>
         </div>
-    </div>
-</div>
         
-        <!-- Controles ocultos (pero funcionales) -->
-        <div class="controls hidden">
-            <button class="control-btn" id="prevBtn">
-                <i class="fas fa-chevron-left"></i> Anterior
-            </button>
-            <button class="control-btn play-pause" id="playPauseBtn">
-                <i class="fas fa-pause"></i> Pausar
-            </button>
-            <button class="control-btn" id="nextBtn">
-                Siguiente <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-         
-        <div id="matchDisplay">
-            <div class="loading">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p>Cargando resultados...</p>
+        <!-- CONTENEDOR PRINCIPAL (entre las tarjetas laterales) -->
+        <div class="container">
+            <header>
+                <img src="/img/qr.png" class="logo-img1">
+                <h1>PADELRG.COM.AR</h1>
+                
+            </header>
+            
+            <!-- Controles ocultos (pero funcionales) -->
+            <div class="controls hidden">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <button class="control-btn play-pause" id="playPauseBtn">
+                    <i class="fas fa-pause"></i> Pausar
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+             
+            <div id="matchDisplay">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Cargando resultados...</p>
+                </div>
+            </div>
+           
+           
+            
+            <!-- Panel de información oculto -->
+            <div class="info-panel hidden">
+                <p>Partido <span id="currentMatch">0</span> de <span id="totalMatches">0</span></p>
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+                <p id="autoChangeInfo">Cambio automático en: <span id="countdown">10</span> segundos</p>
             </div>
         </div>
-       <!-- Espacio de publicidad -->
-<div id="publicidad-container"></div>
-        <!-- Panel de información oculto -->
-        <div class="info-panel hidden">
-            <p>Partido <span id="currentMatch">0</span> de <span id="totalMatches">0</span></p>
-            <div class="progress-bar">
-                <div class="progress" id="progressBar"></div>
+        <!-- FIN DEL CONTENEDOR PRINCIPAL -->
+        
+        <div class="side-card right-card">
+            <div class="side-card-content">
+                <div class="side-card-image">
+                    <img id="rightCardImage" src="" alt="Imagen lateral derecha">
+                </div>
             </div>
-            <p id="autoChangeInfo">Cambio automático en: <span id="countdown">10</span> segundos</p>
         </div>
     </div>
 
     <script src="script.js"></script>
-    <script>
-  // Cargar publicidad
-  fetch('../publicidad/publicidad.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('publicidad-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error cargando publicidad:', error));
-</script>
+    
 </body>
 </html>

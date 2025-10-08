@@ -128,6 +128,8 @@ header p {
     margin-bottom: 30px;
     transition: transform 0.5s ease, opacity 0.5s ease;
     border: 3px solid rgba(255, 255, 255, 0.2);
+    /* Añade o modifica esta propiedad para controlar la altura: */
+    min-height: 400px; /* Cambia este valor según necesites */
 }
 
 .match-header {
@@ -153,13 +155,18 @@ header p {
 
 .match-body {
     padding: 30px;
+     /* Para controlar la altura del contenido: */
+    min-height: 250px; /* Ajusta según necesites */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
 }
 
 .teams-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .team {
@@ -193,18 +200,18 @@ header p {
 .vs {
     font-weight: bold;
     color: #7f8c8d;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .match-result {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin: 20px 0;
-    padding: 15px;
+    margin: 10px 0;
+    padding: 5px;
     border-radius: 15px;
     background: #f8f9fa;
-    min-height: 70px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +230,7 @@ header p {
 .match-footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     background: #f8f9fa;
     border-top: 1px solid #e9ecef;
     font-size: 1.1rem;
@@ -483,11 +490,7 @@ header p {
         padding: 20px;
     }
     
-    .teams-container {
-        flex-direction: column;
-        gap: 15px;
-        margin-bottom: 15px;
-    }
+   
     
     .team {
         width: 100%;
@@ -768,12 +771,11 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px; /* Aumentado de 20px a 40px para más espacio lateral */
     box-sizing: border-box;
 }
-
 .side-card {
-    width: 320px; /* Ancho ajustado */
+    width: 280px; /* Ancho ajustado */
     height: 75vh;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
@@ -788,96 +790,121 @@ header p {
     
     /* Asegurar que no se salga de la pantalla */
     position: relative;
-    max-width: calc(50vw - 100px); /* Máximo 50% del viewport menos margen */
+    max-width: calc(50vw - 120px); /* Ajustado para el nuevo espaciado */
 }
 
+
 .side-card.left-card {
-    margin-left: 10px; /* Usar margin en lugar de transform */
+    margin-left: 20px; /* Aumentado para más espacio del borde izquierdo */
 }
 
 .side-card.right-card {
-    margin-right: 10px; /* Usar margin en lugar de transform */
+    margin-right: 20px; /* Aumentado para más espacio del borde derecho */
 }
 
-.side-card-content {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+/* Asegurar que el contenido principal se ajuste entre las tarjetas laterales */
+.container {
+    max-width: 800px;
+    width: calc(100% - 600px); /* Calculado para ocupar el espacio entre las tarjetas laterales */
+    min-width: 400px; /* Ancho mínimo para mantener la legibilidad */
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.side-card-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f5f5f5;
-}
 
-.side-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-/* Efectos hover para las tarjetas laterales - SIN MOVIMIENTO HORIZONTAL */
-.side-card:hover {
-    /* Eliminamos el transform: translateX(0) para que no se mueva */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    transform: scale(1.02); /* Solo escala, no movimiento horizontal */
-}
-
-.side-card:hover .side-card-image img {
-    transform: scale(1.05);
-}
-
-/* Responsive para tarjetas laterales - CORREGIDO */
+/* Responsive para el nuevo diseño */
 @media (max-width: 1400px) {
     .side-card {
-        width: 250px;
+        width: 240px;
+    }
+    
+    .container {
+        width: calc(100% - 540px); /* Ajustado proporcionalmente */
     }
 }
 
 @media (max-width: 1200px) {
     .side-card {
-        width: 220px;
+        width: 200px;
+    }
+    
+    .container {
+        width: calc(100% - 460px); /* Ajustado proporcionalmente */
     }
 }
 
 @media (max-width: 1024px) {
     .side-card {
-        width: 200px;
+        width: 180px;
     }
     
     .side-cards-container {
-        padding: 0 15px;
+        padding: 0 30px;
+    }
+    
+    .container {
+        width: calc(100% - 420px); /* Ajustado proporcionalmente */
     }
 }
 
 @media (max-width: 900px) {
     .side-card {
-        width: 180px;
+        width: 160px;
+    }
+    
+    .container {
+        width: calc(100% - 380px); /* Ajustado proporcionalmente */
     }
 }
 
 @media (max-width: 768px) {
     .side-cards-container {
-        padding: 0 10px;
+        padding: 0 20px;
     }
     
     .side-card {
-        width: 150px;
+        width: 140px;
         height: 75vh;
     }
     
+    .side-card.left-card {
+        margin-left: 10px;
+    }
+    
+    .side-card.right-card {
+        margin-right: 10px;
+    }
+    
+    .container {
+        width: calc(100% - 320px); /* Ajustado proporcionalmente */
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .side-card {
+        width: 120px;
+        height: 70vh;
+    }
+    
+    .container {
+        width: calc(100% - 280px); /* Ajustado proporcionalmente */
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-card {
+        width: 100px;
+        height: 65vh;
+    }
+    
     .side-card-content {
-        padding: 12px;
+        padding: 8px;
     }
     
     .side-card.left-card {
@@ -887,31 +914,10 @@ header p {
     .side-card.right-card {
         margin-right: 5px;
     }
-}
-
-@media (max-width: 640px) {
-    .side-card {
-        width: 130px;
-        height: 70vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .side-card {
-        width: 110px;
-        height: 65vh;
-    }
     
-    .side-card-content {
-        padding: 8px;
-    }
-    
-    .side-card.left-card {
-        margin-left: 2px;
-    }
-    
-    .side-card.right-card {
-        margin-right: 2px;
+    .container {
+        width: calc(100% - 220px); /* Ajustado proporcionalmente */
+        min-width: 250px;
     }
 }
 
@@ -920,20 +926,11 @@ header p {
     .side-cards-container {
         display: none;
     }
-}
-
-/* Asegurar que el contenido principal no se superponga */
-.container {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 10;
     
-    /* Añadir márgenes laterales para evitar superposición */
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+    .container {
+        width: 100%; /* Ocupa todo el ancho cuando no hay tarjetas laterales */
+        min-width: auto;
+    }
 }
 
 /* Ajustar logos para que no se superpongan */
@@ -1074,10 +1071,10 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px; /* Aumentado margen inferior */
+    margin-bottom: 15px; /* Aumentado margen inferior */
 }
 
 /* Aumentar el padding del match-body para más espacio */
 .match-body {
-    padding: 40px 30px; /* Aumentado padding vertical */
+    padding: 10px 10px; /* Aumentado padding vertical */
 }
