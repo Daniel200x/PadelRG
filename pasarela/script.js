@@ -32,7 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/promos/coren.gif',
         '../img/promos/rccars.gif',
         
-        '../img/promos/padel.jpg',
+        '../img/publi/norte.png',
+        '../img/publi/infinito.jpeg',
+        '../img/publi/choperas.jpeg',
+        '../img/publi/poseidon.jpeg',
+        '../img/publi/trucha.png',
+        '../img/publi/ibiza.jpeg',
+        '../img/publi/andina.jpeg',
+        '../img/publi/forza.jpeg',
         '../img/promos/ultra.gif',
         '../img/promos/fritz.gif',
         '../img/promos/fix.gif'
