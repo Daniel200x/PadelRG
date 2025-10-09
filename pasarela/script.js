@@ -22,16 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array de imágenes para las tarjetas laterales
     const sideCardImages = [
         
+         '../img/publi/norte.png',
+        '../img/publi/infinito.jpeg',
+        '../img/publi/choperas.jpeg',
+        '../img/publi/poseidon.jpeg',
+        '../img/publi/trucha.png',
+        '../img/publi/ibiza.jpeg',
+        '../img/publi/andina.jpeg',
+        '../img/publi/forza.jpeg',
+
         
+        '../img/promos/ultra.gif',
         '../img/promos/thorne.gif',
         '../img/promos/kira.gif',
         '../img/promos/rpa.gif',
         '../img/promos/pino.gif',
-        
+        '../img/promos/fritz.gif',
         '../img/promos/trexx.gif',
         '../img/promos/coren.gif',
         '../img/promos/rccars.gif',
-        
+        '../img/promos/fix.gif',
+
         '../img/publi/norte.png',
         '../img/publi/infinito.jpeg',
         '../img/publi/choperas.jpeg',
@@ -40,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/ibiza.jpeg',
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
-        '../img/promos/ultra.gif',
-        '../img/promos/fritz.gif',
-        '../img/promos/fix.gif'
+        
+        
+        
 
     ];
 
@@ -92,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateSideCards();
         
         // Cambiar imágenes cada 30 segundos
-        setInterval(updateSideCards, 30000);
+        setInterval(updateSideCards, 10000);
     }, 1000);
     
     // Función para determinar qué día mostrar
@@ -743,14 +754,13 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Enrique Romero/Marcos Allende': '../img/equipos/eromero-mallende.jpg',
         'Ruben Pedraza/Martin Aguila': '../img/equipos/rpedraza-maguila.jpg',
         'Emilio Sanchez/Ruben Garin': '../img/equipos/esanchez-rgarin.jpg',
-        
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Franco Maero/Nicolas Gonzalez': '../img/equipos/fmaero-ngonzalez.jpg',
+        'Braian Lizarraga/Federico Martinez': '../img/equipos/blizarraga-fmartinez.jpg',
+        'Jorge Carabajal/Ignacio Carabajal/': '../img/equipos/jcarabajal-icarabajal.jpg',
+        'Daniela Martinez/Alejandra Soto': '../img/equipos/dmartinez-asoto.jpg',
+        'Antonella Domeneh/Griselda Gimenez': '../img/equipos/adomeneh-ggimenez.jpg',
+        'Federico Bossio/Santiago David': '../img/equipos/fbossio-sdavid.jpg',
+        'Dario Chacon/Marcelo Trangoni': '../img/equipos/dchacon-mtrangoni.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
