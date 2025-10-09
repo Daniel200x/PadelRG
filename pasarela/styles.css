@@ -771,7 +771,7 @@ header p {
     height: 100%;
     object-fit: contain; /* Cambiado de 'cover' a 'contain' para mostrar la imagen completa */
     border-radius: 8px;
-    background: white;
+    background: transparent;
 }
 
 /* Tarjetas laterales para imágenes - CORREGIDO PARA NO SALIRSE */
@@ -785,7 +785,7 @@ header p {
 .side-card {
     width: 260px; /* Reducido de 280px */
     height: 70vh; /* Reducido de 75vh */
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     overflow: hidden;
