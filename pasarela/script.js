@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
          '../img/publi/norberta.jpg',
+         '../img/publi/disena.jpeg',
+        '../img/publi/otra.jpeg',
+        '../img/publi/coiron.jpeg',
 
 
         '../img/promos/ultra.gif',
@@ -53,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
         '../img/publi/norberta.jpg',
+        '../img/publi/disena.jpeg',
+        '../img/publi/otra.jpeg',
+        '../img/publi/coiron.jpeg',
         
         
         
