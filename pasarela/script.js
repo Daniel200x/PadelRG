@@ -770,7 +770,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Federico Bossio/Santiago David': '../img/equipos/fbossio-sdavid.jpg',
         'Dario Chacon/Marcelo Trangoni': '../img/equipos/dchacon-mtrangoni.jpg',
         'Pablo Gomez/Bruno Sirgo': '../img/equipos/pgomez-bsirgo.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Emilce Duca/Noelia Cagnelutti': '../img/equipos/educa-ncagne.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
