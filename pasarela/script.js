@@ -775,7 +775,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Sabrina Morales/Rosalia Cruz': '../img/equipos/smorales-rcruz.jpg',
         'Natalia Politi/Estela Moyano': '../img/equipos/-.jpg',
         'Erika Martinez/Sandra Ackerman': '../img/equipos/emartinez-sacker.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Andrea Graneros/Florencia Graneros': '../img/equipos/agraneros-fgraneros.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
