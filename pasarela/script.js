@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/ibiza.jpeg',
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
+         '../img/publi/norberta.jpeg',
 
 
         '../img/promos/ultra.gif',
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/ibiza.jpeg',
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
+        '../img/publi/norberta.jpeg',
         
         
         
