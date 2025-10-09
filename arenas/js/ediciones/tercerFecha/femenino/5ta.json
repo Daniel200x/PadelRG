@@ -36,21 +36,24 @@
       "partidos": [
         {
           "fecha": "29/07/25 19:00 hs",
-          "equipo1": "Zampini/Castillo",
-          "equipo2": "Cabezas/Vera",
-          "resultado": "6-4, 2-6, 6-7"
+          "equipo1": "Antonella Zampini/Romina Castillo",
+          "equipo2": "Nelida Cabezas/Vera",
+          "resultado": "1-2",
+          "games":"6-4, 2-6, 6-7"
         },
         {
-          "equipo1": "Zampini/Castillo",
-          "equipo2": "Lucero/Murga",
+          "equipo1": "Antonella Zampini/Romina Castillo",
+          "equipo2": "Cintia Lucero/Yasna Murga",
           "fecha": "30/07/25 18:30 hs",
-          "resultado": "6-3, 7-6"
+          "resultado": "2-1",
+          "games":"6-3, 7-6"
         },
         {
-          "equipo1": "Lucero/Murga",
-          "equipo2": "Cabezas/Vera",
+          "equipo1": "Cintia Lucero/Yasna Murga",
+          "equipo2": "Nelida Cabezas/Vera",
           "fecha": "01/08/25 17:30 hs",
-          "resultado": "7-6, 2-6, 6-7"
+          "resultado": "1-2",
+          "games":"7-6, 2-6, 6-7"
         }
         
       ]
@@ -88,22 +91,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Flamenco/Martinez",
-          "equipo2": "Soto/Cruz",
+          "equipo1": "Flamenco Graciela/Martinez",
+          "equipo2": "Alejandra Soto/Rosalia Cruz",
           "fecha": "29/07/25 21:00 hs",
-          "resultado": "1-6, 1-6"
+          "resultado": "0-2",
+          "games":"1-6, 1-6"
         },
         {
-          "equipo1": "Flamenco/Martinez",
-          "equipo2": "Miranda/Marcial",
+          "equipo1": "Flamenco Graciela/Martinez",
+          "equipo2": "Luisa Miranda/Lucia Marcial",
           "fecha": "31/07/25 20:30 hs",
-          "resultado": "A confirmar"
+          "resultado": "0-2",
+          "games":"1-6, 0-6"
         },
         {
-          "equipo1": "Miranda/Marcial",
-          "equipo2": "Soto/Cruz",
+          "equipo1": "Luisa Miranda/Lucia Marcial",
+          "equipo2": "Alejandra Soto/Rosalia Cruz",
           "fecha": "31/07/25 20:30 hs",
-          "resultado": "6-7, 3-6"
+          "resultado": "0-2",
+          "games":"6-7, 3-6"
         }
       ]
     },
@@ -140,22 +146,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Luna/Polizzi",
-          "equipo2": "Peix/Cutri",
+          "equipo1": "Tania Luna/Fernanda Polizzi",
+          "equipo2": "Emilia Peix/Cutri",
           "fecha": "30/07/25 17:30 hs",
-          "resultado": "4-6, 6-4, 7-6"
+          "resultado": "2-1",
+          "games":"4-6, 6-4, 7-6"
         },
         {
-          "equipo1": "Luna/Polizzi",
-          "equipo2": "Martinez/Martinez",
+          "equipo1": "Tania Luna/Fernanda Polizzi",
+          "equipo2": "Daniela Martinez/Fernanda Martinez",
           "fecha": "31/07/25 22:30 hs",
-          "resultado": "4-6, 1-6"
+          "resultado": "0-2",
+          "games":"4-6, 1-6"
         },
         {
-          "equipo1": "Peix/Cutri",
-          "equipo2": "Martinez/Martinez",
+          "equipo1": "Emilia Peix/Cutri",
+          "equipo2": "Daniela Martinez/Fernanda Martinez",
           "fecha": "01/08/25 18:30 hs",
-          "resultado": "6-7, 6-1, 6-7"
+          "resultado": "1-2",
+          "games":"6-7, 6-1, 6-7"
         }
       ]
     },
@@ -192,22 +201,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Miranda/Romano",
-          "equipo2": "Vidart/Marcolini",
+          "equipo1": "Paula Miranda/Luciana Romano",
+          "equipo2": "Adelaida Vidart/Natalia Marcolini",
           "fecha": "29/07/25 21:00 hs",
-          "resultado": "6-0, 6-3"
+          "resultado": "2-0",
+          "games":"6-0, 6-3"
         },
         {
-          "equipo1": "Vera/Sanz",
-          "equipo2": "Miranda/Romano",
+          "equipo1": "Silvina Vera/Lucila Sanz",
+          "equipo2": "Paula Miranda/Luciana Romano",
           "fecha": "1/08/25 18:30 hs",
-          "resultado": "6-0, 6-7, 6-7"
+          "resultado": "1-2",
+          "games":"6-0, 6-7, 6-7"
         },
         {
-          "equipo1": "Vera/Sanz",
-          "equipo2": "Vidart/Marcolini",
+          "equipo1": "Silvina Vera/Lucila Sanz",
+          "equipo2": "Adelaida Vidart/Natalia Marcolini",
           "fecha": "2/08/25 10:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
         }
       ]
     },
@@ -244,22 +256,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Gimenez/Terrado",
-          "equipo2": "Retuerto/Polizzi",
+          "equipo1": "Giuliana Gimenez/Rocio Terrado",
+          "equipo2": "Fernanda Retuerto/Malvina Polizzi",
           "fecha": "29/07/25 20:00 hs",
-          "resultado": "6-7, 4-6"
+          "resultado": "0-2",
+          "games":"6-7, 4-6"
         },
         {
-          "equipo1": "Carpio/Herrera",
-          "equipo2": "Retuerto/Polizzi",
+          "equipo1": "Ayelen Carpio/Carolina Herrera",
+          "equipo2": "Fernanda Retuerto/Malvina Polizzi",
           "fecha": "30/07/25 20:30 hs",
-          "resultado": "6-7, 3-6"
+          "resultado": "0-2",
+          "games":"6-7, 3-6"
         },
         {
-          "equipo1": "Gimenez/Terrado",
-          "equipo2": "Carpio/Herrera",
+          "equipo1": "Giuliana Gimenez/Rocio Terrado",
+          "equipo2": "Ayelen Carpio/Carolina Herrera",
           "fecha": "31/07/25 22:30 hs",
-          "resultado": "3-6, 6-1, 7-6"
+          "resultado": "2-1",
+          "games":"3-6, 6-1, 7-6"
         }
       ]
     },
@@ -296,22 +311,25 @@
       ],
       "partidos": [
         {
-          "equipo1": "Bianchi/Treppo",
-          "equipo2": "Rodriguez/Gersicich",
+          "equipo1": "Florencia Bianchi/Fernanda Treppo",
+          "equipo2": "Luciana Rodriguez/Cecilia Gersicich",
           "fecha": "29/07/25 22:00 hs",
-          "resultado": "6-4, 2-6, 6-7"
+          "resultado": "1-2",
+          "games":"6-4, 2-6, 6-7"
         },
         {
-          "equipo1": "Politi/Moyano",
-          "equipo2": "Rodriguez/Gersicich",
+          "equipo1": "Natalia Politi/Estela Moyano",
+          "equipo2": "Luciana Rodriguez/Cecilia Gersicich",
           "fecha": "01/08/25 22:30 hs",
-          "resultado": "2-6, 7-5, 7-6"
+          "resultado": "2-1",
+          "games":"2-6, 7-5, 7-6"
         },
         {
-          "equipo1": "Politi/Moyano",
-          "equipo2": "Bianchi/Treppo",
+          "equipo1": "Natalia Politi/Estela Moyano",
+          "equipo2": "Florencia Bianchi/Fernanda Treppo",
           "fecha": "02/08/25 11:00 hs",
-          "resultado": "A confirmar"
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
         }
       ]
     }
@@ -324,21 +342,21 @@
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       },
       {
         "equipo1": "/",
@@ -354,14 +372,14 @@
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       }
     ],
     "semis": [
@@ -370,7 +388,7 @@
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+          "games":""
       }
     ],
     "final": {
@@ -378,7 +396,7 @@
       "equipo2": "/",
       "fecha": "30/07/25 19:00 hs",
       "resultado": "A confirmar",
-      "ganador": "/"
+          "games":""
     }
   }
 }
