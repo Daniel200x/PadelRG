@@ -545,7 +545,7 @@
           "equipo2": "2do A",
           "fecha": "Sabado 17:00 hs",
           "resultado": "A definir",
-        "games": "0-1"
+        "games": "1-6, 1-6"
       }
     ],  
   "octavos": [
@@ -561,49 +561,49 @@
           "equipo2": "1ro H",
           "fecha": "Sabado 21:00 hs",
           "resultado": "A definir",
-        "games": "1-0"
+        "games": "6-4, 6-3"
       },
       {
          "equipo1": "1ro E",
           "equipo2": "2do G",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
-         "games": "1-0"
+         "games": "6-0, 6-3"
       },
       {
          "equipo1": "2do F",
           "equipo2": "1ro D",
           "fecha": "Sabado 22:00 hs",
           "resultado": "A definir",
-         "games": "1-0"
+         "games": "6-1, 3-6, 7-6"
       },
       {
         "equipo1": "1ro C",
           "equipo2": "2do E",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
-         "games": "1-0"
+         "games": "6-3, 6-1"
       },
       {
          "equipo1": "2do H",
           "equipo2": "1ro F",
           "fecha": "Sabado 23:00 hs",
           "resultado": "A definir",
-         "games": "1-2"
+         "games": "3-6, 2-6"
       },
       {
          "equipo1": "1ro G",
           "equipo2": "2do I",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
-         "games": "1-0"
+         "games": "5-7, 6-4, 7-6"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Sabado 23:50 hs",
           "resultado": "A definir",
-         "games": "1-2"
+         "games": "6-7, 5-7"
       }
     ],
     "cuartos": [
@@ -642,14 +642,14 @@
           "equipo2": "Ganador P2",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
-        "games": "1-0"
+        "games": "5-7, 6-2, 7-6"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo 17:00 hs",
           "resultado": "A definir",
-        "games": "0-1"
+        "games": "4-6, 4-6"
       }
     ],
     "final": {
@@ -657,7 +657,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo 20:00 hs",
           "resultado": "A definir",
-        "games": "0-1"
+        "games": "0-6, 0-6"
     }
   }
 }
