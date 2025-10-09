@@ -50,7 +50,7 @@
           "nombre": "Lucas Fraile/Pedro Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "David Moreno/A confirmar",
+          "nombre": "Emilio Sanchez/Ruben Garin",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -58,14 +58,14 @@
         {
           "fecha": "Miercoles 19:00 hs Cancha 1",
           "equipo1": "Lucas Fraile/Pedro Martinez",
-          "equipo2": "David Moreno/A confirmar",
+          "equipo2": "Emilio Sanchez/Ruben Garin",
           "resultado": "2-0",
           "games":"6-3, 6-3"
         },
         {
           "fecha": "Jueves 19:00 hs Cancha 1",
           "equipo1": "Claudio Escobar/Julian Morales",
-          "equipo2": "David Moreno/A confirmar",
+          "equipo2": "Emilio Sanchez/Ruben Garin",
           "resultado": "",
           "games":"A definir"
         },

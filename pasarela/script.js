@@ -741,7 +741,9 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Francisco Bordon/Benjamin Martinez': '../img/equipos/fbordon-bmartinez.jpg',
         'Mauro Olivera/Carlos Barrionuevo': '../img/equipos/molivera-cbarrionuevo.jpg',
         'Enrique Romero/Marcos Allende': '../img/equipos/eromero-mallende.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Ruben Pedraza/Martin Aguila': '../img/equipos/rpedraza-maguila.jpg',
+        'Emilio Sanchez/Ruben Garin': '../img/equipos/esanchez-rgarin.jpg',
+        
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
