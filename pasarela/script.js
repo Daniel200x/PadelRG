@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/andina.jpeg',
         '../img/publi/forza.jpeg',
 
-        
+
         '../img/promos/ultra.gif',
         '../img/promos/thorne.gif',
         '../img/promos/kira.gif',
@@ -761,7 +761,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Antonella Domeneh/Griselda Gimenez': '../img/equipos/adomeneh-ggimenez.jpg',
         'Federico Bossio/Santiago David': '../img/equipos/fbossio-sdavid.jpg',
         'Dario Chacon/Marcelo Trangoni': '../img/equipos/dchacon-mtrangoni.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Pablo Gomez/Bruno Sirgo': '../img/equipos/pgomez-bsirgo.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
