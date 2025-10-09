@@ -209,14 +209,14 @@
       {
         "equipo1": "2do B",
           "equipo2": "2do C",
-          "fecha": "Sabado 20:00 hs",
+          "fecha": "Sabado 20:00 hs Cancha 1",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "2do A",
           "equipo2": "2do D",
-          "fecha": "Sabado 20:00 hs",
+          "fecha": "Sabado 20:00 hs Cancha 2",
           "resultado": "A definir",
           "games":"A definir"
       }
@@ -225,28 +225,28 @@
       {
          "equipo1": "1ro A",
           "equipo2": "Ganador P1",
-          "fecha": "Domingo 14:00 hs",
+          "fecha": "Domingo 08:00 hs Cancha 1",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "1ro E",
           "equipo2": "1ro D",
-          "fecha": "Domingo 14:00 hs",
+          "fecha": "Domingo 08:00 hs Cancha 2",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do E",
-          "fecha": "Domingo 15:00 hs",
+          "fecha": "Domingo 09:00 hs Cancha 1",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
-          "fecha": "Domingo 15:00 hs",
+          "fecha": "Domingo 09:00 hs Cancha 2",
           "resultado": "A definir",
           "games":"A definir"
       }
@@ -255,14 +255,14 @@
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 19:00 hs",
+          "fecha": "Domingo 16:00 hs Cancha 1",
           "resultado": "A definir",
           "games":"A definir"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 19:00 hs",
+          "fecha": "Domingo 16:00 hs Cancha 2",
           "resultado": "A definir",
           "games":"A definir"
       }
