@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Elementos encontrados:', leftCardImage, rightCardImage);
        
      // IMAGEN FIJA PARA LA TARJETA IZQUIERDA
-    const imagenFijaIzquierda = '../img/promos/padel.jpg'; // Cambia por la ruta de tu imagen fija    
+    const imagenFijaIzquierda = '../img/promos/padel.png'; // Cambia por la ruta de tu imagen fija    
 
     // Seleccionar imagen aleatoria solo para la derecha
     let randomRightIndex = Math.floor(Math.random() * sideCardImages.length);
