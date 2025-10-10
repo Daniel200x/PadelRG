@@ -180,7 +180,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .team {
@@ -192,7 +192,7 @@ header p {
 
 .team-name {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: center;
     margin-bottom: 10px;
     min-height: 60px;
@@ -254,7 +254,22 @@ header p {
 .match-time, .match-court {
     display: flex;
     align-items: center;
-    gap: 8px;
+    font-size: 1.5rem;
+    color: black;
+     font-weight: bold;
+    gap: 250px;
+}
+
+/* Estilos para el subheader de la tarjeta */
+.match-subheader {
+    background: #34495e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Controles ocultos */
@@ -989,7 +1004,7 @@ header p {
 /* Aumentar también el tamaño del nombre del equipo */
 .team-name {
     font-weight: bold;
-    font-size: 1.1rem; /* Aumentado ligeramente */
+    font-size: 1.4rem; /* Aumentado ligeramente */
     text-align: center;
     margin-bottom: 10px;
     min-height: 60px;

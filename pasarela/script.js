@@ -687,6 +687,9 @@ console.log(`Publicidades deshabilitadas en tarjeta central`);
     // Obtener URLs de imágenes de los equipos
     const imagenEquipo1 = obtenerImagenEquipo(partido.equipo1);
     const imagenEquipo2 = obtenerImagenEquipo(partido.equipo2);
+
+     // Texto adicional que quieres mostrar
+    const textoAdicional = "Toda la info en    :    PADELRG.COM.AR   "; // Cambia este texto por el que necesites
     
     // Crear tarjeta de partido con imágenes
     matchDisplay.innerHTML = `
@@ -694,6 +697,10 @@ console.log(`Publicidades deshabilitadas en tarjeta central`);
             <div class="match-header">
                 <div class="match-category">${partido.categoria}</div>
                 <div class="match-zone">${partido.zona}</div>
+            </div>
+            <!-- AGREGAR ESTA LÍNEA PARA EL TEXTO ADICIONAL -->
+            <div class="match-subheader">
+                ${textoAdicional}
             </div>
             <div class="match-body">
                 <div class="teams-container">
