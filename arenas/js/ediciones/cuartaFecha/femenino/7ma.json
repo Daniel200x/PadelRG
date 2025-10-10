@@ -34,8 +34,8 @@
           "fecha": "Viernes 18:00 hs Cancha 2",
           "equipo1": "Agustina Quezada/Vanesa Iglesias",
           "equipo2": "Karina Girollet/Lucia Ramirez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
         }
         
       ]
@@ -161,7 +161,7 @@
           "nombre": "Violeta Lopez/Jimena Ramadori",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Soledad Silva/Vangy Sura",
+          "nombre": "Soledad Silva/Ines Herrera",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Macarena Oyarzun/Laura Gomez",
@@ -175,16 +175,16 @@
         {
           "fecha": "Viernes 17:00 hs Cancha 2",
           "equipo1": "Violeta Lopez/Jimena Ramadori",
-          "equipo2": "Soledad Silva/Vangy Sura",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "Soledad Silva/Ines Herrera",
+          "resultado": "2-1",
+          "games":"2-6, 6-2, 7-6"
         },
         {
           "fecha": "Viernes 19:00 hs Cancha 2",
           "equipo1": "Macarena Oyarzun/Laura Gomez",
           "equipo2": "Emilse Molina/Iliana Luggren",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"1-6, 6-4, 6-7"
         },
         {
          "equipo1": "Ganador Partido 1",
