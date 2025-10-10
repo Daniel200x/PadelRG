@@ -786,7 +786,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Fernando Mariani/Leonardo Cardozo': '../img/equipos/fmariani-lcardozo.jpg',
         'Mauro Olivera/Carlos Barrionuevo': '../img/equipos/molivera-cbarrio.jpg',
         'Enrique Romero/Marcos Allende': '../img/equipos/eromero-mallende.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Claudio Escobar/Julian Morales': '../img/equipos/cescobar-jmorales.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
