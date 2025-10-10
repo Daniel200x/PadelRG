@@ -987,5 +987,7 @@ function obtenerImagenEquipo(nombreEquipo) {
             </div>
         `;
     }
+
+    
 });
 

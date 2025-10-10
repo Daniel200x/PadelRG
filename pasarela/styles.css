@@ -484,7 +484,7 @@ header p {
 /* Mejoras específicas para responsividad */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 150px;
     }
     
     .container {
@@ -1135,18 +1135,108 @@ header p {
 
 /* Ajustar el padding inferior del body para que el contenido no se superponga con el footer */
 body {
-    padding-bottom: 120px; /* Ajusta según la altura de tu footer */
+    padding-bottom: 170px; /* Ajusta según la altura de tu footer */
 }
 
 @media (max-width: 768px) {
     body {
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        padding-bottom: 90px;
+        padding-bottom: 140px;
     }
 }
 
+/* Banner de posiciones de grupos */
+.positions-banner {
+    position: fixed;
+    bottom: 140px; /* Ajusta según la altura de tu footer */
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+    z-index: 99;
+    border-top: 2px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.positions-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.positions-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollPositions 60s linear infinite;
+    padding-left: 100%;
+}
+
+.position-item {
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.position-category {
+    color: #FF8C00;
+    font-weight: 800;
+}
+
+.position-group {
+    color: #2c3e50;
+}
+
+.position-team {
+    color: #34495e;
+}
+
+@keyframes scrollPositions {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pausar animación al hacer hover */
+.positions-container:hover .positions-track {
+    animation-play-state: paused;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .positions-banner {
+        bottom: 100px; /* Ajusta según la altura del footer en móviles */
+        padding: 8px 0;
+    }
+    
+    .position-item {
+        font-size: 1rem;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .positions-banner {
+        bottom: 90px;
+        padding: 6px 0;
+    }
+    
+    .position-item {
+        font-size: 0.9rem;
+        margin-right: 20px;
+    }
+    
+    .positions-track {
+        animation: scrollPositions 40s linear infinite;
+    }
+}
