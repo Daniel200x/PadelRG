@@ -798,7 +798,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Sebastian Rubio/Gustavo Santana': '../img/equipos/srubio-gsantana.jpg',
         'Pablo Alegre/Emmanuel Larocca': '../img/equipos/palegre-elarocca.jpg',
         'Karina Girollet/Lucia Ramirez': '../img/equipos/kgiro-lramirez.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Pamela Lirola/Victoria Visñuk': '../img/equipos/plirola-visnuk.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
