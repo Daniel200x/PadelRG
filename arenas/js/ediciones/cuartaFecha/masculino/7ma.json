@@ -213,12 +213,12 @@
           "fecha": "Jueves 22:00 hs Cancha 1",
           "equipo1": "Jorge Vera/Walter Arrua",
           "equipo2": "Fernando Mariani/Leonardo Cardozo",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"2-6, 6-3, 7-6"
         },
         {
           "fecha": "Viernes 23:50 hs Cancha 1",
-          "equipo1": "Esteban Sanchez/Carlos Gonzalez",
+          "equipo1": "Esteban Sanchez/Carlos Ozores",
           "equipo2": "Fernando Mariani/Leonardo Cardozo",
           "resultado": "",
           "games":"A definir"
@@ -277,7 +277,7 @@
         {
           "nombre": "Sebastian Rubio/Gustavo Santana","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Pablo Alegre/A confirmar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+          "nombre": "Pablo Alegre/Emmanuel Larocca","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Gustavo Vera/Walter Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
