@@ -71,7 +71,7 @@
         {
           "fecha": "Sabado 12:00 hs Cancha 1",
           "equipo1": "Miguel Lamas/Leandro Carracedo",
-          "equipo2": "Francisco Bordon//Benjamin Martinez",
+          "equipo2": "Francisco Bordon/Benjamin Martinez",
           "resultado": "",
           "games":"A definir"
         }
@@ -281,7 +281,7 @@
         {
           "nombre": "Gustavo Vera/Walter Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Walter Gimenez/Alexis Beltran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+          "nombre": "Juan Serafini/Alexis Beltran","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
        {
@@ -294,7 +294,7 @@
         {
           "fecha": "Viernes 22:00 hs Cancha 1",
           "equipo1": "Gustavo Vera/Walter Carrizo",
-          "equipo2": "Walter Gimenez/Alexis Beltran",
+          "equipo2": "Juan Serafini/Alexis Beltran",
           "resultado": "2-0",
           "games":"6-2, 6-4"
         },
