@@ -986,7 +986,7 @@ function obtenerImagenEquipo(nombreEquipo) {
             </div>
         `;
     }
-// Función para actualizar el reloj digital
+// Función para actualizar el reloj digital (con segundos)
 function updateDigitalClock() {
     const now = new Date();
     
@@ -999,25 +999,11 @@ function updateDigitalClock() {
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
-    
-    // Obtener y formatear la fecha
-    const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-    const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
-                   'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-    
-    const dayName = days[now.getDay()];
-    const day = now.getDate();
-    const month = months[now.getMonth()];
-    const year = now.getFullYear();
-    
-    // Actualizar elementos de fecha
-    document.getElementById('day').textContent = dayName;
-    document.getElementById('date').textContent = `${day} de ${month} de ${year}`;
 }
 
 // Iniciar el reloj
 updateDigitalClock();
-setInterval(updateDigitalClock, 1000);
+setInterval(updateDigitalClock, 1000); // Actualizar cada segundo
     
 });
 

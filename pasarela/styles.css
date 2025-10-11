@@ -121,7 +121,54 @@ header {
     width: 100%; /* Ocupar todo el ancho disponible */
     padding: 80px 10px 10px; /* Espacio a los lados */
 }
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
 
+.logo-sancor-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Reloj digital con segundos y números grandes */
+.digital-clock-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 15px 35px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: auto;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.digital-clock {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.time-display {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+    line-height: 1;
+}
+
+/* Efecto de brillo para los segundos */
+.time-display span:nth-child(3) {
+    color: #FF8C00;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 1);
+}
 
 
 header h1 {
