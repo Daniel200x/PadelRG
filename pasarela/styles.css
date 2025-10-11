@@ -1240,3 +1240,73 @@ body {
         animation: scrollPositions 40s linear infinite;
     }
 }
+
+/* Reloj digital */
+.digital-clock-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+}
+
+.digital-clock {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.time-display {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+    margin-bottom: 5px;
+}
+
+.date-display {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive para el reloj */
+@media (max-width: 768px) {
+    .digital-clock-container {
+        top: 10px;
+        padding: 8px 15px;
+        min-width: 250px;
+    }
+    
+    .time-display {
+        font-size: 1.8rem;
+    }
+    
+    .date-display {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .digital-clock-container {
+        top: 5px;
+        padding: 6px 12px;
+        min-width: 200px;
+    }
+    
+    .time-display {
+        font-size: 1.5rem;
+    }
+    
+    .date-display {
+        font-size: 0.8rem;
+    }
+}
