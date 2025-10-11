@@ -142,8 +142,8 @@
           "fecha": "Sabado 11:00 hs Cancha 2",
           "equipo1": "Marcia Mella/Belen Rojas",
           "equipo2": "Emilia Velazco/Vanesa Vera",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
         },
         {
           "fecha": "Sabado 15:00 hs Cancha 1",
@@ -197,8 +197,8 @@
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 09:00 hs Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 7-6"
         }
       ]
     }

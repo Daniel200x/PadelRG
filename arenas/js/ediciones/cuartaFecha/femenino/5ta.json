@@ -104,8 +104,8 @@
           "fecha": "Sabado 10:00 hs Cancha 1",
           "equipo1": "Antonella Domeneh/Griselda Gimenez",
           "equipo2": "Adelaida Vidart/Sara Cortez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"1-6, 6-2, 6-7"
         },
         {
           "fecha": "Sabado 16:00 hs Cancha 2",
@@ -200,8 +200,8 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 10:00 hs Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
         },
         {
         "equipo1": "Ganador Partido 2",
