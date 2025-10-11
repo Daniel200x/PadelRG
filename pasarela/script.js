@@ -812,7 +812,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Cintia Lucero/Barbara Rigoni': '../img/equipos/clucero-brigoni.jpg',
         'Blas Sanchez/Jorge Ugarte': '../img/equipos/bsanchez-jugarte.jpg',
         'Antonella Zampini/Romina Castillo': '../img/equipos/azampini-rcastillo.jpg',
-        '/': '../img/equipos/-.jpg',
+        
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
