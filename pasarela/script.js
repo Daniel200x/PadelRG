@@ -751,7 +751,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Fernanda Retuerto/Daniela Bergondi': '../img/equipos/retuerto-bergondi.jpg',
         'Pablo Gomez/Bruno Sirgo': '../img/equipos/pgomez-bsirgo.jpg',
         'Lucas Fraile/Pedro Martinez': '../img/equipos/lfraile-pmartinez.jpg',
-        'Emmanuel Bravo/Cristian Almaraz': '../img/equipos/ebravo-calmaraz.jpg',
+        'Emmanuel Bravo/Matias Rojo': '../img/equipos/ebravo-calmaraz.jpg',
         'Jose Muñoz/Juan Villanueva': '../img/equipos/jmunoz-jvillanueva.jpg',
         'Luciana Rodriguez/Mariana Pratto': '../img/equipos/lrodriguez-mpratto.jpg',
         'Agustina Quezada/Vanesa Iglesias': '../img/equipos/aquezada-viglesias.jpg',
