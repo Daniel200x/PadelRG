@@ -814,7 +814,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Antonella Zampini/Romina Castillo': '../img/equipos/azampini-rcastillo.jpg',
         'Joaquin Rojas/Esteban Costilla': '../img/equipos/jrojas-ecostilla.jpg',
         'Juan Serafini/Alexis Beltran': '../img/equipos/jserafini-abeltran.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Luciana Romano/Yazna Murga': '../img/equipos/lromano-ymurga.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
