@@ -302,8 +302,8 @@
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "fecha": "Sabado 12:00 hs Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
         },
         {
         "equipo1": "Ganador Partido 2",
