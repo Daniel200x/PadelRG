@@ -816,7 +816,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Juan Serafini/Alexis Beltran': '../img/equipos/jserafini-abeltran.jpg',
         'Luciana Romano/Yazna Murga': '../img/equipos/lromano-ymurga.jpg',
         'Adelaida Vidart/Sara Cortez': '../img/equipos/avidart-scortez.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Bernardo Fiori/Maximiliano Aperio': '../img/equipos/bfiori-maperio.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
