@@ -109,8 +109,8 @@
           "fecha": "Sabado 13:00 hs Cancha 1",
           "equipo1": "Joaquin Rojas/Esteban Costilla",
           "equipo2": "Jose Muñoz/Juan Villanueva",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"7-6, 6-3"
         }
       ]
     },
@@ -309,8 +309,8 @@
         "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "fecha": "Sabado 14:00 hs Cancha 1",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"6-3, 2-6, 6-7"
         }
       ]
     }
