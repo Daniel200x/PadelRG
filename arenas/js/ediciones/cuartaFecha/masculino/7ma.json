@@ -321,29 +321,29 @@
         "equipo1": "1ro A",
           "equipo2": "2do B",
           "fecha": "Sabado 18:00 Cancha 1",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"4-6, 2-6"
       },
       {
          "equipo1": "2do G",
           "equipo2": "1ro H",
           "fecha": "Sabado 18:00 Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
       },
       {
          "equipo1": "1ro E",
           "equipo2": "2do F",
           "fecha": "Sabado 19:00 Cancha 1",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
       },
       {
          "equipo1": "2do C",
           "equipo2": "1ro D",
           "fecha": "Sabado 19:00 Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
       },
       {
         "equipo1": "1ro C",
