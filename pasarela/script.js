@@ -820,7 +820,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Paula Elstner/Graciela Perez': '../img/equipos/pelstner-gperez.jpg',
         'Marcia Mella/Belen Rojas': '../img/equipos/mella-brojas.jpg',
         'Emilia Velazco/Vanesa Vera': '../img/equipos/evelazco-vera.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Evelin Tissera/Natalia Bequi': '../img/equipos/etissera-nbequi.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
