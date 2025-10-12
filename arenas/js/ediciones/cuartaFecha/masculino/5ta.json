@@ -223,22 +223,22 @@
          "equipo1": "1ro E",
           "equipo2": "1ro D",
           "fecha": "Domingo 14:00 hs Cancha 2",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do E",
           "fecha": "Domingo 15:00 hs Cancha 1",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo 15:00 hs Cancha 2",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       }
     ],
     "semis": [
