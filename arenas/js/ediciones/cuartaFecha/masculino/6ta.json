@@ -6,9 +6,9 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Matias Dos Santos/Waldemar Sosa",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Gerardo Aballay/Nicolas Dominguez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "J M Mendez/Facundo Infran",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -40,15 +40,15 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Nicolas Barrios/Joaquin Bogunovich",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Eduardo Garay/Gabriel Gabutti",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Facundo Saldaño/Dario Orellano",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -80,15 +80,15 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Mariano Pereyra/Valentin Lemus",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Diego Floriani/Franco Gonzalez",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Fernando Rivero/Matias Demarchi",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -120,11 +120,135 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Brian Gamarra/Cristian Carrasco",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Mariano Puebla/Damian Chicaguala",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Rafael Muriño/Javier Baldovino",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Jesus Sanchez/Martin Moreta",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Miguel Gomez/Carlos Corvalan",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Cesar Ponce/Javier Andrade",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Gustavo Quiroz/Franco Gallucci",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Nicolas De Guevara",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Yonatan Torres",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+        {
+          "nombre": "Javier Gimenez/Nicolas Barbosa",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
           "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Ignacio Beltran/Diego Velazquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {

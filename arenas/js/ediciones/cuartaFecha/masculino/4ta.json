@@ -1,14 +1,14 @@
 {
-  "nombre": "4ta Categoría",
+  "nombre": "4ta Caballeros",
    
 
 "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Ivan Gallardo/Julio Andrade",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Tiago Andrade/Tomas Echeverria",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Julian Morales/A confirmar",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -40,15 +40,15 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Gabriel Muller/Jose Villarreal",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Lucas Ojeda/Agustin Fulco",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Juan Barria/Cesar Andrade",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -80,15 +80,15 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Joaquin Servian/Jeremias Maestro",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Nicolas Escufachi/Franco Moreno",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Yannick Sanchez/Agustin Guerra",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -109,46 +109,6 @@
         },
         {
          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo D",
-      "equipos": [
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
-        {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
-        {
-          "fecha": " 23:00 hs",
           "equipo1": "",
           "equipo2": "",
           "resultado": "",
