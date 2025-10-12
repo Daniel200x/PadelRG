@@ -10,30 +10,32 @@ let ganadoresPorRonda = {
     final: {}
 };
 
-// Cargar archivo JSON
-document.getElementById('jsonFile').addEventListener('change', function(event) {
-    const file = event.target.files[0];
+// RUTA DEL ARCHIVO JSON - MODIFICA ESTA RUTA SEGÚN TUS NECESIDADES
+const RUTA_JSON = '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json'; // Cambia esta ruta por la de tu archivo JSON
+
+// Cargar automáticamente el JSON al iniciar
+document.addEventListener('DOMContentLoaded', function() {
+    cargarJSONDesdeRuta(RUTA_JSON);
+});
+
+// Función para cargar JSON desde ruta específica
+function cargarJSONDesdeRuta(ruta) {
     const statusDiv = document.getElementById('fileStatus');
     
-    if (!file) {
-        statusDiv.className = 'status error';
-        statusDiv.innerHTML = 'No se seleccionó ningún archivo';
-        return;
-    }
+    statusDiv.className = 'status loading';
+    statusDiv.innerHTML = '🔄 Cargando datos del torneo...';
     
-    if (file.type !== 'application/json' && !file.name.endsWith('.json')) {
-        statusDiv.className = 'status error';
-        statusDiv.innerHTML = 'Error: El archivo debe ser JSON (.json)';
-        return;
-    }
-    
-    const reader = new FileReader();
-    
-    reader.onload = function(e) {
-        try {
-            torneoData = JSON.parse(e.target.result);
+    fetch(ruta)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Error HTTP: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            torneoData = data;
             statusDiv.className = 'status success';
-            statusDiv.innerHTML = `✅ Archivo cargado correctamente: <strong>${torneoData.nombre || 'Torneo'}</strong>`;
+            statusDiv.innerHTML = `✅ Torneo cargado: <strong>${torneoData.nombre || 'Torneo'}</strong>`;
             
             // Reiniciar datos
             resultadosPartidos = {};
@@ -49,21 +51,13 @@ document.getElementById('jsonFile').addEventListener('change', function(event) {
             
             // Procesar datos y generar estadísticas
             procesarEstadisticas();
-            
-        } catch (error) {
+        })
+        .catch(error => {
             statusDiv.className = 'status error';
-            statusDiv.innerHTML = `Error al leer el JSON: ${error.message}`;
-            console.error('Error parsing JSON:', error);
-        }
-    };
-    
-    reader.onerror = function() {
-        statusDiv.className = 'status error';
-        statusDiv.innerHTML = 'Error al leer el archivo';
-    };
-    
-    reader.readAsText(file);
-});
+            statusDiv.innerHTML = `❌ Error al cargar el torneo: ${error.message}`;
+            console.error('Error loading JSON:', error);
+        });
+}
 
 // Procesar estadísticas de jugadores
 function procesarEstadisticas() {
@@ -650,9 +644,6 @@ function procesarEquipoPartido(equipo, datosPartido) {
         }
     });
 }
-
-// Las funciones restantes se mantienen igual...
-// Actualizar filtro de jugadores, mostrarEstadisticas, generarTarjetaJugador, etc.
 
 // Actualizar filtro de jugadores
 function actualizarFiltroJugadores() {

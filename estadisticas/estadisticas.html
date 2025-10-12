@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadísticas de Jugadores - Torneo</title>
+    <title>Estadísticas de Jugadores - Torneos</title>
     <link rel="stylesheet" href="estadisticas.css">
 </head>
 <body>
@@ -11,10 +11,11 @@
         <h1>🏆 Estadísticas de Jugadores</h1>
         
         <div class="file-input">
-            <p><strong>Selecciona el archivo JSON del torneo:</strong></p>
-            <input type="file" id="jsonFile" accept=".json" style="margin: 10px 0;">
-            <div id="fileStatus" class="status info">
-                Esperando archivo JSON...
+            <div id="fileStatus" class="status loading">
+                Cargando datos de torneos...
+            </div>
+            <div id="tournamentSelector" class="tournament-selector">
+                <!-- Los botones de torneos se generarán aquí automáticamente -->
             </div>
         </div>
         
@@ -36,6 +37,13 @@
                     <option value="cuartos">Cuartos</option>
                     <option value="semis">Semifinales</option>
                     <option value="final">Final</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="tournamentFilter">Filtrar por torneo:</label>
+                <select id="tournamentFilter">
+                    <option value="all">Todos los torneos</option>
                 </select>
             </div>
         </div>

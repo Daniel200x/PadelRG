@@ -91,6 +91,12 @@ h1, h2, h3 {
     border: 1px solid #b3d7ff;
 }
 
+.status.loading {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
 /* Contenedor de estadísticas */
 .estadisticas-container {
     margin-top: 20px;
