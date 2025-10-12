@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Jugadores - Torneo</title>
+    <link rel="stylesheet" href="estadisticas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Estadísticas de Jugadores</h1>
+        
+        <div class="file-input">
+            <p><strong>Selecciona el archivo JSON del torneo:</strong></p>
+            <input type="file" id="jsonFile" accept=".json" style="margin: 10px 0;">
+            <div id="fileStatus" class="status info">
+                Esperando archivo JSON...
+            </div>
+        </div>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="playerFilter">Filtrar por jugador:</label>
+                <select id="playerFilter">
+                    <option value="all">Todos los jugadores</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="phaseFilter">Filtrar por fase:</label>
+                <select id="phaseFilter">
+                    <option value="all">Todas las fases</option>
+                    <option value="grupos">Fase de Grupos</option>
+                    <option value="dieciseisavos">Dieciseisavos</option>
+                    <option value="octavos">Octavos</option>
+                    <option value="cuartos">Cuartos</option>
+                    <option value="semis">Semifinales</option>
+                    <option value="final">Final</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="estadisticas" class="estadisticas-container">
+            <!-- Aquí se cargarán las estadísticas -->
+        </div>
+    </div>
+
+    <script src="estadisticas.js"></script>
+</body>
+</html>
