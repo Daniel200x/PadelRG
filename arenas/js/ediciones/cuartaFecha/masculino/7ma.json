@@ -379,8 +379,8 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo 12:00 hs Cancha 1",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 7-6"
       },
       {
          "equipo1": "Ganador P3",
@@ -400,8 +400,8 @@
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
           "fecha": "Domingo 13:00 hs Cancha 2",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"5-7, 2-6"
       }
     ],
     "semis": [
