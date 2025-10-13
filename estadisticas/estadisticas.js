@@ -1,5 +1,4 @@
 
-
 let torneoData = null;
 let jugadoresData = [];
 let resultadosPartidos = {};
@@ -14,9 +13,9 @@ let ganadoresPorRonda = {
 
 // LISTA DE RUTAS JSON - AGREGA TUS RUTAS AQUÍ
 const RUTAS_JSON = [
-     { nombre: 'Torneo 1', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json' },
-    { nombre: 'Torneo 2', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json' },
-    { nombre: 'Torneo 3', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json' }
+    { nombre: '8va Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json' },
+    { nombre: '7ma Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json' },
+    { nombre: '6ta Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json' }
     // Agrega más rutas según necesites
 ];
 
@@ -182,6 +181,7 @@ function procesarEstadisticas() {
         jugadoresData.push({
             nombre: jugador,
             partidos: [],
+            torneos: [torneoActual || 'Torneo Actual'], // INICIALIZAR TORNEOS
             estadisticas: {
                 total: 0,
                 ganados: 0,
@@ -657,7 +657,8 @@ function procesarPartido(partido, fase, grupo = '', equipo1Real, equipo2Real) {
         fase: fase,
         grupo: grupo,
         rival: equipo2Real,
-        marcador: partido.resultado
+        marcador: partido.resultado,
+        torneo: torneoActual || 'Torneo Actual' // AGREGAR TORNEO AL PARTIDO
     });
     
     // Procesar equipo 2
@@ -670,7 +671,8 @@ function procesarPartido(partido, fase, grupo = '', equipo1Real, equipo2Real) {
         fase: fase,
         grupo: grupo,
         rival: equipo1Real,
-        marcador: partido.resultado
+        marcador: partido.resultado,
+        torneo: torneoActual || 'Torneo Actual' // AGREGAR TORNEO AL PARTIDO
     });
 }
 
@@ -709,6 +711,7 @@ function procesarEquipoPartido(equipo, datosPartido) {
                 resultado: datosPartido.resultado,
                 fase: datosPartido.fase,
                 grupo: datosPartido.grupo,
+                torneo: datosPartido.torneo, // AGREGAR TORNEO
                 setsPropios: datosPartido.setsPropios,
                 setsRival: datosPartido.setsRival,
                 gamesPropios: datosPartido.gamesPropios,
@@ -791,6 +794,12 @@ function procesarUnTorneo(data, nombreTorneo) {
                     gamesPerdidos: 0
                 }
             });
+            jugadorExistente = jugadoresData[jugadoresData.length - 1];
+        }
+        
+        // Agregar torneo si no existe
+        if (!jugadorExistente.torneos.includes(nombreTorneo)) {
+            jugadorExistente.torneos.push(nombreTorneo);
         }
     });
     
@@ -960,7 +969,7 @@ function actualizarFiltroTorneos() {
     }
     
     // Agregar torneos únicos de todos los jugadores
-    const torneosUnicos = [...new Set(jugadoresData.flatMap(j => j.torneos))];
+    const torneosUnicos = [...new Set(jugadoresData.flatMap(j => j.torneos || []))];
     
     torneosUnicos.sort().forEach(torneo => {
         const option = document.createElement('option');
@@ -1046,12 +1055,15 @@ function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
         partidosAMostrar = partidosAMostrar.filter(p => p.torneo === torneoFiltro);
     }
     
+    // Asegurarse de que torneos existe y es un array
+    const torneosJugador = Array.isArray(jugador.torneos) ? jugador.torneos : [];
+    
     return `
         <div class="jugador-card">
             <div class="jugador-header">
                 <div>
                     <h2>${jugador.nombre}</h2>
-                    <div class="torneos-info">Torneos: ${jugador.torneos.join(', ')}</div>
+                    <div class="torneos-info">Torneos: ${torneosJugador.join(', ') || 'N/A'}</div>
                 </div>
                 <div>
                     <div class="stat-value">${porcentajeVictorias}%</div>
@@ -1101,7 +1113,7 @@ function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
                         <tbody>
                             ${partidosAMostrar.map(partido => `
                                 <tr>
-                                    <td><span class="torneo-badge">${partido.torneo}</span></td>
+                                    <td><span class="torneo-badge">${partido.torneo || 'N/A'}</span></td>
                                     <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
                                     <td>${partido.equipo}</td>
                                     <td>${partido.rival}</td>
