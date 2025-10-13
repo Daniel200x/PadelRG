@@ -14,7 +14,8 @@ let ganadoresPorRonda = {
 const RUTAS_JSON = [
     { nombre: '8va Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json' },
     { nombre: '7ma Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json' },
-    { nombre: '6ta Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json' }
+    { nombre: '6ta Segundo Set', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json' },
+    { nombre: '7ma Arena', ruta: '../arenas/js/ediciones/cuartaFecha/masculino/7ma.json' }
     // Agrega más rutas según necesites
 ];
 
@@ -89,6 +90,9 @@ async function cargarTodosLosTorneos() {
         
         // Procesar estadísticas combinadas
         procesarEstadisticasCombinadas();
+        
+        // CREAR BOTÓN DE EXPORTACIÓN
+        crearBotonExportacion();
     } else {
         statusDiv.className = 'status error';
         statusDiv.innerHTML = '❌ No se pudieron cargar los torneos';
@@ -139,6 +143,9 @@ function cargarTorneoEspecifico(ruta, nombre) {
             
             // Procesar datos y generar estadísticas
             procesarEstadisticas();
+            
+            // CREAR BOTÓN DE EXPORTACIÓN
+            crearBotonExportacion();
         })
         .catch(error => {
             statusDiv.className = 'status error';
@@ -832,8 +839,8 @@ function procesarUnTorneo(data, nombreTorneo) {
             }
             
             jugadoresData.push({
-                nombre: jugadorNormalizado,
-                nombreOriginal: nombreOriginal,
+                nombre: nombreOriginal, // CAMBIO: Usar nombreOriginal como identificador principal
+                nombreNormalizado: jugadorNormalizado, // CAMBIO: Guardar normalizado por separado
                 partidos: [],
                 torneos: [],
                 estadisticas: {
@@ -944,9 +951,9 @@ function procesarEquipoPartidoIndividual(equipo, datosPartido) {
     jugadores.forEach(jugador => {
         const jugadorNormalizado = normalizarNombre(jugador);
         
-        // Buscar jugador por nombre normalizado
+        // Buscar jugador por nombre normalizado - CAMBIO: Buscar por nombreNormalizado
         const jugadorData = jugadoresData.find(j => 
-            normalizarNombre(j.nombre) === jugadorNormalizado
+            j.nombreNormalizado === jugadorNormalizado
         );
         
         if (jugadorData) {
@@ -995,10 +1002,10 @@ function procesarEquipoPartidoIndividual(equipo, datosPartido) {
             jugadorData.estadisticas.gamesGanados += datosPartido.gamesPropios;
             jugadorData.estadisticas.gamesPerdidos += datosPartido.gamesRival;
             
-            console.log(`✅ Partido agregado para ${jugadorData.nombreOriginal} en ${datosPartido.torneo}: ${datosPartido.resultado}`);
+            console.log(`✅ Partido agregado para ${jugadorData.nombre} en ${datosPartido.torneo}: ${datosPartido.resultado}`);
         } else {
             console.warn(`⚠️ Jugador no encontrado: ${jugador} (buscado como: ${jugadorNormalizado})`);
-            console.log('Jugadores disponibles:', jugadoresData.map(j => j.nombreOriginal));
+            console.log('Jugadores disponibles:', jugadoresData.map(j => j.nombre));
         }
     });
 }
@@ -1016,16 +1023,16 @@ function actualizarFiltroJugadores() {
         playerFilter.remove(1);
     }
     
-    // Ordenar jugadores de manera segura
+    // Ordenar jugadores de manera segura - CAMBIO: Usar nombre en lugar de nombreOriginal
     const jugadoresOrdenados = [...jugadoresData].sort((a, b) => {
-        const nombreA = (a.nombreOriginal || a.nombre || '').toString();
-        const nombreB = (b.nombreOriginal || b.nombre || '').toString();
+        const nombreA = (a.nombre || '').toString();
+        const nombreB = (b.nombre || '').toString();
         return nombreA.localeCompare(nombreB);
     });
     
-    // Agregar opciones al filtro
+    // Agregar opciones al filtro - CAMBIO: Usar nombre en lugar de nombreOriginal
     jugadoresOrdenados.forEach(jugador => {
-        const nombreMostrar = jugador.nombreOriginal || jugador.nombre || 'Jugador sin nombre';
+        const nombreMostrar = jugador.nombre || 'Jugador sin nombre';
         const option = document.createElement('option');
         option.value = nombreMostrar;
         option.textContent = nombreMostrar;
@@ -1062,14 +1069,14 @@ function mostrarEstadisticasCombinadas() {
     estadisticasDiv.innerHTML = html;
 }
 
-// Generar tarjeta de estadísticas combinadas para un jugador - VERSIÓN SEGURA
+// Generar tarjeta de estadísticas combinadas para un jugador - VERSIÓN MEJORADA
 function generarTarjetaJugadorCombinada(jugador) {
     const stats = jugador.estadisticas;
     const porcentajeVictorias = stats.total > 0 ? 
         ((stats.ganados / stats.total) * 100).toFixed(1) : 0;
     
-    // Usar nombreOriginal si existe, sino el nombre normalizado con manejo seguro
-    const nombreAMostrar = (jugador.nombreOriginal || jugador.nombre || 'Jugador sin nombre');
+    // CAMBIO: Usar nombre directamente
+    const nombreAMostrar = jugador.nombre || 'Jugador sin nombre';
     
     // Agrupar partidos por torneo
     const partidosPorTorneo = {};
@@ -1120,51 +1127,35 @@ function generarTarjetaJugadorCombinada(jugador) {
             </div>
             
             <div style="padding: 20px;">
-                <h3>Detalle por Torneos</h3>
-                ${Object.entries(partidosPorTorneo).map(([torneo, partidos]) => {
-                    const statsTorneo = calcularEstadisticasTorneo(partidos);
-                    const porcentajeTorneo = statsTorneo.total > 0 ? 
-                        ((statsTorneo.ganados / statsTorneo.total) * 100).toFixed(1) : 0;
-                    
-                    return `
-                        <div class="torneo-section">
-                            <h4>🏆 ${torneo}</h4>
-                            <div class="torneo-stats">
-                                <span><strong>${statsTorneo.total}</strong> partidos</span>
-                                <span><strong>${statsTorneo.ganados}</strong> ganados</span>
-                                <span><strong>${statsTorneo.perdidos}</strong> perdidos</span>
-                                <span><strong>${porcentajeTorneo}%</strong> efectividad</span>
-                                <span><strong>${statsTorneo.setsGanados}-${statsTorneo.setsPerdidos}</strong> sets</span>
-                            </div>
-                            <table class="partidos-table">
-                                <thead>
-                                    <tr>
-                                        <th>Fase</th>
-                                        <th>Equipo</th>
-                                        <th>Rival</th>
-                                        <th>Resultado</th>
-                                        <th>Marcador</th>
-                                        <th>Sets</th>
-                                        <th>Games</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${partidos.map(partido => `
-                                        <tr>
-                                            <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
-                                            <td>${partido.equipo || 'N/A'}</td>
-                                            <td>${partido.rival || 'N/A'}</td>
-                                            <td class="resultado-${partido.resultado}">${partido.resultado === 'ganado' ? '✅ Ganado' : '❌ Perdido'}</td>
-                                            <td>${partido.marcador || 'N/A'}</td>
-                                            <td>${partido.setsPropios || 0}-${partido.setsRival || 0}</td>
-                                            <td>${partido.gamesPropios || 0}-${partido.gamesRival || 0}</td>
-                                        </tr>
-                                    `).join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                    `;
-                }).join('')}
+                <h3>Detalle de Partidos (${jugador.partidos.length} partidos)</h3>
+                <table class="partidos-table">
+                    <thead>
+                        <tr>
+                            <th>Torneo</th>
+                            <th>Fase</th>
+                            <th>Equipo</th>
+                            <th>Rival</th>
+                            <th>Resultado</th>
+                            <th>Marcador</th>
+                            <th>Sets</th>
+                            <th>Games</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${jugador.partidos.map(partido => `
+                            <tr>
+                                <td><strong>${partido.torneo || 'N/A'}</strong></td>
+                                <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
+                                <td>${partido.equipo || 'N/A'}</td>
+                                <td>${partido.rival || 'N/A'}</td>
+                                <td class="resultado-${partido.resultado}">${partido.resultado === 'ganado' ? '✅ Ganado' : '❌ Perdido'}</td>
+                                <td>${partido.marcador || 'N/A'}</td>
+                                <td>${partido.setsPropios || 0}-${partido.setsRival || 0}</td>
+                                <td>${partido.gamesPropios || 0}-${partido.gamesRival || 0}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
             </div>
         </div>
     `;
@@ -1357,6 +1348,117 @@ function buscarJugadorEnTodosTorneos(nombreJugador) {
             console.log(`❌ No encontrado en ${torneo.nombre}`);
         }
     });
+}
+
+// =============================================
+// FUNCIONES DE EXPORTACIÓN JSON
+// =============================================
+
+// Función para exportar estadísticas a JSON
+function exportarAJSON() {
+    console.log('Exportando datos a JSON...');
+    
+    // Preparar datos para exportación
+    const datosExportacion = {
+        fechaExportacion: new Date().toISOString(),
+        totalJugadores: jugadoresData.length,
+        torneosIncluidos: torneosCargados.map(t => t.nombre),
+        jugadores: jugadoresData.map(jugador => ({
+            nombre: jugador.nombre,
+            nombreNormalizado: jugador.nombreNormalizado || normalizarNombre(jugador.nombre),
+            torneos: jugador.torneos,
+            estadisticas: {
+                ...jugador.estadisticas,
+                porcentajeVictorias: jugador.estadisticas.total > 0 ? 
+                    parseFloat(((jugador.estadisticas.ganados / jugador.estadisticas.total) * 100).toFixed(1)) : 0,
+                diferenciaSets: jugador.estadisticas.setsGanados - jugador.estadisticas.setsPerdidos,
+                diferenciaGames: jugador.estadisticas.gamesGanados - jugador.estadisticas.gamesPerdidos
+            },
+            partidos: jugador.partidos.map(partido => ({
+                torneo: partido.torneo,
+                fase: partido.fase,
+                grupo: partido.grupo,
+                equipo: partido.equipo,
+                rival: partido.rival,
+                resultado: partido.resultado,
+                marcador: partido.marcador,
+                setsPropios: partido.setsPropios,
+                setsRival: partido.setsRival,
+                gamesPropios: partido.gamesPropios,
+                gamesRival: partido.gamesRival,
+                fechaPartido: partido.fecha || 'N/A'
+            }))
+        }))
+    };
+
+    // Convertir a JSON con formato legible
+    const jsonString = JSON.stringify(datosExportacion, null, 2);
+    
+    // Crear y descargar archivo
+    descargarJSON(jsonString, 'estadisticas_jugadores.json');
+    
+    // Mostrar mensaje de confirmación
+    mostrarMensajeExportacion();
+}
+
+// Función para descargar el archivo JSON
+function descargarJSON(contenido, nombreArchivo) {
+    const blob = new Blob([contenido], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = nombreArchivo;
+    link.style.display = 'none';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Liberar memoria
+    setTimeout(() => URL.revokeObjectURL(url), 100);
+}
+
+// Función para mostrar mensaje de exportación
+function mostrarMensajeExportacion() {
+    const statusDiv = document.getElementById('fileStatus');
+    const mensajeOriginal = statusDiv.innerHTML;
+    
+    statusDiv.className = 'status success';
+    statusDiv.innerHTML = '✅ Datos exportados correctamente como JSON';
+    
+    // Restaurar mensaje original después de 3 segundos
+    setTimeout(() => {
+        if (torneosCargados.length > 0) {
+            statusDiv.className = 'status success';
+            statusDiv.innerHTML = `✅ ${torneosCargados.length} torneo(s) cargado(s) correctamente`;
+        }
+    }, 3000);
+}
+
+// Función para crear botón de exportación
+function crearBotonExportacion() {
+    const selectorDiv = document.getElementById('tournamentSelector');
+    
+    // Verificar si el botón ya existe
+    if (document.getElementById('btnExportarJSON')) {
+        return;
+    }
+    
+    const botonExportar = document.createElement('button');
+    botonExportar.id = 'btnExportarJSON';
+    botonExportar.className = 'tournament-btn';
+    botonExportar.style.background = '#28a745';
+    botonExportar.style.color = 'white';
+    botonExportar.style.border = 'none';
+    botonExportar.style.marginTop = '10px';
+    botonExportar.innerHTML = '📊 Exportar JSON';
+    botonExportar.onclick = exportarAJSON;
+    
+    // Agregar tooltip
+    botonExportar.title = 'Exportar todas las estadísticas a archivo JSON';
+    
+    selectorDiv.appendChild(botonExportar);
 }
 
 // Event listeners
