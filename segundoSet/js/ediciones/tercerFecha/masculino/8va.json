@@ -4,14 +4,14 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "R. Gonzalez/M. Llanes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Llanes/R. Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "A. Faletti/M. Diaz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "R. Rodriguez/O. Rodriguez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {    "nombre": "M. Alvarez/I. Quinteros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
       "partidos": [
         {
           "fecha": "Viernes 21:00 hs",
-          "equipo1": "R. Gonzalez/M. Llanes",
+          "equipo1": "M. Llanes/R. Gonzalez",
           "equipo2": "A. Faletti/M. Diaz",
           "resultado": "2-1",
           "games":"6-2, 4-6, 7-6"

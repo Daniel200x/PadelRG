@@ -1,4 +1,3 @@
-
 let torneoData = null;
 let jugadoresData = [];
 let resultadosPartidos = {};
@@ -87,7 +86,6 @@ async function cargarTodosLosTorneos() {
     if (torneosCargados.length > 0) {
         statusDiv.className = 'status success';
         statusDiv.innerHTML = `✅ ${torneosCargados.length} torneo(s) cargado(s) correctamente`;
-        actualizarFiltroTorneos();
         
         // Procesar estadísticas combinadas
         procesarEstadisticasCombinadas();
@@ -150,6 +148,20 @@ function cargarTorneoEspecifico(ruta, nombre) {
 }
 
 // =============================================
+// FUNCIONES DE NORMALIZACIÓN
+// =============================================
+
+// Función para normalizar nombres (elimina acentos, convierte a minúsculas, etc.)
+function normalizarNombre(nombre) {
+    return nombre
+        .toLowerCase()
+        .trim()
+        .normalize("NFD") // Separa caracteres y diacríticos
+        .replace(/[\u0300-\u036f]/g, "") // Elimina diacríticos
+        .replace(/\s+/g, ' '); // Normaliza espacios
+}
+
+// =============================================
 // FUNCIONES ORIGINALES DE PROCESAMIENTO
 // =============================================
 
@@ -181,7 +193,7 @@ function procesarEstadisticas() {
         jugadoresData.push({
             nombre: jugador,
             partidos: [],
-            torneos: [torneoActual || 'Torneo Actual'], // INICIALIZAR TORNEOS
+            torneos: [torneoActual || 'Torneo Actual'],
             estadisticas: {
                 total: 0,
                 ganados: 0,
@@ -658,7 +670,7 @@ function procesarPartido(partido, fase, grupo = '', equipo1Real, equipo2Real) {
         grupo: grupo,
         rival: equipo2Real,
         marcador: partido.resultado,
-        torneo: torneoActual || 'Torneo Actual' // AGREGAR TORNEO AL PARTIDO
+        torneo: torneoActual || 'Torneo Actual'
     });
     
     // Procesar equipo 2
@@ -672,7 +684,7 @@ function procesarPartido(partido, fase, grupo = '', equipo1Real, equipo2Real) {
         grupo: grupo,
         rival: equipo1Real,
         marcador: partido.resultado,
-        torneo: torneoActual || 'Torneo Actual' // AGREGAR TORNEO AL PARTIDO
+        torneo: torneoActual || 'Torneo Actual'
     });
 }
 
@@ -711,7 +723,7 @@ function procesarEquipoPartido(equipo, datosPartido) {
                 resultado: datosPartido.resultado,
                 fase: datosPartido.fase,
                 grupo: datosPartido.grupo,
-                torneo: datosPartido.torneo, // AGREGAR TORNEO
+                torneo: datosPartido.torneo,
                 setsPropios: datosPartido.setsPropios,
                 setsRival: datosPartido.setsRival,
                 gamesPropios: datosPartido.gamesPropios,
@@ -753,13 +765,15 @@ function procesarEstadisticasCombinadas() {
         procesarUnTorneo(torneo.data, torneo.nombre);
     });
     
+    // Mostrar debug
+    mostrarDebugJugadores();
+    
     // Actualizar interfaz
     actualizarFiltroJugadores();
-    actualizarFiltroTorneos();
-    mostrarEstadisticas();
+    mostrarEstadisticasCombinadas();
 }
 
-// Función para procesar un torneo individual
+// Función para procesar un torneo individual - VERSIÓN MEJORADA
 function procesarUnTorneo(data, nombreTorneo) {
     // 1. Extraer todos los jugadores únicos de los equipos
     const jugadoresSet = new Set();
@@ -768,20 +782,58 @@ function procesarUnTorneo(data, nombreTorneo) {
         grupo.equipos.forEach(equipo => {
             if (equipo.nombre.includes('/')) {
                 const jugadores = equipo.nombre.split('/').map(j => j.trim());
-                jugadores.forEach(jugador => jugadoresSet.add(jugador));
+                jugadores.forEach(jugador => {
+                    const jugadorNormalizado = normalizarNombre(jugador);
+                    jugadoresSet.add(jugadorNormalizado);
+                });
             } else {
-                jugadoresSet.add(equipo.nombre);
+                const jugadorNormalizado = normalizarNombre(equipo.nombre);
+                jugadoresSet.add(jugadorNormalizado);
             }
         });
     });
     
+    console.log(`Jugadores encontrados en ${nombreTorneo}:`, Array.from(jugadoresSet));
+    
     // 2. Inicializar datos para cada jugador si no existe
-    jugadoresSet.forEach(jugador => {
-        let jugadorExistente = jugadoresData.find(j => j.nombre === jugador);
+    jugadoresSet.forEach(jugadorNormalizado => {
+        // Buscar jugador existente (comparando en minúsculas)
+        let jugadorExistente = jugadoresData.find(j => 
+            normalizarNombre(j.nombre) === jugadorNormalizado
+        );
         
         if (!jugadorExistente) {
+            // Encontrar el nombre original del primer equipo donde aparece
+            let nombreOriginal = jugadorNormalizado; // Valor por defecto
+            
+            // Buscar en todos los grupos y equipos
+            data.grupos.forEach(grupo => {
+                grupo.equipos.forEach(equipo => {
+                    if (equipo.nombre.includes('/')) {
+                        const jugadores = equipo.nombre.split('/').map(j => j.trim());
+                        const jugadorEncontrado = jugadores.find(j => 
+                            normalizarNombre(j) === jugadorNormalizado
+                        );
+                        if (jugadorEncontrado && nombreOriginal === jugadorNormalizado) {
+                            nombreOriginal = jugadorEncontrado;
+                        }
+                    } else if (normalizarNombre(equipo.nombre) === jugadorNormalizado) {
+                        if (nombreOriginal === jugadorNormalizado) {
+                            nombreOriginal = equipo.nombre;
+                        }
+                    }
+                });
+            });
+            
+            // Asegurarse de que nombreOriginal tenga un valor válido
+            if (!nombreOriginal || nombreOriginal === jugadorNormalizado) {
+                // Si no encontramos un nombre original mejor, usar el normalizado pero con primera letra mayúscula
+                nombreOriginal = jugadorNormalizado.charAt(0).toUpperCase() + jugadorNormalizado.slice(1);
+            }
+            
             jugadoresData.push({
-                nombre: jugador,
+                nombre: jugadorNormalizado,
+                nombreOriginal: nombreOriginal,
                 partidos: [],
                 torneos: [],
                 estadisticas: {
@@ -795,6 +847,8 @@ function procesarUnTorneo(data, nombreTorneo) {
                 }
             });
             jugadorExistente = jugadoresData[jugadoresData.length - 1];
+            
+            console.log(`Nuevo jugador creado: "${nombreOriginal}" (normalizado: "${jugadorNormalizado}")`);
         }
         
         // Agregar torneo si no existe
@@ -888,7 +942,13 @@ function procesarEquipoPartidoIndividual(equipo, datosPartido) {
     }
     
     jugadores.forEach(jugador => {
-        const jugadorData = jugadoresData.find(j => j.nombre === jugador);
+        const jugadorNormalizado = normalizarNombre(jugador);
+        
+        // Buscar jugador por nombre normalizado
+        const jugadorData = jugadoresData.find(j => 
+            normalizarNombre(j.nombre) === jugadorNormalizado
+        );
+        
         if (jugadorData) {
             // Verificar si el partido ya existe para evitar duplicados
             const partidoExistente = jugadorData.partidos.find(p => 
@@ -934,6 +994,11 @@ function procesarEquipoPartidoIndividual(equipo, datosPartido) {
             jugadorData.estadisticas.setsPerdidos += datosPartido.setsRival;
             jugadorData.estadisticas.gamesGanados += datosPartido.gamesPropios;
             jugadorData.estadisticas.gamesPerdidos += datosPartido.gamesRival;
+            
+            console.log(`✅ Partido agregado para ${jugadorData.nombreOriginal} en ${datosPartido.torneo}: ${datosPartido.resultado}`);
+        } else {
+            console.warn(`⚠️ Jugador no encontrado: ${jugador} (buscado como: ${jugadorNormalizado})`);
+            console.log('Jugadores disponibles:', jugadoresData.map(j => j.nombreOriginal));
         }
     });
 }
@@ -942,79 +1007,193 @@ function procesarEquipoPartidoIndividual(equipo, datosPartido) {
 // FUNCIONES DE INTERFAZ
 // =============================================
 
-// Actualizar filtro de jugadores
+// Actualizar filtro de jugadores - VERSIÓN CORREGIDA
 function actualizarFiltroJugadores() {
     const playerFilter = document.getElementById('playerFilter');
     
+    // Limpiar opciones existentes (excepto "Todos los jugadores")
     while (playerFilter.options.length > 1) {
         playerFilter.remove(1);
     }
     
-    jugadoresData.sort((a, b) => a.nombre.localeCompare(b.nombre))
-                 .forEach(jugador => {
+    // Ordenar jugadores de manera segura
+    const jugadoresOrdenados = [...jugadoresData].sort((a, b) => {
+        const nombreA = (a.nombreOriginal || a.nombre || '').toString();
+        const nombreB = (b.nombreOriginal || b.nombre || '').toString();
+        return nombreA.localeCompare(nombreB);
+    });
+    
+    // Agregar opciones al filtro
+    jugadoresOrdenados.forEach(jugador => {
+        const nombreMostrar = jugador.nombreOriginal || jugador.nombre || 'Jugador sin nombre';
         const option = document.createElement('option');
-        option.value = jugador.nombre;
-        option.textContent = jugador.nombre;
+        option.value = nombreMostrar;
+        option.textContent = nombreMostrar;
         playerFilter.appendChild(option);
     });
+    
+    console.log(`Filtro actualizado con ${jugadoresOrdenados.length} jugadores`);
 }
 
-// Actualizar filtro de torneos
-function actualizarFiltroTorneos() {
-    const tournamentFilter = document.getElementById('tournamentFilter');
+// Mostrar estadísticas combinadas
+function mostrarEstadisticasCombinadas() {
+    const estadisticasDiv = document.getElementById('estadisticas');
     
-    // Limpiar opciones existentes (excepto la primera)
-    while (tournamentFilter.options.length > 1) {
-        tournamentFilter.remove(1);
+    // Ordenar por porcentaje de victorias
+    const jugadoresOrdenados = [...jugadoresData].sort((a, b) => {
+        const porcentajeA = a.estadisticas.total > 0 ? 
+            (a.estadisticas.ganados / a.estadisticas.total) * 100 : 0;
+        const porcentajeB = b.estadisticas.total > 0 ? 
+            (b.estadisticas.ganados / b.estadisticas.total) * 100 : 0;
+        
+        return porcentajeB - porcentajeA;
+    });
+    
+    let html = '';
+    
+    if (jugadoresOrdenados.length === 0) {
+        html = '<div class="status info">No hay datos para mostrar</div>';
+    } else {
+        jugadoresOrdenados.forEach(jugador => {
+            html += generarTarjetaJugadorCombinada(jugador);
+        });
     }
     
-    // Agregar torneos únicos de todos los jugadores
-    const torneosUnicos = [...new Set(jugadoresData.flatMap(j => j.torneos || []))];
-    
-    torneosUnicos.sort().forEach(torneo => {
-        const option = document.createElement('option');
-        option.value = torneo;
-        option.textContent = torneo;
-        tournamentFilter.appendChild(option);
-    });
+    estadisticasDiv.innerHTML = html;
 }
 
-// Mostrar estadísticas
+// Generar tarjeta de estadísticas combinadas para un jugador - VERSIÓN SEGURA
+function generarTarjetaJugadorCombinada(jugador) {
+    const stats = jugador.estadisticas;
+    const porcentajeVictorias = stats.total > 0 ? 
+        ((stats.ganados / stats.total) * 100).toFixed(1) : 0;
+    
+    // Usar nombreOriginal si existe, sino el nombre normalizado con manejo seguro
+    const nombreAMostrar = (jugador.nombreOriginal || jugador.nombre || 'Jugador sin nombre');
+    
+    // Agrupar partidos por torneo
+    const partidosPorTorneo = {};
+    jugador.partidos.forEach(partido => {
+        if (!partidosPorTorneo[partido.torneo]) {
+            partidosPorTorneo[partido.torneo] = [];
+        }
+        partidosPorTorneo[partido.torneo].push(partido);
+    });
+    
+    // Asegurarse de que torneos existe y es un array
+    const torneosJugador = Array.isArray(jugador.torneos) ? jugador.torneos : [];
+    
+    return `
+        <div class="jugador-card">
+            <div class="jugador-header">
+                <div>
+                    <h2>${nombreAMostrar}</h2>
+                    <div class="torneos-info">Participó en: ${torneosJugador.join(', ') || 'N/A'}</div>
+                </div>
+                <div>
+                    <div class="stat-value">${porcentajeVictorias}%</div>
+                    <div class="stat-label">Efectividad</div>
+                </div>
+            </div>
+            
+            <div class="jugador-stats">
+                <div class="stat-item">
+                    <div class="stat-value">${stats.total}</div>
+                    <div class="stat-label">Partidos Totales</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${stats.ganados}</div>
+                    <div class="stat-label">Victorias</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${stats.perdidos}</div>
+                    <div class="stat-label">Derrotas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${stats.setsGanados}-${stats.setsPerdidos}</div>
+                    <div class="stat-label">Sets (G-P)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${stats.gamesGanados}-${stats.gamesPerdidos}</div>
+                    <div class="stat-label">Games (G-P)</div>
+                </div>
+            </div>
+            
+            <div style="padding: 20px;">
+                <h3>Detalle por Torneos</h3>
+                ${Object.entries(partidosPorTorneo).map(([torneo, partidos]) => {
+                    const statsTorneo = calcularEstadisticasTorneo(partidos);
+                    const porcentajeTorneo = statsTorneo.total > 0 ? 
+                        ((statsTorneo.ganados / statsTorneo.total) * 100).toFixed(1) : 0;
+                    
+                    return `
+                        <div class="torneo-section">
+                            <h4>🏆 ${torneo}</h4>
+                            <div class="torneo-stats">
+                                <span><strong>${statsTorneo.total}</strong> partidos</span>
+                                <span><strong>${statsTorneo.ganados}</strong> ganados</span>
+                                <span><strong>${statsTorneo.perdidos}</strong> perdidos</span>
+                                <span><strong>${porcentajeTorneo}%</strong> efectividad</span>
+                                <span><strong>${statsTorneo.setsGanados}-${statsTorneo.setsPerdidos}</strong> sets</span>
+                            </div>
+                            <table class="partidos-table">
+                                <thead>
+                                    <tr>
+                                        <th>Fase</th>
+                                        <th>Equipo</th>
+                                        <th>Rival</th>
+                                        <th>Resultado</th>
+                                        <th>Marcador</th>
+                                        <th>Sets</th>
+                                        <th>Games</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${partidos.map(partido => `
+                                        <tr>
+                                            <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
+                                            <td>${partido.equipo || 'N/A'}</td>
+                                            <td>${partido.rival || 'N/A'}</td>
+                                            <td class="resultado-${partido.resultado}">${partido.resultado === 'ganado' ? '✅ Ganado' : '❌ Perdido'}</td>
+                                            <td>${partido.marcador || 'N/A'}</td>
+                                            <td>${partido.setsPropios || 0}-${partido.setsRival || 0}</td>
+                                            <td>${partido.gamesPropios || 0}-${partido.gamesRival || 0}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        </div>
+    `;
+}
+
+// Función para calcular estadísticas por torneo
+function calcularEstadisticasTorneo(partidos) {
+    return {
+        total: partidos.length,
+        ganados: partidos.filter(p => p.resultado === 'ganado').length,
+        perdidos: partidos.filter(p => p.resultado === 'perdido').length,
+        setsGanados: partidos.reduce((sum, p) => sum + p.setsPropios, 0),
+        setsPerdidos: partidos.reduce((sum, p) => sum + p.setsRival, 0),
+        gamesGanados: partidos.reduce((sum, p) => sum + p.gamesPropios, 0),
+        gamesPerdidos: partidos.reduce((sum, p) => sum + p.gamesRival, 0)
+    };
+}
+
+// Mostrar estadísticas (función original para torneo individual)
 function mostrarEstadisticas() {
     const estadisticasDiv = document.getElementById('estadisticas');
     const jugadorFiltro = document.getElementById('playerFilter').value;
     const faseFiltro = document.getElementById('phaseFilter').value;
-    const torneoFiltro = document.getElementById('tournamentFilter').value;
     
     let jugadoresAMostrar = jugadoresData;
     
     // Aplicar filtros
     if (jugadorFiltro !== 'all') {
         jugadoresAMostrar = jugadoresAMostrar.filter(j => j.nombre === jugadorFiltro);
-    }
-    
-    if (torneoFiltro !== 'all') {
-        jugadoresAMostrar = jugadoresAMostrar.map(jugador => {
-            // Filtrar partidos por torneo
-            const partidosFiltrados = jugador.partidos.filter(p => p.torneo === torneoFiltro);
-            
-            // Recalcular estadísticas solo para los partidos filtrados
-            const stats = {
-                total: partidosFiltrados.length,
-                ganados: partidosFiltrados.filter(p => p.resultado === 'ganado').length,
-                perdidos: partidosFiltrados.filter(p => p.resultado === 'perdido').length,
-                setsGanados: partidosFiltrados.reduce((sum, p) => sum + p.setsPropios, 0),
-                setsPerdidos: partidosFiltrados.reduce((sum, p) => sum + p.setsRival, 0),
-                gamesGanados: partidosFiltrados.reduce((sum, p) => sum + p.gamesPropios, 0),
-                gamesPerdidos: partidosFiltrados.reduce((sum, p) => sum + p.gamesRival, 0)
-            };
-            
-            return {
-                ...jugador,
-                partidos: partidosFiltrados,
-                estadisticas: stats
-            };
-        }).filter(jugador => jugador.partidos.length > 0); // Solo mostrar jugadores con partidos en este torneo
     }
     
     // Ordenar por porcentaje de victorias
@@ -1033,15 +1212,15 @@ function mostrarEstadisticas() {
         html = '<div class="status info">No hay datos para mostrar con los filtros seleccionados</div>';
     } else {
         jugadoresAMostrar.forEach(jugador => {
-            html += generarTarjetaJugador(jugador, faseFiltro, torneoFiltro);
+            html += generarTarjetaJugadorIndividual(jugador, faseFiltro);
         });
     }
     
     estadisticasDiv.innerHTML = html;
 }
 
-// Generar tarjeta de estadísticas para un jugador
-function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
+// Generar tarjeta para torneo individual
+function generarTarjetaJugadorIndividual(jugador, faseFiltro) {
     const stats = jugador.estadisticas;
     const porcentajeVictorias = stats.total > 0 ? 
         ((stats.ganados / stats.total) * 100).toFixed(1) : 0;
@@ -1051,19 +1230,12 @@ function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
     if (faseFiltro !== 'all') {
         partidosAMostrar = partidosAMostrar.filter(p => p.fase === faseFiltro);
     }
-    if (torneoFiltro !== 'all') {
-        partidosAMostrar = partidosAMostrar.filter(p => p.torneo === torneoFiltro);
-    }
-    
-    // Asegurarse de que torneos existe y es un array
-    const torneosJugador = Array.isArray(jugador.torneos) ? jugador.torneos : [];
     
     return `
         <div class="jugador-card">
             <div class="jugador-header">
                 <div>
                     <h2>${jugador.nombre}</h2>
-                    <div class="torneos-info">Torneos: ${torneosJugador.join(', ') || 'N/A'}</div>
                 </div>
                 <div>
                     <div class="stat-value">${porcentajeVictorias}%</div>
@@ -1100,7 +1272,6 @@ function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
                     <table class="partidos-table">
                         <thead>
                             <tr>
-                                <th>Torneo</th>
                                 <th>Fase</th>
                                 <th>Equipo</th>
                                 <th>Rival</th>
@@ -1113,7 +1284,6 @@ function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
                         <tbody>
                             ${partidosAMostrar.map(partido => `
                                 <tr>
-                                    <td><span class="torneo-badge">${partido.torneo || 'N/A'}</span></td>
                                     <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
                                     <td>${partido.equipo}</td>
                                     <td>${partido.rival}</td>
@@ -1144,7 +1314,51 @@ function obtenerNombreFase(fase) {
     return nombres[fase] || fase;
 }
 
+// =============================================
+// FUNCIONES DE DEBUG
+// =============================================
+
+// Función para debug - mostrar información de jugadores duplicados
+function mostrarDebugJugadores() {
+    console.log('=== DEBUG JUGADORES ===');
+    jugadoresData.forEach(jugador => {
+        console.log(`Jugador: "${jugador.nombreOriginal}" (normalizado: "${jugador.nombre}")`);
+        console.log(`- Torneos: ${jugador.torneos.join(', ')}`);
+        console.log(`- Partidos: ${jugador.partidos.length}`);
+        console.log(`- Estadísticas: ${jugador.estadisticas.ganados}G ${jugador.estadisticas.perdidos}P`);
+    });
+}
+
+// Función para buscar jugador en todos los torneos (para debug)
+function buscarJugadorEnTodosTorneos(nombreJugador) {
+    console.log(`=== BUSCANDO JUGADOR: ${nombreJugador} ===`);
+    
+    torneosCargados.forEach(torneo => {
+        console.log(`\nEn torneo: ${torneo.nombre}`);
+        let encontrado = false;
+        
+        torneo.data.grupos.forEach(grupo => {
+            grupo.equipos.forEach(equipo => {
+                if (equipo.nombre.includes(nombreJugador)) {
+                    console.log(`✅ Encontrado en equipo: ${equipo.nombre}`);
+                    encontrado = true;
+                }
+                if (equipo.nombre.includes('/')) {
+                    const jugadores = equipo.nombre.split('/').map(j => j.trim());
+                    if (jugadores.some(j => j.includes(nombreJugador))) {
+                        console.log(`✅ Encontrado en equipo: ${equipo.nombre}`);
+                        encontrado = true;
+                    }
+                }
+            });
+        });
+        
+        if (!encontrado) {
+            console.log(`❌ No encontrado en ${torneo.nombre}`);
+        }
+    });
+}
+
 // Event listeners
 document.getElementById('playerFilter').addEventListener('change', mostrarEstadisticas);
 document.getElementById('phaseFilter').addEventListener('change', mostrarEstadisticas);
-document.getElementById('tournamentFilter').addEventListener('change', mostrarEstadisticas);

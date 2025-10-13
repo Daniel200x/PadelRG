@@ -226,6 +226,72 @@ h1, h2, h3 {
     color: #383d41;
 }
 
+/* Estilos adicionales para estadísticas combinadas */
+.torneo-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.torneo-section h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.torneo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.torneo-stats span {
+    font-size: 14px;
+    color: #555;
+}
+
+.torneos-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Botones de torneos */
+.tournament-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tournament-btn {
+    padding: 8px 16px;
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tournament-btn:hover {
+    background: #dee2e6;
+}
+
+.tournament-btn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .filters {
@@ -248,6 +314,20 @@ h1, h2, h3 {
     .partidos-table td {
         padding: 8px 10px;
     }
+    
+    .tournament-buttons {
+        flex-direction: column;
+    }
+    
+    .tournament-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .torneo-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -266,5 +346,11 @@ h1, h2, h3 {
     .partidos-table th,
     .partidos-table td {
         padding: 6px 8px;
+    }
+    
+    .jugador-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
