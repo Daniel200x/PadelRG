@@ -1,3 +1,5 @@
+
+
 let torneoData = null;
 let jugadoresData = [];
 let resultadosPartidos = {};
@@ -10,32 +12,121 @@ let ganadoresPorRonda = {
     final: {}
 };
 
-// RUTA DEL ARCHIVO JSON - MODIFICA ESTA RUTA SEGÚN TUS NECESIDADES
-const RUTA_JSON = '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json'; // Cambia esta ruta por la de tu archivo JSON
+// LISTA DE RUTAS JSON - AGREGA TUS RUTAS AQUÍ
+const RUTAS_JSON = [
+     { nombre: 'Torneo 1', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/8va.json' },
+    { nombre: 'Torneo 2', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/7ma.json' },
+    { nombre: 'Torneo 3', ruta: '../segundoSet/js/ediciones/tercerFecha/masculino/6ta.json' }
+    // Agrega más rutas según necesites
+];
 
-// Cargar automáticamente el JSON al iniciar
+let torneosCargados = [];
+let torneoActual = null;
+
+// Cargar automáticamente todos los JSON al iniciar
 document.addEventListener('DOMContentLoaded', function() {
-    cargarJSONDesdeRuta(RUTA_JSON);
+    crearSelectorTorneos();
+    cargarTodosLosTorneos();
 });
 
-// Función para cargar JSON desde ruta específica
-function cargarJSONDesdeRuta(ruta) {
+// Función para crear el selector de torneos
+function crearSelectorTorneos() {
+    const selectorDiv = document.getElementById('tournamentSelector');
+    
+    if (RUTAS_JSON.length === 0) {
+        selectorDiv.innerHTML = '<p>No hay torneos configurados</p>';
+        return;
+    }
+
+    selectorDiv.innerHTML = '<p><strong>Selecciona un torneo:</strong></p><div class="tournament-buttons"></div>';
+    const buttonsContainer = selectorDiv.querySelector('.tournament-buttons');
+
+    RUTAS_JSON.forEach((torneo, index) => {
+        const button = document.createElement('button');
+        button.className = 'tournament-btn';
+        button.textContent = torneo.nombre;
+        button.dataset.ruta = torneo.ruta;
+        button.onclick = () => cargarTorneoEspecifico(torneo.ruta, torneo.nombre);
+        buttonsContainer.appendChild(button);
+
+        // Cargar el primer torneo por defecto
+        if (index === 0) {
+            setTimeout(() => {
+                button.classList.add('active');
+                cargarTorneoEspecifico(torneo.ruta, torneo.nombre);
+            }, 100);
+        }
+    });
+}
+
+// Función para cargar todos los torneos
+async function cargarTodosLosTorneos() {
     const statusDiv = document.getElementById('fileStatus');
-    
     statusDiv.className = 'status loading';
-    statusDiv.innerHTML = '🔄 Cargando datos del torneo...';
+    statusDiv.innerHTML = '🔄 Cargando todos los torneos...';
+
+    torneosCargados = [];
+
+    for (const torneo of RUTAS_JSON) {
+        try {
+            const response = await fetch(torneo.ruta);
+            if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+            
+            const data = await response.json();
+            torneosCargados.push({
+                nombre: torneo.nombre,
+                ruta: torneo.ruta,
+                data: data
+            });
+            
+            console.log(`✅ ${torneo.nombre} cargado correctamente`);
+        } catch (error) {
+            console.error(`❌ Error cargando ${torneo.nombre}:`, error);
+        }
+    }
+
+    if (torneosCargados.length > 0) {
+        statusDiv.className = 'status success';
+        statusDiv.innerHTML = `✅ ${torneosCargados.length} torneo(s) cargado(s) correctamente`;
+        actualizarFiltroTorneos();
+        
+        // Procesar estadísticas combinadas
+        procesarEstadisticasCombinadas();
+    } else {
+        statusDiv.className = 'status error';
+        statusDiv.innerHTML = '❌ No se pudieron cargar los torneos';
+    }
+}
+
+// Función para cargar un torneo específico
+function cargarTorneoEspecifico(ruta, nombre) {
+    const statusDiv = document.getElementById('fileStatus');
+    const buttons = document.querySelectorAll('.tournament-btn');
     
+    // Remover clase activa de todos los botones
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Agregar clase activa al botón clickeado
+    buttons.forEach(btn => {
+        if (btn.dataset.ruta === ruta) {
+            btn.classList.add('active');
+        }
+    });
+
+    statusDiv.className = 'status loading';
+    statusDiv.innerHTML = `🔄 Cargando ${nombre}...`;
+
     fetch(ruta)
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`Error HTTP: ${response.status}`);
-            }
+            if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
             return response.json();
         })
         .then(data => {
             torneoData = data;
+            torneoActual = nombre;
+            
             statusDiv.className = 'status success';
-            statusDiv.innerHTML = `✅ Torneo cargado: <strong>${torneoData.nombre || 'Torneo'}</strong>`;
+            statusDiv.innerHTML = `✅ ${nombre} cargado: <strong>${torneoData.nombre || nombre}</strong>`;
             
             // Reiniciar datos
             resultadosPartidos = {};
@@ -54,12 +145,16 @@ function cargarJSONDesdeRuta(ruta) {
         })
         .catch(error => {
             statusDiv.className = 'status error';
-            statusDiv.innerHTML = `❌ Error al cargar el torneo: ${error.message}`;
+            statusDiv.innerHTML = `❌ Error al cargar ${nombre}: ${error.message}`;
             console.error('Error loading JSON:', error);
         });
 }
 
-// Procesar estadísticas de jugadores
+// =============================================
+// FUNCIONES ORIGINALES DE PROCESAMIENTO
+// =============================================
+
+// Procesar estadísticas de jugadores (función original)
 function procesarEstadisticas() {
     if (!torneoData) return;
     
@@ -439,13 +534,6 @@ function resolverEquipoEliminatoria(equipoStr, rondaActual) {
     return equipoStr;
 }
 
-// Obtener las rondas anteriores según la ronda actual
-function obtenerRondasAnteriores(rondaActual) {
-    const ordenRondas = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
-    const indexActual = ordenRondas.indexOf(rondaActual);
-    return ordenRondas.slice(0, indexActual).reverse();
-}
-
 // Procesar partidos de eliminatorias - VERSIÓN MEJORADA
 function procesarPartidosEliminatorias() {
     console.log('\n=== PROCESANDO ELIMINATORIAS ===');
@@ -645,16 +733,214 @@ function procesarEquipoPartido(equipo, datosPartido) {
     });
 }
 
+// =============================================
+// FUNCIONES PARA MÚLTIPLES TORNEOS
+// =============================================
+
+// Función para procesar estadísticas combinadas de todos los torneos
+function procesarEstadisticasCombinadas() {
+    console.log('Procesando estadísticas combinadas de todos los torneos...');
+    
+    // Reiniciar datos
+    jugadoresData = [];
+    
+    // Procesar cada torneo
+    torneosCargados.forEach(torneo => {
+        console.log(`Procesando: ${torneo.nombre}`);
+        procesarUnTorneo(torneo.data, torneo.nombre);
+    });
+    
+    // Actualizar interfaz
+    actualizarFiltroJugadores();
+    actualizarFiltroTorneos();
+    mostrarEstadisticas();
+}
+
+// Función para procesar un torneo individual
+function procesarUnTorneo(data, nombreTorneo) {
+    // 1. Extraer todos los jugadores únicos de los equipos
+    const jugadoresSet = new Set();
+    
+    data.grupos.forEach(grupo => {
+        grupo.equipos.forEach(equipo => {
+            if (equipo.nombre.includes('/')) {
+                const jugadores = equipo.nombre.split('/').map(j => j.trim());
+                jugadores.forEach(jugador => jugadoresSet.add(jugador));
+            } else {
+                jugadoresSet.add(equipo.nombre);
+            }
+        });
+    });
+    
+    // 2. Inicializar datos para cada jugador si no existe
+    jugadoresSet.forEach(jugador => {
+        let jugadorExistente = jugadoresData.find(j => j.nombre === jugador);
+        
+        if (!jugadorExistente) {
+            jugadoresData.push({
+                nombre: jugador,
+                partidos: [],
+                torneos: [],
+                estadisticas: {
+                    total: 0,
+                    ganados: 0,
+                    perdidos: 0,
+                    setsGanados: 0,
+                    setsPerdidos: 0,
+                    gamesGanados: 0,
+                    gamesPerdidos: 0
+                }
+            });
+        }
+    });
+    
+    // 3. Procesar partidos del torneo
+    procesarPartidosTorneo(data, nombreTorneo);
+}
+
+// Función para procesar partidos de un torneo específico
+function procesarPartidosTorneo(data, nombreTorneo) {
+    // Procesar grupos
+    data.grupos.forEach(grupo => {
+        grupo.partidos.forEach(partido => {
+            if (!partido.resultado || partido.resultado === "A definir") return;
+            
+            procesarPartidoIndividual(partido, 'grupos', grupo.nombre, nombreTorneo);
+        });
+    });
+    
+    // Procesar eliminatorias
+    const fases = ['dieciseisavos', 'octavos', 'cuartos', 'semis', 'final'];
+    fases.forEach(fase => {
+        if (data.eliminatorias && data.eliminatorias[fase]) {
+            if (Array.isArray(data.eliminatorias[fase])) {
+                data.eliminatorias[fase].forEach(partido => {
+                    if (!partido.resultado || partido.resultado === "A definir") return;
+                    procesarPartidoIndividual(partido, fase, '', nombreTorneo);
+                });
+            } else {
+                const partido = data.eliminatorias[fase];
+                if (partido.resultado && partido.resultado !== "A definir") {
+                    procesarPartidoIndividual(partido, fase, '', nombreTorneo);
+                }
+            }
+        }
+    });
+}
+
+// Función para procesar un partido individual
+function procesarPartidoIndividual(partido, fase, grupo, nombreTorneo) {
+    const [sets1, sets2] = partido.resultado.split('-').map(Number);
+    const games = partido.games ? partido.games.split(', ').map(set => {
+        const [g1, g2] = set.split('-').map(Number);
+        return { g1, g2 };
+    }) : [];
+    
+    const totalGames1 = games.reduce((sum, g) => sum + (g.g1 || 0), 0);
+    const totalGames2 = games.reduce((sum, g) => sum + (g.g2 || 0), 0);
+    
+    // Procesar equipo 1
+    procesarEquipoPartidoIndividual(partido.equipo1, {
+        setsPropios: sets1,
+        setsRival: sets2,
+        gamesPropios: totalGames1,
+        gamesRival: totalGames2,
+        resultado: sets1 > sets2 ? 'ganado' : 'perdido',
+        fase: fase,
+        grupo: grupo,
+        rival: partido.equipo2,
+        marcador: partido.resultado,
+        torneo: nombreTorneo
+    });
+    
+    // Procesar equipo 2
+    procesarEquipoPartidoIndividual(partido.equipo2, {
+        setsPropios: sets2,
+        setsRival: sets1,
+        gamesPropios: totalGames2,
+        gamesRival: totalGames1,
+        resultado: sets2 > sets1 ? 'ganado' : 'perdido',
+        fase: fase,
+        grupo: grupo,
+        rival: partido.equipo1,
+        marcador: partido.resultado,
+        torneo: nombreTorneo
+    });
+}
+
+// Función para procesar un equipo en un partido individual
+function procesarEquipoPartidoIndividual(equipo, datosPartido) {
+    let jugadores = [];
+    
+    if (equipo.includes('/')) {
+        jugadores = equipo.split('/').map(j => j.trim());
+    } else {
+        jugadores = [equipo];
+    }
+    
+    jugadores.forEach(jugador => {
+        const jugadorData = jugadoresData.find(j => j.nombre === jugador);
+        if (jugadorData) {
+            // Verificar si el partido ya existe para evitar duplicados
+            const partidoExistente = jugadorData.partidos.find(p => 
+                p.equipo === equipo && 
+                p.rival === datosPartido.rival && 
+                p.marcador === datosPartido.marcador &&
+                p.fase === datosPartido.fase &&
+                p.torneo === datosPartido.torneo
+            );
+            
+            if (partidoExistente) return;
+            
+            // Agregar partido
+            jugadorData.partidos.push({
+                equipo: equipo,
+                rival: datosPartido.rival,
+                marcador: datosPartido.marcador,
+                resultado: datosPartido.resultado,
+                fase: datosPartido.fase,
+                grupo: datosPartido.grupo,
+                torneo: datosPartido.torneo,
+                setsPropios: datosPartido.setsPropios,
+                setsRival: datosPartido.setsRival,
+                gamesPropios: datosPartido.gamesPropios,
+                gamesRival: datosPartido.gamesRival
+            });
+            
+            // Agregar torneo a la lista si no existe
+            if (!jugadorData.torneos.includes(datosPartido.torneo)) {
+                jugadorData.torneos.push(datosPartido.torneo);
+            }
+            
+            // Actualizar estadísticas
+            jugadorData.estadisticas.total++;
+            
+            if (datosPartido.resultado === 'ganado') {
+                jugadorData.estadisticas.ganados++;
+            } else {
+                jugadorData.estadisticas.perdidos++;
+            }
+            
+            jugadorData.estadisticas.setsGanados += datosPartido.setsPropios;
+            jugadorData.estadisticas.setsPerdidos += datosPartido.setsRival;
+            jugadorData.estadisticas.gamesGanados += datosPartido.gamesPropios;
+            jugadorData.estadisticas.gamesPerdidos += datosPartido.gamesRival;
+        }
+    });
+}
+
+// =============================================
+// FUNCIONES DE INTERFAZ
+// =============================================
+
 // Actualizar filtro de jugadores
 function actualizarFiltroJugadores() {
     const playerFilter = document.getElementById('playerFilter');
     
-    // Limpiar opciones existentes (excepto la primera)
     while (playerFilter.options.length > 1) {
         playerFilter.remove(1);
     }
     
-    // Agregar jugadores ordenados por nombre
     jugadoresData.sort((a, b) => a.nombre.localeCompare(b.nombre))
                  .forEach(jugador => {
         const option = document.createElement('option');
@@ -664,11 +950,32 @@ function actualizarFiltroJugadores() {
     });
 }
 
+// Actualizar filtro de torneos
+function actualizarFiltroTorneos() {
+    const tournamentFilter = document.getElementById('tournamentFilter');
+    
+    // Limpiar opciones existentes (excepto la primera)
+    while (tournamentFilter.options.length > 1) {
+        tournamentFilter.remove(1);
+    }
+    
+    // Agregar torneos únicos de todos los jugadores
+    const torneosUnicos = [...new Set(jugadoresData.flatMap(j => j.torneos))];
+    
+    torneosUnicos.sort().forEach(torneo => {
+        const option = document.createElement('option');
+        option.value = torneo;
+        option.textContent = torneo;
+        tournamentFilter.appendChild(option);
+    });
+}
+
 // Mostrar estadísticas
 function mostrarEstadisticas() {
     const estadisticasDiv = document.getElementById('estadisticas');
     const jugadorFiltro = document.getElementById('playerFilter').value;
     const faseFiltro = document.getElementById('phaseFilter').value;
+    const torneoFiltro = document.getElementById('tournamentFilter').value;
     
     let jugadoresAMostrar = jugadoresData;
     
@@ -677,7 +984,31 @@ function mostrarEstadisticas() {
         jugadoresAMostrar = jugadoresAMostrar.filter(j => j.nombre === jugadorFiltro);
     }
     
-    // Ordenar por porcentaje de victorias (solo si hay partidos)
+    if (torneoFiltro !== 'all') {
+        jugadoresAMostrar = jugadoresAMostrar.map(jugador => {
+            // Filtrar partidos por torneo
+            const partidosFiltrados = jugador.partidos.filter(p => p.torneo === torneoFiltro);
+            
+            // Recalcular estadísticas solo para los partidos filtrados
+            const stats = {
+                total: partidosFiltrados.length,
+                ganados: partidosFiltrados.filter(p => p.resultado === 'ganado').length,
+                perdidos: partidosFiltrados.filter(p => p.resultado === 'perdido').length,
+                setsGanados: partidosFiltrados.reduce((sum, p) => sum + p.setsPropios, 0),
+                setsPerdidos: partidosFiltrados.reduce((sum, p) => sum + p.setsRival, 0),
+                gamesGanados: partidosFiltrados.reduce((sum, p) => sum + p.gamesPropios, 0),
+                gamesPerdidos: partidosFiltrados.reduce((sum, p) => sum + p.gamesRival, 0)
+            };
+            
+            return {
+                ...jugador,
+                partidos: partidosFiltrados,
+                estadisticas: stats
+            };
+        }).filter(jugador => jugador.partidos.length > 0); // Solo mostrar jugadores con partidos en este torneo
+    }
+    
+    // Ordenar por porcentaje de victorias
     jugadoresAMostrar.sort((a, b) => {
         const porcentajeA = a.estadisticas.total > 0 ? 
             (a.estadisticas.ganados / a.estadisticas.total) * 100 : 0;
@@ -693,7 +1024,7 @@ function mostrarEstadisticas() {
         html = '<div class="status info">No hay datos para mostrar con los filtros seleccionados</div>';
     } else {
         jugadoresAMostrar.forEach(jugador => {
-            html += generarTarjetaJugador(jugador, faseFiltro);
+            html += generarTarjetaJugador(jugador, faseFiltro, torneoFiltro);
         });
     }
     
@@ -701,7 +1032,7 @@ function mostrarEstadisticas() {
 }
 
 // Generar tarjeta de estadísticas para un jugador
-function generarTarjetaJugador(jugador, faseFiltro) {
+function generarTarjetaJugador(jugador, faseFiltro, torneoFiltro) {
     const stats = jugador.estadisticas;
     const porcentajeVictorias = stats.total > 0 ? 
         ((stats.ganados / stats.total) * 100).toFixed(1) : 0;
@@ -711,11 +1042,17 @@ function generarTarjetaJugador(jugador, faseFiltro) {
     if (faseFiltro !== 'all') {
         partidosAMostrar = partidosAMostrar.filter(p => p.fase === faseFiltro);
     }
+    if (torneoFiltro !== 'all') {
+        partidosAMostrar = partidosAMostrar.filter(p => p.torneo === torneoFiltro);
+    }
     
     return `
         <div class="jugador-card">
             <div class="jugador-header">
-                <h2>${jugador.nombre}</h2>
+                <div>
+                    <h2>${jugador.nombre}</h2>
+                    <div class="torneos-info">Torneos: ${jugador.torneos.join(', ')}</div>
+                </div>
                 <div>
                     <div class="stat-value">${porcentajeVictorias}%</div>
                     <div class="stat-label">Efectividad</div>
@@ -751,6 +1088,7 @@ function generarTarjetaJugador(jugador, faseFiltro) {
                     <table class="partidos-table">
                         <thead>
                             <tr>
+                                <th>Torneo</th>
                                 <th>Fase</th>
                                 <th>Equipo</th>
                                 <th>Rival</th>
@@ -763,6 +1101,7 @@ function generarTarjetaJugador(jugador, faseFiltro) {
                         <tbody>
                             ${partidosAMostrar.map(partido => `
                                 <tr>
+                                    <td><span class="torneo-badge">${partido.torneo}</span></td>
                                     <td><span class="fase-badge fase-${partido.fase}">${obtenerNombreFase(partido.fase)}</span></td>
                                     <td>${partido.equipo}</td>
                                     <td>${partido.rival}</td>
@@ -790,10 +1129,10 @@ function obtenerNombreFase(fase) {
         'semis': 'Semis',
         'final': 'Final'
     };
-    
     return nombres[fase] || fase;
 }
 
-// Event listeners para filtros
+// Event listeners
 document.getElementById('playerFilter').addEventListener('change', mostrarEstadisticas);
 document.getElementById('phaseFilter').addEventListener('change', mostrarEstadisticas);
+document.getElementById('tournamentFilter').addEventListener('change', mostrarEstadisticas);
