@@ -119,60 +119,48 @@
   ],
 
 
-  "eliminatorias": {
+ "eliminatorias": {
 
     "cuartos": [
+      
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "2do B",
+        "equipo2": "2do C",
+        "fecha": "Domingo 14:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "1ro C",
+        "equipo2": "2do A",
+        "fecha": "Domingo 14:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "1ro A",
+        "equipo2": "Ganador P1",
+        "fecha": "Domingo 19:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "Ganador P2",
+        "equipo2": "1ro B",
+        "fecha": "Domingo 19:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
-      "ganador": "/"
+     "equipo1": "Ganador P5",
+        "equipo2": "Ganador P6",
+        "fecha": "Domingo 22:30 hs Cancha ",
+        "resultado": "",
+     
+    "games": ""
     }
   }
 }
