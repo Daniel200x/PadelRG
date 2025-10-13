@@ -8,28 +8,28 @@
       "equipos": [
         {    "nombre": "Matias Dos Santos/Waldemar Sosa",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
         {      "nombre": "Gerardo Aballay/Nicolas Dominguez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "J M Mendez/Facundo Infran",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {   "nombre": "Jose Maria Mendez/Facundo Infran",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 23:00 hs Cancha 2",
+          "equipo1": "Matias Dos Santos/Waldemar Sosa",
+          "equipo2": "Jose Maria Mendez/Facundo Infran",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 23:00 hs Cancha 1",
+          "equipo1": "Gerardo Aballay/Nicolas Dominguez",
+          "equipo2": "Jose Maria Mendez/Facundo Infran",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 20:00 hs Cancha 2",
+          "equipo1": "Matias Dos Santos/Waldemar Sosa",
+          "equipo2": "Gerardo Aballay/Nicolas Dominguez",
           "resultado": "",
           "games": ""
         }
@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 21:00 hs Cancha 2",
+          "equipo1": "Nicolas Barrios/Joaquin Bogunovich",
+          "equipo2": "Eduardo Garay/Gabriel Gabutti",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 22:00 hs Cancha 2",
+          "equipo1": "Eduardo Garay/Gabriel Gabutti",
+          "equipo2": "Facundo Saldaño/Dario Orellano",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Jueves 22:00 hs Cancha 2",
+          "equipo1": "Nicolas Barrios/Joaquin Bogunovich",
+          "equipo2": "Facundo Saldaño/Dario Orellano",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 18:30 hs Cancha 2",
+          "equipo1": "Mariano Pereyra/Valentin Lemus",
+          "equipo2": "Diego Floriani/Franco Gonzalez",
           "resultado": "",
           "games": ""
         },
         {
           "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Mariano Pereyra/Valentin Lemus",
+          "equipo2": "Fernando Rivero/Matias Demarchi",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 19:00 hs Cancha 2",
+          "equipo1": "Diego Floriani/Franco Gonzalez",
+          "equipo2": "Fernando Rivero/Matias Demarchi",
           "resultado": "",
           "games": ""
         }
@@ -135,22 +135,22 @@
       "partidos": [
         {
          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Rafael Muriño/Javier Baldovino",
+          "equipo2": "Mariano Puebla/Damian Chicaguala",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado  10:00 hs Cancha 2",
+          "equipo1": "Brian Gamarra/Cristian Carrasco",
+          "equipo2": "Mariano Puebla/Damian Chicaguala",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado  16:00 hs Cancha 1",
+          "equipo1": "Brian Gamarra/Cristian Carrasco",
+          "equipo2": "Rafael Muriño/Javier Baldovino",
           "resultado": "",
           "games": ""
         }
@@ -244,7 +244,7 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Kevin Juarez/Nicolas Gonzalez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
@@ -252,29 +252,36 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Alejo Viterbori/Nahuel Allaman",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 20:00 hs Cancha 1",
+          "equipo1": "Javier Gimenez/Nicolas Barbosa",
+          "equipo2": "Kevin Juarez/Nicolas Gonzalez",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 23:50 hs Cancha 2",
+          "equipo1": "Ignacio Beltran/Diego Velazquez",
+          "equipo2": "Alejo Viterbori/Nahuel Allaman",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 14:00 hs Cancha 1",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 14:00 hs Cancha 2",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
           "resultado": "",
           "games": ""
         }

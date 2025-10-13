@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 22:00 hs Cancha 1",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Tiago Andrade/Tomas Echeverria",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 21:00 hs Cancha 1",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Julian Morales/A confirmar",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 20:00 hs Cancha 1",
+          "equipo1": "Tiago Andrade/Tomas Echeverria",
+          "equipo2": "Julian Morales/A confirmar",
           "resultado": "",
           "games": ""
         }
@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 20:00 hs Cancha 1",
+          "equipo1": "Gabriel Muller/Jose Villarreal",
+          "equipo2": "Lucas Ojeda/Agustin Fulco",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Jueves 19:00 hs Cancha 1",
+          "equipo1": "Gabriel Muller/Jose Villarreal",
+          "equipo2": "Juan Barria/Cesar Andrade",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 22:00 hs Cancha 1",
+          "equipo1": "Lucas Ojeda/Agustin Fulco",
+          "equipo2": "Juan Barria/Cesar Andrade",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 21:00 hs Cancha 1",
+          "equipo1": "Joaquin Servian/Jeremias Maestro",
+          "equipo2": "Nicolas Escufachi/Franco Moreno",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 12:00 hs Cancha 1",
+          "equipo1": "Joaquin Servian/Jeremias Maestro",
+          "equipo2": "Yannick Sanchez/Agustin Guerra",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 17:00 hs Cancha 1",
+          "equipo1": "Yannick Sanchez/Agustin Guerra",
+          "equipo2": "Nicolas Escufachi/Franco Moreno",
           "resultado": "",
           "games": ""
         }
@@ -122,57 +122,45 @@
   "eliminatorias": {
 
     "cuartos": [
+      
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "2do B",
+        "equipo2": "2do C",
+        "fecha": "Domingo 14:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "1ro C",
+        "equipo2": "2do A",
+        "fecha": "Domingo 14:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "1ro A",
+        "equipo2": "Ganador P1",
+        "fecha": "Domingo 19:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "equipo1": "Ganador P2",
+        "equipo2": "1ro B",
+        "fecha": "Domingo 19:00 hs Cancha ",
+        "resultado": "",
+          "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
-      "ganador": "/"
+     "equipo1": "Ganador P5",
+        "equipo2": "Ganador P6",
+        "fecha": "Domingo 22:30 hs Cancha ",
+        "resultado": "",
+     
+    "games": ""
     }
   }
 }

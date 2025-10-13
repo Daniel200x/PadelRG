@@ -6,30 +6,30 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Karina Chicaguala/Lucrecia Fruncieri",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Antonella Zampini/Daniela Martinez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Mariana Pratto/Luciana Romano",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 21:00 hs Cancha 1",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Antonella Zampini/Daniela Martinez",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 22:00 hs Cancha 1",
+          "equipo1": "Antonella Zampini/Daniela Martinez",
+          "equipo2": "Mariana Pratto/Luciana Romano",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 21:00 hs Cancha 1",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Mariana Pratto/Luciana Romano",
           "resultado": "",
           "games": ""
         }
@@ -40,37 +40,37 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Mariana Medina/Romina Torres",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Ana Velazquez/Alejandra Romero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Cecilia Gersicich/Fernanda Treppo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 20:00 hs Cancha 1",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Ana Velazquez/Alejandra Romero",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Jueves 22:00 hs Cancha 1",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Cecilia Gersicich/Fernanda Treppo",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 22:00 hs Cancha 2",
+          "equipo1": "Ana Velazquez/Alejandra Romero",
+          "equipo2": "Cecilia Gersicich/Fernanda Treppo",
           "resultado": "",
           "games": ""
         }
@@ -80,76 +80,36 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Claudia Andrade/Noelia Velasquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Marcia Figueroa/Tatiana Mainero",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Alejandra Soto/A definir",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
+          "fecha": "Martes 17:00 hs Cancha 1",
+          "equipo1": "Marcia Figueroa/Tatiana Mainero",
           "equipo2": "",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Marcia Figueroa/Tatiana Mainero",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo D",
-      "equipos": [
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
-        }
-      ],
-      "partidos": [
-        {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
-        {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
-        {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
+         "fecha": "Viernes 21:00 hs Cancha 2",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
           "equipo2": "",
           "resultado": "",
           "games": ""

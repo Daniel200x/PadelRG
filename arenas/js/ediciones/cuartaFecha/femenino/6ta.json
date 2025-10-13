@@ -5,13 +5,13 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Fernanda Retuerto/Lucia Marcial",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Vanesa Iglesias/Yanina Magallanes",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Susana Sanabria/Paula Blanco",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -44,13 +44,13 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Griselda Gimenez/Fernanda Polizzi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Graciela Flamenco/Erika Martinez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Cecilia Rojo/Marta Barbosa",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -82,13 +82,13 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Sara Cortez/Giuliana Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Agustina Quezada/Carolina Nieto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Jimena Ramadori/Violeta Lopez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -120,13 +120,13 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Tania Luna/Carolina Herrera",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Pamela Rusconi/Elizabeth Andrade",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Martina Erlan/Carolina Barone",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -158,13 +158,51 @@
       "nombre": "Grupo E",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Florencia Bianchi/Ines Sosa",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Antonella Domeneh/Luisa Miranda",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "/",
+          "nombre": "Natalia Vazquez/Laura Gomez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Valeria Pereda/Belen Cordoba",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Antonella Domeneh/Luisa Miranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Natalia Vazquez/Laura Gomez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
