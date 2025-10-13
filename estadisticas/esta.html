@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Jugadores - Arenas</title>
+    <style>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .controls-section {
+            background: #f5f5f5;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 2px solid #ddd;
+            text-align: center;
+        }
+        
+        .btn {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background: #218838;
+        }
+        
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .btn-loading {
+            background: #ffc107;
+            color: #000;
+        }
+        
+        .players-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 25px;
+        }
+        
+        .player-card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .player-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .player-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .player-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #28a745;
+            margin-right: 20px;
+        }
+        
+        .player-info {
+            flex: 1;
+        }
+        
+        .player-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        
+        .player-torneos {
+            color: #6c757d;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .player-stats-badge {
+            text-align: center;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 2px solid #28a745;
+        }
+        
+        .percentage-high {
+            color: #28a745;
+        }
+        
+        .percentage-medium {
+            color: #ffc107;
+        }
+        
+        .percentage-low {
+            color: #dc3545;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .stat-name {
+            color: #495057;
+            font-weight: 500;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .total-stats {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 2px solid #28a745;
+        }
+        
+        .total-stats h4 {
+            margin: 0 0 15px 0;
+            color: #155724;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .error-message {
+            color: #721c24;
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border: 1px solid #f5c6cb;
+            text-align: center;
+        }
+        
+        .success-message {
+            color: #155724;
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border: 1px solid #c3e6cb;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #28a745;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+        
+        .summary-stats {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #b3d9ff;
+        }
+        
+        .summary-stats h3 {
+            margin: 0 0 15px 0;
+            color: #0066cc;
+            text-align: center;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .filters {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-select {
+            padding: 8px 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            background: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Estadísticas Combinadas de Jugadores</h1>
+        
+        <section class="controls-section">
+            <h2 class="section-title">Estadísticas desde Archivos Locales</h2>
+            
+            <div class="filters">
+                <select id="torneoFilter" class="filter-select">
+                    <option value="">Todos los torneos</option>
+                </select>
+                
+                <select id="victoriasFilter" class="filter-select">
+                    <option value="">Todos los porcentajes</option>
+                    <option value="80">80%+ Victorias</option>
+                    <option value="60">60%+ Victorias</option>
+                    <option value="40">40%+ Victorias</option>
+                </select>
+                
+                <select id="sortFilter" class="filter-select">
+                    <option value="victorias">Ordenar por % Victorias</option>
+                    <option value="partidos">Ordenar por Partidos</option>
+                    <option value="nombre">Ordenar por Nombre</option>
+                </select>
+            </div>
+            
+            <button id="loadStatsBtn" class="btn">📊 Cargar Estadísticas</button>
+            <div id="loadingIndicator" class="loading" style="display: none;">
+                ⏳ Cargando estadísticas...
+            </div>
+        </section>
+        
+        <section id="summarySection" style="display: none;">
+            <h2 class="section-title">Resumen General</h2>
+            <div id="summaryContainer"></div>
+        </section>
+        
+        <section id="resultsSection" style="display: none;">
+            <h2 class="section-title">Estadísticas de Jugadores</h2>
+            <div id="playersGrid" class="players-grid">
+                <!-- Las tarjetas de jugadores se generarán aquí -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // ==============================
+        // LISTA DE RUTAS JSON - AGREGA TUS RUTAS AQUÍ
+        // ==============================
+        const RUTAS_JSON = [
+            { nombre: '8va Segundo Set', ruta: 'masculino/7/arenas4.json' },
+            { nombre: '7ma Segundo Set', ruta: 'masculino/7/arenas5.json' },
+            { nombre: '6ta Segundo Set', ruta: 'masculino/7/arenas6.json' }
+            // Agrega más rutas según necesites
+        ];
+
+        // Mapeo de fotos de jugadores - puedes expandir este objeto
+        const FOTOS_JUGADORES = {
+            'francisco bordon': '../img/jugadores/francisco-bordon.jpg',
+            'benjamin martinez': '../img/jugadores/benjamin-martinez.jpg',
+            'mauro olivera': '../img/jugadores/mauro-olivera.jpg',
+            'carlos barrionuevo': '../img/jugadores/carlos-barrionuevo.jpg',
+            'joaquin rojas': '../img/jugadores/joaquin-rojas.jpg',
+            'esteban costilla': '../img/jugadores/esteban-costilla.jpg',
+            'gaston tapia': '../img/jugadores/gaston-tapia.jpg',
+            'mario roldan': '../img/jugadores/mario-roldan.jpg',
+            'blas sanchez': '../img/jugadores/blas-sanchez.jpg',
+            'jorge ugarte': '../img/jugadores/jorge-ugarte.jpg',
+            'sebastian rubio': '../img/jugadores/sebastian-rubio.jpg',
+            'gustavo santana': '../img/jugadores/gustavo-santana.jpg'
+            // Agrega más jugadores según necesites
+        };
+
+        // Foto por defecto si no se encuentra la del jugador
+        const FOTO_POR_DEFECTO = '../img/jugadores/default.jpg';
+
+        // Elementos del DOM
+        const loadStatsBtn = document.getElementById('loadStatsBtn');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const resultsSection = document.getElementById('resultsSection');
+        const playersGrid = document.getElementById('playersGrid');
+        const summarySection = document.getElementById('summarySection');
+        const summaryContainer = document.getElementById('summaryContainer');
+        const torneoFilter = document.getElementById('torneoFilter');
+        const victoriasFilter = document.getElementById('victoriasFilter');
+        const sortFilter = document.getElementById('sortFilter');
+
+        // Datos cargados
+        let todosLosJugadores = [];
+        let archivosCargados = [];
+
+        // Event Listeners
+        loadStatsBtn.addEventListener('click', cargarTodasEstadisticas);
+        torneoFilter.addEventListener('change', filtrarYMostrarJugadores);
+        victoriasFilter.addEventListener('change', filtrarYMostrarJugadores);
+        sortFilter.addEventListener('change', filtrarYMostrarJugadores);
+
+        // Cargar todas las estadísticas
+        async function cargarTodasEstadisticas() {
+            loadStatsBtn.disabled = true;
+            loadStatsBtn.classList.add('btn-loading');
+            loadStatsBtn.textContent = '⏳ Cargando...';
+            loadingIndicator.style.display = 'block';
+            resultsSection.style.display = 'none';
+            summarySection.style.display = 'none';
+
+            try {
+                archivosCargados = [];
+                const promesas = RUTAS_JSON.map(async (rutaInfo) => {
+                    try {
+                        const respuesta = await fetch(rutaInfo.ruta);
+                        if (!respuesta.ok) {
+                            throw new Error(`Error ${respuesta.status} al cargar ${rutaInfo.nombre}`);
+                        }
+                        const datos = await respuesta.json();
+                        return { nombre: rutaInfo.nombre, datos: datos, ruta: rutaInfo.ruta };
+                    } catch (error) {
+                        console.error(`Error cargando ${rutaInfo.nombre}:`, error);
+                        return null;
+                    }
+                });
+
+                const resultados = await Promise.all(promesas);
+                archivosCargados = resultados.filter(result => result !== null);
+
+                if (archivosCargados.length === 0) {
+                    throw new Error('No se pudo cargar ningún archivo JSON');
+                }
+
+                todosLosJugadores = combinarMultiplesStats(archivosCargados.map(a => a.datos));
+                actualizarFiltros();
+                mostrarResumenGeneral();
+                filtrarYMostrarJugadores();
+                
+                showSuccess(`✅ Cargadas estadísticas de ${archivosCargados.length} archivos - ${todosLosJugadores.length} jugadores únicos`);
+                
+            } catch (error) {
+                showError('Error al cargar estadísticas: ' + error.message);
+                console.error(error);
+            } finally {
+                loadStatsBtn.disabled = false;
+                loadStatsBtn.classList.remove('btn-loading');
+                loadStatsBtn.textContent = '📊 Cargar Estadísticas';
+                loadingIndicator.style.display = 'none';
+            }
+        }
+
+        // Combinar múltiples archivos
+        function combinarMultiplesStats(filesArray) {
+            const playersMap = new Map();
+
+            filesArray.forEach((fileData, fileIndex) => {
+                if (fileData.jugadores && Array.isArray(fileData.jugadores)) {
+                    fileData.jugadores.forEach(jugador => {
+                        const playerKey = jugador.nombreNormalizado;
+                        
+                        if (!playersMap.has(playerKey)) {
+                            playersMap.set(playerKey, {
+                                nombre: jugador.nombre,
+                                nombreNormalizado: jugador.nombreNormalizado,
+                                torneos: new Set(),
+                                estadisticasPorArchivo: [],
+                                partidosTotales: []
+                            });
+                        }
+
+                        const player = playersMap.get(playerKey);
+                        jugador.torneos.forEach(torneo => player.torneos.add(torneo));
+                        player.estadisticasPorArchivo.push({
+                            archivo: `Archivo ${fileIndex + 1}`,
+                            estadisticas: { ...jugador.estadisticas }
+                        });
+                        player.partidosTotales.push(...jugador.partidos);
+                    });
+                }
+            });
+
+            // Calcular estadísticas combinadas para cada jugador
+            playersMap.forEach(player => {
+                player.estadisticasCombinadas = calcularEstadisticasCombinadas(player.estadisticasPorArchivo);
+                player.torneosLista = Array.from(player.torneos);
+                player.foto = FOTOS_JUGADORES[player.nombreNormalizado] || FOTO_POR_DEFECTO;
+            });
+
+            return Array.from(playersMap.values());
+        }
+
+        // Calcular estadísticas combinadas
+        function calcularEstadisticasCombinadas(estadisticasPorArchivo) {
+            let total = 0;
+            let ganados = 0;
+            let perdidos = 0;
+            let setsGanados = 0;
+            let setsPerdidos = 0;
+            let gamesGanados = 0;
+            let gamesPerdidos = 0;
+
+            estadisticasPorArchivo.forEach(est => {
+                total += est.estadisticas.total;
+                ganados += est.estadisticas.ganados;
+                perdidos += est.estadisticas.perdidos;
+                setsGanados += est.estadisticas.setsGanados;
+                setsPerdidos += est.estadisticas.setsPerdidos;
+                gamesGanados += est.estadisticas.gamesGanados;
+                gamesPerdidos += est.estadisticas.gamesPerdidos;
+            });
+
+            const porcentajeVictorias = total > 0 ? (ganados / total) * 100 : 0;
+
+            return {
+                total: total,
+                ganados: ganados,
+                perdidos: perdidos,
+                setsGanados: setsGanados,
+                setsPerdidos: setsPerdidos,
+                gamesGanados: gamesGanados,
+                gamesPerdidos: gamesPerdidos,
+                porcentajeVictorias: Math.round(porcentajeVictorias * 10) / 10,
+                diferenciaSets: setsGanados - setsPerdidos,
+                diferenciaGames: gamesGanados - gamesPerdidos
+            };
+        }
+
+        // Actualizar filtros
+        function actualizarFiltros() {
+            // Actualizar filtro de torneos
+            const todosTorneos = new Set();
+            todosLosJugadores.forEach(jugador => {
+                jugador.torneosLista.forEach(torneo => todosTorneos.add(torneo));
+            });
+
+            torneoFilter.innerHTML = '<option value="">Todos los torneos</option>';
+            Array.from(todosTorneos).sort().forEach(torneo => {
+                torneoFilter.innerHTML += `<option value="${torneo}">${torneo}</option>`;
+            });
+        }
+
+        // Filtrar y mostrar jugadores
+        function filtrarYMostrarJugadores() {
+            let jugadoresFiltrados = [...todosLosJugadores];
+
+            // Filtrar por torneo
+            const torneoSeleccionado = torneoFilter.value;
+            if (torneoSeleccionado) {
+                jugadoresFiltrados = jugadoresFiltrados.filter(jugador => 
+                    jugador.torneosLista.includes(torneoSeleccionado)
+                );
+            }
+
+            // Filtrar por porcentaje de victorias
+            const victoriasSeleccionado = victoriasFilter.value;
+            if (victoriasSeleccionado) {
+                const porcentajeMinimo = parseInt(victoriasSeleccionado);
+                jugadoresFiltrados = jugadoresFiltrados.filter(jugador => 
+                    jugador.estadisticasCombinadas.porcentajeVictorias >= porcentajeMinimo
+                );
+            }
+
+            // Ordenar
+            const ordenSeleccionado = sortFilter.value;
+            switch (ordenSeleccionado) {
+                case 'partidos':
+                    jugadoresFiltrados.sort((a, b) => b.estadisticasCombinadas.total - a.estadisticasCombinadas.total);
+                    break;
+                case 'nombre':
+                    jugadoresFiltrados.sort((a, b) => a.nombre.localeCompare(b.nombre));
+                    break;
+                case 'victorias':
+                default:
+                    jugadoresFiltrados.sort((a, b) => b.estadisticasCombinadas.porcentajeVictorias - a.estadisticasCombinadas.porcentajeVictorias);
+                    break;
+            }
+
+            mostrarJugadores(jugadoresFiltrados);
+        }
+
+        // Mostrar jugadores en el grid
+        function mostrarJugadores(jugadores) {
+            playersGrid.innerHTML = '';
+            
+            if (jugadores.length === 0) {
+                playersGrid.innerHTML = '<div class="error-message">No se encontraron jugadores con los filtros seleccionados</div>';
+                return;
+            }
+
+            jugadores.forEach(jugador => {
+                const card = crearTarjetaJugador(jugador);
+                playersGrid.appendChild(card);
+            });
+
+            resultsSection.style.display = 'block';
+        }
+
+        // Crear tarjeta de jugador
+        function crearTarjetaJugador(jugador) {
+            const card = document.createElement('div');
+            card.className = 'player-card';
+            
+            card.innerHTML = `
+                <div class="player-header">
+                    <img src="${jugador.foto}" alt="${jugador.nombre}" class="player-photo" 
+                         onerror="this.src='${FOTO_POR_DEFECTO}'">
+                    <div class="player-info">
+                        <h3 class="player-name">${jugador.nombre}</h3>
+                        <div class="player-torneos">🏆 ${jugador.torneosLista.join(', ')}</div>
+                    </div>
+                    <div class="player-stats-badge">
+                        <div style="font-size: 20px; font-weight: bold; color: #28a745;">
+                            ${jugador.estadisticasCombinadas.porcentajeVictorias}%
+                        </div>
+                        <div style="font-size: 12px; color: #6c757d;">Victorias</div>
+                    </div>
+                </div>
+                
+                <div class="total-stats">
+                    <h4>📊 Estadísticas Totales</h4>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-name">Partidos Totales:</span>
+                            <span class="stat-value">${jugador.estadisticasCombinadas.total}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Victorias-Derrotas:</span>
+                            <span class="stat-value">${jugador.estadisticasCombinadas.ganados}-${jugador.estadisticasCombinadas.perdidos}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">% Victorias:</span>
+                            <span class="stat-value ${getPercentageClass(jugador.estadisticasCombinadas.porcentajeVictorias)}">
+                                ${jugador.estadisticasCombinadas.porcentajeVictorias}%
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Sets:</span>
+                            <span class="stat-value">${jugador.estadisticasCombinadas.setsGanados}-${jugador.estadisticasCombinadas.setsPerdidos}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Games:</span>
+                            <span class="stat-value">${jugador.estadisticasCombinadas.gamesGanados}-${jugador.estadisticasCombinadas.gamesPerdidos}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Diferencia Sets:</span>
+                            <span class="stat-value ${jugador.estadisticasCombinadas.diferenciaSets >= 0 ? 'percentage-high' : 'percentage-low'}">
+                                ${jugador.estadisticasCombinadas.diferenciaSets > 0 ? '+' : ''}${jugador.estadisticasCombinadas.diferenciaSets}
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Diferencia Games:</span>
+                            <span class="stat-value ${jugador.estadisticasCombinadas.diferenciaGames >= 0 ? 'percentage-high' : 'percentage-low'}">
+                                ${jugador.estadisticasCombinadas.diferenciaGames > 0 ? '+' : ''}${jugador.estadisticasCombinadas.diferenciaGames}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Mostrar resumen general
+        function mostrarResumenGeneral() {
+            const totalPartidos = todosLosJugadores.reduce((sum, jugador) => sum + jugador.estadisticasCombinadas.total, 0);
+            const totalVictorias = todosLosJugadores.reduce((sum, jugador) => sum + jugador.estadisticasCombinadas.ganados, 0);
+            const promedioVictorias = totalPartidos > 0 ? (totalVictorias / totalPartidos * 100).toFixed(1) : 0;
+
+            summaryContainer.innerHTML = `
+                <div class="summary-stats">
+                    <h3>📈 Resumen General</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span>Archivos cargados:</span>
+                            <strong>${archivosCargados.length}</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Jugadores únicos:</span>
+                            <strong>${todosLosJugadores.length}</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Total partidos:</span>
+                            <strong>${totalPartidos}</strong>
+                        </div>
+                        <div class="summary-item">
+                            <span>Promedio victorias:</span>
+                            <strong>${promedioVictorias}%</strong>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            summarySection.style.display = 'block';
+        }
+
+        // Obtener clase CSS para el porcentaje
+        function getPercentageClass(percentage) {
+            if (percentage >= 70) return 'percentage-high';
+            if (percentage >= 50) return 'percentage-medium';
+            return 'percentage-low';
+        }
+
+        // Mostrar mensajes de error
+        function showError(message) {
+            const existingMessages = document.querySelectorAll('.error-message, .success-message');
+            existingMessages.forEach(msg => msg.remove());
+            
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            document.querySelector('.controls-section').appendChild(errorDiv);
+            
+            setTimeout(() => errorDiv.remove(), 5000);
+        }
+
+        // Mostrar mensajes de éxito
+        function showSuccess(message) {
+            const existingMessages = document.querySelectorAll('.error-message, .success-message');
+            existingMessages.forEach(msg => msg.remove());
+            
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.textContent = message;
+            document.querySelector('.controls-section').appendChild(successDiv);
+            
+            setTimeout(() => successDiv.remove(), 5000);
+        }
+    </script>
+</body>
+</html>

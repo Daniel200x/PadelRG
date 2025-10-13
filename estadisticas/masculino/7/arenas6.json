@@ -1,0 +1,3400 @@
+{
+  "fechaExportacion": "2025-10-13T02:18:29.147Z",
+  "totalJugadores": 52,
+  "torneosIncluidos": [
+    "8va Segundo Set",
+    "7ma Segundo Set",
+    "6ta Segundo Set",
+    "7ma Arena"
+  ],
+  "jugadores": [
+    {
+      "nombre": "Francisco Bordon",
+      "nombreNormalizado": "francisco bordon",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 6,
+        "ganados": 6,
+        "perdidos": 0,
+        "setsGanados": 12,
+        "setsPerdidos": 0,
+        "gamesGanados": 75,
+        "gamesPerdidos": 36,
+        "porcentajeVictorias": 100,
+        "diferenciaSets": 12,
+        "diferenciaGames": 39
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Leandro Corrales/Luis Ruiz",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "final",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Benjamin Martinez",
+      "nombreNormalizado": "benjamin martinez",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 6,
+        "ganados": 6,
+        "perdidos": 0,
+        "setsGanados": 12,
+        "setsPerdidos": 0,
+        "gamesGanados": 75,
+        "gamesPerdidos": 36,
+        "porcentajeVictorias": 100,
+        "diferenciaSets": 12,
+        "diferenciaGames": 39
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Leandro Corrales/Luis Ruiz",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "final",
+          "grupo": "",
+          "equipo": "Francisco Bordon/Benjamin Martinez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Mauro Olivera",
+      "nombreNormalizado": "mauro olivera",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 5,
+        "ganados": 4,
+        "perdidos": 1,
+        "setsGanados": 8,
+        "setsPerdidos": 2,
+        "gamesGanados": 55,
+        "gamesPerdidos": 29,
+        "porcentajeVictorias": 80,
+        "diferenciaSets": 6,
+        "diferenciaGames": 26
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Enrique Romero/Marcos Allende",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Carlos Barrionuevo",
+      "nombreNormalizado": "carlos barrionuevo",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 5,
+        "ganados": 4,
+        "perdidos": 1,
+        "setsGanados": 8,
+        "setsPerdidos": 2,
+        "gamesGanados": 55,
+        "gamesPerdidos": 29,
+        "porcentajeVictorias": 80,
+        "diferenciaSets": 6,
+        "diferenciaGames": 26
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Enrique Romero/Marcos Allende",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Mauro Olivera/Carlos Barrionuevo",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Joaquin Rojas",
+      "nombreNormalizado": "joaquin rojas",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 7,
+        "setsPerdidos": 2,
+        "gamesGanados": 51,
+        "gamesPerdidos": 38,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 5,
+        "diferenciaGames": 13
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Jose Muñoz/Juan Villanueva",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 9,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 13,
+          "gamesRival": 17,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Esteban Costilla",
+      "nombreNormalizado": "esteban costilla",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 7,
+        "setsPerdidos": 2,
+        "gamesGanados": 51,
+        "gamesPerdidos": 38,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 5,
+        "diferenciaGames": 13
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Jose Muñoz/Juan Villanueva",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 9,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Joaquin Rojas/Esteban Costilla",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 13,
+          "gamesRival": 17,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gaston Tapia",
+      "nombreNormalizado": "gaston tapia",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 4,
+        "gamesGanados": 50,
+        "gamesPerdidos": 50,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 2,
+        "diferenciaGames": 0
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "ganado",
+          "marcador": "2-1",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 18,
+          "gamesRival": 17,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 16,
+          "gamesRival": 14,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Mario Roldan",
+      "nombreNormalizado": "mario roldan",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 4,
+        "gamesGanados": 50,
+        "gamesPerdidos": 50,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 2,
+        "diferenciaGames": 0
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "ganado",
+          "marcador": "2-1",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 18,
+          "gamesRival": 17,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 16,
+          "gamesRival": 14,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Gaston Tapia/Mario Roldan",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Blas Sanchez",
+      "nombreNormalizado": "blas sanchez",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 2,
+        "gamesGanados": 43,
+        "gamesPerdidos": 28,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 4,
+        "diferenciaGames": 15
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Ruben Pedraza/Martin Aguila",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Horacio Bucci/Jose Retamar",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Ugarte",
+      "nombreNormalizado": "jorge ugarte",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 2,
+        "gamesGanados": 43,
+        "gamesPerdidos": 28,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 4,
+        "diferenciaGames": 15
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Ruben Pedraza/Martin Aguila",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Horacio Bucci/Jose Retamar",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Blas Sanchez/Jorge Ugarte",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Sebastian Rubio",
+      "nombreNormalizado": "sebastian rubio",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 2,
+        "gamesGanados": 44,
+        "gamesPerdidos": 28,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 4,
+        "diferenciaGames": 16
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Pablo Alegre/Emmanuel Larocca",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Juan Serafini/Alexis Beltran",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gustavo Santana",
+      "nombreNormalizado": "gustavo santana",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 4,
+        "ganados": 3,
+        "perdidos": 1,
+        "setsGanados": 6,
+        "setsPerdidos": 2,
+        "gamesGanados": 44,
+        "gamesPerdidos": 28,
+        "porcentajeVictorias": 75,
+        "diferenciaSets": 4,
+        "diferenciaGames": 16
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Pablo Alegre/Emmanuel Larocca",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Juan Serafini/Alexis Beltran",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 4,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Sebastian Rubio/Gustavo Santana",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Ramiro Luna",
+      "nombreNormalizado": "ramiro luna",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 2,
+        "gamesGanados": 30,
+        "gamesPerdidos": 16,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 2,
+        "diferenciaGames": 14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 1,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Lesio Andreggiani/Santiago Olivera",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Nicolas Gonzalez",
+      "nombreNormalizado": "nicolas gonzalez",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 2,
+        "gamesGanados": 30,
+        "gamesPerdidos": 16,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 2,
+        "diferenciaGames": 14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 1,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Lesio Andreggiani/Santiago Olivera",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 3,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Ramiro Luna/Nicolas Gonzalez",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Miguel Lamas",
+      "nombreNormalizado": "miguel lamas",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 6,
+        "ganados": 4,
+        "perdidos": 2,
+        "setsGanados": 8,
+        "setsPerdidos": 4,
+        "gamesGanados": 65,
+        "gamesPerdidos": 52,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 4,
+        "diferenciaGames": 13
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Leandro Corrales/Luis Ruiz",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "final",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Leandro Carracedo",
+      "nombreNormalizado": "leandro carracedo",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 6,
+        "ganados": 4,
+        "perdidos": 2,
+        "setsGanados": 8,
+        "setsPerdidos": 4,
+        "gamesGanados": 65,
+        "gamesPerdidos": 52,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 4,
+        "diferenciaGames": 13
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Leandro Corrales/Luis Ruiz",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "final",
+          "grupo": "",
+          "equipo": "Miguel Lamas/Leandro Carracedo",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Vera",
+      "nombreNormalizado": "jorge vera",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 3,
+        "gamesGanados": 36,
+        "gamesPerdidos": 37,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 1,
+        "diferenciaGames": -1
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Esteban Sanchez/Carlos Ozores",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 9,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "ganado",
+          "marcador": "2-1",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 15,
+          "gamesRival": 15,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Walter Arrua",
+      "nombreNormalizado": "walter arrua",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 3,
+        "gamesGanados": 36,
+        "gamesPerdidos": 37,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 1,
+        "diferenciaGames": -1
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Esteban Sanchez/Carlos Ozores",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 9,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "ganado",
+          "marcador": "2-1",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 15,
+          "gamesRival": 15,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Jorge Vera/Walter Arrua",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Luciano Baroni",
+      "nombreNormalizado": "luciano baroni",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 2,
+        "gamesGanados": 29,
+        "gamesPerdidos": 27,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 2,
+        "diferenciaGames": 2
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Horacio Bucci/Jose Retamar",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Ruben Pedraza/Martin Aguila",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gonzalo Muñoz",
+      "nombreNormalizado": "gonzalo munoz",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 2,
+        "perdidos": 1,
+        "setsGanados": 4,
+        "setsPerdidos": 2,
+        "gamesGanados": 29,
+        "gamesPerdidos": 27,
+        "porcentajeVictorias": 66.7,
+        "diferenciaSets": 2,
+        "diferenciaGames": 2
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Horacio Bucci/Jose Retamar",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Ruben Pedraza/Martin Aguila",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 7,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Luciano Baroni/Gonzalo Muñoz",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Simon Barila",
+      "nombreNormalizado": "simon barila",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 5,
+        "ganados": 3,
+        "perdidos": 2,
+        "setsGanados": 7,
+        "setsPerdidos": 5,
+        "gamesGanados": 61,
+        "gamesPerdidos": 57,
+        "porcentajeVictorias": 60,
+        "diferenciaSets": 2,
+        "diferenciaGames": 4
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 14,
+          "gamesRival": 16,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 17,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Nahuel Romero",
+      "nombreNormalizado": "nahuel romero",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 5,
+        "ganados": 3,
+        "perdidos": 2,
+        "setsGanados": 7,
+        "setsPerdidos": 5,
+        "gamesGanados": 61,
+        "gamesPerdidos": 57,
+        "porcentajeVictorias": 60,
+        "diferenciaSets": 2,
+        "diferenciaGames": 4
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Gonzalo Figueroa/Jesus Ferreyra",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 14,
+          "gamesRival": 16,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 13,
+          "gamesRival": 8,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "cuartos",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 17,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "semis",
+          "grupo": "",
+          "equipo": "Simon Barila/Nahuel Romero",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Alegre",
+      "nombreNormalizado": "pablo alegre",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 1,
+        "perdidos": 1,
+        "setsGanados": 2,
+        "setsPerdidos": 3,
+        "gamesGanados": 23,
+        "gamesPerdidos": 26,
+        "porcentajeVictorias": 50,
+        "diferenciaSets": -1,
+        "diferenciaGames": -3
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Pablo Alegre/Emmanuel Larocca",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Pablo Alegre/Emmanuel Larocca",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 16,
+          "gamesRival": 14,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Emmanuel Larocca",
+      "nombreNormalizado": "emmanuel larocca",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 1,
+        "perdidos": 1,
+        "setsGanados": 2,
+        "setsPerdidos": 3,
+        "gamesGanados": 23,
+        "gamesPerdidos": 26,
+        "porcentajeVictorias": 50,
+        "diferenciaSets": -1,
+        "diferenciaGames": -3
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Pablo Alegre/Emmanuel Larocca",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Pablo Alegre/Emmanuel Larocca",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "ganado",
+          "marcador": "1-2",
+          "setsPropios": 2,
+          "setsRival": 1,
+          "gamesPropios": 16,
+          "gamesRival": 14,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Martin Guaragna",
+      "nombreNormalizado": "martin guaragna",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 18,
+        "gamesPerdidos": 29,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -11
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Lesio Andreggiani/Santiago Olivera",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 1,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gabriel Gandolfi",
+      "nombreNormalizado": "gabriel gandolfi",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 18,
+        "gamesPerdidos": 29,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -11
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Lesio Andreggiani/Santiago Olivera",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 1,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Martin Guaragna/Gabriel Gandolfi",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Martin Spamer",
+      "nombreNormalizado": "martin spamer",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 20,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -5
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Jose Muñoz/Juan Villanueva",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 1,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Fiorotto",
+      "nombreNormalizado": "pablo fiorotto",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 20,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -5
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Jose Muñoz/Juan Villanueva",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 1,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Martin Spamer/Pablo Fiorotto",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Bernardo Fiori",
+      "nombreNormalizado": "bernardo fiori",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 23,
+        "gamesPerdidos": 30,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -7
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Enrique Romero/Marcos Allende",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Maximiliano Aperio",
+      "nombreNormalizado": "maximiliano aperio",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 2,
+        "setsPerdidos": 4,
+        "gamesGanados": 23,
+        "gamesPerdidos": 30,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -2,
+        "diferenciaGames": -7
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Enrique Romero/Marcos Allende",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Bernardo Fiori/Maximiliano Aperio",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Fernando Mariani",
+      "nombreNormalizado": "fernando mariani",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 3,
+        "setsPerdidos": 4,
+        "gamesGanados": 34,
+        "gamesPerdidos": 32,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -1,
+        "diferenciaGames": 2
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "perdido",
+          "marcador": "2-1",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 15,
+          "gamesRival": 15,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Esteban Sanchez/Carlos Ozores",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Leonardo Cardozo",
+      "nombreNormalizado": "leonardo cardozo",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 3,
+        "setsPerdidos": 4,
+        "gamesGanados": 34,
+        "gamesPerdidos": 32,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -1,
+        "diferenciaGames": 2
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "perdido",
+          "marcador": "2-1",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 15,
+          "gamesRival": 15,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Esteban Sanchez/Carlos Ozores",
+          "resultado": "ganado",
+          "marcador": "0-2",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 5,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Fernando Mariani/Leonardo Cardozo",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gustavo Vera",
+      "nombreNormalizado": "gustavo vera",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 3,
+        "setsPerdidos": 4,
+        "gamesGanados": 30,
+        "gamesPerdidos": 34,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -1,
+        "diferenciaGames": -4
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Juan Serafini/Alexis Beltran",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Pablo Alegre/Emmanuel Larocca",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 14,
+          "gamesRival": 16,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Walter Carrizo",
+      "nombreNormalizado": "walter carrizo",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 3,
+        "ganados": 1,
+        "perdidos": 2,
+        "setsGanados": 3,
+        "setsPerdidos": 4,
+        "gamesGanados": 30,
+        "gamesPerdidos": 34,
+        "porcentajeVictorias": 33.3,
+        "diferenciaSets": -1,
+        "diferenciaGames": -4
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Juan Serafini/Alexis Beltran",
+          "resultado": "ganado",
+          "marcador": "2-0",
+          "setsPropios": 2,
+          "setsRival": 0,
+          "gamesPropios": 12,
+          "gamesRival": 6,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Pablo Alegre/Emmanuel Larocca",
+          "resultado": "perdido",
+          "marcador": "1-2",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 14,
+          "gamesRival": 16,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "octavos",
+          "grupo": "",
+          "equipo": "Gustavo Vera/Walter Carrizo",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Lesio Andreggiani",
+      "nombreNormalizado": "lesio andreggiani",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 8,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -16
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Lesio Andreggiani/Santiago Olivera",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Lesio Andreggiani/Santiago Olivera",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Santiago Olivera",
+      "nombreNormalizado": "santiago olivera",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 8,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -16
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Lesio Andreggiani/Santiago Olivera",
+          "rival": "Martin Guaragna/Gabriel Gandolfi",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo A",
+          "equipo": "Lesio Andreggiani/Santiago Olivera",
+          "rival": "Ramiro Luna/Nicolas Gonzalez",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Leandro Corrales",
+      "nombreNormalizado": "leandro corrales",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 12,
+        "gamesPerdidos": 26,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Leandro Corrales/Luis Ruiz",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Leandro Corrales/Luis Ruiz",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Luis Ruiz",
+      "nombreNormalizado": "luis ruiz",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 12,
+        "gamesPerdidos": 26,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Leandro Corrales/Luis Ruiz",
+          "rival": "Francisco Bordon/Benjamin Martinez",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo B",
+          "equipo": "Leandro Corrales/Luis Ruiz",
+          "rival": "Miguel Lamas/Leandro Carracedo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Jose Muñoz",
+      "nombreNormalizado": "jose munoz",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -15
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Jose Muñoz/Juan Villanueva",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 1,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Jose Muñoz/Juan Villanueva",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 9,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Juan Villanueva",
+      "nombreNormalizado": "juan villanueva",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -15
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Jose Muñoz/Juan Villanueva",
+          "rival": "Martin Spamer/Pablo Fiorotto",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 1,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo C",
+          "equipo": "Jose Muñoz/Juan Villanueva",
+          "rival": "Joaquin Rojas/Esteban Costilla",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 9,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Enrique Romero",
+      "nombreNormalizado": "enrique romero",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Enrique Romero/Marcos Allende",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Enrique Romero/Marcos Allende",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Marcos Allende",
+      "nombreNormalizado": "marcos allende",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Enrique Romero/Marcos Allende",
+          "rival": "Mauro Olivera/Carlos Barrionuevo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo D",
+          "equipo": "Enrique Romero/Marcos Allende",
+          "rival": "Bernardo Fiori/Maximiliano Aperio",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Gonzalo Figueroa",
+      "nombreNormalizado": "gonzalo figueroa",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 1,
+        "setsPerdidos": 4,
+        "gamesGanados": 25,
+        "gamesPerdidos": 31,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -3,
+        "diferenciaGames": -6
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gonzalo Figueroa/Jesus Ferreyra",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gonzalo Figueroa/Jesus Ferreyra",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "2-1",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 17,
+          "gamesRival": 18,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Jesus Ferreyra",
+      "nombreNormalizado": "jesus ferreyra",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 1,
+        "setsPerdidos": 4,
+        "gamesGanados": 25,
+        "gamesPerdidos": 31,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -3,
+        "diferenciaGames": -6
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gonzalo Figueroa/Jesus Ferreyra",
+          "rival": "Simon Barila/Nahuel Romero",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo E",
+          "equipo": "Gonzalo Figueroa/Jesus Ferreyra",
+          "rival": "Gaston Tapia/Mario Roldan",
+          "resultado": "perdido",
+          "marcador": "2-1",
+          "setsPropios": 1,
+          "setsRival": 2,
+          "gamesPropios": 17,
+          "gamesRival": 18,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Esteban Sanchez",
+      "nombreNormalizado": "esteban sanchez",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 14,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -11
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Esteban Sanchez/Carlos Ozores",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 9,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Esteban Sanchez/Carlos Ozores",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Carlos Ozores",
+      "nombreNormalizado": "carlos ozores",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 14,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -11
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Esteban Sanchez/Carlos Ozores",
+          "rival": "Jorge Vera/Walter Arrua",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 9,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo F",
+          "equipo": "Esteban Sanchez/Carlos Ozores",
+          "rival": "Fernando Mariani/Leonardo Cardozo",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 5,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Ruben Pedraza",
+      "nombreNormalizado": "ruben pedraza",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Ruben Pedraza/Martin Aguila",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Ruben Pedraza/Martin Aguila",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Martin Aguila",
+      "nombreNormalizado": "martin aguila",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Ruben Pedraza/Martin Aguila",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 3,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Ruben Pedraza/Martin Aguila",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 7,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Horacio Bucci",
+      "nombreNormalizado": "horacio bucci",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 16,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -9
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Horacio Bucci/Jose Retamar",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Horacio Bucci/Jose Retamar",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Jose Retamar",
+      "nombreNormalizado": "jose retamar",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 16,
+        "gamesPerdidos": 25,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -9
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Horacio Bucci/Jose Retamar",
+          "rival": "Luciano Baroni/Gonzalo Muñoz",
+          "resultado": "perdido",
+          "marcador": "0-2",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 13,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo G",
+          "equipo": "Horacio Bucci/Jose Retamar",
+          "rival": "Blas Sanchez/Jorge Ugarte",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 8,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Juan Serafini",
+      "nombreNormalizado": "juan serafini",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Juan Serafini/Alexis Beltran",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Juan Serafini/Alexis Beltran",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    },
+    {
+      "nombre": "Alexis Beltran",
+      "nombreNormalizado": "alexis beltran",
+      "torneos": [
+        "7ma Arena"
+      ],
+      "estadisticas": {
+        "total": 2,
+        "ganados": 0,
+        "perdidos": 2,
+        "setsGanados": 0,
+        "setsPerdidos": 4,
+        "gamesGanados": 10,
+        "gamesPerdidos": 24,
+        "porcentajeVictorias": 0,
+        "diferenciaSets": -4,
+        "diferenciaGames": -14
+      },
+      "partidos": [
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Juan Serafini/Alexis Beltran",
+          "rival": "Gustavo Vera/Walter Carrizo",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 6,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        },
+        {
+          "torneo": "7ma Arena",
+          "fase": "grupos",
+          "grupo": "Grupo H",
+          "equipo": "Juan Serafini/Alexis Beltran",
+          "rival": "Sebastian Rubio/Gustavo Santana",
+          "resultado": "perdido",
+          "marcador": "2-0",
+          "setsPropios": 0,
+          "setsRival": 2,
+          "gamesPropios": 4,
+          "gamesRival": 12,
+          "fechaPartido": "N/A"
+        }
+      ]
+    }
+  ]
+}
