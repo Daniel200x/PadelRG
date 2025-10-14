@@ -11,22 +11,22 @@
           "nombre": "Vanesa Iglesias/Yanina Magallanes",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Susana Sanabria/Paula Blanco",
+          "nombre": "Belen Bordon/Lorena Saldivia",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": "Martes 18:00 hs Cancha 2",
+          "fecha": "Martes 20:00 hs Cancha 2",
           "equipo1": "Vanesa Iglesias/Yanina Magallanes",
-          "equipo2": "Susana Sanabria/Paula Blanco",
+          "equipo2": "Belen Bordon/Lorena Saldivia",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Miercoles 18:00 hs Cancha 1",
+          "fecha": "Miercoles 19:00 hs Cancha 2",
           "equipo1": "Fernanda Retuerto/Lucia Marcial",
-          "equipo2": "Susana Sanabria/Paula Blanco",
+          "equipo2": "Belen Bordon/Lorena Saldivia",
           "resultado": "",
           "games":"A definir"
         },
@@ -94,7 +94,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 17:00 hs Cancha 1",
+          "fecha": "Miercoles 18:00 hs Cancha 1",
           "equipo1": "Agustina Quezada/Carolina Nieto",
           "equipo2": "Jimena Ramadori/Violeta Lopez",
           "resultado": "",
@@ -126,27 +126,27 @@
           "nombre": "Pamela Rusconi/Elizabeth Andrade",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Martina Erlan/Carolina Barone",
+          "nombre": "Sabrina Denis/A confirmar",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
+          "fecha": "Viernes 20:00 hs Cancha 1",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Sabado 09:00 hs Cancha 1",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Sabado 15:00 hs Cancha 2",
           "equipo1": "/",
           "equipo2": "/",
           "resultado": "",
@@ -170,7 +170,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Martes 22:00 hs Cancha 2",
+          "fecha": "Martes 20:00 hs Cancha 2",
           "equipo1": "Antonella Domeneh/Luisa Miranda",
           "equipo2": "Natalia Vazquez/Laura Gomez",
           "resultado": "",
@@ -199,9 +199,6 @@
           "nombre": "Valeria Pereda/Belen Cordoba",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Belen Bordon/Lorena Saldivia",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
           "nombre": "Daniela Bergondi/Lia Niz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
@@ -213,12 +210,12 @@
         {
           "fecha": "Miercoles 19:00 hs Cancha 2",
           "equipo1": "Valeria Pereda/Belen Cordoba",
-          "equipo2": "Belen Bordon/Lorena Saldivia",
+          "equipo2": "Daniela Bergondi/Lia Niz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": "Martes 17:00 hs Cancha 1",
+          "fecha": "Martes 18:00 hs Cancha 1",
           "equipo1": "Daniela Bergondi/Lia Niz",
           "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
@@ -226,15 +223,8 @@
         },
         {
          "fecha": "Sabado 09:00 hs Cancha 2",
-          "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "resultado": "",
-          "games": ""
-        },
-        {
-         "fecha": "Sabado 14:00 hs Cancha 2",
-          "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
+          "equipo1": "Karina Girollet/Lucia Ramirez",
+          "equipo2": "Valeria Pereda/Belen Cordoba",
           "resultado": "",
           "games": ""
         }
