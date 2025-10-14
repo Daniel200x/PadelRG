@@ -14,22 +14,22 @@
       "partidos": [
         {
           "fecha": "Martes 22:00 hs Cancha 1",
+          "equipo1": "Julian Morales/A confirmar",
+          "equipo2": "Tiago Andrade/Tomas Echeverria",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Jueves 21:00 hs Cancha 1",
           "equipo1": "Ivan Gallardo/Julio Andrade",
           "equipo2": "Tiago Andrade/Tomas Echeverria",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": "Miercoles 21:00 hs Cancha 1",
-          "equipo1": "Ivan Gallardo/Julio Andrade",
-          "equipo2": "Julian Morales/A confirmar",
-          "resultado": "",
-          "games": ""
-        },
-        {
-          "fecha": "Jueves 20:00 hs Cancha 1",
-          "equipo1": "Tiago Andrade/Tomas Echeverria",
-          "equipo2": "Julian Morales/A confirmar",
+          "fecha": "Sabado 14:00 hs Cancha 1",
+          "equipo1": "Julian Morales/A confirmar",
+          "equipo2": "Ivan Gallardo/Julio Andrade",
           "resultado": "",
           "games": ""
         }
@@ -61,14 +61,14 @@
           "games": ""
         },
         {
-         "fecha": "Jueves 19:00 hs Cancha 1",
+         "fecha": "Jueves 20:00 hs Cancha 1",
           "equipo1": "Gabriel Muller/Jose Villarreal",
           "equipo2": "Juan Barria/Cesar Andrade",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": "Viernes 22:00 hs Cancha 1",
+         "fecha": "Sabado 13:00 hs Cancha 1",
           "equipo1": "Lucas Ojeda/Agustin Fulco",
           "equipo2": "Juan Barria/Cesar Andrade",
           "resultado": "",

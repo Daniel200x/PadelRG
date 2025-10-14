@@ -21,7 +21,7 @@
       ],
       "partidos": [
         {
-         "fecha": "Martes 18:00 hs Cancha 2",
+         "fecha": "Martes 19:00 hs Cancha 2",
           "equipo1": "Franco Marquez/Ricardo Garcia",
           "equipo2": "Santiago Salvaña/Julian Alcantara",
           "resultado": "",
@@ -35,7 +35,7 @@
           "games": ""
         },
         {
-         "fecha": "Viernes 18:30 Cancha 2",
+         "fecha": "Viernes 23:50 Cancha 2",
           "equipo1": "Santiago Salvaña/Julian Alcantara",
           "equipo2": "Tomas Ruiz/Alejandro Vargas",
           "resultado": "",
@@ -62,7 +62,7 @@
       ],
       "partidos": [
         {
-         "fecha": "Jueves 22:30 hs Cancha 2",
+         "fecha": "Jueves 23:50 hs Cancha 1",
           "equipo1": "Agustin Maluf/Juan Pablo Crespo",
           "equipo2": "Agustin Martino/Gaston Marquez",
           "resultado": "",
@@ -102,21 +102,21 @@
       ],
       "partidos": [
         {
-         "fecha": "Martes 17:00 hs Cancha 2",
+         "fecha": "Martes 18:00 hs Cancha 1",
           "equipo1": "Javier Paniagua/Cristian Ortiz",
           "equipo2": "Lorenzo Rivero/David Minicucci",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": "Miercoles 18:00 hs Cancha 1",
+         "fecha": "Miercoles 18:00 hs Cancha 2",
           "equipo1": "Lorenzo Rivero/David Minicucci",
           "equipo2": "Marcelo Yunes/Hugo Sanabria",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": "Viernes 18:00 hs Cancha 1",
+         "fecha": "Viernes 18:00 hs Cancha 2",
           "equipo1": "Javier Paniagua/Cristian Ortiz",
           "equipo2": "Marcelo Yunes/Hugo Sanabria",
           "resultado": "",
@@ -146,14 +146,14 @@
       ],
       "partidos": [
         {
-         "fecha": "Martes 23:00 hs Cancha 1",
+         "fecha": "Martes 20:00 hs Cancha 2",
           "equipo1": "Guillermo Ojeda/Leonardo Pugnale",
           "equipo2": "Matias Loberche/Cristian Alday",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": "Martes 20:00 hs Cancha 2",
+         "fecha": "Miercoles 19:30 hs Cancha 2",
           "equipo1": "Diego Ruiz/Guido Tokar",
           "equipo2": "Diego Rodriguez/Eros Pintos",
           "resultado": "",
@@ -211,7 +211,7 @@
           "games": ""
         },
         {
-         "fecha": "Sabado 11:00 hs Cancha 1",
+         "fecha": "Sabado 14:30 hs Cancha 2",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
@@ -229,89 +229,75 @@
   ],
 
 
-  "eliminatorias": {
-"octavos": [
+ "eliminatorias": {
+    "octavos": [
       {
-        "equipo1": "P1 - 2do F",
-        "equipo2": "2do C",
-        "fecha": "Sabado :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+        "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 22:00 hs Cancha 1",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "P2 - 1ro E",
-        "equipo2": "2do B",
-        "fecha": "Sabado :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "P3 - 2do A",
-        "equipo2": "1ro F",
-        "fecha": "Sabado :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
-      },
-      {
-        "equipo1": "P4 - 2do E",
-        "equipo2": "2do D",
-        "fecha": "Sabado :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "2do A",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
       }
     ],
     "cuartos": [
       {
-        "equipo1": "P5 - 1ro A",
-        "equipo2": "Ganador P1",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 14:00 hs Cancha 1",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "P6 - Ganador P2",
-        "equipo2": "1ro D",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "1ro E",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 14:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "P7 - 1ro C",
-        "equipo2": "Ganador P3",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "1ro C",
+          "equipo2": "2do E",
+          "fecha": "Domingo 15:00 hs Cancha 1",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "P8 - Ganador P4",
-        "equipo2": "1ro B",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 15:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
       }
     ],
     "semis": [
       {
-        "equipo1": "P9 - Ganador P5",
-        "equipo2": "Ganador P6",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 19:00 hs Cancha 1",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "P10 - Ganador P7",
-        "equipo2": "Ganador P8",
-        "fecha": "Domingo :00 hs",
-        "resultado": "A definir",
-        "ganador": "/"
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 19:00 hs Cancha 2",
+          "resultado": "",
+          "games":""
       }
     ],
     "final": {
-      "equipo1": "Ganador P9 ",
-      "equipo2": "Ganador P10",
-      "fecha": "Domingo :00 hs",
-      "resultado": "A definir",
-      "ganador": "/"
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 21:00 hs",
+          "resultado": "",
+          "games":""
     }
   }
 }

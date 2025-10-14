@@ -15,21 +15,21 @@
         {
           "fecha": "Martes 21:00 hs Cancha 1",
           "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
-          "equipo2": "Antonella Zampini/Daniela Martinez",
+          "equipo2": "Mariana Pratto/Luciana Romano",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": "Miercoles 22:00 hs Cancha 1",
+          "fecha": "Jueves 19:00 hs Cancha 2",
           "equipo1": "Antonella Zampini/Daniela Martinez",
           "equipo2": "Mariana Pratto/Luciana Romano",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": "Jueves 21:00 hs Cancha 1",
+          "fecha": "Sabado 11:00 hs Cancha 1",
           "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
-          "equipo2": "Mariana Pratto/Luciana Romano",
+          "equipo2": "Antonella Zampini/Daniela Martinez",
           "resultado": "",
           "games": ""
         }
@@ -61,7 +61,7 @@
           "games": ""
         },
         {
-         "fecha": "Jueves 22:00 hs Cancha 1",
+         "fecha": "Jueves 21:00 hs Cancha 2",
           "equipo1": "Mariana Medina/Romina Torres",
           "equipo2": "Cecilia Gersicich/Fernanda Treppo",
           "resultado": "",
@@ -88,18 +88,11 @@
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "Alejandra Soto/A definir",
+          "nombre": "Alejandra Soto/Paula Miranda",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
-        {
-          "fecha": "Martes 17:00 hs Cancha 1",
-          "equipo1": "Marcia Figueroa/Tatiana Mainero",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
         {
           "fecha": "Jueves 18:00 hs Cancha 1",
           "equipo1": "Claudia Andrade/Noelia Velasquez",
@@ -108,9 +101,16 @@
           "games": ""
         },
         {
-         "fecha": "Viernes 21:00 hs Cancha 2",
+          "fecha": "Viernes 21:00 hs Cancha 2",
+          "equipo1": "Alejandra Soto/Paula Miranda",
+          "equipo2": "Marcia Figueroa/Tatiana Mainero",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 16:00 hs Cancha 1",
           "equipo1": "Claudia Andrade/Noelia Velasquez",
-          "equipo2": "",
+          "equipo2": "Alejandra Soto/Paula Miranda",
           "resultado": "",
           "games": ""
         }

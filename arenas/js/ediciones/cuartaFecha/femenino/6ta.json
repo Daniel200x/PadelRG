@@ -17,23 +17,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 18:00 hs Cancha 2",
+          "equipo1": "Vanesa Iglesias/Yanina Magallanes",
+          "equipo2": "Susana Sanabria/Paula Blanco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:00 hs Cancha 1",
+          "equipo1": "Fernanda Retuerto/Lucia Marcial",
+          "equipo2": "Susana Sanabria/Paula Blanco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "Fernanda Retuerto/Lucia Marcial",
+          "equipo2": "Vanesa Iglesias/Yanina Magallanes",
           "resultado": "",
           "games":"A definir"
         }
@@ -56,23 +56,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 21:00 hs Cancha 2",
+          "equipo1": "Graciela Flamenco/Erika Martinez",
+          "equipo2": "Cecilia Rojo/Marta Barbosa",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs Cancha 2",
+          "equipo1": "Griselda Gimenez/Fernanda Polizzi",
+          "equipo2": "Graciela Flamenco/Erika Martinez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:30 hs Cancha 1",
+          "equipo1": "Griselda Gimenez/Fernanda Polizzi",
+          "equipo2": "Cecilia Rojo/Marta Barbosa",
           "resultado": "",
           "games":"A definir"
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs Cancha 1",
+          "equipo1": "Agustina Quezada/Carolina Nieto",
+          "equipo2": "Jimena Ramadori/Violeta Lopez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs Cancha 2",
+          "equipo1": "Sara Cortez/Giuliana Gimenez",
+          "equipo2": "Agustina Quezada/Carolina Nieto",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs Cancha 1",
+          "equipo1": "Sara Cortez/Giuliana Gimenez",
+          "equipo2": "Jimena Ramadori/Violeta Lopez",
           "resultado": "",
           "games":"A definir"
         }
@@ -170,23 +170,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 22:00 hs Cancha 2",
+          "equipo1": "Antonella Domeneh/Luisa Miranda",
+          "equipo2": "Natalia Vazquez/Laura Gomez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 20:00 hs Cancha 2",
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "Natalia Vazquez/Laura Gomez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:00 hs Cancha 1",
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "Antonella Domeneh/Luisa Miranda",
           "resultado": "",
           "games":"A definir"
         }
@@ -199,34 +199,44 @@
           "nombre": "Valeria Pereda/Belen Cordoba",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Antonella Domeneh/Luisa Miranda",
+          "nombre": "Belen Bordon/Lorena Saldivia",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Natalia Vazquez/Laura Gomez",
+          "nombre": "Daniela Bergondi/Lia Niz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Karina Girollet/Lucia Ramirez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs Cancha 2",
+          "equipo1": "Valeria Pereda/Belen Cordoba",
+          "equipo2": "Belen Bordon/Lorena Saldivia",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 17:00 hs Cancha 1",
+          "equipo1": "Daniela Bergondi/Lia Niz",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+         "fecha": "Sabado 09:00 hs Cancha 2",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
           "resultado": "",
-          "games":"A definir"
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 14:00 hs Cancha 2",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games": ""
         }
       ]
     }
