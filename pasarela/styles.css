@@ -791,7 +791,7 @@ header p {
 
 .side-card {
     width: 200px;
-    height: 80vh;
+    height: 60vh;
     margin-top: 10vh;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 1px;
@@ -846,7 +846,8 @@ header p {
 }
 .side-card {
     width: 260px; /* Reducido de 280px */
-    height: 70vh; /* Reducido de 75vh */
+    height: 55vh; /* Reducido de 75vh */
+    margin-top: 7.5vh;
     background: transparent;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
