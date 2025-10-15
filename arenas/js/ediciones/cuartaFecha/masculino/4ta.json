@@ -8,16 +8,16 @@
       "equipos": [
         {    "nombre": "Ivan Gallardo/Julio Andrade",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
         {      "nombre": "Tiago Andrade/Tomas Echeverria",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "Julian Morales/A confirmar",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {   "nombre": "Julian Morales/Adrian Santi",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
           "fecha": "Martes 22:00 hs Cancha 1",
-          "equipo1": "Julian Morales/A confirmar",
+          "equipo1": "Julian Morales/Adrian Santi",
           "equipo2": "Tiago Andrade/Tomas Echeverria",
-          "resultado": "",
-          "games": ""
+          "resultado": "2-1",
+          "games": "7-6, 5-7, 6-7"
         },
         {
           "fecha": "Jueves 21:00 hs Cancha 1",
@@ -28,7 +28,7 @@
         },
         {
           "fecha": "Sabado 14:00 hs Cancha 1",
-          "equipo1": "Julian Morales/A confirmar",
+          "equipo1": "Julian Morales/Adrian Santi",
           "equipo2": "Ivan Gallardo/Julio Andrade",
           "resultado": "",
           "games": ""

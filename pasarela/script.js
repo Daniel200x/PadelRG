@@ -828,7 +828,6 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Marcia Mella/Belen Rojas': '../img/equipos/mella-brojas.jpg',
         'Emilia Velazco/Vanesa Vera': '../img/equipos/evelazco-vera.jpg',
         'Evelin Tissera/Natalia Bequi': '../img/equipos/etissera-nbequi.jpg',
-
         'Javier Paniagua/Cristian Ortiz': '../img/equipos/pani-ortiz.jpg',
         'Franco Marquez/Ricardo Garcia': '../img/equipos/fmarquez-rgarcia.jpg',
         'Ivan Gallardo/Julio Andrade': '../img/equipos/igallardo-jandrade.jpg',

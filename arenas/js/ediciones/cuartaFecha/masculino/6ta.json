@@ -16,8 +16,8 @@
           "fecha": "Martes 23:00 hs Cancha 1",
           "equipo1": "Matias Dos Santos/Waldemar Sosa",
           "equipo2": "Jose Maria Mendez/Facundo Infran",
-          "resultado": "",
-          "games": ""
+          "resultado": "1-2",
+          "games": "6-4, 4-6, 6-7"
         },
         {
           "fecha": "Miercoles 23:00 hs Cancha 1",
@@ -54,7 +54,7 @@
       ],
       "partidos": [
         {
-         "fecha": "Miercoles 22:30 hs Cancha 2",
+         "fecha": "Miercoles 23:00 hs Cancha 2",
           "equipo1": "Nicolas Barrios/Joaquin Bogunovich",
           "equipo2": "Facundo Saldaño/Dario Orellano",
           "resultado": "",
@@ -68,7 +68,7 @@
           "games": ""
         },
         {
-         "fecha": "Viernes 23:50 hs Cancha 1",
+         "fecha": "Viernes 19:00 hs Cancha 2",
           "equipo1": "Eduardo Garay/Gabriel Gabutti",
           "equipo2": "Facundo Saldaño/Dario Orellano",
           "resultado": "",
@@ -97,8 +97,8 @@
           "fecha": "Martes 19:00 hs Cancha 1",
           "equipo1": "Mariano Pereyra/Valentin Lemus",
           "equipo2": "Diego Floriani/Franco Gonzalez",
-          "resultado": "",
-          "games": ""
+          "resultado": "1-2",
+          "games": "6-7, 6-4, 6-7"
         },
         {
           "fecha": "Jueves 19:00 hs Cancha 1",
@@ -108,7 +108,7 @@
           "games": ""
         },
         {
-         "fecha": "Viernes 19:00 hs Cancha 2",
+         "fecha": "Sabado 16:00 hs Cancha 2",
           "equipo1": "Diego Floriani/Franco Gonzalez",
           "equipo2": "Fernando Rivero/Matias Demarchi",
           "resultado": "",
@@ -141,16 +141,16 @@
           "games": ""
         },
         {
-          "fecha": "Sabado 10:00 hs Cancha 2",
+          "fecha": "Viernes 18:00 hs Cancha 1",
           "equipo1": "Brian Gamarra/Cristian Carrasco",
-          "equipo2": "Mariano Puebla/Damian Chicaguala",
+          "equipo2": "Rafael Muriño/Javier Baldovino",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": "Sabado 15:00 hs Cancha 1",
+          "fecha": "Sabado 10:00 hs Cancha 2",
           "equipo1": "Brian Gamarra/Cristian Carrasco",
-          "equipo2": "Rafael Muriño/Javier Baldovino",
+          "equipo2": "Mariano Puebla/Damian Chicaguala",
           "resultado": "",
           "games": ""
         }
@@ -177,18 +177,18 @@
          "fecha": "Martes 23:00 hs Cancha 2",
           "equipo1": "Jesus Sanchez/Martin Moreta",
           "equipo2": "Miguel Gomez/Carlos Corvalan",
-          "resultado": "",
-          "games": ""
+          "resultado": "2-1",
+          "games": "6-7, 6-3, 7-6"
         },
         {
-          "fecha": "Miercoles 23:00 hs Cancha 2",
+          "fecha": "Viernes 22:30 hs Cancha 2",
           "equipo1": "Jesus Sanchez/Martin Moreta",
           "equipo2": "Cesar Ponce/Javier Andrade",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": "Viernes 18:00 hs Cancha 1",
+          "fecha": "Sabado 14:00 hs Cancha 2",
           "equipo1": "Miguel Gomez/Carlos Corvalan",
           "equipo2": "Cesar Ponce/Javier Andrade",
           "resultado": "",
@@ -214,7 +214,7 @@
       ],
       "partidos": [
         {
-         "fecha": "Jueves 23:50 hs Cancha 2",
+         "fecha": "Miercoles 22:00 hs Cancha 2",
           "equipo1": "Gustavo Quiroz/Franco Gallucci",
           "equipo2": "Nicolas De Guevara/Yonatan Torres",
           "resultado": "",
@@ -272,14 +272,14 @@
           "games": ""
         },
         {
-         "fecha": "Sabado 17:00 hs Cancha 2",
+         "fecha": "Viernes 23:50 hs Cancha 1",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": "Sabado 16:00 hs Cancha 2",
+         "fecha": "Sabado 17:00 hs Cancha 2",
           "equipo1": "Ganador Partido 2",
           "equipo2": "Perdedor Partido 1",
           "resultado": "",
