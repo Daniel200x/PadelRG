@@ -44,7 +44,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Victor Velasquez/Victor Velasquez",
+          "nombre": "Victor Velasquez/Claudio Velasquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Agustin Maluf/Juan Pablo Crespo",
@@ -63,14 +63,14 @@
         },
         {
           "fecha": "Viernes 17:00 hs Cancha 1",
-          "equipo1": "Victor Velasquez/Victor Velasquez",
+          "equipo1": "Victor Velasquez/Claudio Velasquez",
           "equipo2": "Agustin Martino/Gaston Martinez",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 13:00 hs Cancha 2",
-          "equipo1": "Victor Velasquez/Victor Velasquez",
+          "equipo1": "Victor Velasquez/Claudio Velasquez",
           "equipo2": "Agustin Maluf/Juan Pablo Crespo",
           "resultado": "",
           "games":""
