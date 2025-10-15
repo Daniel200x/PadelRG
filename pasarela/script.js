@@ -852,8 +852,8 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Brian Gamarra/Cristian Carrasco': '../img/equipos/bgamarra-carrasco.jpg',
         'Victor Velazquez/Claudio Velazquez': '../img/equipos/vvelaz-cvelaz.jpg',
         'Agustina Quezada/Carolina Nieto': '../img/equipos/aquezada-cnieto.jpg',
-        '/': '../img/equipos/-.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Tomas Ruiz/Alejandro Vargas': '../img/equipos/truiz-avargas.jpg',
+        'Valeria Pereda/Belen Cordoba': '../img/equipos/vpereda-bcordoba.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
 
