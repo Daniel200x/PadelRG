@@ -200,24 +200,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Ordenar partidos por día de la semana (Lunes a Domingo) y luego por horario
                 allMatches.sort((a, b) => {
-                    // Primero ordenar por día de la semana
-                    const ordenDias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
-                    const diaA = a.dia || "Por definir";
-                    const diaB = b.dia || "Por definir";
-                    
-                    const indiceA = ordenDias.indexOf(diaA);
-                    const indiceB = ordenDias.indexOf(diaB);
-                    
-                    // Si ambos tienen día definido y son diferentes
-                    if (indiceA !== -1 && indiceB !== -1 && indiceA !== indiceB) {
-                        return indiceA - indiceB;
-                    }
-                    
-                    // Si es el mismo día o uno no tiene día, ordenar por horario
-                    if (a.horario === "00:00" || a.horario === "Por definir") return 1;
-                    if (b.horario === "00:00" || b.horario === "Por definir") return -1;
-                    return a.horario.localeCompare(b.horario);
-                });
+                     // Primero ordenar por día de la semana
+    const ordenDias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+    const diaA = a.dia || "Por definir";
+    const diaB = b.dia || "Por definir";
+    
+    const indiceA = ordenDias.indexOf(diaA);
+    const indiceB = ordenDias.indexOf(diaB);
+    
+    // Si ambos tienen día definido y son diferentes
+    if (indiceA !== -1 && indiceB !== -1 && indiceA !== indiceB) {
+        return indiceA - indiceB;
+    }
+    
+    // Si es el mismo día o uno no tiene día, ordenar por horario
+    // Manejar casos donde el horario no está definido
+    if (a.horario === "00:00" || a.horario === "Por definir" || !a.horario) {
+        return 1; // Los partidos sin horario van al final
+    }
+    if (b.horario === "00:00" || b.horario === "Por definir" || !b.horario) {
+        return -1; // Los partidos con horario van primero
+    }
+    
+    // Comparar horarios en formato HH:MM
+    return a.horario.localeCompare(b.horario);
+});
                 
                 // Filtrar partidos por el día correspondiente
                 const diaNumero = obtenerDiaAMostrar();
