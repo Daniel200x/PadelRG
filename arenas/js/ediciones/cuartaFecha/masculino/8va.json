@@ -168,24 +168,24 @@
         {
           "nombre": "Ignacio Perez/Federico Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Gustavo Cairone/Alejandro Ayunes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+          "nombre": "Agustin Cingolani/Valentin Cingolani","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Rodrigo Alvarado/Matias Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Agustin Cingolani/Valentin Cingolani","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+          "nombre": "Lorenzo Rivero/Daniel Fernandez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
        {
           "fecha": "Viernes 23:00 hs Cancha 1",
           "equipo1": "Ignacio Perez/Federico Ruiz",
-          "equipo2": "Gustavo Cairone/Alejandro Ayunes",
+          "equipo2": "Agustin Cingolani/Valentin Cingolani",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Viernes 23:00 hs Cancha 2",
+          "fecha": "Jueves 17:00 hs Cancha 1",
           "equipo1": "Rodrigo Alvarado/Matias Carrizo",
-          "equipo2": "Agustin Cingolani/Valentin Cingolani",
+          "equipo2": "Lorenzo Rivero/Daniel Fernandez",
           "resultado": "",
           "games":""
         },
