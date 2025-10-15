@@ -88,7 +88,7 @@
           "nombre": "Agustina Quezada/Carolina Nieto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Jimena Ramadori/Violeta Lopez",
+          "nombre": "Violeta Lopez/Jimena Ramadori",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -96,7 +96,7 @@
         {
           "fecha": "Miercoles 18:00 hs Cancha 1",
           "equipo1": "Agustina Quezada/Carolina Nieto",
-          "equipo2": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "Violeta Lopez/Jimena Ramadori",
           "resultado": "",
           "games":"A definir"
         },
@@ -110,7 +110,7 @@
         {
           "fecha": "Sabado 10:00 hs Cancha 1",
           "equipo1": "Sara Cortez/Giuliana Gimenez",
-          "equipo2": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "Violeta Lopez/Jimena Ramadori",
           "resultado": "",
           "games":"A definir"
         }
