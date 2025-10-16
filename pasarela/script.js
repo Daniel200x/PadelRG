@@ -854,9 +854,15 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Agustina Quezada/Carolina Nieto': '../img/equipos/aquezada-cnieto.jpg',
         'Tomas Ruiz/Alejandro Vargas': '../img/equipos/truiz-avargas.jpg',
         'Valeria Pereda/Belen Cordoba': '../img/equipos/vpereda-bcordoba.jpg',
+        'Fernanda Retuerto/Lucia Marcial': '../img/equipos/fretuerto-lmarcial.jpg',
+        'Diego Ruiz/Guido Tokar': '../img/equipos/druiz-gtokar.jpg',
+        'Diego Rodriguez/Eros Pintos': '../img/equipos/drodriguez-epintos.jpg',
+        'Gabriel Muller/Jose Villarreal': '../img/equipos/gmuller-jvillarreal.jpg',
+        'Lucas Ojeda/Agustin Fulco': '../img/equipos/lojeda-afulco.jpg',
+        'Javier Gimenez/Nicolas Barbosa': '../img/equipos/jgimenez-nbarbosa.jpg',
+        'Kevin Juarez/Nicolas Gonzalez': '../img/equipos/kjuarez-ngonzalez.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
-
 
 
         
