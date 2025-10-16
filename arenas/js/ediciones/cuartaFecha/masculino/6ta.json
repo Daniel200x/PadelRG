@@ -292,34 +292,80 @@
 
   "eliminatorias": {
 
+
+    "octavos": [
+      {
+        "equipo1": "2do F",
+        "equipo2": "2do G",
+        "fecha": "Sabado 22:00 hs Cancha 1",
+       "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro E",
+        "equipo2": "2do C",
+        "fecha": "",
+        "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "2do B",
+        "equipo2": "1ro D",
+        "fecha": "Sabado 22:00 hs Cancha 1",
+        "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro C",
+        "equipo2": "2do A",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "2do D",
+        "equipo2": "1roF",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro G",
+        "equipo2": "2do E",
+        "fecha": "30/07/25 19:00 hs",
+        "resultado": "",
+        "games": ""
+      }
+
+    ],
     "cuartos": [
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+       "resultado": "",
+        "games": ""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "resultado": "",
+        "games": ""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "resultado": "",
+        "games": ""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "resultado": "",
+        "games": ""
       }
     ],
     "semis": [
@@ -327,23 +373,23 @@
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "resultado": "",
+        "games": ""
       },
       {
         "equipo1": "/",
         "equipo2": "/",
         "fecha": "30/07/25 19:00 hs",
-        "resultado": "A confirmar",
-        "ganador": "/"
+        "resultado": "",
+        "games": ""
       }
     ],
     "final": {
       "equipo1": "/",
       "equipo2": "/",
       "fecha": "30/07/25 19:00 hs",
-      "resultado": "A confirmar",
-      "ganador": "/"
+      "resultado": "",
+        "games": ""
     }
   }
 }
