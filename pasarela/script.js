@@ -850,7 +850,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Tiago Andrade/Tomas Echeverria': '../img/equipos/tandrade-techeverria.jpg',
         'Gustavo Quiroz/Franco Gallucci': '../img/equipos/gquiroz-fgallucci.jpg',
         'Brian Gamarra/Cristian Carrasco': '../img/equipos/bgamarra-carrasco.jpg',
-        'Victor Velazquez/Claudio Velazquez': '../img/equipos/vvelaz-cvelaz.jpg',
+        'Victor Velasquez/Claudio Velasquez': '../img/equipos/vvelaz-cvelaz.jpg',
         'Agustina Quezada/Carolina Nieto': '../img/equipos/aquezada-cnieto.jpg',
         'Tomas Ruiz/Alejandro Vargas': '../img/equipos/truiz-avargas.jpg',
         'Valeria Pereda/Belen Cordoba': '../img/equipos/vpereda-bcordoba.jpg',
@@ -861,10 +861,14 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Lucas Ojeda/Agustin Fulco': '../img/equipos/lojeda-afulco.jpg',
         'Javier Gimenez/Nicolas Barbosa': '../img/equipos/jgimenez-nbarbosa.jpg',
         'Kevin Juarez/Nicolas Gonzalez': '../img/equipos/kjuarez-ngonzalez.jpg',
+        'Griselda Gimenez/Fernanda Polizzi': '../img/equipos/ggimenez-fpolizzi.jpg',
+        'Rafael Muriño/Javier Baldovino': '../img/equipos/rmurino-jbaldo.jpg',
+        'Mariano Puebla/Damian Chicaguala': '../img/equipos/mpuebla-dchica.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
-
-
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
         
         
         
