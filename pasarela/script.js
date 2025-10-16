@@ -866,7 +866,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Mariano Puebla/Damian Chicaguala': '../img/equipos/mpuebla-dchica.jpg',
         'Gerardo Aballay/Nicolas Dominguez': '../img/equipos/gaballay-ndominguez.jpg',
         'Jose Maria Mendez/Facundo Infran': '../img/equipos/jmendez-finfran.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Nicolas De Guevara/Yonatan Torres': '../img/equipos/nguevara-ytorres.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         
