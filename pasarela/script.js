@@ -877,7 +877,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Fernando Rivero/Matias Demarchi': '../img/equipos/frivero-mdemarchi.jpg',
         'Cecilia Gersicich/Fernanda Treppo': '../img/equipos/cgersi-ftreppo.jpg',
         'Ana Velazquez/Alejandra Romero': '../img/equipos/avelazquez-aromero.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Antonella Zampini/Daniela Martinez': '../img/equipos/azampini-dmartinez.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         
