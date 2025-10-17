@@ -867,6 +867,11 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Gerardo Aballay/Nicolas Dominguez': '../img/equipos/gaballay-ndominguez.jpg',
         'Jose Maria Mendez/Facundo Infran': '../img/equipos/jmendez-finfran.jpg',
         'Nicolas De Guevara/Yonatan Torres': '../img/equipos/nguevara-ytorres.jpg',
+        'Facundo Saldaño/Dario Orellano': '../img/equipos/fsaldano-dorellano.jpg',
+        'Nicolas Barrios/Joaquin Bogunovich': '../img/equipos/nbarrios-jbogunovich.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         
