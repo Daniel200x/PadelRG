@@ -54,7 +54,7 @@
       ],
       "partidos": [
         {
-         "fecha": " Cancha 1",
+         "fecha": "Sabado 15:00 Cancha 1",
           "equipo1": "Mariana Medina/Romina Torres",
           "equipo2": "Ana Velazquez/Alejandra Romero",
           "resultado": "",
@@ -62,14 +62,14 @@
         },
         {
          "fecha": "Jueves 21:00 hs Cancha 2",
-          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo1": "Ana Velazquez/Alejandra Romero",
           "equipo2": "Cecilia Gersicich/Fernanda Treppo",
           "resultado": "",
           "games": ""
         },
         {
          "fecha": "Viernes 22:00 hs Cancha 2",
-          "equipo1": "Ana Velazquez/Alejandra Romero",
+          "equipo1": "Mariana Medina/Romina Torres",
           "equipo2": "Cecilia Gersicich/Fernanda Treppo",
           "resultado": "",
           "games": ""
