@@ -883,7 +883,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Ignacio Beltran/Diego Velazquez': '../img/equipos/ibeltran-dvelazquez.jpg',
         'Ciro Andrade/Nicolas Paredes': '../img/equipos/candrade-nparedes.jpg',
         'Eduardo Garay/Gabriel Gabutti': '../img/equipos/egaray-ggabutti.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Marcelo Yunes/Hugo Sanabria': '../img/equipos/myunes-hsanabria.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
