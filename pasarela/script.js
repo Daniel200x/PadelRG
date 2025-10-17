@@ -886,7 +886,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Marcelo Yunes/Hugo Sanabria': '../img/equipos/myunes-hsanabria.jpg',
         'Agustin Martino/Gaston Martinez': '../img/equipos/amartino-gmartinez.jpg',
         'Agustin Maluf/Juan Pablo Crespo': '../img/equipos/amaluf-jpcrespo.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Florencia Bianchi/Ines Sosa': '../img/equipos/fbianchi-isosa.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
