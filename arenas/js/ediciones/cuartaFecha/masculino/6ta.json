@@ -111,8 +111,8 @@
          "fecha": "Viernes 23:50 hs Cancha 2",
           "equipo1": "Diego Floriani/Franco Gonzalez",
           "equipo2": "Fernando Rivero/Matias Demarchi",
-          "resultado": "",
-          "games": ""
+          "resultado": "2-1",
+          "games": "3-6, 7-5, 7-6"
         }
       ]
     },
@@ -184,8 +184,8 @@
           "fecha": "Viernes 23:00 hs Cancha 2",
           "equipo1": "Jesus Sanchez/Martin Moreta",
           "equipo2": "Cesar Ponce/Javier Andrade",
-          "resultado": "",
-          "games": ""
+          "resultado": "2-0",
+          "games": "6-0, 6-2"
         },
         {
           "fecha": "Sabado 14:00 hs Cancha 2",
@@ -275,8 +275,8 @@
          "fecha": "Viernes 23:50 hs Cancha 1",
           "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "resultado": "",
-          "games": ""
+          "resultado": "1-2",
+          "games": "4-6, 5-7, 6-7"
         },
         {
          "fecha": "Sabado 17:00 hs Cancha 2",
