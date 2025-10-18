@@ -126,14 +126,14 @@
       {
         "equipo1": "2do B",
         "equipo2": "2do C",
-        "fecha": "Domingo 14:00 hs Cancha ",
+        "fecha": "Domingo 14:00 hs Cancha 1",
         "resultado": "",
           "games": ""
       },
       {
         "equipo1": "1ro C",
         "equipo2": "2do A",
-        "fecha": "Domingo 14:00 hs Cancha ",
+        "fecha": "Domingo 14:00 hs Cancha 2",
         "resultado": "",
           "games": ""
       }
@@ -142,14 +142,14 @@
       {
         "equipo1": "1ro A",
         "equipo2": "Ganador P1",
-        "fecha": "Domingo 19:00 hs Cancha ",
+        "fecha": "Domingo 18:00 hs Cancha 1",
         "resultado": "",
           "games": ""
       },
       {
         "equipo1": "Ganador P2",
         "equipo2": "1ro B",
-        "fecha": "Domingo 19:00 hs Cancha ",
+        "fecha": "Domingo 18:00 hs Cancha 2",
         "resultado": "",
           "games": ""
       }
