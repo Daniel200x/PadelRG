@@ -304,35 +304,35 @@
       {
         "equipo1": "1ro E",
         "equipo2": "2do C",
-        "fecha": "",
+        "fecha": "Sabado 22:00 hs Cancha 2",
         "resultado": "",
         "games": ""
       },
       {
         "equipo1": "2do B",
         "equipo2": "1ro D",
-        "fecha": "Sabado 22:00 hs Cancha 1",
+        "fecha": "Sabado 23:00 hs Cancha 1",
         "resultado": "",
         "games": ""
       },
       {
         "equipo1": "1ro C",
         "equipo2": "2do A",
-        "fecha": "30/07/25 19:00 hs",
+        "fecha": "Sabado 23:00 hs Cancha 2",
         "resultado": "",
         "games": ""
       },
       {
         "equipo1": "2do D",
-        "equipo2": "1roF",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo2": "1ro F",
+        "fecha": "Sabado 23:50 hs Cancha 1",
         "resultado": "",
         "games": ""
       },
       {
         "equipo1": "1ro G",
         "equipo2": "2do E",
-        "fecha": "30/07/25 19:00 hs",
+        "fecha": "Sabado 23:50 hs Cancha 2",
         "resultado": "",
         "games": ""
       }
