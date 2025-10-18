@@ -111,8 +111,8 @@
           "fecha": "Sabado 10:00 hs Cancha 1",
           "equipo1": "Sara Cortez/Giuliana Gimenez",
           "equipo2": "Violeta Lopez/Jimena Ramadori",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
         }
       ]
     },
@@ -126,7 +126,7 @@
           "nombre": "Pamela Rusconi/Elizabeth Andrade",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Sabrina Denis/A confirmar",
+          "nombre": "Sabrina Denis/Cordoba",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -141,14 +141,14 @@
         {
           "fecha": "Sabado 09:00 hs Cancha 1",
           "equipo1": "Pamela Rusconi/Elizabeth Andrade",
-          "equipo2": "Sabrina Denis/A confirmar",
-          "resultado": "",
-          "games":"A definir"
+          "equipo2": "Sabrina Denis/Cordoba",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
         },
         {
           "fecha": "Sabado 15:00 hs Cancha 2",
           "equipo1": "Tania Luna/Carolina Herrera",
-          "equipo2": "Sabrina Denis/A confirmar",
+          "equipo2": "Sabrina Denis/Cordoba",
           "resultado": "",
           "games":"A definir"
         }
