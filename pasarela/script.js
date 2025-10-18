@@ -890,7 +890,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Cesar Ponce/Javier Andrade': '../img/equipos/cponce-jandrade.jpg',
         'Ignacio Perez/Federico Ruiz': '../img/equipos/iperez-fruiz.jpg',
         'Agustin Cingolani/Valentin Cingolani': '../img/equipos/llorones.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Mariana Medina/Romina Torres': '../img/equipos/mmedina-rtorres.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
