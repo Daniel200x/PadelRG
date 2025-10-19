@@ -228,8 +228,8 @@
          "equipo1": "1ro A",
           "equipo2": "Ganador P1",
           "fecha": "Domingo 08:00 hs Cancha 1",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 7-6"
       },
       {
          "equipo1": "1ro E",
@@ -249,8 +249,8 @@
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo 09:00 hs Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"2-6, 4-6, 6-7"
       }
     ],
     "semis": [
