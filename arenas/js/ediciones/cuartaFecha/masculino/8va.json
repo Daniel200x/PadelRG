@@ -235,15 +235,15 @@
          "equipo1": "1ro E",
           "equipo2": "1ro D",
           "fecha": "Domingo 08:00 hs Cancha 2",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"0-6, 0-6"
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do E",
           "fecha": "Domingo 09:00 hs Cancha 1",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
       },
       {
          "equipo1": "Ganador P2",
