@@ -340,54 +340,54 @@
     ],
     "cuartos": [
       {
-        "equipo1": "Ganador Partido 1",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "1ro A",
+        "equipo2": "Ganador Partido 1",
+        "fecha": "Domingo 12:00 Cancha 1",
        "resultado": "",
         "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "Ganador Partido 2",
+        "equipo2": "Ganador Partido 3",
+        "fecha": "Domingo 12:00 Cancha 2",
         "resultado": "",
         "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "Ganador Partido 4",
+        "equipo2": "Ganador Partido 5",
+        "fecha": "Domingo 13:00 Cancha 1",
         "resultado": "",
         "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "Ganador Partido 6",
+        "equipo2": "1ro B",
+        "fecha": "Domingo 13:00 Cancha 2",
         "resultado": "",
         "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "Ganador Partido 1",
+        "equipo2": "Ganador Partido 2",
+        "fecha": "Domingo 17:00 Cancha 1",
         "resultado": "",
         "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
-        "fecha": "30/07/25 19:00 hs",
+        "equipo1": "Ganador Partido 3",
+        "equipo2": "Ganador Partido 4",
+        "fecha": "Domingo 17:00 Cancha 2",
         "resultado": "",
         "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
-      "fecha": "30/07/25 19:00 hs",
+      "equipo1": "Ganador Partido 5",
+      "equipo2": "Ganador Partido 6",
+      "fecha": "",
       "resultado": "",
         "games": ""
     }
