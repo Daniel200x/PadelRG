@@ -897,7 +897,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Joaquin Servian/Jeremias Maestro': '../img/equipos/jservian-jmaestro.jpg',
         'Sabrina Denis/Cordoba': '../img/equipos/sdenis-cordoba.jpg',
         'Tania Luna/Carolina Herrera': '../img/equipos/tluna-cherrera.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Pamela Rusconi/Elizabeth Andrade': '../img/equipos/prusconi-eandrade.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
