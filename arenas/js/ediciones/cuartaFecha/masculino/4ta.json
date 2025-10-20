@@ -143,24 +143,23 @@
         "equipo1": "1ro A",
         "equipo2": "Ganador P1",
         "fecha": "Domingo 19:00 hs Cancha ",
-        "resultado": "",
-          "games": ""
+        "resultado": "2-0",
+          "games": "6-0, 6-2"
       },
       {
         "equipo1": "Ganador P2",
         "equipo2": "1ro B",
         "fecha": "Domingo 19:00 hs Cancha ",
-        "resultado": "",
-          "games": ""
+        "resultado": "1-2",
+          "games": "6-2, 2-6, 6-7"
       }
     ],
     "final": {
      "equipo1": "Ganador P5",
         "equipo2": "Ganador P6",
         "fecha": "Domingo 22:30 hs Cancha ",
-        "resultado": "",
-     
-    "games": ""
+        "resultado": "2-0",     
+    "games": "6-1, 6-1"
     }
   }
 }
