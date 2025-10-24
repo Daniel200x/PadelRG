@@ -21,8 +21,8 @@
     },
         {"nombre": "Vuela Alto",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Marquez",
+        "Garcia"
       ]
     },
         {"nombre": "3er Tiempo",
@@ -52,8 +52,8 @@
     },
         {"nombre": "DC Padel",
       "jugadores": [
-        "Jugador 1",
-        "Jugador 2"
+        "Ruiz",
+        "Pugnale"
       ]
     }
         
@@ -63,7 +63,7 @@
             {"equipo1": "AC Padel", "equipo2": "Galactinchos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Los Picatinchos", "equipo2": "La ultima y nos vamos", "resultado": "", "games": "", "fecha": ""},
             {"equipo1": "Drink Team", "equipo2": "3er Tiempo", "resultado": "", "games": "", "fecha": ""},
-            {"equipo1": "DC Padel", "equipo2": "Vuela Alto", "resultado": "", "games": "", "fecha": ""},
+            {"equipo1": "DC Padel", "equipo2": "Vuela Alto", "resultado": "0-2", "games": "1-6, 2-6", "fecha": "12-10-2025"},
             {"equipo1": "La Tinchonetta", "equipo2": null, "resultado": "Descansa", "games": "", "fecha": ""}
         ],
         "ronda_2": [
