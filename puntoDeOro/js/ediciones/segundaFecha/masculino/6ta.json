@@ -277,7 +277,7 @@
           "GC": 0
         },
         {
-          "nombre": "R. Retuerto/L. Lapadula",
+          "nombre": "R. Retuerto/Sanchez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -519,43 +519,22 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "1ro A",
+        "equipo1": "P. Velazquez/M. Pereyra",
           "equipo2": "2do B",
           "fecha": "Sabado :00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
-         "equipo1": "1ro E",
-          "equipo2": "2do F",
+         "equipo1": "Hernan Juarez/Julio Orellana",
+          "equipo2": "P. Ulloa/C. Gabriel",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
-         "equipo1": "1ro C",
-          "equipo2": "2do D",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro G",
-          "equipo2": "2do H",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-        "equipo1": "1ro B",
-          "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro F",
-          "equipo2": "2do E",
+         "equipo1": "1ro H",
+          "equipo2": "W. Sosa/M. Dos Santos",
           "fecha": "Sabado 23:00",
           "resultado": "A definir",
           "games":"A definir"
@@ -568,8 +547,29 @@
           "games":"A definir"
       },
       {
-         "equipo1": "1ro H",
-          "equipo2": "2do G",
+         "equipo1": "E. Garay/D. Floriani",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "J. Villalobos/V. Gonzalez",
+          "equipo2": "R. Retuerto/Sanchez",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "C. Andrade/V. Lemus",
+          "equipo2": "2do H",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
           "fecha": "Sabado 23:00",
           "resultado": "A definir",
           "games":"A definir"
@@ -580,8 +580,8 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
          "equipo1": "Ganador P3",
@@ -610,8 +610,8 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
          "equipo1": "Ganador P3",
@@ -625,8 +625,8 @@
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
     }
   }
 }
