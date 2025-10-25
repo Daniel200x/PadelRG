@@ -6,40 +6,16 @@
       "equipos": [
         {
           "nombre": "P. Velazquez/M. Pereyra",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "C. Lopez/D. Ibarra",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "L. Gomez/D. Villalba",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "D. Orellano/E. Arteaga",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -72,41 +48,16 @@
       "equipos": [
         {
           "nombre": "N. Barrios/J. Gimenez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "F. Infran/J. Mendez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "L. Vera/J. Gimenez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "G. Santana/N. De Guevara",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}        
       ],
       "partidos": [
         {
@@ -139,31 +90,13 @@
       "equipos": [
         {
           "nombre": "E. Garay/D. Floriani",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "J. Aguilar/M. Trangoni",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "R. Luna/F. Forno",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -195,40 +128,16 @@
       "equipos": [
         {
           "nombre": "H. Rojo/M. Soto",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "G. Quiroz/F. Gonzalez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "W. Nieva/C. Ventura",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "G. Aballay/U. Veron",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -260,40 +169,16 @@
       "equipos": [
        {
           "nombre": "F. Herlein/E. Larrechea",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "W. Retamal/L. Lapadula",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "R. Retuerto/Sanchez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "H. Juarez/J. Orellana",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -325,40 +210,16 @@
       "equipos": [
        {
           "nombre": "P. Ulloa/C. Gabriel",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "C. Peschiuta/L. Ruiz",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "J. Sena/G. Escobar",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "J. Villalobos/V. Gonzalez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -390,40 +251,16 @@
       "equipos": [
        {
           "nombre": "C. Andrade/V. Lemus",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "S. Lonne/J. Cuenca",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "A. Facio/D. Facio",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "W. Sosa/M. Dos Santos",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
@@ -455,40 +292,16 @@
       "equipos": [
        {
           "nombre": "N. Barbosa/W. Sanchez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "B. Gamarra/L. Galvan",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "P. Figueroa/R. Oyarzun",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "F. Saldaño/N. Dominguez",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
