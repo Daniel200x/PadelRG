@@ -5,16 +5,16 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "P. Velazquez/M. Pereyra",
+          "nombre": "Patricio Velazquez/Mariano Pereyra",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "C. Lopez/D. Ibarra",
+          "nombre": "Cristian Lopez/Daniel Ibarra",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "L. Gomez/D. Villalba",
+          "nombre": "L. Gomez/Diego Villalba",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "D. Orellano/E. Arteaga",
+          "nombre": "Dario Orellano/Ezequiel Arteaga",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -47,16 +47,16 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "N. Barrios/J. Gimenez",
+          "nombre": "Nicolas Barrios/Javier Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "F. Infran/J. Mendez",
+          "nombre": "Facundo Infran/Jose Maria Mendez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "L. Vera/J. Gimenez",
+          "nombre": "Lucas Vera/Juan Manuel Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "G. Santana/N. De Guevara",
+          "nombre": "Gustavo Santana/Nicolas De Guevara",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}        
       ],
       "partidos": [
@@ -89,35 +89,35 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "E. Garay/D. Floriani",
+          "nombre": "Eduardo Garay/Diego Floriani",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "J. Aguilar/M. Trangoni",
+          "nombre": "Jose Aguilar/Marcelo Trangoni",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "R. Luna/F. Forno",
+          "nombre": "Ramiro Luna/Franco Forno",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "E. Garay/D. Floriani",
-          "equipo2": "J. Aguilar/M. Trangoni",
+          "equipo1": "Eduardo Garay/Diego Floriani",
+          "equipo2": "Jose Aguilar/Marcelo Trangoni",
           "resultado": "2-0",
           "games":"6-4, 6-4"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "R. Luna/F. Forno",
-          "equipo2": "J. Aguilar/M. Trangoni",
+          "equipo1": "Ramiro Luna/Franco Forno",
+          "equipo2": "Jose Aguilar/Marcelo Trangoni",
           "resultado": "2-0",
           "games":"6-0, 6-0"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "E. Garay/D. Floriani",
-          "equipo2": "R. Luna/F. Forno",
+          "equipo1": "Eduardo Garay/Diego Floriani",
+          "equipo2": "Ramiro Luna/Franco Forno",
           "resultado": "2-0",
           "games":"6-4, 6-4"
         }
@@ -127,16 +127,16 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "H. Rojo/M. Soto",
+          "nombre": "Hector Rojo/Mariano Soto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "G. Quiroz/F. Gonzalez",
+          "nombre": "Gustavo Quiroz/Franco Gonzalez",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "W. Nieva/C. Ventura",
+          "nombre": "Walter Nieva/Cristian Ventura",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "G. Aballay/U. Veron",
+          "nombre": "Gerardo Aballay/Ulises Veron",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -171,13 +171,13 @@
           "nombre": "F. Herlein/E. Larrechea",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "W. Retamal/L. Lapadula",
+          "nombre": "Walter Retamal/L. Lapadula",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "R. Retuerto/Sanchez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "H. Juarez/J. Orellana",
+          "nombre": "Hernan Juarez/Julio Orellana",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -209,16 +209,16 @@
       "nombre": "Grupo F",
       "equipos": [
        {
-          "nombre": "P. Ulloa/C. Gabriel",
+          "nombre": "Pablo Ulloa/Cristian Gabriel",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "C. Peschiuta/L. Ruiz",
+          "nombre": "Cesar Peschiuta/Luis Ruiz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "J. Sena/G. Escobar",
+          "nombre": "J. Sena/Gabriel Escobar",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "J. Villalobos/V. Gonzalez",
+          "nombre": "Jonatan Villalobos/Victor Gonzalez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -250,16 +250,16 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "C. Andrade/V. Lemus",
+          "nombre": "Ciro Andrade/Valentin Lemus",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "S. Lonne/J. Cuenca",
+          "nombre": "Sebastian Lonne/Juan Cuenca",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "A. Facio/D. Facio",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "W. Sosa/M. Dos Santos",
+          "nombre": "Waldemar Sosa/Matias Dos Santos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -291,16 +291,16 @@
       "nombre": "Grupo H",
       "equipos": [
        {
-          "nombre": "N. Barbosa/W. Sanchez",
+          "nombre": "Nicolas Barbosa/Walter Sanchez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "B. Gamarra/L. Galvan",
+          "nombre": "Braian Gamarra/L. Galvan",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "P. Figueroa/R. Oyarzun",
+          "nombre": "Pablo Figueroa/Roberto Oyarzun",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "F. Saldaño/N. Dominguez",
+          "nombre": "Facundo Saldaño/Nicolas Dominguez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
@@ -332,60 +332,60 @@
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "P. Velazquez/M. Pereyra",
-          "equipo2": "2do B",
+        "equipo1": "Patricio Velazquez/Mariano Pereyra",
+          "equipo2": "Nicolas Barrios/Javier Gimenez",
           "fecha": "Sabado :00",
           "resultado": "1-0",
           "games":"1-0"
       },
       {
          "equipo1": "Hernan Juarez/Julio Orellana",
-          "equipo2": "P. Ulloa/C. Gabriel",
+          "equipo2": "Pablo Ullua/Cristian Gabriel",
           "fecha": "Sabado 22:00",
           "resultado": "1-0",
           "games":"1-0"
       },
       {
-         "equipo1": "1ro H",
-          "equipo2": "W. Sosa/M. Dos Santos",
+         "equipo1": "Nicolas Barbosa/Walter Sanchez",
+          "equipo2": "Waldemar Sosa/Matias Dos Santos",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"0-1"
       },
       {
-         "equipo1": "1ro D",
-          "equipo2": "R. Luna/F. Forno",
+         "equipo1": "Hector Rojo/Mariano Soto",
+          "equipo2": "Ramiro Luna/Franco Forno",
           "fecha": "Sabado 23:00",
           "resultado": "1-0",
           "games":"1-0"
       },
       {
-         "equipo1": "E. Garay/D. Floriani",
-          "equipo2": "2do D",
+         "equipo1": "Eduardo Garay/Diego Floriani",
+          "equipo2": "Gustavo Quiroz/Franco Gonzalez",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"0-1"
       },
       {
-         "equipo1": "J. Villalobos/V. Gonzalez",
+         "equipo1": "Jonatan Villalobos/Victor Gonzalez",
           "equipo2": "R. Retuerto/Sanchez",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"2-1"
       },
       {
-         "equipo1": "C. Andrade/V. Lemus",
-          "equipo2": "2do H",
+         "equipo1": "Ciro Andrade/Valentin Lemus",
+          "equipo2": "Facundo Saldaño/Nicolas Dominguez",
           "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
-        "equipo1": "1ro B",
-          "equipo2": "2do A",
+        "equipo1": "Lucas Vera/Juan Manuel Gimenez",
+          "equipo2": "Cristian Lopez/Daniel Ibarra",
           "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"0-1"
       }
     ],
     "cuartos": [
@@ -400,22 +400,22 @@
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       },
       {
          "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
       },
       {
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "1-0",
+          "games":"1-0"
       }
     ],
     "semis": [
@@ -430,8 +430,8 @@
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-1",
+          "games":"0-1"
       }
     ],
     "final": {
