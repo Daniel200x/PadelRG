@@ -6,30 +6,36 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {
+          "nombre": "Ivan Gallardo/Julio Andrade","PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Agustin Guerra/Alejandro Mancini","PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Matias Bleuer/Diego Mancini","PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
+        }
         
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 18:00 hs",
+          "equipo1": "Agustin Guerra/Alejandro Mancini",
+          "equipo2": "Matias Bleuer/Diego Mancini",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Agustin Guerra/Alejandro Mancini",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Matias Bleuer/Diego Mancini",
           "resultado": "",
           "games": ""
         }
@@ -39,29 +45,29 @@
     {
       "nombre": "Grupo B",
       "equipos": [
-         {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+         {    "nombre": "Jose Villarreal/Yannick Sanchez",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Pablo Maldonado/Rivero Manu",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Tomas Echeverria/Tiago Andrade",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 22:00 hs",
+          "equipo1": "Pablo Maldonado/Rivero Manu",
+          "equipo2": "Tomas Echeverria/Tiago Andrade",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 12:00 hs",
+          "equipo1": "Jose Villarreal/Yannick Sanchez",
+          "equipo2": "Pablo Maldonado/Rivero Manu",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 16:00 hs",
+          "equipo1": "Jose Villarreal/Yannick Sanchez",
+          "equipo2": "Tomas Echeverria/Tiago Andrade",
           "resultado": "",
           "games": ""
         }
@@ -70,15 +76,15 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-         {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+         {    "nombre": "V. Zalazar/Bruno Zalazar",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Gabriel Muller/Nicolas Escufachi",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "V. Zalazar/Bruno Zalazar",
+          "equipo2": "Gabriel Muller/Nicolas Escufachi",
           "resultado": "",
           "games": ""
         },
@@ -101,15 +107,15 @@
     {
       "nombre": "Grupo D",
       "equipos": [
-         {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+         {    "nombre": "Baez/Jeremias Maestro",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Pablo Lara/Pedro Martinez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 22:00 hs",
+          "equipo1": "Baez/Jeremias Maestro",
+          "equipo2": "Pablo Lara/Pedro Martinez",
           "resultado": "",
           "games": ""
         },
@@ -136,56 +142,56 @@
 
     "cuartos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "1ro A",
+        "equipo2": "2do D",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "2do B",
+        "equipo2": "1ro C",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "1ro D",
+        "equipo2": "2do A",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "2do C",
+        "equipo2": "1ro B",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
+      "equipo1": "Ganador P5",
+      "equipo2": "Ganador P6",
       "fecha": "   19:00 hs",
       "resultado": "A confirmar",
-      "ganador": "/"
+      "games": ""
     }
   }
 }
