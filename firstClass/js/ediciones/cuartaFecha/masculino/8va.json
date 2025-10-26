@@ -6,9 +6,9 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Cingolani/Cingolani",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Romero/Molina",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Stricker/Pucineri",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -39,9 +39,9 @@
     {
       "nombre": "Grupo B",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Pavon/Carrizo",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Stacchioli/Sander",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Marcelo Yunes/Hugo Sanabria",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -71,9 +71,9 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Noval/Perez",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Rodrigo Fritz/Barrera",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Arrieta/Mondino",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -103,9 +103,9 @@
     {
       "nombre": "Grupo D",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Gonzalez/Barreto",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Javier Paniagua/Cristian Ortiz",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Coda/Macucho",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -135,9 +135,9 @@
     {
       "nombre": "Grupo E",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Cabrera/Pereyra",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Velazquez/Troncoso",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Lorenzo Rivero/Bruno Trellini",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -167,9 +167,9 @@
     {
       "nombre": "Grupo F",
       "equipos": [
-        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Cimaldoni/Coronel",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "San Pietro/Garramuño",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Veloso/Veloso",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -199,9 +199,9 @@
     {
       "nombre": "Grupo G",
       "equipos": [
-       {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+       {    "nombre": "Romero/Moreno",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Pommares/Bianchi",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Diaz/Suarez",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -232,16 +232,13 @@
       "nombre": "Grupo H",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Elem/Rios",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "/",
+         "nombre": "Peric/Marengo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-        "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-         "nombre": "/",
+        "nombre": "Idone/Robledo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
@@ -262,13 +259,6 @@
          {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-        "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
           "fecha": "17:00 hs",
           "resultado": "",
           "games":"A definir"
@@ -279,16 +269,13 @@
       "nombre": "Grupo I",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Franco Marquez/Gomez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-         "nombre": "/",
+         "nombre": "Jeremias Lara/Gallo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-        "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-         "nombre": "/",
+        "nombre": "A definir",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
       ],
       "partidos": [
@@ -309,60 +296,6 @@
          {
          "equipo1": "Ganador Partido 1",
           "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-        "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
-          "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo J",
-      "equipos": [
-        {
-          "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-         "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-        "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-         "nombre": "/",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
-      ],
-      "partidos": [
-        {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": " 21:30 hs",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "19:30 hs",
-          "resultado": "",
-          "games":"A definir"
-        },
-         {
-         "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-        "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
           "fecha": "17:00 hs",
           "resultado": "",
           "games":"A definir"

@@ -102,24 +102,24 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "E. Garay/D. Floriani",
+          "equipo2": "J. Aguilar/M. Trangoni",
+          "resultado": "2-0",
+          "games":"6-4, 6-4"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "R. Luna/F. Forno",
+          "equipo2": "J. Aguilar/M. Trangoni",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "E. Garay/D. Floriani",
+          "equipo2": "R. Luna/F. Forno",
+          "resultado": "2-0",
+          "games":"6-4, 6-4"
         }
       ]
     },
