@@ -6,30 +6,9 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {
-          "nombre": "Ivan Gallardo/Julio Andrade",
-          "jugadores": [
-            {"nombre": "Ivan Gallardo", "foto": "../img/jugadores/ivangallardo.jpg"},
-            {"nombre": "Julio Andrade", "foto": "../img/jugadores/julioandrade.jpg"}
-          ],
-          "PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "Equipo 1",
-          "jugadores": [
-            {"nombre": "Jugador 1", "foto": "../img/jugadores/jugador1.jpg"},
-            {"nombre": "Jugador 2", "foto": "../img/jugadores/jugador2.jpg"}
-          ],
-          "PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
-        },
-        {
-          "nombre": "Equipo 1",
-          "jugadores": [
-            {"nombre": "Jugador 1", "foto": "../img/jugadores/jugador1.jpg"},
-            {"nombre": "Jugador 2", "foto": "../img/jugadores/jugador2.jpg"}
-          ],
-          "PJ": 0, "PG": 0, "SG": 0, "SP": 0, "GF": 0, "GC": 0
-        }
+        {    "nombre": "/",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "/",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "/",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
