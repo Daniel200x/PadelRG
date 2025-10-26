@@ -166,56 +166,56 @@
 
     "cuartos": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "1ro A",
+        "equipo2": "2do D",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "2do B",
+        "equipo2": "1ro C",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "1ro D",
+        "equipo2": "2do A",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "2do C",
+        "equipo2": "1ro B",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       }
     ],
     "semis": [
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       },
       {
-        "equipo1": "/",
-        "equipo2": "/",
+        "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
         "fecha": "   19:00 hs",
         "resultado": "A confirmar",
-        "ganador": "/"
+        "games": ""
       }
     ],
     "final": {
-      "equipo1": "/",
-      "equipo2": "/",
+      "equipo1": "Ganador P5",
+      "equipo2": "Ganador P6",
       "fecha": "   19:00 hs",
       "resultado": "A confirmar",
-      "ganador": "/"
+      "games": ""
     }
   }
 }
