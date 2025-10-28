@@ -3836,7 +3836,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -3861,7 +3861,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 200}
           
         ],
         "arenas": [
@@ -3886,7 +3886,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
           {"edicion": "3er Torneo", "puntos": 175}
           
         ],
@@ -3912,7 +3912,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
           {"edicion": "3er Torneo", "puntos": 175}
           
         ],
@@ -3938,7 +3938,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -3958,13 +3958,13 @@
      ,
     {
       "id": 1308,
-      "name": "Silvina Davalo",
+      "name": "Silvina Davalos",
       "gender": "femenino",
       "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4015,7 +4015,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 100}
           
         ],
         "arenas": [
@@ -4140,7 +4140,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 75}
           
         ],
@@ -4166,7 +4166,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 75}
           
         ],
@@ -4192,7 +4192,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4218,7 +4218,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4264,13 +4264,13 @@
      ,
     {
       "id": 1320,
-      "name": "Carolina Recedo",
+      "name": "Carolina Racedo",
       "gender": "femenino",
       "category": "8va",
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 200}
           
         ],
@@ -4346,7 +4346,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 150}
           
         ],
@@ -4423,7 +4423,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4449,7 +4449,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -4474,7 +4474,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
           {"edicion": "3er Torneo", "puntos": 150}
           
         ],
@@ -4526,7 +4526,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -4551,7 +4551,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0}
+          {"edicion": "2do Torneo", "puntos": 25}
           
         ],
         "arenas": [
@@ -4576,7 +4576,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 25}
           
         ],
@@ -4602,7 +4602,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4628,7 +4628,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 25}
           
         ],
@@ -4654,7 +4654,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
           {"edicion": "3er Torneo", "puntos": 25}
           
         ],
@@ -4781,7 +4781,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
@@ -4807,7 +4807,7 @@
        "torneos": {
         "puntoDeOro": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
           {"edicion": "3er Torneo", "puntos": 100}
           
         ],
