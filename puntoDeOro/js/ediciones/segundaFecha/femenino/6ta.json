@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Sosa/Pesce",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Mur/Sayans",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Marcial/Rojo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -62,7 +62,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Bergondi/Gasparovic",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -71,7 +71,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Bianchi/Cortez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -80,7 +80,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Sanabria/Ramadori",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -120,7 +120,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Gimenez/Quezada",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Niz/Corzo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +138,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Flamenco/Martinez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -176,7 +176,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "/",
+          "nombre": "Terrado/Cordoba",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -185,7 +185,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Saldivia/Tarchini",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -194,7 +194,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Rojas/Claudia Torres",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -232,7 +232,7 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "/",
+          "nombre": "Ramirez/Lopez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -241,7 +241,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
+          "nombre": "Herrera/Bordon",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -250,175 +250,7 @@
           "GC": 0
         },
         {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo F",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo G",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo H",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
+          "nombre": "Malvina Polizzi/Maria Luisa Miranda",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
