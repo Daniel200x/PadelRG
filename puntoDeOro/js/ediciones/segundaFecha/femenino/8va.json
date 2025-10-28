@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Cuesta/Muñoz",
+          "nombre": "Carolina Vazquez/Susana Arce",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "Vazquez/Arce",
+          "nombre": "Maria Elena Araoz/Gessica Galucci",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "Cichero/Lapejrusk",
+          "nombre": "Yesica Fleuri/Micaela Lamberti",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -62,7 +62,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Perolo/Beamonte",
+          "nombre": "Noelia Cagnelutti/Emilce Duca",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -71,7 +71,7 @@
           "GC": 0
         },
         {
-          "nombre": "Villagra/Blanco",
+          "nombre": "Cristina Barria/Silvina Davalos",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -80,7 +80,7 @@
           "GC": 0
         },
         {
-          "nombre": "Sanchez/Molina",
+          "nombre": "Karen Beamonte/Jesica Perolo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -120,7 +120,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Rivadaneira/De La Rosa",
+          "nombre": "Belen Rivadaneira/Natalia De La Rosa",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-          "nombre": "Yesica Fleuri/Rocamora",
+          "nombre": "Anabella Astudillo/Ana Andrade",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +138,16 @@
           "GC": 0
         },
         {
-          "nombre": "Barria/Davalos",
+          "nombre": "Carolina Racedo/Alina Zabala",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Valentina Rodriguez/Julieta Cichero",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -176,7 +185,7 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Araoz/Galucci",
+          "nombre": "Romina Ramirez/Maria Romero",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -185,7 +194,7 @@
           "GC": 0
         },
         {
-          "nombre": "Loustau/Figueroa",
+          "nombre": "Olga Cardenas/Rosalina Gamarra",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -194,231 +203,7 @@
           "GC": 0
         },
         {
-          "nombre": "Andino/Racedo",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo E",
-      "equipos": [
-       {
-          "nombre": "Lamberti/Zabala",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "Arteaga/Paredes",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo F",
-      "equipos": [
-       {
-          "nombre": "",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo G",
-      "equipos": [
-       {
-          "nombre": "Gamarra/Barria",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "Ramirez/Romero",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        }
-        
-      ],
-      "partidos": [
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
-        }
-      ]
-    },
-    {
-      "nombre": "Grupo H",
-      "equipos": [
-       {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "/",
+          "nombre": "Florencia Graneros/Andrea Graneros",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -454,92 +239,35 @@
     }
   ],
   "eliminatorias": {
-    "octavos": [
-      {
-        "equipo1": "1ro A",
-          "equipo2": "2do B",
-          "fecha": "Sabado :00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro E",
-          "equipo2": "2do F",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro C",
-          "equipo2": "2do D",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro G",
-          "equipo2": "2do H",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-        "equipo1": "1ro B",
-          "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro F",
-          "equipo2": "2do E",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro D",
-          "equipo2": "2do C",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro H",
-          "equipo2": "2do G",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      }
-    ],
+   
     "cuartos": [
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+         "equipo1": "Maria Elena Araoz/Gessica Galucci",
+          "equipo2": "Carolina Racedo/Alina Zabala",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
+         "equipo1": "Cristina Barria/Silvina Davalos",
+          "equipo2": "Florencia Graneros/Andrea Graneros",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       },
       {
-         "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
+         "equipo1": "Belen Rivadaneira/Natalia De La Rosa",
+          "equipo2": "Carolina Vazquez/Susana Arce",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       },
       {
-         "equipo1": "Ganador P7",
-          "equipo2": "Ganador P8",
+         "equipo1": "Olga Cardenas/Rosalina Gamarra",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       }
     ],
     "semis": [
@@ -547,23 +275,23 @@
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       }
     ],
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
     }
   }
 }

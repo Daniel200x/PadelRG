@@ -1,5 +1,5 @@
 {
-  "nombre": "7ma Categoría",
+  "nombre": "4ta Damas",
   "grupos": [
     {
       "nombre": "Grupo A",
@@ -21,10 +21,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "M. Medina/R. Torres",
+          "equipo2": "A. Vidart/R. Cruz",
+          "resultado": "2-0",
+          "games":"2-0"
         },
         {
           "fecha": ":00 hs",
@@ -63,10 +63,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "K. Chicaguala/L. Fruncieri",
+          "equipo2": "R. Terrado/L. Romano",
+          "resultado": "2-0",
+          "games":"2-0"
         },
         {
           "fecha": ":00 hs",
@@ -106,10 +106,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
-          "resultado": "",
-          "games":"A definir"
+          "equipo1": "M. Pratto/M. Figueroa",
+          "equipo2": "Y. Murga/M. Salinas",
+          "resultado": "2-0",
+          "games":"2-0"
         },
         {
           "fecha": ":00 hs",
@@ -129,116 +129,45 @@
     }
   ],
   "eliminatorias": {
-    "octavos": [
+    
+    "cuartos": [
       {
-        "equipo1": "1ro A",
-          "equipo2": "2do B",
-          "fecha": "Sabado :00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro E",
-          "equipo2": "2do F",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
+         "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Domingo",
+          "resultado": "0-1",
+          "games":"0-1"
       },
       {
          "equipo1": "1ro C",
-          "equipo2": "2do D",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro G",
-          "equipo2": "2do H",
-          "fecha": "Sabado 22:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-        "equipo1": "1ro B",
           "equipo2": "2do A",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro F",
-          "equipo2": "2do E",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro D",
-          "equipo2": "2do C",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "1ro H",
-          "equipo2": "2do G",
-          "fecha": "Sabado 23:00",
-          "resultado": "A definir",
-          "games":"A definir"
-      }
-    ],
-    "cuartos": [
-      {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
-          "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
-          "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
-      },
-      {
-         "equipo1": "Ganador P7",
-          "equipo2": "Ganador P8",
-          "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
       }
     ],
     "semis": [
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"0-2"
       }
     ],
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "A definir",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"2-0"
     }
   }
 }
