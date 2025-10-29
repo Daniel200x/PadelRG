@@ -23,7 +23,7 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 150},
           {"edicion": "2do Torneo", "puntos": 150},
-          {"edicion": "3er Torneo", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 200}
         ]
       }
      
@@ -53,7 +53,7 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 100},
-          {"edicion": "3er Torneo", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 150}
         ]
       }
     },
@@ -110,7 +110,7 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 100},
-          {"edicion": "3er Torneo", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 150}
         ]
       }
     },
@@ -216,7 +216,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 150},
-          {"edicion": "2do Torneo", "puntos": 150}
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 200}
         ]
       }
     },
@@ -242,7 +243,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 100}
         ]
       }
     },
@@ -317,7 +319,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 100}
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
         ]
       }
     },
@@ -565,7 +568,7 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
-          {"edicion": "3er Torneo", "puntos": 0}
+          {"edicion": "3er Torneo", "puntos": 25}
         ]
       }
     },
@@ -1153,6 +1156,31 @@
         ]
       }
     },
+   {
+      "id": 48,
+      "name": "Andres Chalier",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+        ]
+      }
+    },
     {
       "id": 49,
       "name": "Pablo Lara",
@@ -1173,7 +1201,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 200},
-          {"edicion": "2do Torneo", "puntos": 200}
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 100}
         ]
       }
     }
@@ -1199,7 +1228,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25}
         ]
       }
     }
@@ -1224,7 +1254,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 100},
-          {"edicion": "2do Torneo", "puntos": 75}
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25}
         ]
       }
     }
@@ -1299,7 +1330,8 @@
         ],
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
-          {"edicion": "2do Torneo", "puntos": 25}
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25}
         ]
       }
     }
@@ -1378,6 +1410,88 @@
         "segundoSet": [
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 58,
+      "name": "Sergio Ruiz",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "name": "Alejandro Borquez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "name": "Pedro Martinez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
         ]
       }
     }
