@@ -6,9 +6,9 @@
     {
       "nombre": "Grupo A",
       "equipos": [
-        {    "nombre": "",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
-        {      "nombre": "",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {    "nombre": "Pujol/Alvarez",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Debonis/Mignola",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Almonacid/Cardacci",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
@@ -40,15 +40,15 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Ruiz/Gonzalez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Salinas/Umbre Arias",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Guerrero/Tintilay",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -80,15 +80,15 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Martinez K/Marcon",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Trejo/Segovia",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Cordoba/Rusconi",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
@@ -120,15 +120,95 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "",
+          "nombre": "Lia Niz/Daniela Bergondi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "Lucia Marcial/Miranda",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "",
+          "nombre": "A definir",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Perez/Aranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Cecilia Rojo/Vivas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Visñuk/Lirola",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Rojas/Lanaro",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Britos/Juarez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Sosa/Florencia Bianchi",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
