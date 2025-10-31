@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 17:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": ""
-        },
-        {
           "fecha": "Miercoles 19:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Burgo/Aguero",
+          "equipo2": "Quiroga/Silva",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 19:00 hs",
+          "equipo1": "Burgo/Aguero",
+          "equipo2": "Villalba/Vizuara",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Villalba/Vizuara",
+          "equipo2": "Quiroga/Silva",
           "resultado": "",
           "games": ""
         }
@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 22:00 hs",
+          "equipo1": "Britos/Visñuk",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 10:00 hs",
+          "equipo1": "Britos/Visñuk",
+          "equipo2": "Dana Martinez/Oriana Martinez",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 15:00 hs",
+          "equipo1": "Karina Girollet/Lucia Ramirez",
+          "equipo2": "Dana Martinez/Oriana Martinez",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 19:00 hs",
+          "equipo1": "Mella/Fretes",
+          "equipo2": "Segovia/Lores",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Bustos/Hernandez",
+          "equipo2": "Segovia/Lores",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Jueves 19:00 hs",
+          "equipo1": "Mella/Fretes",
+          "equipo2": "Bustos/Hernandez",
           "resultado": "",
           "games": ""
         }
@@ -134,23 +134,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Domingo 16:00 hs",
+          "equipo1": "Molina/Coronel",
+          "equipo2": "Santander/Sura",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 18:00 hs",
+          "equipo1": "Molina/Coronel",
+          "equipo2": "Trejo/Lirola",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Santander/Sura",
+          "equipo2": "Trejo/Lirola",
           "resultado": "",
           "games": ""
         }
@@ -174,23 +174,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 17:00 hs",
+          "equipo1": "Luggren/Lopez",
+          "equipo2": "Aguirre/Pincol",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Luggren/Lopez",
+          "equipo2": "Iglesias/Saldivia",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Aguirre/Pincol",
+          "equipo2": "Iglesias/Saldivia",
           "resultado": "",
           "games": ""
         }

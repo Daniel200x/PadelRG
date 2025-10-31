@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Domingo 14:00 hs",
+          "equipo1": "Ruiz/Gonzalez",
+          "equipo2": "Salinas/Umbre Arias",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 19:00 hs",
+          "equipo1": "Ruiz/Gonzalez",
+          "equipo2": "Guerrero/Tintilay",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 20:00 hs",
+          "equipo1": "Salinas/Umbre Arias",
+          "equipo2": "Guerrero/Tintilay",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 13:00 hs",
+          "equipo1": "Martinez K/Marcon",
+          "equipo2": "Trejo/Segovia",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 09:00 hs",
+          "equipo1": "Trejo/Segovia",
+          "equipo2": "Cordoba/Rusconi",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 16:00 hs",
+          "equipo1": "Martinez K/Marcon",
+          "equipo2": "Cordoba/Rusconi",
           "resultado": "",
           "games": ""
         }
@@ -134,9 +134,9 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 21:00 hs",
+          "equipo1": "Lia Niz/Daniela Bergondi",
+          "equipo2": "Lucia Marcial/Miranda",
           "resultado": "",
           "games": ""
         },
@@ -174,23 +174,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 18:00 hs",
+          "equipo1": "Perez/Aranda",
+          "equipo2": "Visñuk/Lirola",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 17:00 hs",
+          "equipo1": "Perez/Aranda",
+          "equipo2": "Cecilia Rojo/Vivas",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Cecilia Rojo/Vivas",
+          "equipo2": "Visñuk/Lirola",
           "resultado": "",
           "games": ""
         }
@@ -214,23 +214,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Domingo 15:00 hs",
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Britos/Juarez",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 22:00 hs",
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Sosa/Florencia Bianchi",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Britos/Juarez",
+          "equipo2": "Sosa/Florencia Bianchi",
           "resultado": "",
           "games": ""
         }

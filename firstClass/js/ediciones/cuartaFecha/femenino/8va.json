@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 17:00 hs",
+          "equipo1": "Santander/Sura",
+          "equipo2": "Romero/Careaga",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 18:00 hs",
+          "equipo1": "Santander/Sura",
+          "equipo2": "Benitez/Burela",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 18:00 hs",
+          "equipo1": "Romero/Careaga",
+          "equipo2": "Benitez/Burela",
           "resultado": "",
           "games": ""
         }
@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Viernes 23:00 hs",
+          "equipo1": "Martins/Bertotto",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 10:00 hs",
+          "equipo1": "Martins/Bertotto",
+          "equipo2": "Gallardo/Saldaño",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Sabado 14:00 hs",
+          "equipo1": "Gallardo/Saldaño",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 19:00 hs",
+          "equipo1": "Hilbe/Vargas",
+          "equipo2": "Hernandez/Silva",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Hernandez/Silva",
+          "equipo2": "Maddonni/Barkijige",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Hilbe/Vargas",
+          "equipo2": "Maddonni/Barkijige",
           "resultado": "",
           "games": ""
         }
