@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 13:00 hs",
+          "equipo1": "Pujol/Alvarez",
+          "equipo2": "Debonis/Mignola",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 17:00 hs",
+          "equipo1": "Pujol/Alvarez",
+          "equipo2": "Almonacid/Cardacci",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 17:00 hs",
+          "equipo1": "Debonis/Mignola",
+          "equipo2": "Almonacid/Cardacci",
           "resultado": "",
           "games": ""
         }

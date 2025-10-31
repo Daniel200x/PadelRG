@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 17:00 hs",
+          "equipo1": "Toledo/Moyano",
+          "equipo2": "Erlan/Barone",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 17:00 hs",
+          "equipo1": "Erlan/Barone",
+          "equipo2": "Cabezas/A definir",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Toledo/Moyano",
+          "equipo2": "Cabezas/A definir",
           "resultado": "",
           "games": ""
         }
@@ -54,23 +54,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 19:00 hs",
+          "equipo1": "Saenz/Vera",
+          "equipo2": "Caicheo/Oviedo",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Puntiroli/Sarden",
+          "equipo2": "Caicheo/Oviedo",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Jueves 18:00 hs",
+          "equipo1": "Saenz/Vera",
+          "equipo2": "Puntiroli/Sarden",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 20:00 hs",
+          "equipo1": "Politi/Caffaro",
+          "equipo2": "Pellegrina/Barrot",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Castellani/Esteban",
+          "equipo2": "Pellegrina/Barrot",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Castellani/Esteban",
+          "equipo2": "Politi/Caffaro",
           "resultado": "",
           "games": ""
         }

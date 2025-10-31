@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Lunes 20:00 hs",
+          "equipo1": "Roldan/Tapia",
+          "equipo2": "Erlan/Veloso",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Erlan/Veloso",
+          "equipo2": "Noval/Dennis",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Roldan/Tapia",
+          "equipo2": "Noval/Dennis",
           "resultado": "",
           "games": "A definir"
         }
@@ -46,23 +46,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Lunes 20:00 hs",
+          "equipo1": "Garcia/Vera",
+          "equipo2": "Cantero/Costabile",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Cantero/Costabile",
+          "equipo2": "Arona/Almiron",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Garcia/Vera",
+          "equipo2": "Arona/Almiron",
           "resultado": "",
           "games": "A definir"
         }
@@ -78,23 +78,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:00 hs",
+          "equipo1": "Crespin/De La Torre",
+          "equipo2": "Castro/Castro",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Castro/Castro",
+          "equipo2": "Francisco Bordon/A definir",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 09:00 hs",
+          "equipo1": "Crespin/De La Torre",
+          "equipo2": "Francisco Bordon/A definir",
           "resultado": "",
           "games": "A definir"
         }
@@ -110,23 +110,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:00 hs",
+          "equipo1": "Carracedo/Abboud",
+          "equipo2": "Poniatyszyn/Gonzalez",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Carracedo/Abboud",
+          "equipo2": "Jorge Cisterna/Facundo Infran",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Poniatyszyn/Gonzalez",
+          "equipo2": "Jorge Cisterna/Facundo Infran",
           "resultado": "",
           "games": "A definir"
         }
@@ -142,23 +142,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Domingo 15:00 hs",
+          "equipo1": "Bernardo Fiori/Maximiliano Aperio",
+          "equipo2": "Almada/Cimaldoni",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Lunes 22:00 hs",
+          "equipo1": "Cairone/Molina",
+          "equipo2": "Almada/Cimaldoni",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 22:00 hs",
+          "equipo1": "Bernardo Fiori/Maximiliano Aperio",
+          "equipo2": "Cairone/Molina",
           "resultado": "",
           "games": "A definir"
         }
@@ -169,28 +169,28 @@
       "equipos": [
         {    "nombre": "Rojas/Lobos",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
         {      "nombre": "Salazar/De Pieri",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
-        {   "nombre": "A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        {   "nombre": "Silva/Llonin",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
         
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Domingo 14:00 hs",
+          "equipo1": "Salazar/De Pieri",
+          "equipo2": "Silva/Llonin",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Domingo 17:00 hs",
+          "equipo1": "Rojas/Lobos",
+          "equipo2": "Salazar/De Pieri",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Rojas/Lobos",
+          "equipo2": "Silva/Llonin",
           "resultado": "",
           "games": "A definir"
         }
@@ -206,23 +206,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Lunes 17:00 hs",
+          "equipo1": "Actis/Costilla",
+          "equipo2": "Ortega/Sander",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "19:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Martes 17:00 hs",
+          "equipo1": "Actis/Costilla",
+          "equipo2": "Benitez/Benitez",
           "resultado": "",
           "games": "A definir"
         },
         {
-          "fecha": "18:00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:00 hs",
+          "equipo1": "Ortega/Sander",
+          "equipo2": "Benitez/Benitez",
           "resultado": "",
           "games": "A definir"
         }
@@ -243,23 +243,23 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": " 21:30 hs",
+          "equipo1": "Grammatico/Valero",
+          "equipo2": "Leonelli/Pachtman",
+          "fecha": "Lunes 22:00 hs",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "19:30 hs",
+          "equipo1": "Lamas/Rosales",
+          "equipo2": "Leonelli/Pachtman",
+          "fecha": "Martes 22:00 hs",
           "resultado": "",
           "games":"A definir"
         },
          {
-         "equipo1": "",
-          "equipo2": "",
-          "fecha": "17:00 hs",
+         "equipo1": "Lamas/Rosales",
+          "equipo2": "Grammatico/Valero",
+          "fecha": "Miercoles 22:00 hs",
           "resultado": "",
           "games":"A definir"
         }
@@ -280,23 +280,23 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": " 21:30 hs",
+          "equipo1": "Escobar/Escobar",
+          "equipo2": "Silva/Molina",
+          "fecha": "Lunes 21:00 hs",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": "19:30 hs",
+          "equipo1": "Silva/Molina",
+          "equipo2": "Sebastian Rubio/Gustavo Santana",
+          "fecha": "Viernes 21:00 hs",
           "resultado": "",
           "games":"A definir"
         },
          {
-         "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "fecha": "17:00 hs",
+         "equipo1": "Escobar/Escobar",
+          "equipo2": "Sebastian Rubio/Gustavo Santana",
+          "fecha": "Sabado 11:00 hs",
           "resultado": "",
           "games":"A definir"
         }
@@ -306,7 +306,7 @@
       "nombre": "Grupo J",
       "equipos": [
         {
-          "nombre": "Silva/Llonin",
+          "nombre": "A definir",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
          "nombre": "Gimenez/Kifer",
@@ -317,9 +317,9 @@
       ],
       "partidos": [
         {
-          "equipo1": "/",
-          "equipo2": "/",
-          "fecha": " 21:30 hs",
+          "equipo1": "Gimenez/Kifer",
+          "equipo2": "Benjamin Martinez/Lucas Vera",
+          "fecha": "Sabado 12:00 hs",
           "resultado": "",
           "games":"A definir"
         },

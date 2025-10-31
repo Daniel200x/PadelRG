@@ -13,23 +13,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 17:00 hs",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Ortiz/Perez",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Chapperon/Sosa",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Ortiz/Perez",
+          "equipo2": "Chapperon/Sosa",
           "resultado": "",
           "games": ""
         }
@@ -48,29 +48,29 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         },
         {
-          "nombre": "Godoy/Leal",
+          "nombre": "Godoy/Campos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
         }
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 18:00 hs",
+          "equipo1": "Hernando/Gonzalez",
+          "equipo2": "Baez/Acosta",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 17:00 hs",
+          "equipo1": "Hernando/Gonzalez",
+          "equipo2": "Godoy/Leal",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Miercoles 18:00 hs",
+          "equipo1": "Baez/Acosta",
+          "equipo2": "Godoy/Leal",
           "resultado": "",
           "games": ""
         }
@@ -94,23 +94,23 @@
       ],
       "partidos": [
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 15:00 hs",
+          "equipo1": "Camba/Mesas",
+          "equipo2": "Contardi/Cardenas",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Lunes 19:00 hs",
+          "equipo1": "Camba/Mesas",
+          "equipo2": "Allaman/Ruiz",
           "resultado": "",
           "games": ""
         },
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Contardi/Cardenas",
+          "equipo2": "Allaman/Ruiz",
           "resultado": "",
           "games": ""
         }
@@ -134,23 +134,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 22:00 hs",
+          "equipo1": "Javier Gimenez/Gustavo Quiroz",
+          "equipo2": "Ferreyra/Acosta",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 22:00 hs",
+          "equipo1": "Ferreyra/Acosta",
+          "equipo2": "Trovina/Gironi",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Javier Gimenez/Gustavo Quiroz",
+          "equipo2": "Trovina/Gironi",
           "resultado": "",
           "games": ""
         }
@@ -174,23 +174,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 22:00 hs",
+          "equipo1": "Jara/De La Vega",
+          "equipo2": "Rivarola/Piñol",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 19:00 hs",
+          "equipo1": "Vega/Di Pietro",
+          "equipo2": "Jara/De La Vega",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Vega/Di Pietro",
+          "equipo2": "Rivarola/Piñol",
           "resultado": "",
           "games": ""
         }
@@ -214,23 +214,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Lunes 21:00 hs",
+          "equipo1": "Gonzalez/Juarez",
+          "equipo2": "Insaurralde/Roldan",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Gonzalez/Juarez",
+          "equipo2": "Berrastro/Valiente",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Insaurralde/Roldan",
+          "equipo2": "Berrastro/Valiente",
           "resultado": "",
           "games": ""
         }
@@ -255,23 +255,23 @@
       ],
       "partidos": [
         {
-         "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+         "fecha": "Martes 21:00 hs",
+          "equipo1": "Viterbori/Viterbori",
+          "equipo2": "Flores/Ortiz",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 17:15 hs",
+          "equipo1": "Viterbori/Viterbori",
+          "equipo2": "Valentin Lemus/Abboud",
           "resultado": "",
           "games": ""
         },
         {
-          "fecha": " 23:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Flores/Ortiz",
+          "equipo2": "Valentin Lemus/Abboud",
           "resultado": "",
           "games": ""
         }
