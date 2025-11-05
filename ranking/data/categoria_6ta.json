@@ -121,6 +121,7 @@
           {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 75},
           {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "4to Torneo", "puntos": 200},
           {"edicion": "First Class", "puntos": 140}
           
         ],
@@ -172,6 +173,7 @@
           {"edicion": "1er Torneo", "puntos": 75},
           {"edicion": "2do Torneo", "puntos": 50},
           {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 150},
           {"edicion": "First Class", "puntos": 150}
           
         ],
@@ -747,6 +749,7 @@
           {"edicion": "1er Torneo", "puntos": 50},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 200},
           {"edicion": "First Class", "puntos": 200}
           
         ],
@@ -1072,6 +1075,7 @@
           {"edicion": "1er Torneo", "puntos": 0},
           {"edicion": "2do Torneo", "puntos": 0},
           {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 150},
           {"edicion": "First Class", "puntos": 25}
           
         ],
