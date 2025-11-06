@@ -20,6 +20,13 @@ const edicionesInfo = {
         lugar: "Punto de Oro",
         descripcion: "Tercera fecha 2025",
         path: "js/ediciones/tercerFecha"
+    },
+    "master": {
+        nombre: "Master - Torneo Punto de Oro 2025",
+        fecha: "07/11 a 09/011 2025",
+        lugar: "Punto de Oro",
+        descripcion: "Master 2025",
+        path: "js/ediciones/master"
     }
 };
 
@@ -967,7 +974,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
-    seleccionarFecha('tercerFecha');
+    seleccionarFecha('master');
     
     // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
     setTimeout(() => {

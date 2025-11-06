@@ -1,0 +1,59 @@
+{
+  "nombre": "4ta C",
+  "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+        "games": "3-6, 1-6"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+        "games": "6-1, 6-1"
+      },
+      {
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+        "games": "6-1, 6-4"
+      },
+      {
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+        "games": "6-7, 6-1, 7-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 16:00",
+         "resultado": "",
+        "games": "6-3, 6-2"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 16:00",
+          "resultado": "",
+        "games": "6-2, 3-6, 6-1"
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo ",
+          "resultado": "",
+        "games": "3-6, 4-6"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "nombre": "8va D",
+ "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Silvina Davalos/Julieta Cichero",
+          "fecha": "Sabado 13:30",
+          "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Rosalina Gamarra/Alina Zabala",
+          "equipo2": "Carolina Vazquez/Susana Arce",
+          "fecha": "Viernes 23:45",
+          "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Carolina Racedo/Julieta Andino",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
+          "fecha": "Viernes 22:30",
+          "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Belen Rivadeneira/Natalia De La Rosa",
+          "equipo2": "Maria Araoz/Gessica Galucci",
+          "fecha": "Sabado 16:00",
+          "resultado": "",
+        "games": ""
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Sabado 21:00",
+         "resultado": "",
+        "games": ""
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Sabado 22:15",
+          "resultado": "",
+        "games": ""
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo ",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}
