@@ -3,49 +3,36 @@
   "eliminatorias": {
   
     "cuartos": [
+      
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Florencia Cutri/Noelia Velasquez",
+          "equipo2": "Cecilia Gersicich/Alejandra Romero",
+          "fecha": "Sabado 13:30",
           "resultado": "",
-        "games": "3-6, 1-6"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Mariana Pratto/Marcia Figueroa",
+          "equipo2": "Tatiana Mainero/Victoria Fernandez",
+          "fecha": "Sabado 13:30",
           "resultado": "",
-        "games": "6-1, 6-1"
-      },
-      {
-         "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
-          "fecha": "Domingo 11:00",
-          "resultado": "",
-        "games": "6-1, 6-4"
-      },
-      {
-         "equipo1": "Ganador P7",
-          "equipo2": "Ganador P8",
-          "fecha": "Domingo 11:00",
-          "resultado": "",
-        "games": "6-7, 6-1, 7-6"
+        "games": ""
       }
     ],
     "semis": [
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
-          "fecha": "Domingo 16:00",
+         "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Ganador P1",
+          "fecha": "Sabado 21:00",
          "resultado": "",
-        "games": "6-3, 6-2"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
-          "fecha": "Domingo 16:00",
+         "equipo1": "Romina Torres/Ana Velazquez",
+          "equipo2": "Ganador P2",
+          "fecha": "Sabado 19:45",
           "resultado": "",
-        "games": "6-2, 3-6, 6-1"
+        "games": ""
       }
     ],
     "final": {
@@ -53,7 +40,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo ",
           "resultado": "",
-        "games": "3-6, 4-6"
+        "games": ""
     }
   }
 }
