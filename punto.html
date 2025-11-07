@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Resultados - Pádel RG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/pasarela/styles.css">
+</head>
+<body>
+    
+    <!-- Tarjetas laterales para imágenes -->
+    <div class="side-cards-container">
+        <div class="side-card left-card">
+            <div class="side-card-content">
+                <div class="side-card-image">
+                    <img id="leftCardImage" src="" alt="Imagen lateral izquierda">
+                </div>
+            </div>
+        </div>
+        
+        <!-- CONTENEDOR PRINCIPAL (entre las tarjetas laterales) -->
+        <div class="container">
+      <header>
+    <div class="header-content">
+        <!-- Logo Sancor arriba
+        <div class="logo-sancor-container">
+            <img src="/img/publi/sancor.png" class="logo-sancor">
+        </div> -->
+        <!-- Reloj con segundos debajo -->
+        <div class="digital-clock-container">
+            <div class="digital-clock">
+                <div class="time-display">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+            <!-- Controles ocultos (pero funcionales) -->
+            <div class="controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i> Anterior
+                </button>
+                <button class="control-btn play-pause" id="playPauseBtn">
+                    <i class="fas fa-pause"></i> Pausar
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    Siguiente <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+             
+            <div id="matchDisplay">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Cargando resultados...</p>
+                </div>
+            </div>
+            
+            <!-- Panel de información oculto -->
+            <div class="info-panel hidden">
+                <p>Partido <span id="currentMatch">0</span> de <span id="totalMatches">0</span></p>
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+                <p id="autoChangeInfo">Cambio automático en: <span id="countdown">10</span> segundos</p>
+            </div>
+        </div>
+        <!-- FIN DEL CONTENEDOR PRINCIPAL -->
+        
+        <div class="side-card right-card">
+            <div class="side-card-content">
+                <div class="side-card-image">
+                    <img id="rightCardImage" src="" alt="Imagen lateral derecha">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer con imágenes -->
+    <footer class="main-footer">
+        <div class="footer-images-container">
+            <img src="/img/qr.png" class="footer-image" alt="QR">
+            <img src="/img/publi/aero.jpeg" class="footer-image" alt="Coren">
+            <img src="/img/publi/bordon.jpeg" class="footer-image" alt="BGH">
+            
+            
+            <img src="/img/publi/darhos.jpeg" class="footer-image" alt="Darhos">
+            <img src="/img/publi/aruma.jpeg" class="footer-image" alt="Aruma">
+            <img src="/img/punto.jpeg" class="footer-image" alt="Punto de Oro">
+            <img src="/img/publi/aero.jpeg" class="footer-image" alt="Coren">
+            <img src="/img/publi/trexx.jpeg" class="footer-image" alt="Trexx">
+            <img src="/img/publi/darhos.jpeg" class="footer-image" alt="Darhos">
+            <img src="/img/punto.jpeg" class="footer-image" alt="Punto de Oro">
+            <img src="/img/publi/fer.jpg" class="footer-image" alt="Fer">
+        </div>
+    </footer>
+
+    <script src="/pasarela/script.js"></script>
+</body>
+</html>

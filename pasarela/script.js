@@ -21,20 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Array de imágenes para las tarjetas laterales
     const sideCardImages = [
-        
-         '../img/publi/norte.png',
-        '../img/publi/infinito.jpeg',
-        '../img/publi/choperas.jpeg',
-        '../img/publi/poseidon.jpeg',
-        '../img/publi/trucha.png',
-        '../img/publi/ibiza.jpeg',
-        '../img/publi/andina.jpeg',
-        '../img/publi/forza.jpeg',
-         '../img/publi/norberta.jpg',
-         '../img/publi/disena.jpeg',
-        '../img/publi/otra.jpeg',
-        '../img/publi/coiron.jpeg',
-
+        '../img/publi/aero.jpeg',
+        '../img/publi/aruma.jpeg',
+        '../img/publi/fer.jpg',
+        '..img/publi/darhos.jpeg',
+        '..img/publi/bordon.jpeg',
 
         '../img/promos/ultra.png',
         '../img/promos/thorne.gif',
@@ -47,18 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/promos/rccars.gif',
         '../img/promos/fix.gif',
 
-        '../img/publi/norte.png',
-        '../img/publi/infinito.jpeg',
-        '../img/publi/choperas.jpeg',
-        '../img/publi/poseidon.jpeg',
-        '../img/publi/trucha.png',
-        '../img/publi/ibiza.jpeg',
-        '../img/publi/andina.jpeg',
-        '../img/publi/forza.jpeg',
-        '../img/publi/norberta.jpg',
-        '../img/publi/disena.jpeg',
-        '../img/publi/otra.jpeg',
-        '../img/publi/coiron.jpeg',
+        //'../img/publi/norte.png',
+        //'../img/publi/infinito.jpeg',
+        //'../img/publi/choperas.jpeg',
+        //'../img/publi/poseidon.jpeg',
+        //'../img/publi/trucha.png',
+        //'../img/publi/ibiza.jpeg',
+        //'../img/publi/andina.jpeg',
+        //'../img/publi/forza.jpeg',
+        //'../img/publi/norberta.jpg',
+        //'../img/publi/disena.jpeg',
+        //'../img/publi/otra.jpeg',
+        //'../img/publi/coiron.jpeg',
         
         
         
@@ -161,16 +152,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function cargarDatosPartidos() {
         const archivosJSON = [
-            '../arenas/js/ediciones/cuartaFecha/femenino/4ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/femenino/5ta.json',
-            '../arenas/js/ediciones/cuartaFecha/femenino/6ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/femenino/7ma.json',
-            //'../arenas/js/ediciones/cuartaFecha/femenino/8va.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/4ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/masculino/5ta.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/6ta.json',
-            //'../arenas/js/ediciones/cuartaFecha/masculino/7ma.json',
-            '../arenas/js/ediciones/cuartaFecha/masculino/8va.json'
+            '../puntoDeOro/js/ediciones/master/femenino/4ta.json',
+            '../puntoDeOro/js/ediciones/master/femenino/5ta.json',
+            '../puntoDeOro/js/ediciones/master/femenino/6ta.json',
+            '../puntoDeOro/js/ediciones/master/femenino/7ma.json',
+            '../puntoDeOro/js/ediciones/master/femenino/8va.json',
+            '../puntoDeOro/js/ediciones/master/masculino/4ta.json',
+            '../puntoDeOro/js/ediciones/master/masculino/5ta.json',
+            '../puntoDeOro/js/ediciones/master/masculino/6ta.json',
+            '../puntoDeOro/js/ediciones/master/masculino/7ma.json',
+            '../puntoDeOro/js/ediciones/master/masculino/8va.json'
         ];
         
         const promesasCarga = archivosJSON.map(archivo => {
@@ -780,10 +771,13 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Braian Lizarraga/Federico Martinez': '../img/equipos/blizarraga-fmartinez.jpg',
         'Jorge Carabajal/Ignacio Carabajal/': '../img/equipos/jcarabajal-icarabajal.jpg',
         'Daniela Martinez/Alejandra Soto': '../img/equipos/dmartinez-asoto.jpg',
+        'Alejandra Soto/Daniela Martinez': '../img/equipos/dmartinez-asoto.jpg',
         'Antonella Domeneh/Griselda Gimenez': '../img/equipos/adomeneh-ggimenez.jpg',
         'Federico Bossio/Santiago David': '../img/equipos/fbossio-sdavid.jpg',
         'Dario Chacon/Marcelo Trangoni': '../img/equipos/dchacon-mtrangoni.jpg',
         'Pablo Gomez/Bruno Sirgo': '../img/equipos/pgomez-bsirgo.jpg',
+        'Aaron Pintos/Gustavo Vera': '../img/equipos/gvera-apintos.jpg',
+        'Guido Tokar/Pedro Di Bahia': '../img/equipos/gtokarpbahia.jpg',
         'Emilce Duca/Noelia Cagnelutti': '../img/equipos/educa-ncagne.jpg',
         'Ramiro Luna/Nicolas Gonzalez': '../img/equipos/rluna-ngonza.jpg',
         'Sabrina Morales/Rosalia Cruz': '../img/equipos/smorales-rcruz.jpg',
@@ -791,6 +785,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Erika Martinez/Sandra Ackerman': '../img/equipos/emartinez-sacker.jpg',
         'Andrea Graneros/Florencia Graneros': '../img/equipos/agraneros-fgraneros.jpg',
         'Simon Barila/Nahuel Romero': '../img/equipos/sbarila-nromero.jpg',
+        'Nahuel Romero/Simon Barila': '../img/equipos/sbarila-nromero.jpg',
         'Gonzalo Figueroa/Jesus Ferreyra': '../img/equipos/gfigueroa-jferreyra.jpg',
         'Juan Jose Rivero/Guillermo Farias': '../img/equipos/jjrivero-gfarias.jpg',
         'Viviana Nehue/Silvana Guerrero': '../img/equipos/vnehue-sguerrero.jpg',
@@ -837,6 +832,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Diego Floriani/Franco Gonzalez': '../img/equipos/dfloriani-fgonzalez.jpg',
         'Santiago Salvaña/Julian Alcantara': '../img/equipos/salvaña-jalcantara.jpg',
         'Guillermo Ojeda/Leonardo Pugnale': '../img/equipos/gojeda-lpugnale.jpg',
+        'Leonardo Pugnale/Guillermo Ojeda': '../img/equipos/gojeda-lpugnale.jpg',
         'Matias Loberche/Cristian Alday': '../img/equipos/calday-mloberche.jpg',
         'Vanesa Iglesias/Yanina Magallanes': '../img/equipos/viglesias-ymagallanes.jpg',
         'Belen Bordon/Lorena Saldivia': '../img/equipos/bbordon-lsaldivia.jpg',
@@ -868,6 +864,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Jose Maria Mendez/Facundo Infran': '../img/equipos/jmendez-finfran.jpg',
         'Nicolas De Guevara/Yonatan Torres': '../img/equipos/nguevara-ytorres.jpg',
         'Facundo Saldaño/Dario Orellano': '../img/equipos/fsaldano-dorellano.jpg',
+        'Julio Orellana/Hernan Juarez': '../img/equipos/jorellanahjuarez.jpg',
         'Nicolas Barrios/Joaquin Bogunovich': '../img/equipos/nbarrios-jbogunovich.jpg',
         'Juan Barria/Cesar Andrade': '../img/equipos/jbarria-candrade.jpg',
         'Matias Dos Santos/Waldemar Sosa': '../img/equipos/mdossantos-wsosa.jpg',
