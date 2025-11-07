@@ -4,48 +4,48 @@
   
     "cuartos": [
       {
-         "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Nelida Cabezas/Fernanda Martinez",
+          "fecha": "Viernes 20:00",
           "resultado": "",
-        "games": "3-6, 1-6"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P3",
-          "equipo2": "Ganador P4",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Luciana Rodriguez/Barbara Rigoni",
+          "equipo2": "Cintia Lucero/Yasna Murga",
+          "fecha": "Sabado 12:15",
           "resultado": "",
-        "games": "6-1, 6-1"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Luciana Romano/Rosalia Cruz",
+          "equipo2": "Adelaida Vidarte/Liliana Diaz",
+          "fecha": "Viernes 21:15",
           "resultado": "",
-        "games": "6-1, 6-4"
+        "games": ""
       },
       {
-         "equipo1": "Ganador P7",
-          "equipo2": "Ganador P8",
-          "fecha": "Domingo 11:00",
+         "equipo1": "Malvina Polizzi/Fernanda Treppo",
+          "equipo2": "Antonela Zampini/Giuliana Gimenez",
+          "fecha": "Viernes 22:30",
           "resultado": "",
-        "games": "6-7, 6-1, 7-6"
+        "games": ""
       }
     ],
     "semis": [
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo 16:00",
+          "fecha": "Sabado 19:45",
          "resultado": "",
-        "games": "6-3, 6-2"
+        "games": ""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo 16:00",
+          "fecha": "Sabado 18:30",
           "resultado": "",
-        "games": "6-2, 3-6, 6-1"
+        "games": ""
       }
     ],
     "final": {
@@ -53,7 +53,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo ",
           "resultado": "",
-        "games": "3-6, 4-6"
+        "games": ""
     }
   }
 }
