@@ -920,12 +920,25 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Emmanuel Bravo/Cristian Almaraz': '../img/equipos/ebravo-cralmaraz.jpg',
         'Carolina Racedo/Julieta Andino': '../img/equipos/cracedo-jandino.jpg',
         'Andres Chalier/Ciro Andrade': '../img/equipos/achalier-candrade.jpg',
+        'Braian Lizarraga/Matias Rojo': '../img/equipos/bliza-mrojo.jpg',
+        'Cecilia Gersicich/Alejandra Romero': '../img/equipos/cgersi-aromero.jpg',
+        'Florencia Cutri/Noelia Velasquez': '../img/equipos/fcutri-nvelas.jpg',
+        'Karen Beamonte/Jesica Perolo': '../img/equipos/kbeamonte-jperolo.jpg',
+        'Silvina Davalos/Julieta Cichero': '../img/equipos/sdavalos-jcichero.jpg',
+        'Rodrigo Fritz/Sebastian Rubio': '../img/equipos/srubio-rfritz.jpg',
+        'Benjamin Martinez/Javier Paniagua': '../img/equipos/bmartinez-jpani.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+
 
         
         
