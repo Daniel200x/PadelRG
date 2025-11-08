@@ -928,7 +928,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Rodrigo Fritz/Sebastian Rubio': '../img/equipos/srubio-rfritz.jpg',
         'Benjamin Martinez/Javier Paniagua': '../img/equipos/bmartinez-jpani.jpg',
         'Rosalina Gamarra/Alina Zabala': '../img/equipos/rgamarra-azabala.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Maricel Rausch/Micaela Arias': '../img/equipos/mrausch-marias.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
