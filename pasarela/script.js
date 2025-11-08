@@ -934,10 +934,21 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Carolina Herrera/Belen Bordon': '../img/equipos/cherrera-bbordon.jpg',
         'Melisa Gasparovic/Daniela Bergondi': '../img/equipos/mgaspa-dbergondi.jpg',
         'Moreno/Andres Agnes': '../img/equipos/moreno-aagnes.jpg',
+        'Julian Morales/Nicolas Gonzalez': '../img/equipos/jmorales-ngonzalez.jpg',
+        'Gabriel Escobar/Facundo Saldaño': '../img/equipos/gescobar-fsaldano.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+
 
 
         
