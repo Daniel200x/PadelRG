@@ -916,7 +916,7 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Luciana Romano/Rosalia Cruz': '../img/equipos/lromano-rcruz.jpg',
         'Emmanuel Bravo/Cristian Almaraz': '../img/equipos/ebravo-cralmaraz.jpg',
         'Carolina Racedo/Julieta Andino': '../img/equipos/cracedo-jandino.jpg',
-        '/': '../img/equipos/-.jpg',
+        'Andres Chalier/Ciro Andrade': '../img/equipos/achalier-candrade.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
