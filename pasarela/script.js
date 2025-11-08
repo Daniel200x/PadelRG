@@ -21,11 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Array de imágenes para las tarjetas laterales
     const sideCardImages = [
+        
+        '../img/publi/darhos.jpeg',
+       '../img/publi/bordon.jpeg', 
         '../img/publi/aero.jpeg',
         '../img/publi/aruma.jpeg',
         '../img/publi/fer.jpg',
-       // '..img/publi/darhos.jpeg',
-       // '..img/publi/bordon.jpeg',
+        '..img/publi/darhos.jpeg',
+       
 
         '../img/promos/ultra.png',
         '../img/promos/thorne.gif',
