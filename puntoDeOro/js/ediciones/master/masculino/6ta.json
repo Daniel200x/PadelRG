@@ -14,15 +14,15 @@
          "equipo1": "Waldemar Sosa/Matias Dos Santos",
           "equipo2": "Andres Chalier/Ciro Andrade",
           "fecha": "Viernes 23:45",
-          "resultado": "",
-        "games": ""
+          "resultado": "1-2",
+        "games": "7-6, 3-6, 4-6"
       },
       {
          "equipo1": "Joaquin Bugonovich/Martin Velasquez",
           "equipo2": "Nicolas Barbosa/Matias Saldaño",
           "fecha": "Viernes 23:45",
-          "resultado": "",
-        "games": ""
+          "resultado": "0-2",
+        "games": "3-6, 4-6"
       },
       {
          "equipo1": "Julio Orellana/Hernan Juarez",
@@ -35,13 +35,13 @@
     "semis": [
       {
          "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+          "equipo2": "Andres Chalier/Ciro Andrade",
           "fecha": "Sabado 23:30",
          "resultado": "",
         "games": ""
       },
       {
-         "equipo1": "Ganador P3",
+         "equipo1": "Nicolas Barbosa/Matias Saldaño",
           "equipo2": "Julio Orellana/Hernan Juarez",
           "fecha": "Sabado 21:00",
           "resultado": "",

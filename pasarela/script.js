@@ -899,9 +899,18 @@ function obtenerImagenEquipo(nombreEquipo) {
         'Pamela Rusconi/Elizabeth Andrade': '../img/equipos/prusconi-eandrade.jpg',
         'Adrian Santi/Gabriel Escobar': '../img/equipos/gescobar-asanti.jpg',
         'Juan Barria/Franco Moreno': '../img/equipos/-.jpg',
+        'Juliana Rojas/Claudia Torres': '../img/equipos/brojas-ctorres.jpg',
+        'Florencia Bianchi/Lucia Marcial': '../img/equipos/fbianchi-lmarcial.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
         '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+        '/': '../img/equipos/-.jpg',
+
         
         
         

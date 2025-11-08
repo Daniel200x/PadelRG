@@ -14,15 +14,15 @@
          "equipo1": "Rosalina Gamarra/Alina Zabala",
           "equipo2": "Carolina Vazquez/Susana Arce",
           "fecha": "Viernes 23:45",
-          "resultado": "",
-        "games": ""
+          "resultado": "2-0",
+        "games": "7-6, 6-2"
       },
       {
          "equipo1": "Carolina Racedo/Julieta Andino",
           "equipo2": "Andrea Graneros/Florencia Graneros",
           "fecha": "Viernes 22:30",
-          "resultado": "",
-        "games": ""
+          "resultado": "2-0",
+        "games": "7-6, 6-3"
       },
       {
          "equipo1": "Belen Rivadeneira/Natalia De La Rosa",
@@ -35,13 +35,13 @@
     "semis": [
       {
          "equipo1": "Ganador P1",
-          "equipo2": "Ganador P2",
+          "equipo2": "Rosalina Gamarra/Alina Zabala",
           "fecha": "Sabado 21:00",
          "resultado": "",
         "games": ""
       },
       {
-         "equipo1": "Ganador P3",
+         "equipo1": "Carolina Racedo/Julieta Andino",
           "equipo2": "Ganador P4",
           "fecha": "Sabado 22:15",
           "resultado": "",
