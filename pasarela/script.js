@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '../img/publi/aero.jpeg',
         '../img/publi/aruma.jpeg',
         '../img/publi/fer.jpg',
-        '..img/publi/darhos.jpeg',
+        '../img/publi/darhos.jpeg',
        
 
         '../img/promos/ultra.png',

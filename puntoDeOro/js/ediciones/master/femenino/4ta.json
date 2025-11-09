@@ -15,8 +15,8 @@
          "equipo1": "Mariana Pratto/Marcia Figueroa",
           "equipo2": "Tatiana Mainero/Victoria Fernandez",
           "fecha": "Sabado 13:30",
-          "resultado": "",
-        "games": ""
+          "resultado": "2-0",
+        "games": "6-4, 6-1"
       }
     ],
     "semis": [
@@ -29,15 +29,15 @@
       },
       {
          "equipo1": "Romina Torres/Ana Velazquez",
-          "equipo2": "Ganador P2",
+          "equipo2": "Mariana Pratto/Marcia Figueroa",
           "fecha": "Sabado 19:45",
-          "resultado": "",
-        "games": ""
+          "resultado": "2-0",
+        "games": "6-4, 7-6"
       }
     ],
     "final": {
         "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
+          "equipo2": "Romina Torres/Ana Velazquez",
           "fecha": "Domingo ",
           "resultado": "",
         "games": ""
