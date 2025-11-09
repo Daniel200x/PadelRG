@@ -37,20 +37,20 @@
          "equipo1": "Valentin Lemus/Mariano Pereyra",
           "equipo2": "Andres Chalier/Ciro Andrade",
           "fecha": "Sabado 23:30",
-         "resultado": "",
-        "games": ""
+         "resultado": "1-0",
+        "games": "1-0"
       },
       {
          "equipo1": "Nicolas Barbosa/Matias Saldaño",
           "equipo2": "Julio Orellana/Hernan Juarez",
           "fecha": "Sabado 21:00",
-          "resultado": "",
-        "games": ""
+          "resultado": "1-2",
+        "games": "7-6, 0-6, 0-6"
       }
     ],
     "final": {
-        "equipo1": "Ganador P5",
-          "equipo2": "Ganador P6",
+        "equipo1": "Valentin Lemus/Mariano Pereyra",
+          "equipo2": "Julio Orellana/Hernan Juarez",
           "fecha": "Domingo ",
           "resultado": "",
         "games": ""
