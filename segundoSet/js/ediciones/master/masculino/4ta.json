@@ -1,0 +1,160 @@
+{
+  "nombre": "4ta Caballeros",
+ "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
+    }
+  }
+}
