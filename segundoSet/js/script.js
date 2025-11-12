@@ -20,7 +20,15 @@ const edicionesInfo = {
         lugar: "Segundo Set",
         descripcion: "Tercera fecha 2025",
         path: "js/ediciones/tercerFecha"
+    },
+    "master": {
+        nombre: "Master - Torneo Segundo Set 2025",
+        fecha: "14/11 a 16/11 2025",
+        lugar: "Segundo Set",
+        descripcion: "Master 2025",
+        path: "js/ediciones/master"
     }
+
 };
 
 
@@ -967,7 +975,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
     // Activar la tercera fecha, género masculino y categoría 5ta al cargar la página
-    seleccionarFecha('tercerFecha');
+    seleccionarFecha('master');
     
     // Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
     setTimeout(() => {
