@@ -6,59 +6,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Raul Gonzalez/Marcelo Llanes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Gaston Martinez/Federico Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Cristian Ortiz/Jeremias Lara","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Tomas Ruiz/Guido Tokar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Cristian Ortiz/Jeremias Lara",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Gaston Martinez/Federico Ruiz",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Cristian Ortiz/Jeremias Lara",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Gaston Martinez/Federico Ruiz",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Gaston Martinez/Federico Ruiz",
+          "equipo2": "Cristian Ortiz/Jeremias Lara",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 23:00 hs",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
           "resultado": "",
           "games":""
         }
