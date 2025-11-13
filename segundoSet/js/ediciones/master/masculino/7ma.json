@@ -6,59 +6,60 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Lucas Vera/Benjamin Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Ruben Peix/Sebastian Torres","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Gaspar Salvaña/Ignacio Perez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Nahuel Romero/Simon Barila","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Lucas Vera/Benjamin Martinez",
+          "equipo2": "Ruben Peix/Sebastian Torres",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 23:45",
+          "equipo1": "Gaspar Salvaña/Ignacio Perez",
+          "equipo2": "Nahuel Romero/Simon Barila",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Ruben Peix/Sebastian Torres",
+          "equipo2": "Nahuel Romero/Simon Barila",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "Lucas Vera/Benjamin Martinez",
+          "equipo2": "Nahuel Romero/Simon Barila",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Ruben Peix/Sebastian Torres",
+          "equipo2": "Gaspar Salvaña/Ignacio Perez",
           "resultado": "",
           "games":""
         },
+        
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Lucas Vera/Benjamin Martinez",
+          "equipo2": "Gaspar Salvaña/Ignacio Perez",
           "resultado": "",
           "games":""
         }
@@ -70,59 +71,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Carlos Barrionuevo/Mauro Olivera","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Facundo Saldaño/Pablo Palloto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Franco Marquez/Ricardo Garcia","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Gustavo Vera/Nicolas Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Carlos Barrionuevo/Mauro Olivera",
+          "equipo2": "Facundo Saldaño/Pablo Palloto",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Carlos Barrionuevo/Mauro Olivera",
+          "equipo2": "Gustavo Vera/Nicolas Gonzalez",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Carlos Barrionuevo/Mauro Olivera",
+          "equipo2": "Franco Marquez/Ricardo Garcia",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Facundo Saldaño/Pablo Palloto",
+          "equipo2": "Gustavo Vera/Nicolas Gonzalez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Gustavo Vera/Nicolas Gonzalez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 22:00 hs",
+          "equipo1": "Facundo Saldaño/Pablo Palloto",
+          "equipo2": "Franco Marquez/Ricardo Garcia",
           "resultado": "",
           "games":""
         }
