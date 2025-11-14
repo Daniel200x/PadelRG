@@ -6,59 +6,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Alejandra Soto/Daniela Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Graciela Flamenco/Erika Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Luciana Rodriguez/Sandra Ackerman","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Rosalia Cruz/Natalia Marcolini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Luciana Rodriguez/Sandra Ackerman",
+          "equipo2": "Rosalia Cruz/Natalia Marcolini",
+          "resultado": "",
+          "games":""
+        },
+        {
           "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Graciela Flamenco/Erika Martinez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Rosalia Cruz/Natalia Marcolini",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Luciana Rodriguez/Sandra Ackerman",
+          "equipo2": "Graciela Flamenco/Erika Martinez",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Luciana Rodriguez/Sandra Ackerman",
+          "equipo2": "Rosalia Cruz/Natalia Marcolini",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 22:00 hs",
+          "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Graciela Flamenco/Erika Martinez",
           "resultado": "",
           "games":""
         }
@@ -70,59 +70,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Cintia Lucero/Yasna Murga","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Marta Barbosa/Luisa Miranda","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Florencia Bianchi/Fernanda Treppo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Nelida Cabezas/Fernanda Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Cintia Lucero/Yasna Murga",
+          "equipo2": "Marta Barbosa/Luisa Miranda",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Florencia Bianchi/Fernanda Treppo",
+          "equipo2": "Nelida Cabezas/Fernanda Martinez",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Marta Barbosa/Luisa Miranda",
+          "equipo2": "Nelida Cabezas/Fernanda Martinez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Cintia Lucero/Yasna Murga",
+          "equipo2": "Florencia Bianchi/Fernanda Treppo",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 21:00 hs",
+          "equipo1": "Cintia Lucero/Yasna Murga",
+          "equipo2": "Nelida Cabezas/Fernanda Martinez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 21:00 hs",
+          "equipo1": "Marta Barbosa/Luisa Miranda",
+          "equipo2": "Florencia Bianchi/Fernanda Treppo",
           "resultado": "",
           "games":""
         }

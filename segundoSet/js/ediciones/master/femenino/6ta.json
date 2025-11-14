@@ -46,59 +46,35 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Belen Cordoba/Pamela Rusconi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Karina Ojeda/Cecilia Rojo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Vanesa Iglesias/Daniela Bergondi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Karina Ojeda/Cecilia Rojo",
+          "equipo2": "Vanesa Iglesias/Daniela Bergondi",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Karina Ojeda/Cecilia Rojo",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Vanesa Iglesias/Daniela Bergondi",
           "resultado": "",
           "games":""
         }
