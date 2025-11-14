@@ -6,59 +6,35 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Claudia Torres/Juliana Rojas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Sabrina Denis/Delfina Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Lia Niz/Luz Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Lia Niz/Luz Corzo",
+          "equipo2": "Sabrina Denis/Delfina Corzo",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Claudia Torres/Juliana Rojas",
+          "equipo2": "Sabrina Denis/Delfina Corzo",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Claudia Torres/Juliana Rojas",
+          "equipo2": "Lia Niz/Luz Corzo",
           "resultado": "",
           "games":""
         }

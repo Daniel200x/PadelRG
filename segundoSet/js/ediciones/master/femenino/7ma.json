@@ -6,59 +6,35 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Dana Martinez/Oriana Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Sabrina Ilarregui/Luciana Barria","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Karina Girollet/Lucia Ramirez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Sabrina Ilarregui/Luciana Barria",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Sabrina Ilarregui/Luciana Barria",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
           "resultado": "",
           "games":""
         }
@@ -70,59 +46,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Violeta Lopez/Jimena Ramadori","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Micaela Arias/Carolina Nieto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Andrea Graneros/Florencia Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Emilia Velazco/Vanesa Vera","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Micaela Arias/Carolina Nieto",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "Andrea Graneros/Florencia Graneros",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Micaela Arias/Carolina Nieto",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Andrea Graneros/Florencia Graneros",
+          "equipo2": "Micaela Arias/Carolina Nieto",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
           "resultado": "",
           "games":""
         }
