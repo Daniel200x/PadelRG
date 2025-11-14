@@ -6,59 +6,35 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Franco Gallardo/Claudio Escobar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Ciro Andrade/Federico Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Daniel Mercado/Sergio Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Franco Gallardo/Claudio Escobar",
+          "equipo2": "Ciro Andrade/Federico Martinez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Ciro Andrade/Federico Martinez",
+          "equipo2": "Daniel Mercado/Sergio Ruiz",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games":""
-        },
-        {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 21:00 hs",
+          "equipo1": "Franco Gallardo/Claudio Escobar",
+          "equipo2": "Daniel Mercado/Sergio Ruiz",
           "resultado": "",
           "games":""
         }
@@ -70,59 +46,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Emmanuel Bravo/Alejandro Borquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Maxi Villavicencio/Daniel Diaz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Federico Castro/Adrian Ayala","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Bruno Sirgo/Cristian Almaraz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
           "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "equipo1": "Emmanuel Bravo/Alejandro Borquez",
+          "equipo2": "Maxi Villavicencio/Daniel Diaz",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Federico Castro/Adrian Ayala",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "Emmanuel Bravo/Alejandro Borquez",
+          "equipo2": "Federico Castro/Adrian Ayala",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Maxi Villavicencio/Daniel Diaz",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 22:00 hs",
+          "equipo1": "Maxi Villavicencio/Daniel Diaz",
+          "equipo2": "Federico Castro/Adrian Ayala",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Emmanuel Bravo/Alejandro Borquez",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
           "resultado": "",
           "games":""
         }

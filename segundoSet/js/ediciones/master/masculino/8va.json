@@ -70,59 +70,59 @@
       "equipos": [
         
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Marcelo Yunes/Hugo Sanabria","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Gonzalo Aguirre/Ruben Pedraza","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Julian Alcantara/Leonardo Barrios","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Claudio Cardenas/Juan Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 14:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Julian Alcantara/Leonardo Barrios",
+          "equipo2": "Claudio Cardenas/Juan Gonzalez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Julian Alcantara/Leonardo Barrios",
+          "equipo2": "Claudio Cardenas/Juan Gonzalez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo2": "Claudio Cardenas/Juan Gonzalez",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado 20:00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 23:00 hs",
+          "equipo1": "Gonzalo Aguirre/Ruben Pedraza",
+          "equipo2": "Julian Alcantara/Leonardo Barrios",
           "resultado": "",
           "games":""
         }
