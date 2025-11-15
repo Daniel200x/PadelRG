@@ -24,22 +24,22 @@
           "fecha": "Viernes 20:00 hs",
           "equipo1": "Lucas Vera/Benjamin Martinez",
           "equipo2": "Ruben Peix/Sebastian Torres",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"4-6, 6-4, 7-6"
         },
         {
           "fecha": "Viernes 23:45",
           "equipo1": "Gaspar Salvaña/Ignacio Perez",
           "equipo2": "Nahuel Romero/Simon Barila",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"5-7, 2-6"
         },
         {
           "fecha": "Sabado 11:00 hs",
           "equipo1": "Ruben Peix/Sebastian Torres",
           "equipo2": "Nahuel Romero/Simon Barila",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"6-7, 6-4, 6-7"
         },
         {
           "fecha": "Sabado 16:00 hs",
@@ -89,15 +89,15 @@
           "fecha": "Viernes 23:00 hs",
           "equipo1": "Carlos Barrionuevo/Mauro Olivera",
           "equipo2": "Facundo Saldaño/Pablo Palloto",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-2"
         },
         {
           "fecha": "Sabado 11:00 hs",
           "equipo1": "Carlos Barrionuevo/Mauro Olivera",
           "equipo2": "Gustavo Vera/Nicolas Gonzalez",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"7-6, 5-7, 6-7"
         },
         {
           "fecha": "Sabado 14:00 hs",
