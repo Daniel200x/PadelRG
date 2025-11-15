@@ -24,22 +24,22 @@
           "fecha": "Viernes 18:00 hs",
           "equipo1": "Julio Orellana/Hernan Juarez",
           "equipo2": "Walter Sanchez/Gabriel Gabutti",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"1-6, 4-6"
         },
         {
           "fecha": "Viernes 20:00 hs",
           "equipo1": "Braian Lizarraga/Nicolas Barboza",
           "equipo2": "Javier Baldovino/Jonathan Villalobos",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-2"
         },
         {
           "fecha": "Sabado 11:00 hs",
           "equipo1": "Braian Lizarraga/Nicolas Barboza",
           "equipo2": "Julio Orellana/Hernan Juarez",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
         },
         {
           "fecha": "Sabado 16:00 hs",
@@ -73,7 +73,7 @@
           "nombre": "Gustavo Quiroz/Franco Galucci","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Waldemart Sosa/Cristian Carrasco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Waldemart Sosa/Valentin Lemus","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "Miguel Gomez/Cristian Maisares","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -88,20 +88,20 @@
           "fecha": "Viernes 21:00 hs",
           "equipo1": "Miguel Gomez/Cristian Maisares",
           "equipo2": "Victor Gonzalez/Ruben Garin",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"4-6, 5-7"
         },
         {
           "fecha": "Viernes 23:00 hs",
           "equipo1": "Gustavo Quiroz/Franco Galucci",
-          "equipo2": "Waldemart Sosa/Cristian Carrasco",
-          "resultado": "",
-          "games":""
+          "equipo2": "Waldemart Sosa/Valentin Lemus",
+          "resultado": "0-2",
+          "games":"6-7, 4-6"
         },
         {
           "fecha": "Sabado 12:00 hs",
           "equipo1": "Miguel Gomez/Cristian Maisares",
-          "equipo2": "Waldemart Sosa/Cristian Carrasco",
+          "equipo2": "Waldemart Sosa/Valentin Lemus",
           "resultado": "",
           "games":""
         },
@@ -115,7 +115,7 @@
         {
           "fecha": "Sabado 18:00 hs",
           "equipo1": "Victor Gonzalez/Ruben Garin",
-          "equipo2": "Waldemart Sosa/Cristian Carrasco",
+          "equipo2": "Waldemart Sosa/Valentin Lemus",
           "resultado": "",
           "games":""
         },

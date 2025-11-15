@@ -70,7 +70,7 @@
       "equipos": [
         
         {
-          "nombre": "Marcelo Yunes/Hugo Sanabria","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Marcelo Yunes/Lorenzo Rivero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "Gonzalo Aguirre/Ruben Pedraza","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -86,7 +86,7 @@
       "partidos": [
         {
           "fecha": "Viernes 19:00 hs",
-          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
           "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
           "resultado": "",
           "games":""
@@ -95,15 +95,15 @@
           "fecha": "Viernes 19:00 hs",
           "equipo1": "Julian Alcantara/Leonardo Barrios",
           "equipo2": "Claudio Cardenas/Juan Gonzalez",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"6-7, 6-1, 6-7"
         },
         {
           "fecha": "Sabado 12:00 hs",
-          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
           "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"2-6, 6-3, 7-6"
         },
         {
           "fecha": "Sabado 15:00 hs",
@@ -114,7 +114,7 @@
         },
         {
           "fecha": "Sabado 19:00 hs",
-          "equipo1": "Marcelo Yunes/Hugo Sanabria",
+          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
           "equipo2": "Claudio Cardenas/Juan Gonzalez",
           "resultado": "",
           "games":""

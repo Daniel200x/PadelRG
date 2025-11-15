@@ -18,7 +18,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Viernes 22:00 hs",
+          "fecha": "Sabado 22:00 hs",
           "equipo1": "Lia Niz/Luz Corzo",
           "equipo2": "Sabrina Denis/Delfina Corzo",
           "resultado": "",
@@ -61,8 +61,8 @@
           "fecha": "Viernes 22:00 hs",
           "equipo1": "Karina Ojeda/Cecilia Rojo",
           "equipo2": "Vanesa Iglesias/Daniela Bergondi",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"6-7, 5-7"
         },
         {
           "fecha": "Sabado 15:00 hs",
