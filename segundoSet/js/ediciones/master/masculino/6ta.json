@@ -45,15 +45,15 @@
           "fecha": "Sabado 16:00 hs",
           "equipo1": "Braian Lizarraga/Nicolas Barboza",
           "equipo2": "Walter Sanchez/Gabriel Gabutti",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"6-7, 5-7"
         },
         {
           "fecha": "Sabado 17:00 hs",
           "equipo1": "Javier Baldovino/Jonathan Villalobos",
           "equipo2": "Julio Orellana/Hernan Juarez",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 6-2"
         },
         {
           "fecha": "Sabado 23:00 hs",
@@ -109,15 +109,15 @@
           "fecha": "Sabado 17:00 hs",
           "equipo1": "Miguel Gomez/Cristian Maisares",
           "equipo2": "Gustavo Quiroz/Franco Galucci",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
         },
         {
           "fecha": "Sabado 18:00 hs",
           "equipo1": "Victor Gonzalez/Ruben Garin",
           "equipo2": "Waldemar Sosa/Valentin Lemus",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Sabado 22:00 hs",
