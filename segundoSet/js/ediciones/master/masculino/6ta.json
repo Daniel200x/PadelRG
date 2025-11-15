@@ -73,7 +73,7 @@
           "nombre": "Gustavo Quiroz/Franco Galucci","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Waldemart Sosa/Valentin Lemus","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Waldemar Sosa/Valentin Lemus","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "Miguel Gomez/Cristian Maisares","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -94,16 +94,16 @@
         {
           "fecha": "Viernes 23:00 hs",
           "equipo1": "Gustavo Quiroz/Franco Galucci",
-          "equipo2": "Waldemart Sosa/Valentin Lemus",
+          "equipo2": "Waldemar Sosa/Valentin Lemus",
           "resultado": "0-2",
           "games":"6-7, 4-6"
         },
         {
           "fecha": "Sabado 12:00 hs",
           "equipo1": "Miguel Gomez/Cristian Maisares",
-          "equipo2": "Waldemart Sosa/Valentin Lemus",
-          "resultado": "",
-          "games":""
+          "equipo2": "Waldemar Sosa/Valentin Lemus",
+          "resultado": "1-2",
+          "games":"6-4, 5-7, 6-7"
         },
         {
           "fecha": "Sabado 17:00 hs",
@@ -115,7 +115,7 @@
         {
           "fecha": "Sabado 18:00 hs",
           "equipo1": "Victor Gonzalez/Ruben Garin",
-          "equipo2": "Waldemart Sosa/Valentin Lemus",
+          "equipo2": "Waldemar Sosa/Valentin Lemus",
           "resultado": "",
           "games":""
         },

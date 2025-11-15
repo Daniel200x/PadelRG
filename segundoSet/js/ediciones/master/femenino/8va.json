@@ -13,9 +13,6 @@
         },
         {
           "nombre": "Natalia Chirino/Silvina Davalos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
@@ -31,8 +28,8 @@
           "fecha": "Sabado 13:00 hs",
           "equipo1": "Karen Beamonte/Jesica Perolo",
           "equipo2": "Natalia Chirino/Silvina Davalos",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-1, 6-4"
         },
         {
           "fecha": "Sabado 23:45 hs",
@@ -71,8 +68,8 @@
           "fecha": "Sabado 12:00 hs",
           "equipo1": "Belen Rivadeneira/Natalia De La Rosa",
           "equipo2": "Alina Zabala/Noelia Cagnelutti",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
         },
         {
           "fecha": "Sabado 23:00 hs",

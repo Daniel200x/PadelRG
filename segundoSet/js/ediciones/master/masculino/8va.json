@@ -38,15 +38,15 @@
           "fecha": "Sabado 14:00 hs",
           "equipo1": "Raul Gonzalez/Marcelo Llanes",
           "equipo2": "Cristian Ortiz/Jeremias Lara",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"1-6, 6-7"
         },
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Gaston Martinez/Agustin Sanchez",
           "equipo2": "Tomas Ruiz/Guido Tokar",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"3-6, 6-3, 7-6"
         },
         {
           "fecha": "Sabado 20:00 hs",
@@ -88,8 +88,8 @@
           "fecha": "Viernes 19:00 hs",
           "equipo1": "Marcelo Yunes/Lorenzo Rivero",
           "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"2-6, 6-3, 7-6"
         },
         {
           "fecha": "Viernes 19:00 hs",
@@ -100,17 +100,17 @@
         },
         {
           "fecha": "Sabado 12:00 hs",
-          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
+          "equipo1": "Claudio Cardenas/Juan Gonzalez",
           "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
-          "resultado": "2-1",
-          "games":"2-6, 6-3, 7-6"
+          "resultado": "0-2",
+          "games":"2-6, 5-7"
         },
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Julian Alcantara/Leonardo Barrios",
           "equipo2": "Claudio Cardenas/Juan Gonzalez",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-4, 7-5"
         },
         {
           "fecha": "Sabado 19:00 hs",
