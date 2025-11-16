@@ -9,7 +9,7 @@
           "nombre": "Claudia Torres/Juliana Rojas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Sabrina Denis/Delfina Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "Sabrina Denis/Sara Cortes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
           "nombre": "Lia Niz/Luz Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
@@ -20,14 +20,14 @@
         {
           "fecha": "Sabado 22:00 hs",
           "equipo1": "Lia Niz/Luz Corzo",
-          "equipo2": "Sabrina Denis/Delfina Corzo",
+          "equipo2": "Sabrina Denis/Sara Cortes",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 14:00 hs",
           "equipo1": "Claudia Torres/Juliana Rojas",
-          "equipo2": "Sabrina Denis/Delfina Corzo",
+          "equipo2": "Sabrina Denis/Sara Cortes",
           "resultado": "1-2",
           "games":"7-5, 4-6, 6-7"
         },
