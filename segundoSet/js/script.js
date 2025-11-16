@@ -31,7 +31,6 @@ const edicionesInfo = {
 
 };
 
-
 // Almacenamiento de datos cargados
 const edicionesCargadas = {};
 
@@ -39,6 +38,16 @@ const edicionesCargadas = {};
 let edicionActual = null;
 let generoActual = null;
 let categoriaActual = null;
+
+// Función para verificar si un grupo tiene todos sus partidos completados
+function grupoCompletado(grupo) {
+    return grupo.partidos.every(partido => 
+        partido.resultado && 
+        partido.resultado !== '-' && 
+        partido.resultado !== 'A definir' &&
+        partido.resultado !== 'Por jugar'
+    );
+}
 
 // Función para actualizar ganadores y perdedores en los partidos de grupo
 function actualizarResultadosGrupos(grupos) {
@@ -189,10 +198,17 @@ function determinarGanadorPorGames(games) {
 }
 
 // Función modificada para actualizar eliminatorias
-function actualizarEliminatorias(eliminatorias, clasificados) {
+function actualizarEliminatorias(eliminatorias, clasificados, grupos) {
     const reemplazarClasificacion = (texto) => {
-        return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupo) => {
-            return clasificados[`${posicion} ${grupo}`] || match;
+        return texto.replace(/(1ro|2do)\s([A-Z])/g, (match, posicion, grupoLetra) => {
+            // Si el grupo está completado, mostrar el nombre del equipo
+            const grupoObj = grupos.find(g => g.nombre.includes(`Grupo ${grupoLetra}`));
+            if (grupoObj && grupoCompletado(grupoObj)) {
+                return clasificados[`${posicion} ${grupoLetra}`] || match;
+            } else {
+                // Si no está completado, mantener la posición del grupo
+                return match;
+            }
         });
     };
 
@@ -401,7 +417,7 @@ async function cargarEdicion(edicionKey) {
         }
     };
 
-    const generos = ['masculino', 'femenino'];
+    const generos = ['masculino', 'fememino'];
     const categorias = ['4ta', '5ta', '6ta', '7ma', '8va'];
 
     // Cargar datos para cada género y categoría
@@ -471,7 +487,7 @@ function renderizarEdicion(edicion, genero, categoria) {
         // Determinar clasificados y actualizar eliminatorias
         if (categoriaData.eliminatorias) {
             const clasificados = determinarClasificados(categoriaData.grupos);
-            actualizarEliminatorias(categoriaData.eliminatorias, clasificados);
+            actualizarEliminatorias(categoriaData.eliminatorias, clasificados, categoriaData.grupos);
         }
     }
 
@@ -517,6 +533,26 @@ function renderizarEdicion(edicion, genero, categoria) {
             nombreGrupo.style.color = "#3498db";
             nombreGrupo.style.marginTop = "0";
             grupoDiv.appendChild(nombreGrupo);
+
+            // Indicador de estado del grupo
+            const estadoGrupo = document.createElement("div");
+            estadoGrupo.className = grupoCompletado(grupo) ? "estado-grupo completado" : "estado-grupo pendiente";
+            estadoGrupo.style.fontSize = "0.8em";
+            estadoGrupo.style.padding = "5px 10px";
+            estadoGrupo.style.borderRadius = "15px";
+            estadoGrupo.style.marginBottom = "10px";
+            estadoGrupo.style.display = "inline-block";
+            
+            if (grupoCompletado(grupo)) {
+                estadoGrupo.style.background = "#d4edda";
+                estadoGrupo.style.color = "#155724";
+                estadoGrupo.textContent = "✓ Grupo completado";
+            } else {
+                estadoGrupo.style.background = "#fff3cd";
+                estadoGrupo.style.color = "#856404";
+                estadoGrupo.textContent = "⏳ Partidos pendientes";
+            }
+            grupoDiv.appendChild(estadoGrupo);
 
             // Tabla de posiciones
             const tableContainer = document.createElement("div");
@@ -655,6 +691,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo1Div = document.createElement("div");
                 equipo1Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo1.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo1Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo1Div.classList.add('equipo-confirmado');
+                }
                 equipo1Div.textContent = p.equipo1;
                 
                 const vsDiv = document.createElement("div");
@@ -663,6 +705,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo2Div = document.createElement("div");
                 equipo2Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo2.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo2Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo2Div.classList.add('equipo-confirmado');
+                }
                 equipo2Div.textContent = p.equipo2;
                 
                 equiposDiv.appendChild(equipo1Div);
@@ -712,6 +760,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo1Div = document.createElement("div");
                 equipo1Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo1.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo1Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo1Div.classList.add('equipo-confirmado');
+                }
                 equipo1Div.textContent = p.equipo1;
                 
                 const vsDiv = document.createElement("div");
@@ -720,6 +774,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo2Div = document.createElement("div");
                 equipo2Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo2.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo2Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo2Div.classList.add('equipo-confirmado');
+                }
                 equipo2Div.textContent = p.equipo2;
                 
                 equiposDiv.appendChild(equipo1Div);
@@ -769,6 +829,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo1Div = document.createElement("div");
                 equipo1Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo1.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo1Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo1Div.classList.add('equipo-confirmado');
+                }
                 equipo1Div.textContent = p.equipo1;
                 
                 const vsDiv = document.createElement("div");
@@ -777,6 +843,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo2Div = document.createElement("div");
                 equipo2Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo2.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo2Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo2Div.classList.add('equipo-confirmado');
+                }
                 equipo2Div.textContent = p.equipo2;
                 
                 equiposDiv.appendChild(equipo1Div);
@@ -826,6 +898,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo1Div = document.createElement("div");
                 equipo1Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo1.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo1Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo1Div.classList.add('equipo-confirmado');
+                }
                 equipo1Div.textContent = p.equipo1;
                 
                 const vsDiv = document.createElement("div");
@@ -834,6 +912,12 @@ function renderizarEdicion(edicion, genero, categoria) {
                 
                 const equipo2Div = document.createElement("div");
                 equipo2Div.className = "equipo-eliminatoria";
+                // Aplicar clase según si el equipo está confirmado o pendiente
+                if (p.equipo2.match(/(1ro|2do)\s[A-Z]/)) {
+                    equipo2Div.classList.add('equipo-pendiente');
+                } else {
+                    equipo2Div.classList.add('equipo-confirmado');
+                }
                 equipo2Div.textContent = p.equipo2;
                 
                 equiposDiv.appendChild(equipo1Div);
@@ -862,10 +946,9 @@ function renderizarEdicion(edicion, genero, categoria) {
             eliminatoriasContainer.appendChild(faseDiv);
         }
 
-      
-// Final
+        // Final
         if (categoriaData.eliminatorias.final) {
-                        const faseDiv = document.createElement("div");
+            const faseDiv = document.createElement("div");
             faseDiv.className = "fase-eliminatoria final";
             faseDiv.style.background = "rgba(255, 245, 245, 0.9)";
             faseDiv.style.borderLeft = "4px solid #e74c3c";
@@ -884,6 +967,12 @@ function renderizarEdicion(edicion, genero, categoria) {
             
             const equipo1Div = document.createElement("div");
             equipo1Div.className = "equipo-eliminatoria";
+            // Aplicar clase según si el equipo está confirmado o pendiente
+            if (final.equipo1.match(/(1ro|2do)\s[A-Z]/)) {
+                equipo1Div.classList.add('equipo-pendiente');
+            } else {
+                equipo1Div.classList.add('equipo-confirmado');
+            }
             equipo1Div.innerHTML = `<strong>${final.equipo1}</strong>`;
             
             const vsDiv = document.createElement("div");
@@ -893,6 +982,12 @@ function renderizarEdicion(edicion, genero, categoria) {
             
             const equipo2Div = document.createElement("div");
             equipo2Div.className = "equipo-eliminatoria";
+            // Aplicar clase según si el equipo está confirmado o pendiente
+            if (final.equipo2.match(/(1ro|2do)\s[A-Z]/)) {
+                equipo2Div.classList.add('equipo-pendiente');
+            } else {
+                equipo2Div.classList.add('equipo-confirmado');
+            }
             equipo2Div.innerHTML = `<strong>${final.equipo2}</strong>`;
             
             equiposDiv.appendChild(equipo1Div);
@@ -969,8 +1064,6 @@ function mostrarSeccion(seccion) {
 
 // Inicialización y eventos
 document.addEventListener('DOMContentLoaded', function() {
-  
-
     // Actualizar año del copyright
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
@@ -993,4 +1086,3 @@ window.addEventListener('resize', function() {
         if (eliminatorias) eliminatorias.classList.add('active');
     }
 });
-

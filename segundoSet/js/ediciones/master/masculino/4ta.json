@@ -89,14 +89,14 @@
       {
          "equipo1": "1ro A",
           "equipo2": "2do B",
-          "fecha": "Domingo ",
+          "fecha": "Domingo 15:00",
           "resultado": "",
           "games":""
       },
       {
          "equipo1": "1ro B",
           "equipo2": "2do A",
-          "fecha": "Domingo ",
+          "fecha": "Domingo 15:00",
           "resultado": "",
           "games":""
       }
@@ -104,7 +104,7 @@
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo ",
+          "fecha": "Domingo 20:00",
           "resultado": "",
           "games":""
     }
