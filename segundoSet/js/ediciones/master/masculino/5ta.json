@@ -78,8 +78,8 @@
           "fecha": "Sabado 23:50 hs",
           "equipo1": "Emmanuel Bravo/Pacheco",
           "equipo2": "Federico Castro/Adrian Ayala",
-          "resultado": "",
-          "games":""
+          "resultado": "1-0",
+          "games":"1-0"
         },
         {
           "fecha": "Sabado 17:00 hs",
@@ -99,8 +99,8 @@
           "fecha": "Sabado 23:45 hs",
           "equipo1": "Emmanuel Bravo/Pacheco",
           "equipo2": "Bruno Sirgo/Cristian Almaraz",
-          "resultado": "",
-          "games":""
+          "resultado": "0-1",
+          "games":"0-1"
         }
         
       ]
