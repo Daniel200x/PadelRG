@@ -51,16 +51,16 @@
         {
           "fecha": "Sabado 20:00 hs",
           "equipo1": "Luciana Rodriguez/Sandra Ackerman",
-          "equipo2": "Rosalia Cruz/Natalia Marcolini",
+          "equipo2": "Alejandra Soto/Daniela Martinez",
           "resultado": "",
           "games":""
         },
         {
           "fecha": "Sabado 22:00 hs",
-          "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo1": "Rosalia Cruz/Natalia Marcolini",
           "equipo2": "Graciela Flamenco/Erika Martinez",
-          "resultado": "",
-          "games":""
+          "resultado": "2-1",
+          "games":"5-7, 6-4, 7-6"
         }
         
       ]

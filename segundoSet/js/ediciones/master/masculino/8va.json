@@ -52,8 +52,8 @@
           "fecha": "Sabado 20:00 hs",
           "equipo1": "Gaston Martinez/Agustin Sanchez",
           "equipo2": "Cristian Ortiz/Jeremias Lara",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"2-6, 1-6"
         },
         {
           "fecha": "Sabado 23:00 hs",
@@ -108,7 +108,7 @@
         {
           "fecha": "Sabado 15:00 hs",
           "equipo1": "Julian Alcantara/Leonardo Barrios",
-          "equipo2": "Claudio Cardenas/Juan Gonzalez",
+          "equipo2": "Marcelo Yunes/Lorenzo Rivero",
           "resultado": "2-0",
           "games":"6-4, 7-5"
         },
@@ -116,8 +116,8 @@
           "fecha": "Sabado 19:00 hs",
           "equipo1": "Marcelo Yunes/Lorenzo Rivero",
           "equipo2": "Claudio Cardenas/Juan Gonzalez",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 7-6"
         },
         {
           "fecha": "Sabado 23:00 hs",
