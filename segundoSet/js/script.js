@@ -417,7 +417,7 @@ async function cargarEdicion(edicionKey) {
         }
     };
 
-    const generos = ['masculino', 'fememino'];
+    const generos = ['masculino', 'femenino'];
     const categorias = ['4ta', '5ta', '6ta', '7ma', '8va'];
 
     // Cargar datos para cada género y categoría
