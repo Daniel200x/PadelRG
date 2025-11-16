@@ -52,8 +52,8 @@
           "fecha": "Sabado 20:00 hs",
           "equipo1": "Luciana Rodriguez/Sandra Ackerman",
           "equipo2": "Alejandra Soto/Daniela Martinez",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"1-6, 3-6"
         },
         {
           "fecha": "Sabado 22:00 hs",
@@ -123,8 +123,8 @@
           "fecha": "Sabado 21:00 hs",
           "equipo1": "Marta Barbosa/Luisa Miranda",
           "equipo2": "Florencia Bianchi/Fernanda Treppo",
-          "resultado": "",
-          "games":""
+          "resultado": "1-2",
+          "games":"7-5, 3-6, 6-7"
         }
         
       ]
