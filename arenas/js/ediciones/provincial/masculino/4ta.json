@@ -1,0 +1,135 @@
+{
+  "nombre": "4ta Caballeros - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Ivan Gallardo/Julio Andrade",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Tiago Andrade/Tomas Echeverria",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Jose Villarreal/Gabriel Muller",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Lucas Ojeda/Franco Moreno",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "Tiago Andrade/Tomas Echeverria",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "Jose Villarreal/Gabriel Muller",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "Lucas Ojeda/Franco Moreno",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        }
+      ]
+    }
+  ]
+}

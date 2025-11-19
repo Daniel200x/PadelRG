@@ -1,0 +1,135 @@
+{
+  "nombre": "4ta Damas - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Mariana Medina/Romina Torres",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Karina Chicaguala/Lucrecia Fruncieri",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Claudia Andrade/Noelia Velasquez",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Perla Acevedo/Alejandra Romero",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        }
+      ]
+    }
+  ]
+}

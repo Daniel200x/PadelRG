@@ -1,0 +1,135 @@
+{
+  "nombre": "7ma Caballeros - Torneo Provincial",
+  "grupos": [
+   {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Cristian Chalier/Juan Gimenez",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Lucas Vera/Benjamin Martinez",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Ramiro Luna/Nicolas Gonzalez",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "Gustavo Santana/Ramiro Bordon",
+          "ciudad": "Río Grande",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        },
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+        ,
+        {
+          "nombre": "",
+          "ciudad": "Ushuaia",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0,
+          "Puntos": 0
+        }
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        }
+      ]
+    }
+  ]
+}
