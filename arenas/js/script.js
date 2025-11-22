@@ -46,6 +46,71 @@ let edicionActual = null;
 let generoActual = null;
 let categoriaActual = null;
 
+// Función para extraer día y hora de la fecha del partido
+function extraerDiaYHora(fechaStr) {
+    if (!fechaStr) return { dia: 'Sin fecha', hora: '00:00', orden: 9999 };
+    
+    const diasSemana = {
+        'lunes': 1, 'martes': 2, 'miercoles': 3, 'miércoles': 3, 'jueves': 4,
+        'viernes': 5, 'sabado': 6, 'sábado': 6, 'domingo': 7
+    };
+    
+    const partes = fechaStr.toLowerCase().split(' ');
+    let diaNum = 8; // Valor por defecto para fechas sin día reconocido
+    let horaStr = '00:00';
+    
+    // Buscar el día en las primeras palabras
+    for (let i = 0; i < Math.min(partes.length, 2); i++) {
+        const palabra = partes[i].replace(',', '');
+        if (diasSemana[palabra] !== undefined) {
+            diaNum = diasSemana[palabra];
+            break;
+        }
+    }
+    
+    // Buscar la hora (formato HH:MM)
+    const horaMatch = fechaStr.match(/(\d{1,2}):(\d{2})/);
+    if (horaMatch) {
+        horaStr = `${horaMatch[1].padStart(2, '0')}:${horaMatch[2]}`;
+    }
+    
+    return {
+        dia: diaNum,
+        hora: horaStr,
+        orden: diaNum * 10000 + parseInt(horaStr.replace(':', ''))
+    };
+}
+
+// Función para formatear el nombre del día
+function formatearDia(diaNum) {
+    const dias = {
+        1: 'Lunes',
+        2: 'Martes', 
+        3: 'Miércoles',
+        4: 'Jueves',
+        5: 'Viernes',
+        6: 'Sábado',
+        7: 'Domingo',
+        8: 'Sin fecha definida'
+    };
+    return dias[diaNum] || 'Sin fecha';
+}
+
+// Función auxiliar para obtener colores por día
+function obtenerColorDia(diaNum) {
+    const colores = {
+        1: '#3498db', // Lunes - Azul
+        2: '#9b59b6', // Martes - Púrpura
+        3: '#2ecc71', // Miércoles - Verde
+        4: '#f39c12', // Jueves - Naranja
+        5: '#e74c3c', // Viernes - Rojo
+        6: '#1abc9c', // Sábado - Turquesa
+        7: '#d35400', // Domingo - Naranja oscuro
+        8: '#7f8c8d'  // Sin fecha - Gris
+    };
+    return colores[diaNum] || '#7f8c8d';
+}
+
 // Función para actualizar ganadores y perdedores en los partidos de grupo
 function actualizarResultadosGrupos(grupos) {
     grupos.forEach(grupo => {
@@ -242,7 +307,7 @@ function obtenerPuntosTotalesPorCiudad(edicion) {
     return puntosTotales;
 }
 
-// Función para obtener todos los partidos de todas las categorías
+// Función para obtener todos los partidos de todas las categorías ordenados por día y hora
 function obtenerTodosLosPartidos(edicion) {
     const todosLosPartidos = [];
     
@@ -252,11 +317,15 @@ function obtenerTodosLosPartidos(edicion) {
                 categoriaData.grupos.forEach(grupo => {
                     if (grupo.partidos) {
                         grupo.partidos.forEach(partido => {
+                            const infoDiaHora = extraerDiaYHora(partido.fecha);
                             todosLosPartidos.push({
                                 ...partido,
                                 genero: genero,
                                 categoria: categoria,
-                                grupo: grupo.nombre
+                                grupo: grupo.nombre,
+                                diaNum: infoDiaHora.dia,
+                                horaStr: infoDiaHora.hora,
+                                orden: infoDiaHora.orden
                             });
                         });
                     }
@@ -265,13 +334,9 @@ function obtenerTodosLosPartidos(edicion) {
         });
     });
     
-    // Ordenar partidos por fecha
+    // Ordenar partidos por día y hora
     return todosLosPartidos.sort((a, b) => {
-        // Ordenar por fecha si está disponible
-        if (a.fecha && b.fecha) {
-            return a.fecha.localeCompare(b.fecha);
-        }
-        return 0;
+        return a.orden - b.orden;
     });
 }
 
@@ -465,7 +530,7 @@ function renderizarTorneoProvincial(edicion) {
     // Obtener puntos totales
     const puntosTotales = obtenerPuntosTotalesPorCiudad(edicion);
     
-    // Obtener todos los partidos
+    // Obtener todos los partidos ordenados por día y hora
     const todosLosPartidos = obtenerTodosLosPartidos(edicion);
     
     // Crear contenedor principal
@@ -582,12 +647,12 @@ function renderizarTorneoProvincial(edicion) {
     tableroPuntosDiv.appendChild(tituloTablero);
     tableroPuntosDiv.appendChild(ciudadesContainer);
     
-    // 2. LISTA DE TODOS LOS PARTIDOS
+    // 2. LISTA DE TODOS LOS PARTIDOS ORDENADOS POR DÍA Y HORA
     const partidosContainer = document.createElement("div");
     partidosContainer.className = "partidos-provincial-container";
     
     const tituloPartidos = document.createElement("h3");
-    tituloPartidos.textContent = "TODOS LOS PARTIDOS - TORNEO PROVINCIAL";
+    tituloPartidos.textContent = "CALENDARIO DE PARTIDOS - TORNEO PROVINCIAL";
     tituloPartidos.style.color = "#2c3e50";
     tituloPartidos.style.marginBottom = "25px";
     tituloPartidos.style.textAlign = "center";
@@ -598,144 +663,216 @@ function renderizarTorneoProvincial(edicion) {
     partidosContainer.appendChild(tituloPartidos);
     
     if (todosLosPartidos.length > 0) {
-        // Agrupar partidos por fecha
-        const partidosPorFecha = {};
+        // Agrupar partidos por día
+        const partidosPorDia = {};
         todosLosPartidos.forEach(partido => {
-            const fecha = partido.fecha || 'Fecha por definir';
-            if (!partidosPorFecha[fecha]) {
-                partidosPorFecha[fecha] = [];
+            const diaKey = partido.diaNum;
+            if (!partidosPorDia[diaKey]) {
+                partidosPorDia[diaKey] = [];
             }
-            partidosPorFecha[fecha].push(partido);
+            partidosPorDia[diaKey].push(partido);
         });
         
-        // Crear secciones por fecha
-        Object.entries(partidosPorFecha).forEach(([fecha, partidos]) => {
-            const fechaSection = document.createElement("div");
-            fechaSection.className = "fecha-section";
-            fechaSection.style.marginBottom = "30px";
-            fechaSection.style.background = "rgba(255, 255, 255, 0.95)";
-            fechaSection.style.padding = "20px";
-            fechaSection.style.borderRadius = "10px";
-            fechaSection.style.boxShadow = "0 4px 15px rgba(0,0,0,0.1)";
+        // Ordenar los días
+        const diasOrdenados = Object.keys(partidosPorDia).sort((a, b) => a - b);
+        
+        // Crear secciones por día
+        diasOrdenados.forEach(diaKey => {
+            const partidosDelDia = partidosPorDia[diaKey];
             
-            const tituloFecha = document.createElement("h4");
-            tituloFecha.textContent = fecha;
-            tituloFecha.style.color = "#e74c3c";
-            tituloFecha.style.marginBottom = "20px";
-            tituloFecha.style.paddingBottom = "10px";
-            tituloFecha.style.borderBottom = "2px solid #f39c12";
-            tituloFecha.style.fontSize = "1.3em";
+            // Ordenar partidos del día por hora
+            partidosDelDia.sort((a, b) => a.orden - b.orden);
             
-            fechaSection.appendChild(tituloFecha);
+            const diaSection = document.createElement("div");
+            diaSection.className = "dia-section";
+            diaSection.style.marginBottom = "30px";
+            diaSection.style.background = "rgba(255, 255, 255, 0.95)";
+            diaSection.style.padding = "20px";
+            diaSection.style.borderRadius = "10px";
+            diaSection.style.boxShadow = "0 4px 15px rgba(0,0,0,0.1)";
+            diaSection.style.borderLeft = `5px solid ${obtenerColorDia(parseInt(diaKey))}`;
             
-            partidos.forEach(partido => {
-                const partidoDiv = document.createElement("div");
-                partidoDiv.className = "partido-provincial";
-                partidoDiv.style.padding = "15px";
-                partidoDiv.style.marginBottom = "15px";
-                partidoDiv.style.borderRadius = "8px";
-                partidoDiv.style.background = partido.sumaPuntos ? 
-                    "linear-gradient(135deg, #2ecc71, #27ae60)" : 
-                    "linear-gradient(135deg, #3498db, #2980b9)";
-                partidoDiv.style.color = "white";
-                partidoDiv.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
-                
-                const infoPartido = document.createElement("div");
-                infoPartido.style.display = "flex";
-                infoPartido.style.justifyContent = "space-between";
-                infoPartido.style.alignItems = "center";
-                infoPartido.style.flexWrap = "wrap";
-                infoPartido.style.gap = "10px";
-                
-                const equiposDiv = document.createElement("div");
-                equiposDiv.style.flex = "1";
-                equiposDiv.style.minWidth = "300px";
-                
-                const equipo1Span = document.createElement("span");
-                equipo1Span.textContent = partido.equipo1;
-                equipo1Span.style.fontWeight = "bold";
-                equipo1Span.style.fontSize = "1.1em";
-                
-                const vsSpan = document.createElement("span");
-                vsSpan.textContent = " vs ";
-                vsSpan.style.margin = "0 10px";
-                vsSpan.style.opacity = "0.8";
-                
-                const equipo2Span = document.createElement("span");
-                equipo2Span.textContent = partido.equipo2;
-                equipo2Span.style.fontWeight = "bold";
-                equipo2Span.style.fontSize = "1.1em";
-                
-                equiposDiv.appendChild(equipo1Span);
-                equiposDiv.appendChild(vsSpan);
-                equiposDiv.appendChild(equipo2Span);
-                
-                const detallesDiv = document.createElement("div");
-                detallesDiv.style.textAlign = "right";
-                detallesDiv.style.flex = "0 0 auto";
-                
-                const categoriaSpan = document.createElement("div");
-                categoriaSpan.textContent = `${partido.genero === 'masculino' ? 'Caballeros' : 'Damas'} ${partido.categoria}`;
-                categoriaSpan.style.fontWeight = "bold";
-                categoriaSpan.style.marginBottom = "5px";
-                
-                const grupoSpan = document.createElement("div");
-                grupoSpan.textContent = partido.grupo;
-                grupoSpan.style.opacity = "0.9";
-                grupoSpan.style.fontSize = "0.9em";
-                
-                detallesDiv.appendChild(categoriaSpan);
-                detallesDiv.appendChild(grupoSpan);
-                
-                const resultadoDiv = document.createElement("div");
-                resultadoDiv.style.marginTop = "10px";
-                resultadoDiv.style.padding = "8px";
-                resultadoDiv.style.background = "rgba(255,255,255,0.2)";
-                resultadoDiv.style.borderRadius = "5px";
-                resultadoDiv.style.textAlign = "center";
-                resultadoDiv.style.fontWeight = "bold";
-                
-                if (partido.resultado && partido.resultado !== '-' && partido.resultado !== 'A definir') {
-                    resultadoDiv.textContent = `Resultado: ${partido.resultado}`;
-                    if (partido.games) {
-                        resultadoDiv.textContent += ` (${partido.games})`;
-                    }
-                } else {
-                    resultadoDiv.textContent = "Por jugar";
-                    resultadoDiv.style.opacity = "0.8";
+            const nombreDia = formatearDia(parseInt(diaKey));
+            const tituloDia = document.createElement("h4");
+            tituloDia.textContent = nombreDia;
+            tituloDia.style.color = obtenerColorDia(parseInt(diaKey));
+            tituloDia.style.marginBottom = "20px";
+            tituloDia.style.paddingBottom = "10px";
+            tituloDia.style.borderBottom = `2px solid ${obtenerColorDia(parseInt(diaKey))}`;
+            tituloDia.style.fontSize = "1.4em";
+            tituloDia.style.fontWeight = "bold";
+            
+            diaSection.appendChild(tituloDia);
+            
+            // Agrupar partidos por hora dentro del mismo día
+            const partidosPorHora = {};
+            partidosDelDia.forEach(partido => {
+                const horaKey = partido.horaStr;
+                if (!partidosPorHora[horaKey]) {
+                    partidosPorHora[horaKey] = [];
                 }
-                
-                // Indicador de partido que suma puntos
-                if (partido.sumaPuntos) {
-                    const puntosInfo = document.createElement("div");
-                    puntosInfo.style.marginTop = "8px";
-                    puntosInfo.style.padding = "5px";
-                    puntosInfo.style.background = "rgba(255,255,255,0.3)";
-                    puntosInfo.style.borderRadius = "4px";
-                    puntosInfo.style.fontSize = "0.9em";
-                    puntosInfo.style.fontWeight = "bold";
-                    
-                    if (partido.sumaPuntos === 'ambos') {
-                        puntosInfo.textContent = "⭐ SUMA PUNTOS PARA AMBAS CIUDADES";
-                    } else if (partido.sumaPuntos === 'equipo1') {
-                        puntosInfo.textContent = "⭐ SUMA PUNTOS PARA RÍO GRANDE";
-                    } else if (partido.sumaPuntos === 'equipo2') {
-                        puntosInfo.textContent = "⭐ SUMA PUNTOS PARA USHUAIA";
-                    }
-                    
-                    partidoDiv.appendChild(puntosInfo);
-                }
-                
-                infoPartido.appendChild(equiposDiv);
-                infoPartido.appendChild(detallesDiv);
-                
-                partidoDiv.appendChild(infoPartido);
-                partidoDiv.appendChild(resultadoDiv);
-                
-                fechaSection.appendChild(partidoDiv);
+                partidosPorHora[horaKey].push(partido);
             });
             
-            partidosContainer.appendChild(fechaSection);
+            // Crear secciones por hora
+            Object.keys(partidosPorHora).sort().forEach(horaKey => {
+                const partidosMismaHora = partidosPorHora[horaKey];
+                
+                const horaSection = document.createElement("div");
+                horaSection.className = "hora-section";
+                horaSection.style.marginBottom = "20px";
+                horaSection.style.padding = "15px";
+                horaSection.style.background = "rgba(248, 249, 250, 0.8)";
+                horaSection.style.borderRadius = "8px";
+                horaSection.style.borderLeft = `4px solid #f39c12`;
+                
+                const tituloHora = document.createElement("h5");
+                tituloHora.textContent = `⏰ ${horaKey} hs`;
+                tituloHora.style.color = "#e67e22";
+                tituloHora.style.marginBottom = "15px";
+                tituloHora.style.fontSize = "1.2em";
+                tituloHora.style.display = "flex";
+                tituloHora.style.alignItems = "center";
+                tituloHora.style.gap = "10px";
+                
+                horaSection.appendChild(tituloHora);
+                
+                partidosMismaHora.forEach(partido => {
+                    const partidoDiv = document.createElement("div");
+                    partidoDiv.className = "partido-provincial";
+                    partidoDiv.style.padding = "15px";
+                    partidoDiv.style.marginBottom = "12px";
+                    partidoDiv.style.borderRadius = "8px";
+                    partidoDiv.style.background = partido.sumaPuntos ? 
+                        "linear-gradient(135deg, #2ecc71, #27ae60)" : 
+                        "linear-gradient(135deg, #3498db, #2980b9)";
+                    partidoDiv.style.color = "white";
+                    partidoDiv.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
+                    partidoDiv.style.position = "relative";
+                    
+                    // Indicador de cancha si está disponible
+                    if (partido.fecha && partido.fecha.includes('Cancha')) {
+                        const canchaMatch = partido.fecha.match(/Cancha\s*(\d+)/i);
+                        if (canchaMatch) {
+                            const canchaIndicator = document.createElement("div");
+                            canchaIndicator.style.position = "absolute";
+                            canchaIndicator.style.top = "10px";
+                            canchaIndicator.style.right = "10px";
+                            canchaIndicator.style.background = "rgba(255,255,255,0.3)";
+                            canchaIndicator.style.padding = "4px 8px";
+                            canchaIndicator.style.borderRadius = "12px";
+                            canchaIndicator.style.fontSize = "0.8em";
+                            canchaIndicator.style.fontWeight = "bold";
+                            canchaIndicator.textContent = `Cancha ${canchaMatch[1]}`;
+                            partidoDiv.appendChild(canchaIndicator);
+                        }
+                    }
+                    
+                    const infoPartido = document.createElement("div");
+                    infoPartido.style.display = "flex";
+                    infoPartido.style.justifyContent = "space-between";
+                    infoPartido.style.alignItems = "center";
+                    infoPartido.style.flexWrap = "wrap";
+                    infoPartido.style.gap = "10px";
+                    
+                    const equiposDiv = document.createElement("div");
+                    equiposDiv.style.flex = "1";
+                    equiposDiv.style.minWidth = "300px";
+                    
+                    const equipo1Span = document.createElement("span");
+                    equipo1Span.textContent = partido.equipo1;
+                    equipo1Span.style.fontWeight = "bold";
+                    equipo1Span.style.fontSize = "1.1em";
+                    
+                    const vsSpan = document.createElement("span");
+                    vsSpan.textContent = " vs ";
+                    vsSpan.style.margin = "0 10px";
+                    vsSpan.style.opacity = "0.8";
+                    
+                    const equipo2Span = document.createElement("span");
+                    equipo2Span.textContent = partido.equipo2;
+                    equipo2Span.style.fontWeight = "bold";
+                    equipo2Span.style.fontSize = "1.1em";
+                    
+                    equiposDiv.appendChild(equipo1Span);
+                    equiposDiv.appendChild(vsSpan);
+                    equiposDiv.appendChild(equipo2Span);
+                    
+                    const detallesDiv = document.createElement("div");
+                    detallesDiv.style.textAlign = "right";
+                    detallesDiv.style.flex = "0 0 auto";
+                    
+                    const categoriaSpan = document.createElement("div");
+                    categoriaSpan.textContent = `${partido.genero === 'masculino' ? '♂ Caballeros' : '♀ Damas'} ${partido.categoria}`;
+                    categoriaSpan.style.fontWeight = "bold";
+                    categoriaSpan.style.marginBottom = "5px";
+                    categoriaSpan.style.display = "flex";
+                    categoriaSpan.style.alignItems = "center";
+                    categoriaSpan.style.gap = "5px";
+                    
+                    const grupoSpan = document.createElement("div");
+                    grupoSpan.textContent = partido.grupo;
+                    grupoSpan.style.opacity = "0.9";
+                    grupoSpan.style.fontSize = "0.9em";
+                    
+                    detallesDiv.appendChild(categoriaSpan);
+                    detallesDiv.appendChild(grupoSpan);
+                    
+                    const resultadoDiv = document.createElement("div");
+                    resultadoDiv.style.marginTop = "10px";
+                    resultadoDiv.style.padding = "8px";
+                    resultadoDiv.style.background = "rgba(255,255,255,0.2)";
+                    resultadoDiv.style.borderRadius = "5px";
+                    resultadoDiv.style.textAlign = "center";
+                    resultadoDiv.style.fontWeight = "bold";
+                    
+                    if (partido.resultado && partido.resultado !== '-' && partido.resultado !== 'A definir') {
+                        resultadoDiv.textContent = `Resultado: ${partido.resultado}`;
+                        if (partido.games) {
+                            resultadoDiv.textContent += ` (${partido.games})`;
+                        }
+                        resultadoDiv.style.background = "rgba(46, 204, 113, 0.4)";
+                    } else {
+                        resultadoDiv.textContent = "⏳ Por jugar";
+                        resultadoDiv.style.opacity = "0.8";
+                        resultadoDiv.style.background = "rgba(241, 196, 15, 0.4)";
+                    }
+                    
+                    // Indicador de partido que suma puntos
+                    if (partido.sumaPuntos) {
+                        const puntosInfo = document.createElement("div");
+                        puntosInfo.style.marginTop = "8px";
+                        puntosInfo.style.padding = "5px";
+                        puntosInfo.style.background = "rgba(255,255,255,0.3)";
+                        puntosInfo.style.borderRadius = "4px";
+                        puntosInfo.style.fontSize = "0.9em";
+                        puntosInfo.style.fontWeight = "bold";
+                        puntosInfo.style.textAlign = "center";
+                        
+                        if (partido.sumaPuntos === 'ambos') {
+                            puntosInfo.textContent = "⭐ SUMA PUNTOS PARA AMBAS CIUDADES";
+                        } else if (partido.sumaPuntos === 'equipo1') {
+                            puntosInfo.textContent = "⭐ SUMA PUNTOS PARA RÍO GRANDE";
+                        } else if (partido.sumaPuntos === 'equipo2') {
+                            puntosInfo.textContent = "⭐ SUMA PUNTOS PARA USHUAIA";
+                        }
+                        
+                        partidoDiv.appendChild(puntosInfo);
+                    }
+                    
+                    infoPartido.appendChild(equiposDiv);
+                    infoPartido.appendChild(detallesDiv);
+                    
+                    partidoDiv.appendChild(infoPartido);
+                    partidoDiv.appendChild(resultadoDiv);
+                    
+                    horaSection.appendChild(partidoDiv);
+                });
+                
+                diaSection.appendChild(horaSection);
+            });
+            
+            partidosContainer.appendChild(diaSection);
         });
     } else {
         const noPartidosMsg = document.createElement("p");
