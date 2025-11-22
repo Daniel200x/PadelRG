@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Alvarez/Lynn",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "K. Martinez/Aranda",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,20 +98,20 @@
       ],
      "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "fecha": "Viernes 22:30 hs Cancha 1",
+          "equipo1": "Fernanda Polizzi/Lucia Marcial",
+          "equipo2": "Alvarez/Lynn",
+          "resultado": "0-2",
+          "games": "1-6, 4-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "K. Martinez/Aranda",
+          "resultado": "2-0",
+          "games": "7-6, 6-2",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha",

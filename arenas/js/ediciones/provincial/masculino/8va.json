@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Pavon/Carrizo",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Noval/G. Gonzalez",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,20 +98,20 @@
       ],
        "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "fecha": "Viernes 19:30 hs Cancha 2",
+          "equipo1": "Cristian Ortiz/Javier Paniagua",
+          "equipo2": "Pavon/Carrizo",
+          "resultado": "2-0",
+          "games": "6-1, 6-4",
+          "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "fecha": "Viernes 21:00 hs Cancha 2",
+          "equipo1": "Claudio Velasquez/Victor Velasquez",
+          "equipo2": "Noval/G. Gonzalez",
+          "resultado": "2-0",
+          "games": "7-6, 6-3",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha",

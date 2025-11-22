@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Rojas/Mella",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,12 +98,12 @@
       ],
       "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "fecha": "Viernes 19:30 hs Cancha 1",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Rojas/Mella",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha",

@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Guerra/Yannick Sanchez",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,12 +98,12 @@
       ],
        "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
+          "fecha": "Viernes 21:00 hs Cancha 1",
           "equipo1": "Ivan Gallardo/Julio Andrade",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "equipo2": "Guerra/Yannick Sanchez",
+          "resultado": "2-0",
+          "games": "6-2, 6-2",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Viernes 20:00 hs Cancha",
