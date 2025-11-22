@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Acosta/Villalba",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Girardi/Gavilan",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Villarreal/Tissera",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Maestro/Vargas",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,33 +98,33 @@
       ],
       "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 16:00 hs Cancha 1",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Acosta/Villalba",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 12:30 hs Cancha 1",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Girardi/Gavilan",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 17:00 hs Cancha 1",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Villarreal/Tissera",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 18:30 hs Cancha 1",
+          "equipo1": "Perla Acevedo/Alejandra Romero",
+          "equipo2": "Maestro/Vargas",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

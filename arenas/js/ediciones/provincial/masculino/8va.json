@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Cabrera/Gonzalez",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Cimaldoni/Coronel",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -114,17 +114,17 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 17:30 hs Cancha 2",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Cabrera/Gonzalez",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 14:00 hs Cancha 2",
+          "equipo1": "Leonardo Pugnale/Ignacio Perez",
+          "equipo2": "Cimaldoni/Coronel",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

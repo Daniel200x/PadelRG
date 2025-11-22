@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Caffaro/Politi",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Vera/Saenz",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Moyano/Caicheo",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Barrot/Pelegrina",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,33 +98,33 @@
       ],
        "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 09:30 hs Cancha 1",
+          "equipo1": "Daniela Martinez/Alejandra Soto",
+          "equipo2": "Caffaro/Politi",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 11:00 hs Cancha 1",
+          "equipo1": "Luciana Romano/Rosalia Cruz",
+          "equipo2": "Vera/Saenz",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 12:30 hs Cancha 2",
+          "equipo1": "Mariana Pratto/Luciana Rodriguez",
+          "equipo2": "Moyano/Caicheo",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 14:00 hs Cancha 1",
+          "equipo1": "Rocio Terrado/Romina Castillo",
+          "equipo2": "Barrot/Pelegrina",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

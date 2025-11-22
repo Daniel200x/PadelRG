@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Baez/Mancini",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Maldonado/Rivero",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Zalazar/Zalazar",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -106,17 +106,17 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
+          "fecha": "Sabado 19:00 hs Cancha 1",
           "equipo1": "Tiago Andrade/Tomas Echeverria",
-          "equipo2": "",
+          "equipo2": "Maldonado/Rivero",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
+          "fecha": "Sabado 11:30 hs Cancha 1",
           "equipo1": "Jose Villarreal/Gabriel Muller",
-          "equipo2": "",
+          "equipo2": "Baez/Mancini",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
@@ -124,7 +124,7 @@
         {
           "fecha": "Viernes 20:00 hs Cancha",
           "equipo1": "Lucas Ojeda/Franco Moreno",
-          "equipo2": "",
+          "equipo2": "Zalazar/Zalazar",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

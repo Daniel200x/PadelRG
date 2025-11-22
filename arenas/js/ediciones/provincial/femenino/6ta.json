@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Gonzalez/Ruiz",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Barone/Erlan",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -114,17 +114,17 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:30 hs Cancha 2",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Gonzalez/Ruiz",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 14:30 hs Cancha 1",
+          "equipo1": "Giuliana Gimenez/Sara Cortes",
+          "equipo2": "Barone/Erlan",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

@@ -49,7 +49,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Rojas/Coronel",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Romero/Menna",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Brigando/Bleuer",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Sosa/Gonzalez",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -98,33 +98,33 @@
       ],
        "partidos": [
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 20:30 hs Cancha 1",
+          "equipo1": "Braian Lizarraga/Claudio Escobar",
+          "equipo2": "Rojas/Coronel",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 22:00 hs Cancha 2",
+          "equipo1": "Federico Bossio/Santiago David",
+          "equipo2": "Romero/Menna",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 15:30 hs Cancha 2",
+          "equipo1": "Emmanuel Bravo/Andres Agnes",
+          "equipo2": "Brigando/Bleuer",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Domingo 17:00 hs Cancha 2",
+          "equipo1": "Martin Pacheco/Cristian Perez",
+          "equipo2": "Sosa/Gonzalez",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"

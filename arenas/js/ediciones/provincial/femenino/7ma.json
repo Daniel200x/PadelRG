@@ -60,7 +60,7 @@
           "Puntos": 0
         },
         {
-          "nombre": "",
+          "nombre": "Visñuk/Molina",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -72,7 +72,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Lirola/Lanaro",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -84,7 +84,7 @@
         }
         ,
         {
-          "nombre": "",
+          "nombre": "Agüero/Burgo",
           "ciudad": "Ushuaia",
           "PJ": 0,
           "PG": 0,
@@ -106,25 +106,25 @@
           "sumaPuntos": "equipo2"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 10:00 hs Cancha 1",
+          "equipo1": "Lorena Saldivia/Antonela Tarchini",
+          "equipo2": "Visñuk/Molina",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 10:00 hs Cancha 2",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Lirola/Lanaro",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 20:00 hs Cancha",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 19:00 hs Cancha 2",
+          "equipo1": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "Agüero/Burgo",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
