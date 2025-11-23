@@ -123,11 +123,11 @@
         },
         {
           "fecha": "Domingo 11:00 hs Cancha 2",
-          "equipo1": "Gustavo Santana/Ramiro Bordon",
+          "equipo1": "Ramiro Luna/Nicolas Gonzalez",
           "equipo2": "Aperio/Fiori",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "2-0",
+          "games": "6-1, 6-1",
+          "sumaPuntos": "equipo1"
         }
       ]
     }
