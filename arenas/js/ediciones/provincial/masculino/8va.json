@@ -98,7 +98,7 @@
       ],
        "partidos": [
         {
-          "fecha": "Viernes 19:30 hs Cancha 2",
+          "fecha": "Viernes 19:30 hs Cancha 2 - Río Grande",
           "equipo1": "Cristian Ortiz/Javier Paniagua",
           "equipo2": "Pavon/Carrizo",
           "resultado": "2-0",
@@ -106,7 +106,7 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Viernes 21:00 hs Cancha 2",
+          "fecha": "Viernes 21:00 hs Cancha 2 - Río Grande",
           "equipo1": "Claudio Velasquez/Victor Velasquez",
           "equipo2": "Noval/G. Gonzalez",
           "resultado": "2-0",
@@ -114,7 +114,7 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Sabado 17:30 hs Cancha 2",
+          "fecha": "Sabado 17:30 hs Cancha 2 - Río Grande",
           "equipo1": "Franco Marquez/Ricardo Garcia",
           "equipo2": "Cabrera/Gonzalez",
           "resultado": "1-2",
@@ -122,12 +122,12 @@
           "sumaPuntos": "equipo2"
         },
         {
-          "fecha": "Domingo 14:00 hs Cancha 2",
+          "fecha": "Domingo 14:00 hs Cancha 2 - Río Grande",
           "equipo1": "Leonardo Pugnale/Ignacio Perez",
           "equipo2": "Cimaldoni/Coronel",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "1-2",
+          "games": "1-6, 7-5, 3-6",
+          "sumaPuntos": "equipo2"
         }
       ]
     }

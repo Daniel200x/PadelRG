@@ -98,7 +98,7 @@
       ],
       "partidos": [
         {
-          "fecha": "Sabado 13:00 hs Cancha 1",
+          "fecha": "Sabado 13:00 hs Cancha 1 - Río Grande",
           "equipo1": "Waldemar Sosa/Matias Dos Santos",
           "equipo2": "Mesas/Ruiz",
           "resultado": "2-1",
@@ -106,7 +106,7 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Sabado 17:30 hs Cancha 1",
+          "fecha": "Sabado 17:30 hs Cancha 1 - Río Grande",
           "equipo1": "Mariano Pereyra/Valentin Lemus",
           "equipo2": "Viterbori/Allaman",
           "resultado": "1-2",
@@ -114,7 +114,7 @@
           "sumaPuntos": "equipo2"
         },
         {
-          "fecha": "Sabado 20:30 hs Cancha 2",
+          "fecha": "Sabado 20:30 hs Cancha 2 - Río Grande",
           "equipo1": "Franco Gallucci/Nicolas Barrios",
           "equipo2": "Hernando/Gonzalez",
           "resultado": "2-1",
@@ -122,12 +122,12 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Domingo 15:30 hs Cancha 1",
+          "fecha": "Domingo 15:30 hs Cancha 1 - Río Grande",
           "equipo1": "Gustavo Quiroz/Javier Gimenez",
           "equipo2": "Vega/Berrastro",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "3-6, 6-7",
+          "sumaPuntos": "equipo2"
         }
       ]
     }

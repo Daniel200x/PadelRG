@@ -98,7 +98,7 @@
       ],
        "partidos": [
         {
-          "fecha": "Sabado 20:30 hs Cancha 1",
+          "fecha": "Sabado 20:30 hs Cancha 1 - Río Grande",
           "equipo1": "Braian Lizarraga/Claudio Escobar",
           "equipo2": "Rojas/Coronel",
           "resultado": "2-1",
@@ -106,7 +106,7 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Sabado 22:00 hs Cancha 2",
+          "fecha": "Sabado 22:00 hs Cancha 2 - Río Grande",
           "equipo1": "Federico Bossio/Santiago David",
           "equipo2": "Romero/Menna",
           "resultado": "2-0",
@@ -114,20 +114,20 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Domingo 15:30 hs Cancha 2",
+          "fecha": "Domingo 15:30 hs Cancha 2 - Río Grande",
           "equipo1": "Emmanuel Bravo/Andres Agnes",
           "equipo2": "Brigando/Bleuer",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "2-1",
+          "games": "4-6, 6-4, 6-2",
+          "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Domingo 17:00 hs Cancha 2",
+          "fecha": "Domingo 17:00 hs Cancha 2 - Río Grande",
           "equipo1": "Martin Pacheco/Cristian Perez",
           "equipo2": "Sosa/Gonzalez",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "2-0",
+          "games": "6-3, 6-1",
+          "sumaPuntos": "equipo1"
         }
       ]
     }

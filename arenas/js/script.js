@@ -111,6 +111,25 @@ function obtenerColorDia(diaNum) {
     return colores[diaNum] || '#7f8c8d';
 }
 
+// Función para determinar la etapa (RG o USH) basada en la ubicación del partido
+function determinarEtapa(partido) {
+    if (!partido.fecha) return 'USH'; // Por defecto
+    
+    const fechaStr = partido.fecha.toLowerCase();
+    
+    // Si menciona "Rio Grande" o "RG" es etapa RG
+    if (fechaStr.includes('rio grande') || fechaStr.includes('rg') || fechaStr.includes('río grande')) {
+        return 'RG';
+    }
+    // Si menciona "Ushuaia" o "USH" es etapa USH
+    else if (fechaStr.includes('ushuaia') || fechaStr.includes('ush')) {
+        return 'USH';
+    }
+    
+    // Por defecto, basado en la cancha o información adicional
+    return 'USH';
+}
+
 // Función para actualizar ganadores y perdedores en los partidos de grupo
 function actualizarResultadosGrupos(grupos) {
     grupos.forEach(grupo => {
@@ -340,6 +359,48 @@ function obtenerTodosLosPartidos(edicion) {
     });
 }
 
+// Función para obtener todos los partidos separados por etapa
+function obtenerPartidosPorEtapa(edicion) {
+    const partidosPorEtapa = {
+        'RG': [],
+        'USH': []
+    };
+    
+    Object.entries(edicion.categorias).forEach(([genero, generoData]) => {
+        Object.entries(generoData).forEach(([categoria, categoriaData]) => {
+            if (categoriaData.grupos) {
+                categoriaData.grupos.forEach(grupo => {
+                    if (grupo.partidos) {
+                        grupo.partidos.forEach(partido => {
+                            const infoDiaHora = extraerDiaYHora(partido.fecha);
+                            const etapa = determinarEtapa(partido);
+                            
+                            const partidoConInfo = {
+                                ...partido,
+                                genero: genero,
+                                categoria: categoria,
+                                grupo: grupo.nombre,
+                                diaNum: infoDiaHora.dia,
+                                horaStr: infoDiaHora.hora,
+                                orden: infoDiaHora.orden,
+                                etapa: etapa
+                            };
+                            
+                            partidosPorEtapa[etapa].push(partidoConInfo);
+                        });
+                    }
+                });
+            }
+        });
+    });
+    
+    // Ordenar partidos de cada etapa por día y hora
+    partidosPorEtapa.RG.sort((a, b) => a.orden - b.orden);
+    partidosPorEtapa.USH.sort((a, b) => a.orden - b.orden);
+    
+    return partidosPorEtapa;
+}
+
 // Función para determinar los equipos clasificados de cada grupo
 function determinarClasificados(grupos) {
     const clasificados = {};
@@ -515,157 +576,15 @@ function actualizarBotonesActivos() {
     }
 }
 
-// Función para renderizar la vista del Torneo Provincial
-function renderizarTorneoProvincial(edicion) {
-    const contenedor = document.getElementById('contenido-ediciones');
-    contenedor.innerHTML = '';
-    
-    // Ocultar selectores de género y categoría para el provincial
-    document.querySelectorAll('.selector-group').forEach((grupo, index) => {
-        if (index > 0) { // Mantener solo el selector de fecha
-            grupo.style.display = 'none';
-        }
-    });
-    
-    // Obtener puntos totales
-    const puntosTotales = obtenerPuntosTotalesPorCiudad(edicion);
-    
-    // Obtener todos los partidos ordenados por día y hora
-    const todosLosPartidos = obtenerTodosLosPartidos(edicion);
-    
-    // Crear contenedor principal
-    const mainContainer = document.createElement("div");
-    mainContainer.className = "torneo-provincial-container";
-    
-    // 1. TABLERO DE PUNTOS
-    const tableroPuntosDiv = document.createElement("div");
-    tableroPuntosDiv.className = "tablero-puntos-provincial";
-    tableroPuntosDiv.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
-    tableroPuntosDiv.style.padding = "30px";
-    tableroPuntosDiv.style.borderRadius = "15px";
-    tableroPuntosDiv.style.boxShadow = "0 8px 25px rgba(0,0,0,0.3)";
-    tableroPuntosDiv.style.color = "white";
-    tableroPuntosDiv.style.marginBottom = "40px";
-    tableroPuntosDiv.style.textAlign = "center";
-    
-    const tituloTablero = document.createElement("h2");
-    tituloTablero.textContent = "TABLERO DE PUNTOS - TORNEO PROVINCIAL";
-    tituloTablero.style.color = "white";
-    tituloTablero.style.marginBottom = "30px";
-    tituloTablero.style.fontSize = "1.8em";
-    tituloTablero.style.textShadow = "2px 2px 4px rgba(0,0,0,0.3)";
-    
-    const ciudadesContainer = document.createElement("div");
-    ciudadesContainer.style.display = "flex";
-    ciudadesContainer.style.justifyContent = "space-around";
-    ciudadesContainer.style.flexWrap = "wrap";
-    ciudadesContainer.style.gap = "30px";
-    ciudadesContainer.style.alignItems = "center";
-    
-    // Río Grande
-    const rioGrandeDiv = document.createElement("div");
-    rioGrandeDiv.style.textAlign = "center";
-    rioGrandeDiv.style.padding = "25px";
-    rioGrandeDiv.style.background = "rgba(255,255,255,0.15)";
-    rioGrandeDiv.style.borderRadius = "12px";
-    rioGrandeDiv.style.minWidth = "200px";
-    rioGrandeDiv.style.border = "3px solid rgba(255,255,255,0.3)";
-    
-    const rioGrandeTitulo = document.createElement("div");
-    rioGrandeTitulo.textContent = "RÍO GRANDE";
-    rioGrandeTitulo.style.fontWeight = "bold";
-    rioGrandeTitulo.style.fontSize = "1.5em";
-    rioGrandeTitulo.style.marginBottom = "15px";
-    rioGrandeTitulo.style.textTransform = "uppercase";
-    
-    const rioGrandePuntos = document.createElement("div");
-    rioGrandePuntos.textContent = `${puntosTotales['Río Grande']}`;
-    rioGrandePuntos.style.fontSize = "4em";
-    rioGrandePuntos.style.fontWeight = "bold";
-    rioGrandePuntos.style.textShadow = "3px 3px 6px rgba(0,0,0,0.4)";
-    
-    const rioGrandeLabel = document.createElement("div");
-    rioGrandeLabel.textContent = "PUNTOS";
-    rioGrandeLabel.style.fontSize = "1.1em";
-    rioGrandeLabel.style.opacity = "0.9";
-    rioGrandeLabel.style.marginTop = "10px";
-    
-    rioGrandeDiv.appendChild(rioGrandeTitulo);
-    rioGrandeDiv.appendChild(rioGrandePuntos);
-    rioGrandeDiv.appendChild(rioGrandeLabel);
-    
-    // VS Central
-    const vsDiv = document.createElement("div");
-    vsDiv.style.textAlign = "center";
-    vsDiv.style.padding = "20px";
-    
-    const vsTexto = document.createElement("div");
-    vsTexto.textContent = "VS";
-    vsTexto.style.fontSize = "3em";
-    vsTexto.style.fontWeight = "bold";
-    vsTexto.style.opacity = "0.7";
-    vsTexto.style.textShadow = "2px 2px 4px rgba(0,0,0,0.3)";
-    
-    vsDiv.appendChild(vsTexto);
-    
-    // Ushuaia
-    const ushuaiaDiv = document.createElement("div");
-    ushuaiaDiv.style.textAlign = "center";
-    ushuaiaDiv.style.padding = "25px";
-    ushuaiaDiv.style.background = "rgba(255,255,255,0.15)";
-    ushuaiaDiv.style.borderRadius = "12px";
-    ushuaiaDiv.style.minWidth = "200px";
-    ushuaiaDiv.style.border = "3px solid rgba(255,255,255,0.3)";
-    
-    const ushuaiaTitulo = document.createElement("div");
-    ushuaiaTitulo.textContent = "USHUAIA";
-    ushuaiaTitulo.style.fontWeight = "bold";
-    ushuaiaTitulo.style.fontSize = "1.5em";
-    ushuaiaTitulo.style.marginBottom = "15px";
-    ushuaiaTitulo.style.textTransform = "uppercase";
-    
-    const ushuaiaPuntos = document.createElement("div");
-    ushuaiaPuntos.textContent = `${puntosTotales['Ushuaia']}`;
-    ushuaiaPuntos.style.fontSize = "4em";
-    ushuaiaPuntos.style.fontWeight = "bold";
-    ushuaiaPuntos.style.textShadow = "3px 3px 6px rgba(0,0,0,0.4)";
-    
-    const ushuaiaLabel = document.createElement("div");
-    ushuaiaLabel.textContent = "PUNTOS";
-    ushuaiaLabel.style.fontSize = "1.1em";
-    ushuaiaLabel.style.opacity = "0.9";
-    ushuaiaLabel.style.marginTop = "10px";
-    
-    ushuaiaDiv.appendChild(ushuaiaTitulo);
-    ushuaiaDiv.appendChild(ushuaiaPuntos);
-    ushuaiaDiv.appendChild(ushuaiaLabel);
-    
-    ciudadesContainer.appendChild(rioGrandeDiv);
-    ciudadesContainer.appendChild(vsDiv);
-    ciudadesContainer.appendChild(ushuaiaDiv);
-    
-    tableroPuntosDiv.appendChild(tituloTablero);
-    tableroPuntosDiv.appendChild(ciudadesContainer);
-    
-    // 2. LISTA DE TODOS LOS PARTIDOS ORDENADOS POR DÍA Y HORA
+// Función auxiliar para crear el calendario de partidos de una etapa
+function crearCalendarioPartidos(partidos, etapa) {
     const partidosContainer = document.createElement("div");
-    partidosContainer.className = "partidos-provincial-container";
+    partidosContainer.className = `partidos-etapa-${etapa.toLowerCase()}`;
     
-    const tituloPartidos = document.createElement("h3");
-    tituloPartidos.textContent = "CALENDARIO DE PARTIDOS - TORNEO PROVINCIAL";
-    tituloPartidos.style.color = "#2c3e50";
-    tituloPartidos.style.marginBottom = "25px";
-    tituloPartidos.style.textAlign = "center";
-    tituloPartidos.style.borderBottom = "3px solid #3498db";
-    tituloPartidos.style.paddingBottom = "15px";
-    tituloPartidos.style.fontSize = "1.6em";
-    
-    partidosContainer.appendChild(tituloPartidos);
-    
-    if (todosLosPartidos.length > 0) {
+    if (partidos.length > 0) {
         // Agrupar partidos por día
         const partidosPorDia = {};
-        todosLosPartidos.forEach(partido => {
+        partidos.forEach(partido => {
             const diaKey = partido.diaNum;
             if (!partidosPorDia[diaKey]) {
                 partidosPorDia[diaKey] = [];
@@ -874,18 +793,266 @@ function renderizarTorneoProvincial(edicion) {
             
             partidosContainer.appendChild(diaSection);
         });
-    } else {
-        const noPartidosMsg = document.createElement("p");
-        noPartidosMsg.textContent = "No hay partidos programados para mostrar.";
-        noPartidosMsg.style.textAlign = "center";
-        noPartidosMsg.style.color = "#7f8c8d";
-        noPartidosMsg.style.fontSize = "1.1em";
-        partidosContainer.appendChild(noPartidosMsg);
     }
+    
+    return partidosContainer;
+}
+
+// Función para renderizar la vista del Torneo Provincial
+function renderizarTorneoProvincial(edicion) {
+    const contenedor = document.getElementById('contenido-ediciones');
+    contenedor.innerHTML = '';
+    
+    // Ocultar selectores de género y categoría para el provincial
+    document.querySelectorAll('.selector-group').forEach((grupo, index) => {
+        if (index > 0) { // Mantener solo el selector de fecha
+            grupo.style.display = 'none';
+        }
+    });
+    
+    // Obtener puntos totales
+    const puntosTotales = obtenerPuntosTotalesPorCiudad(edicion);
+    
+    // Obtener partidos separados por etapa
+    const partidosPorEtapa = obtenerPartidosPorEtapa(edicion);
+    
+    // Crear contenedor principal
+    const mainContainer = document.createElement("div");
+    mainContainer.className = "torneo-provincial-container";
+    
+    // 1. TABLERO DE PUNTOS
+    const tableroPuntosDiv = document.createElement("div");
+    tableroPuntosDiv.className = "tablero-puntos-provincial";
+    tableroPuntosDiv.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
+    tableroPuntosDiv.style.padding = "30px";
+    tableroPuntosDiv.style.borderRadius = "15px";
+    tableroPuntosDiv.style.boxShadow = "0 8px 25px rgba(0,0,0,0.3)";
+    tableroPuntosDiv.style.color = "white";
+    tableroPuntosDiv.style.marginBottom = "40px";
+    tableroPuntosDiv.style.textAlign = "center";
+    
+    const tituloTablero = document.createElement("h2");
+    tituloTablero.textContent = "TABLERO DE PUNTOS - TORNEO PROVINCIAL";
+    tituloTablero.style.color = "white";
+    tituloTablero.style.marginBottom = "30px";
+    tituloTablero.style.fontSize = "1.8em";
+    tituloTablero.style.textShadow = "2px 2px 4px rgba(0,0,0,0.3)";
+    
+    const ciudadesContainer = document.createElement("div");
+    ciudadesContainer.style.display = "flex";
+    ciudadesContainer.style.justifyContent = "space-around";
+    ciudadesContainer.style.flexWrap = "wrap";
+    ciudadesContainer.style.gap = "30px";
+    ciudadesContainer.style.alignItems = "center";
+    
+    // Río Grande
+    const rioGrandeDiv = document.createElement("div");
+    rioGrandeDiv.style.textAlign = "center";
+    rioGrandeDiv.style.padding = "25px";
+    rioGrandeDiv.style.background = "rgba(255,255,255,0.15)";
+    rioGrandeDiv.style.borderRadius = "12px";
+    rioGrandeDiv.style.minWidth = "200px";
+    rioGrandeDiv.style.border = "3px solid rgba(255,255,255,0.3)";
+    
+    const rioGrandeTitulo = document.createElement("div");
+    rioGrandeTitulo.textContent = "RÍO GRANDE";
+    rioGrandeTitulo.style.fontWeight = "bold";
+    rioGrandeTitulo.style.fontSize = "1.5em";
+    rioGrandeTitulo.style.marginBottom = "15px";
+    rioGrandeTitulo.style.textTransform = "uppercase";
+    
+    const rioGrandePuntos = document.createElement("div");
+    rioGrandePuntos.textContent = `${puntosTotales['Río Grande']}`;
+    rioGrandePuntos.style.fontSize = "4em";
+    rioGrandePuntos.style.fontWeight = "bold";
+    rioGrandePuntos.style.textShadow = "3px 3px 6px rgba(0,0,0,0.4)";
+    
+    const rioGrandeLabel = document.createElement("div");
+    rioGrandeLabel.textContent = "PUNTOS";
+    rioGrandeLabel.style.fontSize = "1.1em";
+    rioGrandeLabel.style.opacity = "0.9";
+    rioGrandeLabel.style.marginTop = "10px";
+    
+    rioGrandeDiv.appendChild(rioGrandeTitulo);
+    rioGrandeDiv.appendChild(rioGrandePuntos);
+    rioGrandeDiv.appendChild(rioGrandeLabel);
+    
+    // VS Central
+    const vsDiv = document.createElement("div");
+    vsDiv.style.textAlign = "center";
+    vsDiv.style.padding = "20px";
+    
+    const vsTexto = document.createElement("div");
+    vsTexto.textContent = "VS";
+    vsTexto.style.fontSize = "3em";
+    vsTexto.style.fontWeight = "bold";
+    vsTexto.style.opacity = "0.7";
+    vsTexto.style.textShadow = "2px 2px 4px rgba(0,0,0,0.3)";
+    
+    vsDiv.appendChild(vsTexto);
+    
+    // Ushuaia
+    const ushuaiaDiv = document.createElement("div");
+    ushuaiaDiv.style.textAlign = "center";
+    ushuaiaDiv.style.padding = "25px";
+    ushuaiaDiv.style.background = "rgba(255,255,255,0.15)";
+    ushuaiaDiv.style.borderRadius = "12px";
+    ushuaiaDiv.style.minWidth = "200px";
+    ushuaiaDiv.style.border = "3px solid rgba(255,255,255,0.3)";
+    
+    const ushuaiaTitulo = document.createElement("div");
+    ushuaiaTitulo.textContent = "USHUAIA";
+    ushuaiaTitulo.style.fontWeight = "bold";
+    ushuaiaTitulo.style.fontSize = "1.5em";
+    ushuaiaTitulo.style.marginBottom = "15px";
+    ushuaiaTitulo.style.textTransform = "uppercase";
+    
+    const ushuaiaPuntos = document.createElement("div");
+    ushuaiaPuntos.textContent = `${puntosTotales['Ushuaia']}`;
+    ushuaiaPuntos.style.fontSize = "4em";
+    ushuaiaPuntos.style.fontWeight = "bold";
+    ushuaiaPuntos.style.textShadow = "3px 3px 6px rgba(0,0,0,0.4)";
+    
+    const ushuaiaLabel = document.createElement("div");
+    ushuaiaLabel.textContent = "PUNTOS";
+    ushuaiaLabel.style.fontSize = "1.1em";
+    ushuaiaLabel.style.opacity = "0.9";
+    ushuaiaLabel.style.marginTop = "10px";
+    
+    ushuaiaDiv.appendChild(ushuaiaTitulo);
+    ushuaiaDiv.appendChild(ushuaiaPuntos);
+    ushuaiaDiv.appendChild(ushuaiaLabel);
+    
+    ciudadesContainer.appendChild(rioGrandeDiv);
+    ciudadesContainer.appendChild(vsDiv);
+    ciudadesContainer.appendChild(ushuaiaDiv);
+    
+    tableroPuntosDiv.appendChild(tituloTablero);
+    tableroPuntosDiv.appendChild(ciudadesContainer);
+    
+    // 2. SELECTOR DE ETAPAS
+    const selectorEtapasDiv = document.createElement("div");
+    selectorEtapasDiv.className = "selector-etapas";
+    selectorEtapasDiv.style.marginBottom = "30px";
+    selectorEtapasDiv.style.textAlign = "center";
+    
+    const tituloEtapas = document.createElement("h3");
+    tituloEtapas.textContent = "SELECCIONAR ETAPA";
+    tituloEtapas.style.color = "#2c3e50";
+    tituloEtapas.style.marginBottom = "20px";
+    tituloEtapas.style.fontSize = "1.4em";
+    
+    const botonesEtapas = document.createElement("div");
+    botonesEtapas.className = "button-bar";
+    botonesEtapas.style.display = "flex";
+    botonesEtapas.style.justifyContent = "center";
+    botonesEtapas.style.gap = "20px";
+    botonesEtapas.style.flexWrap = "wrap";
+    
+    const botonRG = document.createElement("button");
+    botonRG.className = "selector-button active";
+    botonRG.textContent = "🏠 ETAPA RÍO GRANDE";
+    botonRG.style.padding = "12px 24px";
+    botonRG.style.fontSize = "1.1em";
+    botonRG.style.fontWeight = "bold";
+    botonRG.onclick = function() {
+        // Activar botón RG
+        botonRG.classList.add('active');
+        botonUSH.classList.remove('active');
+        // Mostrar etapa RG
+        document.getElementById('etapa-rg').style.display = 'block';
+        document.getElementById('etapa-ush').style.display = 'none';
+    };
+    
+    const botonUSH = document.createElement("button");
+    botonUSH.className = "selector-button";
+    botonUSH.textContent = "⛰️ ETAPA USHUAIA";
+    botonUSH.style.padding = "12px 24px";
+    botonUSH.style.fontSize = "1.1em";
+    botonUSH.style.fontWeight = "bold";
+    botonUSH.onclick = function() {
+        // Activar botón USH
+        botonUSH.classList.add('active');
+        botonRG.classList.remove('active');
+        // Mostrar etapa USH
+        document.getElementById('etapa-rg').style.display = 'none';
+        document.getElementById('etapa-ush').style.display = 'block';
+    };
+    
+    botonesEtapas.appendChild(botonRG);
+    botonesEtapas.appendChild(botonUSH);
+    
+    selectorEtapasDiv.appendChild(tituloEtapas);
+    selectorEtapasDiv.appendChild(botonesEtapas);
+    
+    // 3. CONTENEDOR DE ETAPAS
+    const etapasContainer = document.createElement("div");
+    etapasContainer.className = "etapas-container";
+    
+    // Etapa Río Grande
+    const etapaRGDiv = document.createElement("div");
+    etapaRGDiv.id = "etapa-rg";
+    etapaRGDiv.className = "etapa-container";
+    
+    const tituloEtapaRG = document.createElement("h3");
+    tituloEtapaRG.innerHTML = "🏠 ETAPA RÍO GRANDE";
+    tituloEtapaRG.style.color = "#3498db";
+    tituloEtapaRG.style.marginBottom = "25px";
+    tituloEtapaRG.style.textAlign = "center";
+    tituloEtapaRG.style.borderBottom = "3px solid #3498db";
+    tituloEtapaRG.style.paddingBottom = "15px";
+    tituloEtapaRG.style.fontSize = "1.6em";
+    
+    etapaRGDiv.appendChild(tituloEtapaRG);
+    
+    // Renderizar partidos de etapa RG
+    if (partidosPorEtapa.RG.length > 0) {
+        etapaRGDiv.appendChild(crearCalendarioPartidos(partidosPorEtapa.RG, "RG"));
+    } else {
+        const noPartidosRG = document.createElement("p");
+        noPartidosRG.textContent = "No hay partidos programados para la Etapa Río Grande.";
+        noPartidosRG.style.textAlign = "center";
+        noPartidosRG.style.color = "#7f8c8d";
+        noPartidosRG.style.fontSize = "1.1em";
+        etapaRGDiv.appendChild(noPartidosRG);
+    }
+    
+    // Etapa Ushuaia
+    const etapaUSHDiv = document.createElement("div");
+    etapaUSHDiv.id = "etapa-ush";
+    etapaUSHDiv.className = "etapa-container";
+    etapaUSHDiv.style.display = "none"; // Ocultar por defecto
+    
+    const tituloEtapaUSH = document.createElement("h3");
+    tituloEtapaUSH.innerHTML = "⛰️ ETAPA USHUAIA";
+    tituloEtapaUSH.style.color = "#e74c3c";
+    tituloEtapaUSH.style.marginBottom = "25px";
+    tituloEtapaUSH.style.textAlign = "center";
+    tituloEtapaUSH.style.borderBottom = "3px solid #e74c3c";
+    tituloEtapaUSH.style.paddingBottom = "15px";
+    tituloEtapaUSH.style.fontSize = "1.6em";
+    
+    etapaUSHDiv.appendChild(tituloEtapaUSH);
+    
+    // Renderizar partidos de etapa USH
+    if (partidosPorEtapa.USH.length > 0) {
+        etapaUSHDiv.appendChild(crearCalendarioPartidos(partidosPorEtapa.USH, "USH"));
+    } else {
+        const noPartidosUSH = document.createElement("p");
+        noPartidosUSH.textContent = "No hay partidos programados para la Etapa Ushuaia.";
+        noPartidosUSH.style.textAlign = "center";
+        noPartidosUSH.style.color = "#7f8c8d";
+        noPartidosUSH.style.fontSize = "1.1em";
+        etapaUSHDiv.appendChild(noPartidosUSH);
+    }
+    
+    etapasContainer.appendChild(etapaRGDiv);
+    etapasContainer.appendChild(etapaUSHDiv);
     
     // Agregar todo al contenedor principal
     mainContainer.appendChild(tableroPuntosDiv);
-    mainContainer.appendChild(partidosContainer);
+    mainContainer.appendChild(selectorEtapasDiv);
+    mainContainer.appendChild(etapasContainer);
     contenedor.appendChild(mainContainer);
 }
 
