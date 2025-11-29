@@ -130,17 +130,17 @@
           "sumaPuntos": "equipo1"
         },
         {
-          "fecha": "Sabado 20:30 hs Cancha 1 - Ushuaia",
+          "fecha": "Domingo 16:30 hs Cancha 3 - Ushuaia",
           "equipo1": "Braian Lizarraga/Claudio Escobar",
-          "equipo2": "",
+          "equipo2": "Brigando/Bleuer",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Sabado 22:00 hs Cancha 2 - Ushuaia",
+          "fecha": "Domingo 13:30 hs Cancha 2 - Ushuaia",
           "equipo1": "Federico Bossio/Santiago David",
-          "equipo2": "",
+          "equipo2": "Romero/Pereyra",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
@@ -148,10 +148,10 @@
         {
           "fecha": "Domingo 15:30 hs Cancha 2 - Ushuaia",
           "equipo1": "Emmanuel Bravo/Andres Agnes",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "equipo2": "Sosa/Wieder",
+          "resultado": "2-0",
+          "games": "7-5, 6-3",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Sabado 13:30 hs Cancha 2 - Ushuaia",

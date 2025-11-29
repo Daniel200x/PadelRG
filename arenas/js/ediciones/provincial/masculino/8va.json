@@ -130,36 +130,36 @@
           "sumaPuntos": "equipo2"
         },
         {
-          "fecha": "Viernes 19:30 hs Cancha 2 - Ushuaia",
+          "fecha": "Sabado 18:00 hs Cancha 4 - Ushuaia",
           "equipo1": "Cristian Ortiz/Javier Paniagua",
-          "equipo2": "",
+          "equipo2": "Cimaldoni/Coronel",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Viernes 21:00 hs Cancha 2 - Ushuaia",
+          "fecha": "Domingo 15:00 hs Cancha 2 - Ushuaia",
           "equipo1": "Claudio Velasquez/Victor Velasquez",
-          "equipo2": "",
+          "equipo2": "Cabrera/Gonzalez",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
-          "fecha": "Sabado 17:30 hs Cancha 2 - Ushuaia",
+          "fecha": "Domingo 15:00 hs Cancha 4 - Ushuaia",
           "equipo1": "Franco Marquez/Ricardo Garcia",
-          "equipo2": "",
+          "equipo2": "Pavon/Carrizo",
           "resultado": "",
           "games": "",
           "sumaPuntos": "equipo"
         },
         {
           "fecha": "Domingo 14:00 hs Cancha 2 - Ushuaia",
-          "equipo1": "Leonardo Pugnale/Ignacio Perez",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "equipo1": "Federico Ruiz/Ignacio Perez",
+          "equipo2": "Noval/Gonzalez",
+          "resultado": "1-2",
+          "games": "4-6, 6-2, 6-7",
+          "sumaPuntos": "equipo2"
         }
       ]
     }
