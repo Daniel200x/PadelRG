@@ -128,6 +128,38 @@
           "resultado": "1-2",
           "games": "2-6, 6-3, 3-6",
           "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 16:30 hs Cancha 2 - Ushuaia",
+          "equipo1": "Fernanda Polizzi/Lucia Marcial",
+          "equipo2": "Alvarez/Lynn",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 13:30 hs Cancha 3 - Ushuaia",
+          "equipo1": "Florencia Bianchi/Antonela Domeneh",
+          "equipo2": "Gonzalez/Ruiz",
+          "resultado": "1-2",
+          "games": "6-7, 6-4, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 12:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "K. Martinez/Aranda",
+          "resultado": "1-2",
+          "games": "5-7, 6-3, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 21:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Giuliana Gimenez/Sara Cortes",
+          "equipo2": "Barone/Erlan",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
         }
       ]
     }

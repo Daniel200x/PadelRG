@@ -128,6 +128,38 @@
           "resultado": "0-2",
           "games": "1-6, 2-6",
           "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Viernes 19:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Sabado 10:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Lorena Saldivia/Antonela Tarchini",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Sabado 10:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Sabado 19:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
         }
       ]
     }

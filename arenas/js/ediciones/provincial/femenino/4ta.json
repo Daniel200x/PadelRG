@@ -128,6 +128,38 @@
           "resultado": "0-2",
           "games": "4-6, 0-6",
           "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 16:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Domingo 12:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Domingo 17:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
+        },
+        {
+          "fecha": "Domingo 18:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Perla Acevedo/Alejandra Romero",
+          "equipo2": "",
+          "resultado": "",
+          "games": "",
+          "sumaPuntos": "equipo"
         }
       ]
     }
