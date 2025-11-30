@@ -6,93 +6,56 @@
       "equipos": [
         {
           "nombre": "Luciana Romano/Rosalia Cruz",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Mariana Pratto/Luciana Rodriguez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Rocio Terrado/Romina Castillo",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
+          
         },
         {
           "nombre": "Daniela Martinez/Alejandra Soto",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
+          "nombre": "Fernanda Martinez/Rosalia Cruz",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Mariana Pratto/Luciana Romano",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Antonela Zampini/Romina Castillo",
+          "ciudad": "Río Grande"
+        }
+        
+        
+        
+        
+        
+        ,
+        {
           "nombre": "Caffaro/Politi",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "Vera/Saenz",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Moyano/Caicheo",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Barrot/Pelegrina",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
 
       ],
@@ -133,21 +96,21 @@
           "fecha": "Sabado 19:30 hs Cancha 2 - Ushuaia",
           "equipo1": "Daniela Martinez/Alejandra Soto",
           "equipo2": "Barrot/Pelegrina",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "1-2",
+          "games": "6-0, 1-6, 3-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 18:00 hs Cancha 1 - Ushuaia",
           "equipo1": "Fernanda Martinez/Rosalia Cruz",
           "equipo2": "Caffaro/Politi",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "3-6, 1-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 12:30 hs Cancha 2 - Ushuaia",
-          "equipo1": "Mariana Pratto/Luciana Rodriguez",
+          "equipo1": "Mariana Pratto/Luciana Romano",
           "equipo2": "Vera/Saenz",
           "resultado": "2-0",
           "games": "6-2, 6-3",
@@ -156,10 +119,10 @@
         {
           "fecha": "Sabado 18:00 hs Cancha 2 - Ushuaia",
           "equipo1": "Antonela Zampini/Romina Castillo",
-          "equipo2": "",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "equipo2": "Moyano/Caicheo",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
         }
       ]
     }

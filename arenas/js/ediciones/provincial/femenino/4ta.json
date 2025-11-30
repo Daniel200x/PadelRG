@@ -6,94 +6,61 @@
       "equipos": [
         {
           "nombre": "Mariana Medina/Romina Torres",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Karina Chicaguala/Lucrecia Fruncieri",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Claudia Andrade/Noelia Velasquez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Perla Acevedo/Alejandra Romero",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
+          "nombre": "Perla Acevedo/Ana Velazquez",
+          "ciudad": "Río Grande"
+        }
+        
+        ,
+        {
           "nombre": "Acosta/Villalba",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "Girardi/Gavilan",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Villarreal/Tissera",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Maestro/Vargas",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
+        ,
+        {
+          "nombre": "Tissera/Villalba",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Acosta/Molinolo",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Girardi/Martini",
+          "ciudad": "Ushuaia"
+        }
+
+        
 
       ],
       "partidos": [
@@ -133,9 +100,9 @@
           "fecha": "Sabado 21:00 hs Cancha 1 - Ushuaia",
           "equipo1": "Mariana Medina/Romina Torres",
           "equipo2": "Tissera/Villalba",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "2-0",
+          "games": "6-3, 6-0",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Domingo 13:30 hs Cancha 1 - Ushuaia",
@@ -155,7 +122,7 @@
         },
         {
           "fecha": "Domingo 16:30 hs Cancha 1 - Ushuaia",
-          "equipo1": "Perla Acevedo/Alejandra Romero",
+          "equipo1": "Perla Acevedo/Ana Velazquez",
           "equipo2": "Girardi/Martini",
           "resultado": "",
           "games": "",

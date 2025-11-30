@@ -6,93 +6,37 @@
       "equipos": [
         {
           "nombre": "Jimena Ramadori/Violeta Lopez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Lorena Saldivia/Antonela Tarchini",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Dana Martinez/Oriana Martinez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Agustina Quezada/Vanesa Iglesias",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Rojas/Mella",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "Visñuk/Molina",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Lirola/Lanaro",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Agüero/Burgo",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
 
       ],
@@ -133,17 +77,17 @@
           "fecha": "Sabado 19:30 hs Cancha 4 - Ushuaia",
           "equipo1": "Agustina Quezada/Vanesa Iglesias",
           "equipo2": "Agüero/Burgo",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "6-7, 4-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 16:30 hs Cancha 4 - Ushuaia",
           "equipo1": "Lorena Saldivia/Antonela Tarchini",
           "equipo2": "Visñuk/Molina",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "1-2",
+          "games": "6-2, 0-6, 2-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 13:30 hs Cancha 4 - Ushuaia",

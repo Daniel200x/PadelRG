@@ -6,93 +6,46 @@
       "equipos": [
         {
           "nombre": "Fernanda Polizzi/Lucia Marcial",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Florencia Bianchi/Ines Sosa",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Giuliana Gimenez/Sara Cortes",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Belen Cordoba/Pamela Rusconi",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
-        },
+          "ciudad": "Río Grande"
+        }
+        ,
+        {
+          "nombre": "Florencia Bianchi/Antonela Domeneh",
+          "ciudad": "Río Grande"
+        }
+        
+        
+        
+        ,
         {
           "nombre": "Alvarez/Lynn",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "K. Martinez/Aranda",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Gonzalez/Ruiz",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Barone/Erlan",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
 
       ],
@@ -157,9 +110,9 @@
           "fecha": "Sabado 21:00 hs Cancha 2 - Ushuaia",
           "equipo1": "Giuliana Gimenez/Sara Cortes",
           "equipo2": "Barone/Erlan",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "4-6, 3-6",
+          "sumaPuntos": "equipo2"
         }
       ]
     }

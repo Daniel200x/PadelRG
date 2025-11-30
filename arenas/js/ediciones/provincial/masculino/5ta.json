@@ -6,94 +6,47 @@
       "equipos": [
         {
           "nombre": "Emmanuel Bravo/Andres Agnes",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Martin Pacheco/Cristian Perez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Federico Bossio/Santiago David",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Braian Lizarraga/Claudio Escobar",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Rojas/Coronel",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "Romero/Menna",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Brigando/Bleuer",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Sosa/Gonzalez",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Sosa/Wieder",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Romero/Pereyra",
+          "ciudad": "Ushuaia"
         }
+        
 
       ],
        "partidos": [

@@ -6,94 +6,52 @@
       "equipos": [
         {
           "nombre": "Cristian Chalier/Juan Gimenez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Lucas Vera/Benjamin Martinez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Ramiro Luna/Nicolas Gonzalez",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Gustavo Santana/Ramiro Bordon",
-          "ciudad": "Río Grande",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Francisco Bordon/Ramiro Bordon",
+          "ciudad": "Río Grande"
         },
         {
           "nombre": "Tapia/Roldan",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         },
         {
           "nombre": "Carracedo/Crespin",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Rojas/Abboud",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
         }
         ,
         {
           "nombre": "Aperio/Fiori",
-          "ciudad": "Ushuaia",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0,
-          "Puntos": 0
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Maxi Aperio/Roldan",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Lamas/Tapia",
+          "ciudad": "Ushuaia"
         }
+
+        
 
       ],
        "partidos": [
@@ -133,9 +91,9 @@
           "fecha": "Sabado 21:00 hs Cancha 4 - Ushuaia",
           "equipo1": "Cristian Chalier/Juan Gimenez",
           "equipo2": "Lamas/Tapia",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "2-0",
+          "games": "6-4, 7-6",
+          "sumaPuntos": "equipo1"
         },
         {
           "fecha": "Sabado 15:00 hs Cancha 3 - Ushuaia",
@@ -157,9 +115,9 @@
           "fecha": "Sabado 19:30 hs Cancha 3 - Ushuaia",
           "equipo1": "Ramiro Luna/Nicolas Gonzalez",
           "equipo2": "Carracedo/Crespin",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "1-2",
+          "games": "4-6, 6-4, 4-6",
+          "sumaPuntos": "equipo2"
         }
       ]
     }
