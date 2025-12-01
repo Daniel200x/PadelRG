@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pádel Break - Tu tienda de pádel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pádel Break</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Tu juego, nuestro equipamiento</h2>
+            <p>Las mejores palas, bolas y accesorios para dominar la pista</p>
+            <button class="cta-button" onclick="scrollToProducts()">Ver Productos</button>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="products">
+        <h2>Nuestros Productos</h2>
+        <div class="products-grid" id="products-grid">
+            <!-- Los productos se cargan dinámicamente con JavaScript -->
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about">
+        <div class="about-content">
+            <h2>¿Por qué elegir Pádel Break?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🔄 30 días de garantía</h3>
+                    <p>En todas nuestras palas</p>
+                </div>
+                <div class="feature">
+                    <h3>🚚 Envío gratis</h3>
+                    <p>En compras mayores a $50.000</p>
+                </div>
+                <div class="feature">
+                    <h3>🎯 Asesoramiento experto</h3>
+                    <p>Te ayudamos a elegir tu pala ideal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p>📧 info@padelbreak.com</p>
+                <p>📞 +54 11 1234-5678</p>
+                <p>📍 Buenos Aires, Argentina</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pádel Break. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
