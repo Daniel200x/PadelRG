@@ -95,17 +95,17 @@
           "fecha": "Domingo 16:30 hs Cancha 1 - Ushuaia",
           "equipo1": "Tiago Andrade/Tomas Echeverria",
           "equipo2": "Zalazar/Zalazar",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-1",
+          "games": "0-1",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Domingo 15:00 hs Cancha 1 - Ushuaia",
           "equipo1": "Jose Villarreal/Gabriel Muller",
           "equipo2": "Sanchez/Baez",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "3-6, 2-6",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 19:30 hs Cancha 1 - Ushuaia",

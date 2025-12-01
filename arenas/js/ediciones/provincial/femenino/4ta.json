@@ -108,9 +108,9 @@
           "fecha": "Domingo 13:30 hs Cancha 1 - Ushuaia",
           "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
           "equipo2": "Acosta/Molinolo",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "5-7, 5-7",
+          "sumaPuntos": "equipo2"
         },
         {
           "fecha": "Sabado 15:00 hs Cancha 1 - Ushuaia",
@@ -124,9 +124,9 @@
           "fecha": "Domingo 16:30 hs Cancha 1 - Ushuaia",
           "equipo1": "Perla Acevedo/Ana Velazquez",
           "equipo2": "Girardi/Martini",
-          "resultado": "",
-          "games": "",
-          "sumaPuntos": "equipo"
+          "resultado": "0-2",
+          "games": "0-6, 2-6",
+          "sumaPuntos": "equipo2"
         }
       ]
     }
