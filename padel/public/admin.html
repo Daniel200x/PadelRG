@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Pádel Fuego</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .product-form { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        input, textarea { display: block; margin: 10px 0; width: 300px; }
+    </style>
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+    
+    <div class="product-form">
+        <h2>Agregar Nuevo Producto</h2>
+        <input id="productName" placeholder="Nombre del producto">
+        <textarea id="productDesc" placeholder="Descripción"></textarea>
+        <input id="productPrice" type="number" placeholder="Precio">
+        <input id="productStock" type="number" placeholder="Stock">
+        <input id="productImage" placeholder="URL de imagen">
+        <button onclick="addProduct()">Agregar Producto</button>
+    </div>
+    
+    <div id="productsList"></div>
+    
+    <script src="firebase-config.js"></script>
+    <script>
+        // Cargar y mostrar productos
+        async function loadProductsForAdmin() {
+            const snapshot = await db.collection('products').get();
+            const list = document.getElementById('productsList');
+            list.innerHTML = '<h2>Productos Actuales</h2>';
+            
+            snapshot.forEach(doc => {
+                const product = doc.data();
+                list.innerHTML += `
+                    <div style="border:1px solid #ddd; padding:10px; margin:5px;">
+                        <strong>${product.name}</strong> - $${product.price}
+                        <br>Stock: ${product.stock}
+                        <button onclick="updateStock('${doc.id}')">Actualizar Stock</button>
+                    </div>
+                `;
+            });
+        }
+        
+        // Agregar nuevo producto
+        async function addProduct() {
+            const product = {
+                name: document.getElementById('productName').value,
+                description: document.getElementById('productDesc').value,
+                price: parseFloat(document.getElementById('productPrice').value),
+                stock: parseInt(document.getElementById('productStock').value),
+                image: document.getElementById('productImage').value,
+                isActive: true,
+                createdAt: new Date(),
+                category: 'palas',
+                brand: 'Bullpadel',
+                rating: 4.0
+            };
+            
+            await db.collection('products').add(product);
+            alert('Producto agregado!');
+            loadProductsForAdmin();
+        }
+        
+        // Actualizar stock
+        async function updateStock(productId) {
+            const newStock = prompt('Nuevo stock:');
+            if (newStock) {
+                await db.collection('products').doc(productId).update({
+                    stock: parseInt(newStock)
+                });
+                loadProductsForAdmin();
+            }
+        }
+        
+        // Inicializar
+        loadProductsForAdmin();
+    </script>
+</body>
+</html>
