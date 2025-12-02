@@ -1,8 +1,7 @@
-// firebase-config.js
-// Configuración de Firebase para Pádel Fuego
-// VERSIÓN CORREGIDA - Segura y confiable
+// firebase-config.js - VERSIÓN CORREGIDA Y SIMPLIFICADA
+console.log("🔄 Configuración de Firebase - Pádel Fuego");
 
-// Tu configuración de Firebase
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyB8hWvmisya70XCG59ShP1HxwXzpS6c8m8",
   authDomain: "padelfuego.firebaseapp.com",
@@ -13,77 +12,71 @@ const firebaseConfig = {
   measurementId: "G-BGH0L0C6SV"
 };
 
-// Inicializar Firebase de forma segura
-function initializeFirebase() {
+// Función principal para inicializar Firebase
+function initFirebaseApp() {
+    console.log('🔥 Intentando inicializar Firebase...');
+    
     try {
-        // Verificar si firebase está disponible
+        // Verificar si Firebase SDK está cargado
         if (typeof firebase === 'undefined') {
-            console.warn("⚠️ Firebase SDK no está cargado aún");
+            console.warn('⚠️ Firebase SDK no disponible aún');
             return null;
         }
         
-        // Inicializar la app solo una vez
+        console.log('✅ Firebase SDK detectado');
+        
+        // Inicializar la app solo si no está inicializada
         let app;
         if (!firebase.apps.length) {
             app = firebase.initializeApp(firebaseConfig);
-            console.log("✅ Firebase App inicializada");
+            console.log('✅ Firebase App inicializada por primera vez');
         } else {
             app = firebase.apps[0];
-            console.log("✅ Firebase App ya estaba inicializada");
+            console.log('✅ Firebase App ya estaba inicializada');
         }
         
-        // Obtener Firestore
-        const db = firebase.firestore(app);
-        console.log("✅ Firestore obtenido");
+        // Configurar Firestore
+        window.db = firebase.firestore(app);
         
-        return db;
+        console.log('✅ Firebase configurado exitosamente');
+        
+        // Disparar evento para notificar a otras partes de la app
+        document.dispatchEvent(new CustomEvent('firebaseReady'));
+        
+        return window.db;
         
     } catch (error) {
-        console.error("❌ Error en initializeFirebase:", error);
+        console.error('❌ Error crítico inicializando Firebase:', error);
         return null;
     }
 }
 
-// Función principal que se ejecuta cuando la página carga
+// Inicializar automáticamente cuando sea posible
 function setupFirebase() {
-    console.log("🔄 Configurando Firebase...");
-    
-    // Esperar a que firebase se cargue
-    const checkFirebase = setInterval(() => {
-        if (typeof firebase !== 'undefined') {
-            clearInterval(checkFirebase);
-            
-            // Inicializar
-            const db = initializeFirebase();
-            
-            if (db) {
-                // Asignar a variable global
-                window.db = db;
-                console.log("✅ Firebase configurado exitosamente");
-                
-                // Disparar evento para notificar que Firebase está listo
-                const event = new CustomEvent('firebaseReady', { 
-                    detail: { db: db } 
-                });
-                document.dispatchEvent(event);
-                
-            } else {
-                console.error("❌ No se pudo inicializar Firebase");
-                window.db = null;
+    // Si Firebase ya está cargado, inicializar inmediatamente
+    if (typeof firebase !== 'undefined') {
+        console.log('🚀 Firebase SDK ya cargado, inicializando...');
+        setTimeout(initFirebaseApp, 100);
+    } else {
+        // Si no está cargado, esperar
+        console.log('⏳ Esperando carga de Firebase SDK...');
+        
+        // Crear un observador para detectar cuando se cargue Firebase
+        const checkInterval = setInterval(() => {
+            if (typeof firebase !== 'undefined') {
+                clearInterval(checkInterval);
+                initFirebaseApp();
             }
-        } else {
-            console.log("⏳ Esperando carga de Firebase SDK...");
-        }
-    }, 100); // Verificar cada 100ms
-    
-    // Timeout después de 10 segundos
-    setTimeout(() => {
-        clearInterval(checkFirebase);
-        if (!window.db) {
-            console.warn("⚠️ Timeout: Firebase no se cargó en 10 segundos");
-            window.db = null;
-        }
-    }, 10000);
+        }, 100);
+        
+        // Timeout de seguridad
+        setTimeout(() => {
+            clearInterval(checkInterval);
+            if (!window.db) {
+                console.warn('⚠️ Timeout: Firebase no se cargó en 5 segundos');
+            }
+        }, 5000);
+    }
 }
 
 // Iniciar configuración cuando el DOM esté listo
@@ -93,11 +86,11 @@ if (document.readyState === 'loading') {
     setupFirebase();
 }
 
-// También hacer la configuración disponible globalmente
+// Hacer funciones disponibles globalmente
+window.initFirebase = initFirebaseApp;
 window.firebaseConfig = firebaseConfig;
-window.initializeFirebase = initializeFirebase;
 
 // Exportar para módulos (si se usa)
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { firebaseConfig, initializeFirebase };
+    module.exports = { firebaseConfig, initFirebaseApp };
 }

@@ -36,19 +36,49 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
-// Función para manejar errores de imágenes
+// Función mejorada para manejar errores de imágenes
 function handleImageError(imgElement, productName) {
-    console.warn(`Imagen no encontrada: ${imgElement.src}`);
+    console.log(`🖼️ Imagen falló: ${imgElement.src}, usando placeholder...`);
     
-    // Usar placeholder de Internet en lugar de imagen local
-    imgElement.src = 'https://via.placeholder.com/300x200/2c5530/FFFFFF?text=' + encodeURIComponent(productName.substring(0, 20));
-    imgElement.alt = productName;
-    imgElement.onerror = null; // Prevenir loops
+    // Crear un placeholder más atractivo
+    const colors = ['2c5530', '4a7c59', 'ff6b35', '2196F3'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
     
-    // Si la imagen por defecto también falla
+    // Usar placeholder más confiable
+    imgElement.src = `https://via.placeholder.com/300x200/${randomColor}/FFFFFF?text=${encodeURIComponent(productName.substring(0, 20))}`;
+    imgElement.alt = productName + ' - Imagen no disponible';
+    
+    // Prevenir bucles infinitos de errores
+    imgElement.onerror = null;
+    
+    // Si el placeholder también falla, mostrar div de respaldo
     imgElement.onerror = function() {
+        console.log('⚠️ Placeholder también falló, usando div de respaldo');
         this.style.display = 'none';
-        this.parentElement.innerHTML = '<div style="width:100%;height:200px;background:#2c5530;color:white;display:flex;align-items:center;justify-content:center;">' + productName.substring(0, 30) + '</div>';
+        
+        // Crear un contenedor de respaldo
+        const backupDiv = document.createElement('div');
+        backupDiv.style.cssText = `
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #${randomColor}, #${randomColor}99);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+        `;
+        
+        backupDiv.innerHTML = `
+            <span style="font-size: 2rem;">🏸</span>
+            <h4 style="margin: 10px 0; font-size: 1rem;">${productName.substring(0, 25)}</h4>
+            <small style="opacity: 0.8;">Imagen no disponible</small>
+        `;
+        
+        this.parentElement.appendChild(backupDiv);
     };
 }
 
@@ -75,15 +105,12 @@ function getStockMessage(stock) {
     return '✗ Sin stock';
 }
 
-// Función para mostrar productos - CORREGIDA PARA IMÁGENES
+// Función para mostrar productos - CORREGIDA
 function displayProduct(product) {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
     
-    // CORRECCIÓN CRÍTICA: Obtener la imagen correcta de Firestore
-    // Firestore usa 'image', pero también verificamos 'imageUrl' por compatibilidad
-    const imageFromFirestore = product.image || product.imageUrl;
-    
+    // Datos seguros del producto
     const safeProduct = {
         id: product.id || 'unknown',
         name: product.name || 'Producto sin nombre',
@@ -92,41 +119,41 @@ function displayProduct(product) {
         price: Number(product.price) || 0,
         stock: Number(product.stock) || 0,
         rating: Number(product.rating) || 0,
-        // USAR LA IMAGEN DE FIRESTORE, NO LA POR DEFECTO
-        imageUrl: imageFromFirestore || 'https://via.placeholder.com/300x200/2c5530/FFFFFF?text=' + encodeURIComponent((product.name || 'Producto').substring(0, 20))
+        imageUrl: product.image || product.imageUrl || `https://via.placeholder.com/300x200/2c5530/FFFFFF?text=${encodeURIComponent((product.name || 'Producto').substring(0, 20))}`
     };
-    
-    console.log(`🖼️ Mostrando producto: ${safeProduct.name}`);
-    console.log(`   URL de imagen: ${safeProduct.imageUrl}`);
     
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
     productCard.innerHTML = `
         <div class="product-image" style="cursor: pointer;" onclick="viewProductDetails('${safeProduct.id}')">
-        <img src="${safeProduct.imageUrl}" 
-             alt="${safeProduct.name}"
-             loading="lazy"
-             onerror="handleImageError(this, '${safeProduct.name.replace(/'/g, "\\'")}')">
-    </div>
-    <h3>${safeProduct.name}</h3>
-    <p class="brand">${safeProduct.brand}</p>
-    <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
-    <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
-    <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
-        ${getStockMessage(safeProduct.stock)}
-    </div>
-    <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
-    <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
-            ${safeProduct.stock === 0 ? 'disabled' : ''}>
-        ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
-    </button><button class="view-details" onclick="viewProductDetails('${safeProduct.id}')" style="background: #4a7c59; margin-top: 10px;">
-    👁️ Ver Detalles
-</button>
-`;
+            <img src="${safeProduct.imageUrl}" 
+                 alt="${safeProduct.name}"
+                 loading="lazy"
+                 onerror="handleImageError(this, '${safeProduct.name.replace(/'/g, "\\'")}')">
+        </div>
+        <h3>${safeProduct.name}</h3>
+        <p class="brand">${safeProduct.brand}</p>
+        <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
+        <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
+        <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
+            ${getStockMessage(safeProduct.stock)}
+        </div>
+        <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
+        <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
+                ${safeProduct.stock === 0 ? 'disabled' : ''}>
+            ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
+        </button>
+        
+    `;
     
     productsGrid.appendChild(productCard);
 }
-// Función para ver detalles del producto
+//esto va despues del boton de arriba
+// <button class="view-details" onclick="viewProductDetails('${safeProduct.id}')">
+         //   👁️ Ver Detalles
+       // </button>
+        
+        //Función para ver detalles del producto
 function viewProductDetails(productId) {
     window.location.href = `product-details.html?id=${productId}`;
 }
