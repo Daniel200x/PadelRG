@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargar Productos - Pádel Fuego</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5530;
+            text-align: center;
+        }
+        .producto {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .producto img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            float: left;
+            margin-right: 15px;
+        }
+        .botones {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        button {
+            padding: 10px 20px;
+            background: #2c5530;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1e3a23;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+            display: none;
+        }
+        .progress {
+            height: 100%;
+            background: #2c5530;
+            width: 0%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Cargar Productos a Firestore</h1>
+        
+        <div id="lista-productos">
+            <!-- Los productos se mostrarán aquí -->
+        </div>
+        
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="botones">
+            <button onclick="cargarProductos()" id="btn-cargar">📤 Cargar Productos</button>
+            <button onclick="verificarProductos()" id="btn-verificar">🔍 Verificar Base de Datos</button>
+            <button onclick="limpiarProductos()" id="btn-limpiar" style="background: #dc3545;">🗑️ Limpiar Todos</button>
+        </div>
+        
+        <div id="resultado"></div>
+        
+        <div style="margin-top: 30px; padding: 15px; background: #e7f3ff; border-radius: 5px;">
+            <h3>📝 Instrucciones:</h3>
+            <ol>
+                <li>Asegúrate de estar logeado en Firebase</li>
+                <li>Click en "Verificar Base de Datos" para ver productos existentes</li>
+                <li>Click en "Cargar Productos" para agregar los productos de ejemplo</li>
+                <li>Revisa la consola (F12) para ver logs detallados</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Tu configuración Firebase -->
+    <script src="firebase-config.js"></script>
+    
+    <script>
+        // Datos de productos de ejemplo
+        const productosEjemplo = [
+            {
+                name: "Pala Bullpadel Vertex 03",
+                description: "Pala de potencia media-alta, ideal para jugadores intermedios. Control y potencia balanceados.",
+                price: 89990,
+                brand: "Bullpadel",
+                category: "palas",
+                stock: 15,
+                rating: 4.5,
+                image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date(),
+                specifications: {
+                    material: "Fibra de carbono",
+                    forma: "Redonda",
+                    peso: "360-375g",
+                    balance: "Medio"
+                }
+            },
+            {
+                name: "Pala Head Alpha Pro",
+                description: "Control máximo para jugadores avanzados. Excelente manejo y precisión.",
+                price: 75990,
+                brand: "Head",
+                category: "palas",
+                stock: 8,
+                rating: 4.3,
+                image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date(),
+                specifications: {
+                    material: "Goma EVA",
+                    forma: "Diamante",
+                    peso: "350-365g",
+                    balance: "Alto"
+                }
+            },
+            {
+                name: "Pelotas Head Padel Pro",
+                description: "Tubo de 3 pelotas profesionales. Durabilidad y consistencia excepcionales.",
+                price: 12990,
+                brand: "Head",
+                category: "pelotas",
+                stock: 50,
+                rating: 4.7,
+                image: "https://images.unsplash.com/photo-1587174486073-ae7e6c84b587?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date()
+            },
+            {
+                name: "Mochila Bullpadel Advance",
+                description: "Mochila con compartimento térmico para 2 palas. Múltiples bolsillos.",
+                price: 34990,
+                brand: "Bullpadel",
+                category: "accesorios",
+                stock: 12,
+                rating: 4.2,
+                image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date()
+            },
+            {
+                name: "Zapatos Asics Gel-Padel Pro",
+                description: "Calzado profesional con tecnología GEL. Máxima amortiguación y estabilidad.",
+                price: 55990,
+                brand: "Asics",
+                category: "calzado",
+                stock: 6,
+                rating: 4.6,
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date()
+            },
+            {
+                name: "Overgrips Tecnifibre",
+                description: "Pack de 10 overgrips absorbentes. Mejor agarre y comodidad.",
+                price: 8990,
+                brand: "Tecnifibre",
+                category: "accesorios",
+                stock: 45,
+                rating: 4.4,
+                image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&h=300&fit=crop",
+                isActive: true,
+                createdAt: new Date()
+            }
+        ];
+
+        // Mostrar productos en la página
+        function mostrarProductos() {
+            const contenedor = document.getElementById('lista-productos');
+            contenedor.innerHTML = '<h3>Productos a cargar:</h3>';
+            
+            productosEjemplo.forEach((producto, index) => {
+                contenedor.innerHTML += `
+                    <div class="producto">
+                        <img src="${producto.image}" alt="${producto.name}">
+                        <strong>${producto.name}</strong><br>
+                        <small>${producto.brand} - ${producto.category}</small><br>
+                        <strong>$${producto.price.toLocaleString()}</strong>
+                        <small> | Stock: ${producto.stock} | Rating: ${producto.rating}</small>
+                    </div>
+                `;
+            });
+        }
+
+        // Cargar productos a Firestore
+        async function cargarProductos() {
+            const btn = document.getElementById('btn-cargar');
+            const progressBar = document.getElementById('progress-bar');
+            const progress = document.getElementById('progress');
+            const resultado = document.getElementById('resultado');
+            
+            btn.disabled = true;
+            btn.textContent = 'Cargando...';
+            progressBar.style.display = 'block';
+            resultado.style.display = 'none';
+            
+            let cargados = 0;
+            const total = productosEjemplo.length;
+            
+            try {
+                if (!window.db) {
+                    throw new Error("Firebase no está inicializado");
+                }
+                
+                for (let i = 0; i < total; i++) {
+                    const producto = productosEjemplo[i];
+                    
+                    // Agregar timestamp
+                    producto.createdAt = new Date();
+                    producto.updatedAt = new Date();
+                    
+                    await window.db.collection('products').add(producto);
+                    cargados++;
+                    
+                    // Actualizar barra de progreso
+                    const porcentaje = (cargados / total) * 100;
+                    progress.style.width = `${porcentaje}%`;
+                    
+                    console.log(`✅ Producto ${i+1}/${total} cargado: ${producto.name}`);
+                }
+                
+                // Mostrar resultado exitoso
+                resultado.className = 'success';
+                resultado.innerHTML = `
+                    <strong>✅ ¡Productos cargados exitosamente!</strong><br>
+                    Se cargaron ${cargados} productos en la base de datos.<br>
+                    <small>Puedes verificar en la <a href="admin.html" target="_blank">página de administración</a>.</small>
+                `;
+                resultado.style.display = 'block';
+                
+            } catch (error) {
+                console.error('❌ Error cargando productos:', error);
+                
+                resultado.className = 'error';
+                resultado.innerHTML = `
+                    <strong>❌ Error al cargar productos:</strong><br>
+                    ${error.message}<br>
+                    <small>Verifica la consola (F12) para más detalles.</small>
+                `;
+                resultado.style.display = 'block';
+                
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '📤 Cargar Productos';
+                setTimeout(() => {
+                    progressBar.style.display = 'none';
+                    progress.style.width = '0%';
+                }, 2000);
+            }
+        }
+
+        // Verificar productos existentes
+        async function verificarProductos() {
+            const resultado = document.getElementById('resultado');
+            resultado.style.display = 'none';
+            
+            try {
+                if (!window.db) {
+                    throw new Error("Firebase no está inicializado");
+                }
+                
+                const snapshot = await window.db.collection('products').get();
+                
+                resultado.className = snapshot.empty ? 'error' : 'success';
+                resultado.innerHTML = `
+                    <strong>${snapshot.empty ? '⚠️' : '✅'} Base de Datos:</strong><br>
+                    Productos encontrados: <strong>${snapshot.size}</strong><br>
+                    ${snapshot.empty ? 'No hay productos. Puedes cargar los de ejemplo.' : 'Productos cargados correctamente.'}
+                `;
+                resultado.style.display = 'block';
+                
+                console.log(`📊 Productos en Firestore: ${snapshot.size}`);
+                snapshot.forEach(doc => {
+                    console.log(`   - ${doc.data().name} (${doc.id})`);
+                });
+                
+            } catch (error) {
+                resultado.className = 'error';
+                resultado.innerHTML = `
+                    <strong>❌ Error verificando productos:</strong><br>
+                    ${error.message}
+                `;
+                resultado.style.display = 'block';
+            }
+        }
+
+        // Limpiar todos los productos (¡CUIDADO!)
+        async function limpiarProductos() {
+            if (!confirm('⚠️ ¿Estás seguro de eliminar TODOS los productos?\nEsta acción no se puede deshacer.')) {
+                return;
+            }
+            
+            const resultado = document.getElementById('resultado');
+            resultado.style.display = 'none';
+            
+            try {
+                if (!window.db) {
+                    throw new Error("Firebase no está inicializado");
+                }
+                
+                const snapshot = await window.db.collection('products').get();
+                const batch = window.db.batch();
+                
+                snapshot.forEach(doc => {
+                    batch.delete(doc.ref);
+                });
+                
+                await batch.commit();
+                
+                resultado.className = 'success';
+                resultado.innerHTML = `
+                    <strong>✅ Productos eliminados</strong><br>
+                    Se eliminaron ${snapshot.size} productos de la base de datos.
+                `;
+                resultado.style.display = 'block';
+                
+                console.log(`🗑️ Eliminados ${snapshot.size} productos`);
+                
+            } catch (error) {
+                resultado.className = 'error';
+                resultado.innerHTML = `
+                    <strong>❌ Error eliminando productos:</strong><br>
+                    ${error.message}
+                `;
+                resultado.style.display = 'block';
+            }
+        }
+
+        // Inicializar página
+        document.addEventListener('DOMContentLoaded', function() {
+            mostrarProductos();
+            console.log('🔄 Página de carga de productos lista');
+            console.log('📝 Productos disponibles para cargar:', productosEjemplo.length);
+        });
+    </script>
+</body>
+</html>

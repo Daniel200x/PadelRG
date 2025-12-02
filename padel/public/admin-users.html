@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Admin - Pádel Fuego</title>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .admin-header {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .admin-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #2c5530;
+        }
+
+        .btn-primary:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Add Admin Form */
+        .add-admin-form {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 15px;
+            align-items: end;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2c5530;
+        }
+
+        /* Admin Users Table */
+        .admin-table-container {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow-x: auto;
+        }
+
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .admin-table th {
+            background: #f8f9fa;
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .admin-table td {
+            padding: 18px 15px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: middle;
+        }
+
+        .admin-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .current-user {
+            background: #f0f7f0 !important;
+        }
+
+        .user-email {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .user-name {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .user-date {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .user-status {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-inactive {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .btn-delete:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid #e0e0e0;
+            border-top-color: #2c5530;
+            border-radius: 50%;
+            margin-left: 15px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .empty-state-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        /* Access Denied */
+        .access-denied {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .access-denied-icon {
+            font-size: 80px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .admin-header h1 {
+                font-size: 2rem;
+            }
+            
+            .header-actions {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .action-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="admin-header">
+            <h1>👑 Administradores</h1>
+            <p>Gestiona los usuarios con acceso al panel de administración</p>
+            
+            <div class="header-actions">
+                <a href="/admin-with-auth.html" class="btn btn-secondary">
+                    ← Panel Principal
+                </a>
+                <a href="/admin-orders.html" class="btn btn-secondary">
+                    📋 Ver Órdenes
+                </a>
+            </div>
+        </div>
+
+        <!-- Access Denied (inicialmente oculto) -->
+        <div id="accessDenied" class="access-denied" style="display: none;">
+            <div class="access-denied-icon">⛔</div>
+            <h2>Acceso Denegado</h2>
+            <p>No tienes permisos para acceder a esta sección.</p>
+            <a href="/admin-with-auth.html" class="btn btn-primary" style="margin-top: 20px;">
+                ← Volver al Panel
+            </a>
+        </div>
+
+        <!-- Admin Content (inicialmente oculto) -->
+        <div id="adminContent" style="display: none;">
+            <!-- Add Admin Form -->
+            <div class="add-admin-form">
+                <h3 style="color: #2c5530; margin-bottom: 20px;">➕ Agregar Nuevo Administrador</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adminEmail">Email</label>
+                        <input type="email" id="adminEmail" placeholder="admin@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminName">Nombre (opcional)</label>
+                        <input type="text" id="adminName" placeholder="Nombre del administrador">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" onclick="addAdmin()" style="height: 48px;">
+                            Agregar Administrador
+                        </button>
+                    </div>
+                </div>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    ⚠️ El usuario recibirá acceso completo al panel de administración.
+                </p>
+            </div>
+
+            <!-- Admin Users Table -->
+            <div class="admin-table-container">
+                <h3 style="color: #2c5530; margin-bottom: 20px;">👥 Lista de Administradores</h3>
+                <div id="adminUsersContainer">
+                    <div class="loading">
+                        Cargando administradores...
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase Auth -->
+    <script src="firebase-auth.js"></script>
+
+    <script>
+        // Variables
+        let currentUser = null;
+        let isAdminUser = false;
+        
+        // Inicializar
+        async function initializeApp() {
+            console.log('🚀 Inicializando gestión de administradores...');
+            
+            // Esperar a que Firebase esté listo
+            if (!window.db && window.initFirebase) {
+                window.initFirebase();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+            
+            // Verificar autenticación y permisos
+            const user = window.getCurrentUser ? window.getCurrentUser() : null;
+            const isAdmin = window.isAdmin ? window.isAdmin() : false;
+            
+            if (user && isAdmin) {
+                currentUser = user;
+                isAdminUser = true;
+                showAdminContent();
+                loadAdminUsers();
+            } else if (user && !isAdmin) {
+                showAccessDenied();
+            } else {
+                // No autenticado, redirigir al login
+                window.location.href = '/admin-with-auth.html';
+            }
+        }
+        
+        // Mostrar contenido de admin
+        function showAdminContent() {
+            document.getElementById('accessDenied').style.display = 'none';
+            document.getElementById('adminContent').style.display = 'block';
+        }
+        
+        // Mostrar acceso denegado
+        function showAccessDenied() {
+            document.getElementById('accessDenied').style.display = 'block';
+            document.getElementById('adminContent').style.display = 'none';
+        }
+        
+        // Cargar usuarios admin
+        async function loadAdminUsers() {
+            try {
+                const container = document.getElementById('adminUsersContainer');
+                container.innerHTML = '<div class="loading">Cargando administradores...<div class="loading-spinner"></div></div>';
+                
+                const adminUsers = await window.loadAdminUsers();
+                
+                if (adminUsers.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-state-icon">👤</div>
+                            <h3>No hay administradores</h3>
+                            <p>Comienza agregando el primer administrador.</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                let html = `
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Nombre</th>
+                                <th>Fecha de Creación</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                
+                adminUsers.forEach(user => {
+                    const isCurrentUser = user.email === currentUser.email;
+                    const rowClass = isCurrentUser ? 'current-user' : '';
+                    
+                    html += `
+                        <tr class="${rowClass}">
+                            <td>
+                                <div class="user-email">${user.email}</div>
+                                ${user.createdBy ? `<div class="user-date">Creado por: ${user.createdBy}</div>` : ''}
+                            </td>
+                            <td>
+                                <div class="user-name">${user.name || 'Sin nombre'}</div>
+                            </td>
+                            <td>
+                                <div class="user-date">
+                                    ${user.createdAt ? new Date(user.createdAt.seconds * 1000).toLocaleDateString('es-AR') : 'N/A'}
+                                </div>
+                            </td>
+                            <td>
+                                <span class="user-status status-${user.isActive !== false ? 'active' : 'inactive'}">
+                                    ${user.isActive !== false ? 'Activo' : 'Inactivo'}
+                                </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn btn-delete" 
+                                            onclick="removeAdmin('${user.id}', '${user.email}')"
+                                            ${isCurrentUser ? 'disabled title="No puedes eliminarte a ti mismo"' : ''}>
+                                        🗑️
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                html += '</tbody></table>';
+                container.innerHTML = html;
+                
+            } catch (error) {
+                console.error('Error cargando admin users:', error);
+                document.getElementById('adminUsersContainer').innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">❌</div>
+                        <h3>Error al cargar</h3>
+                        <p>${error.message}</p>
+                        <button onclick="loadAdminUsers()" class="btn btn-primary" style="margin-top: 20px;">
+                            🔄 Reintentar
+                        </button>
+                    </div>
+                `;
+            }
+        }
+        
+        // Agregar admin
+        async function addAdmin() {
+            const email = document.getElementById('adminEmail').value.trim();
+            const name = document.getElementById('adminName').value.trim();
+            
+            if (!email) {
+                alert('Por favor, ingresa un email');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                alert('Por favor, ingresa un email válido');
+                return;
+            }
+            
+            if (!confirm(`¿Agregar a "${email}" como administrador?\n\nEsta persona tendrá acceso completo al panel de administración.`)) {
+                return;
+            }
+            
+            try {
+                const result = await window.addAdminUser(email, name);
+                
+                if (result.success) {
+                    alert(`✅ ${email} agregado como administrador`);
+                    document.getElementById('adminEmail').value = '';
+                    document.getElementById('adminName').value = '';
+                    loadAdminUsers();
+                } else {
+                    throw new Error(result.error);
+                }
+                
+            } catch (error) {
+                console.error('Error agregando admin:', error);
+                alert(`❌ Error: ${error.message}`);
+            }
+        }
+        
+        // Eliminar admin
+        async function removeAdmin(adminId, email) {
+            if (!confirm(`¿Eliminar a "${email}" como administrador?\n\nEsta persona perderá acceso al panel de administración.`)) {
+                return;
+            }
+            
+            try {
+                const result = await window.removeAdminUser(adminId);
+                
+                if (result.success) {
+                    alert(`✅ ${email} eliminado como administrador`);
+                    loadAdminUsers();
+                } else {
+                    throw new Error(result.error);
+                }
+                
+            } catch (error) {
+                console.error('Error eliminando admin:', error);
+                alert(`❌ Error: ${error.message}`);
+            }
+        }
+        
+        // Validar email
+        function isValidEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+        
+        // Inicializar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', initializeApp);
+        
+        // Escuchar cambios de autenticación
+        document.addEventListener('authStateChanged', async (event) => {
+            const { authenticated, user, isAdmin } = event.detail;
+            
+            if (authenticated && user && isAdmin) {
+                currentUser = user;
+                isAdminUser = true;
+                showAdminContent();
+                loadAdminUsers();
+            } else if (authenticated && user && !isAdmin) {
+                showAccessDenied();
+            } else {
+                window.location.href = '/admin-with-auth.html';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 // ============================================
 // PÁDEL FUEGO - SCRIPT PRINCIPAL COMPLETO
-// VERSIÓN CON IMÁGENES REALES - SIN PLACEHOLDERS
+// VERSIÓN CORREGIDA - CON CARRITO MEJORADO
 // ============================================
 
 // 1. DECLARAR TODAS LAS FUNCIONES PRIMERO
@@ -40,15 +40,15 @@ function showNotification(message, type = 'success') {
 function handleImageError(imgElement, productName) {
     console.warn(`Imagen no encontrada: ${imgElement.src}`);
     
-    // Usar imagen por defecto local
-    imgElement.src = '/images/default-product.jpg';
+    // Usar placeholder de Internet en lugar de imagen local
+    imgElement.src = 'https://via.placeholder.com/300x200/2c5530/FFFFFF?text=' + encodeURIComponent(productName.substring(0, 20));
     imgElement.alt = productName;
     imgElement.onerror = null; // Prevenir loops
     
-    // Si la imagen por defecto también falla, usar un ícono simple
+    // Si la imagen por defecto también falla
     imgElement.onerror = function() {
-        imgElement.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200"><rect width="300" height="200" fill="%232c5530"/><text x="50%" y="50%" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dy=".3em">' + encodeURIComponent(productName.substring(0, 25)) + '</text></svg>';
-        imgElement.style.objectFit = 'cover';
+        this.style.display = 'none';
+        this.parentElement.innerHTML = '<div style="width:100%;height:200px;background:#2c5530;color:white;display:flex;align-items:center;justify-content:center;">' + productName.substring(0, 30) + '</div>';
     };
 }
 
@@ -70,15 +70,19 @@ function getRatingStars(rating) {
 
 function getStockMessage(stock) {
     const num = Number(stock) || 0;
-    if (num > 10) return '✓ En stock';
+    if (num > 10) return `✓ En stock (${num})`;
     if (num > 0) return `⚠️ Solo ${num} unidades`;
     return '✗ Sin stock';
 }
 
-// Función para mostrar productos
+// Función para mostrar productos - CORREGIDA PARA IMÁGENES
 function displayProduct(product) {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
+    
+    // CORRECCIÓN CRÍTICA: Obtener la imagen correcta de Firestore
+    // Firestore usa 'image', pero también verificamos 'imageUrl' por compatibilidad
+    const imageFromFirestore = product.image || product.imageUrl;
     
     const safeProduct = {
         id: product.id || 'unknown',
@@ -88,8 +92,12 @@ function displayProduct(product) {
         price: Number(product.price) || 0,
         stock: Number(product.stock) || 0,
         rating: Number(product.rating) || 0,
-        imageUrl: product.imageUrl || '/images/default-product.jpg'
+        // USAR LA IMAGEN DE FIRESTORE, NO LA POR DEFECTO
+        imageUrl: imageFromFirestore || 'https://via.placeholder.com/300x200/2c5530/FFFFFF?text=' + encodeURIComponent((product.name || 'Producto').substring(0, 20))
     };
+    
+    console.log(`🖼️ Mostrando producto: ${safeProduct.name}`);
+    console.log(`   URL de imagen: ${safeProduct.imageUrl}`);
     
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
@@ -108,7 +116,7 @@ function displayProduct(product) {
             ${getStockMessage(safeProduct.stock)}
         </div>
         <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
-        <button class="add-to-cart" onclick="addToCart('${safeProduct.id}')" 
+        <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
                 ${safeProduct.stock === 0 ? 'disabled' : ''}>
             ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
         </button>
@@ -130,7 +138,7 @@ function loadLocalProducts() {
             brand: 'Bullpadel',
             stock: 15,
             rating: 4.5,
-            imageUrl: '/images/products/pala-bullpadel-vertex.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_898905-MLA53507129989_012022-F.webp'
         },
         {
             id: '2',
@@ -140,7 +148,7 @@ function loadLocalProducts() {
             brand: 'Head',
             stock: 8,
             rating: 4.3,
-            imageUrl: '/images/products/pala-head-alpha.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_653317-MLA47970639143_102021-F.webp'
         },
         {
             id: '3',
@@ -150,7 +158,7 @@ function loadLocalProducts() {
             brand: 'Head',
             stock: 50,
             rating: 4.7,
-            imageUrl: '/images/products/pelotas-head.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_708131-MLA48373161791_112021-F.webp'
         },
         {
             id: '4',
@@ -160,7 +168,7 @@ function loadLocalProducts() {
             brand: 'Bullpadel',
             stock: 12,
             rating: 4.2,
-            imageUrl: '/images/products/mochila-bullpadel.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_886056-MLU72877094720_112023-F.webp'
         },
         {
             id: '5',
@@ -170,7 +178,7 @@ function loadLocalProducts() {
             brand: 'Asics',
             stock: 6,
             rating: 4.6,
-            imageUrl: '/images/products/zapatos-asics.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_985856-MLA53777607358_022023-F.webp'
         },
         {
             id: '6',
@@ -180,7 +188,7 @@ function loadLocalProducts() {
             brand: 'Tecnifibre',
             stock: 45,
             rating: 4.4,
-            imageUrl: '/images/products/overgrips-tecnifibre.jpg'
+            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_724145-MLU74929228632_032024-F.webp'
         }
     ];
     
@@ -193,9 +201,9 @@ function loadLocalProducts() {
     showNotification('Mostrando productos de demostración', 'info');
 }
 
-// Función principal para cargar productos
+// Función principal para cargar productos - CORREGIDA
 async function loadProducts() {
-    console.log('🔄 Cargando productos...');
+    console.log('🔄 Cargando productos desde Firestore...');
     
     try {
         const productsGrid = document.getElementById('products-grid');
@@ -210,13 +218,12 @@ async function loadProducts() {
             return;
         }
         
-        console.log('🔍 Intentando cargar desde Firestore...');
+        console.log('🔍 Conectando a Firestore...');
         
-        // Usar una consulta más simple para evitar el error de índice
         try {
             const querySnapshot = await window.db.collection('products').get();
             
-            console.log(`📊 Encontrados: ${querySnapshot.size} productos`);
+            console.log(`📊 Productos encontrados en Firestore: ${querySnapshot.size}`);
             
             if (querySnapshot.empty) {
                 console.log('📦 No hay productos en Firestore');
@@ -228,27 +235,35 @@ async function loadProducts() {
             let activeProducts = 0;
             
             querySnapshot.forEach(doc => {
-                const product = doc.data();
-                // Filtrar productos activos manualmente
-                if (product.isActive !== false) {
-                    displayProduct({
-                        id: doc.id,
-                        ...product
-                    });
-                    activeProducts++;
-                }
+                const productData = doc.data();
+                
+                // DEBUG: Ver qué datos vienen de Firestore
+                console.log(`🎯 Producto ${activeProducts + 1}: ${productData.name}`);
+                console.log(`   Campos disponibles:`, Object.keys(productData));
+                console.log(`   Imagen (campo 'image'):`, productData.image);
+                console.log(`   Imagen (campo 'imageUrl'):`, productData.imageUrl);
+                
+                // Crear producto con ID y datos
+                const product = {
+                    id: doc.id,
+                    ...productData
+                };
+                
+                displayProduct(product);
+                activeProducts++;
             });
             
             if (activeProducts === 0) {
                 console.log('📦 No hay productos activos');
                 loadLocalProducts();
             } else {
-                console.log(`✅ ${activeProducts} productos cargados`);
+                console.log(`✅ ${activeProducts} productos cargados desde Firestore`);
+                showNotification(`${activeProducts} productos cargados`, 'success');
             }
             
         } catch (firestoreError) {
             console.error('❌ Error de Firestore:', firestoreError);
-            showNotification('Usando productos locales temporalmente', 'warning');
+            showNotification('Error conectando a la base de datos', 'error');
             loadLocalProducts();
         }
         
@@ -259,154 +274,382 @@ async function loadProducts() {
     }
 }
 
-// Funciones del carrito
+// ============================================
+// CARRITO DE COMPRAS MEJORADO
+// ============================================
+
 let cart = [];
+let cartOpen = false;
 
-function updateCartCounter() {
-    let counter = document.getElementById('cart-counter');
+// Función para inicializar el carrito
+function initCart() {
+    console.log('🛒 Inicializando carrito...');
     
-    if (!counter) {
-        counter = document.createElement('span');
-        counter.id = 'cart-counter';
-        counter.style.cssText = `
-            background: #ff6b35;
-            color: white;
-            border-radius: 50%;
-            padding: 2px 8px;
-            font-size: 0.8rem;
-            margin-left: 5px;
-            display: inline-block;
-            min-width: 20px;
-            text-align: center;
-        `;
-        
-        let cartLink = document.querySelector('.cart-link');
-        if (!cartLink) {
-            const navLinks = document.querySelector('.nav-links');
-            if (navLinks) {
-                const li = document.createElement('li');
-                cartLink = document.createElement('a');
-                cartLink.href = '#';
-                cartLink.className = 'cart-link';
-                cartLink.innerHTML = '🛒 ';
-                cartLink.onclick = (e) => {
-                    e.preventDefault();
-                    showCart();
-                };
-                li.appendChild(cartLink);
-                navLinks.appendChild(li);
-            }
+    // Cargar carrito desde localStorage
+    const savedCart = localStorage.getItem('padelCart');
+    if (savedCart) {
+        try {
+            cart = JSON.parse(savedCart);
+            console.log(`Carrito cargado: ${cart.length} productos`);
+        } catch (e) {
+            console.warn('Error cargando carrito:', e);
+            cart = [];
         }
-        
-        if (cartLink) cartLink.appendChild(counter);
     }
     
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    counter.textContent = totalItems;
-    counter.style.display = totalItems > 0 ? 'inline-block' : 'none';
+    // Crear modal del carrito
+    createCartModal();
+    
+    // Agregar botón del carrito al navbar
+    addCartButtonToNav();
+    
+    // Actualizar contador
+    updateCartCounter();
 }
 
-async function addToCart(productId) {
-    try {
-        console.log(`🛒 Intentando agregar producto: ${productId}`);
-        
-        // Si no hay Firebase, usar datos locales
-        if (!window.db) {
-            showNotification('Modo offline - usando datos locales', 'info');
-            
-            // Buscar en productos locales
-            const localProducts = [
-                { id: '1', name: 'Pala Bullpadel Vertex 03', price: 89990 },
-                { id: '2', name: 'Pala Head Alpha Pro', price: 75990 },
-                { id: '3', name: 'Pelotas Head Padel Pro', price: 12990 },
-                { id: '4', name: 'Mochila Bullpadel Advance', price: 34990 },
-                { id: '5', name: 'Zapatos Asics Gel-Padel Pro', price: 55990 },
-                { id: '6', name: 'Overgrips Tecnifibre', price: 8990 }
-            ];
-            
-            const product = localProducts.find(p => p.id === productId) || {
-                name: 'Producto',
-                price: 0
-            };
-            
-            const existingIndex = cart.findIndex(item => item.id === productId);
-            
-            if (existingIndex >= 0) {
-                cart[existingIndex].quantity += 1;
-            } else {
-                cart.push({
-                    id: productId,
-                    name: product.name,
-                    price: product.price,
-                    quantity: 1
-                });
-            }
-            
-        } else {
-            // Usar Firebase
-            const doc = await window.db.collection('products').doc(productId).get();
-            if (!doc.exists) {
-                showNotification('Producto no encontrado', 'error');
-                return;
-            }
-            
-            const product = doc.data();
-            const stock = Number(product.stock) || 0;
-            
-            if (stock <= 0) {
-                showNotification('Producto sin stock', 'error');
-                return;
-            }
-            
-            const existingIndex = cart.findIndex(item => item.id === productId);
-            
-            if (existingIndex >= 0) {
-                cart[existingIndex].quantity += 1;
-            } else {
-                cart.push({
-                    id: productId,
-                    name: product.name || 'Producto',
-                    price: Number(product.price) || 0,
-                    quantity: 1
-                });
-            }
-        }
-        
-        updateCartCounter();
-        showNotification('Producto agregado al carrito');
-        
-        // Guardar en localStorage
-        localStorage.setItem('padelCart', JSON.stringify(cart));
-        
-    } catch (error) {
-        console.error('Error agregando al carrito:', error);
-        showNotification('Error al agregar producto', 'error');
+// Crear modal del carrito
+function createCartModal() {
+    // Si ya existe, no crear de nuevo
+    if (document.getElementById('cart-modal')) return;
+    
+    const modalHTML = `
+        <div id="cart-modal" class="cart-modal" style="display: none;">
+            <div class="cart-modal-content">
+                <div class="cart-header">
+                    <h3>🛒 Tu Carrito</h3>
+                    <button class="close-cart" onclick="toggleCart()">×</button>
+                </div>
+                
+                <div class="cart-body">
+                    <div id="cart-items" class="cart-items">
+                        <!-- Productos se cargan aquí -->
+                    </div>
+                </div>
+                
+                <div class="cart-footer">
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span id="cart-total">$0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <button class="btn-clear" onclick="clearCart()">
+                            🗑️ Vaciar Carrito
+                        </button>
+                        <button class="btn-checkout" onclick="checkout()">
+                            💳 Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+}
+
+// Agregar botón del carrito al navbar
+function addCartButtonToNav() {
+    const navLinks = document.querySelector('.nav-links');
+    if (!navLinks) return;
+    
+    // Verificar si ya existe
+    if (document.querySelector('.cart-link')) return;
+    
+    const cartLinkHTML = `
+        <li>
+            <a href="#" class="cart-link" onclick="toggleCart(); return false;">
+                🛒 Carrito <span id="cart-counter" class="cart-counter" style="display: none;">0</span>
+            </a>
+        </li>
+    `;
+    
+    navLinks.insertAdjacentHTML('beforeend', cartLinkHTML);
+}
+
+// Función para alternar carrito
+function toggleCart() {
+    const modal = document.getElementById('cart-modal');
+    if (!modal) return;
+    
+    cartOpen = !cartOpen;
+    if (cartOpen) {
+        modal.style.display = 'flex';
+        renderCart();
+    } else {
+        modal.style.display = 'none';
     }
 }
 
-function showCart() {
+// Función para renderizar el carrito
+function renderCart() {
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartCounter = document.getElementById('cart-counter');
+    
+    if (!cartItems || !cartTotal) return;
+    
     if (cart.length === 0) {
-        showNotification('Tu carrito está vacío', 'info');
+        cartItems.innerHTML = '<div class="empty-cart">Tu carrito está vacío</div>';
+        cartTotal.textContent = '$0';
+        if (cartCounter) {
+            cartCounter.textContent = '0';
+            cartCounter.style.display = 'none';
+        }
         return;
     }
     
-    let message = '🛒 Tu Carrito:\n\n';
+    // Calcular totales
     let total = 0;
+    let totalItems = 0;
     
+    // Renderizar items
+    cartItems.innerHTML = '';
     cart.forEach((item, index) => {
         const subtotal = item.price * item.quantity;
         total += subtotal;
-        message += `${index + 1}. ${item.name}\n`;
-        message += `   $${item.price.toLocaleString()} x ${item.quantity}\n`;
-        message += `   Subtotal: $${subtotal.toLocaleString()}\n\n`;
+        totalItems += item.quantity;
+        
+        const itemHTML = `
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <h4>${item.name}</h4>
+                    <p class="cart-item-price">$${item.price.toLocaleString('es-AR')} c/u</p>
+                    ${item.maxStock !== undefined ? `<p style="color: #666; font-size: 0.8rem;">Stock disponible: ${item.maxStock}</p>` : ''}
+                </div>
+                <div class="cart-item-controls">
+                    <button onclick="updateQuantity(${index}, -1)" ${item.quantity <= 1 ? 'disabled style="opacity: 0.5;"' : ''}>−</button>
+                    <span class="cart-item-quantity">${item.quantity}</span>
+                    <button onclick="updateQuantity(${index}, 1)" ${item.maxStock !== undefined && item.quantity >= item.maxStock ? 'disabled style="opacity: 0.5;"' : ''}>+</button>
+                    <button class="remove-btn" onclick="removeFromCart(${index})">🗑️</button>
+                </div>
+                <div class="cart-item-subtotal">
+                    Subtotal: $${subtotal.toLocaleString('es-AR')}
+                </div>
+            </div>
+        `;
+        cartItems.insertAdjacentHTML('beforeend', itemHTML);
     });
     
-    message += `💰 TOTAL: $${total.toLocaleString()}\n\n`;
-    message += '¿Deseas proceder con la compra?';
+    cartTotal.textContent = `$${total.toLocaleString('es-AR')}`;
     
-    if (confirm(message)) {
-        showNotification('Redirigiendo a checkout...', 'info');
+    // Actualizar contador
+    if (cartCounter) {
+        cartCounter.textContent = totalItems.toString();
+        cartCounter.style.display = totalItems > 0 ? 'inline-block' : 'none';
     }
+    
+    // Guardar en localStorage
+    localStorage.setItem('padelCart', JSON.stringify(cart));
+}
+
+// Función para actualizar cantidad
+function updateQuantity(index, change) {
+    if (!cart[index]) return;
+    
+    const newQuantity = cart[index].quantity + change;
+    
+    if (newQuantity < 1) {
+        removeFromCart(index);
+    } else {
+        // Verificar si hay límite de stock
+        if (cart[index].maxStock !== undefined && newQuantity > cart[index].maxStock) {
+            showNotification(`Máximo disponible: ${cart[index].maxStock} unidades`, 'warning');
+            return;
+        }
+        
+        cart[index].quantity = newQuantity;
+        renderCart();
+        showNotification(`Cantidad actualizada: ${cart[index].name} (${newQuantity})`, 'info');
+    }
+}
+
+// Función para eliminar del carrito
+function removeFromCart(index) {
+    if (!cart[index]) return;
+    
+    const productName = cart[index].name;
+    cart.splice(index, 1);
+    renderCart();
+    showNotification(`${productName} eliminado del carrito`, 'info');
+}
+
+// Función para vaciar carrito
+function clearCart() {
+    if (cart.length === 0) {
+        showNotification('El carrito ya está vacío', 'info');
+        return;
+    }
+    
+    if (confirm('¿Estás seguro de vaciar todo el carrito?')) {
+        cart = [];
+        renderCart();
+        showNotification('Carrito vaciado', 'info');
+    }
+}
+
+// Función para checkout
+function checkout() {
+    if (cart.length === 0) {
+        showNotification('Tu carrito está vacío', 'warning');
+        return;
+    }
+    
+    // Verificar stock antes de proceder al checkout
+    checkCartStockBeforeCheckout();
+}
+
+// Verificar stock antes del checkout
+async function checkCartStockBeforeCheckout() {
+    try {
+        if (!window.db) {
+            // Si no hay Firebase, proceder directamente
+            proceedToCheckout();
+            return;
+        }
+        
+        showNotification('Verificando disponibilidad de stock...', 'info');
+        
+        const stockIssues = [];
+        
+        for (const item of cart) {
+            try {
+                const productRef = window.db.collection('products').doc(item.id);
+                const productDoc = await productRef.get();
+                
+                if (productDoc.exists) {
+                    const productData = productDoc.data();
+                    const currentStock = Number(productData.stock) || 0;
+                    
+                    if (currentStock < item.quantity) {
+                        stockIssues.push({
+                            item: item,
+                            availableStock: currentStock,
+                            needed: item.quantity - currentStock
+                        });
+                    }
+                } else {
+                    stockIssues.push({
+                        item: item,
+                        availableStock: 0,
+                        error: 'Producto no encontrado'
+                    });
+                }
+            } catch (error) {
+                console.error(`Error verificando stock de ${item.name}:`, error);
+            }
+        }
+        
+        if (stockIssues.length > 0) {
+            let message = 'Algunos productos tienen stock insuficiente:\n\n';
+            stockIssues.forEach(issue => {
+                message += `• ${issue.item.name}: Pedido ${issue.item.quantity}, Disponible ${issue.availableStock}\n`;
+            });
+            message += '\nPor favor, ajusta las cantidades en tu carrito.';
+            
+            if (confirm(message + '\n\n¿Deseas proceder al checkout igualmente?')) {
+                proceedToCheckout();
+            }
+        } else {
+            proceedToCheckout();
+        }
+        
+    } catch (error) {
+        console.error('Error verificando stock:', error);
+        showNotification('Error verificando disponibilidad', 'error');
+        proceedToCheckout(); // Proceder de todos modos
+    }
+}
+
+// Proceder al checkout
+function proceedToCheckout() {
+    // Guardar carrito actual
+    localStorage.setItem('padelCart', JSON.stringify(cart));
+    
+    // Redirigir a checkout.html
+    window.location.href = 'checkout.html';
+}
+
+// Función para agregar al carrito (MEJORADA)
+async function addToCart(productId, productName, productPrice, productStock) {
+    try {
+        console.log(`🛒 Agregando producto: ${productId} - ${productName}`);
+        
+        // Verificar stock en tiempo real si hay conexión a Firebase
+        let currentStock = productStock;
+        let stockCheckPassed = true;
+        
+        if (window.db) {
+            try {
+                const productRef = window.db.collection('products').doc(productId);
+                const productDoc = await productRef.get();
+                
+                if (productDoc.exists) {
+                    const productData = productDoc.data();
+                    currentStock = Number(productData.stock) || 0;
+                    
+                    if (currentStock <= 0) {
+                        showNotification(`${productName} está agotado`, 'error');
+                        // Actualizar UI
+                        updateProductStockUI(productId, 0);
+                        return;
+                    }
+                }
+            } catch (error) {
+                console.error('Error verificando stock en tiempo real:', error);
+            }
+        }
+        
+        // Verificar si el producto ya está en el carrito
+        const existingIndex = cart.findIndex(item => item.id === productId);
+        
+        if (existingIndex >= 0) {
+            // Verificar si hay suficiente stock para agregar más
+            const requestedQuantity = cart[existingIndex].quantity + 1;
+            
+            if (currentStock !== undefined && requestedQuantity > currentStock) {
+                showNotification(`Solo quedan ${currentStock} unidades de ${productName}`, 'warning');
+                // Actualizar el límite en el carrito
+                cart[existingIndex].maxStock = currentStock;
+                renderCart();
+                return;
+            }
+            
+            // Si ya existe, aumentar cantidad
+            cart[existingIndex].quantity += 1;
+            cart[existingIndex].maxStock = currentStock;
+            showNotification(`+1 ${productName} (total: ${cart[existingIndex].quantity})`, 'info');
+        } else {
+            // Si no existe, agregar nuevo
+            cart.push({
+                id: productId,
+                name: productName,
+                price: productPrice,
+                quantity: 1,
+                maxStock: currentStock
+            });
+            showNotification(`${productName} agregado al carrito`, 'success');
+        }
+        
+        // Actualizar carrito
+        renderCart();
+        
+    } catch (error) {
+        console.error('Error agregando al carrito:', error);
+        showNotification('Error al agregar producto al carrito', 'error');
+    }
+}
+
+// Función para actualizar contador
+function updateCartCounter() {
+    const counter = document.getElementById('cart-counter');
+    if (!counter) return;
+    
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    counter.textContent = totalItems.toString();
+    counter.style.display = totalItems > 0 ? 'inline-block' : 'none';
 }
 
 // Configuración de eventos
@@ -490,6 +733,22 @@ function setupEventListeners() {
         });
     }
     
+    // Cerrar carrito al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        const modal = document.getElementById('cart-modal');
+        if (modal && cartOpen && !modal.contains(e.target) && 
+            !e.target.closest('.cart-link')) {
+            toggleCart();
+        }
+    });
+    
+    // Cerrar carrito con ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && cartOpen) {
+            toggleCart();
+        }
+    });
+    
     console.log('✅ Event listeners configurados');
 }
 
@@ -515,33 +774,107 @@ function checkImages() {
     }, 2000);
 }
 
-// Función principal de inicialización
+// ============================================
+// FUNCIONES DE MONITOREO DE STOCK EN TIEMPO REAL
+// ============================================
+
+// Actualizar UI de stock de producto
+function updateProductStockUI(productId, newStock) {
+    // Buscar el producto en la UI y actualizar el stock
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        const button = card.querySelector('.add-to-cart');
+        if (button && button.getAttribute('onclick')?.includes(productId)) {
+            const stockElement = card.querySelector('.stock');
+            if (stockElement) {
+                stockElement.textContent = getStockMessage(newStock);
+                stockElement.className = 'stock ' + 
+                    (newStock > 10 ? 'in-stock' : 
+                     newStock > 0 ? 'low-stock' : 'no-stock');
+                
+                // Deshabilitar botón si no hay stock
+                button.disabled = newStock === 0;
+                
+                // Actualizar la función onclick con el nuevo stock
+                const onclickAttr = button.getAttribute('onclick');
+                const regex = /addToCart\('([^']+)', '([^']+)', ([^,]+), ([^)]+)\)/;
+                const match = onclickAttr.match(regex);
+                
+                if (match) {
+                    const newOnclick = `addToCart('${match[1]}', '${match[2]}', ${match[3]}, ${newStock})`;
+                    button.setAttribute('onclick', newOnclick);
+                }
+                
+                button.textContent = newStock === 0 ? 'Sin stock' : 'Agregar al Carrito';
+            }
+        }
+    });
+}
+
+// Escuchar cambios de stock en tiempo real
+function watchStockChanges() {
+    if (!window.db) {
+        console.log('⚠️ Firebase no disponible para monitoreo de stock');
+        return;
+    }
+    
+    console.log('👀 Monitoreando cambios de stock en tiempo real...');
+    
+    // Escuchar cambios en productos
+    window.db.collection('products').onSnapshot((snapshot) => {
+        snapshot.docChanges().forEach((change) => {
+            if (change.type === 'modified') {
+                const product = change.doc.data();
+                const productId = change.doc.id;
+                
+                console.log(`📊 Stock actualizado: ${product.name} - ${product.stock}`);
+                
+                // Actualizar UI si el producto está visible
+                updateProductStockUI(productId, product.stock);
+                
+                // Actualizar carrito si el producto está en él
+                const cartItemIndex = cart.findIndex(item => item.id === productId);
+                if (cartItemIndex >= 0) {
+                    cart[cartItemIndex].maxStock = product.stock;
+                    
+                    // Si la cantidad en el carrito supera el nuevo stock, ajustar
+                    if (cart[cartItemIndex].quantity > product.stock) {
+                        cart[cartItemIndex].quantity = product.stock;
+                        showNotification(`Stock reducido para ${product.name}. Cantidad ajustada a ${product.stock}.`, 'warning');
+                        renderCart();
+                    }
+                }
+            }
+        });
+    }, (error) => {
+        console.error('❌ Error en monitoreo de stock:', error);
+    });
+}
+
+// ============================================
+// FUNCIÓN PRINCIPAL DE INICIALIZACIÓN
+// ============================================
+
 async function initializeApp() {
     console.log('🚀 Inicializando Pádel Fuego...');
     
     try {
-        // Cargar carrito desde localStorage
-        const savedCart = localStorage.getItem('padelCart');
-        if (savedCart) {
-            try {
-                cart = JSON.parse(savedCart);
-                console.log(`🛒 Carrito cargado: ${cart.length} productos`);
-            } catch (e) {
-                console.warn('Error cargando carrito:', e);
-                cart = [];
-            }
-        }
+        // 1. Inicializar carrito PRIMERO
+        initCart();
         
-        // Configurar eventos PRIMERO
+        // 2. Configurar eventos
         setupEventListeners();
         
-        // Cargar productos DESPUÉS
+        // 3. Cargar productos
         await loadProducts();
         
-        // Actualizar carrito
-        updateCartCounter();
+        // 4. Actualizar carrito
+        renderCart();
         
-        // Verificar imágenes
+        // 5. Iniciar monitoreo de stock en tiempo real
+        watchStockChanges();
+        
+        // 6. Verificar imágenes
         checkImages();
         
         console.log('✅ Aplicación inicializada');
@@ -562,17 +895,10 @@ window.addEventListener('error', function(e) {
     if (e.target && e.target.tagName === 'IMG') {
         console.log('⚠️ Error cargando imagen:', e.target.src);
         
-        // Solo manejar si no es ya la imagen por defecto
-        if (!e.target.src.includes('/images/default-product.jpg')) {
-            // Si es una imagen de producto
-            if (e.target.closest('.product-card')) {
-                const productName = e.target.alt || 'Producto';
-                handleImageError(e.target, productName);
-            } else {
-                // Para otras imágenes
-                e.target.src = '/images/default-product.jpg';
-                e.target.onerror = null;
-            }
+        // Solo manejar si es una imagen de producto
+        if (e.target.closest('.product-card')) {
+            const productName = e.target.alt || 'Producto';
+            handleImageError(e.target, productName);
         }
         
         e.preventDefault();
@@ -580,17 +906,10 @@ window.addEventListener('error', function(e) {
     }
 }, true);
 
-// Pre-cargar imágenes importantes
-window.addEventListener('load', function() {
-    // Pre-cargar imagen por defecto
-    const preloadImg = new Image();
-    preloadImg.src = '/images/default-product.jpg';
-    console.log('🖼️ Pre-cargando imagen por defecto');
-});
-
 // Cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('📄 DOM cargado');
+    console.log('📄 DOM cargado - Pádel Fuego');
+    console.log('🌐 Sitio: https://padelfuego.web.app');
     
     // Esperar un momento para que todo cargue
     setTimeout(() => {
@@ -602,9 +921,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // 3. HACER FUNCIONES DISPONIBLES GLOBALMENTE
 // ============================================
 window.addToCart = addToCart;
-window.showCart = showCart;
+window.toggleCart = toggleCart;
+window.updateQuantity = updateQuantity;
+window.removeFromCart = removeFromCart;
+window.clearCart = clearCart;
+window.checkout = checkout;
 window.loadProducts = loadProducts;
 window.showNotification = showNotification;
 window.updateCartCounter = updateCartCounter;
 window.setupEventListeners = setupEventListeners;
 window.handleImageError = handleImageError;
+window.renderCart = renderCart;
+window.updateProductStockUI = updateProductStockUI;
+window.watchStockChanges = watchStockChanges;
