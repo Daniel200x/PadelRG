@@ -697,3 +697,19 @@ footer {
         width: 100%;
     }
 }
+
+.view-details {
+    background: #4a7c59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-details:hover {
+    background: #3a6c49;
+}

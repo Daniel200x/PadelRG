@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Pádel Fuego</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA DETALLES DEL PRODUCTO */
+        
+        /* Back Navigation */
+        .back-navigation {
+            padding: 20px 5%;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #2c5530;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: #e8f0e8;
+        }
+        
+        /* Product Details Container */
+        .product-details-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 5%;
+        }
+        
+        .product-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        @media (max-width: 992px) {
+            .product-details-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        /* Product Images */
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .main-image-container {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            cursor: zoom-in;
+            transition: transform 0.5s;
+        }
+        
+        .main-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .image-zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        
+        .zoomed-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+        
+        .close-zoom {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .thumbnail-images {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .thumbnail:hover {
+            border-color: #2c5530;
+        }
+        
+        .thumbnail.active {
+            border-color: #2c5530;
+            transform: scale(1.05);
+        }
+        
+        /* Product Info */
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .product-header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+        
+        .product-title {
+            font-size: 2.5rem;
+            color: #2c5530;
+            margin-bottom: 10px;
+        }
+        
+        .product-brand {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .rating-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+        
+        .rating-value {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .reviews-count {
+            color: #666;
+        }
+        
+        .product-price-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #e8f0e8;
+        }
+        
+        .price-main {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #2c5530;
+            margin-bottom: 10px;
+        }
+        
+        .price-old {
+            font-size: 1.5rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+        
+        .discount-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .stock-status {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .in-stock {
+            color: #2c5530;
+        }
+        
+        .low-stock {
+            color: #ff9800;
+        }
+        
+        .out-of-stock {
+            color: #ff4444;
+        }
+        
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .quantity-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #2c5530;
+            background: white;
+            color: #2c5530;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .quantity-btn:hover {
+            background: #2c5530;
+            color: white;
+        }
+        
+        .quantity-btn:disabled {
+            border-color: #ccc;
+            color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .quantity-btn:disabled:hover {
+            background: white;
+            color: #ccc;
+        }
+        
+        .quantity-input {
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .btn-add-cart {
+            flex: 2;
+            background: #2c5530;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .btn-add-cart:hover {
+            background: #1e3a23;
+            transform: translateY(-2px);
+        }
+        
+        .btn-add-cart:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-wishlist {
+            flex: 1;
+            background: white;
+            color: #2c5530;
+            border: 2px solid #2c5530;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-wishlist:hover {
+            background: #2c5530;
+            color: white;
+        }
+        
+        .product-meta {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+        }
+        
+        /* Product Tabs */
+        .product-tabs {
+            margin-top: 40px;
+        }
+        
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #666;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn:hover {
+            color: #2c5530;
+        }
+        
+        .tab-btn.active {
+            color: #2c5530;
+        }
+        
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #2c5530;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .description-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .specs-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specs-table td {
+            padding: 12px 0;
+        }
+        
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #555;
+            width: 30%;
+        }
+        
+        .reviews-container {
+            max-width: 800px;
+        }
+        
+        .review-form {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .review-form h4 {
+            margin-bottom: 15px;
+            color: #2c5530;
+        }
+        
+        .rating-input {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .rating-input input {
+            display: none;
+        }
+        
+        .rating-input label {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .rating-input input:checked ~ label,
+        .rating-input label:hover,
+        .rating-input label:hover ~ label {
+            color: #ffd700;
+        }
+        
+        .review-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .review-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .review-author {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .review-date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .review-rating {
+            color: #ffd700;
+            margin: 5px 0;
+        }
+        
+        /* Related Products */
+        .related-products {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #eee;
+        }
+        
+        .related-products h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #2c5530;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-title {
+                font-size: 2rem;
+            }
+            
+            .price-main {
+                font-size: 2.2rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .tabs-header {
+                flex-wrap: wrap;
+            }
+            
+            .tab-btn {
+                flex: 1;
+                min-width: 120px;
+                text-align: center;
+            }
+            
+            .main-image {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .product-details-container {
+                padding: 20px;
+            }
+            
+            .product-title {
+                font-size: 1.8rem;
+            }
+            
+            .price-main {
+                font-size: 1.8rem;
+            }
+            
+            .quantity-selector {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 5%;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: #2c5530;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .breadcrumb span {
+            color: #666;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pádel Fuego</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/#productos">Productos</a></li>
+                <li><a href="/#nosotros">Nosotros</a></li>
+                <li><a href="/#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" id="breadcrumb">
+        <a href="/">Inicio</a> <span>></span>
+        <a href="/#productos">Productos</a> <span>></span>
+        <span id="current-product">Cargando...</span>
+    </div>
+
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="/" class="back-link">
+            ← Volver a todos los productos
+        </a>
+    </div>
+
+    <!-- Product Details Container -->
+    <div class="product-details-container">
+        <div id="loading" class="loading" style="display: none;">
+            Cargando detalles del producto...
+        </div>
+        
+        <div id="error-message" style="display: none; background: #f8d7da; color: #721c24; padding: 20px; border-radius: 8px; text-align: center;">
+            Error cargando el producto. Por favor, intenta nuevamente.
+        </div>
+        
+        <div id="product-content" style="display: none;">
+            <!-- Product Images Section -->
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img id="main-product-image" class="main-image" src="" alt="">
+                </div>
+                <div class="thumbnail-images" id="thumbnail-images">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+
+            <!-- Product Info Section -->
+            <div class="product-info">
+                <div class="product-header">
+                    <h1 class="product-title" id="product-title">Cargando...</h1>
+                    <div class="product-brand" id="product-brand"></div>
+                    
+                    <div class="product-rating">
+                        <div class="rating-stars" id="rating-stars"></div>
+                        <span class="rating-value" id="rating-value"></span>
+                        <span class="reviews-count" id="reviews-count">(0 reseñas)</span>
+                    </div>
+                </div>
+                
+                <div class="product-price-section">
+                    <div class="price-main" id="product-price">$0</div>
+                    <div id="discount-container" style="display: none;">
+                        <span class="price-old" id="old-price">$0</span>
+                        <span class="discount-badge" id="discount-badge">0% OFF</span>
+                    </div>
+                    
+                    <div class="stock-status">
+                        Estado: <span id="stock-status" class="in-stock">Cargando...</span>
+                    </div>
+                    
+                    <div class="description-content" id="short-description"></div>
+                </div>
+                
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <label for="quantity">Cantidad:</label>
+                    <button class="quantity-btn" id="decrease-qty" disabled>-</button>
+                    <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="10">
+                    <button class="quantity-btn" id="increase-qty">+</button>
+                    <span style="color: #666; margin-left: 10px;">Máx: <span id="max-quantity">10</span> unidades</span>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn-add-cart" id="add-to-cart-btn">
+                        🛒 Agregar al Carrito
+                    </button>
+                    <button class="btn-wishlist" id="wishlist-btn">
+                        ♥ Agregar a Favoritos
+                    </button>
+                </div>
+                
+                <!-- Product Meta -->
+                <div class="product-meta">
+                    <div class="meta-item">
+                        📦 <span>Envío gratis en compras +$50,000</span>
+                    </div>
+                    <div class="meta-item">
+                        🔄 <span>30 días de garantía</span>
+                    </div>
+                    <div class="meta-item">
+                        📞 <span>Soporte 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Tabs -->
+        <div class="product-tabs" id="product-tabs" style="display: none;">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Descripción</button>
+                <button class="tab-btn" data-tab="specifications">Especificaciones</button>
+                <button class="tab-btn" data-tab="reviews">Reseñas</button>
+                <button class="tab-btn" data-tab="shipping">Envío y Devoluciones</button>
+            </div>
+            
+            <!-- Description Tab -->
+            <div class="tab-content active" id="description-content">
+                <div class="description-content" id="full-description"></div>
+            </div>
+            
+            <!-- Specifications Tab -->
+            <div class="tab-content" id="specifications-content">
+                <table class="specs-table" id="specs-table">
+                    <!-- Specifications will be loaded dynamically -->
+                </table>
+            </div>
+            
+            <!-- Reviews Tab -->
+            <div class="tab-content" id="reviews-content">
+                <div class="reviews-container">
+                    <!-- Review form will be added here -->
+                    <div class="review-list" id="review-list">
+                        <!-- Reviews will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shipping Tab -->
+            <div class="tab-content" id="shipping-content">
+                <div class="description-content">
+                    <h3>🚚 Política de Envío</h3>
+                    <p>• Envío estándar: 3-5 días hábiles</p>
+                    <p>• Envío express disponible: 1-2 días hábiles</p>
+                    <p>• Envío gratis en compras mayores a $50,000</p>
+                    <p>• Realizamos envíos a todo el país</p>
+                    
+                    <h3 style="margin-top: 30px;">🔄 Política de Devoluciones</h3>
+                    <p>• 30 días de garantía en todas las palas</p>
+                    <p>• El producto debe estar en empaque original</p>
+                    <p>• Costos de envío de devolución a cargo del cliente</p>
+                    <p>• Reembolso procesado en 5-7 días hábiles</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Related Products -->
+        <div class="related-products" id="related-products" style="display: none;">
+            <h3>Productos Relacionados</h3>
+            <div class="related-grid" id="related-grid">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Image Zoom Overlay -->
+    <div class="image-zoom-overlay" id="image-zoom-overlay">
+        <button class="close-zoom" id="close-zoom">×</button>
+        <img class="zoomed-image" id="zoomed-image" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pádel Fuego. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Firebase Auth -->
+    <script src="firebase-auth.js"></script>
+    
+    <script>
+        // Variables globales
+        let currentProduct = null;
+        let currentImages = [];
+        let relatedProducts = [];
+        let db = null;
+
+        // Obtener ID del producto desde la URL
+        function getProductIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+
+        // Cargar producto desde Firestore o datos locales
+        async function loadProduct() {
+            const productId = getProductIdFromURL();
+            if (!productId) {
+                showError('Producto no encontrado');
+                return;
+            }
+
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('error-message').style.display = 'none';
+            document.getElementById('product-content').style.display = 'none';
+            document.getElementById('product-tabs').style.display = 'none';
+            document.getElementById('related-products').style.display = 'none';
+
+            try {
+                // Intentar cargar desde Firestore
+                if (window.db) {
+                    const doc = await window.db.collection('products').doc(productId).get();
+                    if (doc.exists) {
+                        currentProduct = {
+                            id: doc.id,
+                            ...doc.data()
+                        };
+                        console.log('✅ Producto cargado de Firestore:', currentProduct);
+                    } else {
+                        throw new Error('Producto no encontrado en Firestore');
+                    }
+                } else {
+                    // Cargar desde datos locales
+                    currentProduct = await loadProductFromLocal(productId);
+                }
+
+                // Si se cargó el producto, mostrarlo
+                if (currentProduct) {
+                    displayProductDetails();
+                    loadRelatedProducts();
+                } else {
+                    throw new Error('Producto no encontrado');
+                }
+
+            } catch (error) {
+                console.error('Error cargando producto:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error-message').style.display = 'block';
+            }
+        }
+
+        // Cargar producto desde datos locales
+        async function loadProductFromLocal(productId) {
+            // Aquí puedes definir tus productos locales
+            const localProducts = [
+                {
+                    id: '1',
+                    name: 'Pala Bullpadel Vertex 03',
+                    brand: 'Bullpadel',
+                    description: 'La Pala Bullpadel Vertex 03 es una pala de potencia media-alta diseñada para jugadores intermedios que buscan mejorar su juego. Con su forma de diamante, ofrece un balance alto que proporciona gran potencia en los golpes sin sacrificar demasiado el control. Ideal para jugadores que buscan un punto intermedio entre control y potencia.',
+                    price: 89990,
+                    oldPrice: 99990,
+                    stock: 15,
+                    rating: 4.5,
+                    reviews: 24,
+                    category: 'palas',
+                    images: [
+                        'https://http2.mlstatic.com/D_NQ_NP_2X_898905-MLA53507129989_012022-F.webp',
+                        'https://via.placeholder.com/600x400/2c5530/FFFFFF?text=Pala+Lado+1',
+                        'https://via.placeholder.com/600x400/4a7c59/FFFFFF?text=Pala+Lado+2',
+                        'https://via.placeholder.com/600x400/ff6b35/FFFFFF?text=Detalle+Empu%C3%B1adura'
+                    ],
+                    specifications: {
+                        'Forma': 'Diamante',
+                        'Peso': '360-375g',
+                        'Balance': 'Alto',
+                        'Núcleo': 'Goma EVA',
+                        'Superficie': 'Fibra de vidrio',
+                        'Grosor': '38mm',
+                        'Nivel': 'Intermedio-Avanzado'
+                    }
+                },
+                {
+                    id: '2',
+                    name: 'Pala Head Alpha Pro',
+                    brand: 'Head',
+                    description: 'La Pala Head Alpha Pro está diseñada para jugadores avanzados que buscan el máximo control en la pista. Su forma redonda y balance bajo ofrecen una sensación sólida y estable en todos los golpes. La tecnología Graphene proporciona mayor rigidez sin aumentar el peso.',
+                    price: 75990,
+                    stock: 8,
+                    rating: 4.3,
+                    reviews: 18,
+                    category: 'palas',
+                    images: [
+                        'https://http2.mlstatic.com/D_NQ_NP_2X_653317-MLA47970639143_102021-F.webp',
+                        'https://via.placeholder.com/600x400/2c5530/FFFFFF?text=Alpha+Pro+Lado+1',
+                        'https://via.placeholder.com/600x400/4a7c59/FFFFFF?text=Alpha+Pro+Lado+2'
+                    ],
+                    specifications: {
+                        'Forma': 'Redonda',
+                        'Peso': '355-370g',
+                        'Balance': 'Bajo',
+                        'Núcleo': 'Goma EVA High Density',
+                        'Superficie': 'Carbono',
+                        'Grosor': '36mm',
+                        'Nivel': 'Avanzado'
+                    }
+                }
+            ];
+
+            return localProducts.find(p => p.id === productId);
+        }
+
+        // Mostrar detalles del producto
+        function displayProductDetails() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('product-content').style.display = 'grid';
+            document.getElementById('product-tabs').style.display = 'block';
+            
+            // Actualizar breadcrumb
+            document.getElementById('current-product').textContent = currentProduct.name;
+            
+            // Actualizar título
+            document.getElementById('product-title').textContent = currentProduct.name;
+            document.getElementById('product-brand').textContent = currentProduct.brand || 'Marca no especificada';
+            
+            // Actualizar precio
+            document.getElementById('product-price').textContent = `$${currentProduct.price.toLocaleString('es-AR')}`;
+            
+            // Mostrar precio anterior si existe
+            if (currentProduct.oldPrice) {
+                document.getElementById('discount-container').style.display = 'block';
+                document.getElementById('old-price').textContent = `$${currentProduct.oldPrice.toLocaleString('es-AR')}`;
+                const discount = Math.round(((currentProduct.oldPrice - currentProduct.price) / currentProduct.oldPrice) * 100);
+                document.getElementById('discount-badge').textContent = `${discount}% OFF`;
+            }
+            
+            // Actualizar rating
+            document.getElementById('rating-value').textContent = currentProduct.rating.toFixed(1);
+            document.getElementById('reviews-count').textContent = `(${currentProduct.reviews || 0} reseñas)`;
+            
+            // Actualizar estrellas
+            const starsContainer = document.getElementById('rating-stars');
+            starsContainer.innerHTML = getStarsHTML(currentProduct.rating);
+            
+            // Actualizar descripción corta
+            document.getElementById('short-description').textContent = 
+                currentProduct.description.substring(0, 150) + '...';
+            
+            // Actualizar descripción completa
+            document.getElementById('full-description').textContent = currentProduct.description;
+            
+            // Actualizar stock
+            updateStockDisplay(currentProduct.stock);
+            
+            // Actualizar imágenes
+            displayProductImages();
+            
+            // Actualizar especificaciones
+            displaySpecifications();
+            
+            // Configurar controles de cantidad
+            setupQuantityControls();
+            
+            // Configurar botones
+            setupActionButtons();
+            
+            // Configurar pestañas
+            setupTabs();
+        }
+
+        // Generar HTML de estrellas
+        function getStarsHTML(rating) {
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            let starsHTML = '';
+            
+            for (let i = 0; i < 5; i++) {
+                if (i < fullStars) {
+                    starsHTML += '⭐';
+                } else if (i === fullStars && halfStar) {
+                    starsHTML += '⭐';
+                } else {
+                    starsHTML += '☆';
+                }
+            }
+            
+            return starsHTML;
+        }
+
+        // Actualizar display de stock
+        function updateStockDisplay(stock) {
+            const stockElement = document.getElementById('stock-status');
+            const maxQuantityElement = document.getElementById('max-quantity');
+            const addToCartBtn = document.getElementById('add-to-cart-btn');
+            
+            maxQuantityElement.textContent = Math.min(stock, 10);
+            
+            if (stock > 10) {
+                stockElement.textContent = 'En stock';
+                stockElement.className = 'in-stock';
+                addToCartBtn.disabled = false;
+            } else if (stock > 0) {
+                stockElement.textContent = `Solo ${stock} unidades disponibles`;
+                stockElement.className = 'low-stock';
+                addToCartBtn.disabled = false;
+            } else {
+                stockElement.textContent = 'Agotado';
+                stockElement.className = 'out-of-stock';
+                addToCartBtn.disabled = true;
+                addToCartBtn.textContent = 'Producto Agotado';
+            }
+        }
+
+        // Mostrar imágenes del producto
+        function displayProductImages() {
+            const mainImage = document.getElementById('main-product-image');
+            const thumbnailsContainer = document.getElementById('thumbnail-images');
+            
+            // Usar imágenes del producto o imagen por defecto
+            const images = currentProduct.images || [
+                `https://via.placeholder.com/600x400/2c5530/FFFFFF?text=${encodeURIComponent(currentProduct.name.substring(0, 30))}`
+            ];
+            
+            currentImages = images;
+            
+            // Configurar imagen principal
+            mainImage.src = images[0];
+            mainImage.alt = currentProduct.name;
+            mainImage.onclick = () => openImageZoom(images[0]);
+            
+            // Limpiar thumbnails
+            thumbnailsContainer.innerHTML = '';
+            
+            // Agregar thumbnails
+            images.forEach((image, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.className = 'thumbnail' + (index === 0 ? ' active' : '');
+                thumbnail.src = image;
+                thumbnail.alt = `${currentProduct.name} - Vista ${index + 1}`;
+                thumbnail.onclick = () => switchMainImage(image, index);
+                thumbnailsContainer.appendChild(thumbnail);
+            });
+        }
+
+        // Cambiar imagen principal
+        function switchMainImage(imageSrc, index) {
+            const mainImage = document.getElementById('main-product-image');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            // Actualizar imagen principal
+            mainImage.src = imageSrc;
+            
+            // Actualizar thumbnails activos
+            thumbnails.forEach((thumb, i) => {
+                thumb.classList.toggle('active', i === index);
+            });
+        }
+
+        // Zoom de imagen
+        function openImageZoom(imageSrc) {
+            const overlay = document.getElementById('image-zoom-overlay');
+            const zoomedImage = document.getElementById('zoomed-image');
+            
+            zoomedImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        // Cerrar zoom
+        function closeImageZoom() {
+            document.getElementById('image-zoom-overlay').style.display = 'none';
+        }
+
+        // Mostrar especificaciones
+        function displaySpecifications() {
+            const specsTable = document.getElementById('specs-table');
+            specsTable.innerHTML = '';
+            
+            if (currentProduct.specifications) {
+                Object.entries(currentProduct.specifications).forEach(([key, value]) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${key}</td>
+                        <td>${value}</td>
+                    `;
+                    specsTable.appendChild(row);
+                });
+            } else {
+                specsTable.innerHTML = `
+                    <tr>
+                        <td colspan="2" style="text-align: center; color: #666; padding: 30px;">
+                            No hay especificaciones disponibles para este producto.
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        // Configurar controles de cantidad
+        function setupQuantityControls() {
+            const decreaseBtn = document.getElementById('decrease-qty');
+            const increaseBtn = document.getElementById('increase-qty');
+            const quantityInput = document.getElementById('quantity');
+            const maxQuantity = Math.min(currentProduct.stock, 10);
+            
+            // Configurar valores iniciales
+            quantityInput.value = 1;
+            quantityInput.max = maxQuantity;
+            
+            // Configurar botón disminuir
+            decreaseBtn.onclick = () => {
+                const current = parseInt(quantityInput.value);
+                if (current > 1) {
+                    quantityInput.value = current - 1;
+                    updateQuantityButtons();
+                }
+            };
+            
+            // Configurar botón aumentar
+            increaseBtn.onclick = () => {
+                const current = parseInt(quantityInput.value);
+                if (current < maxQuantity) {
+                    quantityInput.value = current + 1;
+                    updateQuantityButtons();
+                }
+            };
+            
+            // Configurar input
+            quantityInput.onchange = () => {
+                let value = parseInt(quantityInput.value);
+                if (isNaN(value) || value < 1) value = 1;
+                if (value > maxQuantity) value = maxQuantity;
+                quantityInput.value = value;
+                updateQuantityButtons();
+            };
+            
+            // Actualizar estado de botones
+            function updateQuantityButtons() {
+                const current = parseInt(quantityInput.value);
+                decreaseBtn.disabled = current <= 1;
+                increaseBtn.disabled = current >= maxQuantity;
+            }
+            
+            updateQuantityButtons();
+        }
+
+        // Configurar botones de acción
+        function setupActionButtons() {
+            const addToCartBtn = document.getElementById('add-to-cart-btn');
+            const wishlistBtn = document.getElementById('wishlist-btn');
+            
+            // Botón agregar al carrito
+            addToCartBtn.onclick = () => {
+                const quantity = parseInt(document.getElementById('quantity').value);
+                addToCart(currentProduct.id, currentProduct.name, currentProduct.price, currentProduct.stock, quantity);
+            };
+            
+            // Botón favoritos
+            wishlistBtn.onclick = () => {
+                addToWishlist();
+            };
+        }
+
+        // Función para agregar al carrito (similar a la función en script.js)
+        function addToCart(productId, productName, productPrice, productStock, quantity = 1) {
+            try {
+                console.log(`🛒 Agregando ${quantity} ${productName} al carrito`);
+                
+                // Obtener carrito actual
+                let cart = JSON.parse(localStorage.getItem('padelCart')) || [];
+                
+                // Buscar si el producto ya está en el carrito
+                const existingIndex = cart.findIndex(item => item.id === productId);
+                
+                if (existingIndex >= 0) {
+                    // Verificar si hay suficiente stock
+                    const requestedQuantity = cart[existingIndex].quantity + quantity;
+                    
+                    if (productStock !== undefined && requestedQuantity > productStock) {
+                        alert(`Solo quedan ${productStock} unidades de ${productName}`);
+                        return;
+                    }
+                    
+                    // Actualizar cantidad
+                    cart[existingIndex].quantity += quantity;
+                } else {
+                    // Agregar nuevo producto
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        quantity: quantity,
+                        maxStock: productStock
+                    });
+                }
+                
+                // Guardar carrito
+                localStorage.setItem('padelCart', JSON.stringify(cart));
+                
+                // Mostrar notificación
+                alert(`✅ Se agregaron ${quantity} ${productName} al carrito`);
+                
+                // Actualizar contador si existe en la página principal
+                if (window.updateCartCounter) {
+                    window.updateCartCounter();
+                }
+                
+            } catch (error) {
+                console.error('Error agregando al carrito:', error);
+                alert('Error al agregar producto al carrito');
+            }
+        }
+
+        // Función para agregar a favoritos
+        function addToWishlist() {
+            try {
+                // Obtener lista de favoritos
+                let wishlist = JSON.parse(localStorage.getItem('padelWishlist')) || [];
+                
+                // Verificar si ya está en favoritos
+                const alreadyExists = wishlist.some(item => item.id === currentProduct.id);
+                
+                if (alreadyExists) {
+                    alert('⚠️ Este producto ya está en tus favoritos');
+                } else {
+                    // Agregar a favoritos
+                    wishlist.push({
+                        id: currentProduct.id,
+                        name: currentProduct.name,
+                        price: currentProduct.price,
+                        image: currentImages[0]
+                    });
+                    
+                    localStorage.setItem('padelWishlist', JSON.stringify(wishlist));
+                    alert('❤️ Producto agregado a favoritos');
+                }
+            } catch (error) {
+                console.error('Error agregando a favoritos:', error);
+                alert('Error al agregar a favoritos');
+            }
+        }
+
+        // Configurar pestañas
+        function setupTabs() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.getAttribute('data-tab');
+                    
+                    // Actualizar botones activos
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Actualizar contenido activo
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                        if (content.id === `${tabId}-content`) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+        }
+
+        // Cargar productos relacionados
+        async function loadRelatedProducts() {
+            const relatedGrid = document.getElementById('related-grid');
+            const relatedContainer = document.getElementById('related-products');
+            
+            try {
+                if (window.db) {
+                    // Cargar productos de la misma categoría desde Firestore
+                    const snapshot = await window.db.collection('products')
+                        .where('category', '==', currentProduct.category)
+                        .limit(4)
+                        .get();
+                    
+                    relatedProducts = snapshot.docs
+                        .filter(doc => doc.id !== currentProduct.id)
+                        .map(doc => ({
+                            id: doc.id,
+                            ...doc.data()
+                        }));
+                }
+                
+                // Si no hay suficientes productos en Firestore, usar datos locales
+                if (!relatedProducts.length || relatedProducts.length < 2) {
+                    relatedProducts = await getLocalRelatedProducts();
+                }
+                
+                // Si hay productos relacionados, mostrarlos
+                if (relatedProducts.length > 0) {
+                    relatedContainer.style.display = 'block';
+                    displayRelatedProducts();
+                }
+                
+            } catch (error) {
+                console.error('Error cargando productos relacionados:', error);
+            }
+        }
+
+        // Obtener productos relacionados locales
+        async function getLocalRelatedProducts() {
+            // Datos locales de ejemplo
+            const localProducts = [
+                {
+                    id: '3',
+                    name: 'Pelotas Head Padel Pro',
+                    price: 12990,
+                    brand: 'Head',
+                    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_708131-MLA48373161791_112021-F.webp',
+                    rating: 4.7
+                },
+                {
+                    id: '4',
+                    name: 'Mochila Bullpadel Advance',
+                    price: 34990,
+                    brand: 'Bullpadel',
+                    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_886056-MLU72877094720_112023-F.webp',
+                    rating: 4.2
+                },
+                {
+                    id: '5',
+                    name: 'Zapatos Asics Gel-Padel Pro',
+                    price: 55990,
+                    brand: 'Asics',
+                    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_985856-MLA53777607358_022023-F.webp',
+                    rating: 4.6
+                }
+            ];
+            
+            return localProducts.filter(p => p.id !== currentProduct.id).slice(0, 3);
+        }
+
+        // Mostrar productos relacionados
+        function displayRelatedProducts() {
+            const relatedGrid = document.getElementById('related-grid');
+            relatedGrid.innerHTML = '';
+            
+            relatedProducts.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.style.cursor = 'pointer';
+                productCard.onclick = () => {
+                    window.location.href = `product-details.html?id=${product.id}`;
+                };
+                
+                productCard.innerHTML = `
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy"
+                             onerror="this.src='https://via.placeholder.com/300x200/2c5530/FFFFFF?text=${encodeURIComponent(product.name.substring(0, 20))}'">
+                    </div>
+                    <h3>${product.name}</h3>
+                    <p class="brand">${product.brand}</p>
+                    <div class="price">$${product.price.toLocaleString('es-AR')}</div>
+                    <div class="rating">${getStarsHTML(product.rating || 0)} ${(product.rating || 0).toFixed(1)}/5</div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('${product.id}', '${product.name}', ${product.price}, 10)">
+                        Agregar al Carrito
+                    </button>
+                `;
+                
+                relatedGrid.appendChild(productCard);
+            });
+        }
+
+        // Mostrar error
+        function showError(message) {
+            document.getElementById('error-message').style.display = 'block';
+            document.getElementById('error-message').textContent = message;
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        // Inicializar página
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 Inicializando página de detalles del producto...');
+            
+            // Inicializar Firebase si está disponible
+            if (window.initFirebase) {
+                window.initFirebase();
+                document.addEventListener('firebaseReady', () => {
+                    db = window.db;
+                    loadProduct();
+                });
+            } else {
+                // Cargar producto sin Firebase
+                loadProduct();
+            }
+            
+            // Configurar zoom de imagen
+            document.getElementById('close-zoom').onclick = closeImageZoom;
+            document.getElementById('image-zoom-overlay').onclick = (e) => {
+                if (e.target === document.getElementById('image-zoom-overlay')) {
+                    closeImageZoom();
+                }
+            };
+            
+            // Cerrar zoom con ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeImageZoom();
+                }
+            });
+        });
+
+        // Hacer funciones disponibles globalmente
+        window.addToCart = addToCart;
+        window.switchMainImage = switchMainImage;
+        window.openImageZoom = openImageZoom;
+        window.closeImageZoom = closeImageZoom;
+    </script>
+</body>
+</html>

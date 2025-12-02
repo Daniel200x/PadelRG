@@ -102,28 +102,38 @@ function displayProduct(product) {
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
     productCard.innerHTML = `
-        <div class="product-image">
-            <img src="${safeProduct.imageUrl}" 
-                 alt="${safeProduct.name}"
-                 loading="lazy"
-                 onerror="handleImageError(this, '${safeProduct.name.replace(/'/g, "\\'")}')">
-        </div>
-        <h3>${safeProduct.name}</h3>
-        <p class="brand">${safeProduct.brand}</p>
-        <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
-        <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
-        <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
-            ${getStockMessage(safeProduct.stock)}
-        </div>
-        <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
-        <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
-                ${safeProduct.stock === 0 ? 'disabled' : ''}>
-            ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
-        </button>
-    `;
+        <div class="product-image" style="cursor: pointer;" onclick="viewProductDetails('${safeProduct.id}')">
+        <img src="${safeProduct.imageUrl}" 
+             alt="${safeProduct.name}"
+             loading="lazy"
+             onerror="handleImageError(this, '${safeProduct.name.replace(/'/g, "\\'")}')">
+    </div>
+    <h3>${safeProduct.name}</h3>
+    <p class="brand">${safeProduct.brand}</p>
+    <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
+    <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
+    <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
+        ${getStockMessage(safeProduct.stock)}
+    </div>
+    <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
+    <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
+            ${safeProduct.stock === 0 ? 'disabled' : ''}>
+        ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
+    </button><button class="view-details" onclick="viewProductDetails('${safeProduct.id}')" style="background: #4a7c59; margin-top: 10px;">
+    👁️ Ver Detalles
+</button>
+`;
     
     productsGrid.appendChild(productCard);
 }
+// Función para ver detalles del producto
+function viewProductDetails(productId) {
+    window.location.href = `product-details.html?id=${productId}`;
+}
+
+// Hacer disponible globalmente
+window.viewProductDetails = viewProductDetails;
+
 
 // Función para cargar productos locales (fallback)
 function loadLocalProducts() {
