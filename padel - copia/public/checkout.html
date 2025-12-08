@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pádel Fuego</title>
+    <link rel="stylesheet" href="checkout.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- Header -->
+        <div class="checkout-header">
+            <h1>🛒 Finalizar Compra</h1>
+            <p>Completa tus datos para completar el pedido</p>
+            
+            <div class="step-indicator">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Datos</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Pago</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Confirmación</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="checkout-content">
+            <!-- Order Form -->
+            <div class="checkout-form">
+                <!-- Error Message -->
+                <div id="error-message" class="error-message"></div>
+
+                <!-- Stock Warning -->
+                <div id="stock-warning" class="stock-warning">
+                    <div class="warning-icon">⚠️</div>
+                    <div class="warning-content">
+                        <strong>Advertencia de stock</strong>
+                        <p id="stock-warning-text">Algunos productos tienen stock insuficiente.</p>
+                        <div class="warning-actions">
+                            <button class="warning-btn accept" onclick="handleProceedWithLowStock()">
+                                Proceder igual
+                            </button>
+                            <button class="warning-btn cancel" onclick="handleCancelLowStock()">
+                                Cancelar compra
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Info -->
+                <div class="form-section">
+                    <h3>👤 Información Personal</h3>
+                    <div class="form-group">
+                        <label for="fullName" class="required">Nombre Completo</label>
+                        <input type="text" id="fullName" placeholder="Juan Pérez" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="required">Email</label>
+                            <input type="email" id="email" placeholder="juan@ejemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="required">Teléfono</label>
+                            <input type="tel" id="phone" placeholder="+54 11 1234-5678" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Address -->
+                <div class="form-section">
+                    <h3>🏠 Dirección de Envío</h3>
+                    <div class="form-group">
+                        <label for="address" class="required">Dirección</label>
+                        <input type="text" id="address" placeholder="Calle Principal 123" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city" class="required">Ciudad</label>
+                            <input type="text" id="city" placeholder="Buenos Aires" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="province" class="required">Provincia</label>
+                            <select id="province" required>
+                                <option value="">Seleccionar provincia</option>
+                                <option value="CABA">Ciudad de Buenos Aires</option>
+                                <option value="BA">Buenos Aires</option>
+                                <option value="CBA">Córdoba</option>
+                                <option value="SF">Santa Fe</option>
+                                <option value="MZA">Mendoza</option>
+                                <option value="TDF">Tierra del Fuego</option>
+                                <option value="ER">Entre Ríos</option>
+                                <option value="SJ">San Juan</option>
+                                <option value="SL">San Luis</option>
+                                <option value="RN">Río Negro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipCode" class="required">Código Postal</label>
+                            <input type="text" id="zipCode" placeholder="1234" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="required">País</label>
+                            <select id="country" required>
+                                <option value="AR" selected>Argentina</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="CL">Chile</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="BO">Bolivia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="form-section">
+                    <h3>💳 Método de Pago</h3>
+                    <div class="payment-methods">
+                        <label class="payment-method" onclick="selectPaymentMethod('transferencia')">
+                            <input type="radio" name="paymentMethod" value="transferencia">
+                            <span class="payment-icon">🏦</span>
+                            <span>
+                                <strong>Transferencia Bancaria</strong>
+                                <small style="display: block; color: #2c5530; font-weight: bold;">
+                                    ⭐ 10% DE DESCUENTO
+                                </small>
+                                <small style="display: block; color: #666;">
+                                    Recibirás los datos por email
+                                </small>
+                            </span>
+                        </label>
+                        
+                        <label class="payment-method" onclick="selectPaymentMethod('mercado-pago')">
+                            <input type="radio" name="paymentMethod" value="mercado-pago">
+                            <span class="payment-icon">💙</span>
+                            <span>
+                                <strong>Mercado Pago</strong>
+                                <small style="display: block; color: #666;">
+                                    Pago seguro con tarjeta
+                                </small>
+                            </span>
+                        </label>
+                        
+                        <label class="payment-method" onclick="selectPaymentMethod('efectivo')">
+                            <input type="radio" name="paymentMethod" value="efectivo">
+                            <span class="payment-icon">💵</span>
+                            <span>
+                                <strong>Efectivo</strong>
+                                <small style="display: block; color: #2c5530; font-weight: bold;">
+                                    ⭐ 15% DE DESCUENTO
+                                </small>
+                                <small style="display: block; color: #666;">
+                                    Al momento de la entrega
+                                </small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Additional Notes -->
+                <div class="form-section">
+                    <h3>📝 Notas Adicionales</h3>
+                    <div class="form-group">
+                        <label for="notes">Instrucciones especiales para la entrega</label>
+                        <textarea id="notes" rows="3" placeholder="Ej: Llamar antes de entregar, entregar en portería, etc."></textarea>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-section">
+                    <div class="terms">
+                        <input type="checkbox" id="acceptTerms" required>
+                        <label for="acceptTerms">
+                            Acepto los <a href="#" onclick="showTerms(); return false;">términos y condiciones</a> y la 
+                            <a href="#" onclick="showPrivacy(); return false;">política de privacidad</a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <a href="/" class="btn btn-back">← Volver a la Tienda</a>
+                    <button class="btn btn-confirm" onclick="submitOrder()" id="submitBtn">
+                        <span>💳</span>
+                        Confirmar Pedido
+                    </button>
+                </div>
+            </div>
+
+            <!-- =========================================== -->
+            <!-- ORDER SUMMARY - SE CORRIGIÓ AQUÍ -->
+            <!-- =========================================== -->
+            <div class="order-summary">
+                <h3>📋 Resumen del Pedido</h3>
+                
+                <!-- Este es el contenedor de los productos del carrito -->
+                <div id="order-items" class="order-items">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+                
+                <!-- Mensaje cuando el carrito está vacío -->
+                <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+                    <p>Tu carrito está vacío</p>
+                    <a href="/">Ver productos</a>
+                </div>
+                
+                <!-- Total del pedido con descuentos -->
+                <div class="order-total">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0</span>
+                    </div>
+                    
+                    <!-- Línea de descuento -->
+                    <div class="total-row" id="discount-row" style="display: none;">
+                        <span id="discount-label">Descuento:</span>
+                        <span id="discount-amount">$0</span>
+                    </div>
+                    
+                    <div class="total-row">
+                        <span>Envío:</span>
+                        <span id="shipping">$2.500</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>Total:</span>
+                        <span id="grand-total">$0</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
+                    <p style="color: #666; font-size: 0.9rem;">
+                        <strong>📦 Envío:</strong> 3-5 días hábiles
+                    </p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                        <strong>🎁 Envío gratis en compras mayores a $30,000</strong>
+                    </p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                        <strong>🔄 Devoluciones:</strong> 30 días de garantía
+                    </p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                        <strong>💰 Descuentos:</strong> Transferencia 10% | Efectivo 15%
+                    </p>
+                </div>
+            </div>
+            <!-- =========================================== -->
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <div class="success-icon">✅</div>
+            <h2>¡Pedido Confirmado!</h2>
+            <p>Tu pedido ha sido procesado exitosamente. Hemos enviado un email de confirmación con todos los detalles.</p>
+            
+            <div class="order-number">
+                N° de Pedido: <span id="orderId">PF-00001</span>
+            </div>
+            
+            <p style="font-size: 0.9rem;">
+                Te contactaremos en las próximas 24 horas para coordinar el envío.
+            </p>
+            
+            <div style="margin-top: 30px;">
+                <a href="/" class="btn btn-confirm" style="width: 100%;">
+                    ← Volver a la Tienda
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

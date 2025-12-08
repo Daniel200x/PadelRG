@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pelotas Bullpadel Premium Pro",
+      "description": "Tubo de 3 pelotas de pádel profesionales",
+      "price": 16990,
+      "category": "bolas",
+      "brand": "Bullpadel",
+      "stock": 15,
+      "image": "img/bullpadel-premium-pro.jpeg",
+      
+      "features": ["Presión regulada", "Durabilidad mejorada"],
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Pelotas Nox Titanium Pro",
+      "description": "Tubo de 3 pelotas de pádel profesionales",
+      "price": 16990,
+      "category": "bolas",
+      "brand": "Nox",
+      "stock": 8,
+      "image": "img/nox-pack3.jpeg",
+      "features": ["Presión regulada", "Durabilidad mejorada"],
+      "rating": 4.3
+    },
+    {
+      "id": 3,
+      "name": "Pelotas Head Padel Pro",
+      "description": "Tubo de 3 pelotas de pádel profesionales",
+      "price": 12990,
+      "category": "bolas",
+      "brand": "Head",
+      "stock": 50,
+      "image": "https://via.placeholder.com/300x300/ff6b35/ffffff?text=Pelotas",
+      "features": ["Presión regulada", "Durabilidad mejorada"],
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "name": "Overgrips Tecnifibre",
+      "description": "Pack de 5 overgrips absorbentes",
+      "price": 4990,
+      "category": "accesorios",
+      "brand": "Tecnifibre",
+      "stock": 30,
+      "image": "https://via.placeholder.com/300x300/333333/ffffff?text=Overgrips",
+      "features": ["Absorción superior", "No resbaladizo"],
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "name": "Mochila Adidas Padel",
+      "description": "Mochila para 2 palas y equipamiento",
+      "price": 29990,
+      "category": "accesorios",
+      "brand": "Adidas",
+      "stock": 12,
+      "image": "https://via.placeholder.com/300x300/0066cc/ffffff?text=Mochila",
+      "features": ["Capacidad 30L", "Bolsa para zapatos", "Impermeable"],
+      "rating": 4.4
+    },
+    {
+      "id": 6,
+      "name": "Zapatillas Asics Gel-Rocket",
+      "description": "Zapatillas específicas para pádel",
+      "price": 45990,
+      "category": "calzado",
+      "brand": "Asics",
+      "stock": 10,
+      "image": "https://via.placeholder.com/300x300/000000/ffffff?text=Zapatillas",
+      "features": ["Amortiguación Gel", "Suela específica pista"],
+      "rating": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Pala Nox ML10 Pro Cup",
+      "description": "Excelente relación control/potencia",
+      "price": 68990,
+      "category": "palas",
+      "brand": "Nox",
+      "stock": 6,
+      "image": "https://via.placeholder.com/300x300/800080/ffffff?text=Pala+Nox",
+      "features": ["Carbono 3K", "Goma HR3", "Forma diamante"],
+      "rating": 4.8
+    },
+    {
+      "id": 8,
+      "name": "Protector Palas",
+      "description": "Protector de bordes para palas",
+      "price": 3490,
+      "category": "accesorios",
+      "brand": "Padel Nuestro",
+      "stock": 25,
+      "image": "https://via.placeholder.com/300x300/666666/ffffff?text=Protector",
+      "features": ["Autoadhesivo", "5mm grosor"],
+      "rating": 4.0
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "palas", "description": "Palas de pádel" },
+    { "id": 2, "name": "bolas", "description": "Pelotas de pádel" },
+    { "id": 3, "name": "accesorios", "description": "Accesorios para pádel" },
+    { "id": 4, "name": "calzado", "description": "Zapatillas de pádel" },
+    { "id": 5, "name": "ropa", "description": "Ropa deportiva" }
+  ],
+  "orders": [],
+  "users": []
+}

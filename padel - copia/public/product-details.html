@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Pádel Fuego</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-details.css">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pádel Fuego</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/#productos">Productos</a></li>
+                <li><a href="/#nosotros">Nosotros</a></li>
+                <li><a href="/#contacto">Contacto</a></li>
+                
+                <li><a href="#" class="cart-link" onclick="toggleCart(); return false;">🛒 Carrito <span id="cart-counter" class="cart-counter">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" id="breadcrumb">
+        <a href="/">Inicio</a> <span>></span>
+        <a href="/#productos">Productos</a> <span>></span>
+        <span id="current-product">Cargando...</span>
+    </div>
+
+    <!-- Back Navigation -->
+    <div class="back-navigation">
+        <a href="/" class="back-link">
+            ← Volver a todos los productos
+        </a>
+    </div>
+
+    <!-- Product Details Container -->
+    <div class="product-details-container">
+        <div id="loading" class="loading" style="display: none;">
+            Cargando detalles del producto...
+        </div>
+        
+        <div id="error-message" style="display: none; background: #f8d7da; color: #721c24; padding: 20px; border-radius: 8px; text-align: center;">
+            Error cargando el producto. Por favor, intenta nuevamente.
+        </div>
+        
+        <div id="product-content" style="display: none;">
+            <!-- Product Images Section -->
+            <div class="product-images">
+                <div class="main-image-container">
+                    <img id="main-product-image" class="main-image" src="" alt="">
+                </div>
+                <div class="thumbnail-images" id="thumbnail-images">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+
+            <!-- Product Info Section -->
+            <div class="product-info">
+                <div class="product-header">
+                    <h1 class="product-title" id="product-title">Cargando...</h1>
+                    <div class="product-brand" id="product-brand"></div>
+                    
+                    <div class="product-rating">
+                        <div class="rating-stars" id="rating-stars"></div>
+                        <span class="rating-value" id="rating-value"></span>
+                        <span class="reviews-count" id="reviews-count">(0 reseñas)</span>
+                    </div>
+                </div>
+                
+                <div class="product-price-section">
+                    <div class="price-main" id="product-price">$0</div>
+                    <div id="discount-container" style="display: none;">
+                        <span class="price-old" id="old-price">$0</span>
+                        <span class="discount-badge" id="discount-badge">0% OFF</span>
+                    </div>
+                    
+                    <div class="stock-status">
+                        Estado: <span id="stock-status" class="in-stock">Cargando...</span>
+                    </div>
+                    
+                    <div class="description-content" id="short-description"></div>
+                </div>
+                
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <label for="quantity">Cantidad:</label>
+                    <button class="quantity-btn" id="decrease-qty" disabled>-</button>
+                    <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="10">
+                    <button class="quantity-btn" id="increase-qty">+</button>
+                    <span style="color: #666; margin-left: 10px;">Máx: <span id="max-quantity">10</span> unidades</span>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn-add-cart" id="add-to-cart-btn">
+                        🛒 Agregar al Carrito
+                    </button>
+                    <button class="btn-wishlist" id="wishlist-btn">
+                        ♥ Agregar a Favoritos
+                    </button>
+                </div>
+                
+                <!-- Product Meta -->
+                <div class="product-meta">
+                    <div class="meta-item">
+                        📦 <span>Envío gratis en compras +$30,000</span>
+                    </div>
+                    <div class="meta-item">
+                        🔄 <span>30 días de garantía</span>
+                    </div>
+                    <div class="meta-item">
+                        📞 <span>Soporte 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Tabs -->
+        <div class="product-tabs" id="product-tabs" style="display: none;">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Descripción</button>
+                <button class="tab-btn" data-tab="specifications">Especificaciones</button>
+                <button class="tab-btn" data-tab="reviews">Reseñas</button>
+                <button class="tab-btn" data-tab="shipping">Envío y Devoluciones</button>
+            </div>
+            
+            <!-- Description Tab -->
+            <div class="tab-content active" id="description-content">
+                <div class="description-content" id="full-description"></div>
+            </div>
+            
+            <!-- Specifications Tab -->
+            <div class="tab-content" id="specifications-content">
+                <table class="specs-table" id="specs-table">
+                    <!-- Specifications will be loaded dynamically -->
+                </table>
+            </div>
+            
+            <!-- Reviews Tab -->
+            <div class="tab-content" id="reviews-content">
+                <div class="reviews-container">
+                    <!-- Review form will be added here -->
+                    <div class="review-list" id="review-list">
+                        <!-- Reviews will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shipping Tab -->
+            <div class="tab-content" id="shipping-content">
+                <div class="description-content">
+                    <h3>🚚 Política de Envío</h3>
+                    <p>• Envío estándar en RG: 12 hs hábiles</p>
+                    <p>• Envío express disponible</p>
+                    <p>• Envío gratis en compras mayores a $30,000</p>
+                    <p>• Realizamos envíos a todo el país</p>
+                    
+                    <h3 style="margin-top: 30px;">🔄 Política de Devoluciones</h3>
+                    <p>• 30 días de garantía en todas las palas</p>
+                    <p>• El producto debe estar en empaque original</p>
+                    <p>• Costos de envío de devolución a cargo del cliente</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Related Products -->
+        <div class="related-products" id="related-products" style="display: none;">
+            <h3>Productos Relacionados</h3>
+            <div class="related-grid" id="related-grid">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+   <!-- Image Zoom Overlay -->
+<div class="image-zoom-overlay" id="image-zoom-overlay">
+    <button class="close-zoom" id="close-zoom" title="Cerrar (ESC)">×</button>
+    <div class="zoom-image-container">
+        <img class="zoomed-image" id="zoomed-image" src="" alt="">
+    </div>
+    
+    <!-- Botones de navegación (solo se muestran si hay más de 1 imagen) -->
+    <div class="zoom-controls">
+        <button class="zoom-nav-btn" id="prev-image" title="Imagen anterior (←)" style="display: none;">‹</button>
+        <button class="zoom-nav-btn" id="next-image" title="Siguiente imagen (→)" style="display: none;">›</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pádel Fuego. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- MODAL DEL CARRITO -->
+    <div id="cart-modal" class="cart-modal" style="display: none;">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3>🛒 Tu Carrito</h3>
+                <button class="close-cart" onclick="toggleCart()">×</button>
+            </div>
+            
+            <div class="cart-body">
+                <div id="cart-items" class="cart-items">
+                    <!-- Productos se cargan aquí -->
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                </div>
+                
+                <div class="cart-actions">
+                    <button class="btn-clear" onclick="clearCart()">
+                        🗑️ Vaciar Carrito
+                    </button>
+                    <button class="btn-checkout" onclick="checkout()">
+                        💳 Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase Config -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="product-details.js"></script>
+</body>
+</html>
