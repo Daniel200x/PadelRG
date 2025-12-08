@@ -1,29 +1,98 @@
+// ============================================
+// CHECKOUT.JS - VERSIÓN CORREGIDA
+// ============================================
+
 // Variables globales
 let cart = [];
 let db = null;
 let isProcessingOrder = false;
 let proceedWithLowStockFlag = false;
+let currentPaymentMethod = null;
+
+// ============================================
+// FUNCIONES DE DESCUENTOS - CON VERIFICACIÓN SEGURA
+// ============================================
+
+function calculateDiscounts(paymentMethod, subtotal) {
+    const discountRates = {
+        'transferencia': 0.10, // 10% de descuento
+        'efectivo': 0.15,      // 15% de descuento
+        'mercado-pago': 0      // 0% de descuento
+    };
+    
+    const discountRate = discountRates[paymentMethod] || 0;
+    const discountAmount = Math.round(subtotal * discountRate);
+    const discountedSubtotal = subtotal - discountAmount;
+    
+    return {
+        discountRate,
+        discountAmount,
+        discountedSubtotal,
+        hasDiscount: discountRate > 0,
+        discountPercentage: Math.round(discountRate * 100)
+    };
+}
+
+function updatePaymentMethodUI(method) {
+    currentPaymentMethod = method;
+    updateOrderSummary();
+}
+
+// ============================================
+// FUNCIONES DE UTILIDAD SEGURAS
+// ============================================
+
+// Función segura para obtener elementos
+function getElement(id) {
+    const element = document.getElementById(id);
+    if (!element) {
+        console.warn(`⚠️ Elemento no encontrado: #${id}`);
+    }
+    return element;
+}
+
+// Función segura para establecer texto
+function setText(elementId, text) {
+    const element = getElement(elementId);
+    if (element) {
+        element.textContent = text;
+    }
+}
+
+// Función segura para mostrar/ocultar elementos
+function setDisplay(elementId, display) {
+    const element = getElement(elementId);
+    if (element) {
+        element.style.display = display;
+    }
+}
+
+// Función segura para establecer estilo
+function setStyle(elementId, property, value) {
+    const element = getElement(elementId);
+    if (element) {
+        element.style[property] = value;
+    }
+}
 
 // ============================================
 // FUNCIONES DE INICIALIZACIÓN
 // ============================================
 
-// Inicializar Firebase
 function initFirebaseCheckout() {
-    console.log('🔥 Inicializando Firebase para checkout...');
+    console.log('🔥 Inicializando Firebase...');
     
     if (typeof firebase !== 'undefined' && window.initFirebase) {
         if (!window.db) {
             window.initFirebase();
         }
         db = window.db;
-        console.log('✅ Firebase listo para checkout:', !!db);
+        console.log('✅ Firebase listo:', !!db);
     } else {
-        console.warn('⚠️ Firebase no disponible para checkout');
+        console.warn('⚠️ Firebase no disponible');
     }
 }
 
-// Validar y reparar datos del carrito
 function validateAndRepairCart() {
     console.log('🔍 Validando carrito...');
     
@@ -31,7 +100,7 @@ function validateAndRepairCart() {
         const cartData = localStorage.getItem('padelCart');
         
         if (!cartData || cartData === 'undefined' || cartData === 'null') {
-            console.warn('❌ Carrito no encontrado o inválido');
+            console.warn('❌ Carrito no encontrado');
             cart = [];
             return false;
         }
@@ -54,9 +123,8 @@ function validateAndRepairCart() {
     }
 }
 
-// Mostrar/ocultar mensaje de error
 function showError(message, duration = 5000) {
-    const errorEl = document.getElementById('error-message');
+    const errorEl = getElement('error-message');
     if (!errorEl) return;
     
     errorEl.textContent = message;
@@ -67,38 +135,35 @@ function showError(message, duration = 5000) {
     }, duration);
 }
 
-// Mostrar/ocultar mensaje de carrito vacío
 function toggleEmptyCartMessage(show) {
-    const emptyMsg = document.getElementById('empty-cart-message');
-    const orderItems = document.getElementById('order-items');
+    setDisplay('empty-cart-message', show ? 'block' : 'none');
+    setDisplay('order-items', show ? 'none' : 'block');
     const orderTotal = document.querySelector('.order-total');
-    
-    if (emptyMsg && orderItems && orderTotal) {
-        emptyMsg.style.display = show ? 'block' : 'none';
-        orderItems.style.display = show ? 'none' : 'block';
+    if (orderTotal) {
         orderTotal.style.display = show ? 'none' : 'block';
     }
 }
 
 // ============================================
-// FUNCIONES DE CALCULO Y DISPLAY
+// FUNCIONES DE CALCULO Y DISPLAY - CORREGIDAS
 // ============================================
 
-// Actualizar resumen del pedido
 function updateOrderSummary() {
     console.log('📊 Actualizando resumen del pedido...');
     
-    const orderItems = document.getElementById('order-items');
-    const subtotalEl = document.getElementById('subtotal');
-    const shippingEl = document.getElementById('shipping');
-    const grandTotalEl = document.getElementById('grand-total');
+    const orderItems = getElement('order-items');
+    if (!orderItems) {
+        console.error('❌ No se encontró #order-items');
+        return;
+    }
     
     if (!cart || cart.length === 0) {
         console.log('🛒 Carrito vacío');
         orderItems.innerHTML = '';
-        subtotalEl.textContent = '$0';
-        shippingEl.textContent = '$0';
-        grandTotalEl.textContent = '$0';
+        setText('subtotal', '$0');
+        setText('shipping', '$0');
+        setText('grand-total', '$0');
+        setDisplay('discount-row', 'none');
         toggleEmptyCartMessage(true);
         return;
     }
@@ -134,17 +199,54 @@ function updateOrderSummary() {
     
     orderItems.innerHTML = html;
     
-    const shipping = subtotal >= 50000 ? 0 : 2500;
-    const grandTotal = subtotal + shipping;
+    // Calcular descuento si hay método de pago seleccionado
+    let discount = 0;
+    let finalSubtotal = subtotal;
+    let discountPercentage = 0;
     
-    subtotalEl.textContent = `$${subtotal.toLocaleString('es-AR')}`;
-    shippingEl.textContent = shipping === 0 ? 'GRATIS' : `$${shipping.toLocaleString('es-AR')}`;
-    shippingEl.style.color = shipping === 0 ? '#2c5530' : '#333';
-    shippingEl.style.fontWeight = shipping === 0 ? 'bold' : 'normal';
-    grandTotalEl.textContent = `$${grandTotal.toLocaleString('es-AR')}`;
+    if (currentPaymentMethod) {
+        const discountInfo = calculateDiscounts(currentPaymentMethod, subtotal);
+        discount = discountInfo.discountAmount;
+        finalSubtotal = discountInfo.discountedSubtotal;
+        discountPercentage = discountInfo.discountPercentage;
+        
+        // Mostrar descuento
+        if (discount > 0) {
+            setText('discount-label', `Descuento (${discountPercentage}%):`);
+            setText('discount-amount', `-$${discount.toLocaleString('es-AR')}`);
+            setDisplay('discount-row', 'flex');
+            setStyle('discount-amount', 'color', '#dc3545');
+            setStyle('discount-amount', 'fontWeight', 'bold');
+        } else {
+            setDisplay('discount-row', 'none');
+        }
+    } else {
+        setDisplay('discount-row', 'none');
+    }
+    
+    const shipping = finalSubtotal >= 30000 ? 0 : 2500;
+    const grandTotal = finalSubtotal + shipping;
+    
+    setText('subtotal', `$${subtotal.toLocaleString('es-AR')}`);
+    
+    if (shipping === 0) {
+        setText('shipping', 'GRATIS');
+        setStyle('shipping', 'color', '#2c5530');
+        setStyle('shipping', 'fontWeight', 'bold');
+    } else {
+        setText('shipping', `$${shipping.toLocaleString('es-AR')}`);
+        setStyle('shipping', 'color', '#333');
+        setStyle('shipping', 'fontWeight', 'normal');
+    }
+    
+    setText('grand-total', `$${grandTotal.toLocaleString('es-AR')}`);
+    
+    // Mostrar información de descuento si aplica
+    if (discount > 0) {
+        console.log(`🎁 Descuento aplicado: $${discount.toLocaleString('es-AR')} (${discountPercentage}%)`);
+    }
 }
 
-// Actualizar cantidad en el carrito
 function updateCartQuantity(productId, change) {
     const itemIndex = cart.findIndex(item => item.id === productId);
     if (itemIndex === -1) return;
@@ -165,7 +267,6 @@ function updateCartQuantity(productId, change) {
     updateOrderSummary();
 }
 
-// Eliminar producto del carrito
 function removeFromCheckoutCart(productId) {
     if (!confirm('¿Eliminar este producto del carrito?')) return;
     
@@ -179,7 +280,6 @@ function removeFromCheckoutCart(productId) {
 // FUNCIONES DE FORMULARIO
 // ============================================
 
-// Seleccionar método de pago
 function selectPaymentMethod(method) {
     document.querySelectorAll('.payment-method').forEach(el => {
         el.classList.remove('selected');
@@ -189,41 +289,41 @@ function selectPaymentMethod(method) {
     if (selected) {
         selected.parentElement.classList.add('selected');
         selected.checked = true;
+        updatePaymentMethodUI(method);
     }
 }
 
-// Mostrar términos
 function showTerms() {
-    alert('TÉRMINOS Y CONDICIONES\n\n1. Todos los productos tienen 30 días de garantía.\n2. Los envíos se realizan en 3-5 días hábiles.\n3. Las devoluciones deben realizarse en el empaque original.\n4. Los precios incluyen IVA.\n5. El tiempo de entrega puede variar según la ubicación.');
+    alert('TÉRMINOS Y CONDICIONES\n\n1. Todos los productos tienen 30 días de garantía.\n2. Los envíos se realizan en 3-5 días hábiles.\n3. Las devoluciones deben realizarse en el empaque original.\n4. Los precios incluyen IVA.\n5. Descuentos: Transferencia 10%, Efectivo 15%.\n6. El tiempo de entrega puede variar según la ubicación.');
 }
 
-// Mostrar política de privacidad
 function showPrivacy() {
     alert('POLÍTICA DE PRIVACIDAD\n\n1. Tus datos personales solo se usarán para procesar tu pedido.\n2. No compartimos tu información con terceros.\n3. Puedes solicitar la eliminación de tus datos en cualquier momento.\n4. Tus datos de pago son procesados de forma segura.\n5. Cumplimos con las leyes de protección de datos.');
 }
 
 // ============================================
-// FUNCIONES DE STOCK
+// FUNCIONES DE STOCK Y ORDEN
 // ============================================
 
-// Función para proceder con stock bajo
 function handleProceedWithLowStock() {
     proceedWithLowStockFlag = true;
-    document.getElementById('stock-warning').classList.remove('show');
+    const warningEl = getElement('stock-warning');
+    if (warningEl) warningEl.classList.remove('show');
     submitOrder();
 }
 
-// Cancelar por stock bajo
 function handleCancelLowStock() {
     proceedWithLowStockFlag = false;
-    document.getElementById('stock-warning').classList.remove('show');
+    const warningEl = getElement('stock-warning');
+    if (warningEl) warningEl.classList.remove('show');
     showError('Por favor, ajusta las cantidades en tu carrito.');
 }
 
-// Mostrar advertencia de stock
 function showStockWarning(outOfStockItems) {
-    const warningEl = document.getElementById('stock-warning');
-    const warningText = document.getElementById('stock-warning-text');
+    const warningEl = getElement('stock-warning');
+    const warningText = getElement('stock-warning-text');
+    
+    if (!warningEl || !warningText) return;
     
     let message = 'Los siguientes productos tienen stock insuficiente:\n\n';
     outOfStockItems.forEach(item => {
@@ -235,7 +335,6 @@ function showStockWarning(outOfStockItems) {
     warningEl.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Verificar stock disponible
 async function checkStockAvailability() {
     if (!db || cart.length === 0) {
         return { available: true, outOfStockItems: [] };
@@ -243,35 +342,43 @@ async function checkStockAvailability() {
     
     try {
         const outOfStockItems = [];
+        const productPromises = [];
         
         for (const item of cart) {
-            try {
-                const productRef = db.collection('products').doc(item.id);
-                const productDoc = await productRef.get();
+            const productRef = db.collection('products').doc(item.id);
+            productPromises.push(productRef.get());
+        }
+        
+        const productDocs = await Promise.all(productPromises);
+        
+        productDocs.forEach((productDoc, index) => {
+            const item = cart[index];
+            
+            if (productDoc.exists) {
+                const productData = productDoc.data();
+                const currentStock = Number(productData.stock) || 0;
+                const quantity = Number(item.quantity) || 1;
                 
-                if (productDoc.exists) {
-                    const productData = productDoc.data();
-                    const currentStock = Number(productData.stock) || 0;
-                    
-                    if (currentStock < item.quantity) {
-                        outOfStockItems.push({
-                            ...item,
-                            availableStock: currentStock,
-                            needed: item.quantity - currentStock
-                        });
-                    }
-                } else {
+                console.log(`📦 Verificando: ${item.name} - Stock actual: ${currentStock}, Pedido: ${quantity}`);
+                
+                if (currentStock < quantity) {
                     outOfStockItems.push({
                         ...item,
-                        availableStock: 0,
-                        needed: item.quantity,
-                        error: 'Producto no encontrado'
+                        availableStock: currentStock,
+                        needed: quantity - currentStock
                     });
                 }
-            } catch (error) {
-                console.error(`Error verificando stock de ${item.name}:`, error);
+            } else {
+                outOfStockItems.push({
+                    ...item,
+                    availableStock: 0,
+                    needed: item.quantity,
+                    error: 'Producto no encontrado'
+                });
             }
-        }
+        });
+        
+        console.log(`📊 Verificación de stock completada: ${outOfStockItems.length} productos con stock insuficiente`);
         
         return {
             available: outOfStockItems.length === 0,
@@ -279,7 +386,7 @@ async function checkStockAvailability() {
         };
         
     } catch (error) {
-        console.error('Error verificando stock:', error);
+        console.error('❌ Error verificando stock:', error);
         return { 
             available: false, 
             outOfStockItems: [], 
@@ -288,30 +395,54 @@ async function checkStockAvailability() {
     }
 }
 
-// ============================================
-// FUNCIONES DE PEDIDO
-// ============================================
+async function updateProductStockAfterOrder(order) {
+    console.log('🔄 Actualizando stock...');
+    
+    if (!db) {
+        console.warn('⚠️ Firebase no disponible');
+        return { success: false, error: 'Firebase no disponible' };
+    }
+    
+    try {
+        const batch = db.batch();
+        
+        for (const item of order.items) {
+            const productRef = db.collection('products').doc(item.id);
+            batch.update(productRef, {
+                stock: firebase.firestore.FieldValue.increment(-item.quantity),
+                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+            });
+        }
+        
+        await batch.commit();
+        console.log('✅ Stock actualizado exitosamente');
+        
+        return { success: true, message: 'Stock actualizado' };
+        
+    } catch (error) {
+        console.error('❌ Error actualizando stock:', error);
+        return { success: false, error: error.message };
+    }
+}
 
-// Generar número de pedido único
 function generateOrderId() {
     const prefix = 'PF-';
-    const timestamp = Date.now().toString().slice(-6);
-    const randomNum = Math.floor(Math.random() * 900) + 100;
+    const timestamp = Date.now().toString().slice(-8);
+    const randomNum = Math.floor(Math.random() * 9000) + 1000;
     return prefix + timestamp + randomNum;
 }
 
-// Validar formulario
 function validateForm() {
-    const fullName = document.getElementById('fullName').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const address = document.getElementById('address').value.trim();
-    const city = document.getElementById('city').value.trim();
-    const province = document.getElementById('province').value;
-    const zipCode = document.getElementById('zipCode').value.trim();
-    const country = document.getElementById('country').value;
+    const fullName = getElement('fullName')?.value.trim();
+    const email = getElement('email')?.value.trim();
+    const phone = getElement('phone')?.value.trim();
+    const address = getElement('address')?.value.trim();
+    const city = getElement('city')?.value.trim();
+    const province = getElement('province')?.value;
+    const zipCode = getElement('zipCode')?.value.trim();
+    const country = getElement('country')?.value;
     const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
-    const acceptTerms = document.getElementById('acceptTerms').checked;
+    const acceptTerms = getElement('acceptTerms')?.checked;
     
     if (!fullName) return 'Por favor, ingresa tu nombre completo';
     if (!email) return 'Por favor, ingresa tu email';
@@ -332,7 +463,28 @@ function validateForm() {
     return null;
 }
 
-// Enviar pedido
+function saveOrderToLocalStorage(order) {
+    try {
+        const orders = JSON.parse(localStorage.getItem('padelOrders') || '[]');
+        orders.push(order);
+        localStorage.setItem('padelOrders', JSON.stringify(orders));
+        
+        console.log('💾 Orden guardada localmente:', order.id);
+        
+        return { 
+            success: true, 
+            orderId: order.id
+        };
+    } catch (error) {
+        console.error('Error guardando en localStorage:', error);
+        return { success: false, error: error.message };
+    }
+}
+
+// ============================================
+// FUNCIÓN PRINCIPAL DE ENVÍO DE ORDEN
+// ============================================
+
 async function submitOrder() {
     if (isProcessingOrder) {
         showError('Ya se está procesando tu pedido');
@@ -350,33 +502,48 @@ async function submitOrder() {
         return;
     }
     
-    const fullName = document.getElementById('fullName').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const address = document.getElementById('address').value.trim();
-    const city = document.getElementById('city').value.trim();
-    const province = document.getElementById('province').value;
-    const zipCode = document.getElementById('zipCode').value.trim();
-    const country = document.getElementById('country').value;
-    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
-    const notes = document.getElementById('notes').value.trim();
+    // Obtener datos del formulario
+    const fullName = getElement('fullName')?.value.trim() || '';
+    const email = getElement('email')?.value.trim() || '';
+    const phone = getElement('phone')?.value.trim() || '';
+    const address = getElement('address')?.value.trim() || '';
+    const city = getElement('city')?.value.trim() || '';
+    const province = getElement('province')?.value || '';
+    const zipCode = getElement('zipCode')?.value.trim() || '';
+    const country = getElement('country')?.value || '';
+    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value || '';
+    const notes = getElement('notes')?.value.trim() || '';
     
+    // Calcular totales CON DESCUENTOS
     let subtotal = 0;
     cart.forEach(item => {
-        subtotal += (item.price || 0) * (item.quantity || 1);
+        subtotal += (Number(item.price) || 0) * (Number(item.quantity) || 1);
     });
     
-    const shipping = subtotal >= 50000 ? 0 : 2500;
-    const total = subtotal + shipping;
+    // Aplicar descuento según método de pago
+    const discountInfo = calculateDiscounts(paymentMethod, subtotal);
+    const finalSubtotal = discountInfo.discountedSubtotal;
+    const discountAmount = discountInfo.discountAmount;
     
-    const submitBtn = document.getElementById('submitBtn');
+    const shipping = finalSubtotal >= 30000 ? 0 : 2500;
+    const total = finalSubtotal + shipping;
+    
+    // Actualizar UI del botón
+    const submitBtn = getElement('submitBtn');
+    if (!submitBtn) {
+        showError('Error interno: no se encontró el botón de envío');
+        return;
+    }
+    
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<span>Verificando stock...</span><div class="loading-spinner"></div>';
+    submitBtn.innerHTML = '<span>Procesando...</span><div class="loading-spinner"></div>';
     submitBtn.disabled = true;
     isProcessingOrder = true;
     
     try {
+        // 1. VERIFICAR STOCK
         if (!proceedWithLowStockFlag && db) {
+            submitBtn.innerHTML = '<span>Verificando stock...</span><div class="loading-spinner"></div>';
             const stockCheck = await checkStockAvailability();
             
             if (!stockCheck.available) {
@@ -388,10 +555,12 @@ async function submitOrder() {
             }
         }
         
-        submitBtn.innerHTML = '<span>Procesando pedido...</span><div class="loading-spinner"></div>';
+        // 2. CREAR OBJETO DE ORDEN CON DESCUENTO
+        submitBtn.innerHTML = '<span>Creando orden...</span><div class="loading-spinner"></div>';
         
+        const orderId = generateOrderId();
         const order = {
-            id: generateOrderId(),
+            id: orderId,
             customer: {
                 fullName,
                 email,
@@ -405,53 +574,86 @@ async function submitOrder() {
             items: cart.map(item => ({
                 id: item.id,
                 name: item.name,
-                price: item.price,
-                quantity: item.quantity,
-                subtotal: item.price * item.quantity
+                price: Number(item.price) || 0,
+                quantity: Number(item.quantity) || 1,
+                subtotal: (Number(item.price) || 0) * (Number(item.quantity) || 1)
             })),
             totals: {
                 subtotal,
+                discount: discountAmount,
+                discountedSubtotal: finalSubtotal,
                 shipping,
                 total
             },
             paymentMethod,
             paymentStatus: 'pending',
-            orderStatus: 'pending',
+            orderStatus: 'processing',
             notes: notes || '',
             date: new Date().toISOString(),
-            source: 'web'
+            source: 'web',
+            discountApplied: discountInfo.hasDiscount,
+            discountPercentage: discountInfo.discountPercentage,
+            discountAmount: discountAmount
         };
         
-        console.log('📦 Creando orden:', order);
+        console.log('📦 Creando orden con descuento:', order);
         
+        // 3. GUARDAR EN FIRESTORE
         let saveResult;
         if (db) {
             try {
-                order.createdAt = firebase.firestore.FieldValue.serverTimestamp();
-                order.updatedAt = firebase.firestore.FieldValue.serverTimestamp();
+                submitBtn.innerHTML = '<span>Guardando orden...</span><div class="loading-spinner"></div>';
                 
+                // Guardar orden
                 const docRef = await db.collection('orders').add(order);
+                console.log('✅ Orden guardada en Firestore:', docRef.id);
+                
+                // 4. ACTUALIZAR STOCK
+                submitBtn.innerHTML = '<span>Actualizando stock...</span><div class="loading-spinner"></div>';
+                
+                const stockUpdateResult = await updateProductStockAfterOrder(order);
+                console.log('📊 Resultado stock:', stockUpdateResult);
+                
+                // Actualizar orden con estado final
+                await docRef.update({
+                    orderStatus: 'completed',
+                    stockUpdated: stockUpdateResult.success,
+                    stockUpdateTime: new Date().toISOString(),
+                    updatedAt: new Date().toISOString()
+                });
+                
                 saveResult = {
                     success: true,
                     orderId: order.id,
-                    firestoreId: docRef.id
+                    firestoreId: docRef.id,
+                    stockUpdated: stockUpdateResult.success
                 };
+                
             } catch (firestoreError) {
-                console.error('Error en Firestore:', firestoreError);
+                console.error('❌ Error en Firestore:', firestoreError);
                 saveResult = saveOrderToLocalStorage(order);
             }
         } else {
             saveResult = saveOrderToLocalStorage(order);
         }
         
+        // 5. PROCESAR RESULTADO
         if (saveResult && saveResult.success) {
+            // Limpiar carrito
             localStorage.removeItem('padelCart');
             cart = [];
             
-            document.getElementById('orderId').textContent = order.id;
-            document.getElementById('successModal').style.display = 'flex';
+            // Mostrar modal de éxito CON INFO DE DESCUENTO
+            setText('orderId', order.id);
+            const successModal = getElement('successModal');
+            if (successModal) successModal.style.display = 'flex';
             
-            console.log('🎉 Orden creada exitosamente:', order);
+            // Mostrar mensaje de descuento si aplicó
+            if (discountAmount > 0) {
+                console.log(`🎁 Descuento aplicado: $${discountAmount.toLocaleString('es-AR')} (${discountInfo.discountPercentage}%)`);
+            }
+            
+            console.log('🎉 Orden completada exitosamente');
             
         } else {
             throw new Error(saveResult?.error || 'Error guardando la orden');
@@ -459,25 +661,14 @@ async function submitOrder() {
         
     } catch (error) {
         console.error('❌ Error en submitOrder:', error);
-        showError(`Error procesando el pedido: ${error.message}. Por favor, intenta nuevamente.`);
+        showError(`Error: ${error.message}`);
         
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
+        if (submitBtn) {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
         isProcessingOrder = false;
         return;
-    }
-}
-
-// Guardar orden en localStorage (fallback)
-function saveOrderToLocalStorage(order) {
-    try {
-        const orders = JSON.parse(localStorage.getItem('padelOrders') || '[]');
-        orders.push(order);
-        localStorage.setItem('padelOrders', JSON.stringify(orders));
-        return { success: true };
-    } catch (error) {
-        console.error('Error guardando en localStorage:', error);
-        return { success: false, error: error.message };
     }
 }
 
@@ -498,12 +689,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     if (cart.length === 0) {
-        console.log('🛒 Carrito vacío al cargar la página');
+        console.log('🛒 Carrito vacío');
         showError('Tu carrito está vacío. Serás redirigido a la tienda en 5 segundos.', 5000);
         setTimeout(() => {
             window.location.href = '/';
         }, 5000);
     }
+    
+    // Configurar evento para mostrar descuentos
+    document.querySelectorAll('input[name="paymentMethod"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            updatePaymentMethodUI(this.value);
+        });
+    });
 });
 
 // ============================================

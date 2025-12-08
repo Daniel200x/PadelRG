@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Pádel Fuego</title>
+    <link rel="stylesheet" href="checkout.css">
     
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-    
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
     <div class="checkout-container">
@@ -137,7 +135,12 @@
                             <span class="payment-icon">🏦</span>
                             <span>
                                 <strong>Transferencia Bancaria</strong>
-                                <small style="display: block; color: #666;">Recibirás los datos por email</small>
+                                <small style="display: block; color: #2c5530; font-weight: bold;">
+                                    ⭐ 10% DE DESCUENTO
+                                </small>
+                                <small style="display: block; color: #666;">
+                                    Recibirás los datos por email
+                                </small>
                             </span>
                         </label>
                         
@@ -146,7 +149,9 @@
                             <span class="payment-icon">💙</span>
                             <span>
                                 <strong>Mercado Pago</strong>
-                                <small style="display: block; color: #666;">Pago seguro con tarjeta</small>
+                                <small style="display: block; color: #666;">
+                                    Pago seguro con tarjeta
+                                </small>
                             </span>
                         </label>
                         
@@ -155,7 +160,12 @@
                             <span class="payment-icon">💵</span>
                             <span>
                                 <strong>Efectivo</strong>
-                                <small style="display: block; color: #666;">Al momento de la entrega</small>
+                                <small style="display: block; color: #2c5530; font-weight: bold;">
+                                    ⭐ 15% DE DESCUENTO
+                                </small>
+                                <small style="display: block; color: #666;">
+                                    Al momento de la entrega
+                                </small>
                             </span>
                         </label>
                     </div>
@@ -191,21 +201,36 @@
                 </div>
             </div>
 
-            <!-- Order Summary -->
+            <!-- =========================================== -->
+            <!-- ORDER SUMMARY - SE CORRIGIÓ AQUÍ -->
+            <!-- =========================================== -->
             <div class="order-summary">
                 <h3>📋 Resumen del Pedido</h3>
+                
+                <!-- Este es el contenedor de los productos del carrito -->
                 <div id="order-items" class="order-items">
-                    <!-- Los productos se cargarán aquí -->
+                    <!-- Los productos se cargarán aquí dinámicamente -->
                 </div>
+                
+                <!-- Mensaje cuando el carrito está vacío -->
                 <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
                     <p>Tu carrito está vacío</p>
                     <a href="/">Ver productos</a>
                 </div>
+                
+                <!-- Total del pedido con descuentos -->
                 <div class="order-total">
                     <div class="total-row">
                         <span>Subtotal:</span>
                         <span id="subtotal">$0</span>
                     </div>
+                    
+                    <!-- Línea de descuento -->
+                    <div class="total-row" id="discount-row" style="display: none;">
+                        <span id="discount-label">Descuento:</span>
+                        <span id="discount-amount">$0</span>
+                    </div>
+                    
                     <div class="total-row">
                         <span>Envío:</span>
                         <span id="shipping">$2.500</span>
@@ -221,13 +246,17 @@
                         <strong>📦 Envío:</strong> 3-5 días hábiles
                     </p>
                     <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
-                        <strong>🎁 Envío gratis en compras mayores a $50,000</strong>
+                        <strong>🎁 Envío gratis en compras mayores a $30,000</strong>
                     </p>
                     <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
                         <strong>🔄 Devoluciones:</strong> 30 días de garantía
                     </p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                        <strong>💰 Descuentos:</strong> Transferencia 10% | Efectivo 15%
+                    </p>
                 </div>
             </div>
+            <!-- =========================================== -->
         </div>
     </div>
 
@@ -254,10 +283,8 @@
         </div>
     </div>
 
-    <!-- Firebase Config -->
+    <!-- Scripts -->
     <script src="firebase-config.js"></script>
-    
-    <!-- JavaScript externo -->
     <script src="checkout.js"></script>
 </body>
 </html>
