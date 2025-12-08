@@ -8,6 +8,7 @@ let db = null;
 let hasLoaded = false;
 let cart = [];
 let cartOpen = false;
+let currentZoomIndex = 0;
 
 // ============================================
 // FUNCIONES DE UTILIDAD
@@ -102,6 +103,25 @@ function retryLoadProduct() {
     loadProduct();
 }
 
+// Generar HTML de estrellas
+function getStarsHTML(rating) {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 >= 0.5;
+    let starsHTML = '';
+    
+    for (let i = 0; i < 5; i++) {
+        if (i < fullStars) {
+            starsHTML += '⭐';
+        } else if (i === fullStars && halfStar) {
+            starsHTML += '⭐';
+        } else {
+            starsHTML += '☆';
+        }
+    }
+    
+    return starsHTML;
+}
+
 // ============================================
 // FUNCIONES PRINCIPALES DE CARGA
 // ============================================
@@ -177,7 +197,8 @@ async function loadProduct() {
                 category: productData.category || 'palas',
                 oldPrice: productData.oldPrice ? Number(productData.oldPrice) : null,
                 images: productData.images || (productData.image ? [productData.image] : []),
-                specifications: productData.specifications || {}
+                specifications: productData.specifications || {},
+                active: productData.active !== undefined ? productData.active : true
             };
             
             console.log('📦 Producto procesado:', currentProduct);
@@ -340,25 +361,6 @@ function displayProductDetails() {
     setupActionButtons();
     
     setupTabs();
-}
-
-// Generar HTML de estrellas
-function getStarsHTML(rating) {
-    const fullStars = Math.floor(rating);
-    const halfStar = rating % 1 >= 0.5;
-    let starsHTML = '';
-    
-    for (let i = 0; i < 5; i++) {
-        if (i < fullStars) {
-            starsHTML += '⭐';
-        } else if (i === fullStars && halfStar) {
-            starsHTML += '⭐';
-        } else {
-            starsHTML += '☆';
-        }
-    }
-    
-    return starsHTML;
 }
 
 // Actualizar display de stock
@@ -535,18 +537,27 @@ function openImageZoom(imageSrc = null) {
     if (imageSrc) {
         // Si se pasa una imagen específica (desde miniatura)
         imageToZoom = imageSrc;
+        const index = currentImages.findIndex(img => img === imageSrc);
+        currentZoomIndex = index >= 0 ? index : 0;
     } else {
         // Si se llama desde la imagen principal, usar la actual
         const mainImage = document.getElementById('main-product-image');
         imageToZoom = mainImage.dataset.currentImage || mainImage.src;
+        
+        // Buscar el índice
+        const index = currentImages.findIndex(img => img === imageToZoom);
+        currentZoomIndex = index >= 0 ? index : 0;
     }
     
-    console.log(`🔍 Abriendo zoom con imagen: ${imageToZoom}`);
+    console.log(`🔍 Abriendo zoom con imagen ${currentZoomIndex}: ${imageToZoom}`);
     
     // Cargar la imagen en el zoom
     zoomedImage.src = imageToZoom;
     zoomedImage.alt = currentProduct.name;
     overlay.style.display = 'flex';
+    
+    // Actualizar botones de navegación
+    updateZoomButtons();
     
     // Añadir clase para prevenir scroll del body
     document.body.style.overflow = 'hidden';
@@ -560,6 +571,7 @@ function closeImageZoom() {
     // Restaurar scroll del body
     document.body.style.overflow = '';
 }
+
 // Mostrar especificaciones
 function displaySpecifications() {
     const specsTable = document.getElementById('specs-table');
@@ -643,8 +655,30 @@ function setupActionButtons() {
     };
 }
 
+// Configurar pestañas
+function setupTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === `${tabId}-content`) {
+                    content.classList.add('active');
+                }
+            });
+        });
+    });
+}
+
 // ============================================
-// FUNCIONES DEL CARRITO (CORREGIDAS)
+// FUNCIONES DEL CARRITO
 // ============================================
 
 // Inicializar carrito
@@ -669,7 +703,7 @@ function initCart() {
     updateCartCounter();
 }
 
-// Función para agregar al carrito (CORREGIDA)
+// Función para agregar al carrito
 function addToCart(productId, productName, productPrice, productStock, quantity = 1) {
     try {
         console.log(`🛒 Agregando ${quantity} ${productName} al carrito`);
@@ -739,28 +773,6 @@ function addToWishlist() {
         console.error('Error agregando a favoritos:', error);
         alert('Error al agregar a favoritos');
     }
-}
-
-// Configurar pestañas
-function setupTabs() {
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const tabId = btn.getAttribute('data-tab');
-            
-            tabBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                if (content.id === `${tabId}-content`) {
-                    content.classList.add('active');
-                }
-            });
-        });
-    });
 }
 
 // Alternar carrito
@@ -919,21 +931,35 @@ async function loadRelatedProducts() {
     try {
         relatedProducts = [];
         
+        console.log('🔍 INICIANDO CARGA DE PRODUCTOS RELACIONADOS...');
+        console.log('📊 Estado actual:', {
+            currentProduct: currentProduct ? currentProduct.name : 'null',
+            category: currentProduct ? currentProduct.category : 'null',
+            dbAvailable: !!window.db
+        });
+        
         // Intentar cargar desde Firestore si está disponible
-        if (window.db && currentProduct.category) {
+        if (window.db && currentProduct && currentProduct.category) {
             try {
-                console.log(`🔍 Buscando productos relacionados de categoría: ${currentProduct.category}`);
+                console.log(`📡 CONSULTANDO FIRESTORE para productos de categoría: "${currentProduct.category}"`);
+                console.log(`🎯 Producto actual excluido: ${currentProduct.id} - ${currentProduct.name}`);
+                
+                // Hacer la consulta a Firestore
                 const snapshot = await window.db.collection('products')
                     .where('category', '==', currentProduct.category)
-                    .where('active', '==', true)
-                    .limit(4)
+                    .limit(6) // Aumentar límite para tener más opciones
                     .get();
                 
+                console.log(`📊 Resultado de Firestore: ${snapshot.size} productos encontrados`);
+                
                 if (!snapshot.empty) {
+                    // Filtrar el producto actual y mapear los resultados
                     relatedProducts = snapshot.docs
                         .filter(doc => doc.id !== currentProduct.id)
                         .map(doc => {
                             const data = doc.data();
+                            console.log(`📄 Producto encontrado: ${doc.id} - ${data.name || 'Sin nombre'}`);
+                            
                             return {
                                 id: doc.id,
                                 name: data.name || 'Producto sin nombre',
@@ -942,14 +968,37 @@ async function loadRelatedProducts() {
                                 image: data.image || data.images?.[0] || '',
                                 rating: Number(data.rating) || 0,
                                 stock: Number(data.stock) || 0,
-                                category: data.category || 'palas'
+                                category: data.category || 'palas',
+                                description: data.description || ''
                             };
                         });
-                    console.log(`✅ ${relatedProducts.length} productos relacionados encontrados`);
+                    
+                    console.log(`✅ ${relatedProducts.length} productos relacionados después de filtrar`);
+                    
+                    // Si no hay suficientes, intentar buscar por marca
+                    if (relatedProducts.length < 2 && currentProduct.brand) {
+                        console.log(`🔍 Pocos productos de la misma categoría, buscando por marca: "${currentProduct.brand}"`);
+                        await loadRelatedByBrand();
+                    }
+                    
+                } else {
+                    console.warn('⚠️ No se encontraron productos en Firestore para esta categoría');
+                    // Intentar buscar por marca si la categoría no funciona
+                    if (currentProduct.brand) {
+                        await loadRelatedByBrand();
+                    }
                 }
+                
             } catch (firestoreError) {
-                console.error('Error cargando relacionados de Firestore:', firestoreError);
+                console.error('❌ Error en consulta a Firestore:', firestoreError);
+                console.error('Detalles del error:', {
+                    code: firestoreError.code,
+                    message: firestoreError.message,
+                    stack: firestoreError.stack
+                });
             }
+        } else {
+            console.log('⚠️ Firestore no disponible o sin categoría, usando datos locales');
         }
         
         // Si no hay suficientes productos en Firestore, usar datos locales
@@ -960,6 +1009,7 @@ async function loadRelatedProducts() {
         
         // Si hay productos relacionados, mostrarlos
         if (relatedProducts.length > 0) {
+            console.log(`🎯 Mostrando ${relatedProducts.length} productos relacionados`);
             relatedContainer.style.display = 'block';
             displayRelatedProducts();
         } else {
@@ -968,17 +1018,66 @@ async function loadRelatedProducts() {
         }
         
     } catch (error) {
-        console.error('Error cargando productos relacionados:', error);
+        console.error('❌ Error general cargando productos relacionados:', error);
         document.getElementById('related-products').style.display = 'none';
     }
 }
 
-// Obtener productos relacionados locales
+// Función para cargar productos relacionados por marca
+async function loadRelatedByBrand() {
+    try {
+        console.log(`🔍 Buscando productos de la marca: "${currentProduct.brand}"`);
+        
+        const snapshot = await window.db.collection('products')
+            .where('brand', '==', currentProduct.brand)
+            .limit(4)
+            .get();
+        
+        console.log(`📊 Resultado por marca: ${snapshot.size} productos encontrados`);
+        
+        if (!snapshot.empty) {
+            const brandProducts = snapshot.docs
+                .filter(doc => doc.id !== currentProduct.id)
+                .map(doc => {
+                    const data = doc.data();
+                    return {
+                        id: doc.id,
+                        name: data.name || 'Producto sin nombre',
+                        price: Number(data.price) || 0,
+                        brand: data.brand || 'Marca no especificada',
+                        image: data.image || data.images?.[0] || '',
+                        rating: Number(data.rating) || 0,
+                        stock: Number(data.stock) || 0,
+                        category: data.category || 'palas'
+                    };
+                });
+            
+            // Agregar a los productos relacionados existentes
+            relatedProducts = [...relatedProducts, ...brandProducts];
+            
+            // Eliminar duplicados
+            const uniqueIds = new Set();
+            relatedProducts = relatedProducts.filter(product => {
+                if (uniqueIds.has(product.id)) {
+                    return false;
+                }
+                uniqueIds.add(product.id);
+                return true;
+            });
+            
+            console.log(`✅ Total después de agregar por marca: ${relatedProducts.length} productos`);
+        }
+    } catch (error) {
+        console.error('❌ Error cargando por marca:', error);
+    }
+}
+
+// Función mejorada para productos relacionados locales
 async function getLocalRelatedProducts() {
     try {
         console.log('🔍 Buscando productos relacionados en datos locales...');
         
-        // PRODUCTOS CON TUS URLs REALES
+        // PRODUCTOS CON URLs REALES - DATOS DE EJEMPLO
         const allLocalProducts = [
             {
                 id: '1',
@@ -988,7 +1087,8 @@ async function getLocalRelatedProducts() {
                 category: 'palas',
                 image: 'https://firebasestorage.googleapis.com/v0/b/padelfuego.appspot.com/o/palas%2Fbullpadel-vertex.jpg?alt=media',
                 rating: 4.5,
-                stock: 15
+                stock: 15,
+                description: 'Pala de potencia media-alta'
             },
             {
                 id: '2',
@@ -998,7 +1098,8 @@ async function getLocalRelatedProducts() {
                 category: 'palas',
                 image: 'https://firebasestorage.googleapis.com/v0/b/padelfuego.appspot.com/o/palas%2Fhead-alpha.jpg?alt=media',
                 rating: 4.3,
-                stock: 8
+                stock: 8,
+                description: 'Pala para control avanzado'
             },
             {
                 id: '3',
@@ -1008,7 +1109,8 @@ async function getLocalRelatedProducts() {
                 category: 'accesorios',
                 image: 'https://firebasestorage.googleapis.com/v0/b/padelfuego.appspot.com/o/accesorios%2Fpelotas-head.jpg?alt=media',
                 rating: 4.7,
-                stock: 50
+                stock: 50,
+                description: 'Pelotas profesionales'
             },
             {
                 id: '4',
@@ -1018,7 +1120,8 @@ async function getLocalRelatedProducts() {
                 category: 'accesorios',
                 image: 'https://firebasestorage.googleapis.com/v0/b/padelfuego.appspot.com/o/accesorios%2Fmochila-bullpadel.jpg?alt=media',
                 rating: 4.2,
-                stock: 12
+                stock: 12,
+                description: 'Mochila para equipo completo'
             },
             {
                 id: '5',
@@ -1028,29 +1131,57 @@ async function getLocalRelatedProducts() {
                 category: 'accesorios',
                 image: 'https://firebasestorage.googleapis.com/v0/b/padelfuego.appspot.com/o/accesorios%2Fzapatos-asics.jpg?alt=media',
                 rating: 4.6,
-                stock: 6
+                stock: 6,
+                description: 'Zapatos profesionales para pádel'
             }
         ];
         
-        // Filtrar por categoría del producto actual
-        let filteredProducts = allLocalProducts;
-        if (currentProduct.category) {
+        // Filtrar productos relacionados
+        let filteredProducts = [];
+        
+        if (currentProduct && currentProduct.category) {
+            // Primero por misma categoría
             filteredProducts = allLocalProducts.filter(p => 
                 p.category === currentProduct.category && p.id !== currentProduct.id
             );
+            
+            console.log(`📊 Productos de misma categoría: ${filteredProducts.length}`);
+            
+            // Si no hay suficientes, agregar de misma marca
+            if (filteredProducts.length < 2 && currentProduct.brand) {
+                const brandProducts = allLocalProducts.filter(p => 
+                    p.brand === currentProduct.brand && 
+                    p.id !== currentProduct.id &&
+                    !filteredProducts.some(fp => fp.id === p.id)
+                );
+                filteredProducts = [...filteredProducts, ...brandProducts];
+                console.log(`📊 Después de agregar por marca: ${filteredProducts.length}`);
+            }
         }
         
-        // Si no hay suficientes de la misma categoría, mostrar otros productos
+        // Si aún no hay suficientes, mostrar productos aleatorios
         if (filteredProducts.length < 2) {
-            filteredProducts = allLocalProducts
+            const randomProducts = allLocalProducts
                 .filter(p => p.id !== currentProduct.id)
+                .sort(() => Math.random() - 0.5)
                 .slice(0, 3);
+            
+            // Combinar sin duplicados
+            const existingIds = new Set(filteredProducts.map(p => p.id));
+            randomProducts.forEach(p => {
+                if (!existingIds.has(p.id)) {
+                    filteredProducts.push(p);
+                    existingIds.add(p.id);
+                }
+            });
+            
+            console.log(`📊 Después de agregar aleatorios: ${filteredProducts.length}`);
         }
         
-        return filteredProducts.slice(0, 3);
+        return filteredProducts.slice(0, 4); // Máximo 4 productos
         
     } catch (error) {
-        console.error('Error obteniendo productos locales:', error);
+        console.error('❌ Error obteniendo productos locales:', error);
         return [];
     }
 }
@@ -1058,12 +1189,45 @@ async function getLocalRelatedProducts() {
 // Mostrar productos relacionados
 function displayRelatedProducts() {
     const relatedGrid = document.getElementById('related-grid');
+    
+    if (!relatedGrid) {
+        console.error('❌ No se encontró el contenedor de productos relacionados');
+        return;
+    }
+    
+    // Limpiar contenedor
     relatedGrid.innerHTML = '';
     
+    if (relatedProducts.length === 0) {
+        relatedGrid.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #666;">
+                No hay productos relacionados disponibles.
+            </div>
+        `;
+        return;
+    }
+    
+    // Crear tarjetas de productos
     relatedProducts.forEach(product => {
         const productCard = document.createElement('div');
-        productCard.className = 'product-card';
+        productCard.className = 'product-card related-product-card';
         productCard.style.cursor = 'pointer';
+        productCard.style.border = '1px solid #eee';
+        productCard.style.borderRadius = '10px';
+        productCard.style.padding = '15px';
+        productCard.style.transition = 'all 0.3s';
+        productCard.style.background = 'white';
+        
+        productCard.onmouseenter = () => {
+            productCard.style.transform = 'translateY(-5px)';
+            productCard.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+        };
+        
+        productCard.onmouseleave = () => {
+            productCard.style.transform = 'translateY(0)';
+            productCard.style.boxShadow = 'none';
+        };
+        
         productCard.onclick = () => {
             window.location.href = `product-details.html?id=${product.id}`;
         };
@@ -1082,24 +1246,44 @@ function displayRelatedProducts() {
             return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
         }
         
+        // Determinar URL de imagen
+        let imageUrl = product.image || '';
+        const placeholder = createSVGPlaceholder(product.name, product.category);
+        
         productCard.innerHTML = `
-            <div class="product-image">
-                <img src="${product.image || createSVGPlaceholder(product.name, product.category)}" 
+            <div class="product-image" style="height: 200px; overflow: hidden; border-radius: 8px; margin-bottom: 15px;">
+                <img src="${imageUrl || placeholder}" 
                      alt="${product.name}" 
+                     style="width: 100%; height: 100%; object-fit: cover;"
                      loading="lazy"
                      onerror="
-                         const placeholder = \`${createSVGPlaceholder(product.name, product.category)}\`;
-                         this.src = placeholder;
+                         if (this.src !== '${placeholder}') {
+                             this.src = '${placeholder}';
+                         }
                      ">
             </div>
-            <h3>${product.name}</h3>
-            <p class="brand">${product.brand}</p>
-            <div class="price">$${product.price.toLocaleString('es-AR')}</div>
-            <div class="rating">${getStarsHTML(product.rating || 0)} ${(product.rating || 0).toFixed(1)}/5</div>
-            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('${product.id}', '${product.name}', ${product.price}, ${product.stock || 10}, 1)">
+            <h3 style="margin: 0 0 5px 0; font-size: 1.1rem; color: #333;">${product.name}</h3>
+            <p class="brand" style="margin: 0 0 10px 0; color: #666; font-size: 0.9rem;">${product.brand}</p>
+            <div class="price" style="font-weight: bold; color: #2c5530; font-size: 1.2rem; margin-bottom: 8px;">
+                $${product.price.toLocaleString('es-AR')}
+            </div>
+            <div class="rating" style="color: #ffb400; margin-bottom: 15px;">
+                ${getStarsHTML(product.rating || 0)} <span style="color: #666; font-size: 0.9rem;">${(product.rating || 0).toFixed(1)}/5</span>
+            </div>
+            <button class="add-to-cart" 
+                    onclick="event.stopPropagation(); 
+                             addToCart('${product.id}', '${product.name.replace(/'/g, "\\'")}', ${product.price}, ${product.stock || 10}, 1);"
+                    style="width: 100%; padding: 10px; background: #2c5530; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
                 Agregar al Carrito
             </button>
         `;
+        
+        // Añadir hover effect al botón
+        const button = productCard.querySelector('.add-to-cart');
+        if (button) {
+            button.onmouseenter = () => button.style.background = '#1e3a23';
+            button.onmouseleave = () => button.style.background = '#2c5530';
+        }
         
         relatedGrid.appendChild(productCard);
     });
@@ -1108,118 +1292,67 @@ function displayRelatedProducts() {
 }
 
 // ============================================
-// INICIALIZACIÓN
+// FUNCIONES DE NAVEGACIÓN DE ZOOM
 // ============================================
 
-// Variables globales para navegación de zoom
-let currentZoomIndex = 0;
+// Función para actualizar botones de navegación del zoom
+function updateZoomButtons() {
+    const prevBtn = document.getElementById('prev-image');
+    const nextBtn = document.getElementById('next-image');
+    
+    if (prevBtn) {
+        prevBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
+        prevBtn.disabled = currentZoomIndex <= 0;
+    }
+    
+    if (nextBtn) {
+        nextBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
+        nextBtn.disabled = currentZoomIndex >= currentImages.length - 1;
+    }
+}
 
-// Navegación entre imágenes en zoom CORREGIDA
+// Configurar navegación del zoom
 function setupZoomNavigation() {
     const prevBtn = document.getElementById('prev-image');
     const nextBtn = document.getElementById('next-image');
     const zoomedImage = document.getElementById('zoomed-image');
     
-    if (!prevBtn || !nextBtn) return;
-    
-    // Actualizar botones de navegación
-    function updateZoomButtons() {
-        if (prevBtn) prevBtn.disabled = currentZoomIndex <= 0;
-        if (nextBtn) nextBtn.disabled = currentZoomIndex >= currentImages.length - 1;
-    }
+    if (!prevBtn || !nextBtn || !zoomedImage) return;
     
     // Navegar a imagen anterior
-    if (prevBtn) {
-        prevBtn.onclick = () => {
-            if (currentZoomIndex > 0) {
-                currentZoomIndex--;
-                zoomedImage.src = currentImages[currentZoomIndex];
-                updateZoomButtons();
-            }
-        };
-    }
+    prevBtn.onclick = () => {
+        if (currentZoomIndex > 0) {
+            currentZoomIndex--;
+            zoomedImage.src = currentImages[currentZoomIndex];
+            updateZoomButtons();
+        }
+    };
     
     // Navegar a siguiente imagen
-    if (nextBtn) {
-        nextBtn.onclick = () => {
-            if (currentZoomIndex < currentImages.length - 1) {
-                currentZoomIndex++;
-                zoomedImage.src = currentImages[currentZoomIndex];
-                updateZoomButtons();
-            }
-        };
-    }
+    nextBtn.onclick = () => {
+        if (currentZoomIndex < currentImages.length - 1) {
+            currentZoomIndex++;
+            zoomedImage.src = currentImages[currentZoomIndex];
+            updateZoomButtons();
+        }
+    };
     
-    // Teclado shortcuts
+    // Teclado shortcuts para navegación
     document.addEventListener('keydown', (e) => {
         const overlay = document.getElementById('image-zoom-overlay');
         if (overlay && overlay.style.display === 'flex') {
-            if (e.key === 'ArrowLeft') {
-                if (prevBtn && !prevBtn.disabled) prevBtn.click();
-            } else if (e.key === 'ArrowRight') {
-                if (nextBtn && !nextBtn.disabled) nextBtn.click();
-            } else if (e.key === 'Escape') {
-                closeImageZoom();
+            if (e.key === 'ArrowLeft' && prevBtn && !prevBtn.disabled) {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight' && nextBtn && !nextBtn.disabled) {
+                nextBtn.click();
             }
         }
     });
 }
 
-// Sobreescribir la función openImageZoom para manejar índice
-window.openImageZoom = function(imageSrc = null) {
-    const overlay = document.getElementById('image-zoom-overlay');
-    const zoomedImage = document.getElementById('zoomed-image');
-    
-    // Determinar qué imagen mostrar
-    let imageToZoom;
-    
-    if (imageSrc) {
-        // Si se pasa una imagen específica, buscar su índice
-        imageToZoom = imageSrc;
-        const index = currentImages.findIndex(img => img === imageSrc);
-        currentZoomIndex = index >= 0 ? index : 0;
-    } else {
-        // Si no se pasa imagen, usar la imagen principal actual
-        const mainImage = document.getElementById('main-product-image');
-        imageToZoom = mainImage.dataset.currentImage || mainImage.src;
-        
-        // Buscar el índice de esta imagen en currentImages
-        const index = currentImages.findIndex(img => img === imageToZoom);
-        currentZoomIndex = index >= 0 ? index : 0;
-    }
-    
-    console.log(`🔍 Abriendo zoom con imagen ${currentZoomIndex}: ${imageToZoom}`);
-    
-    // Cargar la imagen
-    if (zoomedImage) {
-        zoomedImage.src = imageToZoom;
-        zoomedImage.alt = currentProduct.name;
-    }
-    
-    if (overlay) {
-        overlay.style.display = 'flex';
-    }
-    
-    // Actualizar botones de navegación
-    updateZoomButtons();
-    
-    // Añadir clase para prevenir scroll del body
-    document.body.style.overflow = 'hidden';
-};
-
-// Función para actualizar botones de navegación
-function updateZoomButtons() {
-    const prevBtn = document.getElementById('prev-image');
-    const nextBtn = document.getElementById('next-image');
-    
-    if (prevBtn) prevBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
-    if (nextBtn) nextBtn.style.display = currentImages.length > 1 ? 'flex' : 'none';
-    
-    if (prevBtn) prevBtn.disabled = currentZoomIndex <= 0;
-    if (nextBtn) nextBtn.disabled = currentZoomIndex >= currentImages.length - 1;
-}
-
-
+// ============================================
+// INICIALIZACIÓN
+// ============================================
 
 // Función principal de inicialización
 function initializePage() {
@@ -1238,9 +1371,10 @@ function initializePage() {
         };
     }
     
-// Configurar navegación de zoom
+    // Configurar navegación del zoom
     setupZoomNavigation();
-
+    
+    // Configurar teclas de escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             if (cartOpen) {
@@ -1302,6 +1436,60 @@ document.addEventListener('firebaseReady', () => {
         }
     }
 });
+
+// ============================================
+// FUNCIONES DE DEPURACIÓN
+// ============================================
+
+// Depuración manual de Firestore
+window.debugFirestore = async function() {
+    console.log('=== DEBUG FIRESTORE ===');
+    
+    if (!window.db) {
+        console.error('Firestore no disponible');
+        return;
+    }
+    
+    try {
+        // Obtener todos los productos
+        const snapshot = await window.db.collection('products').get();
+        console.log(`Total productos: ${snapshot.size}`);
+        
+        snapshot.forEach(doc => {
+            const data = doc.data();
+            console.log(`📦 ${doc.id}: ${data.name || 'Sin nombre'}`, {
+                category: data.category,
+                active: data.active,
+                brand: data.brand
+            });
+        });
+        
+        // Verificar consulta de productos relacionados
+        if (currentProduct && currentProduct.category) {
+            console.log(`\n🔍 Probando consulta para categoría: "${currentProduct.category}"`);
+            const relatedQuery = await window.db.collection('products')
+                .where('category', '==', currentProduct.category)
+                .limit(3)
+                .get();
+            
+            console.log(`Resultados: ${relatedQuery.size} productos`);
+            relatedQuery.forEach(doc => {
+                console.log(`- ${doc.id}: ${doc.data().name}`);
+            });
+        }
+        
+    } catch (error) {
+        console.error('Error en depuración:', error);
+    }
+};
+
+// Ejecutar depuración automáticamente después de cargar
+setTimeout(() => {
+    if (window.db && currentProduct) {
+        console.log('Ejecutando depuración automática...');
+        window.debugFirestore();
+    }
+}, 5000);
 
 // ============================================
 // EXPORTAR FUNCIONES GLOBALES
