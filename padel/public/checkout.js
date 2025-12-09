@@ -411,7 +411,7 @@ async function sendOrderConfirmationEmail(order) {
             </table>
         `;
         
-        // Generar tabla de totales SIN condicionales
+        // Generar tabla de totales
         const totalsTable = `
             <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                 <tr>
@@ -441,9 +441,15 @@ async function sendOrderConfirmationEmail(order) {
             </table>
         `;
         
-        // Ahora enviamos SOLO las variables que EmailJS entiende
+        // **IMPORTANTE: Configurar parámetros para que el email llegue al cliente**
         const templateParams = {
-            to_email: order.customer.email,  // Email del destinatario
+            // ESTOS 4 CAMPOS SON CRÍTICOS para que el email llegue al cliente:
+            to_email: order.customer.email,  // ✅ El email del cliente
+            from_name: 'Pádel Fuego',        // ✅ Tu nombre/empresa
+            reply_to: 'padelriogrande@gmail.com',  // ✅ Email para respuestas
+            subject: `✅ Confirmación de Pedido #${order.id} - Pádel Fuego`,  // ✅ Asunto
+            
+            // Variables de contenido (estas ya las tienes):
             order_id: order.id,
             customer_name: order.customer.fullName,
             customer_email: order.customer.email,
@@ -457,9 +463,8 @@ async function sendOrderConfirmationEmail(order) {
                 hour: '2-digit',
                 minute: '2-digit'
             }),
-            // Enviamos el HTML COMPLETO generado en JavaScript
             products_table: fullProductsTable,
-            totals_table: totalsTable,  // Nueva variable con la tabla de totales
+            totals_table: totalsTable,
             subtotal: `$${order.totals.subtotal.toLocaleString('es-AR')}`,
             discount: order.discountAmount > 0 ? `-$${order.discountAmount.toLocaleString('es-AR')}` : 'No aplica',
             shipping: order.totals.shipping === 0 ? 'GRATIS' : `$${order.totals.shipping.toLocaleString('es-AR')}`,
@@ -470,14 +475,15 @@ async function sendOrderConfirmationEmail(order) {
             website_url: 'https://padelfuego.web.app',
             contact_email: 'padelriogrande@gmail.com',
             contact_phone: '+54 9 11 1234-5678',
-            current_year: new Date().getFullYear().toString(),
-            reply_to: order.customer.email,
-            from_name: 'Pádel Fuego',
-            subject: `✅ Confirmación de Pedido #${order.id} - Pádel Fuego`
+            current_year: new Date().getFullYear().toString()
         };
         
         console.log('📤 Enviando email a:', order.customer.email);
-        console.log('📋 Variables enviadas:', Object.keys(templateParams));
+        console.log('📋 Configuración de envío:', {
+            to: templateParams.to_email,
+            from: templateParams.from_name,
+            subject: templateParams.subject
+        });
         
         const response = await emailjs.send(
             EMAILJS_CONFIG.SERVICE_ID,
@@ -486,6 +492,8 @@ async function sendOrderConfirmationEmail(order) {
         );
         
         console.log('✅ Email enviado exitosamente:', response.status);
+        console.log('📧 Destinatario:', order.customer.email);
+        
         return { 
             success: true, 
             message: 'Email de confirmación enviado',
@@ -496,19 +504,6 @@ async function sendOrderConfirmationEmail(order) {
     } catch (error) {
         console.error('❌ Error enviando email:', error);
         console.error('❌ Detalles del error:', error.text || error.message);
-        
-        // Mostrar error específico
-        if (error.text) {
-            console.error('❌ Texto del error:', error.text);
-            
-            // Buscar referencias a variables no definidas
-            if (error.text.includes('template variable') || error.text.includes('not defined')) {
-                const matches = error.text.match(/{{(.*?)}}/g);
-                if (matches) {
-                    console.error('❌ Variables problemáticas:', matches);
-                }
-            }
-        }
         
         return { 
             success: false, 
