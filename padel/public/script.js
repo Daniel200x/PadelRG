@@ -811,6 +811,32 @@ function checkImages() {
     }, 2000);
 }
 
+// Agrega esto en tu script principal o en un archivo separado
+document.addEventListener('DOMContentLoaded', function() {
+    const whatsappContainer = document.getElementById('whatsapp-container');
+    const whatsappBtn = document.getElementById('whatsapp-main-btn');
+    
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', function() {
+            whatsappContainer.classList.toggle('active');
+        });
+        
+        // Cerrar al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            if (!whatsappContainer.contains(event.target)) {
+                whatsappContainer.classList.remove('active');
+            }
+        });
+    }
+    
+    // Cerrar al presionar ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            whatsappContainer.classList.remove('active');
+        }
+    });
+});
+
 // ============================================
 // FUNCIONES DE MONITOREO DE STOCK EN TIEMPO REAL
 // ============================================

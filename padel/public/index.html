@@ -88,12 +88,37 @@
         </div>
     </section>
 
+<!-- Reemplaza el botón simple por este en index.html -->
+<div class="whatsapp-container" id="whatsapp-container">
+    <!-- Botón principal -->
+    <div class="whatsapp-float" id="whatsapp-main-btn">
+        <div class="whatsapp-icon-main">💬</div>
+    </div>
+    
+    <!-- Opciones desplegables -->
+    <div class="whatsapp-options" id="whatsapp-options">
+        <a href="https://wa.me/5492964545374?text=Hola,%20quiero%20hacer%20una%20consulta%20sobre%20un%20producto" 
+           target="_blank" class="whatsapp-option consulta">
+            <span>📦 Consulta por producto</span>
+        </a>
+        <a href="https://wa.me/5492964545374?text=Hola,%20quiero%20consultar%20precios%20y%20ofertas" 
+           target="_blank" class="whatsapp-option precios">
+            <span>💰 Precios y ofertas</span>
+        </a>
+        <a href="https://wa.me/5492964545374?text=Hola,%20necesito%20soporte%20con%20mi%20pedido" 
+           target="_blank" class="whatsapp-option soporte">
+            <span>🛠️ Soporte</span>
+        </a>
+    </div>
+</div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Pádel Fuego. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Scripts -->
+     
     <script src="firebase-config.js"></script>
     <script src="script.js"></script>
 </body>
