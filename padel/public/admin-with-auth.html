@@ -764,6 +764,30 @@
                 transform: translateY(0) scale(1);
             }
         }
+
+
+        /* Estilos para campos de imagen adicionales */
+.image-field {
+    transition: all 0.3s ease;
+}
+
+.image-field:hover {
+    transform: translateX(5px);
+}
+
+.additional-image:focus {
+    border-color: #4a7c59;
+    box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.1);
+}
+
+.btn-add-image {
+    transition: all 0.3s ease;
+}
+
+.btn-add-image:hover {
+    background: #2c5530 !important;
+    transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
@@ -967,6 +991,24 @@
                                     <img src="" alt="Vista previa" id="previewImg">
                                 </div>
                             </div>
+
+                            <!-- AGREGAR ESTO DESPUÉS del campo de descripción -->
+<div class="form-group full-width">
+    <label for="productImages">
+        <span>📷</span>
+        Imágenes Adicionales (para product-details)
+    </label>
+    <div id="images-container">
+        <!-- Se agregarán dinámicamente los campos de imagen -->
+    </div>
+    <button type="button" class="btn-add-image" onclick="addImageField()" 
+            style="margin-top: 10px; padding: 10px 15px; background: #4a7c59; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        + Agregar otra imagen
+    </button>
+    <small style="display: block; margin-top: 5px; color: #666;">
+        Estas imágenes se mostrarán en la página de detalles del producto (product-details.html)
+    </small>
+</div>
                             
                             <div class="form-group full-width">
                                 <label for="productDesc">
@@ -1102,19 +1144,27 @@
             });
         }
         
-        function previewImage(url) {
-            const preview = document.getElementById('previewImg');
-            const container = document.getElementById('imagePreview');
-            
-            if (url && url.startsWith('http')) {
-                preview.src = url;
-                preview.onload = () => container.style.display = 'block';
-                preview.onerror = () => container.style.display = 'none';
-            } else {
-                container.style.display = 'none';
-            }
-        }
-        
+      function previewImage(url) {
+    const preview = document.getElementById('previewImg');
+    const container = document.getElementById('imagePreview');
+    
+    // Verificar que url sea una string válida
+    if (url && typeof url === 'string' && url.startsWith('http')) {
+        preview.src = url;
+        preview.onload = () => {
+            container.style.display = 'block';
+            preview.style.maxWidth = '100%';
+            preview.style.height = 'auto';
+        };
+        preview.onerror = () => {
+            container.style.display = 'none';
+            console.warn('⚠️ Error cargando imagen de vista previa:', url);
+        };
+    } else {
+        container.style.display = 'none';
+        console.warn('⚠️ URL de imagen no válida para vista previa:', url);
+    }
+}
         // ============================================
         // AUTENTICACIÓN
         // ============================================
@@ -1316,137 +1366,180 @@
         // FORMULARIO DE PRODUCTO
         // ============================================
         
-        function clearForm() {
-            document.getElementById('productName').value = '';
-            document.getElementById('productBrand').value = '';
-            document.getElementById('productCategory').value = '';
-            document.getElementById('productPrice').value = '';
-            document.getElementById('productStock').value = '';
-            document.getElementById('productRating').value = '';
-            document.getElementById('productImage').value = '';
-            document.getElementById('productDesc').value = '';
-            document.getElementById('imagePreview').style.display = 'none';
-            
-            isEditing = false;
-            currentProductId = null;
-            
-            document.getElementById('form-icon').textContent = '➕';
-            document.getElementById('form-title-text').textContent = 'Agregar Nuevo Producto';
-            document.getElementById('save-icon').textContent = '💾';
-            document.getElementById('save-text').textContent = 'Guardar Producto';
-            document.getElementById('cancel-btn').style.display = 'none';
-        }
-        
+       function clearForm() {
+    document.getElementById('productName').value = '';
+    document.getElementById('productBrand').value = '';
+    document.getElementById('productCategory').value = '';
+    document.getElementById('productPrice').value = '';
+    document.getElementById('productStock').value = '';
+    document.getElementById('productRating').value = '';
+    document.getElementById('productImage').value = '';
+    document.getElementById('productDesc').value = '';
+    document.getElementById('imagePreview').style.display = 'none';
+    
+    // Limpiar imágenes adicionales
+    const container = document.getElementById('images-container');
+    container.innerHTML = '';
+    addImageField(); // Agregar un campo vacío
+    
+    isEditing = false;
+    currentProductId = null;
+    
+    document.getElementById('form-icon').textContent = '➕';
+    document.getElementById('form-title-text').textContent = 'Agregar Nuevo Producto';
+    document.getElementById('save-icon').textContent = '💾';
+    document.getElementById('save-text').textContent = 'Guardar Producto';
+    document.getElementById('cancel-btn').style.display = 'none';
+}
         function cancelEdit() {
             clearForm();
         }
         
-        async function editProduct(productId) {
-            try {
-                const doc = await window.db.collection('products').doc(productId).get();
-                
-                if (doc.exists) {
-                    const product = doc.data();
-                    
-                    document.getElementById('productName').value = product.name || '';
-                    document.getElementById('productBrand').value = product.brand || '';
-                    document.getElementById('productCategory').value = product.category || '';
-                    document.getElementById('productPrice').value = product.price || '';
-                    document.getElementById('productStock').value = product.stock || '';
-                    document.getElementById('productRating').value = product.rating || '';
-                    document.getElementById('productImage').value = product.image || '';
-                    document.getElementById('productDesc').value = product.description || '';
-                    
-                    if (product.image) {
-                        previewImage(product.image);
-                    }
-                    
-                    isEditing = true;
-                    currentProductId = productId;
-                    
-                    document.getElementById('form-icon').textContent = '✏️';
-                    document.getElementById('form-title-text').textContent = 'Editar Producto';
-                    document.getElementById('save-icon').textContent = '🔄';
-                    document.getElementById('save-text').textContent = 'Actualizar Producto';
-                    document.getElementById('cancel-btn').style.display = 'flex';
-                    
-                    scrollToForm();
-                }
-                
-            } catch (error) {
-                console.error('Error cargando producto:', error);
-                showNotification('Error cargando producto', 'error');
+   async function editProduct(productId) {
+    try {
+        const doc = await window.db.collection('products').doc(productId).get();
+        
+        if (doc.exists) {
+            const product = doc.data();
+            
+            // Cargar campos principales
+            document.getElementById('productName').value = product.name || '';
+            document.getElementById('productBrand').value = product.brand || '';
+            document.getElementById('productCategory').value = product.category || '';
+            document.getElementById('productPrice').value = product.price || '';
+            document.getElementById('productStock').value = product.stock || '';
+            document.getElementById('productRating').value = product.rating || '';
+            document.getElementById('productDesc').value = product.description || '';
+            
+            // MANEJO MEJORADO DE IMÁGENES
+            let mainImage = '';
+            let additionalImages = [];
+            
+            // Caso 1: Si existe el array 'images'
+            if (product.images && Array.isArray(product.images) && product.images.length > 0) {
+                // La primera imagen es la principal
+                mainImage = product.images[0] || '';
+                additionalImages = product.images.slice(1);
             }
+            // Caso 2: Si solo existe el campo 'image' (string)
+            else if (product.image && typeof product.image === 'string') {
+                mainImage = product.image;
+                additionalImages = [];
+            }
+            // Caso 3: Si 'image' es un array (por si acaso)
+            else if (product.image && Array.isArray(product.image)) {
+                mainImage = product.image[0] || '';
+                additionalImages = product.image.slice(1);
+            }
+            
+            // Establecer imagen principal
+            document.getElementById('productImage').value = mainImage;
+            
+            // Cargar imágenes adicionales
+            loadAdditionalImages(additionalImages);
+            
+            // Vista previa de la imagen principal
+            if (mainImage) {
+                previewImage(mainImage);
+            } else {
+                document.getElementById('imagePreview').style.display = 'none';
+            }
+            
+            isEditing = true;
+            currentProductId = productId;
+            
+            document.getElementById('form-icon').textContent = '✏️';
+            document.getElementById('form-title-text').textContent = 'Editar Producto';
+            document.getElementById('save-icon').textContent = '🔄';
+            document.getElementById('save-text').textContent = 'Actualizar Producto';
+            document.getElementById('cancel-btn').style.display = 'flex';
+            
+            scrollToForm();
         }
         
+    } catch (error) {
+        console.error('Error cargando producto:', error);
+        showNotification('Error cargando producto', 'error');
+    }
+}  
+      
         async function saveProduct() {
-            // Validar
-            const name = document.getElementById('productName').value.trim();
-            const brand = document.getElementById('productBrand').value;
-            const category = document.getElementById('productCategory').value;
-            const price = parseFloat(document.getElementById('productPrice').value);
-            const stock = parseInt(document.getElementById('productStock').value);
-            const rating = parseFloat(document.getElementById('productRating').value);
-            const image = document.getElementById('productImage').value.trim();
-            const description = document.getElementById('productDesc').value.trim();
-            
-            if (!name) {
-                showNotification('El nombre del producto es requerido', 'error');
-                return;
-            }
-            if (!brand) {
-                showNotification('Selecciona una marca', 'error');
-                return;
-            }
-            if (!category) {
-                showNotification('Selecciona una categoría', 'error');
-                return;
-            }
-            if (!price || price <= 0) {
-                showNotification('Ingresa un precio válido', 'error');
-                return;
-            }
-            if (stock < 0) {
-                showNotification('El stock no puede ser negativo', 'error');
-                return;
-            }
-            if (!image) {
-                showNotification('La URL de la imagen es requerida', 'error');
-                return;
-            }
-            
-            try {
-                const productData = {
-                    name,
-                    brand,
-                    category,
-                    price,
-                    stock: stock || 0,
-                    rating: rating || 4.0,
-                    image,
-                    description,
-                    isActive: true,
-                    updatedAt: new Date()
-                };
-                
-                if (isEditing && currentProductId) {
-                    await window.db.collection('products').doc(currentProductId).update(productData);
-                    showNotification('✅ Producto actualizado correctamente');
-                } else {
-                    productData.createdAt = new Date();
-                    await window.db.collection('products').add(productData);
-                    showNotification('✅ Producto agregado correctamente');
-                    clearForm();
-                }
-                
-                await loadProducts();
-                
-            } catch (error) {
-                console.error('Error guardando producto:', error);
-                showNotification(`❌ Error: ${error.message}`, 'error');
-            }
+    // Validar
+    const name = document.getElementById('productName').value.trim();
+    const brand = document.getElementById('productBrand').value;
+    const category = document.getElementById('productCategory').value;
+    const price = parseFloat(document.getElementById('productPrice').value);
+    const stock = parseInt(document.getElementById('productStock').value);
+    const rating = parseFloat(document.getElementById('productRating').value);
+    const mainImage = document.getElementById('productImage').value.trim();
+    const description = document.getElementById('productDesc').value.trim();
+    
+    // Obtener imágenes adicionales
+    const additionalImages = getAdditionalImages();
+    
+    // Crear array de todas las imágenes
+    const allImages = [mainImage, ...additionalImages].filter(img => img && img.startsWith('http'));
+    
+    // Validaciones
+    if (!name) {
+        showNotification('El nombre del producto es requerido', 'error');
+        return;
+    }
+    if (!brand) {
+        showNotification('Selecciona una marca', 'error');
+        return;
+    }
+    if (!category) {
+        showNotification('Selecciona una categoría', 'error');
+        return;
+    }
+    if (!price || price <= 0) {
+        showNotification('Ingresa un precio válido', 'error');
+        return;
+    }
+    if (stock < 0) {
+        showNotification('El stock no puede ser negativo', 'error');
+        return;
+    }
+    if (allImages.length === 0) {
+    showNotification('Agrega al menos una URL de imagen válida (http:// o https://)', 'error');
+    return;
+}
+    
+    try {
+        const productData = {
+            name,
+            brand,
+            category,
+            price,
+            stock: stock || 0,
+            rating: rating || 4.0,
+            image: mainImage, // Imagen principal (backward compatibility)
+            images: allImages, // Array de todas las imágenes
+            description,
+            isActive: true,
+            updatedAt: new Date()
+        };
+        
+        if (isEditing && currentProductId) {
+            await window.db.collection('products').doc(currentProductId).update(productData);
+            showNotification('✅ Producto actualizado correctamente');
+        } else {
+            productData.createdAt = new Date();
+            await window.db.collection('products').add(productData);
+            showNotification('✅ Producto agregado correctamente');
+            clearForm();
         }
         
+        await loadProducts();
+        
+    } catch (error) {
+        console.error('Error guardando producto:', error);
+        showNotification(`❌ Error: ${error.message}`, 'error');
+    }
+}
+
+
         async function updateStock(productId, currentStock) {
             const newStock = prompt(`Nuevo stock (actual: ${currentStock}):`, currentStock);
             
@@ -1488,6 +1581,159 @@
                 showNotification('Error eliminando producto', 'error');
             }
         }
+
+        // ============================================
+// FUNCIONES PARA MANEJAR MÚLTIPLES IMÁGENES
+// ============================================
+
+let imageFieldsCount = 0;
+
+// Agregar campo de imagen adicional
+function addImageField(imageUrl = '') {
+    imageFieldsCount++;
+    const container = document.getElementById('images-container');
+    const imageFieldId = `productImage_${imageFieldsCount}`;
+    
+    const imageField = document.createElement('div');
+    imageField.className = 'image-field';
+    imageField.style.display = 'flex';
+    imageField.style.gap = '10px';
+    imageField.style.marginBottom = '10px';
+    imageField.style.alignItems = 'center';
+    
+    // Validar que imageUrl sea string
+    const safeImageUrl = (imageUrl && typeof imageUrl === 'string') ? imageUrl : '';
+    
+    imageField.innerHTML = `
+        <input type="text" 
+               id="${imageFieldId}" 
+               class="additional-image"
+               placeholder="https://ejemplo.com/otra-imagen.jpg"
+               value="${safeImageUrl}"
+               style="flex: 1; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px;"
+               oninput="validateImageUrl(this)">
+        <button type="button" 
+                onclick="removeImageField(this)" 
+                style="padding: 10px 15px; background: #dc3545; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            🗑️
+        </button>
+        <button type="button" 
+                onclick="previewAdditionalImage('${imageFieldId}')"
+                style="padding: 10px 15px; background: #17a2b8; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            👁️
+        </button>
+    `;
+    
+    container.appendChild(imageField);
+}
+
+
+// Eliminar campo de imagen
+function removeImageField(button) {
+    const container = document.getElementById('images-container');
+    const imageField = button.closest('.image-field');
+    if (container.children.length > 1) {
+        container.removeChild(imageField);
+    } else {
+        // Si es el único campo, solo limpiarlo
+        const input = imageField.querySelector('input');
+        input.value = '';
+    }
+}
+
+// Validar URL de imagen mientras se escribe
+function validateImageUrl(input) {
+    const value = input.value.trim();
+    if (value && !value.startsWith('http://') && !value.startsWith('https://')) {
+        input.style.borderColor = '#dc3545';
+        input.style.boxShadow = '0 0 0 3px rgba(220, 53, 69, 0.1)';
+    } else {
+        input.style.borderColor = value ? '#28a745' : '#e0e0e0';
+        input.style.boxShadow = value ? '0 0 0 3px rgba(40, 167, 69, 0.1)' : 'none';
+    }
+}
+
+// Vista previa de imagen adicional
+function previewAdditionalImage(inputId) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+    
+    const url = input.value.trim();
+    
+    if (url && typeof url === 'string' && (url.startsWith('http://') || url.startsWith('https://'))) {
+        window.open(url, '_blank');
+    } else {
+        alert('Ingresa una URL válida de imagen (debe empezar con http:// o https://)');
+    }
+}
+
+
+// Obtener todas las imágenes adicionales
+function getAdditionalImages() {
+    const imageInputs = document.querySelectorAll('.additional-image');
+    const images = [];
+    
+    imageInputs.forEach(input => {
+        const value = input.value.trim();
+        // Validar que sea una URL válida
+        if (value && 
+            typeof value === 'string' && 
+            (value.startsWith('http://') || value.startsWith('https://'))) {
+            images.push(value);
+        }
+    });
+    
+    return images;
+}
+
+// Cargar imágenes adicionales en el formulario
+function loadAdditionalImages(imagesArray) {
+    // Limpiar contenedor
+    const container = document.getElementById('images-container');
+    container.innerHTML = '';
+    
+    // Reiniciar contador
+    imageFieldsCount = 0;
+    
+    // Agregar campos para cada imagen
+    if (imagesArray && Array.isArray(imagesArray) && imagesArray.length > 0) {
+        // Filtrar solo strings válidas
+        const validImages = imagesArray.filter(img => 
+            img && typeof img === 'string' && img.trim() !== ''
+        );
+        
+        validImages.forEach(imageUrl => {
+            if (typeof imageUrl === 'string') {
+                addImageField(imageUrl.trim());
+            }
+        });
+    }
+    
+    // Si no hay imágenes, agregar un campo vacío por defecto
+    if (imageFieldsCount === 0) {
+        addImageField();
+    }
+}
+// Vista previa mejorada
+function previewImage(url) {
+    const preview = document.getElementById('previewImg');
+    const container = document.getElementById('imagePreview');
+    
+    if (url && url.startsWith('http')) {
+        preview.src = url;
+        preview.onload = () => {
+            container.style.display = 'block';
+            preview.style.maxWidth = '100%';
+            preview.style.height = 'auto';
+        };
+        preview.onerror = () => {
+            container.style.display = 'none';
+            console.warn('⚠️ Error cargando imagen de vista previa');
+        };
+    } else {
+        container.style.display = 'none';
+    }
+}
         
         // ============================================
         // FUNCIONES ADICIONALES
@@ -1589,6 +1835,13 @@ async function initializeApp() {
         setTimeout(() => {
             window.logout();
         }, 3000);
+    }
+
+    // Inicializar campo de imágenes adicionales
+    const imagesContainer = document.getElementById('images-container');
+    if (imagesContainer) {
+        // Agregar un campo vacío por defecto
+        addImageField();
     }
 }
 

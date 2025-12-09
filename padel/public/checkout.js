@@ -379,7 +379,7 @@ async function sendOrderConfirmationEmail(order) {
         
         const paymentMethodNames = {
             'transferencia': 'Transferencia Bancaria (10% descuento)',
-            'efectivo': 'Efectivo (15% descuento)',
+            'efectivo': 'Efectivo (10% descuento)',
             'mercado-pago': 'Mercado Pago'
         };
         
@@ -474,7 +474,7 @@ async function sendOrderConfirmationEmail(order) {
             special_notes: order.notes || 'No hay notas adicionales',
             website_url: 'https://padelfuego.web.app',
             contact_email: 'padelriogrande@gmail.com',
-            contact_phone: '+54 9 11 1234-5678',
+            contact_phone: '+54 9 2964-545374',
             current_year: new Date().getFullYear().toString()
         };
         
@@ -539,7 +539,7 @@ function getPaymentInstructions(paymentMethod, total) {
 function calculateDiscounts(paymentMethod, subtotal) {
     const discountRates = {
         'transferencia': 0.10,
-        'efectivo': 0.15,
+        'efectivo': 0.10,
         'mercado-pago': 0
     };
     
@@ -855,7 +855,7 @@ function selectPaymentMethod(method) {
 }
 
 function showTerms() {
-    alert('TÉRMINOS Y CONDICIONES\n\n1. Todos los productos tienen 30 días de garantía.\n2. Los envíos se realizan en 3-5 días hábiles.\n3. Las devoluciones deben realizarse en el empaque original.\n4. Los precios incluyen IVA.\n5. Descuentos: Transferencia 10%, Efectivo 15%.\n6. El tiempo de entrega puede variar según la ubicación.');
+    alert('TÉRMINOS Y CONDICIONES\n\n1. Todos los productos tienen 30 días de garantía.\n2. Los envíos se realizan en 3-5 días hábiles.\n3. Las devoluciones deben realizarse en el empaque original.\n4. Los precios incluyen IVA.\n5. Descuentos: Transferencia 10%, Efectivo 10%.\n6. El tiempo de entrega puede variar según la ubicación.');
 }
 
 function showPrivacy() {
