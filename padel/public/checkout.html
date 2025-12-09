@@ -9,6 +9,9 @@
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Script de EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="checkout-container">
@@ -201,9 +204,7 @@
                 </div>
             </div>
 
-            <!-- =========================================== -->
-            <!-- ORDER SUMMARY - SE CORRIGIÓ AQUÍ -->
-            <!-- =========================================== -->
+            <!-- Order Summary -->
             <div class="order-summary">
                 <h3>📋 Resumen del Pedido</h3>
                 
@@ -256,32 +257,20 @@
                     </p>
                 </div>
             </div>
-            <!-- =========================================== -->
         </div>
     </div>
 
-    <!-- Success Modal -->
-    <div class="success-modal" id="successModal">
-        <div class="success-content">
-            <div class="success-icon">✅</div>
-            <h2>¡Pedido Confirmado!</h2>
-            <p>Tu pedido ha sido procesado exitosamente. Hemos enviado un email de confirmación con todos los detalles.</p>
-            
-            <div class="order-number">
-                N° de Pedido: <span id="orderId">PF-00001</span>
-            </div>
-            
-            <p style="font-size: 0.9rem;">
-                Te contactaremos en las próximas 24 horas para coordinar el envío.
-            </p>
-            
-            <div style="margin-top: 30px;">
-                <a href="/" class="btn btn-confirm" style="width: 100%;">
-                    ← Volver a la Tienda
-                </a>
+    <!-- Modal de éxito -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-content">
+                <!-- El contenido se llena dinámicamente -->
             </div>
         </div>
     </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
 
     <!-- Scripts -->
     <script src="firebase-config.js"></script>
