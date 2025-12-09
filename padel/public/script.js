@@ -1,10 +1,78 @@
 // ============================================
 // PÁDEL FUEGO - SCRIPT PRINCIPAL COMPLETO
-// VERSIÓN CORREGIDA - CON CARRITO MEJORADO
+// VERSIÓN 2.0 - SIN IMÁGENES POR DEFECTO
 // ============================================
 
 // 1. DECLARAR TODAS LAS FUNCIONES PRIMERO
 // ============================================
+
+// Función para manejar imágenes - SOLO usa imagen de Firebase o nada
+function loadProductImage(imgElement, product) {
+    // 1. Intentar con la imagen del producto de Firebase
+    const firebaseImage = product.image || product.imageUrl;
+    
+    if (firebaseImage) {
+        console.log(`🖼️ Intentando cargar imagen de Firebase: ${firebaseImage}`);
+        
+        const preloadImage = new Image();
+        
+        preloadImage.onload = function() {
+            // La imagen se cargó correctamente
+            imgElement.src = firebaseImage;
+            imgElement.style.opacity = '1';
+            console.log(`✅ Imagen cargada desde Firebase: ${product.name}`);
+        };
+        
+        preloadImage.onerror = function() {
+            // Si falla la imagen de Firebase, NO cargar nada
+            console.log(`❌ Imagen de Firebase no disponible: ${firebaseImage}`);
+            handleNoImage(imgElement, product);
+        };
+        
+        // Iniciar carga
+        preloadImage.src = firebaseImage;
+        
+        // Mientras carga, mostrar transición suave
+        imgElement.style.opacity = '0.3';
+        imgElement.style.transition = 'opacity 0.3s ease';
+    } else {
+        // No hay imagen en Firebase
+        console.log(`📭 Producto sin imagen en Firebase: ${product.name}`);
+        handleNoImage(imgElement, product);
+    }
+}
+
+// Función para manejar cuando NO hay imagen
+function handleNoImage(imgElement, product) {
+    // Ocultar la etiqueta img
+    imgElement.style.display = 'none';
+    
+    // Crear un contenedor de "sin imagen"
+    const noImageContainer = document.createElement('div');
+    noImageContainer.className = 'no-image-container';
+    noImageContainer.style.cssText = `
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        text-align: center;
+        padding: 20px;
+    `;
+    
+    noImageContainer.innerHTML = `
+        <div style="font-size: 2.5rem; margin-bottom: 10px;">🏸</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 5px;">${product.name.substring(0, 30)}</div>
+        <div style="font-size: 0.8rem; opacity: 0.7;">Imagen no disponible</div>
+    `;
+    
+    // Insertar después de la imagen
+    imgElement.parentNode.appendChild(noImageContainer);
+}
 
 // Función de notificación
 function showNotification(message, type = 'success') {
@@ -36,52 +104,6 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
-// Función mejorada para manejar errores de imágenes
-function handleImageError(imgElement, productName) {
-    console.log(`🖼️ Imagen falló: ${imgElement.src}, usando placeholder...`);
-    
-    // Crear un placeholder más atractivo
-    const colors = ['2c5530', '4a7c59', 'ff6b35', '2196F3'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    
-    // Usar placeholder más confiable
-    imgElement.src = `https://via.placeholder.com/300x200/${randomColor}/FFFFFF?text=${encodeURIComponent(productName.substring(0, 20))}`;
-    imgElement.alt = productName + ' - Imagen no disponible';
-    
-    // Prevenir bucles infinitos de errores
-    imgElement.onerror = null;
-    
-    // Si el placeholder también falla, mostrar div de respaldo
-    imgElement.onerror = function() {
-        console.log('⚠️ Placeholder también falló, usando div de respaldo');
-        this.style.display = 'none';
-        
-        // Crear un contenedor de respaldo
-        const backupDiv = document.createElement('div');
-        backupDiv.style.cssText = `
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #${randomColor}, #${randomColor}99);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            text-align: center;
-            padding: 15px;
-        `;
-        
-        backupDiv.innerHTML = `
-            <span style="font-size: 2rem;">🏸</span>
-            <h4 style="margin: 10px 0; font-size: 1rem;">${productName.substring(0, 25)}</h4>
-            <small style="opacity: 0.8;">Imagen no disponible</small>
-        `;
-        
-        this.parentElement.appendChild(backupDiv);
-    };
-}
-
 function formatRating(rating) {
     if (rating === undefined || rating === null) return '0.0';
     const num = Number(rating);
@@ -105,7 +127,7 @@ function getStockMessage(stock) {
     return '✗ Sin stock';
 }
 
-// Función para mostrar productos - CORREGIDA
+// Función para mostrar productos - SIN IMÁGENES POR DEFECTO
 function displayProduct(product) {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
@@ -119,17 +141,20 @@ function displayProduct(product) {
         price: Number(product.price) || 0,
         stock: Number(product.stock) || 0,
         rating: Number(product.rating) || 0,
-        imageUrl: product.image || product.imageUrl || `https://via.placeholder.com/300x200/2c5530/FFFFFF?text=${encodeURIComponent((product.name || 'Producto').substring(0, 20))}`
+        image: product.image || product.imageUrl || null // Solo imagen de Firebase
     };
     
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
     productCard.innerHTML = `
-        <div class="product-image" style="cursor: pointer;" onclick="viewProductDetails('${safeProduct.id}')">
-            <img src="${safeProduct.imageUrl}" 
+        <div class="product-image" style="cursor: pointer; position: relative; min-height: 200px;" onclick="viewProductDetails('${safeProduct.id}')">
+            <img src="" 
                  alt="${safeProduct.name}"
                  loading="lazy"
-                 onerror="handleImageError(this, '${safeProduct.name.replace(/'/g, "\\'")}')">
+                 class="product-img"
+                 data-product-id="${safeProduct.id}"
+                 data-has-image="${!!safeProduct.image}"
+                 style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
         </div>
         <h3>${safeProduct.name}</h3>
         <p class="brand">${safeProduct.brand}</p>
@@ -143,17 +168,25 @@ function displayProduct(product) {
                 ${safeProduct.stock === 0 ? 'disabled' : ''}>
             ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
         </button>
-        
     `;
     
     productsGrid.appendChild(productCard);
+    
+    // Cargar la imagen SOLO si existe en Firebase
+    setTimeout(() => {
+        const imgElement = productCard.querySelector('.product-img');
+        if (imgElement) {
+            if (safeProduct.image) {
+                loadProductImage(imgElement, safeProduct);
+            } else {
+                // No hay imagen en Firebase
+                handleNoImage(imgElement, safeProduct);
+            }
+        }
+    }, 100);
 }
-//esto va despues del boton de arriba
-// <button class="view-details" onclick="viewProductDetails('${safeProduct.id}')">
-         //   👁️ Ver Detalles
-       // </button>
-        
-        //Función para ver detalles del producto
+
+// Función para ver detalles del producto
 function viewProductDetails(productId) {
     window.location.href = `product-details.html?id=${productId}`;
 }
@@ -161,8 +194,7 @@ function viewProductDetails(productId) {
 // Hacer disponible globalmente
 window.viewProductDetails = viewProductDetails;
 
-
-// Función para cargar productos locales (fallback)
+// Función para cargar productos locales (fallback) - ACTUALIZADA SIN IMÁGENES
 function loadLocalProducts() {
     console.log('📦 Usando productos locales de demostración');
     
@@ -175,7 +207,7 @@ function loadLocalProducts() {
             brand: 'Bullpadel',
             stock: 15,
             rating: 4.5,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_898905-MLA53507129989_012022-F.webp'
+            image: null // Sin imagen por defecto
         },
         {
             id: '2',
@@ -185,7 +217,7 @@ function loadLocalProducts() {
             brand: 'Head',
             stock: 8,
             rating: 4.3,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_653317-MLA47970639143_102021-F.webp'
+            image: null
         },
         {
             id: '3',
@@ -195,7 +227,7 @@ function loadLocalProducts() {
             brand: 'Head',
             stock: 50,
             rating: 4.7,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_708131-MLA48373161791_112021-F.webp'
+            image: null
         },
         {
             id: '4',
@@ -205,7 +237,7 @@ function loadLocalProducts() {
             brand: 'Bullpadel',
             stock: 12,
             rating: 4.2,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_886056-MLU72877094720_112023-F.webp'
+            image: null
         },
         {
             id: '5',
@@ -215,7 +247,7 @@ function loadLocalProducts() {
             brand: 'Asics',
             stock: 6,
             rating: 4.6,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_985856-MLA53777607358_022023-F.webp'
+            image: null
         },
         {
             id: '6',
@@ -225,7 +257,7 @@ function loadLocalProducts() {
             brand: 'Tecnifibre',
             stock: 45,
             rating: 4.4,
-            image: 'https://http2.mlstatic.com/D_NQ_NP_2X_724145-MLU74929228632_032024-F.webp'
+            image: null
         }
     ];
     
@@ -235,10 +267,10 @@ function loadLocalProducts() {
     productsGrid.innerHTML = '';
     localProducts.forEach(product => displayProduct(product));
     
-    showNotification('Mostrando productos de demostración', 'info');
+    showNotification('Mostrando productos de demostración (sin imágenes)', 'info');
 }
 
-// Función principal para cargar productos - CORREGIDA
+// Función principal para cargar productos
 async function loadProducts() {
     console.log('🔄 Cargando productos desde Firestore...');
     
@@ -270,15 +302,14 @@ async function loadProducts() {
             
             productsGrid.innerHTML = '';
             let activeProducts = 0;
+            let productsWithImages = 0;
             
             querySnapshot.forEach(doc => {
                 const productData = doc.data();
                 
                 // DEBUG: Ver qué datos vienen de Firestore
-                console.log(`🎯 Producto ${activeProducts + 1}: ${productData.name}`);
-                console.log(`   Campos disponibles:`, Object.keys(productData));
-                console.log(`   Imagen (campo 'image'):`, productData.image);
-                console.log(`   Imagen (campo 'imageUrl'):`, productData.imageUrl);
+                console.log(`🎯 Producto ${activeProducts + 1}: ${productData.name || 'Sin nombre'}`);
+                console.log(`   Imagen en Firebase: ${productData.image || productData.imageUrl || 'NO TIENE'}`);
                 
                 // Crear producto con ID y datos
                 const product = {
@@ -288,6 +319,10 @@ async function loadProducts() {
                 
                 displayProduct(product);
                 activeProducts++;
+                
+                if (productData.image || productData.imageUrl) {
+                    productsWithImages++;
+                }
             });
             
             if (activeProducts === 0) {
@@ -295,6 +330,7 @@ async function loadProducts() {
                 loadLocalProducts();
             } else {
                 console.log(`✅ ${activeProducts} productos cargados desde Firestore`);
+                console.log(`🖼️ ${productsWithImages} productos con imágenes`);
                 showNotification(`${activeProducts} productos cargados`, 'success');
             }
             
@@ -609,7 +645,7 @@ function proceedToCheckout() {
     window.location.href = 'checkout.html';
 }
 
-// Función para agregar al carrito (MEJORADA)
+// Función para agregar al carrito
 async function addToCart(productId, productName, productPrice, productStock) {
     try {
         console.log(`🛒 Agregando producto: ${productId} - ${productName}`);
@@ -786,56 +822,56 @@ function setupEventListeners() {
         }
     });
     
-    console.log('✅ Event listeners configurados');
-}
-
-// Función para verificar imágenes
-function checkImages() {
-    console.log('🔍 Verificando imágenes...');
-    
-    setTimeout(() => {
-        const allImages = document.querySelectorAll('img');
-        allImages.forEach(img => {
-            if (!img.complete || img.naturalHeight === 0) {
-                console.warn('⚠️ Imagen no cargada:', img.src);
-                
-                // Si es una imagen de producto y no cargó
-                if (img.closest('.product-card')) {
-                    const productName = img.alt || 'Producto';
-                    handleImageError(img, productName);
-                }
-            } else {
-                console.log('✅ Imagen cargada correctamente:', img.src);
-            }
-        });
-    }, 2000);
-}
-
-// Agrega esto en tu script principal o en un archivo separado
-document.addEventListener('DOMContentLoaded', function() {
+    // Eventos para WhatsApp
     const whatsappContainer = document.getElementById('whatsapp-container');
     const whatsappBtn = document.getElementById('whatsapp-main-btn');
     
     if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', function() {
+        whatsappBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
             whatsappContainer.classList.toggle('active');
-        });
-        
-        // Cerrar al hacer clic fuera
-        document.addEventListener('click', function(event) {
-            if (!whatsappContainer.contains(event.target)) {
-                whatsappContainer.classList.remove('active');
-            }
         });
     }
     
-    // Cerrar al presionar ESC
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
+    // Cerrar WhatsApp al hacer clic fuera
+    document.addEventListener('click', function(event) {
+        if (whatsappContainer && !whatsappContainer.contains(event.target)) {
             whatsappContainer.classList.remove('active');
         }
     });
-});
+    
+    // Cerrar WhatsApp con ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && whatsappContainer) {
+            whatsappContainer.classList.remove('active');
+        }
+    });
+    
+    console.log('✅ Event listeners configurados');
+}
+
+// Verificación de imágenes
+function checkImagesStatus() {
+    setTimeout(() => {
+        console.log('🔍 Verificando estado de imágenes...');
+        
+        const allImages = document.querySelectorAll('.product-img[data-has-image="true"]');
+        let loaded = 0;
+        let failed = 0;
+        
+        allImages.forEach(img => {
+            if (img.complete && img.naturalHeight !== 0) {
+                loaded++;
+            } else {
+                failed++;
+            }
+        });
+        
+        const noImageContainers = document.querySelectorAll('.no-image-container');
+        console.log(`📊 Imágenes: ${loaded} cargadas, ${failed} fallidas`);
+        console.log(`📭 Productos sin imagen: ${noImageContainers.length}`);
+    }, 3000);
+}
 
 // ============================================
 // FUNCIONES DE MONITOREO DE STOCK EN TIEMPO REAL
@@ -937,8 +973,10 @@ async function initializeApp() {
         // 5. Iniciar monitoreo de stock en tiempo real
         watchStockChanges();
         
-        // 6. Verificar imágenes
-        checkImages();
+        // 6. Verificar estado de imágenes
+        setTimeout(() => {
+            checkImagesStatus();
+        }, 2000);
         
         console.log('✅ Aplicación inicializada');
         showNotification('¡Bienvenido a Pádel Fuego!', 'success');
@@ -953,17 +991,12 @@ async function initializeApp() {
 // 2. INICIALIZACIÓN Y EVENTOS
 // ============================================
 
-// Interceptor de errores de imágenes
+// Manejo de errores global de imágenes
 window.addEventListener('error', function(e) {
     if (e.target && e.target.tagName === 'IMG') {
-        console.log('⚠️ Error cargando imagen:', e.target.src);
+        console.log('⚠️ Error cargando imagen global:', e.target.src);
         
-        // Solo manejar si es una imagen de producto
-        if (e.target.closest('.product-card')) {
-            const productName = e.target.alt || 'Producto';
-            handleImageError(e.target, productName);
-        }
-        
+        // Prevenir comportamiento por defecto
         e.preventDefault();
         return false;
     }
@@ -973,6 +1006,7 @@ window.addEventListener('error', function(e) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('📄 DOM cargado - Pádel Fuego');
     console.log('🌐 Sitio: https://padelfuego.web.app');
+    console.log('📱 Solo imágenes de Firebase (sin placeholders)');
     
     // Esperar un momento para que todo cargue
     setTimeout(() => {
@@ -993,7 +1027,8 @@ window.loadProducts = loadProducts;
 window.showNotification = showNotification;
 window.updateCartCounter = updateCartCounter;
 window.setupEventListeners = setupEventListeners;
-window.handleImageError = handleImageError;
+window.loadProductImage = loadProductImage;
+window.handleNoImage = handleNoImage;
 window.renderCart = renderCart;
 window.updateProductStockUI = updateProductStockUI;
 window.watchStockChanges = watchStockChanges;
