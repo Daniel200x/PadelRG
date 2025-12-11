@@ -19,6 +19,9 @@ const EMAILJS_CONFIG = {
     PUBLIC_KEY: '8LwZh9-rUS5JCaKsP'
 };
 
+
+
+
 // ============================================
 // FUNCIONES DE MODAL - AÑADIDAS
 // ============================================
@@ -561,6 +564,125 @@ function updatePaymentMethodUI(method) {
     updateOrderSummary();
 }
 
+
+// ============================================
+// FUNCIONES DE CÁLCULO DE ENVÍO ACTUALIZADAS
+// ============================================
+
+function calculateShipping(subtotal, province, city = '') {
+    console.log(`📍 Calculando envío para: ${province}, ${city}`);
+    
+    // Río Grande: $2.500 y gratis desde $30.000
+    if (province === 'TDF' && city.toLowerCase().includes('rio grande')) {
+        if (subtotal >= 30000) {
+            return 0; // Envío gratis
+        }
+        return 2500; // Envío estándar
+    }
+    
+    // Tolhuin y Ushuaia: $10.000 base
+    if (province === 'TDF' && 
+        (city.toLowerCase().includes('tolhuin') || 
+         city.toLowerCase().includes('ushuaia'))) {
+        
+        let shippingBase = 10000;
+        
+        // Descuentos progresivos para Tolhuin/Ushuaia
+        if (subtotal >= 60000) {
+            return 0; // Envío gratis
+        } else if (subtotal >= 30000) {
+            // 50% de descuento sobre $10.000
+            return 5000;
+        }
+        
+        return shippingBase;
+    }
+    
+    // Otras localidades de Tierra del Fuego (por si hay más)
+    if (province === 'TDF') {
+        // Para el resto de TDF, aplicar misma lógica que Tolhuin/Ushuaia
+        let shippingBase = 10000;
+        
+        if (subtotal >= 60000) {
+            return 0;
+        } else if (subtotal >= 30000) {
+            return 5000;
+        }
+        
+        return shippingBase;
+    }
+    
+    // Resto del país (Argentina): $2.500 y gratis desde $30.000
+    if (subtotal >= 100000) {
+        return 0;
+    }
+    return 2500;
+}
+
+// Función auxiliar para mostrar detalles del envío
+function getShippingDetails(subtotal, province, city = '') {
+    const shipping = calculateShipping(subtotal, province, city);
+    
+    if (province === 'TDF') {
+        if (city.toLowerCase().includes('rio grande')) {
+            if (shipping === 0) {
+                return {
+                    amount: 0,
+                    message: '🎉 ¡ENVÍO GRATIS!',
+                    description: 'Por compras superiores a $30.000 en Río Grande'
+                };
+            }
+            return {
+                amount: 2500,
+                message: '🚚 Envío estándar Río Grande',
+                description: subtotal >= 30000 ? 
+                    '¡Agrega $' + (30000 - subtotal).toLocaleString('es-AR') + ' más para envío gratis!' :
+                    'Gratis en compras superiores a $30.000'
+            };
+        } 
+        else if (city.toLowerCase().includes('tolhuin') || 
+                 city.toLowerCase().includes('ushuaia')) {
+            if (shipping === 0) {
+                return {
+                    amount: 0,
+                    message: '🎉 ¡ENVÍO GRATIS TOTAL!',
+                    description: 'Por compras superiores a $60.000'
+                };
+            } else if (shipping === 5000) {
+                return {
+                    amount: 5000,
+                    message: '🚚 Envío con 50% de descuento',
+                    description: 'Por compras superiores a $30.000. ¡Agrega $' + 
+                                (60000 - subtotal).toLocaleString('es-AR') + 
+                                ' más para envío gratis total!'
+                };
+            }
+            return {
+                amount: 10000,
+                message: '🚚 Envío a ' + city,
+                description: '¡Agrega $' + (30000 - subtotal).toLocaleString('es-AR') + 
+                            ' más para 50% de descuento en envío!'
+            };
+        }
+    }
+    
+    // Para otras provincias
+    if (shipping === 0) {
+        return {
+            amount: 0,
+            message: '🎉 ¡ENVÍO GRATIS!',
+            description: 'Por compras superiores a $30.000'
+        };
+    }
+    return {
+        amount: 2500,
+        message: '🚚 Envío estándar',
+        description: subtotal >= 30000 ? 
+            '¡Envío gratis!' : 
+            '¡Agrega $' + (30000 - subtotal).toLocaleString('es-AR') + ' más para envío gratis!'
+    };
+}
+
 // ============================================
 // FUNCIONES DE UTILIDAD
 // ============================================
@@ -792,18 +914,103 @@ function updateOrderSummary() {
         setDisplay('discount-row', 'none');
     }
     
-    const shipping = finalSubtotal >= 30000 ? 0 : 2500;
+    // OBTENER DATOS DE ENVÍO DEL FORMULARIO
+    const province = getElement('province')?.value || '';
+    const city = getElement('city')?.value.trim() || '';
+    
+    // Calcular envío con las nuevas reglas
+    const shipping = calculateShipping(finalSubtotal, province, city);
+    const shippingDetails = getShippingDetails(finalSubtotal, province, city);
+    
     const grandTotal = finalSubtotal + shipping;
     
+    // Actualizar UI
     setText('subtotal', `$${subtotal.toLocaleString('es-AR')}`);
     
-    if (shipping === 0) {
-        setText('shipping', 'GRATIS');
-    } else {
-        setText('shipping', `$${shipping.toLocaleString('es-AR')}`);
+    // Mostrar detalles del envío
+    const shippingElement = getElement('shipping');
+    if (shippingElement) {
+        if (shipping === 0) {
+            shippingElement.innerHTML = `<span style="color: #28a745; font-weight: bold;">${shippingDetails.message}</span>`;
+        } else {
+            shippingElement.innerHTML = `
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-weight: bold;">${shippingDetails.message}</span>
+                    <span style="color: #666; font-size: 0.9rem; margin-top: 2px;">
+                        ${shippingDetails.description}
+                    </span>
+                </div>
+            `;
+        }
     }
     
     setText('grand-total', `$${grandTotal.toLocaleString('es-AR')}`);
+    
+    // Actualizar sección de información de envío en el resumen
+    updateShippingInfoInSummary(shippingDetails, province, city);
+}
+
+// Función para actualizar la información de envío en el resumen
+function updateShippingInfoInSummary(shippingDetails, province, city) {
+    const shippingInfoContainer = document.getElementById('shipping-info-details') || 
+                                 (() => {
+                                     const container = document.createElement('div');
+                                     container.id = 'shipping-info-details';
+                                     container.style.marginTop = '10px';
+                                     container.style.padding = '10px';
+                                     container.style.background = '#f8f9fa';
+                                     container.style.borderRadius = '5px';
+                                     container.style.fontSize = '0.9rem';
+                                     
+                                     const orderSummary = document.querySelector('.order-summary');
+                                     if (orderSummary) {
+                                         const totalsSection = orderSummary.querySelector('.order-total');
+                                         if (totalsSection) {
+                                             totalsSection.parentNode.insertBefore(container, totalsSection.nextSibling);
+                                         }
+                                     }
+                                     return container;
+                                 })();
+    
+    if (province === 'TDF') {
+        let locationSpecificInfo = '';
+        
+        if (city.toLowerCase().includes('rio grande')) {
+            locationSpecificInfo = `
+                <p><strong>📍 Río Grande:</strong></p>
+                <ul style="margin: 5px 0; padding-left: 20px;">
+                    <li>Envío estándar: $2.500</li>
+                    <li>Envío gratis: Compras superiores a $30.000</li>
+                </ul>
+            `;
+        } else if (city.toLowerCase().includes('tolhuin') || city.toLowerCase().includes('ushuaia')) {
+            locationSpecificInfo = `
+                <p><strong>📍 ${city}:</strong></p>
+                <ul style="margin: 5px 0; padding-left: 20px;">
+                    <li>Envío base: $10.000</li>
+                    <li>50% descuento: Compras superiores a $30.000 ($5.000)</li>
+                    <li>Envío gratis total: Compras superiores a $60.000</li>
+                </ul>
+            `;
+        }
+        
+        shippingInfoContainer.innerHTML = `
+            <div style="color: #2c5530; font-weight: bold; margin-bottom: 5px;">
+                🚚 Política de Envío Tierra del Fuego
+            </div>
+            ${locationSpecificInfo}
+        `;
+    } else {
+        shippingInfoContainer.innerHTML = `
+            <div style="color: #2c5530; font-weight: bold; margin-bottom: 5px;">
+                🚚 Política de Envío
+            </div>
+            <ul style="margin: 5px 0; padding-left: 20px;">
+                <li>Envío estándar: $2.500</li>
+                <li>Envío gratis: Compras superiores a $30.000</li>
+            </ul>
+        `;
+    }
 }
 
 function updateCartQuantity(productId, change) {
@@ -1086,7 +1293,7 @@ async function submitOrder() {
     const finalSubtotal = discountInfo.discountedSubtotal;
     const discountAmount = discountInfo.discountAmount;
     
-    const shipping = finalSubtotal >= 30000 ? 0 : 2500;
+    const shipping = calculateShipping(finalSubtotal, province, city);
     const total = finalSubtotal + shipping;
     
     // Actualizar UI del botón
@@ -1367,7 +1574,35 @@ function initEmailJS() {
 // ============================================
 // INICIALIZACIÓN COMPLETA
 // ============================================
+function setupShippingChangeListeners() {
+    const provinceSelect = getElement('province');
+    const cityInput = getElement('city');
+    
+    if (provinceSelect) {
+        provinceSelect.addEventListener('change', () => {
+            updateOrderSummary();
+        });
+    }
+    
+    if (cityInput) {
+        cityInput.addEventListener('input', debounce(() => {
+            updateOrderSummary();
+        }, 500));
+    }
+}
 
+// Función debounce para evitar muchas actualizaciones
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Inicializando checkout completo...');
     
@@ -1390,6 +1625,8 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = '/';
         }, 5000);
     }
+
+       setupShippingChangeListeners();
     
     // Configurar evento para mostrar descuentos
     document.querySelectorAll('input[name="paymentMethod"]').forEach(radio => {

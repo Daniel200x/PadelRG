@@ -75,7 +75,10 @@
                         </div>
                         <div class="form-group">
                             <label for="phone" class="required">Teléfono</label>
-                            <input type="tel" id="phone" placeholder="+54 11 1234-5678" required>
+                            <input type="tel" id="phone" placeholder="+54 9 2964 123456" required>
+                            <small style="color: #666; font-size: 0.85rem; display: block; margin-top: 5px;">
+                                Formato: +54 9 2964 XXXXXX
+                            </small>
                         </div>
                     </div>
                 </div>
@@ -83,6 +86,16 @@
                 <!-- Shipping Address -->
                 <div class="form-section">
                     <h3>🏠 Dirección de Envío</h3>
+                    
+                    <div class="shipping-notice" style="background: #e7f3ff; padding: 12px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #3498db;">
+                        <strong>🚚 Información de Envío Tierra del Fuego:</strong>
+                        <ul style="margin: 8px 0; padding-left: 20px;">
+                            <li><strong>Río Grande:</strong> $2.500 | Gratis en compras +$30.000</li>
+                            <li><strong>Tolhuin/Ushuaia:</strong> $10.000 | 50% descuento (+$30.000) | Gratis (+$60.000)</li>
+                            
+                        </ul>
+                    </div>
+                    
                     <div class="form-group">
                         <label for="address" class="required">Dirección</label>
                         <input type="text" id="address" placeholder="Calle Principal 123" required>
@@ -91,7 +104,10 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="city" class="required">Ciudad</label>
-                            <input type="text" id="city" placeholder="Buenos Aires" required>
+                            <input type="text" id="city" placeholder="Río Grande" required>
+                            <small style="color: #666; font-size: 0.85rem; display: block; margin-top: 5px;">
+                                Especifica: Río Grande, Tolhuin o Ushuaia para calcular correctamente el envío
+                            </small>
                         </div>
                         <div class="form-group">
                             <label for="province" class="required">Provincia</label>
@@ -102,7 +118,7 @@
                                 <option value="CBA">Córdoba</option>
                                 <option value="SF">Santa Fe</option>
                                 <option value="MZA">Mendoza</option>
-                                <option value="TDF">Tierra del Fuego</option>
+                                <option value="TDF" selected>Tierra del Fuego</option>
                                 <option value="ER">Entre Ríos</option>
                                 <option value="SJ">San Juan</option>
                                 <option value="SL">San Luis</option>
@@ -114,7 +130,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="zipCode" class="required">Código Postal</label>
-                            <input type="text" id="zipCode" placeholder="1234" required>
+                            <input type="text" id="zipCode" placeholder="9420" required>
                         </div>
                         <div class="form-group">
                             <label for="country" class="required">País</label>
@@ -125,6 +141,14 @@
                                 <option value="PY">Paraguay</option>
                                 <option value="BO">Bolivia</option>
                             </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Información de envío dinámica -->
+                    <div id="shipping-live-info" style="display: none; background: #f0f7f0; padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid #2c5530;">
+                        <h4 style="margin-top: 0; color: #2c5530;">🚚 Cálculo de Envío</h4>
+                        <div id="shipping-calculation-details">
+                            <!-- Se llena dinámicamente -->
                         </div>
                     </div>
                 </div>
@@ -172,6 +196,11 @@
                             </span>
                         </label>
                     </div>
+                    
+                    <div id="payment-discount-info" style="display: none; background: #fff3cd; padding: 12px; border-radius: 8px; margin-top: 15px; border: 1px solid #ffeaa7;">
+                        <strong>💰 Descuento aplicado:</strong>
+                        <p id="discount-info-text" style="margin: 5px 0;"></p>
+                    </div>
                 </div>
 
                 <!-- Additional Notes -->
@@ -179,7 +208,7 @@
                     <h3>📝 Notas Adicionales</h3>
                     <div class="form-group">
                         <label for="notes">Instrucciones especiales para la entrega</label>
-                        <textarea id="notes" rows="3" placeholder="Ej: Llamar antes de entregar, entregar en portería, etc."></textarea>
+                        <textarea id="notes" rows="3" placeholder="Ej: Llamar antes de entregar, entregar en portería, horario preferido, etc."></textarea>
                     </div>
                 </div>
 
@@ -219,6 +248,11 @@
                     <a href="/">Ver productos</a>
                 </div>
                 
+                <!-- Información de envío en tiempo real -->
+                <div id="shipping-info-details" style="display: none;">
+                    <!-- Se llena dinámicamente con las reglas de envío -->
+                </div>
+                
                 <!-- Total del pedido con descuentos -->
                 <div class="order-total">
                     <div class="total-row">
@@ -226,7 +260,7 @@
                         <span id="subtotal">$0</span>
                     </div>
                     
-                    <!-- Línea de descuento -->
+                    <!-- Línea de descuento por método de pago -->
                     <div class="total-row" id="discount-row" style="display: none;">
                         <span id="discount-label">Descuento:</span>
                         <span id="discount-amount">$0</span>
@@ -234,8 +268,9 @@
                     
                     <div class="total-row">
                         <span>Envío:</span>
-                        <span id="shipping">$2.500</span>
+                        <span id="shipping">$0</span>
                     </div>
+                    
                     <div class="total-row grand-total">
                         <span>Total:</span>
                         <span id="grand-total">$0</span>
@@ -244,16 +279,24 @@
                 
                 <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
                     <p style="color: #666; font-size: 0.9rem;">
-                        <strong>📦 Envío:</strong> 3-5 días hábiles
+                        <strong>📦 Envío Tierra del Fuego:</strong>
                     </p>
-                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
-                        <strong>🎁 Envío gratis en compras mayores a $30,000</strong>
+                    <ul style="color: #666; font-size: 0.85rem; margin: 8px 0; padding-left: 20px;">
+                        <li><strong>Río Grande:</strong> $2.500 | Gratis +$30.000</li>
+                        <li><strong>Tolhuin/Ushuaia:</strong> $10.000 | 50% descuento +$30.000 | Gratis +$60.000</li>
+                        
+                    </ul>
+                    
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 15px;">
+                        <strong>🎁 Descuentos adicionales:</strong>
                     </p>
-                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                    <ul style="color: #666; font-size: 0.85rem; margin: 8px 0; padding-left: 20px;">
+                        <li>Transferencia Bancaria: 10% OFF</li>
+                        <li>Efectivo: 10% OFF</li>
+                    </ul>
+                    
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 15px;">
                         <strong>🔄 Devoluciones:</strong> 30 días de garantía
-                    </p>
-                    <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
-                        <strong>💰 Descuentos:</strong> Transferencia 10% | Efectivo 10%
                     </p>
                 </div>
             </div>
