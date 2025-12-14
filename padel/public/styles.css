@@ -1026,3 +1026,131 @@ button:disabled {
         font-size: 14px;
     }
 }
+/* ============================================
+   ESTILOS PARA REDES SOCIALES
+   ============================================ */
+
+/* Estilo para enlace de Instagram en navbar */
+.instagram-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white !important;
+    margin-left: 10px;
+}
+
+.instagram-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(188, 24, 136, 0.3);
+}
+
+/* Estilo para Instagram en el footer */
+.social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* WhatsApp mejorado */
+.whatsapp-float {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+/* Botón flotante de Instagram (opcional) */
+.instagram-float {
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(220, 39, 67, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+    animation: floatInstagram 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.instagram-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(220, 39, 67, 0.4);
+}
+
+.instagram-icon {
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes floatInstagram {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive para botones flotantes */
+@media (max-width: 768px) {
+    .instagram-float {
+        bottom: 90px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .instagram-icon {
+        font-size: 25px;
+    }
+    
+    .instagram-link {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-float {
+        bottom: 80px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .instagram-icon {
+        font-size: 22px;
+    }
+}
