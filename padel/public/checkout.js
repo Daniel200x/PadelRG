@@ -98,7 +98,8 @@ function showSuccessModal(orderData) {
                 orderData.paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}</strong></p>
             ${orderData.paymentMethod === 'transferencia' ? `
                 <p>Envía el pago de <strong>$${orderData.totals.total.toLocaleString('es-AR')}</strong> a:</p>
-                <p>Banco: Santander<br>CBU: 0070002520000001234567</p>
+                <p>Banco: Mercadopago<br>CBU: 0000003100001024736016</p>
+                <p>Alias: padel.fuego</p>
             ` : orderData.paymentMethod === 'efectivo' ? `
                 <p>Paga <strong>$${orderData.totals.total.toLocaleString('es-AR')}</strong> en efectivo al recibir tu pedido.</p>
             ` : `
@@ -521,8 +522,8 @@ function getPaymentInstructions(paymentMethod, total) {
     switch(paymentMethod) {
         case 'transferencia':
             return `Envía el pago de $${total.toLocaleString('es-AR')} a:<br>
-                    Banco: Santander<br>
-                    CBU: 0070002520000001234567<br>
+                    Banco: Mercadopago<br>
+                    CBU: 0000003100001024736016<br>
                     Alias: PADEL.FUEGO`;
         case 'efectivo':
             return `Paga $${total.toLocaleString('es-AR')} en efectivo al recibir tu pedido.<br>
