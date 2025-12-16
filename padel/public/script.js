@@ -144,6 +144,10 @@ function displayProduct(product) {
         image: product.image || product.imageUrl || null // Solo imagen de Firebase
     };
     
+    // Calcular precio con descuento (solo para mostrar)
+    const discountRate = 0.10; // 10%
+    const discountPrice = safeProduct.price * (1 - discountRate);
+    
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
     productCard.innerHTML = `
@@ -159,14 +163,36 @@ function displayProduct(product) {
         <h3>${safeProduct.name}</h3>
         <p class="brand">${safeProduct.brand}</p>
         <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
-        <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
+        
+        <!-- Precios con descuento (solo visual) -->
+        <div class="price-container">
+            <div class="original-price">
+                Antes: $${safeProduct.price.toLocaleString('es-AR')}
+            </div>
+            <div class="discount-price">
+                Ahora: $${discountPrice.toLocaleString('es-AR', {minimumFractionDigits: 0, maximumFractionDigits: 0})}
+            </div>
+            <div class="discount-badge">
+                🔥 10% OFF
+            </div>
+            <div class="payment-method">
+                <small>Aplica en efectivo/transferencia</small>
+            </div>
+        </div>
+        
         <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
             ${getStockMessage(safeProduct.stock)}
         </div>
         <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
+        
+        <!-- IMPORTANTE: Enviar precio ORIGINAL al carrito -->
         <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
                 ${safeProduct.stock === 0 ? 'disabled' : ''}>
             ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
+        </button>
+        
+        <button class="view-details" onclick="viewProductDetails('${safeProduct.id}')">
+            Ver Detalles
         </button>
     `;
     
@@ -474,7 +500,7 @@ function renderCart() {
         return;
     }
     
-    // Calcular totales
+    // Calcular totales con precio ORIGINAL
     let total = 0;
     let totalItems = 0;
     
@@ -505,6 +531,9 @@ function renderCart() {
         `;
         cartItems.insertAdjacentHTML('beforeend', itemHTML);
     });
+    
+    // NOTA: El descuento se aplicará en checkout.html
+    // No mostrar descuento aquí para evitar confusión
     
     cartTotal.textContent = `$${total.toLocaleString('es-AR')}`;
     
@@ -650,6 +679,9 @@ async function addToCart(productId, productName, productPrice, productStock) {
     try {
         console.log(`🛒 Agregando producto: ${productId} - ${productName}`);
         
+        // Siempre usar precio ORIGINAL (el descuento se aplica en checkout)
+        const finalPrice = productPrice;
+        
         // Verificar stock en tiempo real si hay conexión a Firebase
         let currentStock = productStock;
         let stockCheckPassed = true;
@@ -699,7 +731,7 @@ async function addToCart(productId, productName, productPrice, productStock) {
             cart.push({
                 id: productId,
                 name: productName,
-                price: productPrice,
+                price: finalPrice, // Precio ORIGINAL
                 quantity: 1,
                 maxStock: currentStock
             });
