@@ -1207,7 +1207,10 @@ button:disabled {
     border-top: 1px dashed #dee2e6;
 }
 
-/* Banner promocional fijo */
+/* ============================================
+   ESTILOS PARA BANNER PROMOCIONAL
+   ============================================ */
+
 .promo-banner {
     position: fixed;
     top: 80px;
@@ -1216,9 +1219,17 @@ button:disabled {
     background: linear-gradient(135deg, #2c5530, #ff6b35);
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 50px; /* Más padding a la izquierda para el botón */
     z-index: 999;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.promo-content {
+    flex: 1;
 }
 
 .promo-banner h3 {
@@ -1233,11 +1244,44 @@ button:disabled {
     opacity: 0.9;
 }
 
+.promo-close {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.promo-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Cuando el banner está cerrado */
+.promo-banner.hidden {
+    display: none !important;
+}
+
 /* Responsive para banner */
 @media (max-width: 768px) {
     .promo-banner {
         top: 60px;
-        padding: 8px 15px;
+        padding: 8px 40px 8px 15px; /* Menos padding en móvil */
+        min-height: 50px;
+        flex-direction: column;
+        text-align: left;
     }
     
     .promo-banner h3 {
@@ -1248,7 +1292,24 @@ button:disabled {
         font-size: 0.8rem;
     }
     
-    .discount-price {
-        font-size: 1.4rem;
+    .promo-close {
+        right: 8px;
+        top: 8px;
+        transform: none;
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
     }
 }
+
+/* Ajustar contenido principal cuando el banner está visible */
+body.has-promo-banner {
+    padding-top: 140px; /* 80px navbar + 60px banner */
+}
+
+@media (max-width: 768px) {
+    body.has-promo-banner {
+        padding-top: 110px; /* 60px navbar + 50px banner */
+    }
+}
+

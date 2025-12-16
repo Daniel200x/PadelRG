@@ -127,7 +127,7 @@ function getStockMessage(stock) {
     return '✗ Sin stock';
 }
 
-// Función para mostrar productos - SIN IMÁGENES POR DEFECTO
+// Función para mostrar productos - CON DESCUENTO VISUAL
 function displayProduct(product) {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
@@ -144,7 +144,7 @@ function displayProduct(product) {
         image: product.image || product.imageUrl || null // Solo imagen de Firebase
     };
     
-    // Calcular precio con descuento (solo para mostrar)
+    // Calcular precio con descuento (solo para mostrar visualmente)
     const discountRate = 0.10; // 10%
     const discountPrice = safeProduct.price * (1 - discountRate);
     
@@ -220,7 +220,7 @@ function viewProductDetails(productId) {
 // Hacer disponible globalmente
 window.viewProductDetails = viewProductDetails;
 
-// Función para cargar productos locales (fallback) - ACTUALIZADA SIN IMÁGENES
+// Función para cargar productos locales (fallback) - CON DESCUENTO VISUAL
 function loadLocalProducts() {
     console.log('📦 Usando productos locales de demostración');
     
@@ -532,9 +532,6 @@ function renderCart() {
         cartItems.insertAdjacentHTML('beforeend', itemHTML);
     });
     
-    // NOTA: El descuento se aplicará en checkout.html
-    // No mostrar descuento aquí para evitar confusión
-    
     cartTotal.textContent = `$${total.toLocaleString('es-AR')}`;
     
     // Actualizar contador
@@ -757,6 +754,30 @@ function updateCartCounter() {
     counter.style.display = totalItems > 0 ? 'inline-block' : 'none';
 }
 
+// ============================================
+// FUNCIONES PARA EL BANNER PROMOCIONAL
+// ============================================
+
+// Función para cerrar el banner
+function closePromoBanner() {
+    const promoBanner = document.getElementById('promo-banner');
+    if (!promoBanner) return;
+    
+    // Ocultar inmediatamente
+    promoBanner.style.display = 'none';
+    document.body.classList.remove('has-promo-banner');
+}
+
+// Función para inicializar el banner
+function initPromoBanner() {
+    const promoBanner = document.getElementById('promo-banner');
+    if (!promoBanner) return;
+    
+    // Mostrar el banner
+    promoBanner.style.display = 'flex';
+    document.body.classList.add('has-promo-banner');
+}
+
 // Configuración de eventos
 function setupEventListeners() {
     console.log('🔧 Configurando event listeners...');
@@ -851,6 +872,16 @@ function setupEventListeners() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && cartOpen) {
             toggleCart();
+        }
+    });
+    
+    // Cerrar banner con ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const promoBanner = document.getElementById('promo-banner');
+            if (promoBanner && promoBanner.style.display !== 'none') {
+                closePromoBanner();
+            }
         }
     });
     
@@ -993,19 +1024,22 @@ async function initializeApp() {
         // 1. Inicializar carrito PRIMERO
         initCart();
         
-        // 2. Configurar eventos
+        // 2. Inicializar banner promocional
+        initPromoBanner();
+        
+        // 3. Configurar eventos
         setupEventListeners();
         
-        // 3. Cargar productos
+        // 4. Cargar productos
         await loadProducts();
         
-        // 4. Actualizar carrito
+        // 5. Actualizar carrito
         renderCart();
         
-        // 5. Iniciar monitoreo de stock en tiempo real
+        // 6. Iniciar monitoreo de stock en tiempo real
         watchStockChanges();
         
-        // 6. Verificar estado de imágenes
+        // 7. Verificar estado de imágenes
         setTimeout(() => {
             checkImagesStatus();
         }, 2000);
@@ -1064,3 +1098,7 @@ window.handleNoImage = handleNoImage;
 window.renderCart = renderCart;
 window.updateProductStockUI = updateProductStockUI;
 window.watchStockChanges = watchStockChanges;
+window.viewProductDetails = viewProductDetails;
+
+// NUEVO: Agregar funciones del banner
+window.closePromoBanner = closePromoBanner;
