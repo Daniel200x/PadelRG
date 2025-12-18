@@ -127,7 +127,7 @@ function getStockMessage(stock) {
     return '✗ Sin stock';
 }
 
-// Función para mostrar productos - SIN IMÁGENES POR DEFECTO
+// Función para mostrar productos - CON DESCUENTO VISUAL
 function displayProduct(product) {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
@@ -144,6 +144,10 @@ function displayProduct(product) {
         image: product.image || product.imageUrl || null // Solo imagen de Firebase
     };
     
+    // Calcular precio con descuento (solo para mostrar visualmente)
+    const discountRate = 0.10; // 10%
+    const discountPrice = safeProduct.price * (1 - discountRate);
+    
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
     productCard.innerHTML = `
@@ -159,14 +163,36 @@ function displayProduct(product) {
         <h3>${safeProduct.name}</h3>
         <p class="brand">${safeProduct.brand}</p>
         <p class="description">${safeProduct.description.substring(0, 80)}${safeProduct.description.length > 80 ? '...' : ''}</p>
-        <div class="price">$${safeProduct.price.toLocaleString('es-AR')}</div>
+        
+        <!-- Precios con descuento (solo visual) -->
+        <div class="price-container">
+            <div class="original-price">
+                Antes: $${safeProduct.price.toLocaleString('es-AR')}
+            </div>
+            <div class="discount-price">
+                Ahora: $${discountPrice.toLocaleString('es-AR', {minimumFractionDigits: 0, maximumFractionDigits: 0})}
+            </div>
+            <div class="discount-badge">
+                🔥 10% OFF
+            </div>
+            <div class="payment-method">
+                <small>Aplica en efectivo/transferencia</small>
+            </div>
+        </div>
+        
         <div class="stock ${safeProduct.stock > 10 ? 'in-stock' : safeProduct.stock > 0 ? 'low-stock' : 'no-stock'}">
             ${getStockMessage(safeProduct.stock)}
         </div>
         <div class="rating">${getRatingStars(safeProduct.rating)} ${formatRating(safeProduct.rating)}/5</div>
+        
+        <!-- IMPORTANTE: Enviar precio ORIGINAL al carrito -->
         <button class="add-to-cart" onclick="addToCart('${safeProduct.id}', '${safeProduct.name.replace(/'/g, "\\'")}', ${safeProduct.price}, ${safeProduct.stock})" 
                 ${safeProduct.stock === 0 ? 'disabled' : ''}>
             ${safeProduct.stock === 0 ? 'Sin stock' : 'Agregar al Carrito'}
+        </button>
+        
+        <button class="view-details" onclick="viewProductDetails('${safeProduct.id}')">
+            Ver Detalles
         </button>
     `;
     
@@ -194,7 +220,7 @@ function viewProductDetails(productId) {
 // Hacer disponible globalmente
 window.viewProductDetails = viewProductDetails;
 
-// Función para cargar productos locales (fallback) - ACTUALIZADA SIN IMÁGENES
+// Función para cargar productos locales (fallback) - CON DESCUENTO VISUAL
 function loadLocalProducts() {
     console.log('📦 Usando productos locales de demostración');
     
@@ -474,7 +500,7 @@ function renderCart() {
         return;
     }
     
-    // Calcular totales
+    // Calcular totales con precio ORIGINAL
     let total = 0;
     let totalItems = 0;
     
@@ -650,6 +676,9 @@ async function addToCart(productId, productName, productPrice, productStock) {
     try {
         console.log(`🛒 Agregando producto: ${productId} - ${productName}`);
         
+        // Siempre usar precio ORIGINAL (el descuento se aplica en checkout)
+        const finalPrice = productPrice;
+        
         // Verificar stock en tiempo real si hay conexión a Firebase
         let currentStock = productStock;
         let stockCheckPassed = true;
@@ -699,7 +728,7 @@ async function addToCart(productId, productName, productPrice, productStock) {
             cart.push({
                 id: productId,
                 name: productName,
-                price: productPrice,
+                price: finalPrice, // Precio ORIGINAL
                 quantity: 1,
                 maxStock: currentStock
             });
@@ -723,6 +752,30 @@ function updateCartCounter() {
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     counter.textContent = totalItems.toString();
     counter.style.display = totalItems > 0 ? 'inline-block' : 'none';
+}
+
+// ============================================
+// FUNCIONES PARA EL BANNER PROMOCIONAL
+// ============================================
+
+// Función para cerrar el banner
+function closePromoBanner() {
+    const promoBanner = document.getElementById('promo-banner');
+    if (!promoBanner) return;
+    
+    // Ocultar inmediatamente
+    promoBanner.style.display = 'none';
+    document.body.classList.remove('has-promo-banner');
+}
+
+// Función para inicializar el banner
+function initPromoBanner() {
+    const promoBanner = document.getElementById('promo-banner');
+    if (!promoBanner) return;
+    
+    // Mostrar el banner
+    promoBanner.style.display = 'flex';
+    document.body.classList.add('has-promo-banner');
 }
 
 // Configuración de eventos
@@ -819,6 +872,16 @@ function setupEventListeners() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && cartOpen) {
             toggleCart();
+        }
+    });
+    
+    // Cerrar banner con ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const promoBanner = document.getElementById('promo-banner');
+            if (promoBanner && promoBanner.style.display !== 'none') {
+                closePromoBanner();
+            }
         }
     });
     
@@ -961,19 +1024,22 @@ async function initializeApp() {
         // 1. Inicializar carrito PRIMERO
         initCart();
         
-        // 2. Configurar eventos
+        // 2. Inicializar banner promocional
+        initPromoBanner();
+        
+        // 3. Configurar eventos
         setupEventListeners();
         
-        // 3. Cargar productos
+        // 4. Cargar productos
         await loadProducts();
         
-        // 4. Actualizar carrito
+        // 5. Actualizar carrito
         renderCart();
         
-        // 5. Iniciar monitoreo de stock en tiempo real
+        // 6. Iniciar monitoreo de stock en tiempo real
         watchStockChanges();
         
-        // 6. Verificar estado de imágenes
+        // 7. Verificar estado de imágenes
         setTimeout(() => {
             checkImagesStatus();
         }, 2000);
@@ -1032,3 +1098,7 @@ window.handleNoImage = handleNoImage;
 window.renderCart = renderCart;
 window.updateProductStockUI = updateProductStockUI;
 window.watchStockChanges = watchStockChanges;
+window.viewProductDetails = viewProductDetails;
+
+// NUEVO: Agregar funciones del banner
+window.closePromoBanner = closePromoBanner;
