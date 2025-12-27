@@ -78,18 +78,28 @@
                 </div>
                 
                 <div class="product-price-section">
-                    <div class="price-main" id="product-price">$0</div>
-                    <div id="discount-container" style="display: none;">
-                        <span class="price-old" id="old-price">$0</span>
-                        <span class="discount-badge" id="discount-badge">0% OFF</span>
-                    </div>
-                    
-                    <div class="stock-status">
-                        Estado: <span id="stock-status" class="in-stock">Cargando...</span>
-                    </div>
-                    
-                    <div class="description-content" id="short-description"></div>
-                </div>
+    <!-- Precio con descuento visual (10% OFF) -->
+    <div class="price-container" style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+        <div class="original-price" style="color: #6c757d; font-size: 0.9rem;">
+            Precio regular: <span id="regular-price">$0</span>
+        </div>
+        <div class="discount-price" style="color: #ff6b35; font-size: 2.2rem; font-weight: bold;">
+            Ahora: <span id="product-price">$0</span>
+        </div>
+        <div class="discount-badge" style="display: inline-block; background: linear-gradient(135deg, #ff6b35, #ff4444); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-top: 8px;">
+            🔥 10% OFF pagando en efectivo/transferencia
+        </div>
+        <div class="payment-method" style="margin-top: 10px; font-size: 0.85rem; color: #2c5530;">
+            <small>Este precio aplica solo para pagos en efectivo o transferencia bancaria</small>
+        </div>
+    </div>
+    
+    <div class="stock-status">
+        Estado: <span id="stock-status" class="in-stock">Cargando...</span>
+    </div>
+    
+    <div class="description-content" id="short-description"></div>
+</div>
                 
                 <!-- Quantity Selector -->
                 <div class="quantity-selector">

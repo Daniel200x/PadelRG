@@ -320,6 +320,7 @@ async function loadProductFromLocal(productId) {
 // FUNCIONES DE DISPLAY
 // ============================================
 
+
 // Mostrar detalles del producto
 function displayProductDetails() {
     document.getElementById('loading').style.display = 'none';
@@ -330,13 +331,29 @@ function displayProductDetails() {
     document.getElementById('product-title').textContent = currentProduct.name;
     document.getElementById('product-brand').textContent = currentProduct.brand || 'Marca no especificada';
     
-    document.getElementById('product-price').textContent = `$${currentProduct.price.toLocaleString('es-AR')}`;
+    // Calcular precio con descuento (10% visual)
+    const discountRate = 0.10;
+    const discountPrice = currentProduct.price * (1 - discountRate);
     
-    if (currentProduct.oldPrice) {
-        document.getElementById('discount-container').style.display = 'block';
-        document.getElementById('old-price').textContent = `$${currentProduct.oldPrice.toLocaleString('es-AR')}`;
-        const discount = Math.round(((currentProduct.oldPrice - currentProduct.price) / currentProduct.oldPrice) * 100);
-        document.getElementById('discount-badge').textContent = `${discount}% OFF`;
+    // === CORRECCIÓN AQUÍ ===
+    // Mostrar precio original (regular) - esto es el precio sin descuento
+    document.getElementById('regular-price').textContent = `$${currentProduct.price.toLocaleString('es-AR')}`;
+    
+    // Mostrar precio con descuento - esta es la versión con 10% OFF
+    document.getElementById('product-price').textContent = `$${discountPrice.toLocaleString('es-AR', {minimumFractionDigits: 0, maximumFractionDigits: 0})}`;
+    // ======================
+    
+    // Si hay descuento adicional (precio antiguo), mostrarlo también
+    if (currentProduct.oldPrice && currentProduct.oldPrice > currentProduct.price) {
+        const extraDiscountContainer = document.getElementById('discount-container');
+        if (extraDiscountContainer) {
+            extraDiscountContainer.style.display = 'block';
+            document.getElementById('old-price').textContent = `$${currentProduct.oldPrice.toLocaleString('es-AR')}`;
+            
+            // Calcular descuento adicional
+            const extraDiscount = Math.round(((currentProduct.oldPrice - currentProduct.price) / currentProduct.oldPrice) * 100);
+            document.getElementById('discount-badge').textContent = `${extraDiscount}% OFF adicional`;
+        }
     }
     
     document.getElementById('rating-value').textContent = currentProduct.rating.toFixed(1);
@@ -1250,33 +1267,44 @@ function displayRelatedProducts() {
         let imageUrl = product.image || '';
         const placeholder = createSVGPlaceholder(product.name, product.category);
         
-        productCard.innerHTML = `
-            <div class="product-image" style="height: 200px; overflow: hidden; border-radius: 8px; margin-bottom: 15px;">
-                <img src="${imageUrl || placeholder}" 
-                     alt="${product.name}" 
-                     style="width: 100%; height: 100%; object-fit: cover;"
-                     loading="lazy"
-                     onerror="
-                         if (this.src !== '${placeholder}') {
-                             this.src = '${placeholder}';
-                         }
-                     ">
-            </div>
-            <h3 style="margin: 0 0 5px 0; font-size: 1.1rem; color: #333;">${product.name}</h3>
-            <p class="brand" style="margin: 0 0 10px 0; color: #666; font-size: 0.9rem;">${product.brand}</p>
-            <div class="price" style="font-weight: bold; color: #2c5530; font-size: 1.2rem; margin-bottom: 8px;">
-                $${product.price.toLocaleString('es-AR')}
-            </div>
-            <div class="rating" style="color: #ffb400; margin-bottom: 15px;">
-                ${getStarsHTML(product.rating || 0)} <span style="color: #666; font-size: 0.9rem;">${(product.rating || 0).toFixed(1)}/5</span>
-            </div>
-            <button class="add-to-cart" 
-                    onclick="event.stopPropagation(); 
-                             addToCart('${product.id}', '${product.name.replace(/'/g, "\\'")}', ${product.price}, ${product.stock || 10}, 1);"
-                    style="width: 100%; padding: 10px; background: #2c5530; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
-                Agregar al Carrito
-            </button>
-        `;
+       // Calcular precio con descuento
+const discountPrice = product.price * 0.9;
+
+productCard.innerHTML = `
+    <div class="product-image" style="height: 200px; overflow: hidden; border-radius: 8px; margin-bottom: 15px;">
+        <img src="${imageUrl || placeholder}" 
+             alt="${product.name}" 
+             style="width: 100%; height: 100%; object-fit: cover;"
+             loading="lazy"
+             onerror="
+                 if (this.src !== '${placeholder}') {
+                     this.src = '${placeholder}';
+                 }
+             ">
+    </div>
+    <h3 style="margin: 0 0 5px 0; font-size: 1.1rem; color: #333;">${product.name}</h3>
+    <p class="brand" style="margin: 0 0 10px 0; color: #666; font-size: 0.9rem;">${product.brand}</p>
+    <div class="price-container" style="margin-bottom: 10px;">
+        <div style="font-size: 0.85rem; color: #6c757d; text-decoration: line-through;">
+            $${product.price.toLocaleString('es-AR')}
+        </div>
+        <div style="font-weight: bold; color: #ff6b35; font-size: 1.2rem;">
+            $${discountPrice.toLocaleString('es-AR', {minimumFractionDigits: 0, maximumFractionDigits: 0})}
+        </div>
+        <div style="background: #ff6b35; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; display: inline-block; margin-top: 5px;">
+            🔥 10% OFF
+        </div>
+    </div>
+    <div class="rating" style="color: #ffb400; margin-bottom: 15px;">
+        ${getStarsHTML(product.rating || 0)} <span style="color: #666; font-size: 0.9rem;">${(product.rating || 0).toFixed(1)}/5</span>
+    </div>
+    <button class="add-to-cart" 
+            onclick="event.stopPropagation(); 
+                     addToCart('${product.id}', '${product.name.replace(/'/g, "\\'")}', ${product.price}, ${product.stock || 10}, 1);"
+            style="width: 100%; padding: 10px; background: #2c5530; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
+        Agregar al Carrito
+    </button>
+`;
         
         // Añadir hover effect al botón
         const button = productCard.querySelector('.add-to-cart');
