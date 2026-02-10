@@ -1,0 +1,46 @@
+{
+  "nombre": "4ta D",
+  "eliminatorias": {
+  
+    "cuartos": [
+      
+      {
+         "equipo1": "Florencia Cutri/Noelia Velasquez",
+          "equipo2": "Cecilia Gersicich/Alejandra Romero",
+          "fecha": "Sabado 13:30",
+          "resultado": "1-2",
+        "games": "3-6, 6-2, 3-6"
+      },
+      {
+         "equipo1": "Mariana Pratto/Marcia Figueroa",
+          "equipo2": "Tatiana Mainero/Victoria Fernandez",
+          "fecha": "Sabado 13:30",
+          "resultado": "2-0",
+        "games": "6-4, 6-1"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Cecilia Gersicich/Alejandra Romero",
+          "fecha": "Sabado 21:00",
+         "resultado": "2-0",
+        "games": "7-6, 6-0"
+      },
+      {
+         "equipo1": "Romina Torres/Ana Velazquez",
+          "equipo2": "Mariana Pratto/Marcia Figueroa",
+          "fecha": "Sabado 19:45",
+          "resultado": "2-0",
+        "games": "6-4, 7-6"
+      }
+    ],
+    "final": {
+        "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Romina Torres/Ana Velazquez",
+          "fecha": "Domingo 21:15",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "nombre": "4ta Caballeros - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Ivan Gallardo/Julio Andrade",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Tiago Andrade/Tomas Echeverria",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Jose Villarreal/Gabriel Muller",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Lucas Ojeda/Franco Moreno",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Guerra/Yannick Sanchez",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Baez/Mancini",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Maldonado/Rivero",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Zalazar/Zalazar",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Guerra/Mancini",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Sanchez/Baez",
+          "ciudad": "Ushuaia"
+        }
+
+        
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Guerra/Yannick Sanchez",
+          "resultado": "2-0",
+          "games": "6-2, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 19:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Tiago Andrade/Tomas Echeverria",
+          "equipo2": "Maldonado/Rivero",
+          "resultado": "2-0",
+          "games": "6-1, 7-5",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 11:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Jose Villarreal/Gabriel Muller",
+          "equipo2": "Baez/Mancini",
+          "resultado": "2-1",
+          "games": "6-2, 6-7, 7-5",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 22:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Lucas Ojeda/Franco Moreno",
+          "equipo2": "Zalazar/Zalazar",
+          "resultado": "2-1",
+          "games": "6-7, 6-3, 7-5",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 13:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Ivan Gallardo/Julio Andrade",
+          "equipo2": "Guerra/Mancini",
+          "resultado": "2-0",
+          "games": "6-0, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Domingo 16:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Tiago Andrade/Tomas Echeverria",
+          "equipo2": "Zalazar/Zalazar",
+          "resultado": "0-1",
+          "games": "0-1",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 15:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Jose Villarreal/Gabriel Muller",
+          "equipo2": "Sanchez/Baez",
+          "resultado": "0-2",
+          "games": "3-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 19:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Lucas Ojeda/Franco Moreno",
+          "equipo2": "Maldonado/Rivero",
+          "resultado": "2-1",
+          "games": "6-3, 1-6, 6-4",
+          "sumaPuntos": "equipo1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "nombre": "5ta C",
+ "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Federico Bossio/Santiago David",
+          "equipo2": "Braian Lizarraga/Matias Rojo",
+          "fecha": "Sabado 13:30",
+          "resultado": "1-2",
+        "games": "4-6, 7-6, 4-6"
+      },
+      {
+         "equipo1": "Cristian Perez/Martin Pacheco",
+          "equipo2": "Moreno/Andres Agnes",
+          "fecha": "Sabado 14:45",
+          "resultado": "2-1",
+        "games": "3-6, 6-3, 6-2"
+      },
+      {
+         "equipo1": "Emmanuel Bravo/Cristian Almaraz",
+          "equipo2": "Roy Avanzatti/Federico Santi",
+          "fecha": "Viernes 22:30",
+          "resultado": "2-0",
+        "games": "6-2, 7-6"
+      },
+      {
+         "equipo1": "Bruno Sirgo/Federico Castro",
+          "equipo2": "Juan Barria/Franco Moreno",
+          "fecha": "Viernes 21:15",
+          "resultado": "0-2",
+        "games": "4-6, 3-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Braian Lizarraga/Matias Rojo",
+          "equipo2": "Cristian Perez/Martin Pacheco",
+          "fecha": "Sabado 22:15",
+         "resultado": "1-2",
+        "games": "5-7, 6-4, 3-6"
+      },
+      {
+         "equipo1": "Emmanuel Bravo/Cristian Almaraz",
+          "equipo2": "Juan Barria/Franco Moreno",
+          "fecha": "Sabado 18:30",
+          "resultado": "0-2",
+        "games": "3-6, 6-7"
+      }
+    ],
+    "final": {
+        "equipo1": "Cristian Perez/Martin Pacheco",
+          "equipo2": "Juan Barria/Franco Moreno",
+          "fecha": "Domingo 19:45",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "nombre": "6ta Caballeros - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Waldemar Sosa/Matias Dos Santos",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Mariano Pereyra/Valentin Lemus",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Franco Gallucci/Nicolas Barrios",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Gustavo Quiroz/Javier Gimenez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Mesas/Ruiz",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Viterbori/Allaman",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Hernando/Gonzalez",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Vega/Berrastro",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Mesa/Juarez",
+          "ciudad": "Ushuaia"
+        }
+
+        
+
+      ],
+      "partidos": [
+        {
+          "fecha": "Sabado 13:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Mesas/Ruiz",
+          "resultado": "2-1",
+          "games": "4-6, 6-4, 6-3",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 17:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Mariano Pereyra/Valentin Lemus",
+          "equipo2": "Viterbori/Allaman",
+          "resultado": "1-2",
+          "games": "4-6, 6-4, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 20:30 hs Cancha 2 - Río Grande",
+          "equipo1": "Franco Gallucci/Nicolas Barrios",
+          "equipo2": "Hernando/Gonzalez",
+          "resultado": "2-1",
+          "games": "6-3, 3-6, 6-3",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Domingo 15:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Gustavo Quiroz/Javier Gimenez",
+          "equipo2": "Vega/Berrastro",
+          "resultado": "0-2",
+          "games": "3-6, 6-7",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 21:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Hernando/Gonzalez",
+          "resultado": "0-2",
+          "games": "3-6, 5-7",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 15:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Mariano Pereyra/Valentin Lemus",
+          "equipo2": "Mesa/Juarez",
+          "resultado": "2-0",
+          "games": "6-1, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 16:30 hs Cancha 3 - Ushuaia",
+          "equipo1": "Franco Gallucci/Nicolas Barrios",
+          "equipo2": "Vega/Berrastro",
+          "resultado": "2-0",
+          "games": "6-1, 6-4",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 18:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Gustavo Quiroz/Javier Gimenez",
+          "equipo2": "Viterbori/Allaman",
+          "resultado": "1-2",
+          "games": "1-6, 6-3, 4-6",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

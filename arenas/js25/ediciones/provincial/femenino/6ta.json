@@ -1,0 +1,120 @@
+{
+  "nombre": "6ta Damas - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Fernanda Polizzi/Lucia Marcial",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Florencia Bianchi/Ines Sosa",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Giuliana Gimenez/Sara Cortes",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Belen Cordoba/Pamela Rusconi",
+          "ciudad": "Río Grande"
+        }
+        ,
+        {
+          "nombre": "Florencia Bianchi/Antonela Domeneh",
+          "ciudad": "Río Grande"
+        }
+        
+        
+        
+        ,
+        {
+          "nombre": "Alvarez/Lynn",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "K. Martinez/Aranda",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Gonzalez/Ruiz",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Barone/Erlan",
+          "ciudad": "Ushuaia"
+        }
+
+      ],
+     "partidos": [
+        {
+          "fecha": "Viernes 22:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Fernanda Polizzi/Lucia Marcial",
+          "equipo2": "Alvarez/Lynn",
+          "resultado": "0-2",
+          "games": "1-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "K. Martinez/Aranda",
+          "resultado": "2-0",
+          "games": "7-6, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 11:30 hs Cancha 2 - Río Grande",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Gonzalez/Ruiz",
+          "resultado": "2-0",
+          "games": "6-2, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 14:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Giuliana Gimenez/Sara Cortes",
+          "equipo2": "Barone/Erlan",
+          "resultado": "1-2",
+          "games": "2-6, 6-3, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 16:30 hs Cancha 2 - Ushuaia",
+          "equipo1": "Fernanda Polizzi/Lucia Marcial",
+          "equipo2": "Alvarez/Lynn",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 13:30 hs Cancha 3 - Ushuaia",
+          "equipo1": "Florencia Bianchi/Antonela Domeneh",
+          "equipo2": "Gonzalez/Ruiz",
+          "resultado": "1-2",
+          "games": "6-7, 6-4, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 12:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "K. Martinez/Aranda",
+          "resultado": "1-2",
+          "games": "5-7, 6-3, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 21:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Giuliana Gimenez/Sara Cortes",
+          "equipo2": "Barone/Erlan",
+          "resultado": "0-2",
+          "games": "4-6, 3-6",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

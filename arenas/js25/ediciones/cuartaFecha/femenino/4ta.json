@@ -1,0 +1,166 @@
+{
+  "nombre": "4ta Damas",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Karina Chicaguala/Lucrecia Fruncieri",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Antonella Zampini/Daniela Martinez",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Mariana Pratto/Luciana Romano",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 21:00 hs Cancha 1",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Mariana Pratto/Luciana Romano",
+          "resultado": "2-0",
+          "games": "6-2, 6-4"
+        },
+        {
+          "fecha": "Jueves 19:00 hs Cancha 2",
+          "equipo1": "Antonella Zampini/Daniela Martinez",
+          "equipo2": "Mariana Pratto/Luciana Romano",
+          "resultado": "2-1",
+          "games": "4-6, 6-4, 7-6"
+        },
+        {
+          "fecha": "Sabado 11:00 hs Cancha 1",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Antonella Zampini/Daniela Martinez",
+          "resultado": "2-0",
+          "games": "6-1, 6-1"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Mariana Medina/Romina Torres",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Ana Velazquez/Alejandra Romero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Cecilia Gersicich/Fernanda Treppo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Sabado 15:00 Cancha 1",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Ana Velazquez/Alejandra Romero",
+          "resultado": "2-0",
+          "games": "6-2, 6-2"
+        },
+        {
+         "fecha": "Jueves 21:00 hs Cancha 2",
+          "equipo1": "Ana Velazquez/Alejandra Romero",
+          "equipo2": "Cecilia Gersicich/Fernanda Treppo",
+          "resultado": "2-0",
+          "games": "6-3, 6-1"
+        },
+        {
+         "fecha": "Viernes 22:00 hs Cancha 2",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Cecilia Gersicich/Fernanda Treppo",
+          "resultado": "2-0",
+          "games": "6-1, 6-2"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Claudia Andrade/Noelia Velasquez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Marcia Figueroa/Tatiana Mainero",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Alejandra Soto/Paula Miranda",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Marcia Figueroa/Tatiana Mainero",
+          "resultado": "2-1",
+          "games": "6-3, 4-6, 7-6"
+        },
+        {
+          "fecha": "Viernes 21:00 hs Cancha 2",
+          "equipo1": "Alejandra Soto/Paula Miranda",
+          "equipo2": "Marcia Figueroa/Tatiana Mainero",
+          "resultado": "0-2",
+          "games": "4-6, 4-6"
+        },
+        {
+         "fecha": "Sabado 16:00 hs Cancha 1",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Alejandra Soto/Paula Miranda",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+ "eliminatorias": {
+
+    "cuartos": [
+      
+      {
+        "equipo1": "2do B",
+        "equipo2": "2do C",
+        "fecha": "Domingo 14:00 hs Cancha 1",
+        "resultado": "2-0",
+          "games": "6-2, 6-4"
+      },
+      {
+        "equipo1": "1ro C",
+        "equipo2": "2do A",
+        "fecha": "Domingo 14:00 hs Cancha 2",
+        "resultado": "0-2",
+          "games": "1-6, 2-6"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "1ro A",
+        "equipo2": "Ganador P1",
+        "fecha": "Domingo 18:00 hs Cancha 1",
+        "resultado": "2-0",
+          "games": "6-0, 6-3"
+      },
+      {
+        "equipo1": "Ganador P2",
+        "equipo2": "1ro B",
+        "fecha": "Domingo 18:00 hs Cancha 2",
+        "resultado": "0-2",
+          "games": "0-6, 1-6"
+      }
+    ],
+    "final": {
+     "equipo1": "Ganador P5",
+        "equipo2": "Ganador P6",
+        "fecha": "Domingo 22:30 hs Cancha ",
+        "resultado": "0-2",
+     
+    "games": "1-6, 3-6"
+    }
+  }
+}

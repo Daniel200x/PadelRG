@@ -1,0 +1,113 @@
+{
+  "nombre": "7ma Damas - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Jimena Ramadori/Violeta Lopez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Lorena Saldivia/Antonela Tarchini",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Dana Martinez/Oriana Martinez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Agustina Quezada/Vanesa Iglesias",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Rojas/Mella",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Visñuk/Molina",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Lirola/Lanaro",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Agüero/Burgo",
+          "ciudad": "Ushuaia"
+        }
+
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 19:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Rojas/Mella",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 10:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Lorena Saldivia/Antonela Tarchini",
+          "equipo2": "Visñuk/Molina",
+          "resultado": "2-1",
+          "games": "6-7, 7-5, 6-1",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 10:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Lirola/Lanaro",
+          "resultado": "1-2",
+          "games": "3-6, 6-3, 6-7",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 19:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "Agüero/Burgo",
+          "resultado": "0-2",
+          "games": "1-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 19:30 hs Cancha 4 - Ushuaia",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Agüero/Burgo",
+          "resultado": "0-2",
+          "games": "6-7, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 16:30 hs Cancha 4 - Ushuaia",
+          "equipo1": "Lorena Saldivia/Antonela Tarchini",
+          "equipo2": "Visñuk/Molina",
+          "resultado": "1-2",
+          "games": "6-2, 0-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 13:30 hs Cancha 4 - Ushuaia",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Lirola/Lanaro",
+          "resultado": "1-2",
+          "games": "6-7, 6-2, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 13:30 hs Cancha 3 - Ushuaia",
+          "equipo1": "Jimena Ramadori/Violeta Lopez",
+          "equipo2": "Rojas/Mella",
+          "resultado": "0-2",
+          "games": "4-6, 5-7",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,109 @@
+{
+  "nombre": "4ta Caballeros",
+  "grupos": [
+   {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "J. Andrade/I. Gallardo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "B. Sirgo/A. Borquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "A. Candia/P. Dure","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "T. Andrade/C. Chalier","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "J. Andrade/I. Gallardo",
+          "equipo2": "B. Sirgo/A. Borquez",
+          "resultado": "2-0",
+          "games":"6-3, 6-0"
+        },
+        {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "A. Candia/P. Dure",
+          "equipo2": "T. Andrade/C. Chalier",
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
+        },
+        {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "2-0",
+          "games":"6-2, 7-5"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "2-1",
+          "games":"3-6, 6-2, 7-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos":[
+        {    "nombre": "P. Lara/P. Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "G. Escudero/S. Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "J. Servian/J. Villarreal","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "N. Escufachi/A. Definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "P. Lara/P. Martinez",
+          "equipo2": "G. Escudero/S. Ruiz",
+          "resultado": "2-0",
+          "games":"7-5, 6-0"
+        },
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "J. Servian/J. Villarreal",
+          "equipo2": "N. Escufachi/A. Definir",
+          "resultado": "2-1",
+          "games":"6-2, 4-6, 7-6"
+        },
+        {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 17:00 hs",
+          "resultado": "2-1",
+          "games":"4-6, 6-3, 7-6"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 15:00",
+          "resultado": "2-1",
+          "games":"6-2, 3-6, 6-2"
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 15:00",
+          "resultado": "1-0",
+          "games":"1-0"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 19:00",
+          "resultado": "1-0",
+          "games":"1-0"
+    }
+  }
+}

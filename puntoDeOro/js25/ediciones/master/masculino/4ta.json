@@ -1,0 +1,46 @@
+{
+  "nombre": "4ta C",
+  "eliminatorias": {
+  
+    "cuartos": [
+      
+      {
+         "equipo1": "Tiago Andrade/Tomas Echeverria",
+          "equipo2": "Julian Morales/Nicolas Gonzalez",
+          "fecha": "Sabado 16:00",
+          "resultado": "2-0",
+        "games": "6-2, 6-3"
+      },
+      {
+         "equipo1": "Gabriel Muller/Jose Villarreal",
+          "equipo2": "Adrian Santi/Claudio Escobar",
+          "fecha": "Viernes 21:00",
+          "resultado": "1-2",
+        "games": "7-5, 4-6, 6-7"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Julio Andrade/Ivan Gallardo",
+          "equipo2": "Tiago Andrade/Tomas Echeverria",
+          "fecha": "Sabado 22:15",
+         "resultado": "2-1",
+        "games": "3-6, 6-4, 6-4"
+      },
+      {
+         "equipo1": "Lucas Ojeda/Joaquin Servian",
+          "equipo2": "Adrian Santi/Claudio Escobar",
+          "fecha": "Sabado 21:00",
+          "resultado": "2-0",
+        "games": "6-1, 6-0"
+      }
+    ],
+    "final": {
+        "equipo1": "Julio Andrade/Ivan Gallardo",
+          "equipo2": "Lucas Ojeda/Joaquin Servian",
+          "fecha": "Domingo 21:15",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

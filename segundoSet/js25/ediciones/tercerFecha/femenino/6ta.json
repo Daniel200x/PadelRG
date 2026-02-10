@@ -1,0 +1,185 @@
+{
+  "nombre": "6ta Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "B. Cordoba/V. Pereda","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "C. Torres/J. Rojas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "B. Lizarraga/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "B. Cordoba/V. Pereda",
+          "equipo2": "B. Lizarraga/A definir",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "B. Cordoba/V. Pereda",
+          "equipo2": "C. Torres/J. Rojas",
+          "resultado": "0-2",
+          "games":"4-6, 6-7"
+        },
+        {
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "C. Torres/J. Rojas",
+          "equipo2": "B. Lizarraga/A definir",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {    "nombre": "A. Domenech/C. Herrera","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "P. Rusconi/G. Flamenco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "S. Sanabria/A definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "A. Domenech/C. Herrera",
+          "equipo2": "P. Rusconi/G. Flamenco",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "P. Rusconi/G. Flamenco",
+          "equipo2": "S. Sanabria/A definir",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "A. Domenech/C. Herrera",
+          "equipo2": "S. Sanabria/A definir",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {    "nombre": "A. Graneros/L. Ramirez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Rausch/M. Arias","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "V. Lopez/J. Ramadori","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "A. Graneros/L. Ramirez",
+          "equipo2": "M. Rausch/M. Arias",
+          "resultado": "1-2",
+          "games":"2-6, 4-6, 6-7"
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "V. Lopez/J. Ramadori",
+          "equipo2": "M. Rausch/M. Arias",
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
+        },
+        {
+         "equipo1": "A. Graneros/L. Ramirez",
+          "equipo2": "V. Lopez/J. Ramadori",
+          "fecha": "Sabado 19:00 hs",
+          "resultado": "1-2",
+          "games":"6-3, 1-6, 6-7"
+        }
+      ]
+    },
+    
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {    "nombre": "V. Iglesias/D. Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "D. Martinez/O. Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "E. Andrade/A. definir","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "D. Martinez/O. Martinez",
+          "equipo2": "E. Andrade/A. definir",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "V. Iglesias/D. Corzo",
+          "equipo2": "D. Martinez/O. Martinez",
+          "resultado": "1-2",
+          "games":"6-7, 6-2, 6-7"
+        },
+        {
+         "equipo1": "V. Iglesias/D. Corzo",
+          "equipo2": "E. Andrade/A. definir",
+          "fecha": "Sabado 21:00 hs",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+  "cuartos": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 12:00",
+          "resultado": "A definir",
+          "games":"6-4, 6-2"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Domingo 12:00",
+         "resultado": "A definir",
+          "games":"5-7, 6-4, 7-6"
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 12:00",
+         "resultado": "A definir",
+          "games":"4-6, 6-3, 6-7"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Domingo 12:00",
+         "resultado": "A definir",
+          "games":"6-2, 6-3"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 15:00",
+          "resultado": "A definir",
+          "games":"2-6, 6-1, 6-3"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 15:00",
+          "resultado": "A definir",
+          "games":"7-6, 4-6, 5-7"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 18:00",
+          "resultado": "A definir",
+          "games":"1-0"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "nombre": "8va Caballeros - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Leonardo Pugnale/Ignacio Perez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Franco Marquez/Ricardo Garcia",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Cristian Ortiz/Javier Paniagua",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Claudio Velasquez/Victor Velasquez",
+          "ciudad": "Río Grande"
+        }
+        ,
+        {
+          "nombre": "Federico Ruiz/Ignacio Perez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Pavon/Carrizo",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Noval/G. Gonzalez",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Cabrera/Gonzalez",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Cimaldoni/Coronel",
+          "ciudad": "Ushuaia"
+        }
+
+        
+       
+
+        
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Viernes 19:30 hs Cancha 2 - Río Grande",
+          "equipo1": "Cristian Ortiz/Javier Paniagua",
+          "equipo2": "Pavon/Carrizo",
+          "resultado": "2-0",
+          "games": "6-1, 6-4",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Viernes 21:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Claudio Velasquez/Victor Velasquez",
+          "equipo2": "Noval/G. Gonzalez",
+          "resultado": "2-0",
+          "games": "7-6, 6-3",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 17:30 hs Cancha 2 - Río Grande",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Cabrera/Gonzalez",
+          "resultado": "1-2",
+          "games": "6-3, 5-7, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 14:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Leonardo Pugnale/Ignacio Perez",
+          "equipo2": "Cimaldoni/Coronel",
+          "resultado": "1-2",
+          "games": "1-6, 7-5, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 18:00 hs Cancha 4 - Ushuaia",
+          "equipo1": "Cristian Ortiz/Javier Paniagua",
+          "equipo2": "Cimaldoni/Coronel",
+          "resultado": "0-2",
+          "games": "4-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 15:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Claudio Velasquez/Victor Velasquez",
+          "equipo2": "Cabrera/Gonzalez",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 15:00 hs Cancha 4 - Ushuaia",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Pavon/Carrizo",
+          "resultado": "0-2",
+          "games": "1-6, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 15:00 hs Cancha 4 - Ushuaia",
+          "equipo1": "Federico Ruiz/Ignacio Perez",
+          "equipo2": "Noval/G. Gonzalez",
+          "resultado": "1-2",
+          "games": "4-6, 6-2, 6-7",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

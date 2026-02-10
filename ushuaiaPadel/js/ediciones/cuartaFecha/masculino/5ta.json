@@ -1,0 +1,221 @@
+{
+  "nombre": "5ta Categoría",
+ 
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Kevin Mayeski/Franco Brigando",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Ciro Andrade/Cesar Andrade",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Cristian Perez/Martin Pacheco",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Kevin Mayeski/Franco Brigando",
+          "equipo2": "Cristian Perez/Martin Pacheco",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Kevin Mayeski/Franco Brigando",
+          "equipo2": "Ciro Andrade/Cesar Andrade",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Ciro Andrade/Cesar Andrade",
+          "equipo2": "Cristian Perez/Martin Pacheco",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+         {    "nombre": "Alexis Pereyra/Javier Pereyra",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Matias Bleuer/Ortiz",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Damian Flores/Fabricio Menna",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Domingo 16:00 hs",
+          "equipo1": "Alexis Pereyra/Javier Pereyra",
+          "equipo2": "Matias Bleuer/Ortiz",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Martes 18:00 hs",
+          "equipo1": "Alexis Pereyra/Javier Pereyra",
+          "equipo2": "Damian Flores/Fabricio Menna",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Jueves 18:00 hs",
+          "equipo1": "Matias Bleuer/Ortiz",
+          "equipo2": "Damian Flores/Fabricio Menna",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+         {    "nombre": "Alejandro Romero/Barnada Maxi",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Sebastian Villarroel/A definir",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Alejandro Romero/Barnada Maxi",
+          "equipo2": "Sebastian Villarroel/A definir",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+         {    "nombre": "Jonathan Coronel/Pablo Rojas",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Jose Pera/Nicolas Piperno",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Rodrigo Rasclard/Recalde",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Domingo 17:00 hs",
+          "equipo1": "Jose Pera/Nicolas Piperno",
+          "equipo2": "Rodrigo Rasclard/Recalde",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Lunes 21:00 hs",
+          "equipo1": "Jonathan Coronel/Pablo Rojas",
+          "equipo2": "Jose Pera/Nicolas Piperno",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "Jonathan Coronel/Pablo Rojas",
+          "equipo2": "Rodrigo Rasclard/Recalde",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+         {    "nombre": "Jorge Galante/Pablo Sosa",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Andres Chalier/Brian Lizarraga",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Emmanuel Bravo/Pablo Gomez",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Viernes 21:00 hs",
+          "equipo1": "Jorge Galante/Pablo Sosa",
+          "equipo2": "Emmanuel Bravo/Pablo Gomez",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Viernes 23:59 hs",
+          "equipo1": "Emmanuel Bravo/Pablo Gomez",
+          "equipo2": "Andres Chalier/Brian Lizarraga",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Andres Chalier/Brian Lizarraga",
+          "equipo2": "Jorge Galante/Pablo Sosa",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "1ro A",
+        "equipo2": "2do D",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "2do B",
+        "equipo2": "1ro C",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro D",
+        "equipo2": "2do A",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "2do C",
+        "equipo2": "1ro B",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      }
+    ],
+    "final": {
+      "equipo1": "Ganador P5",
+      "equipo2": "Ganador P6",
+      "fecha": "   19:00 hs",
+      "resultado": "A confirmar",
+      "games": ""
+    }
+  }
+}

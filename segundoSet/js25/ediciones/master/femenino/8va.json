@@ -1,0 +1,112 @@
+{
+  "nombre": "8va Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Karen Beamonte/Jesica Perolo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Julieta Andino/Carolina Racedo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Natalia Chirino/Silvina Davalos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Julieta Andino/Carolina Racedo",
+          "resultado": "0-2",
+          "games":"2-6, 3-6"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Natalia Chirino/Silvina Davalos",
+          "resultado": "2-0",
+          "games":"6-1, 6-4"
+        },
+        {
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Julieta Andino/Carolina Racedo",
+          "equipo2": "Natalia Chirino/Silvina Davalos",
+          "resultado": "1-0",
+          "games":"1-0"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Romina Sequeira/Rosalina Gamarra","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Belen Rivadeneira/Natalia De La Rosa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Alina Zabala/Noelia Cagnelutti","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "Romina Sequeira/Rosalina Gamarra",
+          "equipo2": "Alina Zabala/Noelia Cagnelutti",
+          "resultado": "1-2",
+          "games":"2-6, 6-2, 6-7"
+        },
+        {
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Belen Rivadeneira/Natalia De La Rosa",
+          "equipo2": "Alina Zabala/Noelia Cagnelutti",
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
+        },
+        {
+          "fecha": "Sabado 23:00 hs",
+          "equipo1": "Romina Sequeira/Rosalina Gamarra",
+          "equipo2": "Belen Rivadeneira/Natalia De La Rosa",
+          "resultado": "0-1",
+          "games":"0-1"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 16:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

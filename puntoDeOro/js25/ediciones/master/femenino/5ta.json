@@ -1,0 +1,59 @@
+{
+  "nombre": "5ta Damas",
+ "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Nelida Cabezas/Fernanda Martinez",
+          "fecha": "Viernes 20:00",
+          "resultado": "2-0",
+        "games": "6-4, 6-4"
+      },
+      {
+         "equipo1": "Luciana Rodriguez/Barbara Rigoni",
+          "equipo2": "Cintia Lucero/Yasna Murga",
+          "fecha": "Sabado 12:15",
+          "resultado": "0-2",
+        "games": "3-6, 4-6"
+      },
+      {
+         "equipo1": "Luciana Romano/Rosalia Cruz",
+          "equipo2": "Adelaida Vidart/Liliana Diaz",
+          "fecha": "Viernes 21:15",
+          "resultado": "2-1",
+        "games": "7-5, 6-7, 6-4"
+      },
+      {
+         "equipo1": "Malvina Polizzi/Fernanda Treppo",
+          "equipo2": "Antonela Zampini/Giuliana Gimenez",
+          "fecha": "Viernes 22:30",
+          "resultado": "0-2",
+        "games": "6-7, 2-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Cintia Lucero/Yasna Murga",
+          "fecha": "Sabado 19:45",
+         "resultado": "2-0",
+        "games": "7-5, 6-4"
+      },
+      {
+         "equipo1": "Luciana Romano/Rosalia Cruz",
+          "equipo2": "Antonela Zampini/Giuliana Gimenez",
+          "fecha": "Sabado 18:30",
+          "resultado": "2-1",
+        "games": "5-7, 6-3, 6-2"
+      }
+    ],
+    "final": {
+        "equipo1": "Alejandra Soto/Daniela Martinez",
+          "equipo2": "Luciana Romano/Rosalia Cruz",
+          "fecha": "Domingo 19:45",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "nombre": "5ta Damas - Torneo Provincial",
+  "grupos": [
+   {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Luciana Romano/Rosalia Cruz",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Mariana Pratto/Luciana Rodriguez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Rocio Terrado/Romina Castillo",
+          "ciudad": "Río Grande"
+          
+        },
+        {
+          "nombre": "Daniela Martinez/Alejandra Soto",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Fernanda Martinez/Rosalia Cruz",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Mariana Pratto/Luciana Romano",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Antonela Zampini/Romina Castillo",
+          "ciudad": "Río Grande"
+        }
+        
+        
+        
+        
+        
+        ,
+        {
+          "nombre": "Caffaro/Politi",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Vera/Saenz",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Moyano/Caicheo",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Barrot/Pelegrina",
+          "ciudad": "Ushuaia"
+        }
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Domingo 09:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Daniela Martinez/Alejandra Soto",
+          "equipo2": "Caffaro/Politi",
+          "resultado": "2-0",
+          "games": "6-3, 6-1",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Domingo 11:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Luciana Romano/Rosalia Cruz",
+          "equipo2": "Vera/Saenz",
+          "resultado": "1-2",
+          "games": "7-6, 4-6, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 12:30 hs Cancha 2 - Río Grande",
+          "equipo1": "Mariana Pratto/Luciana Rodriguez",
+          "equipo2": "Moyano/Caicheo",
+          "resultado": "0-2",
+          "games": "4-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 14:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Rocio Terrado/Romina Castillo",
+          "equipo2": "Barrot/Pelegrina",
+          "resultado": "0-2",
+          "games": "0-6, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 19:30 hs Cancha 2 - Ushuaia",
+          "equipo1": "Daniela Martinez/Alejandra Soto",
+          "equipo2": "Barrot/Pelegrina",
+          "resultado": "1-2",
+          "games": "6-0, 1-6, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 18:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Fernanda Martinez/Rosalia Cruz",
+          "equipo2": "Caffaro/Politi",
+          "resultado": "0-2",
+          "games": "3-6, 1-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 12:30 hs Cancha 2 - Ushuaia",
+          "equipo1": "Mariana Pratto/Luciana Romano",
+          "equipo2": "Vera/Saenz",
+          "resultado": "2-0",
+          "games": "6-2, 6-3",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 18:00 hs Cancha 2 - Ushuaia",
+          "equipo1": "Antonela Zampini/Romina Castillo",
+          "equipo2": "Moyano/Caicheo",
+          "resultado": "0-2",
+          "games": "3-6, 4-6",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

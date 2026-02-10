@@ -1,0 +1,60 @@
+{
+  "nombre": "8va C",
+    
+  "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Alejandro Romero/Matias Gomez",
+          "fecha": "Viernes 21:15",
+          "resultado": "2-0",
+        "games": "6-0, 6-1"
+      },
+      {
+         "equipo1": "Gaston Martinez/Sergio Loncopan",
+          "equipo2": "Leonardo Pugnale/Guillermo Ojeda",
+          "fecha": "Viernes 20:00",
+          "resultado": "1-2",
+        "games": "6-2, 2-6, 1-6"
+      },
+      {
+         "equipo1": "Hugo Sanabria/Marcelo Yunes",
+          "equipo2": "Tomas Ruiz/Luciano Loberche",
+          "fecha": "Sabado 12:15",
+          "resultado": "1-2",
+        "games": "7-6, 2-6, 2-6"
+      },
+      {
+         "equipo1": "Guido Tokar/Pedro Di Bahia",
+          "equipo2": "Pablo Aceri/Daniel Fernandez",
+          "fecha": "Viernes 19:00",
+          "resultado": "2-0",
+        "games": "7-6, 6-0"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Leonardo Pugnale/Guillermo Ojeda",
+          "fecha": "Sabado 18:30",
+         "resultado": "2-1",
+        "games": "6-2, 4-6, 7-5"
+      },
+      {
+         "equipo1": "Tomas Ruiz/Luciano Loberche",
+          "equipo2": "Guido Tokar/Pedro Di Bahia",
+          "fecha": "Sabado 19:45",
+          "resultado": "0-1",
+        "games": "0-1"
+      }
+    ],
+    "final": {
+        "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Guido Tokar/Pedro Di Bahia",
+          "fecha": "Domingo 16:00",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

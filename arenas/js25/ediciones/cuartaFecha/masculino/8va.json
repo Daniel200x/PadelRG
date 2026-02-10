@@ -1,0 +1,280 @@
+{
+  "nombre": "8va Caballeros",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Franco Marquez/Ricardo Garcia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Santiago Salvaña/Julian Alcantara",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Tomas Ruiz/Alejandro Vargas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 19:00 hs Cancha 2",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Santiago Salvaña/Julian Alcantara",
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
+        },
+        {
+          "fecha": "Miercoles 19:00 hs Cancha 1",
+          "equipo1": "Franco Marquez/Ricardo Garcia",
+          "equipo2": "Tomas Ruiz/Alejandro Vargas",
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
+        },
+        {
+          "fecha": "Sabado 14:00 hs Cancha 2",
+          "equipo1": "Santiago Salvaña/Julian Alcantara",
+          "equipo2": "Tomas Ruiz/Alejandro Vargas",
+          "resultado": "0-2",
+          "games":"5-7, 3-6"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Victor Velasquez/Claudio Velasquez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Agustin Maluf/Juan Pablo Crespo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Agustin Martino/Gaston Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 23:50 hs Cancha 1",
+          "equipo1": "Agustin Maluf/Juan Pablo Crespo",
+          "equipo2": "Agustin Martino/Gaston Martinez",
+          "resultado": "2-1",
+          "games":"3-6, 6-3, 7-6"
+        },
+        {
+          "fecha": "Viernes 17:00 hs Cancha 1",
+          "equipo1": "Victor Velasquez/Claudio Velasquez",
+          "equipo2": "Agustin Martino/Gaston Martinez",
+          "resultado": "1-2",
+          "games":"1-6, 6-3, 6-7"
+        },
+        {
+          "fecha": "Sabado 13:00 hs Cancha 2",
+          "equipo1": "Victor Velasquez/Claudio Velasquez",
+          "equipo2": "Agustin Maluf/Juan Pablo Crespo",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Javier Paniagua/Cristian Ortiz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Matias Denis/Alejandro Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Marcelo Yunes/Hugo Sanabria",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 18:30 hs Cancha 2",
+          "equipo1": "Javier Paniagua/Cristian Ortiz",
+          "equipo2": "Matias Denis/Alejandro Martinez",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        },
+        {
+          "fecha": "Jueves 23:50 hs Cancha 2",
+          "equipo1": "Matias Denis/Alejandro Martinez",
+          "equipo2": "Marcelo Yunes/Hugo Sanabria",
+          "resultado": "1-2",
+          "games":"6-3, 3-6, 6-7"
+        },
+        {
+          "fecha": "Viernes 18:00 hs Cancha 2",
+          "equipo1": "Javier Paniagua/Cristian Ortiz",
+          "equipo2": "Marcelo Yunes/Hugo Sanabria",
+          "resultado": "1-2",
+          "games":"0-6, 6-4, 6-7"
+        }
+      ]
+    },
+   
+    
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Guillermo Ojeda/Leonardo Pugnale",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Matias Loberche/Cristian Alday",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Diego Ruiz/Guido Tokar",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Diego Rodriguez/Eros Pintos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 20:00 hs Cancha 2",
+          "equipo1": "Guillermo Ojeda/Leonardo Pugnale",
+          "equipo2": "Matias Loberche/Cristian Alday",
+          "resultado": "2-0",
+          "games":"6-1, 6-4"
+        },
+        {
+          "fecha": "Miercoles 19:30 hs Cancha 2",
+          "equipo1": "Diego Ruiz/Guido Tokar",
+          "equipo2": "Diego Rodriguez/Eros Pintos",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Jueves 23:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-1, 6-0"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Viernes 17:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"4-6, 6-4, 6-7"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Ignacio Perez/Federico Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Agustin Cingolani/Valentin Cingolani","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Rodrigo Alvarado/Matias Carrizo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Lorenzo Rivero/Daniel Fernandez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+      ],
+      "partidos": [
+       {
+          "fecha": "Viernes 23:00 hs Cancha 1",
+          "equipo1": "Ignacio Perez/Federico Ruiz",
+          "equipo2": "Agustin Cingolani/Valentin Cingolani",
+          "resultado": "2-0",
+          "games":"6-3, 7-6"
+        },
+        {
+          "fecha": "Jueves 17:00 hs Cancha 1",
+          "equipo1": "Rodrigo Alvarado/Matias Carrizo",
+          "equipo2": "Lorenzo Rivero/Daniel Fernandez",
+          "resultado": "1-2",
+          "games":"4-6, 6-0, 6-7"
+        },
+        {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 14:30 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 11:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"6-3, 2-6, 6-7"
+        }
+      ]
+    }
+  ],
+ "eliminatorias": {
+  "octavos": [
+      {
+        "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 20:00 Cancha 1",
+          "resultado": "2-1",
+          "games":"1-6, 7-6 , 7-6"
+      },
+      {
+         "equipo1": "2do A",
+          "equipo2": "2do D",
+          "fecha": "Sabado 20:00 Cancha 2",
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
+      }
+    ],
+    "cuartos": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 08:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-1, 7-6"
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 08:00 hs Cancha 2",
+          "resultado": "0-2",
+          "games":"0-6, 0-6"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do E",
+          "fecha": "Domingo 09:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 09:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"2-6, 4-6, 6-7"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 15:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 15:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"6-7, 6-3, 6-7"
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 20:00 hs",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

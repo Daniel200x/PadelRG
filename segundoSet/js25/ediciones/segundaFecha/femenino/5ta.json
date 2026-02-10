@@ -1,0 +1,212 @@
+{
+  "nombre": "5ta Categoría",
+ "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Soto/Cruz",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Bianchi/Martinez",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Cortez/Rojas",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "20:00 hs",
+          "equipo1": "Soto/Cruz",
+          "equipo2": "Bianchi/Martinez",
+         "resultado": "2-1",
+          "games":"6-7, 6-4, 7-6"
+        },
+        {
+          "equipo1": "Soto/Cruz",
+          "equipo2": "Cortez/Rojas",
+          "fecha": " 13:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 7-6"
+        },
+        {
+            "equipo1": "Bianchi/Martinez",
+          "equipo2": "Cortez/Rojas",
+          "fecha": "20:00 hs",
+         "resultado": "2-0",
+          "games":"6-4, 6-3"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Treppo/Romano",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "Lucero/Murga",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Vaca/Marcolini",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+       {
+          "fecha": "20:00 hs",
+          "equipo1": "Treppo/Romano",
+          "equipo2": "Lucero/Murga",
+         "resultado": "2-0",
+          "games":"7-6, 6-2"
+        },
+        {
+          "equipo1": "Treppo/Romano",
+          "equipo2": "Vaca/Marcolini",
+          "fecha": " 13:00 hs",
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
+        },
+        {
+            "equipo1": "Lucero/Murga",
+          "equipo2": "Vaca/Marcolini",
+          "fecha": "20:00 hs",
+         "resultado": "2-1",
+          "games":"6-0, 1-6, 7-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Rodriguez/Vera",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+         "nombre": "Flamenco/Ruiz",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Barbosa/Castillo",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+      ],
+      "partidos": [
+       {
+          "fecha": "20:00 hs",
+          "equipo1": "Rodriguez/Vera",
+          "equipo2": "Flamenco/Ruiz",
+         "resultado": "2-0",
+          "games":"6-2, 6-2"
+        },
+        {
+          "equipo1": "Rodriguez/Vera",
+          "equipo2": "Barbosa/Castillo",
+          "fecha": " 13:00 hs",
+          "resultado": "2-0",
+          "games":"7-5, 7-6"
+        },
+        {
+            "equipo1": "Barbosa/Castillo",
+          "equipo2": "Flamenco/Ruiz",
+          "fecha": "20:00 hs",
+         "resultado": "2-0",
+          "games":"6-3, 6-1"
+        }
+      ]
+    }
+  ],
+ "eliminatorias": {
+    "cuartos": [
+      {
+         "equipo1": "2do C",
+          "equipo2": "2do B",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"3-6, 5-7"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do A",
+          "fecha": "Domingo",
+         "resultado": "A definir",
+          "games":"7-6, 6-3"
+      }
+      
+    ],
+    "semis": [
+     {
+         "equipo1": "1ro A ",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo",
+           "resultado": "A definir",
+          "games":"6-3, 6-2"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo",
+           "resultado": "A definir",
+          "games":"7-5, 6-2"
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo : hs",
+           "resultado": "A definir",
+          "games":"6-2, 4-6, 6-3"
+    }
+  }
+}

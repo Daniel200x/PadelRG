@@ -1,0 +1,229 @@
+{
+  "nombre": "7ma Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "L. Rodriguez/M. Pratto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "E. Martinez/S. Ackerman",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Polizzi/F. Retuerto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Rodriguez/M. Pratto",
+          "equipo2": "E. Martinez/S. Ackerman",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Rodriguez/M. Pratto",
+          "equipo2": "M. Polizzi/F. Retuerto",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "E. Martinez/S. Ackerman",
+          "equipo2": "M. Polizzi/F. Retuerto",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "A. Soto/R. Cruz",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "F. Bianchi/T. Luna",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "B. Rigoni/C. Gersicich",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Soto/R. Cruz",
+          "equipo2": "F. Bianchi/T. Luna",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Soto/R. Cruz",
+          "equipo2": "B. Rigoni/C. Gersicich",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "F. Bianchi/T. Luna",
+          "equipo2": "B. Rigoni/C. Gersicich",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "L. Diaz/P. Miranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "G. Gimenez/D. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "C. Lucero/M. Salinas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Diaz/P. Miranda",
+          "equipo2": "G. Gimenez/D. Martinez",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "G. Gimenez/D. Martinez",
+          "equipo2": "C. Lucero/M. Salinas",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Diaz/P. Miranda",
+          "equipo2": "C. Lucero/M. Salinas",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "A. Zampini/L. Miranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "S. Vera/N. Cabezas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "L. Romano/R. Terrado",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Zampini/L. Miranda",
+          "equipo2": "L. Romano/R. Terrado",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Romano/R. Terrado",
+          "equipo2": "S. Vera/N. Cabezas",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Zampini/L. Miranda",
+          "equipo2": "S. Vera/N. Cabezas",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    }
+      ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado :00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+     
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+    }
+  }
+}

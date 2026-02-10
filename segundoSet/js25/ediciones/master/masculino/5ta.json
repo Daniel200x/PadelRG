@@ -1,0 +1,136 @@
+{
+  "nombre": "5ta Caballeros",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Franco Gallardo/Claudio Escobar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Ciro Andrade/Federico Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Daniel Mercado/Sergio Ruiz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Franco Gallardo/Claudio Escobar",
+          "equipo2": "Ciro Andrade/Federico Martinez",
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Ciro Andrade/Federico Martinez",
+          "equipo2": "Daniel Mercado/Sergio Ruiz",
+          "resultado": "0-2",
+          "games":"0-6, 1-6"
+        },
+        {
+          "fecha": "Sabado 21:00 hs",
+          "equipo1": "Franco Gallardo/Claudio Escobar",
+          "equipo2": "Daniel Mercado/Sergio Ruiz",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Emmanuel Bravo/Pacheco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Maxi Villavicencio/Daniel Diaz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Federico Castro/Adrian Ayala","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Bruno Sirgo/Cristian Almaraz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Emmanuel Bravo/Pacheco",
+          "equipo2": "Maxi Villavicencio/Daniel Diaz",
+          "resultado": "2-0",
+          "games":"6-3, 6-4"
+        },
+        {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "Federico Castro/Adrian Ayala",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
+          "resultado": "1-2",
+          "games":"6-4, 4-6, 6-7"
+        },
+        {
+          "fecha": "Sabado 23:50 hs",
+          "equipo1": "Emmanuel Bravo/Pacheco",
+          "equipo2": "Federico Castro/Adrian Ayala",
+          "resultado": "1-0",
+          "games":"1-0"
+        },
+        {
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Maxi Villavicencio/Daniel Diaz",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
+          "resultado": "0-2",
+          "games":"3-6, 0-6"
+        },
+        {
+          "fecha": "Sabado 22:00 hs",
+          "equipo1": "Maxi Villavicencio/Daniel Diaz",
+          "equipo2": "Federico Castro/Adrian Ayala",
+          "resultado": "0-2",
+          "games":"6-7, 2-6"
+        },
+        {
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Emmanuel Bravo/Pacheco",
+          "equipo2": "Bruno Sirgo/Cristian Almaraz",
+          "resultado": "0-1",
+          "games":"0-1"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 14:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 14:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 19:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "nombre": "8va Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "P. Aceri/D. Fernandez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "J. Nieva/Y. Arcella",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "R. Gonzalez/G. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "R. Gonzalez/G. Martinez",
+          "equipo2": "J. Nieva/Y. Arcella",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "P. Aceri/D. Fernandez",
+          "equipo2": "J. Nieva/Y. Arcella",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "P. Aceri/D. Fernandez",
+          "equipo2": "R. Gonzalez/G. Martinez",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "F. Marquez/R. Garcia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "S. Olivera/C. Ruiz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "S. Muriño/C. Ozores",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "D. Samaniego/A. Maluf",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "S. Olivera/C. Ruiz",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "S. Muriño/C. Ozores",
+          "equipo2": "D. Samaniego/A. Maluf",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "P. Rodriguez/J. Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "G. Tokar/P. Di Bahia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "R. Pedraza/M. Albarracin",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Sanchez/E. Greco",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "P. Rodriguez/J. Gonzalez",
+          "equipo2": "G. Tokar/P. Di Bahia",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "R. Pedraza/M. Albarracin",
+          "equipo2": "A. Sanchez/E. Greco",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "V. Velazquez/C. Velazquez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "F. Toledo/F. Lozano",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "E. Daniel/A. Campasso",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "L. Pugnale/G. Ojeda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "V. Velazquez/C. Velazquez",
+          "equipo2": "F. Toledo/F. Lozano",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "E. Daniel/A. Campasso",
+          "equipo2": "L. Pugnale/G. Ojeda",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+       {
+          "nombre": "D. Minicucci/A. Romero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "J. Alcantara/G. Aguirre",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "C. Trani/A. Guzman",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Faletti/F. Faletti",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "D. Minicucci/A. Romero",
+          "equipo2": "J. Alcantara/G. Aguirre",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "C. Trani/A. Guzman",
+          "equipo2": "A. Faletti/F. Faletti",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+       {
+          "nombre": "L. Rivero/T. Cimaldoni",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Matias/A. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Mondaca/D. Lezcano",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Gomez/G. Silva",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "L. Rivero/T. Cimaldoni",
+          "equipo2": "Matias/A. Martinez",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Mondaca/D. Lezcano",
+          "equipo2": "M. Gomez/G. Silva",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+       {
+          "nombre": "R. Rodriguez/R. Rodriguez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "H. Sanabria/M. Yunes",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Loberche/Nahuel",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "D. Ruiz/L. Lavak",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "R. Rodriguez/R. Rodriguez",
+          "equipo2": "H. Sanabria/M. Yunes",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "M. Loberche/Nahuel",
+          "equipo2": "D. Ruiz/L. Lavak",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo H",
+      "equipos": [
+       {
+          "nombre": "G. Martinez/S. Loncopan",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Segovia/L. Romero",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "R. Alfonso/J. Gomez",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "N. Magallanes/I. Yañez",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "G. Martinez/S. Loncopan",
+          "equipo2": "M. Segovia/L. Romero",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "R. Alfonso/J. Gomez",
+          "equipo2": "N. Magallanes/I. Yañez",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado :00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "2do F",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro G",
+          "equipo2": "2do H",
+          "fecha": "Sabado 22:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro F",
+          "equipo2": "2do E",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "1ro H",
+          "equipo2": "2do G",
+          "fecha": "Sabado 23:00",
+          "resultado": "A definir",
+          "games":"A definir"
+      }
+    ],
+    "cuartos": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"A definir"
+    }
+  }
+}

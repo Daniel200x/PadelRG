@@ -1,0 +1,298 @@
+{
+  "nombre": "6ta Damas",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Pujol/Alvarez",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Debonis/Mignola",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Almonacid/Cardacci",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Domingo 13:00 hs",
+          "equipo1": "Pujol/Alvarez",
+          "equipo2": "Debonis/Mignola",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Lunes 17:00 hs",
+          "equipo1": "Pujol/Alvarez",
+          "equipo2": "Almonacid/Cardacci",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 17:00 hs",
+          "equipo1": "Debonis/Mignola",
+          "equipo2": "Almonacid/Cardacci",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Ruiz/Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Salinas/Umbre Arias",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Guerrero/Tintilay",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Domingo 14:00 hs",
+          "equipo1": "Ruiz/Gonzalez",
+          "equipo2": "Salinas/Umbre Arias",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Lunes 19:00 hs",
+          "equipo1": "Ruiz/Gonzalez",
+          "equipo2": "Guerrero/Tintilay",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Martes 20:00 hs",
+          "equipo1": "Salinas/Umbre Arias",
+          "equipo2": "Guerrero/Tintilay",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Martinez K/Marcon",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Trejo/Segovia",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Cordoba/Rusconi",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Domingo 13:00 hs",
+          "equipo1": "Martinez K/Marcon",
+          "equipo2": "Trejo/Segovia",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 09:00 hs",
+          "equipo1": "Trejo/Segovia",
+          "equipo2": "Cordoba/Rusconi",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 16:00 hs",
+          "equipo1": "Martinez K/Marcon",
+          "equipo2": "Cordoba/Rusconi",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Lia Niz/Daniela Bergondi",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Lucia Marcial/Miranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "A definir",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Viernes 21:00 hs",
+          "equipo1": "Lia Niz/Daniela Bergondi",
+          "equipo2": "Lucia Marcial/Miranda",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": " 23:00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Perez/Aranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Cecilia Rojo/Vivas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Visñuk/Lirola",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Martes 18:00 hs",
+          "equipo1": "Perez/Aranda",
+          "equipo2": "Visñuk/Lirola",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Jueves 17:00 hs",
+          "equipo1": "Perez/Aranda",
+          "equipo2": "Cecilia Rojo/Vivas",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Cecilia Rojo/Vivas",
+          "equipo2": "Visñuk/Lirola",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Rojas/Lanaro",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Britos/Juarez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Sosa/Florencia Bianchi",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Domingo 15:00 hs",
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Britos/Juarez",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Lunes 22:00 hs",
+          "equipo1": "Rojas/Lanaro",
+          "equipo2": "Sosa/Florencia Bianchi",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Britos/Juarez",
+          "equipo2": "Sosa/Florencia Bianchi",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "final": {
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "  19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
+  }
+}

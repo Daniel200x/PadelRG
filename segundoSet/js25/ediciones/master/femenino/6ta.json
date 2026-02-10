@@ -1,0 +1,112 @@
+{
+  "nombre": "6ta Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Claudia Torres/Juliana Rojas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Sabrina Denis/Sara Cortes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Lia Niz/Luz Corzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Sabado 22:00 hs",
+          "equipo1": "Lia Niz/Luz Corzo",
+          "equipo2": "Sabrina Denis/Sara Cortes",
+          "resultado": "2-0",
+          "games":"7-5, 6-4"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Claudia Torres/Juliana Rojas",
+          "equipo2": "Sabrina Denis/Sara Cortes",
+          "resultado": "1-2",
+          "games":"7-5, 4-6, 6-7"
+        },
+        {
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Claudia Torres/Juliana Rojas",
+          "equipo2": "Lia Niz/Luz Corzo",
+          "resultado": "2-1",
+          "games":"7-5, 1-6, 7-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Belen Cordoba/Pamela Rusconi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Karina Ojeda/Cecilia Rojo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Vanesa Iglesias/Daniela Bergondi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Karina Ojeda/Cecilia Rojo",
+          "equipo2": "Vanesa Iglesias/Daniela Bergondi",
+          "resultado": "0-2",
+          "games":"6-7, 5-7"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Karina Ojeda/Cecilia Rojo",
+          "resultado": "2-0",
+          "games":"7-5, 6-4"
+        },
+        {
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Belen Cordoba/Pamela Rusconi",
+          "equipo2": "Vanesa Iglesias/Daniela Bergondi",
+          "resultado": "2-1",
+          "games":"7-6, 4-6, 7-6"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 13:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 13:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 18:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

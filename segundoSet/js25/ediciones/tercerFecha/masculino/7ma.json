@@ -1,0 +1,529 @@
+{
+  "nombre": "7ma Caballeros",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "L. Vera/B. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "M. Spamer/P. Fioroto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "F. Bordon/R. Bordon",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "E. Sanchez/G. Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "L. Vera/B. Martinez",
+          "equipo2": "M. Spamer/P. Fioroto",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "2-0",
+          "games":"6-4, 6-4"
+        },
+        {
+          "equipo1": "F. Bordon/R. Bordon",
+          "equipo2": "E. Sanchez/G. Martinez",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 13:00 hs",
+          "resultado": "2-0",
+          "games":"6-2, 6-0"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 11:00 hs",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "R. Luna/N. Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "A. Porcu/G. Tokar",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "F. Vargas/C. Peschiutta",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "W. Ferrigno/S. Loncopan",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "R. Luna/N. Gonzalez",
+          "equipo2": "A. Porcu/G. Tokar",
+          "fecha": "Viernes 23:45 hs",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        },
+        {
+          "equipo1": "F. Vargas/C. Peschiutta",
+          "equipo2": "W. Ferrigno/S. Loncopan",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "1-2",
+          "games":"5-7, 6-4, 6-7"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 16:00 hs",
+          "resultado": "2-0",
+          "games":"6-4, 6-0"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 16:00 hs",
+          "resultado": "2-1",
+          "games":"4-6, 6-3, 7-6"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "G. Salvaña/I. Perez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "B. Trellini/A. Martino",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Guaragna/F. Zurita",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "D. Galdames/C. Yurjevic",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "G. Salvaña/I. Perez",
+          "equipo2": "B. Trellini/A. Martino",
+          "fecha": "Viernes 20:00 hs",
+          "resultado": "2-1",
+          "games":"6-2, 5-7, 7-6"
+        },
+        {
+          "equipo1": "M. Guaragna/F. Zurita",
+          "equipo2": "D. Galdames/C. Yurjevic",
+          "fecha": "Viernes 20:00 hs",
+          "resultado": "1-2",
+          "games":"2-6, 6-3, 6-7"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "1-2",
+          "games":"6-2, 4-6, 6-7"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "2-1",
+          "games":"6-2, 3-6, 7-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "F. Marquez/R. Garcia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "C. Cardenas/L. Olmos",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "G. Tiraboschi/L. Ruiz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "R. Pedraza/M. Aguila",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "F. Marquez/R. Garcia",
+          "equipo2": "C. Cardenas/L. Olmos",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "equipo1": "G. Tiraboschi/L. Ruiz",
+          "equipo2": "R. Pedraza/M. Aguila",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "2-0",
+          "games":"7-6, 7-6"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 17:00 hs",
+          "resultado": "0-2",
+          "games":"4-6, 5-7"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 17:00 hs",
+          "resultado": "2-0",
+          "games":"6-3, 6-4"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "R. Fritz/J. Del Cantare",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "Y. Arcella/F. Saldaño",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Olivera/L. Cardozo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "A. Roldan/G. Ojeda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "R. Fritz/J. Del Cantare",
+          "equipo2": "Y. Arcella/F. Saldaño",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
+        },
+        {
+          "equipo1": "M. Olivera/L. Cardozo",
+          "equipo2": "A. Roldan/G. Ojeda",
+          "fecha": "Viernes 23:45 hs",
+          "resultado": "1-2",
+          "games":"6-3, 2-6, 6-7"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 11:00 hs",
+          "resultado": "1-2",
+          "games":"5-7, 7-6, 6-7"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 11:00 hs",
+          "resultado": "1-2",
+          "games":"6-2, 6-7, 6-7"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "G. Vera/D. Fernandez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "R. Gonzalez/M. Llanes",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Garde/R. Peix",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "S. Rubio/P. Alfonzo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "G. Vera/D. Fernandez",
+          "equipo2": "R. Gonzalez/M. Llanes",
+          "fecha": "Viernes 18:00 hs",
+          "resultado": "0-2",
+          "games":"4-6, 6-7"
+        },
+        {
+          "equipo1": "M. Garde/R. Peix",
+          "equipo2": "S. Rubio/P. Alfonzo",
+          "fecha": "Viernes 23:00 hs",
+          "resultado": "1-2",
+          "games":"4-6, 6-3, 6-7"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 15:00 hs",
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 16:00 hs",
+          "resultado": "2-0",
+          "games":"7-6, 6-3"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+        {
+          "nombre": "V. Perez/C. Barrionuevo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "P. Aguila/G. Barria",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "J. Retamar/H. Bucci",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "E. Arteaga/F. Mariani",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "V. Perez/C. Barrionuevo",
+          "equipo2": "P. Aguila/G. Barria",
+          "fecha": "Viernes 21:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "equipo1": "J. Retamar/H. Bucci",
+          "equipo2": "E. Arteaga/F. Mariani",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "2-1",
+          "games":"6-1, 4-6, 7-6"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "2-0",
+          "games":"6-2, 7-5"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo H",
+      "equipos": [
+        {
+          "nombre": "N. Romero/S. Barila",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "J. Marchevsky/J. Nuñez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Vargas/Aguilar",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+         "nombre": "A. Maluf/Martino",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "equipo1": "N. Romero/S. Barila",
+          "equipo2": "J. Marchevsky/J. Nuñez",
+          "fecha": "Viernes 19:00 hs",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+        },
+        {
+          "equipo1": "A. Vargas/Aguilar",
+          "equipo2": "A. Maluf/Martino",
+          "fecha": "Viernes 22:00 hs",
+          "resultado": "2-0",
+          "games":"6-2, 7-6"
+        },
+          {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 14:00 hs",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 14:00 hs",
+          "resultado": "0-2",
+          "games":"0-6, 0-6"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado 22:00",
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "2do F",
+          "fecha": "Sabado 22:00",
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado 22:00",
+          "resultado": "1-2",
+          "games":"4-6, 7-5, 6-7"
+      },
+      {
+         "equipo1": "1ro G",
+          "equipo2": "2do H",
+          "fecha": "Sabado 22:00",
+          "resultado": "2-1",
+          "games":"1-6, 6-2, 7-6"
+      },
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado 23:00",
+          "resultado": "0-2",
+          "games":"2-6, 3-6"
+      },
+      {
+         "equipo1": "1ro F",
+          "equipo2": "2do E",
+          "fecha": "Sabado 23:00",
+          "resultado": "0-2",
+          "games":"5-7, 5-7"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado 23:00",
+          "resultado": "0-2",
+          "games":"5-7, 3-6"
+      },
+      {
+         "equipo1": "1ro H",
+          "equipo2": "2do G",
+          "fecha": "Sabado 23:00",
+          "resultado": "1-2",
+          "games":"3-6, 5-7, 6-7"
+      }
+    ],
+    "cuartos": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 11:00",
+          "resultado": "1-2",
+          "games":"6-7, 7-6, 6-7"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 11:00",
+          "resultado": "1-2",
+          "games":"4-6, 7-6, 6-7"
+      },
+      {
+         "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 11:00",
+          "resultado": "2-0",
+          "games":"6-4, 6-0"
+      },
+      {
+         "equipo1": "Ganador P7",
+          "equipo2": "Ganador P8",
+          "fecha": "Domingo 11:00",
+          "resultado": "0-2",
+          "games":"3-6, 2-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 14:00",
+          "resultado": "2-1",
+          "games":"6-2, 4-6, 6-3"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 14:00",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 18:00",
+          "resultado": "0-2",
+          "games":"5-7, 2-6"
+    }
+  }
+}

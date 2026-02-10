@@ -1,0 +1,230 @@
+{
+  "nombre": "8va Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "K. Beamonte/J. Perolo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "R. Gamarra/R. Sequeira","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Lamberti/A. Zabala","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "K. Beamonte/J. Perolo",
+          "equipo2": "R. Gamarra/R. Sequeira",
+          "resultado": "1-2",
+          "games":"6-2, 4-6, 6-7"
+        },
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "R. Gamarra/R. Sequeira",
+          "equipo2": "M. Lamberti/A. Zabala",
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "K. Beamonte/J. Perolo",
+          "equipo2": "M. Lamberti/A. Zabala",
+          "resultado": "2-1",
+          "games":"6-4, 2-6, 7-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {    "nombre": "C. Barria/S. Davalos","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "V. Sanchez/C. Bruzzo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "S. Arce/C. Vazquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "C. Barria/S. Davalos",
+          "equipo2": "V. Sanchez/C. Bruzzo",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "C. Barria/S. Davalos",
+          "equipo2": "S. Arce/C. Vazquez",
+          "resultado": "1-2",
+          "games":"4-6, 6-2, 6-7"
+        },
+        {
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "S. Arce/C. Vazquez",
+          "equipo2": "V. Sanchez/C. Bruzzo",
+          "resultado": "2-0",
+          "games":"6-3, 6-4"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {    "nombre": "N. Cagneluti/E. Duca","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Torres/D. Cejas","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Villagra/M. Araoz","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "L. Torres/D. Cejas",
+          "equipo2": "M. Villagra/M. Araoz",
+          "resultado": "0-2",
+          "games":"0-6, 1-6"
+        },
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "N. Cagneluti/E. Duca",
+          "equipo2": "L. Torres/D. Cejas",
+          "resultado": "2-0",
+          "games":"6-1, 6-0"
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "N. Cagneluti/E. Duca",
+          "equipo2": "M. Villagra/M. Araoz",
+          "resultado": "0-2",
+          "games":"5-7, 4-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {    "nombre": "J. Cichero/V. Rodriguez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "N. Molina/N. Blanco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Gutierrez/E. Perlo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "J. Cichero/V. Rodriguez",
+          "equipo2": "N. Molina/N. Blanco",
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
+        },
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "J. Cichero/V. Rodriguez",
+          "equipo2": "L. Gutierrez/E. Perlo",
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "L. Gutierrez/E. Perlo",
+          "equipo2": "N. Molina/N. Blanco",
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {    "nombre": "B. Rivadeneira/N. De La Rosa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "M. Paredes/S. Arteaga","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {    "nombre": "L. Rossi/N. Chirino","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}],
+      "partidos": [
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "M. Paredes/S. Arteaga",
+          "equipo2": "L. Rossi/N. Chirino",
+          "resultado": "0-2",
+          "games":"1-6, 4-6"
+        },
+        {
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "B. Rivadeneira/N. De La Rosa",
+          "equipo2": "M. Paredes/S. Arteaga",
+          "resultado": "0-2",
+          "games":"6-7, 4-6"
+        },
+        {
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "B. Rivadeneira/N. De La Rosa",
+          "equipo2": "L. Rossi/N. Chirino",
+          "resultado": "2-1",
+          "games":"3-6, 6-3, 7-6"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "2do E",
+          "equipo2": "2do C",
+          "fecha": "Sabado 20:00",
+          "resultado": "A definir",
+          "games":"6-1, 7-6"
+      },
+      {
+         "equipo1": "2do A",
+          "equipo2": "2do D",
+          "fecha": "Sabado 20:00",
+          "resultado": "A definir",
+          "games":"6-3, 6-3"
+      }
+    ],
+    
+    "cuartos": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 10:00",
+          "resultado": "A definir",
+          "games":"2-6, 6-4, 6-7"
+      },
+      {
+         "equipo1": "2do B",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 10:00",
+          "resultado": "A definir",
+          "games":"4-6, 7-5, 6-7"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "1ro E",
+          "fecha": "Domingo 10:00",
+          "resultado": "A definir",
+          "games":"6-2, 5-7, 6-7"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 10:00",
+          "resultado": "A definir",
+          "games":"6-3, 7-5"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 14:00",
+          "resultado": "A definir",
+          "games":"4-6, 3-6"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 14:00",
+          "resultado": "A definir",
+          "games":"2-6, 3-6"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 17:00",
+          "resultado": "A definir",
+          "games":"6-4, 6-3"
+    }
+  }
+}

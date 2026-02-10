@@ -1,0 +1,160 @@
+{
+  "nombre": "8va Caballeros",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Raul Gonzalez/Marcelo Llanes","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Gaston Martinez/Agustin Sanchez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Cristian Ortiz/Jeremias Lara","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Tomas Ruiz/Guido Tokar","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Cristian Ortiz/Jeremias Lara",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
+          "resultado": "1-2",
+          "games":"6-2, 4-6, 6-7"
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Gaston Martinez/Agustin Sanchez",
+          "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Cristian Ortiz/Jeremias Lara",
+          "resultado": "0-2",
+          "games":"1-6, 6-7"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Gaston Martinez/Agustin Sanchez",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
+          "resultado": "2-1",
+          "games":"3-6, 6-3, 7-6"
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "Gaston Martinez/Agustin Sanchez",
+          "equipo2": "Cristian Ortiz/Jeremias Lara",
+          "resultado": "0-2",
+          "games":"2-6, 1-6"
+        },
+        {
+          "fecha": "Sabado 23:00 hs",
+          "equipo1": "Raul Gonzalez/Marcelo Llanes",
+          "equipo2": "Tomas Ruiz/Guido Tokar",
+          "resultado": "1-0",
+          "games":"1-0"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Marcelo Yunes/Lorenzo Rivero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Gonzalo Aguirre/Ruben Pedraza","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Julian Alcantara/Leonardo Barrios","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Claudio Cardenas/Juan Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
+          "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
+          "resultado": "2-1",
+          "games":"2-6, 6-3, 7-6"
+        },
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "Julian Alcantara/Leonardo Barrios",
+          "equipo2": "Claudio Cardenas/Juan Gonzalez",
+          "resultado": "1-2",
+          "games":"6-7, 6-1, 6-7"
+        },
+        {
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Claudio Cardenas/Juan Gonzalez",
+          "equipo2": "Gonzalo Aguirre/Ruben Pedraza",
+          "resultado": "0-2",
+          "games":"2-6, 5-7"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Julian Alcantara/Leonardo Barrios",
+          "equipo2": "Marcelo Yunes/Lorenzo Rivero",
+          "resultado": "2-0",
+          "games":"6-4, 7-5"
+        },
+        {
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Marcelo Yunes/Lorenzo Rivero",
+          "equipo2": "Claudio Cardenas/Juan Gonzalez",
+          "resultado": "2-0",
+          "games":"6-3, 7-6"
+        },
+        {
+          "fecha": "Sabado 23:00 hs",
+          "equipo1": "Gonzalo Aguirre/Ruben Pedraza",
+          "equipo2": "Julian Alcantara/Leonardo Barrios",
+          "resultado": "1-0",
+          "games":"1-0"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 11:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 16:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

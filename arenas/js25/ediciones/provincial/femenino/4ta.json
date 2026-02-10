@@ -1,0 +1,134 @@
+{
+  "nombre": "4ta Damas - Torneo Provincial",
+  "grupos": [
+    {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Mariana Medina/Romina Torres",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Karina Chicaguala/Lucrecia Fruncieri",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Claudia Andrade/Noelia Velasquez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Perla Acevedo/Alejandra Romero",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Perla Acevedo/Ana Velazquez",
+          "ciudad": "Río Grande"
+        }
+        
+        ,
+        {
+          "nombre": "Acosta/Villalba",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Girardi/Gavilan",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Villarreal/Tissera",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Maestro/Vargas",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Tissera/Villalba",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Acosta/Molinolo",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Girardi/Martini",
+          "ciudad": "Ushuaia"
+        }
+
+        
+
+      ],
+      "partidos": [
+        {
+          "fecha": "Sabado 16:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Acosta/Villalba",
+          "resultado": "2-0",
+          "games": "6-2, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Domingo 12:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Girardi/Gavilan",
+          "resultado": "1-2",
+          "games": "7-5, 4-6, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 17:00 hs Cancha 1 - Río Grande",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Villarreal/Tissera",
+          "resultado": "0-2",
+          "games": "5-7, 4-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 18:30 hs Cancha 1 - Río Grande",
+          "equipo1": "Perla Acevedo/Alejandra Romero",
+          "equipo2": "Maestro/Vargas",
+          "resultado": "0-2",
+          "games": "4-6, 0-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 21:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Mariana Medina/Romina Torres",
+          "equipo2": "Tissera/Villalba",
+          "resultado": "2-0",
+          "games": "6-3, 6-0",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Domingo 13:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Acosta/Molinolo",
+          "resultado": "0-2",
+          "games": "5-7, 5-7",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 15:00 hs Cancha 1 - Ushuaia",
+          "equipo1": "Claudia Andrade/Noelia Velasquez",
+          "equipo2": "Maestro/Vargas",
+          "resultado": "0-2",
+          "games": "4-6, 3-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 16:30 hs Cancha 1 - Ushuaia",
+          "equipo1": "Perla Acevedo/Ana Velazquez",
+          "equipo2": "Girardi/Martini",
+          "resultado": "0-2",
+          "games": "0-6, 2-6",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

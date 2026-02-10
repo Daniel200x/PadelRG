@@ -1,0 +1,218 @@
+{
+  "nombre": "7ma Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "J. Servian/Y. Sanchez",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "A. Santi/L. Lapadula",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "J. Villarreal/A. Floriani",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "J. Villarreal/A. Floriani",
+          "equipo2": "J. Servian/Y. Sanchez",
+          "resultado": "1-0",
+          "games":"6-4"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "J. Villarreal/A. Floriani",
+          "equipo2": "A. Santi/L. Lapadula",
+          "resultado": "1-0",
+          "games":"6-4"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "A. Santi/L. Lapadula",
+          "equipo2": "J. Servian/Y. Sanchez",
+          "resultado": "0-1",
+          "games":"4-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "J. Andrade/I. Gallardo",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "N. Escufachi/A. Agnes",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "L. Ojeda/F. Gallardo",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "N. Escufachi/A. Agnes",
+          "equipo2": "L. Ojeda/F. Gallardo",
+          "resultado": "0-1",
+          "games":"4-6"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "J. Andrade/I. Gallardo",
+          "equipo2": "L. Ojeda/F. Gallardo",
+          "resultado": "1-0",
+          "games":"6-4"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "N. Escufachi/A. Agnes",
+          "equipo2": "J. Andrade/I. Gallardo",
+          "resultado": "0-1",
+          "games":"4-6"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "C. Escobar/J. Rivero",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "N. Gonzalez/A. Fulco",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "T. Andrade/T. Echeverria",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "C. Escobar/J. Rivero",
+          "equipo2": "N. Gonzalez/A. Fulco",
+          "resultado": "1-0",
+          "games":"6-4"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "N. Gonzalez/A. Fulco",
+          "equipo2": "T. Andrade/T. Echeverria",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "T. Andrade/T. Echeverria",
+          "equipo2": "C. Escobar/J. Rivero",
+          "resultado": "1-0",
+          "games":"6-4"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+         "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"1-0"
+      },
+      {
+          "equipo1": "1ro C",
+          "equipo2": "2do A",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"0-1"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"1-0"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"0-1"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"0-1"
+    }
+  }
+}

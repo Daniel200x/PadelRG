@@ -1,0 +1,59 @@
+{
+  "nombre": "7ma Damas",
+  "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Emilia Velazco/Jimena Ramadori",
+          "fecha": "Viernes 20:00",
+          "resultado": "2-1",
+        "games": "6-7, 6-3, 6-0"
+      },
+      {
+         "equipo1": "Carolina Nieto/Laura Gomez",
+          "equipo2": "Alejandra Alderete/Marina Linetti",
+          "fecha": "Sabado 17:15",
+          "resultado": "2-0",
+        "games": "6-1, 6-2"
+      },
+      {
+         "equipo1": "Karina Girollet/Vanesa Vera",
+          "equipo2": "Violeta Lopez/Lorena Saldivia",
+          "fecha": "Sabado 17:15",
+          "resultado": "0-2",
+        "games": "6-7, 4-6"
+      },
+      {
+         "equipo1": "Viviana Nehue/Silvana Guerrero",
+          "equipo2": "Maricel Rausch/Micaela Arias",
+          "fecha": "Sabado 14:45",
+          "resultado": "0-2",
+        "games": "2-6, 1-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Carolina Nieto/Laura Gomez",
+          "fecha": "Sabado 23:30",
+         "resultado": "1-0",
+        "games": "1-0"
+      },
+      {
+         "equipo1": "Violeta Lopez/Lorena Saldivia",
+          "equipo2": "Maricel Rausch/Micaela Arias",
+          "fecha": "Sabado 23:30",
+          "resultado": "1-2",
+        "games": "1-2"
+      }
+    ],
+    "final": {
+        "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Maricel Rausch/Micaela Arias",
+          "fecha": "Domingo 17:15",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

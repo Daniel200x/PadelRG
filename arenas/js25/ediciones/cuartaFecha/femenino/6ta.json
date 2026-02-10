@@ -1,0 +1,320 @@
+{
+  "nombre": "6ta Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Fernanda Retuerto/Lucia Marcial",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Vanesa Iglesias/Yanina Magallanes",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Belen Bordon/Lorena Saldivia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 20:00 hs Cancha 2",
+          "equipo1": "Vanesa Iglesias/Yanina Magallanes",
+          "equipo2": "Belen Bordon/Lorena Saldivia",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+        },
+        {
+          "fecha": "Miercoles 19:00 hs Cancha 2",
+          "equipo1": "Fernanda Retuerto/Lucia Marcial",
+          "equipo2": "Belen Bordon/Lorena Saldivia",
+          "resultado": "2-0",
+          "games":"7-5, 7-5"
+        },
+        {
+          "fecha": "Jueves 18:00 hs Cancha 1",
+          "equipo1": "Fernanda Retuerto/Lucia Marcial",
+          "equipo2": "Vanesa Iglesias/Yanina Magallanes",
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Griselda Gimenez/Fernanda Polizzi",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Graciela Flamenco/Erika Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Cecilia Rojo/Marta Barbosa",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 21:00 hs Cancha 2",
+          "equipo1": "Graciela Flamenco/Erika Martinez",
+          "equipo2": "Cecilia Rojo/Marta Barbosa",
+          "resultado": "1-2",
+          "games":"7-6, 1-6, 6-7"
+        },
+        {
+          "fecha": "Miercoles 21:00 hs Cancha 2",
+          "equipo1": "Griselda Gimenez/Fernanda Polizzi",
+          "equipo2": "Graciela Flamenco/Erika Martinez",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+        },
+        {
+          "fecha": "Sabado 14:30 hs Cancha 1",
+          "equipo1": "Griselda Gimenez/Fernanda Polizzi",
+          "equipo2": "Cecilia Rojo/Marta Barbosa",
+          "resultado": "0-2",
+          "games":"3-6, 2-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Sara Cortes/Giuliana Gimenez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Agustina Quezada/Carolina Nieto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Violeta Lopez/Jimena Ramadori",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 18:00 hs Cancha 1",
+          "equipo1": "Agustina Quezada/Carolina Nieto",
+          "equipo2": "Violeta Lopez/Jimena Ramadori",
+          "resultado": "2-0",
+          "games":"7-5, 6-0"
+        },
+        {
+          "fecha": "Viernes 20:00 hs Cancha 2",
+          "equipo1": "Sara Cortes/Giuliana Gimenez",
+          "equipo2": "Agustina Quezada/Carolina Nieto",
+          "resultado": "2-0",
+          "games":"6-2, 6-3"
+        },
+        {
+          "fecha": "Sabado 10:00 hs Cancha 1",
+          "equipo1": "Sara Cortes/Giuliana Gimenez",
+          "equipo2": "Violeta Lopez/Jimena Ramadori",
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Tania Luna/Carolina Herrera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Pamela Rusconi/Elizabeth Andrade",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Sabrina Denis/Cordoba",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs Cancha 1",
+          "equipo1": "Tania Luna/Carolina Herrera",
+          "equipo2": "Pamela Rusconi/Elizabeth Andrade",
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
+        },
+        {
+          "fecha": "Sabado 09:00 hs Cancha 1",
+          "equipo1": "Pamela Rusconi/Elizabeth Andrade",
+          "equipo2": "Sabrina Denis/Cordoba",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "fecha": "Sabado 15:00 hs Cancha 2",
+          "equipo1": "Tania Luna/Carolina Herrera",
+          "equipo2": "Sabrina Denis/Cordoba",
+          "resultado": "2-0",
+          "games":"6-3, 6-4"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Florencia Bianchi/Ines Sosa",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Antonella Domeneh/Luisa Miranda",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Natalia Vazquez/Laura Gomez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 22:00 hs Cancha 2",
+          "equipo1": "Antonella Domeneh/Luisa Miranda",
+          "equipo2": "Natalia Vazquez/Laura Gomez",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+        },
+        {
+          "fecha": "Miercoles 20:00 hs Cancha 2",
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "Natalia Vazquez/Laura Gomez",
+          "resultado": "2-0",
+          "games":"6-0, 6-1"
+        },
+        {
+          "fecha": "Viernes 19:00 hs Cancha 1",
+          "equipo1": "Florencia Bianchi/Ines Sosa",
+          "equipo2": "Antonella Domeneh/Luisa Miranda",
+          "resultado": "2-1",
+          "games":"2-6, 7-5, 7-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Valeria Pereda/Belen Cordoba",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Daniela Bergondi/Lia Niz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Karina Girollet/Lucia Ramirez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 18:30 hs Cancha 2",
+          "equipo1": "Valeria Pereda/Belen Cordoba",
+          "equipo2": "Daniela Bergondi/Lia Niz",
+          "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
+        },
+        {
+          "fecha": "Martes 18:00 hs Cancha 1",
+          "equipo1": "Daniela Bergondi/Lia Niz",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+        },
+        {
+         "fecha": "Sabado 09:00 hs Cancha 2",
+          "equipo1": "Karina Girollet/Lucia Ramirez",
+          "equipo2": "Valeria Pereda/Belen Cordoba",
+          "resultado": "0-2",
+          "games": "1-6, 1-6"
+        }
+      ]
+    }
+    
+  ],
+"eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "2do F",
+          "equipo2": "2do C",
+          "fecha": "Sabado 19:00 hs Cancha 1",
+          "resultado": "1-2",
+          "games":"3-6, 6-2, 6-7"
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "2do B",
+          "fecha": "Sabado 19:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
+      },
+      {
+        "equipo1": "2do A",
+          "equipo2": "1ro F",
+          "fecha": "Sabado 17:00 hs Cancha 2",
+          "resultado": "0-2",
+          "games":"3-6, 1-6"
+      },
+      {
+         "equipo1": "2do E",
+          "equipo2": "2do D",
+          "fecha": "Sabado 18:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-1, 6-1"
+      }
+    ],
+    "cuartos": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 10:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-2, 6-3"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 10:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "Ganador P3",
+          "fecha": "Domingo 11:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+      },
+      {
+         "equipo1": "Ganador P4",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 11:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 16:00 hs Cancha 1",
+          "resultado": "2-1",
+          "games":"6-0, 2-6, 7-6"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 16:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 21:00 hs",
+          "resultado": "1-2",
+          "games":"2-6, 6-1, 6-7"
+    }
+  }
+}

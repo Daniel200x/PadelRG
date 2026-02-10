@@ -1,0 +1,59 @@
+{
+  "nombre": "7ma C",
+  "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Cristian Chalier/Juan Manuel Gimenez",
+          "equipo2": "Diego Ruiz/Sergio Aranda",
+          "fecha": "Sabado 16:00",
+          "resultado": "2-0",
+        "games": "6-0, 6-3"
+      },
+      {
+         "equipo1": "Rodrigo Fritz/Sebastian Rubio",
+          "equipo2": "Benjamin Martinez/Javier Paniagua",
+          "fecha": "Sabado 13:30",
+          "resultado": "0-2",
+        "games": "0-6, 2-6"
+      },
+      {
+         "equipo1": "Aaron Pintos/Gustavo Vera",
+          "equipo2": "Fernando Cheuque/Fernando Zurita",
+          "fecha": "Viernes 21:15",
+          "resultado": "2-0",
+        "games": "6-0, 6-0"
+      },
+      {
+         "equipo1": "Fernando Mariani/Jorge Ugarte",
+          "equipo2": "Nahuel Romero/Simon Barila",
+          "fecha": "Viernes 22:30",
+          "resultado": "0-2",
+        "games": "3-6, 6-7"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Cristian Chalier/Juan Manuel Gimenez",
+          "equipo2": "Benjamin Martinez/Javier Paniagua",
+          "fecha": "Sabado 18:30",
+         "resultado": "1-2",
+        "games": "6-2, 4-6, 4-6"
+      },
+      {
+         "equipo1": "Aaron Pintos/Gustavo Vera",
+          "equipo2": "Nahuel Romero/Simon Barila",
+          "fecha": "Sabado 22:15",
+          "resultado": "2-0",
+        "games": "6-3, 6-1"
+      }
+    ],
+    "final": {
+        "equipo1": "Benjamin Martinez/Javier Paniagua",
+          "equipo2": "Aaron Pintos/Gustavo Vera",
+          "fecha": "Domingo 17:15",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

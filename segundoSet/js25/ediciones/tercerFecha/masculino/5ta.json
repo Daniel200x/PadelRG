@@ -1,0 +1,219 @@
+{
+  "nombre": "5ta Caballeros",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "C. Escobar/N. Escufachi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "W. Sanchez/M. Velasquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "V. Lemus/M. Pereyra","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "C. Escobar/N. Escufachi",
+          "equipo2": "W. Sanchez/M. Velasquez",
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "W. Sanchez/M. Velasquez",
+          "equipo2": "V. Lemus/M. Pereyra",
+          "resultado": "0-2",
+          "games":"3-6, 4-6"
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "V. Lemus/M. Pereyra",
+          "equipo2": "C. Escobar/N. Escufachi",
+          "resultado": "0-2",
+          "games":"1-6, 6-7"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "B. Sirgo/E. Bravo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Villavicencio/P. Hero","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "C. Andradre/C. Andrade","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "B. Sirgo/E. Bravo",
+          "equipo2": "M. Villavicencio/P. Hero",
+          "resultado": "2-0",
+          "games":"7-6, 6-1"
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "B. Sirgo/E. Bravo",
+          "equipo2": "C. Andradre/C. Andrade",
+          "resultado": "2-1",
+          "games":"6-4, 4-6, 7-6"
+        },
+        {
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "C. Andradre/C. Andrade",
+          "equipo2": "M. Villavicencio/P. Hero",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        
+        {
+          "nombre": "B. Lizarraga/A. Fulco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Borquez/S. Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Ayala/Linares","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:00 hs",
+          "equipo1": "B. Lizarraga/A. Fulco",
+          "equipo2": "A. Borquez/S. Graneros",
+          "resultado": "2-0",
+          "games":"7-6, 6-4"
+        },
+        {
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "B. Lizarraga/A. Fulco",
+          "equipo2": "A. Ayala/Linares",
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
+        },
+        {
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "A. Borquez/S. Graneros",
+          "equipo2": "A. Ayala/Linares",
+          "resultado": "2-1",
+          "games":"4-6, 6-4, 7-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "P. Martinez/F. Castro","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "D. Floriani/A. Floriani","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "S. Ruiz/D. Mercado","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "P. Martinez/F. Castro",
+          "equipo2": "D. Floriani/A. Floriani",
+          "resultado": "0-2",
+          "games":"4-6, 3-6"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "D. Floriani/A. Floriani",
+          "equipo2": "S. Ruiz/D. Mercado",
+          "resultado": "2-1",
+          "games":"6-7, 6-4, 7-6"
+        },
+          {
+         "equipo1": "P. Martinez/F. Castro",
+          "equipo2": "S. Ruiz/D. Mercado",
+          "fecha": "Sabado 18:00 hs",
+          "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado 23:45",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado 23:45",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+      },
+      {
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado 23:45",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+      },
+      {
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado 23:45",
+          "resultado": "2-0",
+          "games":"6-4, 7-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 13:00",
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 13:00",
+          "resultado": "0-2",
+          "games":"5-7, 4-6"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 19:00",
+          "resultado": "2-0",
+          "games":"6-4, 6-2"
+    }
+  }
+}

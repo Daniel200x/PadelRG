@@ -1,0 +1,155 @@
+{
+  "nombre": "4ta D",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "M. Medina/R. Torres","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "C. Gersicich/A. Zampini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "A. Romero/V. Fernandez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "C. Gersicich/A. Zampini",
+          "equipo2": "A. Romero/V. Fernandez",
+          "resultado": "2-1",
+          "games":"2-6, 7-6, 7-6"
+        },
+        {
+          "fecha": "Jueves 19:00 hs",
+          "equipo1": "C. Gersicich/A. Zampini",
+          "equipo2": "M. Medina/R. Torres",
+          "resultado": "0-2",
+          "games":"3-6, 1-6"
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "M. Medina/R. Torres",
+          "equipo2": "A. Romero/V. Fernandez",
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "L. Fruncieri/K. Chicahuala","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "C. Maestro/C. Martini","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "A. Velazquez/N. Velazquez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "L. Fruncieri/K. Chicahuala",
+          "equipo2": "A. Velazquez/N. Velazquez",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "L. Fruncieri/K. Chicahuala",
+          "equipo2": "C. Maestro/C. Martini",
+          "resultado": "0-2",
+          "games":"3-6, 3-6"
+        },
+        {
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "A. Velazquez/N. Velazquez",
+          "equipo2": "C. Maestro/C. Martini",
+          "resultado": "0-2",
+          "games":"4-6, 0-6"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+       {
+          "nombre": "C. Andrade/E. Peix","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "V. Acosta/B. Villalba","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "T. Mainero/M. Figueroa","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 19:00 hs",
+          "equipo1": "C. Andrade/E. Peix",
+          "equipo2": "T. Mainero/M. Figueroa",
+          "resultado": "0-2",
+          "games":"5-7, 3-6"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "T. Mainero/M. Figueroa",
+          "equipo2": "V. Acosta/B. Villalba",
+          "resultado": "0-2",
+          "games":"3-6, 1-6"
+        },
+        {
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "C. Andrade/E. Peix",
+          "equipo2": "V. Acosta/B. Villalba",
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+         "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 20:00",
+          "resultado": "A definir",
+          "games":"6-3, 6-1"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do A",
+          "fecha": "Sabado 20:00",
+          "resultado": "A definir",
+          "games":"6-1, 6-0"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 14:00",
+          "resultado": "A definir",
+          "games":"7-6, 6-3"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 14:00",
+          "resultado": "A definir",
+          "games":"6-7, 0-6"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"7-5, 6-4"
+    }
+  }
+}

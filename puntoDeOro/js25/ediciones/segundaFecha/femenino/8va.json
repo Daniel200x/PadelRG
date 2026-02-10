@@ -1,0 +1,297 @@
+{
+  "nombre": "8va Categoría",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Carolina Vazquez/Susana Arce",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Maria Elena Araoz/Gessica Galucci",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Yesica Fleuri/Micaela Lamberti",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Noelia Cagnelutti/Emilce Duca",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Cristina Barria/Silvina Davalos",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Karen Beamonte/Jesica Perolo",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Belen Rivadaneira/Natalia De La Rosa",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Anabella Astudillo/Ana Andrade",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Carolina Racedo/Alina Zabala",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Valentina Rodriguez/Julieta Cichero",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Romina Ramirez/Maria Romero",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Olga Cardenas/Rosalina Gamarra",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Florencia Graneros/Andrea Graneros",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+   
+    "cuartos": [
+      {
+         "equipo1": "Maria Elena Araoz/Gessica Galucci",
+          "equipo2": "Carolina Racedo/Alina Zabala",
+          "fecha": "Domingo",
+          "resultado": "2-0",
+          "games":"2-0"
+      },
+      {
+         "equipo1": "Cristina Barria/Silvina Davalos",
+          "equipo2": "Florencia Graneros/Andrea Graneros",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      },
+      {
+         "equipo1": "Belen Rivadaneira/Natalia De La Rosa",
+          "equipo2": "Carolina Vazquez/Susana Arce",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      },
+      {
+         "equipo1": "Olga Cardenas/Rosalina Gamarra",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "2-0",
+          "games":"2-0"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TORNEO SEGUNDO SET</title>
+        <!-- Favicon básico (formato ICO) -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Para dispositivos Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+<!-- Para Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png">
+
+<!-- Para大多数 navegadores modernos -->
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
+<!-- Manifest para PWA (opcional) -->
+<link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="../arenas/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81C2M2PPXT');
+</script>
+</head>
+<body>
+     <!-- Contenedor para el menú -->
+<div id="menu-container"></div>
+<script src="/js/menu-loader.js"></script>
+<script src="/js/script1.js"></script>
+
+    <div class="container" style="margin-top: 70px;">
+       <div class="header-torneo">
+    <div class="logo-container">
+        <img src="../img/2set.jpeg" alt="Logo Torneo Segundo Set" class="logo-torneo">
+    </div>
+</div>
+
+        <div id="header-edicion" class="header-edicion" style="display: none;">
+            <!-- Se llenará dinámicamente -->
+        </div>
+
+        <div class="selectores">
+            <!-- Selector de Fecha -->
+            <div class="selector-group">
+                <label>Fecha del Torneo:</label>
+                <div class="button-bar" id="fecha-buttons">
+                   
+                   <button class="selector-button" onclick="seleccionarFecha('segundaFecha')">2da Fecha</button>
+                   <button class="selector-button" onclick="seleccionarFecha('tercerFecha')">3ra Fecha</button>
+                   <button class="selector-button" onclick="seleccionarFecha('master')">Master</button>
+                </div>
+            </div>
+
+            <!-- Selector de Género -->
+            <div class="selector-group">
+                <label>Género:</label>
+                <div class="button-bar" id="genero-buttons">
+                    <button class="selector-button" onclick="seleccionarGenero('masculino')">Masculino</button>
+                    <button class="selector-button" onclick="seleccionarGenero('femenino')">Femenino</button>
+                </div>
+            </div>
+
+            <!-- Selector de Categoría -->
+            <div class="selector-group">
+                <label>Categoría:</label>
+                <div class="button-bar" id="categoria-buttons">
+                    <button class="selector-button" onclick="seleccionarCategoria('4ta')">4ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('5ta')">5ta</button>
+                 <button class="selector-button" onclick="seleccionarCategoria('6ta')">6ta</button>
+                    <button class="selector-button" onclick="seleccionarCategoria('7ma')">7ma</button>
+                
+                    <button class="selector-button" onclick="seleccionarCategoria('8va')">8va</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Selector móvil (oculto en desktop) -->
+        <div id="mobile-view-selector" class="mobile-view-selector">
+            <div class="button-bar">
+                <button class="selector-button active" onclick="mostrarSeccion('grupos')">Zona de Grupos</button>
+                <button class="selector-button" onclick="mostrarSeccion('eliminatorias')">Eliminatorias</button>
+            </div>
+        </div>
+
+        <div id="contenido-ediciones">
+            <p style="text-align: center; color: #7f8c8d;">Seleccione una fecha, género y categoría para ver los resultados.</p>
+        </div>
+
+            
+<!-- Espacio de publicidad -->
+<div id="publicidad-container"></div>
+        
+        <!-- Botón Volver al Inicio -->
+        <div class="contenedor-btn-volver">
+            <a href="../index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
+    </div>
+
+   <!-- Footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../index.html">Inicio</a>
+          <a href="#">Torneos</a>
+          <a href="/acerca/acerca.html">Acerca de</a>
+          <a href="/contacto/contacto.html">Contacto</a>
+          <a href="/privacidad/privacidad.html">Política de Privacidad</a>
+        </div>
+        <div class="copyright">
+          &copy; <span id="current-year">2025</span> Pádel RG. Todos los
+          derechos reservados.
+        </div>
+      </div>
+    </div>
+
+    <script src="../segundoSet/js/script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9579167377268858"
+     crossorigin="anonymous"></script>
+     <script>
+  // Cargar publicidad
+  fetch('../publicidad/publicidad.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('publicidad-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando publicidad:', error));
+</script>
+</body>
+</html>

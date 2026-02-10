@@ -1,0 +1,178 @@
+{
+  "nombre": "8va Damas",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Santander/Sura",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Romero/Careaga",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Benitez/Burela",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Martes 17:00 hs",
+          "equipo1": "Santander/Sura",
+          "equipo2": "Romero/Careaga",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 18:00 hs",
+          "equipo1": "Santander/Sura",
+          "equipo2": "Benitez/Burela",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Jueves 18:00 hs",
+          "equipo1": "Romero/Careaga",
+          "equipo2": "Benitez/Burela",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Martins/Bertotto",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Gallardo/Saldaño",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Karen Beamonte/Jesica Perolo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Viernes 23:00 hs",
+          "equipo1": "Martins/Bertotto",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 10:00 hs",
+          "equipo1": "Martins/Bertotto",
+          "equipo2": "Gallardo/Saldaño",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Sabado 14:00 hs",
+          "equipo1": "Gallardo/Saldaño",
+          "equipo2": "Karen Beamonte/Jesica Perolo",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Hilbe/Vargas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Hernandez/Silva",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Maddonni/Barkijige",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Lunes 19:00 hs",
+          "equipo1": "Hilbe/Vargas",
+          "equipo2": "Hernandez/Silva",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Hernandez/Silva",
+          "equipo2": "Maddonni/Barkijige",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Miercoles 20:00 hs",
+          "equipo1": "Hilbe/Vargas",
+          "equipo2": "Maddonni/Barkijige",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "final": {
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "  19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
+  }
+}

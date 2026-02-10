@@ -1,0 +1,173 @@
+{
+  "nombre": "4ta Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "M. Medina/R. Torres",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "A. Vidart/R. Cruz",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "C. Andrade/E. Peix",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "M. Medina/R. Torres",
+          "equipo2": "A. Vidart/R. Cruz",
+          "resultado": "2-0",
+          "games":"2-0"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "K. Chicaguala/L. Fruncieri",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "R. Terrado/L. Romano",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "C. Gersicich/A. Romero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "K. Chicaguala/L. Fruncieri",
+          "equipo2": "R. Terrado/L. Romano",
+          "resultado": "2-0",
+          "games":"2-0"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "N. Velazquez/F. Cutri",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Y. Murga/M. Salinas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "M. Pratto/M. Figueroa",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "M. Pratto/M. Figueroa",
+          "equipo2": "Y. Murga/M. Salinas",
+          "resultado": "2-0",
+          "games":"2-0"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+         "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Domingo",
+          "resultado": "0-1",
+          "games":"0-1"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do A",
+          "fecha": "Domingo",
+          "resultado": "2-0",
+          "games":"2-0"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo",
+          "resultado": "2-0",
+          "games":"2-0"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo",
+          "resultado": "0-2",
+          "games":"0-2"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "2-0",
+          "games":"2-0"
+    }
+  }
+}

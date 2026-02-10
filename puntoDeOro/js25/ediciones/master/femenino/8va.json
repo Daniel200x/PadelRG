@@ -1,0 +1,59 @@
+{
+  "nombre": "8va D",
+ "eliminatorias": {
+  
+    "cuartos": [
+      {
+         "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Silvina Davalos/Julieta Cichero",
+          "fecha": "Sabado 13:30",
+          "resultado": "2-1",
+        "games": "6-2, 4-6, 6-1"
+      },
+      {
+         "equipo1": "Rosalina Gamarra/Alina Zabala",
+          "equipo2": "Carolina Vazquez/Susana Arce",
+          "fecha": "Viernes 23:45",
+          "resultado": "2-0",
+        "games": "7-6, 6-2"
+      },
+      {
+         "equipo1": "Carolina Racedo/Julieta Andino",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
+          "fecha": "Viernes 22:30",
+          "resultado": "2-0",
+        "games": "7-6, 6-3"
+      },
+      {
+         "equipo1": "Belen Rivadeneira/Natalia De La Rosa",
+          "equipo2": "Maria Araoz/Gessica Galucci",
+          "fecha": "Sabado 16:00",
+          "resultado": "0-2",
+        "games": "3-6, 3-6"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Rosalina Gamarra/Alina Zabala",
+          "fecha": "Sabado 21:00",
+         "resultado": "2-0",
+        "games": "6-4, 7-5"
+      },
+      {
+         "equipo1": "Carolina Racedo/Julieta Andino",
+          "equipo2": "Maria Araoz/Gessica Galucci",
+          "fecha": "Sabado 22:15",
+          "resultado": "1-2",
+        "games": "1-6, 6-1, 6-7"
+      }
+    ],
+    "final": {
+        "equipo1": "Karen Beamonte/Jesica Perolo",
+          "equipo2": "Maria Araoz/Gessica Galucci",
+          "fecha": "Domingo 16:00",
+          "resultado": "",
+        "games": ""
+    }
+  }
+}

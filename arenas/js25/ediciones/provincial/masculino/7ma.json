@@ -1,0 +1,125 @@
+{
+  "nombre": "7ma Caballeros - Torneo Provincial",
+  "grupos": [
+   {
+      "nombre": "1ra Etapa",
+      "equipos": [
+        {
+          "nombre": "Cristian Chalier/Juan Gimenez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Lucas Vera/Benjamin Martinez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Ramiro Luna/Nicolas Gonzalez",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Gustavo Santana/Ramiro Bordon",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Francisco Bordon/Ramiro Bordon",
+          "ciudad": "Río Grande"
+        },
+        {
+          "nombre": "Tapia/Roldan",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Carracedo/Crespin",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Rojas/Abboud",
+          "ciudad": "Ushuaia"
+        }
+        ,
+        {
+          "nombre": "Aperio/Fiori",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Maxi Aperio/Roldan",
+          "ciudad": "Ushuaia"
+        },
+        {
+          "nombre": "Lamas/Tapia",
+          "ciudad": "Ushuaia"
+        }
+
+        
+
+      ],
+       "partidos": [
+        {
+          "fecha": "Sabado 13:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Cristian Chalier/Juan Gimenez",
+          "equipo2": "Tapia/Roldan",
+          "resultado": "2-1",
+          "games": "4-6, 6-2, 6-3",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 16:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Lucas Vera/Benjamin Martinez",
+          "equipo2": "Carracedo/Crespin",
+          "resultado": "0-2",
+          "games": "4-6, 5-7",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 18:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Gustavo Santana/Ramiro Bordon",
+          "equipo2": "Rojas/Abboud",
+          "resultado": "0-2",
+          "games": "3-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Domingo 11:00 hs Cancha 2 - Río Grande",
+          "equipo1": "Ramiro Luna/Nicolas Gonzalez",
+          "equipo2": "Aperio/Fiori",
+          "resultado": "2-0",
+          "games": "6-1, 6-1",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 21:00 hs Cancha 4 - Ushuaia",
+          "equipo1": "Cristian Chalier/Juan Gimenez",
+          "equipo2": "Lamas/Tapia",
+          "resultado": "2-0",
+          "games": "6-4, 7-6",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 15:00 hs Cancha 3 - Ushuaia",
+          "equipo1": "Lucas Vera/Benjamin Martinez",
+          "equipo2": "Rojas/Abboud",
+          "resultado": "0-2",
+          "games": "3-6, 2-6",
+          "sumaPuntos": "equipo2"
+        },
+        {
+          "fecha": "Sabado 12:00 hs Cancha 4 - Ushuaia",
+          "equipo1": "Francisco Bordon/Ramiro Bordon",
+          "equipo2": "Maxi Aperio/Roldan",
+          "resultado": "2-1",
+          "games": "6-2, 4-6, 6-2",
+          "sumaPuntos": "equipo1"
+        },
+        {
+          "fecha": "Sabado 19:30 hs Cancha 3 - Ushuaia",
+          "equipo1": "Ramiro Luna/Nicolas Gonzalez",
+          "equipo2": "Carracedo/Crespin",
+          "resultado": "1-2",
+          "games": "4-6, 6-4, 4-6",
+          "sumaPuntos": "equipo2"
+        }
+      ]
+    }
+  ]
+}

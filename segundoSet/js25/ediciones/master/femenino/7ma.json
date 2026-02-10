@@ -1,0 +1,136 @@
+{
+  "nombre": "7ma Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Dana Martinez/Oriana Martinez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Sabrina Ilarregui/Luciana Barria","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Karina Girollet/Lucia Ramirez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Sabrina Ilarregui/Luciana Barria",
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
+        },
+        {
+          "fecha": "Sabado 11:00 hs",
+          "equipo1": "Dana Martinez/Oriana Martinez",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
+        },
+        {
+          "fecha": "Sabado 18:00 hs",
+          "equipo1": "Sabrina Ilarregui/Luciana Barria",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
+          "resultado": "0-2",
+          "games":"3-6, 2-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Violeta Lopez/Jimena Ramadori","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Micaela Arias/Carolina Nieto","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Andrea Graneros/Florencia Graneros","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Emilia Velazco/Vanesa Vera","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Micaela Arias/Carolina Nieto",
+          "resultado": "0-2",
+          "games":"3-6, 0-6"
+        },
+        {
+          "fecha": "Viernes 23:45 hs",
+          "equipo1": "Andrea Graneros/Florencia Graneros",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
+          "resultado": "2-0",
+          "games":"7-5, 6-3"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "Micaela Arias/Carolina Nieto",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
+          "resultado": "2-0",
+          "games":"6-4, 6-1"
+        },
+        {
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
+          "resultado": "2-0",
+          "games":"6-0, 6-4"
+        },
+        {
+          "fecha": "Sabado 19:00 hs",
+          "equipo1": "Andrea Graneros/Florencia Graneros",
+          "equipo2": "Micaela Arias/Carolina Nieto",
+          "resultado": "1-2",
+          "games":"2-6, 6-0, 6-7"
+        },
+        {
+          "fecha": "Sabado 23:45 hs",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
+          "resultado": "0-1",
+          "games":"0-1"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 12:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 12:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 17:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

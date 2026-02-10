@@ -1,0 +1,339 @@
+{
+  "nombre": "6ta Caballeros",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Waldemar Sosa/Matias Dos Santos",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Chapperon/Sosa",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Ortiz/Perez",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 17:00 hs",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Ortiz/Perez",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Waldemar Sosa/Matias Dos Santos",
+          "equipo2": "Chapperon/Sosa",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Ortiz/Perez",
+          "equipo2": "Chapperon/Sosa",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Hernando/Gonzalez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Baez/Acosta",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Godoy/Campos",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Lunes 18:00 hs",
+          "equipo1": "Hernando/Gonzalez",
+          "equipo2": "Baez/Acosta",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Martes 17:00 hs",
+          "equipo1": "Hernando/Gonzalez",
+          "equipo2": "Godoy/Leal",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Miercoles 18:00 hs",
+          "equipo1": "Baez/Acosta",
+          "equipo2": "Godoy/Leal",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Camba/Mesas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Contardi/Cardenas",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Allaman/Ruiz",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Domingo 15:00 hs",
+          "equipo1": "Camba/Mesas",
+          "equipo2": "Contardi/Cardenas",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Lunes 19:00 hs",
+          "equipo1": "Camba/Mesas",
+          "equipo2": "Allaman/Ruiz",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Contardi/Cardenas",
+          "equipo2": "Allaman/Ruiz",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Javier Gimenez/Gustavo Quiroz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Ferreyra/Acosta",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Trovina/Gironi",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Lunes 22:00 hs",
+          "equipo1": "Javier Gimenez/Gustavo Quiroz",
+          "equipo2": "Ferreyra/Acosta",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 22:00 hs",
+          "equipo1": "Ferreyra/Acosta",
+          "equipo2": "Trovina/Gironi",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 22:00 hs",
+          "equipo1": "Javier Gimenez/Gustavo Quiroz",
+          "equipo2": "Trovina/Gironi",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Vega/Di Pietro",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Jara/De La Vega",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Rivarola/Piñol",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Lunes 22:00 hs",
+          "equipo1": "Jara/De La Vega",
+          "equipo2": "Rivarola/Piñol",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 19:00 hs",
+          "equipo1": "Vega/Di Pietro",
+          "equipo2": "Jara/De La Vega",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "Vega/Di Pietro",
+          "equipo2": "Rivarola/Piñol",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+        {
+          "nombre": "Gonzalez/Juarez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Insaurralde/Roldan",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Berrastro/Valiente",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Lunes 21:00 hs",
+          "equipo1": "Gonzalez/Juarez",
+          "equipo2": "Insaurralde/Roldan",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 21:00 hs",
+          "equipo1": "Gonzalez/Juarez",
+          "equipo2": "Berrastro/Valiente",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Insaurralde/Roldan",
+          "equipo2": "Berrastro/Valiente",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+    ,
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+        {
+          "nombre": "Viterbori/Viterbori",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Flores/Ortiz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Valentin Lemus/Abboud",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Martes 21:00 hs",
+          "equipo1": "Viterbori/Viterbori",
+          "equipo2": "Flores/Ortiz",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Miercoles 17:15 hs",
+          "equipo1": "Viterbori/Viterbori",
+          "equipo2": "Valentin Lemus/Abboud",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 12:00 hs",
+          "equipo1": "Flores/Ortiz",
+          "equipo2": "Valentin Lemus/Abboud",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "1ro A",
+        "equipo2": "2do D",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "2do B",
+        "equipo2": "1ro C",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "1ro D",
+        "equipo2": "2do A",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "2do C",
+        "equipo2": "1ro B",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "Ganador P1",
+        "equipo2": "Ganador P2",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      },
+      {
+        "equipo1": "Ganador P3",
+        "equipo2": "Ganador P4",
+        "fecha": "   19:00 hs",
+        "resultado": "A confirmar",
+        "games": ""
+      }
+    ],
+    "final": {
+      "equipo1": "Ganador P5",
+      "equipo2": "Ganador P6",
+      "fecha": "   19:00 hs",
+      "resultado": "A confirmar",
+      "games": ""
+    }
+  }
+}

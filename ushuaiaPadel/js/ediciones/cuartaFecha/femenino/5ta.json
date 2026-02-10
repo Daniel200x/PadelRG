@@ -1,0 +1,178 @@
+{
+  "nombre": "5ta Damas",
+   
+
+"grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {    "nombre": "Toledo/Moyano",   "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0},
+        {      "nombre": "Erlan/Barone",  "PJ": 0, "PG": 0,   "SG": 0,   "SP": 0,   "GF": 0,   "GC": 0  },
+        {   "nombre": "Cabezas/A definir",   "PJ": 0,  "PG": 0,  "SG": 0, "SP": 0,  "GF": 0,  "GC": 0        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 17:00 hs",
+          "equipo1": "Toledo/Moyano",
+          "equipo2": "Erlan/Barone",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Viernes 17:00 hs",
+          "equipo1": "Erlan/Barone",
+          "equipo2": "Cabezas/A definir",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "Toledo/Moyano",
+          "equipo2": "Cabezas/A definir",
+          "resultado": "",
+          "games": ""
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Saenz/Vera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Puntiroli/Sarden",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Caicheo/Oviedo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+         "fecha": "Lunes 19:00 hs",
+          "equipo1": "Saenz/Vera",
+          "equipo2": "Caicheo/Oviedo",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Martes 19:00 hs",
+          "equipo1": "Puntiroli/Sarden",
+          "equipo2": "Caicheo/Oviedo",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Jueves 18:00 hs",
+          "equipo1": "Saenz/Vera",
+          "equipo2": "Puntiroli/Sarden",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Castellani/Esteban",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Politi/Caffaro",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        },
+        {
+          "nombre": "Pellegrina/Barrot",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,  "GF": 0, "GC": 0
+        }
+      ],
+      "partidos": [
+        {
+          "fecha": "Lunes 20:00 hs",
+          "equipo1": "Politi/Caffaro",
+          "equipo2": "Pellegrina/Barrot",
+          "resultado": "",
+          "games": ""
+        },
+        {
+          "fecha": "Martes 20:00 hs",
+          "equipo1": "Castellani/Esteban",
+          "equipo2": "Pellegrina/Barrot",
+          "resultado": "",
+          "games": ""
+        },
+        {
+         "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Castellani/Esteban",
+          "equipo2": "Politi/Caffaro",
+          "resultado": "",
+          "games": ""
+        }
+      ]
+    }
+  ],
+
+
+  "eliminatorias": {
+
+    "cuartos": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "semis": [
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      },
+      {
+        "equipo1": "/",
+        "equipo2": "/",
+        "fecha": "  19:00 hs",
+        "resultado": "A confirmar",
+        "ganador": "/"
+      }
+    ],
+    "final": {
+      "equipo1": "/",
+      "equipo2": "/",
+      "fecha": "  19:00 hs",
+      "resultado": "A confirmar",
+      "ganador": "/"
+    }
+  }
+}

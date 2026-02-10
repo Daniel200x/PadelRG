@@ -1,0 +1,155 @@
+{
+  "nombre": "4ta C",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "I. Gallardo/J. Andrade","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "M. Bleuer/A. Santi","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "A. Floriani/A. Fulco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 23:00 hs",
+          "equipo1": "I. Gallardo/J. Andrade",
+          "equipo2": "A. Floriani/A. Fulco",
+          "resultado": "2-1",
+          "games":"6-3, 6-7, 7-6"
+        },
+        {
+          "fecha": "Viernes 20:00 hs",
+          "equipo1": "M. Bleuer/A. Santi",
+          "equipo2": "A. Floriani/A. Fulco",
+          "resultado": "0-2",
+          "games":"1-6, 1-6"
+        },
+        {
+          "fecha": "Sabado 14:00 hs",
+          "equipo1": "I. Gallardo/J. Andrade",
+          "equipo2": "M. Bleuer/A. Santi",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+         {
+          "nombre": "J. Servian/Y. Sanchez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "J. Morales/Gonzalez","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "L. Ojeda/A. Chalier","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 23:00 hs",
+          "equipo1": "J. Morales/Gonzalez",
+          "equipo2": "L. Ojeda/A. Chalier",
+          "resultado": "2-1",
+          "games":"6-2, 2-6, 7-6"
+        },
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "J. Servian/Y. Sanchez",
+          "equipo2": "L. Ojeda/A. Chalier",
+          "resultado": "2-0",
+          "games":"7-5, 7-5"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "J. Servian/Y. Sanchez",
+          "equipo2": "J. Morales/Gonzalez",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+        }
+        
+      ]
+    },
+    
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+         {
+          "nombre": "T. Andrade/T. Echeverria","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "C. Perez/M. Pacheco","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+         "nombre": "J. Villarreal/G. Muller","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 19:00 hs",
+          "equipo1": "C. Perez/M. Pacheco",
+          "equipo2": "J. Villarreal/G. Muller",
+          "resultado": "0-2",
+          "games":"0-6, 6-7"
+        },
+        {
+          "fecha": "Jueves 22:00 hs",
+          "equipo1": "T. Andrade/T. Echeverria",
+          "equipo2": "J. Villarreal/G. Muller",
+          "resultado": "1-2",
+          "games":"5-7, 6-2, 6-7"
+        },
+        {
+          "fecha": "Sabado 15:00 hs",
+          "equipo1": "C. Perez/M. Pacheco",
+          "equipo2": "T. Andrade/T. Echeverria",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+        }
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+    "cuartos": [
+      {
+         "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 21:00",
+          "resultado": "A definir",
+          "games":"6-3, 3-6, 7-6"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do A",
+          "fecha": "Sabado 21:00",
+          "resultado": "A definir",
+          "games":"7-5, 1-6, 6-7"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 15:00",
+          "resultado": "A definir",
+          "games":"6-1, 6-0"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 15:00",
+          "resultado": "A definir",
+          "games":"3-6, 3-6"
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo",
+          "resultado": "A definir",
+          "games":"2-6, 1-6"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "nombre": "4ta Caballeros",
+ "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        
+        {
+          "nombre": "Julio Andrade/Ivan Gallardo","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Daniel Urquiza/Tiago Andrade","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Angel Candia/Pablo Dure","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 22:00 hs",
+          "equipo1": "Julio Andrade/Ivan Gallardo",
+          "equipo2": "Daniel Urquiza/Tiago Andrade",
+          "resultado": "2-0",
+          "games":"6-0, 6-1"
+        },
+        {
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "Julio Andrade/Ivan Gallardo",
+          "equipo2": "Angel Candia/Pablo Dure",
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
+        },
+        {
+          "fecha": "Sabado 21:00 hs",
+          "equipo1": "Daniel Urquiza/Tiago Andrade",
+          "equipo2": "Angel Candia/Pablo Dure",
+          "resultado": "0-2",
+          "games":"3-6, 0-6"
+        }
+        
+      ]
+    },
+   {
+      "nombre": "Grupo B",
+      "equipos": [
+        
+        {
+          "nombre": "Pedro Martinez/Pablo Lara","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Martin Ormaza/Jose Villarreal","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Andres Chalier/Lucas Ojeda","PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Pedro Martinez/Pablo Lara",
+          "equipo2": "Martin Ormaza/Jose Villarreal",
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
+        },
+        {
+          "fecha": "Sabado 13:00 hs",
+          "equipo1": "Martin Ormaza/Jose Villarreal",
+          "equipo2": "Andres Chalier/Lucas Ojeda",
+          "resultado": "2-0",
+          "games":"6-3, 6-1"
+        },
+        {
+          "fecha": "Sabado 20:00 hs",
+          "equipo1": "Pedro Martinez/Pablo Lara",
+          "equipo2": "Andres Chalier/Lucas Ojeda",
+          "resultado": "2-1",
+          "games":"6-2, 3-6, 7-6"
+        }
+        
+      ]
+    }
+  ],
+  "eliminatorias": {
+    
+   
+    "semis": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Domingo 15:00",
+          "resultado": "",
+          "games":""
+      },
+      {
+         "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Domingo 15:00",
+          "resultado": "",
+          "games":""
+      }
+    ],
+    "final": {
+       "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 20:00",
+          "resultado": "",
+          "games":""
+    }
+  }
+}

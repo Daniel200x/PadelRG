@@ -1,0 +1,280 @@
+{
+  "nombre": "7ma Damas",
+  "grupos": [
+    {
+      "nombre": "Grupo A",
+      "equipos": [
+        {
+          "nombre": "Agustina Quezada/Vanesa Iglesias",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Karina Girollet/Lucia Ramirez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Silvina Davalos/Karen Beamonte",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 21:00 hs Cancha 2",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Silvina Davalos/Karen Beamonte",
+          "resultado": "2-0",
+          "games":"6-1, 6-0"
+        },
+        {
+          "fecha": "Viernes 13:00 hs Cancha 2",
+          "equipo1": "Karina Girollet/Lucia Ramirez",
+          "equipo2": "Silvina Davalos/Karen Beamonte",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+          "fecha": "Viernes 18:00 hs Cancha 2",
+          "equipo1": "Agustina Quezada/Vanesa Iglesias",
+          "equipo2": "Karina Girollet/Lucia Ramirez",
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo B",
+      "equipos": [
+        {
+          "nombre": "Antonela Tarchini/Lorena Saldivia",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Viviana Nehue/Silvana Guerrero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Emilce Duca/Noelia Cagnelutti",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 22:00 hs Cancha 2",
+          "equipo1": "Antonela Tarchini/Lorena Saldivia",
+          "equipo2": "Emilce Duca/Noelia Cagnelutti",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
+        },
+        {
+          "fecha": "Jueves 20:00 hs Cancha 1",
+          "equipo1": "Viviana Nehue/Silvana Guerrero",
+          "equipo2": "Antonela Tarchini/Lorena Saldivia",
+          "resultado": "0-2",
+          "games":"1-6, 0-6"
+        },
+        {
+          "fecha": "Viernes 14:00 hs Cancha 2",
+          "equipo1": "Emilce Duca/Noelia Cagnelutti",
+          "equipo2": "Viviana Nehue/Silvana Guerrero",
+          "resultado": "0-2",
+          "games":"1-6, 3-6"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo C",
+      "equipos": [
+        {
+          "nombre": "Oriana Martinez/Dana Martinez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Pamela Lirola/Victoria Visñuk",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Andrea Graneros/Florencia Graneros",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 18:00 hs Cancha 2",
+          "equipo1": "Oriana Martinez/Dana Martinez",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
+        },
+        {
+          "fecha": "Viernes 13:00 hs Cancha 1",
+          "equipo1": "Pamela Lirola/Victoria Visñuk",
+          "equipo2": "Oriana Martinez/Dana Martinez",
+          "resultado": "2-0",
+          "games":"7-6, 6-4"
+        },
+        {
+          "fecha": "Viernes 15:00 hs Cancha 2",
+          "equipo1": "Pamela Lirola/Victoria Visñuk",
+          "equipo2": "Andrea Graneros/Florencia Graneros",
+          "resultado": "2-0",
+          "games":"6-2, 7-5"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo D",
+      "equipos": [
+        {
+          "nombre": "Marcia Mella/Belen Rojas",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Emilia Velazco/Vanesa Vera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Paula Elstner/Graciela Perez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 19:00 hs Cancha 2",
+          "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
+          "resultado": "2-0",
+          "games":"6-1, 6-3"
+        },
+        {
+          "fecha": "Sabado 11:00 hs Cancha 2",
+          "equipo1": "Marcia Mella/Belen Rojas",
+          "equipo2": "Emilia Velazco/Vanesa Vera",
+          "resultado": "2-0",
+          "games":"6-2, 6-1"
+        },
+        {
+          "fecha": "Sabado 15:00 hs Cancha 1",
+          "equipo1": "Paula Elstner/Graciela Perez",
+          "equipo2": "Marcia Mella/Belen Rojas",
+          "resultado": "0-2",
+          "games":"2-6, 6-7"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+        {
+          "nombre": "Violeta Lopez/Jimena Ramadori",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Soledad Silva/Ines Herrera",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Macarena Oyarzun/Laura Gomez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Emilse Molina/Iliana Luggren",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Viernes 17:00 hs Cancha 2",
+          "equipo1": "Violeta Lopez/Jimena Ramadori",
+          "equipo2": "Soledad Silva/Ines Herrera",
+          "resultado": "2-1",
+          "games":"2-6, 6-2, 7-6"
+        },
+        {
+          "fecha": "Viernes 19:00 hs Cancha 2",
+          "equipo1": "Macarena Oyarzun/Laura Gomez",
+          "equipo2": "Emilse Molina/Iliana Luggren",
+          "resultado": "1-2",
+          "games":"1-6, 6-4, 6-7"
+        },
+        {
+         "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "fecha": "Sabado 14:30 hs Cancha 2",
+          "resultado": "0-2",
+          "games":"1-6, 1-6"
+        },
+        {
+        "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 09:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-0, 7-6"
+        }
+      ]
+    }
+    
+  ],
+"eliminatorias": {
+    "octavos": [
+      {
+        "equipo1": "2do B",
+          "equipo2": "2do C",
+          "fecha": "Sabado 20:00 hs Cancha 1",
+          "resultado": "0-2",
+          "games":"2-6, 3-6"
+      },
+      {
+         "equipo1": "2do A",
+          "equipo2": "2do D",
+          "fecha": "Sabado 20:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"6-3, 2-6, 6-7"
+      }
+    ],
+    "cuartos": [
+      {
+         "equipo1": "1ro A",
+          "equipo2": "Ganador P1",
+          "fecha": "Domingo 08:00 hs Cancha 1",
+          "resultado": "2-1",
+          "games":"7-5, 4-6, 7-6"
+      },
+      {
+         "equipo1": "1ro E",
+          "equipo2": "1ro D",
+          "fecha": "Domingo 08:00 hs Cancha 2",
+          "resultado": "0-2",
+          "games":"4-6, 4-6"
+      },
+      {
+         "equipo1": "1ro C",
+          "equipo2": "2do E",
+          "fecha": "Domingo 09:00 hs Cancha 1",
+          "resultado": "2-0",
+          "games":"6-4, 6-3"
+      },
+      {
+         "equipo1": "Ganador P2",
+          "equipo2": "1ro B",
+          "fecha": "Domingo 09:00 hs Cancha 2",
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
+      }
+    ],
+    "semis": [
+      {
+         "equipo1": "Ganador P1",
+          "equipo2": "Ganador P2",
+          "fecha": "Domingo 16:00 hs Cancha 1",
+          "resultado": "0-2",
+          "games":"4-6, 2-6"
+      },
+      {
+         "equipo1": "Ganador P3",
+          "equipo2": "Ganador P4",
+          "fecha": "Domingo 16:00 hs Cancha 2",
+          "resultado": "1-2",
+          "games":"5-7, 6-4, 6-7"
+      }
+    ],
+    "final": {
+        "equipo1": "Ganador P5",
+          "equipo2": "Ganador P6",
+          "fecha": "Domingo 21:00 hs",
+          "resultado": "2-0",
+          "games":"6-1, 6-2"
+    }
+  }
+}
+
+
