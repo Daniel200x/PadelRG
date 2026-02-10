@@ -1,0 +1,2476 @@
+{
+  "jugadores": [
+    {
+      "id": 1,
+      "name": "Ivan Gallardo",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 175}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "4to Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 400}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 200}
+        ]
+      }
+     
+    }
+,
+   
+    {
+      "id": 2,
+      "name": "Joaquin Servian",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 200}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 30},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150}
+        ]
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "Yannick Sanchez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 150},
+          
+          {"edicion": "3er Torneo", "puntos": 200}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "Jose Villarreal",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 175},
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 125}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150}
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Lucas Ojeda",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 175},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 475}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Claudio Escobar",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Jorge Rivero",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Julio Andrade",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 175}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "4to Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 200}
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Tiago Andrade",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 75}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Tomas Echeverria",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 75}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Diego Cardoso",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Nicolas Escufachi",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 150}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Gabriel Muller",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 150}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": "Cesar Andrade",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Adrian Santi",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 30},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "Roy Avanzatti",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Diego Caballero",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Julio Gutierrez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Esteban Kovacic",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Julian Morales",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+{
+      "id": 21,
+      "name": "Emmanuel Bravo",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Bruno Sirgo",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Agustin Floriani",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 200}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 200}
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Franco Moreno",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Franco Gallardo",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 75}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75}
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Jeremias Maestro",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Juan Benitez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Juan Barria",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Nicolas Altamiranda",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Andres Agnes",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Oscar Navarrete",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Diego Mancini",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Guillermo Salgues",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Sebastian Villarroel",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Braian Lizarraga",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 50},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "Matias Bleuer",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 30},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "Alejandro Mancini",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "name": "Cristian Almaraz",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "name": "Pedro Andrade",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 25}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "name": "Daniel Urquiza",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 25}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "name": "Agustin Fulco",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "name": "Nicolas Gonzalez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "name": "Ciro Andrade",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "name": "Lucio Lapadula",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    
+    {
+      "id": 46,
+      "name": "Martin Ormaza",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 30},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    },
+   {
+      "id": 47,
+      "name": "Fabian Suarez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+   {
+      "id": 48,
+      "name": "Andres Chalier",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Pablo Lara",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 300}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 100}
+        ]
+      }
+    }
+    ,
+    {
+      
+      "id": 50,
+      "name": "Pablo Dure",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 51,
+      "name": "Angel Candia",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 52,
+      "name": "Valentin Lemus",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 53,
+      "name": "Franco Gonzalez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 54,
+      "name": "Gustavo Escudero",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 55,
+      "name": "Cristian Perez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 56,
+      "name": "Martin Pacheco",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "name": "Agustin Guerra",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 100},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    {
+      "id": 58,
+      "name": "Sergio Ruiz",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "name": "Alejandro Borquez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 0}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "name": "Pedro Martinez",
+      "gender": "masculino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 0},         
+          {"edicion": "First Class", "puntos": 100}
+           
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+        ]
+      }
+    }
+
+    ,
+
+    {
+      "id": 76,
+      "name": "Mariana Medina",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 200}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "4to Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    
+    {
+      "id": 77,
+      "name": "Lucrecia Fruncieri",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "4to Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 200}
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "name": "Perla Acevedo",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 150},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "name": "Claudia Andrade",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "name": "Noelia Velasquez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "name": "Karina Chicaguala",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 175},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150},
+          {"edicion": "4to Torneo", "puntos": 150},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 200},
+          {"edicion": "2do Torneo", "puntos": 200}
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "name": "Romina Torres",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 200}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 200},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "name": "Marcia Figueroa",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "name": "Tatiana Mainero",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "name": "Victoria Fernandez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "name": "Ana Laura Velazquez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "name": "Alejandra Romero",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "name": "Daniela Martinez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 75},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "name": "Alejandra Soto",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "name": "Cecilia Maestro",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 175}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "name": "Antonella Zampini",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 75},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "name": "Paula Miranda",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "name": "Yesica Vargas",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "name": "Maylen Alvarez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 30},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+   {
+      "id": 95,
+      "name": "Adelaida Vidart",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 75},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "name": "Sabrina Morales",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "name": "Mariana Pratto",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "name": "Luciana Rodriguez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "name": "Fernanda Treppo",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 25},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "name": "Marina Salinas",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    },
+    {
+      "id": 101,
+      "name": "Fernanda Martinez",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    
+    {
+      "id": 102,
+      "name": "Paola Villarreal",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 200},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    
+    {
+      "id": 103,
+      "name": "Sandra Vera",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 100}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 104,
+      "name": "Florencia Cutri",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 100},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 105,
+      "name": "Luciana Romano",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 100},
+          {"edicion": "2do Torneo", "puntos": 150}
+        ]
+      }
+    }
+     ,
+    
+    {
+      "id": 106,
+      "name": "Rosalia Cruz",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 107,
+      "name": "Emilia Peix",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 25}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 108,
+      "name": "Cecilia Gersicich",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 100},
+          {"edicion": "3er Torneo", "puntos": 100}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "4to Torneo", "puntos": 25},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 109,
+      "name": "Valeria Acosta",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 110,
+      "name": "Belen Villalba",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 150}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 111,
+      "name": "Carolina Martini",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 175}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+    ,
+    
+    {
+      "id": 111,
+      "name": "Rocio Terrado",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    },
+    
+    {
+      "id": 111,
+      "name": "Yasna Murga",
+      "gender": "femenino",
+      "category": "4ta",
+       "torneos": {
+        "puntoDeOro": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 25},
+          {"edicion": "3er Torneo", "puntos": 0}
+          
+        ],
+        "arenas": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0},
+          {"edicion": "3er Torneo", "puntos": 0},
+          {"edicion": "First Class", "puntos": 0}
+          
+        ],
+        "segundoSet": [
+          {"edicion": "1er Torneo", "puntos": 0},
+          {"edicion": "2do Torneo", "puntos": 0}
+        ]
+      }
+    }
+]
+}

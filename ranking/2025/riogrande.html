@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ranking de Pádel</title>
+
+
+
+    <!-- Favicon básico (formato ICO) -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Para dispositivos Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+<!-- Para Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png">
+
+<!-- Para大多数 navegadores modernos -->
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+
+<!-- Manifest para PWA (opcional) -->
+<link rel="manifest" href="../site.webmanifest">
+
+<!-- Color del tema (opcional) -->
+<meta name="theme-color" content="#3498db">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/galeria/css/galeria.css">
+    <link rel="stylesheet" href="/ranking/css/ranking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81C2M2PPXT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81C2M2PPXT');
+</script>
+</head>
+<body>
+       <!-- Contenedor para el menú -->
+<div id="menu-container"></div>
+<script src="/js/menu-loader.js"></script>
+<script src="/js/script1.js"></script>
+
+<!-- Espacio de publicidad -->
+<div id="publicidad-container"></div>
+
+
+
+
+
+    <div class="container ranking-container">
+        <div class="header-torneo">
+            <h1>RANKING DE PÁDEL</h1>
+            <div class="ranking-selector">
+                <button class="ranking-tab active" data-category="general">General</button>
+                <button class="ranking-tab" data-category="masculino">Masculino</button>
+                <button class="ranking-tab" data-category="femenino">Femenino</button>
+            </div>
+        </div>
+<a href='https://cafecito.app/padelrg' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Invitame un café en cafecito.app' /></a>        <div class="ranking-content">
+            <div class="ranking-filters">
+                <div class="filter-group">
+                    <label for="search-player">Buscar jugador:</label>
+                    <input type="text" id="search-player" placeholder="Nombre del jugador">
+                </div>
+                
+                
+                
+                <div class="filter-group">
+                    <label for="filter-category">Categoría:</label>
+                    <select id="filter-category">
+                        <option value="all">Todas las categorías</option>
+                        <option value="4ta">4ta</option>
+                        <option value="5ta">5ta</option>
+                        <option value="6ta">6ta</option>
+                        <option value="7ma">7ma</option>
+                        <option value="8va">8va</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Filtrar por torneo:</label>
+                    <div class="tournament-filters">
+                        <button class="tournament-filter active" data-tournament="all">Todos</button>
+                        <button class="tournament-filter" data-tournament="puntoDeOro">Punto de Oro</button>
+                        <button class="tournament-filter" data-tournament="arenas">Arenas</button>
+                        <button class="tournament-filter" data-tournament="segundoSet">2do Set</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Botón de compartir simple -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.padelrg.com.ar/ranking/ranking.html" 
+   target="_blank" 
+   class="facebook-share-button">
+   <i class="fab fa-facebook"></i> Compartir
+</a>
+
+<!-- Botón para compartir en WhatsApp -->
+<a href="https://api.whatsapp.com/send?text=Mira el ranking de pádel: https://www.padelrg.com.ar/ranking/ranking.html" 
+   target="_blank" 
+   class="whatsapp-share-button">
+   <i class="fab fa-whatsapp"></i> Compartir
+</a>
+
+            <div class="ranking-table-container">
+                <div id="loading-indicator" class="loader">Cargando datos del ranking...</div>
+                <table class="ranking-table" id="ranking-table">
+                    <tbody id="ranking-data">
+                        <!-- Los datos se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="ranking-pagination">
+                <button class="pagination-btn" id="prev-page">Anterior</button>
+                <span id="page-info">Página 1 de 1</span>
+                <button class="pagination-btn" id="next-page">Siguiente</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+  <!-- Footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../index.html">Inicio</a>
+          <a href="#">Torneos</a>
+          <a href="../acerca/acerca.html">Acerca de</a>
+          <a href="../contacto/contacto.html">Contacto</a>
+          <a href="../privacidad/privacidad.html">Política de Privacidad</a>
+        </div>
+        <div class="copyright">
+          &copy; <span id="current-year">2025</span> Pádel RG. Todos los
+          derechos reservados.
+        </div>
+      </div>
+
+      
+    </div>
+
+   <script src="/ranking/js/ranking.js"></script>
+   
+          <script>
+  // Cargar publicidad
+  fetch('/publicidad/publicidad.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('publicidad-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error cargando publicidad:', error));
+</script>
+</body>
+</html>

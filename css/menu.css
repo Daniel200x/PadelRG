@@ -244,3 +244,53 @@
     }
 }
 
+/* Agregar estos estilos a tu archivo CSS */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu-items {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-items {
+  display: block;
+}
+
+.dropdown-submenu > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-submenu-items li {
+  padding: 0;
+}
+
+.dropdown-submenu-items a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-submenu-items a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .dropdown-submenu-items {
+    position: static;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+}

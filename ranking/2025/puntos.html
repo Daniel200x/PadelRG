@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Puntos - Torneo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+        
+        .file-input {
+            margin: 15px 0;
+            padding: 10px;
+            border: 2px dashed #007bff;
+            border-radius: 5px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        
+        .resultados {
+            margin-top: 20px;
+        }
+        
+        .tabla-puntos {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .tabla-puntos th, .tabla-puntos td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .tabla-puntos th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        
+        .tabla-puntos tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .tabla-puntos tr:hover {
+            background-color: #e9ecef;
+        }
+        
+        .posicion {
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+        }
+        
+        .puntos {
+            font-weight: bold;
+            text-align: center;
+            width: 80px;
+        }
+        
+        .grupo {
+            background: #e7f3ff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.info {
+            background: #cce7ff;
+            color: #004085;
+            border: 1px solid #b3d7ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Calculadora de Puntos - Torneo</h1>
+        
+        <div class="file-input">
+            <p><strong>Selecciona el archivo JSON del torneo:</strong></p>
+            <input type="file" id="jsonFile" accept=".json" style="margin: 10px 0;">
+            <div id="fileStatus" class="status info">
+                Esperando archivo JSON...
+            </div>
+        </div>
+        
+        <div>
+            <button class="btn" id="btnCalcular" onclick="calcularYMostrarPuntos()" disabled>
+                Calcular Puntuación Completa
+            </button>
+            
+            <button class="btn btn-secondary" id="btnGrupos" onclick="mostrarTablasGrupos()" disabled>
+                Ver Tablas de Grupos
+            </button>
+        </div>
+        
+        <div id="resultados" class="resultados"></div>
+    </div>
+
+    <script>
+        let torneoData = null;
+
+        // Función para cargar el archivo JSON
+        document.getElementById('jsonFile').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const statusDiv = document.getElementById('fileStatus');
+            const btnCalcular = document.getElementById('btnCalcular');
+            const btnGrupos = document.getElementById('btnGrupos');
+            
+            if (!file) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = 'No se seleccionó ningún archivo';
+                btnCalcular.disabled = true;
+                btnGrupos.disabled = true;
+                return;
+            }
+            
+            if (file.type !== 'application/json' && !file.name.endsWith('.json')) {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = 'Error: El archivo debe ser JSON (.json)';
+                btnCalcular.disabled = true;
+                btnGrupos.disabled = true;
+                return;
+            }
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                try {
+                    torneoData = JSON.parse(e.target.result);
+                    statusDiv.className = 'status success';
+                    statusDiv.innerHTML = `✅ Archivo cargado correctamente: <strong>${torneoData.nombre || 'Torneo'}</strong>`;
+                    btnCalcular.disabled = false;
+                    btnGrupos.disabled = false;
+                    
+                    // Mostrar información básica
+                    mostrarInfoTorneo();
+                    
+                } catch (error) {
+                    statusDiv.className = 'status error';
+                    statusDiv.innerHTML = `Error al leer el JSON: ${error.message}`;
+                    btnCalcular.disabled = true;
+                    btnGrupos.disabled = true;
+                    console.error('Error parsing JSON:', error);
+                }
+            };
+            
+            reader.onerror = function() {
+                statusDiv.className = 'status error';
+                statusDiv.innerHTML = 'Error al leer el archivo';
+                btnCalcular.disabled = true;
+                btnGrupos.disabled = true;
+            };
+            
+            reader.readAsText(file);
+        });
+
+        // Función para mostrar información básica del torneo
+        function mostrarInfoTorneo() {
+            const resultadosDiv = document.getElementById('resultados');
+            if (!torneoData) return;
+            
+            let html = `<div class="status info">`;
+            html += `<h3>📋 Información del Torneo</h3>`;
+            html += `<p><strong>Nombre:</strong> ${torneoData.nombre}</p>`;
+            html += `<p><strong>Grupos:</strong> ${torneoData.grupos.length}</p>`;
+            html += `<p><strong>Total equipos:</strong> ${torneoData.grupos.reduce((total, grupo) => total + grupo.equipos.length, 0)}</p>`;
+            html += `</div>`;
+            
+            resultadosDiv.innerHTML = html;
+        }
+
+function calcularPuntosCompleto(data) {
+  // Inicializar puntos para todos los equipos
+  const puntos = {};
+  const equiposQuePasaronGrupos = new Set();
+  
+  data.grupos.forEach(grupo => {
+    grupo.equipos.forEach(equipo => {
+      puntos[equipo.nombre] = 0;
+      // Reiniciar estadísticas
+      equipo.PJ = 0;
+      equipo.PG = 0;
+      equipo.SG = 0;
+      equipo.SP = 0;
+      equipo.GF = 0;
+      equipo.GC = 0;
+      equipo.difSets = 0;
+      equipo.difGames = 0;
+    });
+  });
+
+  // 1. Procesar TODOS los partidos de grupos
+  const resultadosPartidos = {};
+  
+  function resolverPartidosGrupos() {
+    let cambios = true;
+    let iteraciones = 0;
+    
+    while (cambios && iteraciones < 10) {
+      cambios = false;
+      iteraciones++;
+      
+      data.grupos.forEach(grupo => {
+        grupo.partidos.forEach((partido, partidoIndex) => {
+          if (!partido.resultado || partido.resultado === "A definir") return;
+          
+          const clavePartido = `${grupo.nombre}_Partido${partidoIndex + 1}`;
+          if (resultadosPartidos[clavePartido]) return;
+          
+          let equipo1Nombre = partido.equipo1;
+          let equipo2Nombre = partido.equipo2;
+          
+          // Resolver referencias
+          if (partido.equipo1.includes("Ganador Partido") || partido.equipo1.includes("Perdedor Partido")) {
+            const numPartido = partido.equipo1.match(/\d+/)?.[0];
+            if (numPartido) {
+              const claveRef = `${grupo.nombre}_Partido${numPartido}`;
+              if (resultadosPartidos[claveRef]) {
+                equipo1Nombre = partido.equipo1.includes("Ganador") ? 
+                  resultadosPartidos[claveRef].ganador : resultadosPartidos[claveRef].perdedor;
+              } else {
+                return;
+              }
+            }
+          }
+          
+          if (partido.equipo2.includes("Ganador Partido") || partido.equipo2.includes("Perdedor Partido")) {
+            const numPartido = partido.equipo2.match(/\d+/)?.[0];
+            if (numPartido) {
+              const claveRef = `${grupo.nombre}_Partido${numPartido}`;
+              if (resultadosPartidos[claveRef]) {
+                equipo2Nombre = partido.equipo2.includes("Ganador") ? 
+                  resultadosPartidos[claveRef].ganador : resultadosPartidos[claveRef].perdedor;
+              } else {
+                return;
+              }
+            }
+          }
+          
+          const equipo1 = grupo.equipos.find(e => e.nombre === equipo1Nombre);
+          const equipo2 = grupo.equipos.find(e => e.nombre === equipo2Nombre);
+          
+          if (!equipo1 || !equipo2) return;
+
+          const [sets1, sets2] = partido.resultado.split('-').map(Number);
+          const games = partido.games.split(', ').map(set => {
+            const [g1, g2] = set.split('-').map(Number);
+            return { g1, g2 };
+          });
+
+          // Actualizar estadísticas
+          equipo1.PJ++; equipo2.PJ++;
+          equipo1.SG += sets1; equipo1.SP += sets2;
+          equipo2.SG += sets2; equipo2.SP += sets1;
+          equipo1.difSets = equipo1.SG - equipo1.SP;
+          equipo2.difSets = equipo2.SG - equipo2.SP;
+          
+          const totalGames1 = games.reduce((sum, g) => sum + g.g1, 0);
+          const totalGames2 = games.reduce((sum, g) => sum + g.g2, 0);
+          equipo1.GF += totalGames1; equipo1.GC += totalGames2;
+          equipo2.GF += totalGames2; equipo2.GC += totalGames1;
+          equipo1.difGames = equipo1.GF - equipo1.GC;
+          equipo2.difGames = equipo2.GF - equipo2.GC;
+
+          if (sets1 > sets2) {
+            equipo1.PG++;
+          } else {
+            equipo2.PG++;
+          }
+          
+          resultadosPartidos[clavePartido] = {
+            ganador: sets1 > sets2 ? equipo1Nombre : equipo2Nombre,
+            perdedor: sets1 > sets2 ? equipo2Nombre : equipo1Nombre
+          };
+          
+          cambios = true;
+        });
+      });
+    }
+  }
+
+  resolverPartidosGrupos();
+
+  // 2. Calcular clasificación de grupos CON CRITERIOS CORRECTOS
+  const clasificacionGrupos = {};
+  const equiposPorPosicion = {};
+  
+  data.grupos.forEach(grupo => {
+    // ORDENAMIENTO CORREGIDO según criterios de tenis
+    const clasificado = [...grupo.equipos].sort((a, b) => {
+      // 1. Más partidos ganados
+      if (a.PG !== b.PG) return b.PG - a.PG;
+      
+      // 2. Más sets ganados (diferencia de sets)
+      if (a.difSets !== b.difSets) return b.difSets - a.difSets;
+      
+      // 3. Más games ganados (diferencia de games)
+      if (a.difGames !== b.difGames) return b.difGames - a.difGames;
+      
+      // 4. Enfrentamiento directo (si aplica)
+      // Buscar resultado del partido entre estos dos equipos
+      const partidoDirecto = grupo.partidos.find(p => {
+        const eq1 = p.equipo1 === a.nombre || p.equipo1 === b.nombre;
+        const eq2 = p.equipo2 === a.nombre || p.equipo2 === b.nombre;
+        return eq1 && eq2 && p.resultado && p.resultado !== "A definir";
+      });
+      
+      if (partidoDirecto) {
+        const [sets1, sets2] = partidoDirecto.resultado.split('-').map(Number);
+        if (partidoDirecto.equipo1 === a.nombre) {
+          return sets1 > sets2 ? -1 : 1;
+        } else {
+          return sets2 > sets1 ? -1 : 1;
+        }
+      }
+      
+      return 0;
+    });
+
+    clasificacionGrupos[grupo.nombre] = clasificado.map(e => e.nombre);
+    
+    console.log(`\n=== ${grupo.nombre} - TABLA FINAL ===`);
+    clasificado.forEach((equipo, index) => {
+      console.log(`${index + 1}. ${equipo.nombre} | PG:${equipo.PG} | Sets:${equipo.SG}-${equipo.SP} (${equipo.difSets}) | Games:${equipo.GF}-${equipo.GC} (${equipo.difGames})`);
+    });
+    
+    // Marcar los 2 primeros como que pasaron a octavos
+    for (let i = 0; i < 2; i++) {
+      equiposQuePasaronGrupos.add(clasificado[i].nombre);
+    }
+    
+    // Asignar puntos base por grupos (SOLO para equipos que NO pasaron)
+    clasificado.forEach((equipo, index) => {
+      const nombreEquipo = equipo.nombre;
+      if (index >= 2) {
+        puntos[nombreEquipo] = equipo.PG > 0 ? 30 : 25;
+      }
+    });
+    
+    // Guardar equipos por posición
+    const letraGrupo = grupo.nombre.split(' ')[1];
+    clasificado.forEach((equipo, index) => {
+      if (index < 2) {
+        const posicion = index === 0 ? '1ro' : '2do';
+        equiposPorPosicion[`${posicion} ${letraGrupo}`] = equipo.nombre;
+      }
+    });
+  });
+
+  console.log('\n=== EQUIPOS QUE PASARON A OCTAVOS ===');
+  console.log(Array.from(equiposQuePasaronGrupos));
+
+  // 3. Procesar eliminatorias
+  const ganadores = {};
+  const equiposQueJugaronEliminatorias = new Set();
+
+  function resolverEquipoEliminatoria(equipoStr) {
+    if (equiposPorPosicion[equipoStr]) {
+      const equipo = equiposPorPosicion[equipoStr];
+      if (equiposQuePasaronGrupos.has(equipo)) {
+        return equipo;
+      }
+      return null;
+    }
+    
+    if (ganadores[equipoStr]) {
+      return ganadores[equipoStr];
+    }
+    
+    return null;
+  }
+
+  function procesarRondaEliminatoria(partidos, nombreRonda, puntosPerdedor, prefijoGanador = 'P') {
+    console.log(`\n=== PROCESANDO ${nombreRonda} ===`);
+    
+    const ganadoresRonda = [];
+
+    partidos.forEach((partido, index) => {
+      if (!partido.resultado || partido.resultado === "A definir") {
+        return;
+      }
+
+      const equipo1Resuelto = resolverEquipoEliminatoria(partido.equipo1);
+      const equipo2Resuelto = resolverEquipoEliminatoria(partido.equipo2);
+      
+      if (!equipo1Resuelto || !equipo2Resuelto) {
+        console.log(`Partido ${index + 1} ignorado: ${partido.equipo1} vs ${partido.equipo2}`);
+        return;
+      }
+      
+      console.log(`Partido ${index + 1}: ${equipo1Resuelto} vs ${equipo2Resuelto}`);
+
+      const [sets1, sets2] = partido.resultado.split('-').map(Number);
+      const ganador = sets1 > sets2 ? equipo1Resuelto : equipo2Resuelto;
+      const perdedor = sets1 > sets2 ? equipo2Resuelto : equipo1Resuelto;
+
+      console.log(`Resultado: ${sets1}-${sets2}, Ganador: ${ganador}, Perdedor: ${perdedor}`);
+
+      equiposQueJugaronEliminatorias.add(equipo1Resuelto);
+      equiposQueJugaronEliminatorias.add(equipo2Resuelto);
+
+      if (equiposQuePasaronGrupos.has(perdedor)) {
+        puntos[perdedor] = Math.max(puntos[perdedor], puntosPerdedor);
+      }
+
+      const claveGanador = `Ganador ${prefijoGanador}${index + 1}`;
+      ganadores[claveGanador] = ganador;
+      ganadoresRonda.push(ganador);
+    });
+
+    return ganadoresRonda;
+  }
+
+  // Procesar eliminatorias
+  console.log('\n=== INICIANDO ELIMINATORIAS ===');
+  
+  const ganadoresOctavos = procesarRondaEliminatoria(data.eliminatorias.octavos, 'OCTAVOS', 50, 'P');
+  const ganadoresCuartos = procesarRondaEliminatoria(data.eliminatorias.cuartos, 'CUARTOS', 75, 'P');
+  const ganadoresSemis = procesarRondaEliminatoria(data.eliminatorias.semis, 'SEMIFINALES', 100, 'S');
+
+  // FINAL
+  const final = data.eliminatorias.final;
+  if (final.resultado && final.resultado !== "A definir") {
+    console.log('\n=== PROCESANDO FINAL ===');
+    
+    let equipo1Resuelto, equipo2Resuelto;
+    
+    if (ganadoresSemis.length >= 2) {
+      equipo1Resuelto = ganadoresSemis[0];
+      equipo2Resuelto = ganadoresSemis[1];
+    } else {
+      equipo1Resuelto = resolverEquipoEliminatoria(final.equipo1);
+      equipo2Resuelto = resolverEquipoEliminatoria(final.equipo2);
+    }
+    
+    if (equipo1Resuelto && equipo2Resuelto) {
+      console.log(`Final: ${equipo1Resuelto} vs ${equipo2Resuelto}`);
+      
+      const [sets1, sets2] = final.resultado.split('-').map(Number);
+      const campeon = sets1 > sets2 ? equipo1Resuelto : equipo2Resuelto;
+      const subcampeon = sets1 > sets2 ? equipo2Resuelto : equipo1Resuelto;
+
+      console.log(`Resultado: ${sets1}-${sets2}, Campeón: ${campeon}, Subcampeón: ${subcampeon}`);
+
+      if (equiposQueJugaronEliminatorias.has(campeon)) {
+        puntos[campeon] = 200;
+      }
+      if (equiposQueJugaronEliminatorias.has(subcampeon)) {
+        puntos[subcampeon] = 150;
+      }
+    }
+  }
+
+  // Asegurar puntos mínimos
+  equiposQuePasaronGrupos.forEach(equipo => {
+    if (equiposQueJugaronEliminatorias.has(equipo)) {
+      puntos[equipo] = Math.max(puntos[equipo] || 0, 50);
+    } else {
+      puntos[equipo] = Math.max(puntos[equipo] || 0, 30);
+    }
+  });
+
+  // Resultado final
+  const resultado = Object.entries(puntos)
+    .map(([equipo, pts]) => ({ equipo, puntos: pts }))
+    .sort((a, b) => b.puntos - a.puntos);
+
+  console.log('\n=== RESULTADO FINAL DE PUNTOS ===');
+  resultado.forEach((item, index) => {
+    console.log(`${index + 1}. ${item.equipo} - ${item.puntos} puntos`);
+  });
+  
+  return resultado;
+}
+
+
+
+// Uso:
+// const puntuacionFinal = calcularPuntosCompleto(torneoData);
+// console.log(puntuacionFinal);
+
+        // Función para calcular y mostrar puntos
+        function calcularYMostrarPuntos() {
+            const resultadosDiv = document.getElementById('resultados');
+            
+            if (!torneoData) {
+                resultadosDiv.innerHTML = '<div class="status error">Error: No hay datos del torneo cargados</div>';
+                return;
+            }
+            
+            try {
+                resultadosDiv.innerHTML = '<div class="status info">Calculando puntos...</div>';
+                
+                // Pequeño delay para que se vea el mensaje de loading
+                setTimeout(() => {
+                    const puntuaciones = calcularPuntosCompleto(torneoData);
+                    
+                    // Generar HTML de resultados
+                    let html = '<h2>📊 Ranking Final de Puntos</h2>';
+                    
+                    html += '<table class="tabla-puntos">';
+                    html += '<tr><th>Pos</th><th>Equipo</th><th>Puntos</th></tr>';
+                    
+                    puntuaciones.forEach((item, index) => {
+                        let estiloFila = '';
+                        if (index === 0) {
+                            estiloFila = 'style="background-color: #fff3cd;"'; // Campeón
+                        } else if (index === 1) {
+                            estiloFila = 'style="background-color: #e7f3ff;"'; // Subcampeón
+                        } else if (item.puntos >= 100) {
+                            estiloFila = 'style="background-color: #d4edda;"'; // Semifinalistas
+                        } else if (item.puntos >= 75) {
+                            estiloFila = 'style="background-color: #d1ecf1;"'; // Cuartos
+                        }
+                        
+                        html += `<tr ${estiloFila}>`;
+                        html += `<td class="posicion">${index + 1}°</td>`;
+                        html += `<td>${item.equipo}</td>`;
+                        html += `<td class="puntos">${item.puntos}</td>`;
+                        html += '</tr>';
+                    });
+                    
+                    html += '</table>';
+                    
+                    // Agregar leyenda
+                    html += `
+                        <div style="margin-top: 20px; font-size: 14px; color: #666;">
+                            <strong>Leyenda:</strong><br>
+                            🥇 Campeón (200 pts) | 🥈 Subcampeón (150 pts) | 🥉 Semifinalistas (100 pts) | 
+                            Cuartos (75 pts) | Octavos (50 pts) | Grupos con victoria (30 pts) | Grupos sin victoria (25 pts)
+                        </div>
+                    `;
+                    
+                    resultadosDiv.innerHTML = html;
+                }, 100);
+                
+            } catch (error) {
+                resultadosDiv.innerHTML = `
+                    <div class="status error">
+                        <strong>Error en el cálculo:</strong> ${error.message}
+                    </div>
+                `;
+                console.error('Error:', error);
+            }
+        }
+
+        // Función para mostrar tablas de grupos
+        function mostrarTablasGrupos() {
+            const resultadosDiv = document.getElementById('resultados');
+            
+            if (!torneoData) {
+                resultadosDiv.innerHTML = '<div class="status error">Error: No hay datos del torneo cargados</div>';
+                return;
+            }
+            
+            let html = '<h2>📋 Tablas de Grupos</h2>';
+            
+            torneoData.grupos.forEach(grupo => {
+                html += `<div class="grupo">`;
+                html += `<h3>${grupo.nombre}</h3>`;
+                html += `<table class="tabla-puntos">`;
+                html += '<tr><th>Pos</th><th>Equipo</th><th>PJ</th><th>PG</th><th>SG</th><th>SP</th><th>GF</th><th>GC</th><th>Dif</th></tr>';
+                
+                // Ordenar equipos del grupo
+                const tabla = [...grupo.equipos].sort((a, b) => {
+                    if (a.PG !== b.PG) return b.PG - a.PG;
+                    if (a.SG !== b.SG) return (b.SG - b.SP) - (a.SG - a.SP);
+                    return (b.GF - b.GC) - (a.GF - a.GC);
+                });
+                
+                tabla.forEach((equipo, index) => {
+                    const diferenciaGames = (equipo.GF || 0) - (equipo.GC || 0);
+                    html += `<tr>`;
+                    html += `<td class="posicion">${index + 1}°</td>`;
+                    html += `<td>${equipo.nombre}</td>`;
+                    html += `<td>${equipo.PJ || 0}</td>`;
+                    html += `<td>${equipo.PG || 0}</td>`;
+                    html += `<td>${equipo.SG || 0}</td>`;
+                    html += `<td>${equipo.SP || 0}</td>`;
+                    html += `<td>${equipo.GF || 0}</td>`;
+                    html += `<td>${equipo.GC || 0}</td>`;
+                    html += `<td>${diferenciaGames > 0 ? '+' : ''}${diferenciaGames}</td>`;
+                    html += `</tr>`;
+                });
+                
+                html += `</table></div>`;
+            });
+            
+            resultadosDiv.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
