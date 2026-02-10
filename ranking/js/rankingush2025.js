@@ -73,7 +73,7 @@ async function loadCategoryData(category) {
     }
     
     try {
-        const response = await fetch(`/ranking/data26/categoria_${category}.json`);
+        const response = await fetch(`/ranking/dataush/categoria_${category}.json`);
         if (!response.ok) throw new Error('Error cargando datos');
         
         const data = await response.json();
@@ -213,7 +213,7 @@ function renderRankingTable() {
     const tbody = document.createElement('tbody');
     tbody.id = 'ranking-data';
     
-    const tournamentKeys = ['puntoDeOro', 'arenas', 'segundoSet'];
+    const tournamentKeys = ['ushuaiaPadel', 'firstClass'];
     
     const headerRow = document.createElement('tr');
     headerRow.innerHTML = `
@@ -302,9 +302,8 @@ function getAllEditionsForTournament(tournamentKey) {
 // Formatear nombres de torneos
 function formatTournamentName(key) {
     const names = {
-        'puntoDeOro': 'Punto de Oro',
-        'arenas': 'Arenas',
-        'segundoSet': '2do Set'
+        'ushuaiaPadel': 'Ushuaia Padel Center',
+        'firstClass': 'First Class'
     };
     return names[key] || key;
 }

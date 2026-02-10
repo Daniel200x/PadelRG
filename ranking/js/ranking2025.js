@@ -73,7 +73,7 @@ async function loadCategoryData(category) {
     }
     
     try {
-        const response = await fetch(`/ranking/data26/categoria_${category}.json`);
+        const response = await fetch(`/ranking/data/categoria_${category}.json`);
         if (!response.ok) throw new Error('Error cargando datos');
         
         const data = await response.json();
