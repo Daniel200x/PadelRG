@@ -5,15 +5,15 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "M. Medina/R. Torres",
+          "nombre": "Karina Chicaguala/Lucrecia Fruncieri",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "A. Vidart/R. Cruz",
+          "nombre": "Sara Cortez/Giuliana Gimenez",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "C. Andrade/E. Peix",
+          "nombre": "Sandra Vera/Rosalia Cruz",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -21,10 +21,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "M. Medina/R. Torres",
-          "equipo2": "A. Vidart/R. Cruz",
-          "resultado": "2-0",
-          "games":"2-0"
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "fecha": ":00 hs",
@@ -47,15 +47,15 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "K. Chicaguala/L. Fruncieri",
+          "nombre": "Perla Acevedo/Noelia Velasquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "R. Terrado/L. Romano",
+          "nombre": "Paola Villarreal/Carolina Martini",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "C. Gersicich/A. Romero",
+          "nombre": "Luciana Romano/Alejandra Romero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -63,10 +63,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "K. Chicaguala/L. Fruncieri",
-          "equipo2": "R. Terrado/L. Romano",
-          "resultado": "2-0",
-          "games":"2-0"
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "fecha": ":00 hs",
@@ -90,15 +90,15 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "N. Velazquez/F. Cutri",
+          "nombre": "Claudia Andrade/Alejandra Soto",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Y. Murga/M. Salinas",
+          "nombre": "Cecilia Gersicich",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "M. Pratto/M. Figueroa",
+          "nombre": "Daniela Martinez/Antonella Zampini",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -106,10 +106,10 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "M. Pratto/M. Figueroa",
-          "equipo2": "Y. Murga/M. Salinas",
-          "resultado": "2-0",
-          "games":"2-0"
+          "equipo1": "/",
+          "equipo2": "/",
+          "resultado": "",
+          "games":"A definir"
         },
         {
           "fecha": ":00 hs",
@@ -135,15 +135,15 @@
          "equipo1": "2do B",
           "equipo2": "2do C",
           "fecha": "Domingo",
-          "resultado": "0-1",
-          "games":"0-1"
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "1ro C",
           "equipo2": "2do A",
           "fecha": "Domingo",
-          "resultado": "2-0",
-          "games":"2-0"
+          "resultado": "",
+          "games":""
       }
     ],
     "semis": [
@@ -151,23 +151,23 @@
          "equipo1": "1ro A",
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
-          "resultado": "2-0",
-          "games":"2-0"
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo",
-          "resultado": "0-2",
-          "games":"0-2"
+          "resultado": "",
+          "games":""
       }
     ],
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
-          "resultado": "2-0",
-          "games":"2-0"
+          "resultado": "",
+          "games":""
     }
   }
 }
