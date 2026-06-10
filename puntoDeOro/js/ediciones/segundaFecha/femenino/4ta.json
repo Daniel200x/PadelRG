@@ -20,23 +20,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:10 hs",
+          "equipo1": "Karina Chicaguala/Lucrecia Fruncieri",
+          "equipo2": "Sara Cortez/Giuliana Gimenez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 16:00 hs",
+          "equipo1": "Sara Cortez/Giuliana Gimenez",
+          "equipo2": "Sandra Vera/Rosalia Cruz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Sandra Vera/Rosalia Cruz",
+          "equipo2": "Karina Chicaguala/Lucrecia Fruncieri",
           "resultado": "",
           "games":"A definir"
         }
@@ -62,23 +62,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:10 hs",
+          "equipo1": "Perla Acevedo/Noelia Velasquez",
+          "equipo2": "Luciana Romano/Alejandra Romero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:10 hs",
+          "equipo1": "Perla Acevedo/Noelia Velasquez",
+          "equipo2": "Paola Villarreal/Carolina Martini",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 12:20 hs",
+          "equipo1": "Luciana Romano/Alejandra Romero",
+          "equipo2": "Paola Villarreal/Carolina Martini",
           "resultado": "",
           "games":"A definir"
         }
@@ -94,7 +94,7 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Cecilia Gersicich",
+          "nombre": "Cecilia Gersicich/M. Ines Sosa",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
@@ -105,23 +105,23 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:10 hs",
+          "equipo1": "Claudia Andrade/Alejandra Soto",
+          "equipo2": "Cecilia Gersicich/M. Ines Sosa",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 20:00 hs",
+          "equipo1": "Cecilia Gersicich/M. Ines Sosa",
+          "equipo2": "Daniela Martinez/Antonella Zampini",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:20 hs",
+          "equipo1": "Daniela Martinez/Antonella Zampini",
+          "equipo2": "Claudia Andrade/Alejandra Soto",
           "resultado": "",
           "games":"A definir"
         }
