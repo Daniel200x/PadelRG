@@ -39,16 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function cargarDatosExternos() {
         const archivosJSON = [
-            '../puntoDeOro/js/ediciones/master/femenino/4ta.json',
-            '../puntoDeOro/js/ediciones/master/femenino/5ta.json',
-            '../puntoDeOro/js/ediciones/master/femenino/6ta.json',
-            '../puntoDeOro/js/ediciones/master/femenino/7ma.json',
-            '../puntoDeOro/js/ediciones/master/femenino/8va.json',
-            '../puntoDeOro/js/ediciones/master/masculino/4ta.json',
-            '../puntoDeOro/js/ediciones/master/masculino/5ta.json',
-            '../puntoDeOro/js/ediciones/master/masculino/6ta.json',
-            '../puntoDeOro/js/ediciones/master/masculino/7ma.json',
-            '../puntoDeOro/js/ediciones/master/masculino/8va.json'
+            '../puntoDeOro/js/ediciones/segundaFecha/femenino/4ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/femenino/5ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/femenino/6ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/femenino/7ma.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/femenino/8va.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/masculino/4ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/masculino/5ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/masculino/6ta.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/masculino/7ma.json',
+            '../puntoDeOro/js/ediciones/segundaFecha/masculino/8va.json'
         ];
         
         const promesasCarga = archivosJSON.map(archivo => {

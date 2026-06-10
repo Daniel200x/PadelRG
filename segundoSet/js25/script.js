@@ -8,7 +8,7 @@ const edicionesInfo = {
         path: "js/ediciones/primerFecha"
     },
     "segundaFecha": {
-        nombre: "2da Fecha - Torneo Segundo Set 2025",
+        nombre: "2da Fecha - Torneo Segundo Set 2026",
         fecha: "15-30 Junio 2025",
         lugar: "Segundo Set",
         descripcion: "Segunda fecha 2025",

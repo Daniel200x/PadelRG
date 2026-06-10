@@ -5,7 +5,7 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "J. Servian/Y. Sanchez",
+          "nombre": "Lucas Ojeda/Ivan Gallardo",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "A. Santi/L. Lapadula",
+          "nombre": "Nicolas Gonzalez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -23,7 +23,7 @@
           "GC": 0
         },
         {
-          "nombre": "J. Villarreal/A. Floriani",
+          "nombre": "Tiago Andrade/Franco Moreno",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -35,25 +35,25 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "J. Villarreal/A. Floriani",
-          "equipo2": "J. Servian/Y. Sanchez",
-          "resultado": "1-0",
-          "games":"6-4"
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Lucas Ojeda/Ivan Gallardo",
+          "equipo2": "Nicolas Gonzalez",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "J. Villarreal/A. Floriani",
-          "equipo2": "A. Santi/L. Lapadula",
-          "resultado": "1-0",
-          "games":"6-4"
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Lucas Ojeda/Ivan Gallardo",
+          "equipo2": "Tiago Andrade/Franco Moreno",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "A. Santi/L. Lapadula",
-          "equipo2": "J. Servian/Y. Sanchez",
-          "resultado": "0-1",
-          "games":"4-6"
+          "fecha": "Sabado 14:40 hs",
+          "equipo1": "Tiago Andrade/Franco Moreno",
+          "equipo2": "Nicolas Gonzalez",
+          "resultado": "",
+          "games":""
         }
         
       ]
@@ -62,7 +62,7 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "J. Andrade/I. Gallardo",
+          "nombre": "Joaquin Servian/Yannick Sanchez",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -71,7 +71,7 @@
           "GC": 0
         },
         {
-          "nombre": "N. Escufachi/A. Agnes",
+          "nombre": "Mauro Pucheta/Emmanuel Barrios",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -80,7 +80,7 @@
           "GC": 0
         },
         {
-          "nombre": "L. Ojeda/F. Gallardo",
+          "nombre": "Julio Andrade/Cesar Andrade",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -92,25 +92,25 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "N. Escufachi/A. Agnes",
-          "equipo2": "L. Ojeda/F. Gallardo",
-          "resultado": "0-1",
-          "games":"4-6"
+          "fecha": "Jueves 22:10 hs",
+          "equipo1": "Mauro Pucheta/Emmanuel Barrios",
+          "equipo2": "Julio Andrade/Cesar Andrade",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "J. Andrade/I. Gallardo",
-          "equipo2": "L. Ojeda/F. Gallardo",
-          "resultado": "1-0",
-          "games":"6-4"
+          "fecha": "Sabado 13:30 hs",
+          "equipo1": "Joaquin Servian/Yannick Sanchez",
+          "equipo2": "Julio Andrade/Cesar Andrade",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "N. Escufachi/A. Agnes",
-          "equipo2": "J. Andrade/I. Gallardo",
-          "resultado": "0-1",
-          "games":"4-6"
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Joaquin Servian/Yannick Sanchez",
+          "equipo2": "Mauro Pucheta/Emmanuel Barrios",
+          "resultado": "",
+          "games":""
         }
         
       ]
@@ -120,7 +120,7 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "C. Escobar/J. Rivero",
+          "nombre": "Jose Villarreal/Martin Ormaza",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -129,7 +129,7 @@
           "GC": 0
         },
         {
-          "nombre": "N. Gonzalez/A. Fulco",
+          "nombre": "Diego Mancini/Raul Maldonado",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -138,7 +138,16 @@
           "GC": 0
         },
         {
-          "nombre": "T. Andrade/T. Echeverria",
+          "nombre": "Jorge Carbajal/Ignacio Carbajal",
+          "PJ": 0,
+          "PG": 0,
+          "SG": 0,
+          "SP": 0,
+          "GF": 0,
+          "GC": 0
+        },
+        {
+          "nombre": "Gabriel Muller/Claudio Escobar",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -150,25 +159,32 @@
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "C. Escobar/J. Rivero",
-          "equipo2": "N. Gonzalez/A. Fulco",
-          "resultado": "1-0",
-          "games":"6-4"
+          "fecha": "Viernes 19:50 hs",
+          "equipo1": "Jose Villarreal/Martin Ormaza",
+          "equipo2": "Diego Mancini/Raul Maldonado",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "N. Gonzalez/A. Fulco",
-          "equipo2": "T. Andrade/T. Echeverria",
+          "fecha": "Miercoles 19:50 hs",
+          "equipo1": "Jorge Carbajal/Ignacio Carbajal",
+          "equipo2": "Gabriel Muller/Claudio Escobar",
+          "resultado": "",
+          "games":""
+        },
+        {
+          "fecha": "Sabado :00 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "T. Andrade/T. Echeverria",
-          "equipo2": "C. Escobar/J. Rivero",
-          "resultado": "1-0",
-          "games":"6-4"
+          "fecha": "Sabado :00 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     }
@@ -181,14 +197,14 @@
           "equipo2": "2do C",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"1-0"
+          "games":""
       },
       {
           "equipo1": "1ro C",
           "equipo2": "2do A",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"0-1"
+          "games":""
       }
     ],
     "semis": [
@@ -197,14 +213,14 @@
           "equipo2": "Ganador P1",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"1-0"
+          "games":""
       },
       {
          "equipo1": "Ganador P2",
           "equipo2": "1ro B",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"0-1"
+          "games":""
       }
     ],
     "final": {
@@ -212,7 +228,7 @@
           "equipo2": "Ganador P6",
           "fecha": "Domingo",
           "resultado": "A definir",
-          "games":"0-1"
+          "games":""
     }
   }
 }

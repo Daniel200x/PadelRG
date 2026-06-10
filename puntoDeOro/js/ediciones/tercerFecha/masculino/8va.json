@@ -372,32 +372,25 @@
       ],
       "partidos": [
         {
-          "fecha": "Miercoles 23:00 hs",
-          "equipo1": "M. Loberche/M. Denis",
-          "equipo2": "J. Alcantara/C. Alday",
-          "resultado": "2-1",
-          "games":"6-2, 2-6, 7-6"
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": "Miercoles 21:00 hs",
-          "equipo1": "J. Gonzalez/C. Cardenas",
-          "equipo2": "L. Rivero/J. Lara",
-          "resultado": "1-2",
-          "games":"6-3, 6-7, 6-7"
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
         },
         {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "resultado": "0-2",
-          "games":"6-7, 4-6"
-        },
-        {
-          "fecha": "Viernes 22:00 hs",
-          "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
-          "resultado": "0-2",
-          "games":"6-7, 1-6"
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":""
         }
       ]
     }
