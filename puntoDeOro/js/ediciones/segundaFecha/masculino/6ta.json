@@ -273,155 +273,241 @@
       "nombre": "Grupo H",
       "equipos": [
        {
-          "nombre": "Nicolas Barbosa/Walter Sanchez",
+          "nombre": "Ciro Andrade/Valentin Lemus",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Braian Gamarra/L. Galvan",
+          "nombre": "Diego Villalba/Cristian Carrasco",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Pablo Figueroa/Roberto Oyarzun",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Facundo Saldaño/Nicolas Dominguez",
+          "nombre": "Ignacio Perez/Juan P. Romero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 19:50 hs",
+          "equipo1": "Ciro Andrade/Valentin Lemus",
+          "equipo2": "Diego Villalba/Cristian Carrasco",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Diego Villalba/Cristian Carrasco",
+          "equipo2": "Ignacio Perez/Juan P. Romero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 17:30 hs",
+          "equipo1": "Ignacio Perez/Juan P. Romero",
+          "equipo2": "Ciro Andrade/Valentin Lemus",
           "resultado": "",
           "games":"A definir"
         }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo I",
+      "equipos": [
+       {
+          "nombre": "Dario Orellano/Facundo Saldaño",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Jose Luis Ojeda/Walter Arrua",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Brian Gamarra/Santiago De La Cruz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 19:50 hs",
+          "equipo1": "Dario Orellano/Facundo Saldaño",
+          "equipo2": "Jose Luis Ojeda/Walter Arrua",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Brian Gamarra/Santiago De La Cruz",
+          "equipo2": "Dario Orellano/Facundo Saldaño",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Viernes 22:10 hs",
+          "equipo1": "Jose Luis Ojeda/Walter Arrua",
+          "equipo2": "Brian Gamarra/Santiago De La Cruz",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Grupo J",
+      "equipos": [
+       {
+          "nombre": "Juan P. Villarroel/Aaron Pintos",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Nicolas Martino/Mauro Vagliente",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Claudio Cejas/Maximiliano Zaja",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
+        {
+          "nombre": "Hernan Juarez/Alejandro Cisterna",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 19:50 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 22:10 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 14:40 hs",
+          "equipo1": "Ganador Partido 1",
+          "equipo2": "Perdedor Partido 2",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 15:50 hs",
+          "equipo1": "Ganador Partido 2",
+          "equipo2": "Perdedor Partido 1",
+          "resultado": "",
+          "games":"A definir"
+        }
+        
       ]
     }
   ],
   "eliminatorias": {
     "octavos": [
       {
-        "equipo1": "Patricio Velazquez/Mariano Pereyra",
-          "equipo2": "Nicolas Barrios/Javier Gimenez",
-          "fecha": "Sabado :00",
-          "resultado": "1-0",
-          "games":"1-0"
+        "equipo1": "1ro A",
+          "equipo2": "2do B",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Hernan Juarez/Julio Orellana",
-          "equipo2": "Pablo Ullua/Cristian Gabriel",
-          "fecha": "Sabado 22:00",
-          "resultado": "1-0",
-          "games":"1-0"
+         "equipo1": "1ro E",
+          "equipo2": "2do F",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Nicolas Barbosa/Walter Sanchez",
-          "equipo2": "Waldemar Sosa/Matias Dos Santos",
-          "fecha": "Sabado 23:00",
-          "resultado": "0-1",
-          "games":"0-1"
+         "equipo1": "1ro C",
+          "equipo2": "2do D",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Hector Rojo/Mariano Soto",
-          "equipo2": "Ramiro Luna/Franco Forno",
-          "fecha": "Sabado 23:00",
-          "resultado": "1-0",
-          "games":"1-0"
+         "equipo1": "1ro G",
+          "equipo2": "2do H",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Eduardo Garay/Diego Floriani",
-          "equipo2": "Gustavo Quiroz/Franco Gonzalez",
-          "fecha": "Sabado 22:00",
-          "resultado": "0-1",
-          "games":"0-1"
+        "equipo1": "1ro B",
+          "equipo2": "2do A",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Jonatan Villalobos/Victor Gonzalez",
-          "equipo2": "R. Retuerto/Sanchez",
-          "fecha": "Sabado 23:00",
-          "resultado": "2-1",
-          "games":"2-1"
+         "equipo1": "1ro F",
+          "equipo2": "2do E",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-         "equipo1": "Ciro Andrade/Valentin Lemus",
-          "equipo2": "Facundo Saldaño/Nicolas Dominguez",
-          "fecha": "Sabado 22:00",
-          "resultado": "1-0",
-          "games":"1-0"
+         "equipo1": "1ro D",
+          "equipo2": "2do C",
+          "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       },
       {
-        "equipo1": "Lucas Vera/Juan Manuel Gimenez",
-          "equipo2": "Cristian Lopez/Daniel Ibarra",
-          "fecha": "Sabado 23:00",
-          "resultado": "0-1",
-          "games":"0-1"
+         "equipo1": "1ro H",
+          "equipo2": "2do G",
+         "fecha": "Sabado ",
+          "resultado": "",
+          "games":""
       }
     ],
     "cuartos": [
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo",
-          "resultado": "1-0",
-          "games":"1-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo",
-          "resultado": "1-0",
-          "games":"1-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo",
-          "resultado": "2-0",
-          "games":"2-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "Ganador P7",
           "equipo2": "Ganador P8",
-          "fecha": "Domingo",
-          "resultado": "1-0",
-          "games":"1-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       }
     ],
     "semis": [
       {
          "equipo1": "Ganador P1",
           "equipo2": "Ganador P2",
-          "fecha": "Domingo",
-          "resultado": "1-0",
-          "games":"1-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       },
       {
          "equipo1": "Ganador P3",
           "equipo2": "Ganador P4",
-          "fecha": "Domingo",
-          "resultado": "0-1",
-          "games":"0-1"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
       }
     ],
     "final": {
        "equipo1": "Ganador P5",
           "equipo2": "Ganador P6",
-          "fecha": "Domingo",
-          "resultado": "1-0",
-          "games":"1-0"
+          "fecha": "Domingo ",
+          "resultado": "",
+          "games":""
     }
   }
 }
