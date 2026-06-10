@@ -121,35 +121,35 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Hector Rojo/Mariano Soto",
+          "nombre": "Cristian Chalier/Leandro Carracedo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Gustavo Quiroz/Franco Gonzalez",
+          "nombre": "Rafael Muriño/Roberto Oyarzun",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Walter Nieva/Cristian Ventura",
+          "nombre": "Simon Barila/Nahuel Romero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 17:30 hs",
+          "equipo1": "Simon Barila/Nahuel Romero",
+          "equipo2": "Rafael Muriño/Roberto Oyarzun",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:20 hs",
+          "equipo1": "Cristian Chalier/Leandro Carracedo",
+          "equipo2": "Simon Barila/Nahuel Romero",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 12:20 hs",
+          "equipo1": "Rafael Muriño/Roberto Oyarzun",
+          "equipo2": "Cristian Chalier/Leandro Carracedo",
           "resultado": "",
           "games":"A definir"
         }
@@ -159,38 +159,35 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "F. Herlein/E. Larrechea",
+          "nombre": "Benjamin Martinez/Lucas Vera",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Walter Retamal/L. Lapadula",
+          "nombre": "Pablo Nuñez/Juan Cruz Nahuel",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "R. Retuerto/Sanchez",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Hernan Juarez/Julio Orellana",
+          "nombre": "Waldemar Sosa/Cristian Lopez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:20 hs",
+          "equipo1": "Waldemar Sosa/Cristian Lopez",
+          "equipo2": "Pablo Nuñez/Juan Cruz Nahuel",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:40 hs",
+          "equipo1": "Benjamin Martinez/Lucas Vera",
+          "equipo2": "Waldemar Sosa/Cristian Lopez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Pablo Nuñez/Juan Cruz Nahuel",
+          "equipo2": "Benjamin Martinez/Lucas Vera",
           "resultado": "",
           "games":"A definir"
         }
@@ -200,38 +197,35 @@
       "nombre": "Grupo F",
       "equipos": [
        {
-          "nombre": "Pablo Ulloa/Cristian Gabriel",
+          "nombre": "Juan M. Gimenez/Javier Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Cesar Peschiuta/Luis Ruiz",
+          "nombre": "Cristian Graneros/Luis Ruiz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "J. Sena/Gabriel Escobar",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Jonatan Villalobos/Victor Gonzalez",
+          "nombre": "Rodrigo Fritz/Francisco Amestoy",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:40 hs",
+          "equipo1": "Cristian Graneros/Luis Ruiz",
+          "equipo2": "Rodrigo Fritz/Francisco Amestoy",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 22:10 hs",
+          "equipo1": "Juan M. Gimenez/Javier Gimenez",
+          "equipo2": "Cristian Graneros/Luis Ruiz",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Rodrigo Fritz/Francisco Amestoy",
+          "equipo2": "Juan M. Gimenez/Javier Gimenez",
           "resultado": "",
           "games":"A definir"
         }
@@ -241,38 +235,35 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "Ciro Andrade/Valentin Lemus",
+          "nombre": "Gustavo Quiroz/Diego Velasquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Sebastian Lonne/Juan Cuenca",
+          "nombre": "Leo Agnes/Lucas Lapadula",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "A. Facio/D. Facio",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Waldemar Sosa/Matias Dos Santos",
+          "nombre": "Fernando Rivero/Martin Velazquez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 17:30 hs",
+          "equipo1": "Leo Agnes/Lucas Lapadula",
+          "equipo2": "Fernando Rivero/Martin Velazquez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 19:50 hs",
+          "equipo1": "Gustavo Quiroz/Diego Velasquez",
+          "equipo2": "Leo Agnes/Lucas Lapadula",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:50 hs",
+          "equipo1": "Fernando Rivero/Martin Velazquez",
+          "equipo2": "Gustavo Quiroz/Diego Velasquez",
           "resultado": "",
           "games":"A definir"
         }
