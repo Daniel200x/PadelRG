@@ -5,38 +5,35 @@
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Patricio Velazquez/Mariano Pereyra",
+          "nombre": "Mariano Puebla/Martin Abalos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Cristian Lopez/Daniel Ibarra",
+          "nombre": "Martin Herrera/Carlos Barrionuevo",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "L. Gomez/Diego Villalba",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Dario Orellano/Ezequiel Arteaga",
+          "nombre": "Jose Mendez/Facundo Infran",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Mariano Puebla/Martin Abalos",
+          "equipo2": "Martin Herrera/Carlos Barrionuevo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:20 hs",
+          "equipo1": "Martin Herrera/Carlos Barrionuevo",
+          "equipo2": "Jose Mendez/Facundo Infran",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 11:10 hs",
+          "equipo1": "Jose Mendez/Facundo Infran",
+          "equipo2": "Mariano Puebla/Martin Abalos",
           "resultado": "",
           "games":"A definir"
         }
@@ -47,37 +44,34 @@
       "nombre": "Grupo B",
       "equipos": [
         {
-          "nombre": "Nicolas Barrios/Javier Gimenez",
+          "nombre": "Miguel Gomez/Cristian Maisares",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Facundo Infran/Jose Maria Mendez",
+          "nombre": "Ulises Veron/Eduardo Garay",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Lucas Vera/Juan Manuel Gimenez",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Gustavo Santana/Nicolas De Guevara",
+          "nombre": "Nicolas Dominguez/Nicolas Barbosa",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}        
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 18:40 hs",
+          "equipo1": "Miguel Gomez/Cristian Maisares",
+          "equipo2": "Ulises Veron/Eduardo Garay",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 18:40 hs",
+          "equipo1": "Ulises Veron/Eduardo Garay",
+          "equipo2": "Nicolas Dominguez/Nicolas Barbosa",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 19:50 hs",
+          "equipo1": "Miguel Gomez/Cristian Maisares",
+          "equipo2": "Nicolas Dominguez/Nicolas Barbosa",
           "resultado": "",
           "games":"A definir"
         }
@@ -89,37 +83,37 @@
       "nombre": "Grupo C",
       "equipos": [
         {
-          "nombre": "Eduardo Garay/Diego Floriani",
+          "nombre": "Eduardo Gomez/Matias Dos Santos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Jose Aguilar/Marcelo Trangoni",
+          "nombre": "Eros Pintos/Walter Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Ramiro Luna/Franco Forno",
+          "nombre": "Gustavo Vera/Javier Bustos",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "Eduardo Garay/Diego Floriani",
-          "equipo2": "Jose Aguilar/Marcelo Trangoni",
-          "resultado": "2-0",
-          "games":"6-4, 6-4"
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Eduardo Gomez/Matias Dos Santos",
+          "equipo2": "Gustavo Vera/Javier Bustos",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "Ramiro Luna/Franco Forno",
-          "equipo2": "Jose Aguilar/Marcelo Trangoni",
-          "resultado": "2-0",
-          "games":"6-0, 6-0"
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Eros Pintos/Walter Gimenez",
+          "equipo2": "Eduardo Gomez/Matias Dos Santos",
+          "resultado": "",
+          "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "Eduardo Garay/Diego Floriani",
-          "equipo2": "Ramiro Luna/Franco Forno",
-          "resultado": "2-0",
-          "games":"6-4, 6-4"
+          "fecha": "Sabado 13:30 hs",
+          "equipo1": "Gustavo Vera/Javier Bustos",
+          "equipo2": "Eros Pintos/Walter Gimenez",
+          "resultado": "",
+          "games":"A definir"
         }
       ]
     },
@@ -134,17 +128,14 @@
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Walter Nieva/Cristian Ventura",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
-        {
-          "nombre": "Gerardo Aballay/Ulises Veron",
-         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0}
         
       ],
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
