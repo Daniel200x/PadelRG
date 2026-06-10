@@ -1,57 +1,42 @@
 {
-  "nombre": "8va Categoría",
+  "nombre": "8va Damas",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "Carolina Vazquez/Susana Arce",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Vanesa Sanchez/Lourdes Quiroga",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Maria Elena Araoz/Gessica Galucci",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Nayla Gutierrez/Anabella Astudillo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Yesica Fleuri/Micaela Lamberti",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Lucia Torres/Camila Corzo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 22:10 hs",
+          "equipo1": "Vanesa Sanchez/Lourdes Quiroga",
+          "equipo2": "Lucia Torres/Camila Corzo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Lucia Torres/Camila Corzo",
+          "equipo2": "Nayla Gutierrez/Anabella Astudillo",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 14:40 hs",
+          "equipo1": "Nayla Gutierrez/Anabella Astudillo",
+          "equipo2": "Vanesa Sanchez/Lourdes Quiroga",
           "resultado": "",
           "games":"A definir"
         }
@@ -61,54 +46,39 @@
    {
       "nombre": "Grupo B",
       "equipos": [
-        {
-          "nombre": "Noelia Cagnelutti/Emilce Duca",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+       {
+          "nombre": "Paula Gamarra/Micaela Lamberti",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Cristina Barria/Silvina Davalos",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Micaela Curti/Maritza Ulloa",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Karen Beamonte/Jesica Perolo",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Paulina Del Pozo/Micaela Florentin",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 22:10 hs",
+          "equipo1": "Paula Gamarra/Micaela Lamberti",
+          "equipo2": "Micaela Curti/Maritza Ulloa",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 23:20 hs",
+          "equipo1": "Paulina Del Pozo/Micaela Florentin",
+          "equipo2": "Paula Gamarra/Micaela Lamberti",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 18:40 hs",
+          "equipo1": "Micaela Curti/Maritza Ulloa",
+          "equipo2": "Paulina Del Pozo/Micaela Florentin",
           "resultado": "",
           "games":"A definir"
         }
@@ -119,63 +89,39 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {
-          "nombre": "Belen Rivadaneira/Natalia De La Rosa",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+       {
+          "nombre": "Natalia De La Rosa/Maria Araoz",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Anabella Astudillo/Ana Andrade",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Paula Blanco/Paula Guerriot",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Carolina Racedo/Alina Zabala",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
-          "nombre": "Valentina Rodriguez/Julieta Cichero",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Melina Santana/Sabrina Bresciani",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 23:20 hs",
+          "equipo1": "Melina Santana/Sabrina Bresciani",
+          "equipo2": "Paula Blanco/Paula Guerriot",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Natalia De La Rosa/Maria Araoz",
+          "equipo2": "Melina Santana/Sabrina Bresciani",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 23:20 hs",
+          "equipo1": "Paula Blanco/Paula Guerriot",
+          "equipo2": "Natalia De La Rosa/Maria Araoz",
           "resultado": "",
           "games":"A definir"
         }
@@ -185,53 +131,161 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "Romina Ramirez/Maria Romero",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Aylen Borges/Micaela Kempel",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Olga Cardenas/Rosalina Gamarra",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Debora Cejas/Romina Ramirez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Florencia Graneros/Andrea Graneros",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
+          "nombre": "Tania Benitez/Loreley Casagrande",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Aylen Borges/Micaela Kempel",
+          "equipo2": "Debora Cejas/Romina Ramirez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Debora Cejas/Romina Ramirez",
+          "equipo2": "Tania Benitez/Loreley Casagrande",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "/",
-          "equipo2": "/",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Tania Benitez/Loreley Casagrande",
+          "equipo2": "Aylen Borges/Micaela Kempel",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+       {
+          "nombre": "Silvana Arteaga/Elsa Perlo",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Yesica Fleuri/Soledad Romero",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Alejandra/Silvana Perez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 18:40 hs",
+          "equipo1": "Silvana Arteaga/Elsa Perlo",
+          "equipo2": "Alejandra/Silvana Perez",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Viernes 21:00 hs",
+          "equipo1": "Alejandra/Silvana Perez",
+          "equipo2": "Yesica Fleuri/Soledad Romero",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 12:20 hs",
+          "equipo1": "Yesica Fleuri/Soledad Romero",
+          "equipo2": "Silvana Arteaga/Elsa Perlo",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+      {
+          "nombre": "Eugenia Dure/Natalia Molina",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Julia Parun/Fernanda Rasguido",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Romina Sequeira/Rosalina Gamarra",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 21:00 hs",
+          "equipo1": "Eugenia Dure/Natalia Molina",
+          "equipo2": "Julia Parun/Fernanda Rasguido",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 22:10 hs",
+          "equipo1": "Romina Sequeira/Rosalina Gamarra",
+          "equipo2": "Eugenia Dure/Natalia Molina",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Viernes 22:10 hs",
+          "equipo1": "Julia Parun/Fernanda Rasguido",
+          "equipo2": "Romina Sequeira/Rosalina Gamarra",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+       {
+          "nombre": "Mia Hoqcuart/Martina Sanchez",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Isabel Gallardo/Araceli Harrington",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Karina Vazquez/Carla Villalba",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Jueves 19:50 hs",
+          "equipo1": "Mia Hoqcuart/Martina Sanchez",
+          "equipo2": "Karina Vazquez/Carla Villalba",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Karina Vazquez/Carla Villalba",
+          "equipo2": "Isabel Gallardo/Araceli Harrington",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Sabado 12:20 hs",
+          "equipo1": "Isabel Gallardo/Araceli Harrington",
+          "equipo2": "Mia Hoqcuart/Martina Sanchez",
           "resultado": "",
           "games":"A definir"
         }

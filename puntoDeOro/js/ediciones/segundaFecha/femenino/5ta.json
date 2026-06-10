@@ -1,19 +1,19 @@
 {
-  "nombre": "7ma Categoría",
+  "nombre": "5ta Damas",
   "grupos": [
     {
       "nombre": "Grupo A",
       "equipos": [
         {
-          "nombre": "L. Rodriguez/M. Pratto",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "E. Martinez/S. Ackerman",
-         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "M. Polizzi/F. Retuerto",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -21,22 +21,22 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "L. Rodriguez/M. Pratto",
-          "equipo2": "E. Martinez/S. Ackerman",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "L. Rodriguez/M. Pratto",
-          "equipo2": "M. Polizzi/F. Retuerto",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "E. Martinez/S. Ackerman",
-          "equipo2": "M. Polizzi/F. Retuerto",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         }
@@ -46,16 +46,16 @@
    {
       "nombre": "Grupo B",
       "equipos": [
-        {
-          "nombre": "A. Soto/R. Cruz",
-         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "F. Bianchi/T. Luna",
+       {
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "B. Rigoni/C. Gersicich",
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -63,22 +63,22 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "A. Soto/R. Cruz",
-          "equipo2": "F. Bianchi/T. Luna",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "A. Soto/R. Cruz",
-          "equipo2": "B. Rigoni/C. Gersicich",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "F. Bianchi/T. Luna",
-          "equipo2": "B. Rigoni/C. Gersicich",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         }
@@ -89,16 +89,16 @@
     {
       "nombre": "Grupo C",
       "equipos": [
-        {
-          "nombre": "L. Diaz/P. Miranda",
+       {
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "G. Gimenez/D. Martinez",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "C. Lucero/M. Salinas",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -106,22 +106,22 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "L. Diaz/P. Miranda",
-          "equipo2": "G. Gimenez/D. Martinez",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "G. Gimenez/D. Martinez",
-          "equipo2": "C. Lucero/M. Salinas",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "L. Diaz/P. Miranda",
-          "equipo2": "C. Lucero/M. Salinas",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         }
@@ -131,15 +131,15 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "A. Zampini/L. Miranda",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "S. Vera/N. Cabezas",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "L. Romano/R. Terrado",
+          "nombre": "",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
@@ -147,28 +147,192 @@
       "partidos": [
         {
           "fecha": ":00 hs",
-          "equipo1": "A. Zampini/L. Miranda",
-          "equipo2": "L. Romano/R. Terrado",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "L. Romano/R. Terrado",
-          "equipo2": "S. Vera/N. Cabezas",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": ":00 hs",
-          "equipo1": "A. Zampini/L. Miranda",
-          "equipo2": "S. Vera/N. Cabezas",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo E",
+      "equipos": [
+       {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo F",
+      "equipos": [
+      {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo G",
+      "equipos": [
+       {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo H",
+      "equipos": [
+       {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": ":00 hs",
+          "equipo1": "",
+          "equipo2": "",
           "resultado": "",
           "games":"A definir"
         }
       ]
     }
-      ],
+  ],
   "eliminatorias": {
     
     "cuartos": [

@@ -131,42 +131,38 @@
       "nombre": "Grupo D",
       "equipos": [
         {
-          "nombre": "V. Velazquez/C. Velazquez",
+          "nombre": "Marcos Aranda/Sergio Loncopan",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "F. Toledo/F. Lozano",
+          "nombre": "Yago Arcella/Claudio Cardenas",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "E. Daniel/A. Campasso",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "L. Pugnale/G. Ojeda",
+          "nombre": "Adriel Graneros/Ignacio Facio",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 23:20 hs",
+          "equipo1": "Yago Arcella/Claudio Cardenas",
+          "equipo2": "Adriel Graneros/Ignacio Facio",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Marcos Aranda/Sergio Loncopan",
+          "equipo2": "Yago Arcella/Claudio Cardenas",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 18:40 hs",
+          "equipo1": "Adriel Graneros/Ignacio Facio",
+          "equipo2": "Marcos Aranda/Sergio Loncopan",
           "resultado": "",
           "games":"A definir"
         }
@@ -176,42 +172,38 @@
       "nombre": "Grupo E",
       "equipos": [
        {
-          "nombre": "D. Minicucci/A. Romero",
+          "nombre": "Agustin Maluf/Leandro Romero",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "J. Alcantara/G. Aguirre",
+          "nombre": "Ramon Valdez/Agustin Maciel",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "C. Trani/A. Guzman",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "A. Faletti/F. Faletti",
+          "nombre": "Matias Jaime/Jose Jaime",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 22:10 hs",
+          "equipo1": "Agustin Maluf/Leandro Romero",
+          "equipo2": "Ramon Valdez/Agustin Maciel",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 19:50 hs",
+          "equipo1": "Ramon Valdez/Agustin Maciel",
+          "equipo2": "Matias Jaime/Jose Jaime",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 12:20 hs",
+          "equipo1": "Matias Jaime/Jose Jaime",
+          "equipo2": "Agustin Maluf/Leandro Romero",
           "resultado": "",
           "games":"A definir"
         }
@@ -221,42 +213,38 @@
       "nombre": "Grupo F",
       "equipos": [
        {
-          "nombre": "L. Rivero/T. Cimaldoni",
+          "nombre": "Cristian Ruiz/Gonzalo Muñoz",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Matias/A. Martinez",
+          "nombre": "Gabriel Radler/Lautaro Gimenez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "A. Mondaca/D. Lezcano",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "M. Gomez/G. Silva",
+          "nombre": "Marcelo Veloso/Renzo Stacchiola",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Miercoles 23:20 hs",
+          "equipo1": "Cristian Ruiz/Gonzalo Muñoz",
+          "equipo2": "Gabriel Radler/Lautaro Gimenez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 11:10 hs",
+          "equipo1": "Gabriel Radler/Lautaro Gimenez",
+          "equipo2": "Marcelo Veloso/Renzo Stacchiola",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 17:00 hs",
+          "equipo1": "Marcelo Veloso/Renzo Stacchiola",
+          "equipo2": "Cristian Ruiz/Gonzalo Muñoz",
           "resultado": "",
           "games":"A definir"
         }
@@ -266,42 +254,38 @@
       "nombre": "Grupo G",
       "equipos": [
        {
-          "nombre": "R. Rodriguez/R. Rodriguez",
+          "nombre": "Carlos Pisano/Raul Rodriguez",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "H. Sanabria/M. Yunes",
+          "nombre": "Kevin Mousou/Nahuel Zelarayan",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "M. Loberche/Nahuel",
-          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "D. Ruiz/L. Lavak",
+          "nombre": "Alejandro Vargas/Sebastian Marchisio",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 18:40 hs",
+          "equipo1": "Kevin Mousou/Nahuel Zelarayan",
+          "equipo2": "Alejandro Vargas/Sebastian Marchisio",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 10:00 hs",
+          "equipo1": "Carlos Pisano/Raul Rodriguez",
+          "equipo2": "Kevin Mousou/Nahuel Zelarayan",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Sabado 15:50 hs",
+          "equipo1": "Alejandro Vargas/Sebastian Marchisio",
+          "equipo2": "Carlos Pisano/Raul Rodriguez",
           "resultado": "",
           "games":"A definir"
         }
@@ -311,42 +295,79 @@
       "nombre": "Grupo H",
       "equipos": [
        {
-          "nombre": "G. Martinez/S. Loncopan",
+          "nombre": "Joel Lera/Matias Denis",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "M. Segovia/L. Romero",
+          "nombre": "Federico Velazquez/Gonzalo Velazquez",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "R. Alfonso/J. Gomez",
-         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
-        },
-        {
-          "nombre": "N. Magallanes/I. Yañez",
+          "nombre": "Sandro Rodriguez",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         }
         
       ],
       "partidos": [
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Jueves 21:00 hs",
+          "equipo1": "Joel Lera/Matias Denis",
+          "equipo2": "Federico Velazquez/Gonzalo Velazquez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
-          "equipo1": "",
-          "equipo2": "",
+          "fecha": "Viernes 19:50 hs",
+          "equipo1": "Federico Velazquez/Gonzalo Velazquez",
+          "equipo2": "Sandro Rodriguez",
           "resultado": "",
           "games":"A definir"
         },
         {
-          "fecha": ":00 hs",
+          "fecha": "Sabado 13:30 hs",
           "equipo1": "",
-          "equipo2": "",
+          "equipo2": "Joel Lera/Matias Denis",
+          "resultado": "",
+          "games":"A definir"
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo I",
+      "equipos": [
+       {
+          "nombre": "Hector Alarcon/Patrico Galarza",
+          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Luis Alvarez/Maximiliano Ponce",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        },
+        {
+          "nombre": "Nicolas Pavano/Juan Garcia",
+         "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
+        }
+        
+      ],
+      "partidos": [
+        {
+          "fecha": "Miercoles 18:40 hs",
+          "equipo1": "Hector Alarcon/Patrico Galarza",
+          "equipo2": "Luis Alvarez/Maximiliano Ponce",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Miercoles 23:20 hs",
+          "equipo1": "Nicolas Pavano/Juan Garcia",
+          "equipo2": "Hector Alarcon/Patrico Galarza",
+          "resultado": "",
+          "games":"A definir"
+        },
+        {
+          "fecha": "Jueves 23:20 hs",
+          "equipo1": "Luis Alvarez/Maximiliano Ponce",
+          "equipo2": "Nicolas Pavano/Juan Garcia",
           "resultado": "",
           "games":"A definir"
         }
