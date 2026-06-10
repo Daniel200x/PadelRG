@@ -1076,10 +1076,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 
 
-// Esperar un breve momento para que se carguen los datos antes de seleccionar género y categoría
-    setTimeout(() => {
-        seleccionarCategoria('4ta');
-    }, 100);
 
 
 });
