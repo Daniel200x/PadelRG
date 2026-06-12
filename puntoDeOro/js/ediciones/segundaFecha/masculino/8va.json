@@ -23,8 +23,8 @@
           "fecha": "Miercoles 20:00 hs",
           "equipo1": "Leandro Seidel/Javier Ilarregui",
           "equipo2": "Ramon Castro/Ruben Pedraza",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-4, 6-2"
         },
         {
           "fecha": "Jueves 23:20 hs",
@@ -65,8 +65,8 @@
           "fecha": "Miercoles 23:20 hs",
           "equipo1": "Luis Visic/Leo Elichiry",
           "equipo2": "Matias Ojeda/Cristian Romero",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"7-5, 7-6"
         },
         {
           "fecha": "Jueves 23:20 hs",
@@ -108,8 +108,8 @@
           "fecha": "Miercoles 23:20 hs",
           "equipo1": "Ariel Faletti/Felipe Faletti",
           "equipo2": "Mauricio Bravo/Raul Gonzalez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Jueves 22:10 hs",
@@ -149,8 +149,8 @@
           "fecha": "Miercoles 23:20 hs",
           "equipo1": "Yago Arcella/Claudio Cardenas",
           "equipo2": "Adriel Graneros/Ignacio Facio",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-1, 7-5"
         },
         {
           "fecha": "Jueves 21:00 hs",
@@ -190,8 +190,8 @@
           "fecha": "Miercoles 22:10 hs",
           "equipo1": "Agustin Maluf/Leandro Romero",
           "equipo2": "Ramon Valdez/Agustin Maciel",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-0"
         },
         {
           "fecha": "Jueves 19:50 hs",
@@ -231,8 +231,8 @@
           "fecha": "Miercoles 23:20 hs",
           "equipo1": "Cristian Ruiz/Gonzalo Muñoz",
           "equipo2": "Gabriel Radler/Lautaro Gimenez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-2"
         },
         {
           "fecha": "Sabado 11:10 hs",
@@ -270,21 +270,21 @@
       "partidos": [
         {
           "fecha": "Viernes 18:40 hs",
-          "equipo1": "Kevin Mousou/Nahuel Zelarayan",
+          "equipo1": "Carlos Pisano/Raul Rodriguez",
           "equipo2": "Alejandro Vargas/Sebastian Marchisio",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"0-6, 6-4, 6-7"
         },
         {
           "fecha": "Sabado 10:00 hs",
-          "equipo1": "Carlos Pisano/Raul Rodriguez",
+          "equipo1": "Alejandro Vargas/Sebastian Marchisio",
           "equipo2": "Kevin Mousou/Nahuel Zelarayan",
           "resultado": "",
           "games":"A definir"
         },
         {
           "fecha": "Sabado 15:50 hs",
-          "equipo1": "Alejandro Vargas/Sebastian Marchisio",
+          "equipo1": "Kevin Mousou/Nahuel Zelarayan",
           "equipo2": "Carlos Pisano/Raul Rodriguez",
           "resultado": "",
           "games":"A definir"
@@ -325,7 +325,7 @@
         },
         {
           "fecha": "Sabado 13:30 hs",
-          "equipo1": "",
+          "equipo1": "Sandro Rodriguez",
           "equipo2": "Joel Lera/Matias Denis",
           "resultado": "",
           "games":"A definir"
@@ -354,15 +354,15 @@
           "fecha": "Miercoles 18:40 hs",
           "equipo1": "Hector Alarcon/Patrico Galarza",
           "equipo2": "Luis Alvarez/Maximiliano Ponce",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-0, 6-2"
         },
         {
           "fecha": "Miercoles 23:20 hs",
           "equipo1": "Nicolas Pavano/Juan Garcia",
           "equipo2": "Hector Alarcon/Patrico Galarza",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"6-7, 3-6"
         },
         {
           "fecha": "Jueves 23:20 hs",

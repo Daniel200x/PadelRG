@@ -23,8 +23,8 @@
           "fecha": "Miercoles 21:00 hs",
           "equipo1": "Paula Elstner/Graciela Perez",
           "equipo2": "Dana Martinez/Oriana Martinez",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 7-5"
         },
         {
           "fecha": "Sabado 11:10 hs",
@@ -108,8 +108,8 @@
           "fecha": "Miercoles 22:10 hs",
           "equipo1": "Cintia Mur/Lorena Cordoba",
           "equipo2": "Violeta Lopez/Graciela Flamenco",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"1-6, 5-7"
         },
         {
           "fecha": "Jueves 17:30 hs",
@@ -176,7 +176,7 @@
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
-          "nombre": "Vanesa Vera",
+          "nombre": "Vanesa Vera/Graneros",
          "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0
         },
         {
@@ -188,10 +188,10 @@
       "partidos": [
         {
           "fecha": "Miercoles 22:10 hs",
-          "equipo1": "Vanesa Vera",
+          "equipo1": "Vanesa Vera/Graneros",
           "equipo2": "Belen Bordon/Daniela Bergondi",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"2-6, 2-6"
         },
         {
           "fecha": "Sabado 11:10 hs",
@@ -202,7 +202,7 @@
         },
         {
           "fecha": "Sabado 15:50 hs",
-          "equipo1": "Vanesa Vera",
+          "equipo1": "Vanesa Vera/Graneros",
           "equipo2": "Pamela Rusconi/Belen Cordoba",
           "resultado": "",
           "games":"A definir"
