@@ -14,7 +14,7 @@
           "GC": 0
         },
         {
-          "nombre": "Nicolas Gonzalez",
+          "nombre": "Jorge Carbajal/Ignacio Carbajal",
           "PJ": 0,
           "PG": 0,
           "SG": 0,
@@ -37,21 +37,21 @@
         {
           "fecha": "Miercoles 21:00 hs",
           "equipo1": "Lucas Ojeda/Ivan Gallardo",
-          "equipo2": "Nicolas Gonzalez",
-          "resultado": "",
-          "games":""
+          "equipo2": "Jorge Carbajal/Ignacio Carbajal",
+          "resultado": "2-0",
+          "games":"6-0, 6-0"
         },
         {
           "fecha": "Jueves 21:00 hs",
           "equipo1": "Lucas Ojeda/Ivan Gallardo",
           "equipo2": "Tiago Andrade/Franco Moreno",
-          "resultado": "",
-          "games":""
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         },
         {
           "fecha": "Sabado 14:40 hs",
           "equipo1": "Tiago Andrade/Franco Moreno",
-          "equipo2": "Nicolas Gonzalez",
+          "equipo2": "Jorge Carbajal/Ignacio Carbajal",
           "resultado": "",
           "games":""
         }
@@ -95,8 +95,8 @@
           "fecha": "Jueves 22:10 hs",
           "equipo1": "Mauro Pucheta/Emmanuel Barrios",
           "equipo2": "Julio Andrade/Cesar Andrade",
-          "resultado": "",
-          "games":""
+          "resultado": "0-2",
+          "games":"4-6, 1-6"
         },
         {
           "fecha": "Sabado 13:30 hs",
@@ -138,15 +138,6 @@
           "GC": 0
         },
         {
-          "nombre": "Jorge Carbajal/Ignacio Carbajal",
-          "PJ": 0,
-          "PG": 0,
-          "SG": 0,
-          "SP": 0,
-          "GF": 0,
-          "GC": 0
-        },
-        {
           "nombre": "Gabriel Muller/Claudio Escobar",
           "PJ": 0,
           "PG": 0,
@@ -159,30 +150,23 @@
       ],
       "partidos": [
         {
-          "fecha": "Viernes 19:50 hs",
+          "fecha": "Jueves 19:50 hs",
           "equipo1": "Jose Villarreal/Martin Ormaza",
-          "equipo2": "Diego Mancini/Raul Maldonado",
-          "resultado": "",
-          "games":""
+          "equipo2": "Gabriel Muller/Claudio Escobar",
+          "resultado": "2-0",
+          "games":"7-6, 6-1"
         },
         {
-          "fecha": "Miercoles 19:50 hs",
-          "equipo1": "Jorge Carbajal/Ignacio Carbajal",
+          "fecha": "Viernes 19:50 hs",
+          "equipo1": "Diego Mancini/Raul Maldonado",
           "equipo2": "Gabriel Muller/Claudio Escobar",
           "resultado": "",
           "games":""
         },
         {
-          "fecha": "Sabado :00 hs",
-          "equipo1": "Ganador Partido 1",
-          "equipo2": "Perdedor Partido 2",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": "Sabado :00 hs",
-          "equipo1": "Ganador Partido 2",
-          "equipo2": "Perdedor Partido 1",
+          "fecha": "Sabado 14:40 hs",
+          "equipo1": "Jose Villarreal/Martin Ormaza",
+          "equipo2": "Diego Mancini/Raul Maldonado",
           "resultado": "",
           "games":"A definir"
         }
