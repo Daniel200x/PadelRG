@@ -292,16 +292,16 @@
           "games":"6-2, 6-3"
         },
         {
-          "fecha": "Jueves 21:00 hs",
-          "equipo1": "Diego Villalba/Cristian Carrasco",
-          "equipo2": "Ignacio Perez/Juan P. Romero",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
           "fecha": "Viernes 17:30 hs",
           "equipo1": "Ignacio Perez/Juan P. Romero",
           "equipo2": "Ciro Andrade/Valentin Lemus",
+          "resultado": "0-2",
+          "games":"6-7, 1-6"
+        },
+        {
+          "fecha": "Sabado 16:00 hs",
+          "equipo1": "Diego Villalba/Cristian Carrasco",
+          "equipo2": "Ignacio Perez/Juan P. Romero",
           "resultado": "",
           "games":"A definir"
         }
