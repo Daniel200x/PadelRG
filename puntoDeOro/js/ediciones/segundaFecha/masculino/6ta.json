@@ -27,8 +27,8 @@
           "fecha": "Jueves 23:20 hs",
           "equipo1": "Martin Herrera/Carlos Barrionuevo",
           "equipo2": "Jose Mendez/Facundo Infran",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-1",
+          "games":"4-6, 6-2, 7-6"
         },
         {
           "fecha": "Sabado 11:10 hs",
@@ -65,8 +65,8 @@
           "fecha": "Jueves 18:40 hs",
           "equipo1": "Ulises Veron/Eduardo Garay",
           "equipo2": "Nicolas Dominguez/Nicolas Barbosa",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "1-2",
+          "games":"3-6, 6-2, 6-7"
         },
         {
           "fecha": "Viernes 19:50 hs",
@@ -162,7 +162,7 @@
           "nombre": "Benjamin Martinez/Lucas Vera",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
-          "nombre": "Pablo Nuñez/Juan Cruz Nahuel",
+          "nombre": "Martin Aguila/Joaquin Bugonovich",
           "PJ": 0,"PG": 0,"SG": 0,"SP": 0,"GF": 0,"GC": 0},
         {
           "nombre": "Waldemar Sosa/Cristian Lopez",
@@ -171,9 +171,16 @@
       ],
       "partidos": [
         {
+          "fecha": "Jueves 19:50 hs",
+          "equipo1": "Martin Aguila/Joaquin Bugonovich",
+          "equipo2": "Benjamin Martinez/Lucas Vera",
+          "resultado": "1-2",
+          "games":"7-5, 3-6, 6-7"
+        },
+        {
           "fecha": "Viernes 23:20 hs",
           "equipo1": "Waldemar Sosa/Cristian Lopez",
-          "equipo2": "Pablo Nuñez/Juan Cruz Nahuel",
+          "equipo2": "Martin Aguila/Joaquin Bugonovich",
           "resultado": "",
           "games":"A definir"
         },
@@ -181,13 +188,6 @@
           "fecha": "Sabado 14:40 hs",
           "equipo1": "Benjamin Martinez/Lucas Vera",
           "equipo2": "Waldemar Sosa/Cristian Lopez",
-          "resultado": "",
-          "games":"A definir"
-        },
-        {
-          "fecha": "Sabado 17:00 hs",
-          "equipo1": "Pablo Nuñez/Juan Cruz Nahuel",
-          "equipo2": "Benjamin Martinez/Lucas Vera",
           "resultado": "",
           "games":"A definir"
         }
@@ -219,8 +219,8 @@
           "fecha": "Jueves 22:10 hs",
           "equipo1": "Juan M. Gimenez/Javier Gimenez",
           "equipo2": "Cristian Graneros/Luis Ruiz",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-2"
         },
         {
           "fecha": "Viernes 21:00 hs",
@@ -257,8 +257,8 @@
           "fecha": "Jueves 19:50 hs",
           "equipo1": "Gustavo Quiroz/Diego Velasquez",
           "equipo2": "Leo Agnes/Lucas Lapadula",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-2, 6-4"
         },
         {
           "fecha": "Viernes 19:50 hs",
@@ -334,8 +334,8 @@
           "fecha": "Jueves 21:00 hs",
           "equipo1": "Brian Gamarra/Santiago De La Cruz",
           "equipo2": "Dario Orellano/Facundo Saldaño",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "2-0",
+          "games":"6-3, 6-3"
         },
         {
           "fecha": "Viernes 22:10 hs",
@@ -376,8 +376,8 @@
           "fecha": "Jueves 22:10 hs",
           "equipo1": "Claudio Cejas/Maximiliano Zaja",
           "equipo2": "Hernan Juarez/Alejandro Cisterna",
-          "resultado": "",
-          "games":"A definir"
+          "resultado": "0-2",
+          "games":"2-6, 4-6"
         },
         {
           "fecha": "Sabado 14:40 hs",
